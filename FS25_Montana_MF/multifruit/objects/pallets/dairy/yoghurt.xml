@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_oliveOilPallet</name>
+        <image>$data/store/store_empty.png</image>
+        <category>pallets</category>
+        <brand>JINKOU</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>64512</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>8192</indexBufferMemoryUsage>
+        <textureMemoryUsage>1507328</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>multifruit/objects/pallets/dairy/yoghurt.i3d</filename>
+        <size width="1.4" length="1" height="1.5" />
+        <canBeReset>false</canBeReset>
+        <components>
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="30"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="YOGHURT" capacity="1000"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="dischargeNode" emptySpeed="200" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
+    </dischargeable>
+
+    <pallet fillUnitIndex="1" node="pallet_vis">
+        <content>
+            <object node="yogurttray01" tensionBeltNode="yogurttray01Tension"/>
+            <object node="yogurttray02" tensionBeltNode="yogurttray02Tension"/>
+            <object node="yogurttray03" tensionBeltNode="yogurttray03Tension"/>
+            <object node="yogurttray04" tensionBeltNode="yogurttray04Tension"/>
+            <object node="yogurttray05" tensionBeltNode="yogurttray05Tension"/>
+            <object node="yogurttray06" tensionBeltNode="yogurttray06Tension"/>
+            <object node="yogurttray07" tensionBeltNode="yogurttray07Tension"/>
+            <object node="yogurttray08" tensionBeltNode="yogurttray08Tension"/>
+            <object node="yogurttray09" tensionBeltNode="yogurttray09Tension"/>
+            <object node="yogurttray10" tensionBeltNode="yogurttray10Tension"/>
+            <object node="yogurttray11" tensionBeltNode="yogurttray11Tension"/>
+            <object node="yogurttray12" tensionBeltNode="yogurttray12Tension"/>
+            <!-- <object node="yogurttray13" tensionBeltNode="yogurttray13Tension"/> -->
+            <!-- <object node="yogurttray14" tensionBeltNode="yogurttray14Tension"/> -->
+            <!-- <object node="yogurttray15" tensionBeltNode="yogurttray15Tension"/> -->
+            <!-- <object node="yogurttray16" tensionBeltNode="yogurttray16Tension"/> -->
+            <!-- <object node="yogurttray17" tensionBeltNode="yogurttray17Tension"/> -->
+            <!-- <object node="yogurttray18" tensionBeltNode="yogurttray18Tension"/> -->
+			
+        </content>
+
+        <sounds>
+            <unload template="palletsFillOil" pitchScale="0.9" />
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="5" additionalMountDistance="0.4" jointTransY="0.11" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="pallet_vis" node="0>0" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0|0" />
+        <i3dMapping id="dischargeNode" node="0>0|1" />
+        <i3dMapping id="collisions" node="0>0|2" />
+        <i3dMapping id="yogurttray01" node="0>0|3" />
+        <i3dMapping id="yogurttray01Tension" node="0>0|3|0" />
+        <i3dMapping id="yogurttray02" node="0>0|4" />
+        <i3dMapping id="yogurttray02Tension" node="0>0|4|0" />
+        <i3dMapping id="yogurttray03" node="0>0|5" />
+        <i3dMapping id="yogurttray03Tension" node="0>0|5|0" />
+        <i3dMapping id="yogurttray04" node="0>0|6" />
+        <i3dMapping id="yogurttray04Tension" node="0>0|6|0" />
+        <i3dMapping id="yogurttray05" node="0>0|7" />
+        <i3dMapping id="yogurttray05Tension" node="0>0|7|0" />
+        <i3dMapping id="yogurttray06" node="0>0|8" />
+        <i3dMapping id="yogurttray06Tension" node="0>0|3|0" />		
+        <i3dMapping id="yogurttray07" node="0>0|9" />
+        <i3dMapping id="yogurttray07Tension" node="0>0|9|0" />		
+        <i3dMapping id="yogurttray08" node="0>0|10" />
+        <i3dMapping id="yogurttray08Tension" node="0>0|10|0" />		
+        <i3dMapping id="yogurttray09" node="0>0|11" />
+        <i3dMapping id="yogurttray09Tension" node="0>0|11|0" />		
+        <i3dMapping id="yogurttray10" node="0>0|12" />
+        <i3dMapping id="yogurttray10Tension" node="0>0|12|0" />		
+        <i3dMapping id="yogurttray11" node="0>0|13" />
+        <i3dMapping id="yogurttray11Tension" node="0>0|13|0" />
+        <i3dMapping id="yogurttray12" node="0>0|14" />
+        <i3dMapping id="yogurttray12Tension" node="0>0|14|0" />		
+		
+    </i3dMappings>
+</vehicle>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<foliageType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/foliageType.xsd">
+
+    <foliageLayer densityMapChannelOffset="0" numDensityMapChannels="4" numBlocksPerUnit="3.0" shapeSource="groundFoliage.i3d">
+        <foliageStateDefaults distanceMapLayer="1" width="1.0" height="1.0" widthVariance="0.25" heightVariance="0.25" horizontalPositionVariance="0.5" />
+        <!-- default LOD distances etc -->
+        <foliageLodDefaults lod="0" viewDistance="18"  blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
+        <foliageLodDefaults lod="1" viewDistance="80" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
+
+        <!-- 0 1 0 0 - big branches pure -->
+        <foliageState name="big branches pure" numBlocksPerUnit="1" >
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="2>0|0" />
+                <foliageLod blockShape="2>1|0" />
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="2>0|1" />
+                <foliageLod blockShape="2>1|1" />
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="2>0|2" />
+                <foliageLod blockShape="2>1|2" />
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="2>0|3" />
+                <foliageLod blockShape="2>1|3" />
+            </foliageShape>
+        </foliageState>
+        <!-- 0 1 0 0 - small branches pure -->
+        <foliageState name="small branches pure" numBlocksPerUnit="1" >
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="3>0|0" />
+                <foliageLod blockShape="3>1|0" />
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="3>0|1" />
+                <foliageLod blockShape="3>1|1" />
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="3>0|2" />
+                <foliageLod blockShape="3>1|2" />
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="3>0|3" />
+                <foliageLod blockShape="3>1|3" />
+            </foliageShape>
+        </foliageState>
+        <!-- 0 1 0 0 - chantarelle mushroom -->
+        <foliageState name="chantarelle mushroom" numBlocksPerUnit="1" width="1" height="1" widthVariance="0.4" heightVariance="0.4" >
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="4>0|0" viewDistance="10"/>
+                <foliageLod blockShape="4>1|0" viewDistance="30"/>
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="4>0|1" viewDistance="10"/>
+                <foliageLod blockShape="4>1|1" viewDistance="30"/>
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="4>0|2" viewDistance="10"/>
+                <foliageLod blockShape="4>1|2" viewDistance="30"/>
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="4>0|3" viewDistance="10"/>
+                <foliageLod blockShape="4>1|3" viewDistance="30"/>
+            </foliageShape>
+        </foliageState>
+        <!-- 0 1 0 0 - boletus mushroom -->
+        <foliageState name="boletus mushroom" numBlocksPerUnit="1" width="0.75" height="0.75" widthVariance="0.25" heightVariance="0.25" >
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="5>0|0" viewDistance="10"/>
+                <foliageLod blockShape="5>1|0" viewDistance="30"/>
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="5>0|1" viewDistance="10"/>
+                <foliageLod blockShape="5>1|1" viewDistance="30"/>
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="5>0|2" viewDistance="10"/>
+                <foliageLod blockShape="5>1|2" viewDistance="30"/>
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="5>0|3" viewDistance="10"/>
+                <foliageLod blockShape="5>1|3" viewDistance="30"/>
+            </foliageShape>
+        </foliageState>
+        <!-- 0 1 0 0 - white tip mushroom -->
+        <foliageState name="white tip mushroom" numBlocksPerUnit="1" width="1.1" height="1.1" widthVariance="0.4" heightVariance="0.4" >
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="6>0|0" viewDistance="10"/>
+                <foliageLod blockShape="6>1|0" viewDistance="30"/>
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="6>0|1" viewDistance="10"/>
+                <foliageLod blockShape="6>1|1" viewDistance="30"/>
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="6>0|2" viewDistance="10"/>
+                <foliageLod blockShape="6>1|2" viewDistance="30"/>
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="6>0|3" viewDistance="10"/>
+                <foliageLod blockShape="6>1|3" viewDistance="30"/>
+            </foliageShape>
+        </foliageState>
+        <!-- 0 1 0 0 - fly cap mushroom -->
+        <foliageState name="fly cap mushroom" numBlocksPerUnit="1" widthVariance="0.25" heightVariance="0.25">
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="7>0|0" viewDistance="10"/>
+                <foliageLod blockShape="7>1|0" viewDistance="30"/>
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="7>0|1" viewDistance="10"/>
+                <foliageLod blockShape="7>1|1" viewDistance="30"/>
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="7>0|2" viewDistance="10"/>
+                <foliageLod blockShape="7>1|2" viewDistance="30"/>
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="7>0|3" viewDistance="10"/>
+                <foliageLod blockShape="7>1|3" viewDistance="30"/>
+            </foliageShape>
+        </foliageState>
+        <!-- 0 1 0 0 - cover foliage -->
+        <foliageState name="cover foliage" numBlocksPerUnit="1.25" >
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="8>0|0" />
+                <foliageLod blockShape="8>1|0" />
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="8>0|1" />
+                <foliageLod blockShape="8>1|1" />
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="8>0|2" />
+                <foliageLod blockShape="8>1|2" />
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="8>0|3" />
+                <foliageLod blockShape="8>1|3" />
+            </foliageShape>
+        </foliageState>
+        <!-- 0 1 0 0 - ground poplar leaves -->
+        <foliageState name="ground poplar leaves" numBlocksPerUnit="1.5" >
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="9>0|0" />
+                <foliageLod blockShape="9>0|0" />
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="9>0|1" />
+                <foliageLod blockShape="9>0|1" />
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="9>0|2" />
+                <foliageLod blockShape="9>0|2" />
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="9>0|3" />
+                <foliageLod blockShape="9>0|3" />
+            </foliageShape>
+        </foliageState>
+        <!-- 0 1 0 0 - ground elm leaves -->
+        <foliageState name="ground elm leaves" numBlocksPerUnit="1.5" >
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="10>0|0" />
+                <foliageLod blockShape="10>0|0" />
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="10>0|1" />
+                <foliageLod blockShape="10>0|1" />
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="10>0|2" />
+                <foliageLod blockShape="10>0|2" />
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="10>0|3" />
+                <foliageLod blockShape="10>0|3" />
+            </foliageShape>
+        </foliageState>
+        <!-- 0 1 0 0 - ground maple leaves -->
+        <foliageState name="ground maple leaves" numBlocksPerUnit="1.5" >
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="11>0|0" />
+                <foliageLod blockShape="11>0|0" />
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="11>0|1" />
+                <foliageLod blockShape="11>0|1" />
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="11>0|2" />
+                <foliageLod blockShape="11>0|2" />
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="11>0|3" />
+                <foliageLod blockShape="11>0|3" />
+            </foliageShape>
+        </foliageState>
+        <!-- 0 1 0 0 - dry branches -->
+        <foliageState name="dry branches" numBlocksPerUnit="2" width="1" height="1" widthVariance="0.4" heightVariance="0.4" >
+            <foliageShape probability="0.34" >
+                <foliageLod blockShape="12>0|0" />
+                <foliageLod blockShape="12>1|0" />
+            </foliageShape>
+            <foliageShape probability="0.33" >
+                <foliageLod blockShape="12>0|1" />
+                <foliageLod blockShape="12>1|1" />
+            </foliageShape>
+            <foliageShape probability="0.33" >
+                <foliageLod blockShape="12>0|2" />
+                <foliageLod blockShape="12>1|2" />
+            </foliageShape>
+            <foliageShape probability="0.33" >
+                <foliageLod blockShape="12>0|3" />
+                <foliageLod blockShape="12>1|3" />
+            </foliageShape>
+        </foliageState>
+        <!-- 0 1 0 0 - thimbleBerry -->
+        <foliageState name="thimble Berry" numBlocksPerUnit="1.25" >
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="13>0|0" />
+                <foliageLod blockShape="13>1|0" />
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="13>0|1" />
+                <foliageLod blockShape="13>1|1" />
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="13>0|2" />
+                <foliageLod blockShape="13>1|2" />
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="13>0|3" />
+                <foliageLod blockShape="13>1|3" />
+            </foliageShape>
+        </foliageState>
+        <!-- 0 1 0 0 - maiden Fern -->
+        <foliageState name="maiden Fern" numBlocksPerUnit="1.25" >
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="14>0|0" />
+                <foliageLod blockShape="14>1|0" />
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="14>0|1" />
+                <foliageLod blockShape="14>1|1" />
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="14>0|2" />
+                <foliageLod blockShape="14>1|2" />
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="14>0|2" />
+                <foliageLod blockShape="14>1|2" />
+            </foliageShape>
+        </foliageState>
+            <!-- 0 1 0 0 - stinging Nettle -->
+        <foliageState name="stinging Nettle" numBlocksPerUnit="1.8" >
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="15>0|0" />
+                <foliageLod blockShape="15>1|0" />
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="15>0|1" />
+                <foliageLod blockShape="15>1|1" />
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="15>0|2" />
+                <foliageLod blockShape="15>1|2" />
+            </foliageShape>
+            <foliageShape probability="0.25" >
+                <foliageLod blockShape="15>0|3" />
+                <foliageLod blockShape="15>1|3" />
+            </foliageShape>
+        </foliageState>
+        <!--  -->
+    </foliageLayer>
+</foliageType>

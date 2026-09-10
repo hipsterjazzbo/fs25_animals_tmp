@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="cherryPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="textures/cherryBox_diffuse.dds"/>
+    <File fileId="5" filename="textures/cherry_diffuse.dds"/>
+    <File fileId="3" filename="$data/objects/pallets/tomatoesBoxPallet/tomatoesBox_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/tomatoesBoxPallet/tomatoesBox_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="apple_mat" materialId="5">
+      <Texture fileId="5"/>
+    </Material>
+    <Material name="appleBox_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="7" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="cherryPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="appleBoxPallet_main_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="15" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7">
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="16" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+      <TransformGroup name="content" nodeId="17">
+        <Shape name="appleBox01" translation="-0.45331 0.144671 -0.196669" rotation="0 -90 0" shapeId="3" clipDistance="100" nodeId="18" castsShadows="true" receiveShadows="true" skinBindNodeIds="18 21 24 27 30 33 36 39" materialIds="6">
+          <Shape name="apple" shapeId="4" clipDistance="50" nodeId="19" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="appleBox_Tension01" rotation="0 90 0" shapeId="5" nodeId="20" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+        </Shape>
+        <TransformGroup name="appleBox02" translation="-0.452908 0.144671 0.204654" rotation="0 -90 0" clipDistance="100" nodeId="21">
+          <Shape name="appleBox_Tension02" translation="0.000119 0 0.000402" rotation="0 90 0" shapeId="5" nodeId="22" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+          <Shape name="apple" shapeId="4" clipDistance="50" nodeId="23" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="appleBox03" translation="-0.151541 0.144671 0.204654" rotation="0 -90 0" clipDistance="100" nodeId="24">
+          <Shape name="appleBox_Tension03" translation="-0.401322 0 0.000562" rotation="0 90 0" shapeId="5" nodeId="25" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+          <Shape name="apple" shapeId="4" clipDistance="50" nodeId="26" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="appleBox04" translation="-0.151942 0.144671 -0.196669" rotation="0 -90 0" clipDistance="100" nodeId="27">
+          <Shape name="appleBox_Tension04" translation="0.401441 0 0.00016" rotation="0 90 0" shapeId="5" nodeId="28" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+          <Shape name="apple" shapeId="4" clipDistance="50" nodeId="29" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="appleBox05" translation="0.150243 0.144671 0.204654" rotation="0 -90 0" clipDistance="100" nodeId="30">
+          <Shape name="appleBox_Tension05" translation="0.000119 0 -0.000222" rotation="0 90 0" shapeId="5" nodeId="31" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+          <Shape name="apple" shapeId="4" clipDistance="50" nodeId="32" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="appleBox06" translation="0.149842 0.144671 -0.196669" rotation="0 -90 0" clipDistance="100" nodeId="33">
+          <Shape name="appleBox_Tension06" translation="0 0 -0.000623" rotation="0 90 0" shapeId="5" nodeId="34" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+          <Shape name="apple" shapeId="4" clipDistance="50" nodeId="35" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="appleBox07" translation="0.451358 0.144671 0.204654" rotation="0 -90 0" clipDistance="100" nodeId="36">
+          <Shape name="appleBox_Tension07" translation="0.000119 0 0.000618" rotation="0 90 0" shapeId="5" nodeId="37" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+          <Shape name="apple" shapeId="4" clipDistance="50" nodeId="38" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </TransformGroup>
+        <TransformGroup name="appleBox08" translation="0.450957 0.144671 -0.196669" rotation="0 -90 0" clipDistance="100" nodeId="39">
+          <Shape name="appleBox_Tension08" translation="0 0 0.000217" rotation="0 90 0" shapeId="5" nodeId="40" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+          <Shape name="apple" shapeId="4" clipDistance="50" nodeId="41" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="42">
+        <Shape name="floorCollision01" translation="0.3 0 0" shapeId="6" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="43" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+        <Shape name="floorCollision02" translation="-0.3 0 0" shapeId="6" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="44" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+</i3D>

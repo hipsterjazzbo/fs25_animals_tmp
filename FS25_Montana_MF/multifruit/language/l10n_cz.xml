@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors>Jinkou89</translationContributors>
+    <languageVersion>1.0.0.0</languageVersion>
+	
+	<texts>
+	  
+	<text name="fillType_rye" 				text="Žito" />
+	<text name="fillType_soybeanUS"        			text="Americká sója" />
+	<text name="fillType_covercropmix"        		text="Směs meziplodin" />
+	<text name="fillType_roundBaleLavender"        		text="Balík levandule" />
+	<text name="fillType_clover1"        			text="Jetel luční" />
+	<text name="fillType_clover2"        			text="Jetel plazivý" />
+	<text name="fillType_clover_windrow"        		text="Jetel" />
+    	<text name="fillType_alfalfa"       			text="Vojtěška" />
+	<text name="fillType_cloverSilage"        		text="Fermentovaný jetel" />
+   	<text name="fillType_alfalfaSilage"       		text="Fermentovaná vojtěška" />
+   	<text name="fillType_cloverHay"     			text="Jetelové seno" />
+    	<text name="fillType_alfalfaHay"    			text="Vojtěškové seno" />
+    	<text name="fillType_beanstraw" 			text="Luštěninová sláma" />
+    	<text name="fillType_cornStalks"    			text="Kukuřičné stvoly" />
+	<text name="fillType_flaxFiber"        			text="Lněné vlákno" />
+	<text name="fillType_flax"        			text="Len" />
+	<text name="fillType_linseed"        			text="Lněné semínko" />
+	<text name="fillType_millet"        			text="Proso" />
+	<text name="fillType_poppy"        			text="Mák" />
+	<text name="fillType_drypeas"        			text="Suchý hrách" />
+	<text name="fillType_beans"        			text="Fazole pinto" />
+	<text name="fillType_mustard"        			text="Hořčice" />
+	<text name="fillType_lentils"        			text="Čočka" />
+	<text name="fillType_silphie"        			text="Silfium" />
+	<text name="fillType_spelt"        			text="Špalda" />
+	<text name="fillType_triticale"        			text="Žitovec (Tritikále)" />
+	<text name="fillType_soybean2"        			text="Americká sója" />
+	<text name="fillType_tobacco"        			text="Tabák" />
+	<text name="fillType_tobaccoo"        			text="Tabákové listy" />      
+	<text name="fillType_compost" 				text="Kompost" />
+	<text name="fillType_organicWaste" 			text="Organický odpad" />
+	<text name="fillType_grapeA" 				text="Červené hrozny" />
+	<text name="fillType_grapeB" 				text="Bílé hrozny" />
+	<text name="fillType_chickpeas" 			text="Cizrna" />
+	<text name="fillType_buckwheat" 			text="Pohanka" />
+	<text name="shopItem_grapeb_vine" 			text="Réva bílého vína" />
+	<text name="shopItem_hopsVine" 				text="Chmelnice" />
+	<text name="fillType_hemp" 				text="Konopí" />
+	<text name="fillType_hempFiber" 			text="Konopné vlákno" />
+	<text name="fillType_lavender" 				text="Levandule" />
+	<text name="fillType_potatoCut"        			text="Řezané brambory" />
+	<text name="fillType_beetrootCut"        		text="Řezaná červená řepa" />
+	<text name="fillType_carrotCut"        			text="Řezaná mrkev" />
+	<text name="fillType_parsnipCut"        		text="Řezaný pastinák" />  
+	<text name="fillTypeGroup_TMR"        			text="TMR, Fermentovaná vojtěška/jetel" />	  
+	<text name="fillTypeGroup_hays"        			text="Seno, Vojtěškové/jetelové seno" />
+	<text name="fillTypeGroup_grassa"        		text="Tráva, Čerstvá vojtěška/jetel" />
+	<text name="fillTypeGroup_moisture"        		text="Vlhkost: Řezaná okopanina" />
+	<text name="fillTypeGroup_grassHay"        		text="Čerstvá/sušená tráva/vojtěška/jetel" />
+	<text name="fillType_mineralFeed1"        		text="Minerální krmivo / suchý hrách" />
+	<text name="fillTypeGroup_pigForage"        		text="Krmná směs pro prasata" />
+	<text name="fillType_peanut" 				text="Arašídy" />
+	<text name="fillType_miscanthus" 			text="Ozdobnice (Miscanthus)" />
+	<text name="fillType_miscanthusCut" 			text="Řezaná ozdobnice" />
+
+
+		<text name="fillType_maize2" 			text="Suchá kukuřice" />
+		<text name="fillType_soymilk" 			text="Sójové mléko" />
+		<text name="fillType_pasta" 			text="Těstoviny" />
+		<text name="fillType_chips" 			text="Chipsy" />
+		<text name="fillType_ethanol" 			text="Ethanol" />
+		<text name="fillType_cornflour"			text="Kukuřičná mouka" />
+		<text name="fillType_cornOil"			text="Kukuřičný olej" />
+		<text name="fillType_linseedOil"		text="Lněný olej" />
+		<text name="fillType_mustardOil"		text="Hořčičný olej" />
+		<text name="fillType_poppyOil"			text="Makový olej" />
+		<text name="fillType_pizza"			text="Pizza" />
+		<text name="fillType_buckwheatflour"        	text="Pohanková mouka" />
+		<text name="fillType_gramflour"        		text="Cizrnová mouka" />
+		<text name="fillType_milletflour"        	text="Prosné mouka" />
+		<text name="fillType_ryeflour"        		text="Žitná mouka" />
+		<text name="fillType_sorghumflour"        	text="Čiroková mouka" />
+		<text name="fillType_crackedCorn"        	text="Šrotovaná kukuřice" />
+		<text name="fillType_apple"        		text="Jablka" />
+		<text name="fillType_apricot"        		text="Meruňky" />
+		<text name="fillType_cherry"        		text="Třešně" />
+		<text name="fillType_pear"        		text="Hrušky" />
+		<text name="fillType_peach"        		text="Broskve" />
+		<text name="fillType_plum"        		text="Švestky" />
+		<text name="fillType_quince"        		text="Kdoule" />
+		<text name="fillType_cabbage"        		text="Bílé zelí" />
+		<text name="fillType_redCabbage"        	text="Červené zelí" />
+		<text name="fillType_melon"        		text="Meloun" />
+		<text name="fillType_pumpkin"        		text="Dýně" />
+		<text name="fillType_watermelon"        	text="Vodní meloun" />
+		<text name="fillType_cucumber"        		text="Okurka" />
+		<text name="fillType_eggplant"        		text="Lilek" />
+		<text name="fillType_pepper"        		text="Paprika" />
+		<text name="fillType_cauliflower" 		text="Květák" />
+		<text name="fillType_bran"        		text="Otruby" />
+		<text name="fillType_molasses"        		text="Melasa" />
+		<text name="fillType_appleJuice"        	text="Jablečný džus" />
+		<text name="fillType_apricotJuice"        	text="Meruňkový džus" />
+		<text name="fillType_beetrootJuice"        	text="Šťáva z červené řepy" />
+		<text name="fillType_carrotJuice"        	text="Mrkvový džus" />
+		<text name="fillType_cherryJuice"        	text="Třešňový džus" />
+		<text name="fillType_melonJuice"        	text="Melounový džus" />
+		<text name="fillType_multifruitJuice"        	text="Multivitaminový džus" />
+		<text name="fillType_peachJuice"        	text="Broskvový džus" />
+		<text name="fillType_pearJuice"        		text="Hruškový džus" />
+		<text name="fillType_plumJuice"        		text="Švestkový džus" />
+		<text name="fillType_quinceJuice"        	text="Kdoulový džus" />
+		<text name="fillType_strawberryJuice"        	text="Jahodový džus" />
+		<text name="fillType_tomatoJuice"        	text="Rajčatový džus" />
+		<text name="fillType_watermelonJuice"        	text="Džus z vodního melounu" />
+ 		<text name="fillType_cattle" 			text="Skot" />
+		<text name="fillType_pigs" 			text="Prasata" />
+		<text name="fillType_sheepGoat" 		text="Ovce/Kozy" />
+ 		<text name="fillType_beef" 			text="Hovězí maso" />
+		<text name="fillType_pork" 			text="Vepřové maso" />
+		<text name="fillType_poultryMeat" 		text="Drůbeží maso" />
+		<text name="fillType_lamb" 			text="Jehněčí maso" />
+		<text name="fillType_cigar" 			text="Doutník" />
+		<text name="fillType_cigarette" 		text="Cigareta" />
+		<text name="fillType_animalFat" 		text="Živočišný tuk" />
+		<text name="fillType_perfume" 			text="Parfém" />
+		<text name="fillType_soap" 			text="Mýdlo" />
+		<text name="fillType_lavenderOil" 		text="Levandulový olej" />
+		<text name="fillType_bourbonBarrel" 		text="Bourbon" />
+		<text name="fillType_brandyBarrel" 		text="Brandy" />
+		<text name="fillType_ciderBarrel" 		text="Cider" />
+		<text name="fillType_meadBarrel" 		text="Medovina" />
+		<text name="fillType_liqueurBarrel" 		text="Ovocný likér" />
+		<text name="fillType_vodkaBarrel" 		text="Vodka" />
+		<text name="fillType_whiskeyBarrel" 		text="Whisky" />
+		<text name="fillType_rumBarrel" 		text="Rum" />
+		<text name="fillType_peanutflour" 		text="Arašídová mouka" />
+		<text name="fillType_peanutOil" 		text="Arašídový olej" />
+		<text name="fillType_peanutButter" 		text="Arašídové máslo" />
+		<text name="fillType_mayo" 			text="Majonéza" />
+		<text name="fillType_ketchup" 			text="Kečup" />
+		<text name="fillType_hotSauce" 			text="Pálivá omáčka" />
+		<text name="fillType_soySauce" 			text="Sójová omáčka" />
+		<text name="fillType_garlicSauce" 		text="Česneková omáčka" />
+		<text name="fillType_mustardSauce" 		text="Hořčičná omáčka" />
+		<text name="fillType_pickledCucumber" 		text="Nakládané okurky" />
+		<text name="fillType_pickledCabbage" 		text="Nakládané zelí" />
+		<text name="fillType_pickledCauliflower" 	text="Nakládaný květák" />
+		<text name="fillType_beansSoup" 		text="Fazolová polévka" />
+		<text name="fillType_peanutBags" 		text="Sáčky s arašídy" />
+		<text name="fillType_beansBags" 		text="Sáčky s fazolemi" />
+		<text name="fillType_cannedBeans" 		text="Konzervované fazole" />
+		<text name="fillType_tofu" 			text="Tofu" />
+		<text name="fillType_chocomilk" 		text="Čokoládové mléko" />
+		<text name="fillType_oatmilk" 			text="Ovesné mléko" />
+		<text name="fillType_mushroomSoup" 		text="Houbová polévka" />
+		<text name="fillType_beer" 			text="Pivo" />
+		<text name="fillType_wine" 			text="Víno" />
+		<text name="fillType_icecream" 			text="Zmrzlina" />
+		<text name="fillType_sourcream" 		text="Zakysaná smetana" />
+		<text name="fillType_yoghurt" 			text="Jogurt" />
+		<text name="fillType_sunflowerBags" 		text="Sáčky se slunečnicí" />
+		<text name="fillType_pumpkinSeeds" 		text="Sáčky s dýňovými semínky" />
+		<text name="fillType_pumpkinPuree" 		text="Dýňové pyré" />
+		<text name="fillType_eggplantPuree" 		text="Lilkové pyré" />
+		<text name="fillType_popcorn" 			text="Popcorn" />
+		<text name="fillType_cheesePuffs" 		text="Sýrové křupky" />
+		<text name="fillType_peanutPuffs" 		text="Arašídové křupky" />
+		<text name="fillType_tortilla" 			text="Tortilla chipsy" />
+		<text name="fillType_garlicBread" 		text="Česnekový chléb" />
+		<text name="fillType_onionRings" 		text="Cibulové kroužky" />
+		<text name="fillType_pie" 			text="Ovocný koláč" />
+		<text name="fillType_cocoaPowder" 		text="Kakaový prášek" />
+		<text name="fillType_cookingSalt" 		text="Kuchyňská sůl" />
+		<text name="fillType_yeast" 		 	text="Droždí" />
+		<text name="fillType_roulade"                   text="Roláda" />
+		<text name="fillType_strudel"                   text="Závin" />
+		<text name="fillType_milkBread"                 text="Mléčný chléb" />
+		<text name="fillType_potatoBread"               text="Bramborový chléb" />
+		<text name="fillType_sweetBread"                text="Sladké pečivo" />
+		<text name="fillType_bagel"                     text="Bagel" />
+		<text name="fillType_baguette" 			text="Bageta"/>
+		<text name="fillType_hops" 			text="Chmel"/>
+		<text name="fillType_cowFood" 			text="Pelety pro krávy"/>
+		<text name="fillType_hayPellets" 		text="Senné pelety"/>
+		<text name="fillType_strawPellets" 		text="Slaměné pelety"/>
+		<text name="fillType_woodChipsPellets" 		text="Dřevěné pelety"/>
+		<text name="fillType_chocoCake" 		text="Čokoládový dort"/>
+		<text name="fillType_sesame" 			text="Sezam"/>
+		<text name="fillType_sesameOil" 		text="Sezamový olej"/>
+		<text name="fillType_sesameBags" 		text="Sáčky se sezamem"/>
+		<text name="fillType_chickpeasBags" 		text="Sáčky s cizrnou"/>
+		<text name="fillType_lentilsBags" 		text="Sáčky s čočkou"/>
+		<text name="fillType_sesameRolls" 		text="Medovo-sezamové tyčinky"/>
+		<text name="fillType_hummus" 			text="Hummus"/>
+
+	<text name="pigProcessing"        			text="Zpracování vepřového" />
+		<text name="poultryProcessing"        			text="Zpracování drůbeže" />
+		<text name="cattleProcessing"        			text="Zpracování hovězího" />
+		<text name="sheepProcessing"        			text="Zpracování ovcí a koz" />
+		<text name="message_unloadAnimalSuccess" 		text="Zvířata byla úspěšně přesunuta do %s!" />
+        	<text name="message_unloadAnimalConfirmation" 		text="Chcete přesunout %d zvířat (%s) do %s?" />
+        	<text name="button_moveAnimal" 				text="Přesunout do %s" />
+		<text name="message_animalTooYoung" 			text="Toto zvíře je příliš mladé." />
+		<text name="message_animalTooOld" 			text="Toto zvíře je příliš staré." />
+        	<text name="configuration_grapeB" 			text="Bílé hrozny"/>
+        	<text name="configuration_hops" 			text="Chmel"/>
+		<text name="function_fermentingTower" 			text="V tomto zařízení můžete fermentovat trávu, řezanku, vojtěšku nebo jetel." />
+		<text name="function_grainDryer" 			text="V tomto zařízení můžete sušit kukuřici." />
+		<text name="function_hopsVine" 			        text="Réva pro pěstování chmele. Ke sklizni potřebujete multifunkční sklízeč hroznů." />
+		<text name="function_buyingPoint" 			text="Na této stanici můžete nakoupit téměř cokoli jako volně ložené zboží." />
+
+
+	<text name="shopItem_appleOrchard" 		text="Malý jablečný sad" />	
+		<text name="shopItem_apricotOrchard" 		text="Malý meruňkový sad" />	
+		<text name="shopItem_appleTree" 		text="Jabloň" />	
+		<text name="shopItem_apricotTree" 		text="Meruňka" />
+		<text name="shopItem_cherryOrchard" 		text="Malý třešňový sad" />	
+		<text name="shopItem_pearOrchard" 		text="Malý hrušňový sad" />	
+		<text name="shopItem_cherryTree" 		text="Třešeň" />	
+		<text name="shopItem_pearTree" 			text="Hrušeň" />	
+		<text name="shopItem_peachOrchard" 		text="Malý broskvový sad" />	
+		<text name="shopItem_peachTree" 		text="Broskvoň" />		
+		<text name="shopItem_plumOrchard" 		text="Malý švestkový sad" />	
+		<text name="shopItem_plumTree" 			text="Švestka" />		
+		<text name="shopItem_quinceOrchard" 		text="Malý kdoulový sad" />	
+		<text name="shopItem_quinceTree" 		text="Kdouloň" />	
+		<text name="shopItem_grainCrusher" 		text="Drtič zrna" />	
+		<text name="shopItem_juiceFactory" 		text="Lisovna džusů" />
+		<text name="shopItem_slaughterHouse" 		text="Jatky" />
+		<text name="shopItem_tobaccoProd" 		text="Továrna na tabák" />
+		<text name="shopItem_lavenderProd" 		text="Zpracování levandule" />
+		<text name="shopItem_openGarden" 		text="Otevřená zahrada" />
+		<text name="shopItem_distillery" 		text="Lihovar" />
+		<text name="shopItem_preservedFood" 		text="Konzervárna potravin" />
+		<text name="shopItem_foodProd" 			text="Výroba pochutin" />
+		<text name="shopItem_fermentingTower" 		text="Fermentační věž" />
+		<text name="shopItem_wineCellar" 		text="Sklep na pivo a víno" />
+		<text name="shopItem_grainDryer" 		text="Sušička kukuřice" />
+		<text name="shopItem_openGardenFieldCrops" 	text="Otevřená zahrada pro polní plodiny" />
+		<text name="shopItem_industrialGreenhouse" 	text="Průmyslový skleník" />
+		<text name="shopItem_vegetarianProd" 		text="Veganská výroba" />
+		<text name="shopItem_pelletizer" 		text="Peletovač" />
+		<text name="shopItem_buyingPoint1" 		text="Multifunkční nákupní stanice" />
+		<text name="shopItem_buyingPoint2" 		text="Multifunkční nákupní stanice (Sleva)" />
+
+
+		<text name="shopItem_jamProd" 				text="Výroba džemů" />
+		<text name="fillType_edamame" 				text="Edamame (zelená sója)"/>
+		<text name="fillType_taro" 				text="Taro / Kolokázie"/>
+		<text name="fillType_okra" 				text="Okra (Ibišek jedlý)"/>
+		<text name="fillType_mint" 				text="Máta"/>
+		<text name="fillType_greenRye" 				text="Zelené žito" />
+		<text name="fillType_taroCut" 				text="Řezané taro" />
+		<text name="fillType_taroFlour" 			text="Tarová mouka" />
+		<text name="fillType_taroSoup" 				text="Tarová polévka" />
+		<text name="fillType_taroChips" 			text="Tarové chipsy" />
+		<text name="fillType_muffin" 				text="Muffiny" />
+		<text name="fillType_donut" 				text="Donuty" />
+		<text name="fillType_ccm" 				text="Fermentované CCM (Corn Cob Mix)" />
+		<text name="fillType_ccmraw" 				text="CCM (Corn Cob Mix)" />
+		<text name="fillType_cropWindrow" 			text="Řezanka z celých plodin" />
+		<text name="fillType_cropSilage" 			text="Siláž z celých plodin" />
+		<text name="fillType_grassSilage" 			text="Travní siláž" />
+		<text name="fillType_safflower" 			text="Světlice barvířská" />
+		<text name="fillType_appleJam"        			text="Jablečný džem" />
+		<text name="fillType_apricotJam"        		text="Meruňkový džem" />
+		<text name="fillType_cherryJam"        			text="Třešňový džem" />
+		<text name="fillType_grapeJam"        			text="Hroznový džem" />
+		<text name="fillType_melonJam"        			text="Melounový džem" />
+		<text name="fillType_peachJam"        			text="Broskvový džem" />
+		<text name="fillType_pearJam"        			text="Hruškový džem" />
+		<text name="fillType_plumJam"        			text="Švestkový džem" />
+		<text name="fillType_strawberryJam"        		text="Jahodový džem" />
+		<text name="fillType_quinceJam"        			text="Kdoulový džem" />
+		<text name="fillType_safflowerOil" 			text="Olej ze světlice" />
+		<text name="fillType_mintOil" 				text="Mátový esenciální olej"/>
+		<text name="fillType_mintBarrel" 			text="Mátový likér"/>
+		<text name="fillType_jarredOkra"        		text="Zavařená okra" />
+		<text name="fillType_jarredEdamame"        		text="Zavařené edamame" />
+<text name="fillType_duckEgg"                 text="Kachní vejce"/>
+        <text name="shopItem_duckGooseBarn"             text="Maštal pro kachny a husy"/>
+        <text name="shopItem_duckGoosePasture"             text="Pastvina pro kachny a husy"/>
+        <text name="shopItem_rabbitHutch"             text="Králíkárna"/>
+        <text name="function_animalPenDuck"             text="Zde můžete chovat kachny a husy. Krmte je a podestýlejte slámou, abyste získali kachní vejce a hnůj."/>
+        <text name="function_animalPenRabbit"             text="Zde můžete chovat králíky. Krmte je a podestýlejte slámou. Jakmile vyrostou, můžete je se ziskem prodat."/>
+        <text name="fillTypeGroup_clover"                text="Čerstvý jetel" />
+        <text name="fillTypeGroup_fruitVegetables"             text="Ovoce a zelenina" />
+
+    <text name="fillType_goose"                            text="Husa" />
+        <text name="animal_group_goose"                        text="Husy a kachny" />
+        <text name="shopItem_animalGooseGrowthStage0"           text="Housata" />
+        <text name="shopItem_animalGooseGrowthStage1"           text="Husa" />
+        <text name="animal_descriptionGooseProfitGrowthStage0" text="Mladé husy lze vykrmit a poté se ziskem prodat." />
+        <text name="animal_descriptionGooseProfitGrowthStage1" text="Husy lze chovat pro reprodukci a poté se ziskem prodat." />
+        <text name="animal_descriptionGooseFeed"               text="Krmte je stejně jako slepice. Voda je doplňována automaticky v závislosti na typu ustájení." />
+        <text name="animal_descriptionGooseReproduction"       text="Husy dosahují pohlavní dospělosti v 10 měsících. Období rozmnožování trvá jeden měsíc." />
+
+    <text name="fillType_duck"                             text="Kachna" />
+        <text name="shopItem_animalDuckGrowthStage0"           text="Kachňata" />
+        <text name="animal_duckGrowthStage0Description"        text="Kachňata ještě nesnášejí vejce. Jsou vhodná k chovu nebo k prodeji." />    
+        <text name="shopItem_animalDuckGrowthStage1"           text="Kachna" />    
+        <text name="animal_duckGrowthStage1Description"        text="Kachny produkují vejce, která můžete prodat na prodejním místě nebo dále zpracovat ve svých výrobních závodech." />    
+        <text name="animal_poultryFoodDescription"             text="Drůbež potřebuje k produkci obilí a vodu. Poznámka: Některé kurníky jsou vybaveny automatickým napájením, v takovém případě není nutné vodu přidávat." />
+        
+         <text name="fillType_rabbit"                            text="Samice králíka" />
+            <text name="fillType_rabbitMale"                        text="Samec králíka" />
+            <text name="animal_group_rabbits"                       text="Králíci" />
+            <text name="shopItem_animalRabbitGrowthStage0"          text="Králíci (mláďata)" />
+            <text name="shopItem_animalRabbitGrowthStage1"          text="Králíci (tineret)" />
+            <text name="shopItem_animalRabbitGrowthStage2"          text="Králík (samice)" />
+            <text name="shopItem_animalRabbitGrowthStage3"          text="Králík (samec)" />
+            <text name="animal_rabbitGrowthStage0Description"       text="Králičí mláďata jsou nejmladšími zástupci tohoto druhu. Nelze je koupit samostatně, rodí se matce." />
+            <text name="animal_rabbitGrowthStage1Description"       text="Mladý králík může být použit k chovu." />
+            <text name="animal_rabbitGrowthStage2Description"       text="Samice králíka mohou mít potomky nebo mohou být prodány. Potomci jsou mladší a menší než mladí králíci." />
+            <text name="animal_rabbitGrowthStage3Description"       text="Samci králíka." />
+            <text name="animal_rabbitBeddingDescription"            text="Samci jsou určeni pouze k nákupu a prodeji." />
+            <text name="animal_rabbitFoodDescription"               text="Králíci potřebují slámu pro své pohodlí." />
+
+        <text name="geeseProcessing"                     text="Zpracování hus a kachen" />
+        <text name="rabbitProcessing"                     text="Zpracování králíků" />
+        <text name="fillType_leather"              text="Pravá kůže"/>
+        <text name="fillType_leatherJacket"          text="Kožené bundy"/>
+        <text name="fillType_pillow"              text="Polštáře"/>
+        <text name="fillType_furCoat"              text="Kožichy"/>
+        <text name="fillType_feathers"              text="Peří" />
+        <text name="fillType_rabbitMeat"          text="Králičí maso" />
+        <text name="fillType_rabbitFur"          text="Králičí kožešina" />
+        <text name="fillType_poultry2"              text="Drůbež (husy a kachny)" />
+        <text name="fillType_hare"              text="Králíci" />
+        <text name="fillType_poultry"              text="Drůbež (slepice)" />
+
+<text name="fillType_anhydrous"          text="Bezvodý amoniak (NH3)" />
+        <text name="fillType_propane"           text="Propan" />
+<text name="shopItem_bakeryFactory"     text="Pekárna Montana" />    
+        <text name="shopItem_beerFactory"       text="Pivovar Yuengling" />        
+        <text name="shopItem_ethanolFactory"    text="Lihovar Rocky Mountain" />    
+        <text name="shopItem_whiskeyFactory"    text="Palírna whiskey Jack Daniels" />    
+        <text name="shopItem_dairyFactory"      text="Mlékárna Country View" />    
+        <text name="shopItem_wineFactory"       text="Vinařství Duckhorn" />    
+        <text name="shopItem_pizzaFactory"      text="Pizzerie American Pizza Company" />    
+        <text name="shopItem_grainFlourFactory" text="Mlýn na mouku" />    
+        <text name="shopItem_oilFactory"        text="Lisovna oleje" />    
+    <text name="station_grainSiloTrainC1"     text="Obilné silo Great Plains" />    
+        <text name="station_grainSiloTrainC2"     text="Sila Montana Prairie" />    
+        <text name="station_grainSiloTrainC3"     text="Obilný terminál Yellowstone" />    
+        <text name="station_balesStorageC1"       text="Seník Montana Hay Company" />
+        <text name="station_grainSiloStoreC2"     text="Zemědělské potřeby Montana Prairie" />    
+        <text name="station_grainSiloStoreC3"     text="Krmiva a obilí Flathead" />    
+        <text name="station_grainSiloStoreC4"     text="Obilné silo Iron Ridge" />    
+        <text name="station_grainSiloStoreC5"     text="Silo Lone Pine Grain Co." />    
+        <text name="station_grainSiloStoreC6"     text="AgriCore Montana" />
+        <text name="station_productStoreC1"       text="Restaurace" />    
+        <text name="station_productStoreC2"       text="Nákupní zóna Hobson" />    
+        <text name="station_productStoreC3"       text="Smíšené zboží Hobson" />    
+        <text name="station_productStoreC4"       text="Prodejna Dollar General" />    
+        <text name="station_productStoreC5"       text="Čerpací stanice BP" />    
+        <text name="station_productStoreC6"       text="Čerpací stanice Casey's" />    
+        <text name="station_productStoreC7"       text="Restaurace Applebee's" />    
+        <text name="station_productStoreC8"       text="Pivovar Kodiac" />    
+        <text name="station_productStoreC9"       text="Nákupní zóna Moccasin" />    
+        <text name="station_productStoreC10"      text="Smíšené zboží Moccasin" />    
+        <text name="station_productStoreC11"      text="Prodejna Subway" />
+	
+	</texts>
+</l10n>

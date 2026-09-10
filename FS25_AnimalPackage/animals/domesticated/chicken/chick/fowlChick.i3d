@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="s_w_modding" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+    </Asset>
+    <Files>
+        <File fileId="1" filename="chick_diffuse.dds"/>
+        <File fileId="2" filename="chick_normal.dds"/>
+        <File fileId="3" filename="chick_specular.dds"/>
+    </Files>
+    <Materials>
+        <Material name="chick_mat" materialId="4">
+            <Texture fileId="1"/>
+            <Normalmap fileId="2" bumpDepth="0"/>
+            <Glossmap fileId="3"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="fowlChick.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="bones" nodeId="7">
+            <TransformGroup name="Bip01" translation="0 0.0476265 -0.0120569" rotation="-90 -90 0" scale="100 100 100" visibility="false" nodeId="8">
+                <TransformGroup name="Bip01FBXASC032Pelvis" rotation="-89.9998 -90 0" nodeId="9">
+                    <TransformGroup name="Bip01FBXASC032Spine" translation="0.000314938 -3.9351e-05 1.05707e-10" rotation="-0.000165778 7.91614e-05 85.0456" nodeId="10">
+                        <TransformGroup name="Bip01FBXASC032LFBXASC032Thigh" translation="1.20052e-05 0.000317159 0.00021458" rotation="180 -0.000133448 83.8379" nodeId="11">
+                            <TransformGroup name="Bip01FBXASC032LFBXASC032Calf" translation="0.00014454 -1.00971e-10 7.62733e-11" rotation="2.69593e-10 -1.6381e-11 -3.03461" nodeId="12">
+                                <TransformGroup name="Bip01FBXASC032LFBXASC032Foot" translation="0.000245287 8.68966e-11 -7.13716e-11" rotation="5.45657e-05 3.57407e-05 -8.08192" nodeId="13">
+                                    <TransformGroup name="Bip01FBXASC032LFBXASC032Toe0" translation="9.73909e-05 0.000121229 -5.58329e-05" rotation="7.24451e-06 45 90" nodeId="14">
+                                        <TransformGroup name="Bip01FBXASC032LFBXASC032Toe0Nub" translation="0.000117424 9.63135e-12 -5.85238e-11" rotation="1.4227e-06 1.27222e-14 180" scale="-1 -1 -1" nodeId="15"/>
+                                    </TransformGroup>
+                                    <TransformGroup name="Bip01FBXASC032LFBXASC032Toe1" translation="9.73909e-05 0.000126904 4.02267e-05" rotation="0 -40 90" nodeId="16">
+                                        <TransformGroup name="Bip01FBXASC032LFBXASC032Toe1Nub" translation="0.000125253 9.12531e-12 -2.10804e-11" rotation="-1.29324e-06 1.27222e-14 180" scale="-1 -1 -1" nodeId="17"/>
+                                    </TransformGroup>
+                                </TransformGroup>
+                            </TransformGroup>
+                        </TransformGroup>
+                        <TransformGroup name="Bip01FBXASC032RFBXASC032Thigh" translation="1.20051e-05 0.000317161 -0.000214578" rotation="180 -0.000155581 83.8379" nodeId="18">
+                            <TransformGroup name="Bip01FBXASC032RFBXASC032Calf" translation="0.00014454 -2.84703e-12 3.21085e-11" rotation="3.67477e-10 -2.76577e-11 -3.03461" nodeId="19">
+                                <TransformGroup name="Bip01FBXASC032RFBXASC032Foot" translation="0.000245287 8.68968e-11 -4.59123e-11" rotation="0.000358272 7.28602e-05 -8.08192" nodeId="20">
+                                    <TransformGroup name="Bip01FBXASC032RFBXASC032Toe0" translation="9.73909e-05 0.000121229 5.5833e-05" rotation="-4.82967e-06 -45 90" nodeId="21">
+                                        <TransformGroup name="Bip01FBXASC032RFBXASC032Toe0Nub" translation="0.000117424 0 0" nodeId="22"/>
+                                    </TransformGroup>
+                                    <TransformGroup name="Bip01FBXASC032RFBXASC032Toe1" translation="9.73909e-05 0.000126904 -4.02266e-05" rotation="4.45809e-06 40 90" nodeId="23">
+                                        <TransformGroup name="Bip01FBXASC032RFBXASC032Toe1Nub" translation="0.000125253 7.7133e-12 1.30809e-11" rotation="-1.29366e-06 1.27222e-14 -2.4093e-15" nodeId="24"/>
+                                    </TransformGroup>
+                                </TransformGroup>
+                            </TransformGroup>
+                        </TransformGroup>
+                        <TransformGroup name="Bip01FBXASC032Neck" translation="0.000575554 -0.000334852 -1.14119e-09" rotation="-5.68728e-05 0.000117905 -51.2088" nodeId="25">
+                            <TransformGroup name="Bip01FBXASC032Head" translation="0.000280222 5.35702e-11 1.78728e-16" rotation="-1.27869e-05 5.61479e-05 -18.8369" nodeId="26">
+                                <TransformGroup name="Bip01FBXASC032HeadNub" translation="0.000304373 0 0" nodeId="27"/>
+                                <TransformGroup name="Bip01FBXASC032Ponytail1" translation="7.61642e-05 0.000340599 4.09337e-10" rotation="-0.000165794 -0.000158767 92.4808" nodeId="28">
+                                    <TransformGroup name="Bip01FBXASC032Ponytail1Nub" translation="0.0001984 0 0" rotation="-180 -0.000158916 89.9544" nodeId="29"/>
+                                </TransformGroup>
+                            </TransformGroup>
+                            <TransformGroup name="Bip01FBXASC032LFBXASC032Clavicle" translation="-8.2627e-05 -0.000102804 0.0002032" rotation="45.1078 -82.9334 -173.726" nodeId="30">
+                                <TransformGroup name="Bip01FBXASC032LFBXASC032UpperArm" translation="9.77939e-05 4.69809e-11 2.36642e-11" rotation="79.5106 39.1535 7.5895" nodeId="31">
+                                    <TransformGroup name="Bip01FBXASC032LFBXASC032Forearm" translation="0.0004283 -2.79849e-11 4.30403e-11" rotation="1.21202e-06 -2.47295e-06 -16.4592" nodeId="32">
+                                        <TransformGroup name="Bip01FBXASC032LFBXASC032Hand" translation="0.000408666 0 7.45058e-11" rotation="-89.9544 0 0" nodeId="33"/>
+                                    </TransformGroup>
+                                </TransformGroup>
+                            </TransformGroup>
+                            <TransformGroup name="Bip01FBXASC032RFBXASC032Clavicle" translation="-8.26271e-05 -0.000102803 -0.0002032" rotation="-45.1101 82.9334 -173.729" nodeId="34">
+                                <TransformGroup name="Bip01FBXASC032RFBXASC032UpperArm" translation="9.77939e-05 5.39262e-11 -3.87426e-12" rotation="-79.5106 -39.1535 7.5895" nodeId="35">
+                                    <TransformGroup name="Bip01FBXASC032RFBXASC032Forearm" translation="0.0004283 1.61556e-11 -5.66926e-11" rotation="-4.03574e-07 2.76936e-06 -16.4592" nodeId="36">
+                                        <TransformGroup name="Bip01FBXASC032RFBXASC032Hand" translation="0.000408666 3.72529e-11 -7.45058e-11" rotation="89.9544 -0 0" nodeId="37"/>
+                                    </TransformGroup>
+                                </TransformGroup>
+                            </TransformGroup>
+                        </TransformGroup>
+                    </TransformGroup>
+                </TransformGroup>
+            </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="mesh" nodeId="38">
+            <Shape shapeId="1" name="chick" rotation="-90 -0 0" clipDistance="50" nodeId="39" materialIds="4" castsShadows="true" receiveShadows="true" skinBindNodeIds="26 10 12 25 31 32 35 28 9 11 8 13 14 16 15 17 36 18 19 20 21 23 24"/>
+        </TransformGroup>
+    </Scene>
+</i3D>

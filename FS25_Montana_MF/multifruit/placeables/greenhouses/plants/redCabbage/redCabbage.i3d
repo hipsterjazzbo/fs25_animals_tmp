@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="redCabbage.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="redCabbageDCD_diffuse.dds"/>
+    <File fileId="1" filename="redCabbage_diffuse.dds"/>
+    <File fileId="2" filename="redCabbage_normal.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="acmat_1" materialId="5" specularColor="0.458824 1 0">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="redCAB_mat" materialId="6" specularColor="0.0941177 1 0.0941177">
+      <Texture fileId="4"/>
+      <Normalmap fileId="2" bumpDepth="9"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="redCabbage.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="transform" nodeId="9">
+      <Shape name="redCabbageSmall" translation="0 0.0339268 0" rotation="0 6.09649e-11 0" scale="0.35 0.35 0.35" shapeId="1" clipDistance="60" nodeId="10" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="5"/>
+      <Shape name="redCabbageBig" translation="0 0.0339268 0" rotation="0 6.09649e-11 0" scale="0.5 0.5 0.5" shapeId="1" clipDistance="60" nodeId="11" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="5"/>
+      <Shape name="redCabbageDCD" rotation="0 6.09649e-11 0" scale="0.45 0.45 0.45" shapeId="1" clipDistance="60" nodeId="12" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="6"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

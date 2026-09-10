@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<animals>
+	<animal type="RABBIT" groupTitle="$l10n_animal_group_rabbits"  clusterClass="AnimalCluster">
+		<configFilename>animals/domesticated/rabbit/husbandryAnimalsRabbits.xml</configFilename>
+		<navMeshAgent height="0.4" radius="0.2" maxClimbMeters="0.5" maxSlope="20"/>
+		<pasture sqmPerAnimal="2" />
+		
+		<subType subType="RABBIT_FEMALE" fillTypeName="BRC_RABBIT_FEMALE">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="1" image="animals/domesticated/rabbit/store_female_rabbit_bunny.dds" canBeBought="true">
+					<description>$l10n_animal_female_descriptionRabbitYoung</description>
+				</visual>
+				<visual minAge="2" visualAnimalIndex="2" image="animals/domesticated/rabbit/store_female_rabbit_young.dds" canBeBought="true">
+					<description>$l10n_animal_female_serdulo_descriptionRabbitYoung</description>
+				</visual>
+				<visual minAge="5" visualAnimalIndex="3" image="animals/domesticated/rabbit/store_rabbit_female.dds" canBeBought="true">
+					<description>$l10n_animal_female_descriptionRabbitAdult</description>
+				</visual>
+			</visuals>
+			<reproduction minAgeMonth="5" durationMonth="2" minHealthFactor="0.75"/>
+			<buyPrice>
+				<key ageMonth="0" value="15"/>
+				<key ageMonth="5" value="50"/>
+			</buyPrice>
+			<sellPrice>
+				<key ageMonth="0" value="10" />
+				<key ageMonth="5" value="40" />
+			</sellPrice>
+			<transportPrice>
+				<key ageMonth="0" value="2"/>
+			</transportPrice>
+			<input>
+				<food>
+					<key ageMonth="0" value="3"/>
+					<key ageMonth="5" value="10"/>
+				</food>
+				<water>
+					<key ageMonth="0" value="1"/>
+					<key ageMonth="5" value="5"/>
+				</water>
+				<straw>
+					<key ageMonth="0" value="1"/>
+					<key ageMonth="5" value="4"/>
+				</straw>
+			</input>
+			<output>
+				<manure>
+					<key ageMonth="0" value="1"/>
+					<key ageMonth="5" value="4"/>
+				</manure>
+			</output>
+		</subType>
+
+		<subType subType="RABBIT_MALE" fillTypeName="BRC_RABBIT_MALE">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="1" image="animals/domesticated/rabbit/store_male_rabbit_bunny.dds" canBeBought="true">
+					<description>$l10n_animal_male_descriptionRabbitYoung</description>
+				</visual>
+				<visual minAge="2" visualAnimalIndex="2" image="animals/domesticated/rabbit/store_male_rabbit_young.dds" canBeBought="true">
+					<description>$l10n_animal_male_serdulo_descriptionRabbitYoung</description>
+				</visual>
+				<visual minAge="5" visualAnimalIndex="4" image="animals/domesticated/rabbit/store_rabbit_male.dds" canBeBought="true">
+					<description>$l10n_animal_male_descriptionRabbitAdult</description>
+				</visual>
+			</visuals>
+			<reproduction supported="false" minAgeMonth="5"/>
+			<buyPrice>
+				<key ageMonth="0" value="15"/>
+				<key ageMonth="5" value="50"/>
+			</buyPrice>
+			<sellPrice>
+				<key ageMonth="0" value="10" />
+				<key ageMonth="5" value="40" />
+			</sellPrice>
+			<transportPrice>
+				<key ageMonth="0" value="2"/>
+			</transportPrice>
+			<input>
+				<food>
+					<key ageMonth="0" value="3"/>
+					<key ageMonth="5" value="10"/>
+				</food>
+				<water>
+					<key ageMonth="0" value="1"/>
+					<key ageMonth="5" value="5"/>
+				</water>
+				<straw>
+					<key ageMonth="0" value="1"/>
+					<key ageMonth="5" value="4"/>
+				</straw>
+			</input>
+			<output>
+				<manure>
+					<key ageMonth="0" value="1"/>
+					<key ageMonth="5" value="4"/>
+				</manure>
+			</output>
+		</subType>
+	</animal>
+</animals>

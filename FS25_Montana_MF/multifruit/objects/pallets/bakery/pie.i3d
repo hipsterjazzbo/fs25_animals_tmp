@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="pie" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="8" filename="$data/objects/pallets/cakePallet/cakeBox_diffuse.png"/>
+    <File fileId="9" filename="$data/objects/pallets/cakePallet/cakeBox_normal.png"/>
+    <File fileId="10" filename="$data/objects/pallets/cakePallet/cakeBox_specular.png"/>
+    <File fileId="5" filename="textures/cake02_diffuse.png"/>
+    <File fileId="6" filename="textures/cake02_normal.png"/>
+    <File fileId="7" filename="textures/cake02_vmask.png"/>
+    <File fileId="2" filename="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/shared/euroPallet/euroPallet_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/shared/euroPallet/euroPallet_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="a2a:acmat_1" materialId="5">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6" bumpDepth="0"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="cakeBox_mat" materialId="6">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="cakeBox_mat1" materialId="7" alphaBlending="true">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="euroPallet01_mat" materialId="8">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="9" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="pie.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="cakePallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="20" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9">
+      <Shape name="pallet_vis" shapeId="2" nodeId="21" castsShadows="true" receiveShadows="true" materialIds="8">
+        <Shape name="dynamicMountTrigger" translation="0 0.0904753 0" shapeId="3" visibility="false" kinematic="true" trigger="true" collisionFilterGroup="0x8000000" collisionFilterMask="0x8000000" nodeId="22" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+        <TransformGroup name="dischargeNode" translation="0 0.456628 0" nodeId="23"/>
+        <TransformGroup name="content" nodeId="24">
+          <TransformGroup name="cakeBox1" translation="-0.398488 0.309006 -0.202796" nodeId="25">
+            <Shape name="Melon" shapeId="4" clipDistance="150" nodeId="26" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="Apple" shapeId="5" visibility="false" clipDistance="150" nodeId="27" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="cakeBoxBow" translation="0 -9.53674e-09 0" shapeId="6" nodeId="28" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="cakeBoxTransparent" shapeId="7" nodeId="29" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            <Shape name="cakeBox1Tension" translation="0 -0.164275 0" shapeId="8" nodeId="30" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+          </TransformGroup>
+          <TransformGroup name="cakeBox2" translation="0 0.309006 -0.202796" nodeId="31">
+            <Shape name="Melon" shapeId="4" clipDistance="150" nodeId="32" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="Apple" shapeId="5" visibility="false" clipDistance="150" nodeId="33" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="cakeBoxBow" translation="0 -9.53674e-09 0" shapeId="6" nodeId="34" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="cakeBoxTransparent" translation="0 0 -3.55271e-17" shapeId="7" nodeId="35" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            <Shape name="cakeBox2Tension" translation="0 -0.164275 -3.55271e-17" shapeId="8" nodeId="36" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+          </TransformGroup>
+          <TransformGroup name="cakeBox3" translation="0.403 0.309006 -0.202796" nodeId="37">
+            <Shape name="Melon" shapeId="4" clipDistance="150" nodeId="38" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="Apple" shapeId="5" visibility="false" clipDistance="150" nodeId="39" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="cakeBoxBow" translation="0 -9.53674e-09 0" shapeId="6" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="cakeBoxTransparent" translation="0 0 -3.55271e-17" shapeId="7" nodeId="41" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            <Shape name="cakeBox3Tension" translation="0 -0.164275 -3.55271e-17" shapeId="8" nodeId="42" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+          </TransformGroup>
+          <TransformGroup name="cakeBox4" translation="-0.398488 0.309006 0.2" nodeId="43">
+            <Shape name="Melon" shapeId="4" clipDistance="150" nodeId="44" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="Apple" shapeId="5" visibility="false" clipDistance="150" nodeId="45" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="cakeBoxBow" translation="0 -9.53674e-09 0" shapeId="6" nodeId="46" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="cakeBoxTransparent" shapeId="7" nodeId="47" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            <Shape name="cakeBox4Tension" translation="0 -0.164 0" shapeId="8" nodeId="48" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+          </TransformGroup>
+          <TransformGroup name="cakeBox5" translation="0 0.309006 0.2" nodeId="49">
+            <Shape name="Melon" shapeId="4" clipDistance="150" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="Apple" shapeId="5" visibility="false" clipDistance="150" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="cakeBoxBow" translation="0 -9.53674e-09 0" shapeId="6" nodeId="52" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="cakeBoxTransparent" shapeId="7" nodeId="53" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            <Shape name="cakeBox5Tension" translation="0 -0.164 0" shapeId="8" nodeId="54" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+          </TransformGroup>
+          <TransformGroup name="cakeBox6" translation="0.403 0.309006 0.2" nodeId="55">
+            <Shape name="Melon" shapeId="4" clipDistance="150" nodeId="56" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="Apple" shapeId="5" visibility="false" clipDistance="150" nodeId="57" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="cakeBoxBow" translation="0 -9.53674e-09 0" shapeId="6" nodeId="58" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            <Shape name="cakeBoxTransparent" translation="0 -9.53674e-09 0" shapeId="7" nodeId="59" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            <Shape name="cakeBox6Tension" translation="0 -0.164 0" shapeId="8" nodeId="60" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="collisions" clipDistance="10" nodeId="61">
+          <Shape name="floorCollision01" translation="-0.3 0 0" shapeId="9" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="62" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+          <Shape name="floorCollision02" translation="0.3 0 0" shapeId="9" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="63" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+        </TransformGroup>
+      </Shape>
+    </Shape>
+  </Scene>
+
+</i3D>

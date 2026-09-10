@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors>Jinkou89</translationContributors>
+    <languageVersion>1.0.0.0</languageVersion>
+	
+	<texts>
+	  
+	<text name="fillType_rye" 				text="Råg" />
+	<text name="fillType_soybeanUS"        			text="Amerikansk soja" />
+	<text name="fillType_covercropmix"        		text="Fångstgrödeblandning" />
+	<text name="fillType_roundBaleLavender"        		text="Lavendelbal" />
+	<text name="fillType_clover1"        			text="Rödklöver" />
+	<text name="fillType_clover2"        			text="Vitklöver" />
+	<text name="fillType_clover_windrow"        		text="Klöver" />
+    	<text name="fillType_alfalfa"       			text="Luzern" />
+	<text name="fillType_cloverSilage"        		text="Klöverensilage" />
+   	<text name="fillType_alfalfaSilage"       		text="Luzernensilage" />
+   	<text name="fillType_cloverHay"     			text="Klöverhö" />
+    	<text name="fillType_alfalfaHay"    			text="Luzernhö" />
+    	<text name="fillType_beanstraw" 			text="Bönhalm" />
+    	<text name="fillType_cornStalks"    			text="Majsstjälkar" />
+	<text name="fillType_flaxFiber"        			text="Lin-fiber" />
+	<text name="fillType_flax"        			text="Lin" />
+	<text name="fillType_linseed"        			text="Linfrö" />
+	<text name="fillType_millet"        			text="Hirs" />
+	<text name="fillType_poppy"        			text="Vallmo" />
+	<text name="fillType_drypeas"        			text="Torra ärter" />
+	<text name="fillType_beans"        			text="Pintobönor" />
+	<text name="fillType_mustard"        			text="Senap" />
+	<text name="fillType_lentils"        			text="Linser" />
+	<text name="fillType_silphie"        			text="Silfia" />
+	<text name="fillType_spelt"        			text="Dinkel" />
+	<text name="fillType_triticale"        			text="Rågvete" />
+	<text name="fillType_soybean2"        			text="Amerikansk soja" />
+	<text name="fillType_tobacco"        			text="Tobak" />
+	<text name="fillType_tobaccoo"        			text="Tobaksblad" />      
+	<text name="fillType_compost" 				text="Kompost" />
+	<text name="fillType_organicWaste" 			text="Organiskt avfall" />
+	<text name="fillType_grapeA" 				text="Röda druvor" />
+	<text name="fillType_grapeB" 				text="Vita druvor" />
+	<text name="fillType_chickpeas" 			text="Kikärter" />
+	<text name="fillType_buckwheat" 			text="Bovete" />
+	<text name="shopItem_grapeb_vine" 			text="Vit druvplanta" />
+	<text name="shopItem_hopsVine" 				text="Humleplanta" />
+	<text name="fillType_hemp" 				text="Hampa" />
+	<text name="fillType_hempFiber" 			text="Hampafiber" />
+	<text name="fillType_lavender" 				text="Lavendel" />
+	<text name="fillType_potatoCut"        			text="Skuren potatis" />
+	<text name="fillType_beetrootCut"        		text="Skuren rödbeta" />
+	<text name="fillType_carrotCut"        			text="Skuren morot" />
+	<text name="fillType_parsnipCut"        		text="Skuren palsternacka" />  
+	<text name="fillTypeGroup_TMR"        			text="TMR, Ensilage (Luzern/Klöver)" />	  
+	<text name="fillTypeGroup_hays"        			text="Hö, Luzern-/Klöverhö" />
+	<text name="fillTypeGroup_grassa"        		text="Gräs, Färsk luzern/klöver" />
+	<text name="fillTypeGroup_moisture"        		text="Fukt: Skurna rotfrukter" />
+	<text name="fillTypeGroup_grassHay"        		text="Färskt gräs/hö/luzern/klöver" />
+	<text name="fillType_mineralFeed1"        		text="Mineralfoder/Torra ärter" />
+	<text name="fillTypeGroup_pigForage"        		text="Blandfoder till gris" />
+	<text name="fillType_peanut" 				text="Jordnötter" />
+	<text name="fillType_miscanthus" 			text="Elefantgräs" />
+	<text name="fillType_miscanthusCut" 			text="Hackat elefantgräs" />
+
+
+		<text name="fillType_maize2" 			text="Torr majs" />
+		<text name="fillType_soymilk" 			text="Sojamjölk" />
+		<text name="fillType_pasta" 			text="Pasta" />
+		<text name="fillType_chips" 			text="Chips" />
+		<text name="fillType_ethanol" 			text="Etanol" />
+		<text name="fillType_cornflour"			text="Majsmjöl" />
+		<text name="fillType_cornOil"			text="Majsolja" />
+		<text name="fillType_linseedOil"		text="Linfröolja" />
+		<text name="fillType_mustardOil"		text="Senapsolja" />
+		<text name="fillType_poppyOil"			text="Vallmoolja" />
+		<text name="fillType_pizza"			text="Pizza" />
+		<text name="fillType_buckwheatflour"        	text="Bovetemjöl" />
+		<text name="fillType_gramflour"        		text="Kikärtsmjöl" />
+		<text name="fillType_milletflour"        	text="Hirsmjöl" />
+		<text name="fillType_ryeflour"        		text="Rågmjöl" />
+		<text name="fillType_sorghumflour"        	text="Sorghum-mjöl" />
+		<text name="fillType_crackedCorn"        	text="Krossad majs" />
+		<text name="fillType_apple"        		text="Äpplen" />
+		<text name="fillType_apricot"        		text="Aprikoser" />
+		<text name="fillType_cherry"        		text="Körsbär" />
+		<text name="fillType_pear"        		text="Päron" />
+		<text name="fillType_peach"        		text="Persikor" />
+		<text name="fillType_plum"        		text="Plommon" />
+		<text name="fillType_quince"        		text="Kvitten" />
+		<text name="fillType_cabbage"        		text="Vitkål" />
+		<text name="fillType_redCabbage"        	text="Rödkål" />
+		<text name="fillType_melon"        		text="Melon" />
+		<text name="fillType_pumpkin"        		text="Pumpa" />
+		<text name="fillType_watermelon"        	text="Vattenmelon" />
+		<text name="fillType_cucumber"        		text="Gurka" />
+		<text name="fillType_eggplant"        		text="Aubergine" />
+		<text name="fillType_pepper"        		text="Paprika" />
+		<text name="fillType_cauliflower" 		text="Blomkål" />
+		<text name="fillType_bran"        		text="Kli" />
+		<text name="fillType_molasses"        		text="Melass" />
+		<text name="fillType_appleJuice"        	text="Äppeljuice" />
+		<text name="fillType_apricotJuice"        	text="Aprikosjuice" />
+		<text name="fillType_beetrootJuice"        	text="Rödbetsjuice" />
+		<text name="fillType_carrotJuice"        	text="Morotsjuice" />
+		<text name="fillType_cherryJuice"        	text="Körsbärsjuice" />
+		<text name="fillType_melonJuice"        	text="Melonjuice" />
+		<text name="fillType_multifruitJuice"        	text="Multifruktjuice" />
+		<text name="fillType_peachJuice"        	text="Persikojuice" />
+		<text name="fillType_pearJuice"        		text="Päronjuice" />
+		<text name="fillType_plumJuice"        		text="Plommonjuice" />
+		<text name="fillType_quinceJuice"        	text="Kvittenjuice" />
+		<text name="fillType_strawberryJuice"        	text="Jordgubbsjuice" />
+		<text name="fillType_tomatoJuice"        	text="Tomatjuice" />
+		<text name="fillType_watermelonJuice"        	text="Vattenmelonjuice" />
+ 		<text name="fillType_cattle" 			text="Nötkreatur" />
+		<text name="fillType_pigs" 			text="Grisar" />
+		<text name="fillType_sheepGoat" 		text="Får/Getter" />
+ 		<text name="fillType_beef" 			text="Nötkött" />
+		<text name="fillType_pork" 			text="Fläskkött" />
+		<text name="fillType_poultryMeat" 		text="Fågelkött" />
+		<text name="fillType_lamb" 			text="Lammkött" />
+		<text name="fillType_cigar" 			text="Cigarr" />
+		<text name="fillType_cigarette" 		text="Cigarett" />
+		<text name="fillType_animalFat" 		text="Djurfett" />
+		<text name="fillType_perfume" 			text="Parfym" />
+		<text name="fillType_soap" 			text="Tvål" />
+		<text name="fillType_lavenderOil" 		text="Eterisk lavendelolja" />
+		<text name="fillType_bourbonBarrel" 		text="Bourbon" />
+		<text name="fillType_brandyBarrel" 		text="Brandy" />
+		<text name="fillType_ciderBarrel" 		text="Cider" />
+		<text name="fillType_meadBarrel" 		text="Mjöd" />
+		<text name="fillType_liqueurBarrel" 		text="Fruktlikör" />
+		<text name="fillType_vodkaBarrel" 		text="Vodka" />
+		<text name="fillType_whiskeyBarrel" 		text="Whiskey" />
+		<text name="fillType_rumBarrel" 		text="Rom" />
+		<text name="fillType_peanutflour" 		text="Jordnötsmjöl" />
+		<text name="fillType_peanutOil" 		text="Jordnötsolja" />
+		<text name="fillType_peanutButter" 		text="Jordnötssmör" />
+		<text name="fillType_mayo" 			text="Majonnäs" />
+		<text name="fillType_ketchup" 			text="Ketchup" />
+		<text name="fillType_hotSauce" 			text="Stark sås" />
+		<text name="fillType_soySauce" 			text="Soyasås" />
+		<text name="fillType_garlicSauce" 		text="Vitlökssås" />
+		<text name="fillType_mustardSauce" 		text="Senapssås" />
+		<text name="fillType_pickledCucumber" 		text="Inlagd gurka" />
+		<text name="fillType_pickledCabbage" 		text="Surkål" />
+		<text name="fillType_pickledCauliflower" 	text="Inlagd blomkål" />
+		<text name="fillType_beansSoup" 		text="Bönsoppa" />
+		<text name="fillType_peanutBags" 		text="Jordnötspåsar" />
+		<text name="fillType_beansBags" 		text="Bönpåsar" />
+		<text name="fillType_cannedBeans" 		text="Konserverade bönor" />
+		<text name="fillType_tofu" 			text="Tofu" />
+		<text name="fillType_chocomilk" 		text="Chokladmjölk" />
+		<text name="fillType_oatmilk" 			text="Havremjölk" />
+		<text name="fillType_mushroomSoup" 		text="Svampsoppa" />
+		<text name="fillType_beer" 			text="Öl" />
+		<text name="fillType_wine" 			text="Vin" />
+		<text name="fillType_icecream" 			text="Glass" />
+		<text name="fillType_sourcream" 		text="Gräddfil" />
+		<text name="fillType_yoghurt" 			text="Yoghurt" />
+		<text name="fillType_sunflowerBags" 		text="Solsikksfröpåsar" />
+		<text name="fillType_pumpkinSeeds" 		text="Pumpafröpåsar" />
+		<text name="fillType_pumpkinPuree" 		text="Pumpapuré" />
+		<text name="fillType_eggplantPuree" 		text="Auberginepuré" />
+		<text name="fillType_popcorn" 			text="Popcorn" />
+		<text name="fillType_cheesePuffs" 		text="Ostbågar" />
+		<text name="fillType_peanutPuffs" 		text="Jordnötssnacks" />
+		<text name="fillType_tortilla" 			text="Tortillachips" />
+		<text name="fillType_garlicBread" 		text="Vitlöksbröd" />
+		<text name="fillType_onionRings" 		text="Lökringar" />
+		<text name="fillType_pie" 			text="Fruktpaj" />
+		<text name="fillType_cocoaPowder" 		text="Kakaopulver" />
+		<text name="fillType_cookingSalt" 		text="Koksalt" />
+		<text name="fillType_yeast" 		 	text="Jäst" />
+		<text name="fillType_roulade"                   text="Rulltårta" />
+		<text name="fillType_strudel"                   text="Strudel" />
+		<text name="fillType_milkBread"                 text="Mjölkbröd" />
+		<text name="fillType_potatoBread"               text="Potatisbröd" />
+		<text name="fillType_sweetBread"                text="Sötbröd" />
+		<text name="fillType_bagel"                     text="Bagel" />
+		<text name="fillType_baguette" 			text="Baguette"/>
+		<text name="fillType_hops" 			text="Humle"/>
+		<text name="fillType_cowFood" 			text="Kofoder-pellets"/>
+		<text name="fillType_hayPellets" 		text="Höpellets"/>
+		<text name="fillType_strawPellets" 		text="Halmpellets"/>
+		<text name="fillType_woodChipsPellets" 		text="Flispellets"/>
+		<text name="fillType_chocoCake" 		text="Chokladkaka"/>
+		<text name="fillType_sesame" 			text="Sesam"/>
+		<text name="fillType_sesameOil" 		text="Sesamolja"/>
+		<text name="fillType_sesameBags" 		text="Förpackat sesamfrö"/>
+		<text name="fillType_chickpeasBags" 		text="Förpackade kikärter"/>
+		<text name="fillType_lentilsBags" 		text="Förpackade linser"/>
+		<text name="fillType_sesameRolls" 		text="Honung- &amp; sesamsnacks"/>
+		<text name="fillType_hummus" 			text="Hummus"/>
+
+	<text name="pigProcessing"        			text="Grisförädling" />
+		<text name="poultryProcessing"        			text="Fågel-förädling" />
+		<text name="cattleProcessing"        			text="Nötförädling" />
+		<text name="sheepProcessing"        			text="Får- &amp; getförädling" />
+		<text name="message_unloadAnimalSuccess" 		text="Djur flyttades till %s!" />
+        	<text name="message_unloadAnimalConfirmation" 		text="Vill du flytta %d djur (%s) till %s?" />
+        	<text name="button_moveAnimal" 				text="Flytta till %s" />
+		<text name="message_animalTooYoung" 			text="Det här djuret är för ungt." />
+		<text name="message_animalTooOld" 			text="Det här djuret är för gammalt." />
+        	<text name="configuration_grapeB" 			text="Vita druvor"/>
+        	<text name="configuration_hops" 			text="Humle"/>
+		<text name="function_fermentingTower" 			text="Här kan du fermentera gräs, hackelse, luzern eller klöver." />
+		<text name="function_grainDryer" 			text="Här kan du torka din majs." />
+		<text name="function_hopsVine" 			        text="Plantor för humleodling. Du behöver multifrukt-skördaren för att skörda humle." />
+		<text name="function_buyingPoint" 			text="Vid den här stationen kan du köpa nästan allt i lösvikt." />
+
+
+	<text name="shopItem_appleOrchard" 		text="Liten äppelodling" />	
+		<text name="shopItem_apricotOrchard" 		text="Liten aprikosodling" />	
+		<text name="shopItem_appleTree" 		text="Äppelträd" />	
+		<text name="shopItem_apricotTree" 		text="Aprikosträd" />
+		<text name="shopItem_cherryOrchard" 		text="Liten körsbärsodling" />	
+		<text name="shopItem_pearOrchard" 		text="Liten päronodling" />	
+		<text name="shopItem_cherryTree" 		text="Körsbärsträd" />	
+		<text name="shopItem_pearTree" 			text="Päronträd" />	
+		<text name="shopItem_peachOrchard" 		text="Liten persikoodling" />	
+		<text name="shopItem_peachTree" 		text="Persikoträd" />		
+		<text name="shopItem_plumOrchard" 		text="Liten plommonodling" />	
+		<text name="shopItem_plumTree" 			text="Plommonträd" />		
+		<text name="shopItem_quinceOrchard" 		text="Liten kvittenodling" />	
+		<text name="shopItem_quinceTree" 		text="Kvittenträd" />	
+		<text name="shopItem_grainCrusher" 		text="Spannmålskross" />	
+		<text name="shopItem_juiceFactory" 		text="Juicefabrik" />
+		<text name="shopItem_slaughterHouse" 		text="Slakteri" />
+		<text name="shopItem_tobaccoProd" 		text="Tobaksfabrik" />
+		<text name="shopItem_lavenderProd" 		text="Lavendelförädling" />
+		<text name="shopItem_openGarden" 		text="Öppen trädgård" />
+		<text name="shopItem_distillery" 		text="Destilleri" />
+		<text name="shopItem_preservedFood" 		text="Konservfabrik" />
+		<text name="shopItem_foodProd" 			text="Snacksproduktion" />
+		<text name="shopItem_fermentingTower" 		text="Fermenteringstorn" />
+		<text name="shopItem_wineCellar" 		text="Öl- &amp; vinkällare" />
+		<text name="shopItem_grainDryer" 		text="Majstork" />
+		<text name="shopItem_openGardenFieldCrops" 	text="Öppen trädgård för åkergrödor" />
+		<text name="shopItem_industrialGreenhouse" 	text="Industriellt växthus" />
+		<text name="shopItem_vegetarianProd" 		text="Vegansk matproduktion" />
+		<text name="shopItem_pelletizer" 		text="Pelletmaskin" />
+		<text name="shopItem_buyingPoint1" 		text="Inköpsstation Multifrukt" />
+		<text name="shopItem_buyingPoint2" 		text="Inköpsstation Multifrukt (rabatterad)" />
+
+
+		<text name="shopItem_jamProd" 				text="Syltfabrik" />
+		<text name="fillType_edamame" 				text="Edamame (Gröna sojabönor)"/>
+		<text name="fillType_taro" 				text="Taro"/>
+		<text name="fillType_okra" 				text="Okra"/>
+		<text name="fillType_mint" 				text="Mynta"/>
+		<text name="fillType_greenRye" 				text="Grönråg" />
+		<text name="fillType_taroCut" 				text="Hackad taro" />
+		<text name="fillType_taroFlour" 			text="Taromjöl" />
+		<text name="fillType_taroSoup" 				text="Tarosoppa" />
+		<text name="fillType_taroChips" 			text="Tarochips" />
+		<text name="fillType_muffin" 				text="Muffins" />
+		<text name="fillType_donut" 				text="Donuts" />
+		<text name="fillType_ccm" 				text="Majskolvsmix (fermenterad)" />
+		<text name="fillType_ccmraw" 				text="Majskolvsmix" />
+		<text name="fillType_cropWindrow" 			text="Hackelse (helsäd)" />
+		<text name="fillType_cropSilage" 			text="Helsädesensilage" />
+		<text name="fillType_grassSilage" 			text="Gräsensilage" />
+		<text name="fillType_safflower" 			text="Färgtistel" />
+		<text name="fillType_appleJam"        			text="Äppelsylt" />
+		<text name="fillType_apricotJam"        		text="Aprikossylt" />
+		<text name="fillType_cherryJam"        			text="Körsbärssylt" />
+		<text name="fillType_grapeJam"        			text="Druvsylt" />
+		<text name="fillType_melonJam"        			text="Melonsylt" />
+		<text name="fillType_peachJam"        			text="Persikosylt" />
+		<text name="fillType_pearJam"        			text="Päronsylt" />
+		<text name="fillType_plumJam"        			text="Plommonsylt" />
+		<text name="fillType_strawberryJam"        		text="Jordgubbssylt" />
+		<text name="fillType_quinceJam"        			text="Kvittensylt" />
+		<text name="fillType_safflowerOil" 			text="Tistelolja" />
+		<text name="fillType_mintOil" 				text="Eterisk myntolja"/>
+		<text name="fillType_mintBarrel" 			text="Myntalikör"/>
+		<text name="fillType_jarredOkra"        		text="Inlagd okra" />
+		<text name="fillType_jarredEdamame"        		text="Inlagd edamame" />
+
+<text name="fillType_duckEgg"                 text="Ördek Yumurtası"/>
+        <text name="shopItem_duckGooseBarn"             text="Ördek ve Kaz Kümesi"/>
+        <text name="shopItem_duckGoosePasture"             text="Ördek ve Kaz Merası"/>
+        <text name="shopItem_rabbitHutch"             text="Tavşan Kümesi"/>
+        <text name="function_animalPenDuck"             text="Burada ördek ve kaz yetiştirebilirsiniz. Ördek yumurtası ve gübre elde etmek için onları besleyin ve altlık olarak saman kullanın."/>
+        <text name="function_animalPenRabbit"             text="Burada tavşan yetiştirebilirsiniz. Onları besleyin ve saman verin. Büyüdüklerinde onları kârla satabilirsiniz."/>
+        <text name="fillTypeGroup_clover"                text="Taze Yonca" />
+        <text name="fillTypeGroup_fruitVegetables"             text="Meyve ve Sebzeler" />
+
+    <text name="fillType_goose"                            text="Kaz" />
+        <text name="animal_group_goose"                        text="Kazlar ve Ördekler" />
+        <text name="shopItem_animalGooseGrowthStage0"           text="Kaz Yavruları" />
+        <text name="shopItem_animalGooseGrowthStage1"           text="Kaz" />
+        <text name="animal_descriptionGooseProfitGrowthStage0" text="Kaz yavruları besiye çekilebilir ve ardından kârla satılabilir." />
+        <text name="animal_descriptionGooseProfitGrowthStage1" text="Kazlar yetiştirilebilir ve ardından kârla satılabilir." />
+        <text name="animal_descriptionGooseFeed"               text="Onları tavuklar gibi besleyin. Su, kümes tipine bağlı olarak otomatik olarak sağlanır." />
+        <text name="animal_descriptionGooseReproduction"       text="Kazlar 10 ay sonra cinsel olgunluğa erişir. Üreme mevsimi bir ay sürer." />
+
+    <text name="fillType_duck"                             text="Ördek" />
+        <text name="shopItem_animalDuckGrowthStage0"           text="Ördek Yavruları" />
+        <text name="animal_duckGrowthStage0Description"        text="Ördek yavruları henüz yumurtlamazlar. Yetiştirme için uygundurlar veya satılabilirler." />    
+        <text name="shopItem_animalDuckGrowthStage1"           text="Ördek" />    
+        <text name="animal_duckGrowthStage1Description"        text="Ördekler, satış noktalarında satabileceğiniz veya üretim tesislerinizde işleyebileceğiniz yumurtalar sağlar." />    
+        <text name="animal_poultryFoodDescription"             text="Kümes hayvanlarının üretim yapabilmesi için tahıl ve suya ihtiyacı vardır. Not: Bazı kümesler otomatik su kaynağı ile donatılmıştır, bu durumda manuel su eklemeye gerek yoktur." />
+        
+         <text name="fillType_rabbit"                            text="Dişi Tavşan" />
+            <text name="fillType_rabbitMale"                        text="Erkek Tavşan" />
+            <text name="animal_group_rabbits"                       text="Tavşanlar" />
+            <text name="shopItem_animalRabbitGrowthStage0"          text="Tavşanlar (Yavru)" />
+            <text name="shopItem_animalRabbitGrowthStage1"          text="Tavşanlar (Genç)" />
+            <text name="shopItem_animalRabbitGrowthStage2"          text="Tavşan (Dişi)" />
+            <text name="shopItem_animalRabbitGrowthStage3"          text="Tavşan (Erkek)" />
+            <text name="animal_rabbitGrowthStage0Description"       text="Yavru tavşanlar türün en genç üyeleridir. Ayrı olarak satın alınamazlar, bir anaçtan doğarlar." />
+            <text name="animal_rabbitGrowthStage1Description"       text="Genç bir tavşan yetiştirme için kullanılabilir." />
+            <text name="animal_rabbitGrowthStage2Description"       text="Dişi tavşanlar yavru verebilir veya satılabilir. Yavrular, genç tavşanlardan daha küçük ve daha gençtir." />
+            <text name="animal_rabbitGrowthStage3Description"       text="Erkek tavşanlar." />
+            <text name="animal_rabbitBeddingDescription"            text="Erkek tavşanlar sadece satın alınabilir ve satılabilir." />
+            <text name="animal_rabbitFoodDescription"               text="Tavşanların rahat etmesi için samana ihtiyacı vardır." />
+
+        <text name="geeseProcessing"                     text="Kaz ve Ördek İşleme" />
+        <text name="rabbitProcessing"                     text="Tavşan İşleme" />
+        <text name="fillType_leather"              text="Gerçek Deri"/>
+        <text name="fillType_leatherJacket"          text="Deri Ceketler"/>
+        <text name="fillType_pillow"              text="Yastıklar"/>
+        <text name="fillType_furCoat"              text="Kürk Mantolar"/>
+        <text name="fillType_feathers"              text="Tüy" />
+        <text name="fillType_rabbitMeat"          text="Tavşan Eti" />
+        <text name="fillType_rabbitFur"          text="Tavşan Kürkü" />
+        <text name="fillType_poultry2"              text="Kümes Hayvanları (Kaz ve Ördek)" />
+        <text name="fillType_hare"              text="Tavşanlar" />
+        <text name="fillType_poultry"              text="Kümes Hayvanları (Tavuk)" />
+
+<text name="fillType_anhydrous"          text="Susuz Amonyak (NH3)" />
+        <text name="fillType_propane"           text="Propan Gazı" />
+<text name="shopItem_bakeryFactory"     text="Montana Fırını" />    
+        <text name="shopItem_beerFactory"       text="Yuengling Bira Fabrikası" />        
+        <text name="shopItem_ethanolFactory"    text="Rocky Mountain Etanol Tesisi" />    
+        <text name="shopItem_whiskeyFactory"    text="Jack Daniels Viski Damıtımevi" />    
+        <text name="shopItem_dairyFactory"      text="Country View Mandıra" />    
+        <text name="shopItem_wineFactory"       text="Duckhorn Şaraphanesi" />    
+        <text name="shopItem_pizzaFactory"      text="American Pizza Company" />    
+        <text name="shopItem_grainFlourFactory" text="Un Değirmeni" />    
+        <text name="shopItem_oilFactory"        text="Yağ Fabrikası" />    
+    <text name="station_grainSiloTrainC1"     text="Great Plains Tahıl Şirketi" />    
+        <text name="station_grainSiloTrainC2"     text="Montana Prairie Tahıl Siloları" />    
+        <text name="station_grainSiloTrainC3"     text="Yellowstone Tahıl Terminali" />    
+        <text name="station_balesStorageC1"       text="Montana Saman Ticareti" />
+        <text name="station_grainSiloStoreC2"     text="Montana Prairie Tarım Tedarik" />    
+        <text name="station_grainSiloStoreC3"     text="Flathead Yem ve Tahıl" />    
+        <text name="station_grainSiloStoreC4"     text="Iron Ridge Tahıl Silosu" />    
+        <text name="station_grainSiloStoreC5"     text="Lone Pine Tahıl İşletmesi" />    
+        <text name="station_grainSiloStoreC6"     text="AgriCore Montana" />
+        <text name="station_productStoreC1"       text="Restoran" />    
+        <text name="station_productStoreC2"       text="Hobson Alışveriş Merkezi" />    
+        <text name="station_productStoreC3"       text="Hobson Köy Bakkalı" />    
+        <text name="station_productStoreC4"       text="Dollar General Mağazası" />    
+        <text name="station_productStoreC5"       text="BP Akaryakıt İstasyonu" />    
+        <text name="station_productStoreC6"       text="Casey's Akaryakıt İstasyonu" />    
+        <text name="station_productStoreC7"       text="Applebee's Restoran" />    
+        <text name="station_productStoreC8"       text="Kodiac Bira Fabrikası" />    
+        <text name="station_productStoreC9"       text="Moccasin Alışveriş Merkezi" />    
+        <text name="station_productStoreC10"      text="Moccasin Köy Bakkalı" />    
+        <text name="station_productStoreC11"      text="Subway Şubesi" />
+	
+	</texts>
+</l10n>

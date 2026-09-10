@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_wineCellar</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>multifruit/placeables/productionPoints/wineCellar/store_wineCellar.png</image>
+        <price>345000</price>
+		<dailyUpkeep>10</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>JINKOU</brand>
+        <species>PLACEABLE</species>
+        <category>productionPoints</category>
+		<brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+		<canBeSold>true</canBeSold>
+        <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>0</indexBufferMemoryUsage>
+        <textureMemoryUsage>0</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>multifruit/placeables/productionPoints/wineCellar/wineCellar.i3d</filename>
+	<boughtWithFarmland>false</boughtWithFarmland>
+	<canBeDeleted>true</canBeDeleted>
+	<canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testAreaStart01" endNode="testAreaEnd01" />
+        </testAreas>
+        <sounds>
+            <place template="smallImp" />
+        </sounds>
+    </placement>
+	
+    <clearAreas>
+        <clearArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+        <levelAreas>
+            <levelArea startNode="levelAreaStart01" widthNode="levelAreaWidth01" heightNode="levelAreaHeight01"/>
+        </levelAreas>
+		
+		<paintAreas>
+            <paintArea startNode="paintAreaStart01" widthNode="paintAreaWidth01" heightNode="paintAreaHeight01" groundType="asphalt"/>
+        </paintAreas>
+	</leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart01" widthNode="indoorAreaWidth01" heightNode="indoorAreaHeight01" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="unloadTriggerMarker" teleportNode="unloadTriggerMarker" />
+    </hotspots>
+	
+	<triggerMarkers>
+        <triggerMarker node="warningStripes01"/>
+		<triggerMarker node="warningStripes"/>
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true"/>
+		<triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIconWrench.i3d" adjustToGround="true" />
+    </triggerMarkers>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart filename="$data/placeables/mapAS/dairyAS/dairyASProps.i3d" node="0" linkNode="props"/>
+        <dynamicallyLoadedPart filename="$data/effects/chimneySmoke/smokeTrailSubUV.i3d"  node="0" linkNode="smokeBig01" shaderParameterName="colorAlpha" shaderParameter="0.5 0.5 0.5 0.5"/>
+    </dynamicallyLoadedParts>
+´	
+    <productionPoint>
+        <productions>
+			
+	<production id="WINE" name="$l10n_fillType_wine" cyclesPerHour="5" costsPerActiveHour="2">
+                <inputs>
+					<input fillType="GRAPE" amount="150" />					
+					<input fillType="SUGAR" amount="20" />
+					
+					<input fillType="BARREL" amount="10" />
+                </inputs>
+                <outputs>
+                    <output fillType="WINE" amount="100" />
+			<output fillType="ORGANICWASTE" amount="40" />
+                </outputs>
+            </production>
+			
+	<production id="BEER" name="$l10n_fillType_beer" cyclesPerHour="5" costsPerActiveHour="3">
+                <inputs>
+					<input fillType="BARLEY" amount="100" />
+					<input fillType="HOPS" amount="100" />
+					<input fillType="WATER" amount="300" />
+					<input fillType="METAL" amount="5" />
+					<input fillType="YEAST" amount="2" />
+                </inputs>
+                <outputs>
+                    <output fillType="BEER" amount="120" />
+			<output fillType="ORGANICWASTE" amount="40" />
+                </outputs>
+            </production>
+    </productions>
+
+        <storage isExtension="false" fillLevelSyncThreshold="50">
+			
+			<capacity fillType="GRAPE"        		capacity="100000" />
+			<capacity fillType="BARLEY"        		capacity="100000" />
+			<capacity fillType="HOPS"        		capacity="100000" />
+			<capacity fillType="SUGAR"        		capacity="100000" />
+			<capacity fillType="YEAST"        		capacity="100000" />
+			<capacity fillType="WATER"    			capacity="100000" />
+			<capacity fillType="BARREL"        		capacity="100000" />
+			<capacity fillType="METAL"        		capacity="100000" />
+			<capacity fillType="WINE"        		capacity="75000" />
+			<capacity fillType="BEER"        		capacity="75000" />
+			<capacity fillType="ORGANICWASTE"        	capacity="75000" />
+        </storage>
+
+    <sellingStation node="sellingStation" appearsOnStats="false" supportsExtension="false" allowMissions="false" hideFromPricesMenu="true">
+        <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="GRAPE HOPS BARLEY WHEAT SPELT TRITICALE OAT RICE RICELONGGRAIN WATER">
+			<fillTypeConversion ratio="1"   incomingFillType="TRITICALE" 		outgoingFillType="BARLEY" />
+			<fillTypeConversion ratio="1.1" incomingFillType="SPELT" 		outgoingFillType="BARLEY" />
+			<fillTypeConversion ratio="1.1" incomingFillType="WHEAT" 		outgoingFillType="BARLEY" />
+			<fillTypeConversion ratio="1.2" incomingFillType="OAT" 			outgoingFillType="BARLEY" />
+			<fillTypeConversion ratio="1.4" incomingFillType="RICELONGGRAIN" 	outgoingFillType="MAIZE" />
+			<fillTypeConversion ratio="1.6" incomingFillType="RICE" 		outgoingFillType="MAIZE" />
+		</unloadTrigger>
+        <palletTrigger triggerNode="palletTrigger" aiNode="unloadTriggerAINode" fillTypes="BARREL METAL SUGAR YEAST"/>
+    </sellingStation>
+	
+	<palletSpawner>
+            <spawnPlaces>
+                <spawnPlace startNode="palletAreaStart01" endNode="palletAreaEnd01" />
+                <spawnPlace startNode="palletAreaStart02" endNode="palletAreaEnd02" />
+            </spawnPlaces>
+        </palletSpawner>
+	
+	<playerTrigger node="playerTrigger" />
+		
+		
+ </productionPoint>
+			
+
+    <i3dMappings>
+        <i3dMapping id="dairyAS" node="0>" />
+        <i3dMapping id="indoorAreaStart01" node="0>0|0" />
+        <i3dMapping id="indoorAreaWidth01" node="0>0|0|0" />
+        <i3dMapping id="indoorAreaHeight01" node="0>0|0|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>1|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>1|0|0" />
+        <i3dMapping id="realLights" node="0>2|0" />
+        <i3dMapping id="interior" node="0>2|1" />
+        <i3dMapping id="infoTrigger" node="0>3" />
+        <i3dMapping id="sellingStation" node="0>4" />
+        <i3dMapping id="unloadTrigger" node="0>4|0" />
+        <i3dMapping id="palletTrigger" node="0>4|1" />
+        <i3dMapping id="unloadTriggerMarker" node="0>4|2" />
+        <i3dMapping id="unloadTriggerAINode" node="0>4|3" />
+        <i3dMapping id="warningStripes01" node="0>4|4" />
+        <i3dMapping id="props" node="0>5|0" />
+        <i3dMapping id="smokeBig01" node="0>9" />
+		<i3dMapping id="playerTrigger" node="0>9|0" />
+		<i3dMapping id="playerTriggerMarker" node="0>9|1" />
+		<i3dMapping id="palletSpawner" node="0>10" />
+        <i3dMapping id="palletAreaStart01" node="0>10|0" />
+        <i3dMapping id="palletAreaEnd01" node="0>10|0|0" />
+        <i3dMapping id="palletAreaStart02" node="0>10|1" />
+        <i3dMapping id="palletAreaEnd02" node="0>10|1|0" />
+		<i3dMapping id="warningStripes" node="0>10|2" />
+		<i3dMapping id="clearAreaStart01" node="0>11|0" />
+		<i3dMapping id="clearAreaWidth01" node="0>11|0|0" />
+		<i3dMapping id="clearAreaHeight01" node="0>11|0|1" />
+		<i3dMapping id="levelAreaStart01" node="0>12|0" />
+		<i3dMapping id="levelAreaWidth01" node="0>12|0|0" />
+		<i3dMapping id="levelAreaHeight01" node="0>12|0|1" />
+		<i3dMapping id="testAreaStart01" node="0>13|0" />
+        <i3dMapping id="testAreaEnd01" node="0>13|0|0" />
+		<i3dMapping id="paintAreaStart01" node="0>14|0" />
+        <i3dMapping id="paintAreaWidth01" node="0>14|0|0" />
+        <i3dMapping id="paintAreaHeight01" node="0>14|0|1" />
+		
+    </i3dMappings>
+</placeable>

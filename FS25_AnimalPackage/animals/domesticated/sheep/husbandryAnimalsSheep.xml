@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<animalHusbandry>
+	<animals>
+		<!--01SheepDualpurposePolledFemaleGS01 -->
+		<animal radius="0.6" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.755" canEat="false" canDrink="false" canSleep="true" canEatDuringNight="false">
+			<statesTimers idleMin="13333" idleMax="26666" sleepMin="120000" sleepMax="180000" restMin="18000" restMax="30000" grazeMin="11666" grazeMax="23332" chewMin="8000" chewMax="16000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="20000"/>
+			<assets filename="dualpurpose/sheep_F_GS01.i3d" filenamePosed="animals/domesticated/sheep/dualpurpose/static/sheep/FM01.i3d" animation="dualpurpose/sheep_F_GS01.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1">
+				<texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Merino-->
+				<texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Suffolk-->
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/><!--BrownMountain-->
+				<texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/><!--BlackMountain-->
+			</assets>
+			<locomotion filename="animations/sheep_GS01_Locomotion.xml"/>
+			<audio eatSoundGroup="eat" yellSoundGroup="yellSheepBaby" yellMinInterval="8000" yellMaxInterval="20000" yellTimerCrowdScale="0.2"/>
+		</animal>
+		<!-- 02SheepDualpurposePolledFemaleGS02-->
+		<animal radius="0.8" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.755" canEat="false" canDrink="false" canSleep="true" canEatDuringNight="false">
+			<statesTimers idleMin="13333" idleMax="26666" sleepMin="120000" sleepMax="180000" restMin="18000" restMax="30000" grazeMin="11666" grazeMax="23332" chewMin="8000" chewMax="16000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="20000"/>
+			<assets filename="dualpurpose/sheep_F_GS02.i3d" filenamePosed="animals/domesticated/sheep/dualpurpose/static/sheep/F02.i3d" animation="dualpurpose/sheep_F_GS02.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1">
+				<texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Merino-->
+				<texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Suffolk-->
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/><!--BrownMountain-->
+				<texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/><!--BlackMountain-->
+			</assets>
+			<locomotion filename="animations/sheep_GS02_Locomotion.xml"/>
+			<audio eatSoundGroup="eat" yellSoundGroup="yellSheepBaby" yellMinInterval="8000" yellMaxInterval="20000" yellTimerCrowdScale="0.2"/>
+		</animal>
+		<!-- 03SheepDualpurposePolledFemaleGS03-->
+		<animal radius="1" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.755" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true">
+			<statesTimers idleMin="13333" idleMax="26666" sleepMin="120000" sleepMax="180000" restMin="18000" restMax="30000" grazeMin="11666" grazeMax="23332" chewMin="8000" chewMax="16000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="20000"/>
+			<assets filename="dualpurpose/sheep_F_GS03.i3d" filenamePosed="animals/domesticated/sheep/dualpurpose/static/sheep/F03.i3d" animation="dualpurpose/sheep_F_GS03.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1">
+				<texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Merino-->
+				<texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Suffolk-->
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/><!--BrownMountain-->
+				<texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/><!--BlackMountain-->
+			</assets>
+			<locomotion filename="animations/sheep_GS03_Locomotion.xml"/>
+			<audio eatSoundGroup="eat" yellSoundGroup="yellSheep" yellMinInterval="8000" yellMaxInterval="20000" yellTimerCrowdScale="0.2"/>
+		</animal>
+		<!--04SheepDualpurposePolledFemaleGS04-->
+		<animal radius="1.2" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.755" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true">
+			<statesTimers idleMin="13333" idleMax="26666" sleepMin="120000" sleepMax="180000" restMin="18000" restMax="30000" grazeMin="11666" grazeMax="23332" chewMin="8000" chewMax="16000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="20000"/>
+			<assets filename="dualpurpose/sheep_F_GS04.i3d" filenamePosed="animals/domesticated/sheep/dualpurpose/static/sheep/F04.i3d" animation="dualpurpose/sheep_F_GS04.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1">
+				<texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Merino-->
+				<texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Suffolk-->
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/><!--BrownMountain-->
+				<texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/><!--BlackMountain-->
+			</assets>
+			<locomotion filename="animations/sheep_GS04_Locomotion.xml"/>
+			<audio eatSoundGroup="eat" yellSoundGroup="yellSheep" yellMinInterval="8000" yellMaxInterval="20000" yellTimerCrowdScale="0.2"/>
+		</animal>
+		<!--05SheepDualpurposeHornedMaleGS01 -->
+		<animal radius="0.6" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.755" canEat="false" canDrink="false" canSleep="true" canEatDuringNight="false">
+			<statesTimers idleMin="13333" idleMax="26666" sleepMin="120000" sleepMax="180000" restMin="18000" restMax="30000" grazeMin="11666" grazeMax="23332" chewMin="8000" chewMax="16000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="20000"/>
+			<assets filename="dualpurpose/sheep_M_GS01.i3d" filenamePosed="animals/domesticated/sheep/dualpurpose/static/sheep/FM01.i3d" animation="dualpurpose/sheep_M_GS01.i3d" skeletonIndex="0" meshIndex="0>0>1" proxyIndex="1" shaderIndex="0>1">
+				<texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Merino-->
+				<texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Suffolk-->
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/><!--BrownMountain-->
+				<texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/><!--BlackMountain-->
+			</assets>
+			<locomotion filename="animations/sheep_GS01_Locomotion.xml"/>
+			<audio eatSoundGroup="eat" yellSoundGroup="yellSheepBaby" yellMinInterval="8000" yellMaxInterval="20000" yellTimerCrowdScale="0.2"/>
+		</animal>
+		<!-- 06 Sheep Dualpurpose Horned Male GS02 -->
+		<animal radius="0.8" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.755" canEat="false" canDrink="false" canSleep="true" canEatDuringNight="false">
+			<statesTimers idleMin="13333" idleMax="26666" sleepMin="120000" sleepMax="180000" restMin="18000" restMax="30000" grazeMin="11666" grazeMax="23332" chewMin="8000" chewMax="16000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="20000"/>
+			<assets filename="dualpurpose/sheep_M_GS02.i3d" filenamePosed="animals/domesticated/sheep/dualpurpose/static/sheep/M02.i3d" animation="dualpurpose/sheep_M_GS02.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1">
+				<texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Merino-->
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--BrownMountain-->
+				<texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--BlackMountain-->
+			</assets>
+			<locomotion filename="animations/sheep_GS02_Locomotion.xml"/>
+			<audio eatSoundGroup="eat" yellSoundGroup="yellSheepBaby" yellMinInterval="8000" yellMaxInterval="20000" yellTimerCrowdScale="0.2"/>
+		</animal>
+		<!-- 07 Sheep Dualpurpose Horned Male GS03 -->
+		<animal radius="1" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.755" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true">
+			<statesTimers idleMin="13333" idleMax="26666" sleepMin="120000" sleepMax="180000" restMin="18000" restMax="30000" grazeMin="11666" grazeMax="23332" chewMin="8000" chewMax="16000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="20000"/>
+			<assets filename="dualpurpose/sheep_M_GS03.i3d" filenamePosed="animals/domesticated/sheep/dualpurpose/static/sheep/M03.i3d" animation="dualpurpose/sheep_M_GS03.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1">
+				<texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Merino-->
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--BrownMountain-->
+				<texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--BlackMountain-->
+			</assets>
+			<locomotion filename="animations/sheep_GS03_Locomotion.xml"/>
+			<audio eatSoundGroup="eat" yellSoundGroup="yellSheep" yellMinInterval="8000" yellMaxInterval="20000" yellTimerCrowdScale="0.2"/>
+		</animal>
+		<!-- 08 Sheep Dualpurpose Horned Male GS04 -->
+		<animal radius="1.2" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.755" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true">
+			<statesTimers idleMin="13333" idleMax="26666" sleepMin="120000" sleepMax="180000" restMin="18000" restMax="30000" grazeMin="11666" grazeMax="23332" chewMin="8000" chewMax="16000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="20000"/>
+			<assets filename="dualpurpose/sheep_M_GS04.i3d" filenamePosed="animals/domesticated/sheep/dualpurpose/static/sheep/M04.i3d" animation="dualpurpose/sheep_M_GS04.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1">
+				<texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Merino-->
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--BrownMountain-->
+				<texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--BlackMountain-->
+			</assets>
+			<locomotion filename="animations/sheep_GS04_Locomotion.xml"/>
+			<audio eatSoundGroup="eat" yellSoundGroup="yellSheep" yellMinInterval="8000" yellMaxInterval="20000" yellTimerCrowdScale="0.2"/>
+		</animal>
+		<!-- 09 Sheep Dualpurpose Polled Male GS02 -->
+		<animal radius="0.8" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.755" canEat="false" canDrink="false" canSleep="true" canEatDuringNight="false">
+			<statesTimers idleMin="13333" idleMax="26666" sleepMin="120000" sleepMax="180000" restMin="18000" restMax="30000" grazeMin="11666" grazeMax="23332" chewMin="8000" chewMax="16000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="20000"/>
+			<assets filename="dualpurpose/sheep_M_GS02.i3d" filenamePosed="animals/domesticated/sheep/dualpurpose/static/sheep/M02.i3d" animation="dualpurpose/sheep_M_GS02.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1">
+				<texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Suffolk-->
+				<node index="0>0|2|0|0|2|0|0|5" visibility="false"/>
+			</assets>
+			<locomotion filename="animations/sheep_GS02_Locomotion.xml"/>
+			<audio eatSoundGroup="eat" yellSoundGroup="yellSheepBaby" yellMinInterval="8000" yellMaxInterval="20000" yellTimerCrowdScale="0.2"/>
+		</animal>
+		<!-- 10 Sheep Dualpurpose Polled Male GS03 -->
+		<animal radius="1" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.755" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true">
+			<statesTimers idleMin="13333" idleMax="26666" sleepMin="120000" sleepMax="180000" restMin="18000" restMax="30000" grazeMin="11666" grazeMax="23332" chewMin="8000" chewMax="16000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="20000"/>
+			<assets filename="dualpurpose/sheep_M_GS03.i3d" filenamePosed="animals/domesticated/sheep/dualpurpose/static/sheep/M03.i3d" animation="dualpurpose/sheep_M_GS03.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1">
+				<texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Suffolk-->
+				<node index="0>0|2|0|0|2|0|0|5" visibility="false"/>
+			</assets>
+			<locomotion filename="animations/sheep_GS03_Locomotion.xml"/>
+			<audio eatSoundGroup="eat" yellSoundGroup="yellSheep" yellMinInterval="8000" yellMaxInterval="20000" yellTimerCrowdScale="0.2"/>
+		</animal>
+		<!-- 11 Sheep Dualpurpose Polled Male GS04 -->
+		<animal radius="1.2" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.755" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true">
+			<statesTimers idleMin="13333" idleMax="26666" sleepMin="120000" sleepMax="180000" restMin="18000" restMax="30000" grazeMin="11666" grazeMax="23332" chewMin="8000" chewMax="16000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="20000"/>
+			<assets filename="dualpurpose/sheep_M_GS04.i3d" filenamePosed="animals/domesticated/sheep/dualpurpose/static/sheep/M04.i3d" animation="dualpurpose/sheep_M_GS04.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1">
+				<texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Suffolk-->
+
+				<node index="0>0|2|0|0|2|0|0|5" visibility="false"/>
+			</assets>
+			<locomotion filename="animations/sheep_GS04_Locomotion.xml"/>
+			<audio eatSoundGroup="eat" yellSoundGroup="yellSheep" yellMinInterval="8000" yellMaxInterval="20000" yellTimerCrowdScale="0.2"/>
+		</animal>
+		<!-- 12 Goat Dairy Female GS01 -->
+		<animal radius="0.6" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.8" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+            <statesTimers idleMin="6666" idleMax="19998" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="26666" grazeMin="26666" grazeMax="39999" chewMin="9000" chewMax="18000" eatMin="66665" eatMax="93331" wanderMin="1000" wanderMax="2000" />
+            <assets filename="dualpurpose/goats_F_GS01.i3d" filenamePosed="animals/domesticated/sheep/dualpurpose/static/goats/FM01.i3d" animation="dualpurpose/goats_F_GS01.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1">
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+                <texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+            </assets>
+            <locomotion filename="animations/goats_GS01_Locomotion.xml"/>
+            <audio eatSoundGroup="eat" yellSoundGroup="yellGoatling" walkSoundGroup="walk" yellMinInterval="30000" yellMaxInterval="60000" yellTimerCrowdScale="0.4" />
+        </animal>
+		<!-- 13 Goat Dairy Female GS02 -->
+		<animal radius="0.8" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.8" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+            <statesTimers idleMin="6666" idleMax="19998" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="26666" grazeMin="26666" grazeMax="39999" chewMin="9000" chewMax="18000" eatMin="66665" eatMax="93331" wanderMin="1000" wanderMax="2000" />
+            <assets filename="dualpurpose/goats_F_GS02.i3d" filenamePosed="animals/domesticated/sheep/dualpurpose/static/goats/F02.i3d" animation="dualpurpose/goats_F_GS02.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1">
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+                <texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+            </assets>
+            <locomotion filename="animations/goats_GS02_Locomotion.xml"/>
+            <audio eatSoundGroup="eat" yellSoundGroup="yellGoatling" walkSoundGroup="walk" yellMinInterval="30000" yellMaxInterval="60000" yellTimerCrowdScale="0.4" />
+        </animal>
+		<!-- 14 Goat Dairy Female GS03 -->
+		<animal radius="1" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="true" headOffset="0.8" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+            <statesTimers idleMin="6666" idleMax="19998" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="26666" grazeMin="26666" grazeMax="39999" chewMin="9000" chewMax="18000" eatMin="66665" eatMax="93331" wanderMin="1000" wanderMax="2000" />
+            <assets filename="dualpurpose/goats_F_GS03.i3d" filenamePosed="animals/domesticated/sheep/dualpurpose/static/goats/F03.i3d" animation="dualpurpose/goats_F_GS03.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1">
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+                <texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+            </assets>
+            <locomotion filename="animations/goats_GS03_Locomotion.xml"/>
+            <audio eatSoundGroup="eat" yellSoundGroup="yellDoe" walkSoundGroup="walk" yellMinInterval="30000" yellMaxInterval="60000" yellTimerCrowdScale="0.4" />
+        </animal>
+        <!-- 15 Goat Dairy Female GS04 -->
+        <animal radius="1.2" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="true" headOffset="0.8" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+            <statesTimers idleMin="6666" idleMax="19998" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="26666" grazeMin="26666" grazeMax="39999" chewMin="9000" chewMax="18000" eatMin="66665" eatMax="93331" wanderMin="1000" wanderMax="2000" />
+            <assets filename="dualpurpose/goats_F_GS04.i3d" filenamePosed="animals/domesticated/sheep/dualpurpose/static/goats/F04.i3d" animation="dualpurpose/goats_F_GS04.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1">
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+                <texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+            </assets>
+            <locomotion filename="animations/goats_GS04_Locomotion.xml"/>
+            <audio eatSoundGroup="eat" yellSoundGroup="yellDoe" walkSoundGroup="walk" yellMinInterval="30000" yellMaxInterval="60000" yellTimerCrowdScale="0.4" />
+        </animal>
+		<!-- 16 Goat Dairy Male GS01 -->
+		<animal radius="0.6" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.8" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+            <statesTimers idleMin="6666" idleMax="19998" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="26666" grazeMin="26666" grazeMax="39999" chewMin="9000" chewMax="18000" eatMin="66665" eatMax="93331" wanderMin="1000" wanderMax="2000" />
+            <assets filename="dualpurpose/goats_M_GS01.i3d" filenamePosed="animals/domesticated/sheep/dualpurpose/static/goats/FM01.i3d" animation="dualpurpose/goats_M_GS01.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1">
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+                <texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+            </assets>
+            <locomotion filename="animations/goats_GS01_Locomotion.xml"/>
+            <audio eatSoundGroup="eat" yellSoundGroup="yellGoatling" walkSoundGroup="walk" yellMinInterval="30000" yellMaxInterval="60000" yellTimerCrowdScale="0.4" />
+        </animal>
+		<!-- 17 Goat Dairy Male GS02 -->
+		<animal radius="0.8" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.8" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+            <statesTimers idleMin="6666" idleMax="19998" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="26666" grazeMin="26666" grazeMax="39999" chewMin="9000" chewMax="18000" eatMin="66665" eatMax="93331" wanderMin="1000" wanderMax="2000" />
+            <assets filename="dualpurpose/goats_M_GS02.i3d" filenamePosed="animals/domesticated/sheep/dualpurpose/static/goats/M02.i3d" animation="dualpurpose/goats_M_GS02.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1">
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+                <texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+            </assets>
+            <locomotion filename="animations/goats_GS02_Locomotion.xml"/>
+            <audio eatSoundGroup="eat" yellSoundGroup="yellGoatling" walkSoundGroup="walk" yellMinInterval="30000" yellMaxInterval="60000" yellTimerCrowdScale="0.4" />
+        </animal>
+		<!-- 18 Goat Dairy Male GS03 -->
+		<animal radius="1" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="true" headOffset="0.8" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+            <statesTimers idleMin="6666" idleMax="19998" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="26666" grazeMin="26666" grazeMax="39999" chewMin="9000" chewMax="18000" eatMin="66665" eatMax="93331" wanderMin="1000" wanderMax="2000" />
+            <assets filename="dualpurpose/goats_M_GS03.i3d" filenamePosed="animals/domesticated/sheep/dualpurpose/static/goats/M03.i3d" animation="dualpurpose/goats_M_GS03.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1">
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+                <texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+            </assets>
+            <locomotion filename="animations/goats_GS03_Locomotion.xml"/>
+            <audio eatSoundGroup="eat" yellSoundGroup="yellBuck" walkSoundGroup="walk" yellMinInterval="30000" yellMaxInterval="60000" yellTimerCrowdScale="0.4" />
+        </animal>
+        <!-- 19 Goat Dairy Male GS04 -->
+        <animal radius="1.2" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="true" headOffset="0.8" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+            <statesTimers idleMin="6666" idleMax="19998" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="26666" grazeMin="26666" grazeMax="39999" chewMin="9000" chewMax="18000" eatMin="66665" eatMax="93331" wanderMin="1000" wanderMax="2000" />
+            <assets filename="dualpurpose/goats_M_GS04.i3d" filenamePosed="animals/domesticated/sheep/dualpurpose/static/goats/M04.i3d" animation="dualpurpose/goats_M_GS04.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1">
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+                <texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+            </assets>
+            <locomotion filename="animations/goats_GS04_Locomotion.xml"/>
+            <audio eatSoundGroup="eat" yellSoundGroup="yellBuck" walkSoundGroup="walk" yellMinInterval="30000" yellMaxInterval="60000" yellTimerCrowdScale="0.4" />
+        </animal>
+		<!-- 20 Goat Dairy Polled Female GS02 -->
+		<animal radius="0.8" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.8" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+            <statesTimers idleMin="6666" idleMax="19998" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="26666" grazeMin="26666" grazeMax="39999" chewMin="9000" chewMax="18000" eatMin="66665" eatMax="93331" wanderMin="1000" wanderMax="2000" />
+            <assets filename="dualpurpose/goats_F_GS02.i3d" filenamePosed="animals/domesticated/sheep/dualpurpose/static/goats/F02.i3d" animation="dualpurpose/goats_F_GS02.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1">
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+                <texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+				<node index="0>0|0|2|0|0|2|0|0|5" visibility="false"/>
+            </assets>
+            <locomotion filename="animations/goats_GS02_Locomotion.xml"/>
+            <audio eatSoundGroup="eat" yellSoundGroup="yellGoatling" walkSoundGroup="walk" yellMinInterval="30000" yellMaxInterval="60000" yellTimerCrowdScale="0.4" />
+        </animal>
+		<!-- 21 Goat Dairy Polled Female GS03 -->
+		<animal radius="1" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="true" headOffset="0.8" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+            <statesTimers idleMin="6666" idleMax="19998" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="26666" grazeMin="26666" grazeMax="39999" chewMin="9000" chewMax="18000" eatMin="66665" eatMax="93331" wanderMin="1000" wanderMax="2000" />
+            <assets filename="dualpurpose/goats_F_GS03.i3d" filenamePosed="animals/domesticated/sheep/dualpurpose/static/goats/F03.i3d" animation="dualpurpose/goats_F_GS03.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1">
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+                <texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+				<node index="0>0|0|2|0|0|2|0|0|5" visibility="false"/>
+            </assets>
+            <locomotion filename="animations/goats_GS03_Locomotion.xml"/>
+            <audio eatSoundGroup="eat" yellSoundGroup="yellDoe" walkSoundGroup="walk" yellMinInterval="30000" yellMaxInterval="60000" yellTimerCrowdScale="0.4" />
+        </animal>
+        <!-- 22 Goat Dairy Polled Female GS04 -->
+        <animal radius="1.2" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="true" headOffset="0.8" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+            <statesTimers idleMin="6666" idleMax="19998" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="26666" grazeMin="26666" grazeMax="39999" chewMin="9000" chewMax="18000" eatMin="66665" eatMax="93331" wanderMin="1000" wanderMax="2000" />
+            <assets filename="dualpurpose/goats_F_GS04.i3d" filenamePosed="animals/domesticated/sheep/dualpurpose/static/goats/F04.i3d" animation="dualpurpose/goats_F_GS04.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1">
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+                <texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+				<node index="0>0|0|2|0|0|2|0|0|5" visibility="false"/>
+            </assets>
+            <locomotion filename="animations/goats_GS04_Locomotion.xml"/>
+            <audio eatSoundGroup="eat" yellSoundGroup="yellDoe" walkSoundGroup="walk" yellMinInterval="30000" yellMaxInterval="60000" yellTimerCrowdScale="0.4" />
+        </animal>
+		<!-- 23 Goat Dairy Polled Male GS02 -->
+		<animal radius="0.8" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.8" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+            <statesTimers idleMin="6666" idleMax="19998" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="26666" grazeMin="26666" grazeMax="39999" chewMin="9000" chewMax="18000" eatMin="66665" eatMax="93331" wanderMin="1000" wanderMax="2000" />
+            <assets filename="dualpurpose/goats_M_GS02.i3d" filenamePosed="animals/domesticated/sheep/dualpurpose/static/goats/M02.i3d" animation="dualpurpose/goats_M_GS02.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1">
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+                <texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+				<node index="0>0|0|2|0|0|2|0|0|5" visibility="false"/>
+            </assets>
+            <locomotion filename="animations/goats_GS02_Locomotion.xml"/>
+            <audio eatSoundGroup="eat" yellSoundGroup="yellGoatling" walkSoundGroup="walk" yellMinInterval="30000" yellMaxInterval="60000" yellTimerCrowdScale="0.4" />
+        </animal>
+		<!-- 24 Goat Dairy Polled Male GS03 -->
+		<animal radius="1" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="true" headOffset="0.8" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+            <statesTimers idleMin="6666" idleMax="19998" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="26666" grazeMin="26666" grazeMax="39999" chewMin="9000" chewMax="18000" eatMin="66665" eatMax="93331" wanderMin="1000" wanderMax="2000" />
+            <assets filename="dualpurpose/goats_M_GS03.i3d" filenamePosed="animals/domesticated/sheep/dualpurpose/static/goats/M03.i3d" animation="dualpurpose/goats_M_GS03.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1">
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+                <texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+				<node index="0>0|0|2|0|0|2|0|0|5" visibility="false"/>
+            </assets>
+            <locomotion filename="animations/goats_GS03_Locomotion.xml"/>
+            <audio eatSoundGroup="eat" yellSoundGroup="yellBuck" walkSoundGroup="walk" yellMinInterval="30000" yellMaxInterval="60000" yellTimerCrowdScale="0.4" />
+        </animal>
+        <!-- 25 Goat Dairy Polled Male GS04 -->
+        <animal radius="1.2" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="true" headOffset="0.8" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+            <statesTimers idleMin="6666" idleMax="19998" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="26666" grazeMin="26666" grazeMax="39999" chewMin="9000" chewMax="18000" eatMin="66665" eatMax="93331" wanderMin="1000" wanderMax="2000" />
+            <assets filename="dualpurpose/goats_M_GS04.i3d" filenamePosed="animals/domesticated/sheep/dualpurpose/static/goats/M04.i3d" animation="dualpurpose/goats_M_GS04.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1">
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+                <texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/> <!--Thuringian Forestgoat-->
+				<node index="0>0|0|2|0|0|2|0|0|5" visibility="false"/>
+            </assets>
+            <locomotion filename="animations/goats_GS04_Locomotion.xml"/>
+            <audio eatSoundGroup="eat" yellSoundGroup="yellBuck" walkSoundGroup="walk" yellMinInterval="30000" yellMaxInterval="60000" yellTimerCrowdScale="0.4" />
+        </animal>
+	</animals>
+	<sound>
+		<soundGroup name="yellSheep" volume="2.0" indoorVolume="0.3" range="50" innerRange="1">
+			<sample filename="$data/sounds/animals/sheep/anmlSheepYell_01.wav"/>
+			<sample filename="$data/sounds/animals/sheep/anmlSheepYell_02.wav"/>
+			<sample filename="$data/sounds/animals/sheep/anmlSheepYell_03.wav"/>
+			<sample filename="$data/sounds/animals/sheep/anmlSheepYell_04.wav"/>
+		</soundGroup>
+		<soundGroup name="yellSheepBaby" volume="1.0" indoorVolume="0.3" range="50" innerRange="1" pitch="1.2">
+			<sample filename="$data/sounds/animals/sheep/anmlSheepYell_01.wav"/>
+			<sample filename="$data/sounds/animals/sheep/anmlSheepYell_02.wav"/>
+			<sample filename="$data/sounds/animals/sheep/anmlSheepYell_03.wav"/>
+			<sample filename="$data/sounds/animals/sheep/anmlSheepYell_04.wav"/>
+		</soundGroup>
+		<soundGroup name="yellDoe" volume="2.0" indoorVolume="0.3" range="50" innerRange="1">
+			<sample filename="$data/sounds/animals/goat/anmlGoatYell_01.wav"/>
+			<sample filename="$data/sounds/animals/goat/anmlGoatYell_02.wav"/>
+			<sample filename="$data/sounds/animals/goat/anmlGoatYell_03.wav"/>
+			<sample filename="$data/sounds/animals/goat/anmlGoatYell_04.wav"/>
+			<sample filename="$data/sounds/animals/goat/anmlGoatYell_05.wav"/>
+			<sample filename="$data/sounds/animals/goat/anmlGoatYell_06.wav"/>
+			<sample filename="sounds/doe_01.wav" />
+			<sample filename="sounds/doe_02.wav" />
+			<sample filename="sounds/doe_03.wav" />
+			<sample filename="sounds/doe_04.wav" />
+			<sample filename="sounds/doe_05.wav" />
+			<sample filename="sounds/doe_06.wav" />
+			<sample filename="sounds/doe_07.wav" />
+			<sample filename="sounds/doe_08.wav" />
+			<sample filename="sounds/doe_09.wav" />
+			<sample filename="sounds/doe_10.wav" />
+		</soundGroup>
+		<soundGroup name="yellGoatling" volume="1.0" indoorVolume="0.3" range="50" innerRange="1" pitch="1.15">
+			<sample filename="$data/sounds/animals/goat/anmlGoatYell_01.wav"/>
+			<sample filename="$data/sounds/animals/goat/anmlGoatYell_02.wav"/>
+			<sample filename="$data/sounds/animals/goat/anmlGoatYell_03.wav"/>
+			<sample filename="$data/sounds/animals/goat/anmlGoatYell_04.wav"/>
+			<sample filename="$data/sounds/animals/goat/anmlGoatYell_05.wav"/>
+			<sample filename="$data/sounds/animals/goat/anmlGoatYell_06.wav"/>
+			<sample filename="sounds/goatling_01.wav" />
+			<sample filename="sounds/goatling_02.wav" />
+			<sample filename="sounds/goatling_03.wav" />
+			<sample filename="sounds/goatling_04.wav" />
+			<sample filename="sounds/goatling_05.wav" />
+		</soundGroup>
+		<soundGroup name="yellBuck" volume="2.0" indoorVolume="0.3" range="50" innerRange="1">
+            <sample filename="sounds/buck_01.wav" />
+			<sample filename="sounds/buck_02.wav" />
+		</soundGroup>
+		<soundGroup name="eat" volume="0.1" indoorVolume="0.01" range="20" innerRange="1">
+			<sample filename="$data/sounds/animals/cow/anmlCowEatLoop_01.wav"/>
+		</soundGroup>
+		<soundGroup name="walk" volume="1" indoorVolume="0.1" range="12" innerRange="0.4">
+			<sample filename="$data/sounds/animals/pig/anmlPigStep_01.wav"/>
+			<sample filename="$data/sounds/animals/pig/anmlPigStep_02.wav"/>
+			<sample filename="$data/sounds/animals/pig/anmlPigStep_03.wav"/>
+			<sample filename="$data/sounds/animals/pig/anmlPigStep_04.wav"/>
+			<sample filename="$data/sounds/animals/pig/anmlPigStep_05.wav"/>
+			<sample filename="$data/sounds/animals/pig/anmlPigStep_06.wav"/>
+		</soundGroup>
+	</sound>
+</animalHusbandry>

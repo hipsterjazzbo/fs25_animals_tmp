@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    
+	<storeData>
+        <name>$l10n_shopItem_jamProd</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>$data/placeables/brandless/productionPointsGeneric/bakery/store_bakery.dds</image>
+        <price>215000</price>
+	<dailyUpkeep>50</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>JINKOU</brand>
+        <species>PLACEABLE</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+        <vertexBufferMemoryUsage>742912</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>180736</indexBufferMemoryUsage>
+        <textureMemoryUsage>10420224</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>multifruit/placeables/productionPoints/jamProd/jamProd.i3d</filename>
+		<boughtWithFarmland>false</boughtWithFarmland>
+		<canBeDeleted>true</canBeDeleted>
+		<canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true">
+        <testAreas>
+            <testArea startNode="testAreaStart01" endNode="testAreaEnd01"/>
+        </testAreas>
+        <sounds>
+            <place template="smallImp"/>
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelAreaStart01" widthNode="levelAreaWidth01" heightNode="levelAreaHeight01" groundType="asphalt"/>
+        </levelAreas>
+        <paintAreas>
+            <paintArea startNode="paintAreaStart01" widthNode="paintAreaWidth01" heightNode="paintAreaHeight01" groundType="asphalt"/>
+        </paintAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart01" widthNode="indoorAreaWidth01" heightNode="indoorAreaHeight01"/>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01"/>
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01"/>
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="unloadTriggerMarker" teleportNode="playerTriggerMarker"/>
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="warningStripes01"/>
+        <triggerMarker node="warningStripes02"/>
+        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIconWrench.i3d" adjustToGround="true"/>
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true"/>
+    </triggerMarkers>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart filename="$data/placeables/brandless/productionPointsGeneric/bakery/bakeryProps.i3d" node="0" linkNode="props"/>
+    </dynamicallyLoadedParts>
+
+    <lights>
+        <group weatherRequiredFlags="NIGHT"/>
+        <lightShape node="interior" groupIndex="1"/>
+        <lightShape node="lampsInside" groupIndex="1"/>
+        <lightShape node="lampsOutside" groupIndex="1"/>
+    </lights>
+
+    <productionPoint>
+        <productions sharedThroughputCapacity="false">
+
+            	<production id="APPLE_JAM" name="$l10n_fillType_appleJam" cyclesPerHour="4" costsPerActiveHour="4">
+                <inputs>
+                	<input fillType="APPLE" amount="180" />
+			<input fillType="SUGAR" amount="30" />
+                </inputs>
+                <outputs>
+                    <output fillType="APPLE_JAM" amount="100" />
+                </outputs>
+            </production>
+
+            	<production id="QUINCE_JAM" name="$l10n_fillType_quinceJam" cyclesPerHour="4" costsPerActiveHour="4">
+                <inputs>
+                	<input fillType="QUINCE" amount="180" />
+			<input fillType="SUGAR" amount="35" />
+                </inputs>
+                <outputs>
+                    <output fillType="QUINCE_JAM" amount="110" />
+                </outputs>
+            </production>
+
+            	<production id="STRAWBERRY_JAM" name="$l10n_fillType_strawberryJam" cyclesPerHour="4" costsPerActiveHour="4">
+                <inputs>
+                	<input fillType="STRAWBERRY" amount="180" />
+			<input fillType="SUGAR" amount="25" />
+                </inputs>
+                <outputs>
+                    <output fillType="STRAWBERRY_JAM" amount="140" />
+                </outputs>
+            </production>
+
+            	<production id="CHERRY_JAM" name="$l10n_fillType_cherryJam" cyclesPerHour="4" costsPerActiveHour="4">
+                <inputs>
+                	<input fillType="CHERRY" amount="180" />
+			<input fillType="SUGAR" amount="35" />
+                </inputs>
+                <outputs>
+                    <output fillType="CHERRY_JAM" amount="105" />
+                </outputs>
+            </production>
+
+            	<production id="GRAPE_JAM" name="$l10n_fillType_grapeJam" cyclesPerHour="4" costsPerActiveHour="4">
+                <inputs>
+                	<input fillType="GRAPE" amount="180" />
+			<input fillType="SUGAR" amount="40" />
+                </inputs>
+                <outputs>
+                    <output fillType="GRAPE_JAM" amount="140" />
+                </outputs>
+            </production>
+
+            	<production id="MELON_JAM" name="$l10n_fillType_melonJam" cyclesPerHour="4" costsPerActiveHour="4">
+                <inputs>
+                	<input fillType="MELON" amount="180" />
+			<input fillType="SUGAR" amount="20" />
+                </inputs>
+                <outputs>
+                    <output fillType="MELON_JAM" amount="140" />
+                </outputs>
+            </production>
+
+            	<production id="PEACH_JAM" name="$l10n_fillType_peachJam" cyclesPerHour="4" costsPerActiveHour="4">
+                <inputs>
+                	<input fillType="PEACH" amount="180" />
+			<input fillType="SUGAR" amount="30" />
+                </inputs>
+                <outputs>
+                    <output fillType="PEACH_JAM" amount="105" />
+                </outputs>
+            </production>
+
+            	<production id="PEAR_JAM" name="$l10n_fillType_pearJam" cyclesPerHour="4" costsPerActiveHour="4">
+                <inputs>
+                	<input fillType="PEAR" amount="180" />
+			<input fillType="SUGAR" amount="30" />
+                </inputs>
+                <outputs>
+                    <output fillType="PEAR_JAM" amount="105" />
+                </outputs>
+            </production>
+
+            	<production id="APRICOT_JAM" name="$l10n_fillType_apricotJam" cyclesPerHour="4" costsPerActiveHour="6">
+                <inputs>
+                	<input fillType="APRICOT" amount="180" />
+			<input fillType="SUGAR" amount="38" />
+                </inputs>
+                <outputs>
+                    <output fillType="APRICOT_JAM" amount="90" />
+                </outputs>
+            </production>
+
+            	<production id="PLUM_JAM" name="$l10n_fillType_plumJam" cyclesPerHour="4" costsPerActiveHour="5">
+                <inputs>
+                	<input fillType="PLUM" amount="180" />
+			<input fillType="SUGAR" amount="32" />
+                </inputs>
+                <outputs>
+                    <output fillType="PLUM_JAM" amount="100" />
+                </outputs>
+            </production>
+
+        </productions>
+        
+	<storage isExtension="false" fillLevelSyncThreshold="50">
+		<capacity fillType="APPLE" capacity="100000"/>
+		<capacity fillType="QUINCE" capacity="100000"/>
+		<capacity fillType="CHERRY" capacity="100000"/>
+		<capacity fillType="GRAPE" capacity="100000"/>
+		<capacity fillType="MELON" capacity="100000"/>
+		<capacity fillType="PEACH" capacity="100000"/>
+		<capacity fillType="PEAR" capacity="100000"/>
+		<capacity fillType="APRICOT" capacity="100000"/>
+		<capacity fillType="STRAWBERRY" capacity="100000"/>
+		<capacity fillType="PLUM" capacity="100000"/>
+		<capacity fillType="SUGAR" capacity="50000"/>
+
+		<capacity fillType="APPLE_JAM" capacity="15000"/>
+		<capacity fillType="APRICOT_JAM" capacity="15000"/>
+		<capacity fillType="CHERRY_JAM" capacity="15000"/>
+		<capacity fillType="GRAPE_JAM" capacity="15000"/>
+		<capacity fillType="MELON_JAM" capacity="15000"/>
+		<capacity fillType="PEACH_JAM" capacity="15000"/>
+		<capacity fillType="PEAR_JAM" capacity="15000"/>
+		<capacity fillType="PLUM_JAM" capacity="15000"/>
+		<capacity fillType="STRAWBERRY_JAM" capacity="15000"/>
+		<capacity fillType="QUINCE_JAM" capacity="15000"/>
+        </storage>
+
+        <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="false">
+            <unloadTrigger exactFillRootNode="exactFillRootNode" aiNode="unloadTriggerAINode" fillTypes="APRICOT PLUM QUINCE APPLE CHERRY GRAPE MELON PEACH PEAR STRAWBERRY SUGAR">
+		</unloadTrigger>
+            <palletTrigger triggerNode="palletTrigger" aiNode="unloadTriggerAINode" fillTypes="APRICOT PLUM QUINCE APPLE CHERRY GRAPE MELON PEACH PEAR STRAWBERRY SUGAR">
+		</palletTrigger>
+        </sellingStation>
+
+        <palletSpawner>
+            <spawnPlaces>
+                <spawnPlace startNode="palletAreaStart01" endNode="palletAreaEnd01"/>
+                <spawnPlace startNode="palletAreaStart02" endNode="palletAreaEnd02"/>
+            </spawnPlaces>
+        </palletSpawner>
+
+        <playerTrigger node="playerTrigger"/>
+
+        <sounds>
+            <idle template="bakeryIdle" linkNode="0>"/>
+            <active template="bakeryWork" linkNode="0>"/>
+        </sounds>
+
+    </productionPoint>
+
+    <i3dMappings>
+        <i3dMapping id="bakery" node="0>"/>
+        <i3dMapping id="clearAreaStart01" node="0>0|0"/>
+        <i3dMapping id="clearAreaWidth01" node="0>0|0|0"/>
+        <i3dMapping id="clearAreaHeight01" node="0>0|0|1"/>
+        <i3dMapping id="levelAreaStart01" node="0>1|0"/>
+        <i3dMapping id="levelAreaWidth01" node="0>1|0|0"/>
+        <i3dMapping id="levelAreaHeight01" node="0>1|0|1"/>
+        <i3dMapping id="paintAreaStart01" node="0>2|0"/>
+        <i3dMapping id="paintAreaWidth01" node="0>2|0|0"/>
+        <i3dMapping id="paintAreaHeight01" node="0>2|0|1"/>
+        <i3dMapping id="indoorAreaStart01" node="0>3|0"/>
+        <i3dMapping id="indoorAreaWidth01" node="0>3|0|0"/>
+        <i3dMapping id="indoorAreaHeight01" node="0>3|0|1"/>
+        <i3dMapping id="testAreaStart01" node="0>4|0"/>
+        <i3dMapping id="testAreaEnd01" node="0>4|0|0"/>
+        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>5|0"/>
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>5|0|0"/>
+        <i3dMapping id="interior" node="0>6|1|0"/>
+        <i3dMapping id="lampsInside" node="0>6|1|1"/>
+        <i3dMapping id="lampsOutside" node="0>6|1|2"/>
+        <i3dMapping id="infoTrigger" node="0>7"/>
+        <i3dMapping id="sellingStation" node="0>8"/>
+        <i3dMapping id="exactFillRootNode" node="0>8|0"/>
+        <i3dMapping id="palletTrigger" node="0>8|1"/>
+        <i3dMapping id="unloadTriggerMarker" node="0>8|2"/>
+        <i3dMapping id="unloadTriggerAINode" node="0>8|3"/>
+        <i3dMapping id="playerTrigger" node="0>9|0"/>
+        <i3dMapping id="playerTriggerMarker" node="0>9|1"/>
+        <i3dMapping id="warningStripes01" node="0>10|0"/>
+        <i3dMapping id="warningStripes02" node="0>10|1"/>
+        <i3dMapping id="palletSpawner" node="0>11"/>
+        <i3dMapping id="palletAreaStart01" node="0>11|0"/>
+        <i3dMapping id="palletAreaEnd01" node="0>11|0|0"/>
+        <i3dMapping id="palletAreaStart02" node="0>11|1"/>
+        <i3dMapping id="palletAreaEnd02" node="0>11|1|0"/>
+        <i3dMapping id="vis" node="0>12|0|0"/>
+        <i3dMapping id="props" node="0>12|1"/>
+    </i3dMappings>
+</placeable>

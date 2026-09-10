@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="weighingStation.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="shared/weightDisplay_diffuse.dds"/>
+    <File fileId="3" filename="shared/weightDisplay_normal.dds"/>
+    <File fileId="4" filename="shared/weightDisplay_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="display_mat" materialId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="38" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="weighingStation.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="weighingStation" nodeId="10">
+      <Shape name="weighingTrigger" translation="0 2.71957 0" rotation="-0 90 0" shapeId="1" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x10000" nodeId="43" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="38"/>
+      <Shape name="display" translation="-17.3 5.14211 0.0104065" rotation="-6.41423e-13 90 0" scale="1.5 1.5 1.5" shapeId="2" static="true" clipDistance="400" nodeId="12" castsShadows="true" receiveShadows="true" materialIds="5">
+        <TransformGroup name="displayNode1" translation="0.534133 -0.113683 0.0291209" rotation="1.78269e-05 -0.033 -9.62969e-06" nodeId="13"/>
+      </Shape>
+      <Shape name="display" translation="17.3 5.14213 0.0104065" rotation="6.2483e-05 -90 0" scale="1.5 1.5 1.5" shapeId="2" static="true" clipDistance="400" nodeId="14" castsShadows="true" receiveShadows="true" materialIds="5">
+        <TransformGroup name="displayNode2" translation="0.534133 -0.113683 0.0291209" rotation="1.78269e-05 -0.033 -9.62969e-06" nodeId="15"/>
+      </Shape>
+      <Shape name="display" translation="7.6 2.74642 -4.25639" rotation="-7.64787e-05 -0 6.24828e-05" scale="1.5 1.5 1.5" shapeId="2" static="true" clipDistance="400" nodeId="16" castsShadows="true" receiveShadows="true" materialIds="5">
+        <TransformGroup name="displayNode3" translation="0.534133 -0.113683 0.0291209" rotation="1.78269e-05 -0.033 -9.62969e-06" nodeId="17"/>
+      </Shape>
+      <Shape name="display" translation="-7.6 2.72234 4.23979" rotation="180 -1.86693e-05 -180" scale="1.5 1.5 1.5" shapeId="2" static="true" clipDistance="400" nodeId="18" castsShadows="true" receiveShadows="true" materialIds="5">
+        <TransformGroup name="displayNode4" translation="0.534133 -0.113683 0.0291209" rotation="1.78269e-05 -0.033 -9.62969e-06" nodeId="19"/>
+      </Shape>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

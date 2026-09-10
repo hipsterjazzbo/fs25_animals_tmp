@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<collectibles achievementName="CollectiblesUS" hotspotThreshold="100">
+    <group name="default" dialogText="$l10n_collectible_mapUS_all" dialogIntroText="$l10n_collectible_mapUS_intro" />
+
+    </collectibles>

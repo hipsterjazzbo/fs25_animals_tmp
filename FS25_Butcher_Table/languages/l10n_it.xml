@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <texts>
+        <!--Nuovi nomi e funzioni degli articoli del negozio-->
+        <text name="shopItem_Butcher" text="Macellaio"/>
+        <text name="shopItem_ButcherTable" text="Tavolo Da Macellaio"/>
+        <text name="function_Butcher" text="Nella macelleria, mucche, maiali, pecore/capre, cavalli e polli possono essere trasformati in carne di manzo, maiale, pecora/capre, pollo e carne di cavallo.."/>
+        <!--New fillTypes-->
+        <text name="fillType_beef" text="Bestiame" />
+		<text name="fillType_pork" text="Maiale" />
+		<text name="fillType_poultry" text="Pollame" />
+		
+		<text name="fillType_sheepGoat" text="Pecora/Capra" />
+        
+        <text name="fillType_Jambon" text="Prosciutto" />			
+		<text name="fillType_Meat" text="Manzo" />			
+		<text name="fillType_poultryMeat" text="Carne Di Pollo" />
+		<text name="fillType_horseMeat" text="Carne Di Cavallo" />
+		<text name="fillType_sheepGoatMeat" text="Carne ovina/caprina" />
+        <!--New Pallets-->    
+        <text name="storeItem_MeatPallet" text="Pallet di manzo"/>
+        <text name="storeItem_JambonPallet" text="Pallet di prosciutto di maiale"/>
+        <text name="storeItem_sheepMeatPallet" text="Pallet di carne ovina/caprina"/>
+        <text name="storeItem_chickenMeatPallet" text="Pallet di pollo"/>
+		 <text name="storeItem_horseMeatPallet" text="Palett di carne di cavallo"/>
+		
+		<text name="message_unloadAnimalSuccess" text="Gli animali sono stati trasferiti con successo a %s!" />
+        <text name="message_unloadAnimalConfirmation" text="Vuoi spostare %d animali (%s) in %s?" />
+        <text name="button_moveAnimal" text="Spostati in %s" />
+
+         <!-- Richiesto solo quando un'età minima è impostata come parte dell'input </animal> -->
+        <text name="message_animalTooYoung" text="Questo animale è troppo giovane." />
+
+        <!-- Richiesto solo quando un'età massima è impostata come parte dell'input </animal> -->
+        <text name="message_animalTooOld" text="Questo animale è troppo vecchio." />
+
+<!-- Cambio Muri -->
+<text name="storeItem_rustic_walls" text="Muri Rustici." />
+<text name="storeItem_plastered_walls" text="Muri Con Intonaco." />
+<text name="storeItem_title_Walls" text="Tipo Muro." />
+
+<!-- Processing -->
+<text name="Cow_Processing" text="Elaborazione Bestiame." />
+<text name="Chicken_Processing" text="Elaborazione Pollame." />
+<text name="Sheep/Goat_Processing" text="Elaborazione Ovini/Caprini." />
+<text name="Horse_Processing" text="Elaborazione Equini." />
+<text name="Pig_Processing" text="Elaborazione Suini." />
+
+
+    </texts>
+</l10n>

@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<animalHusbandry>
+	<animals>
+		<!-- 1 StraighEared Sow Stage 1 -->
+		<animal radius="1.2" handleThreats="false" threatAwarenessRadius="0.5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.4" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="false">
+			<statesTimers idleMin="6000" idleMax="12000" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="15000" grazeMin="18000" grazeMax="30000" chewMin="15000" chewMax="20000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="25000"/>
+			<assets filename="straightEars/Pigs_F_GS01_type01.i3d" filenamePosed="animals/domesticated/pig/straightEars/static/FM01.i3d" animation="straightEars/Pigs_F_GS01_type01.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1">
+				<texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Landrace-->
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Landrace-->
+				<texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Pietrain-->
+				<texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Pietrain-->
+				<texture multi="true" tileUIndex="0" tileVIndex="2" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Berkshire-->
+				<texture multi="true" tileUIndex="1" tileVIndex="2" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Berkshire-->
+			</assets>
+			<locomotion filename="animations/pigs_GS01_Locomotion.xml"/>
+			<audio eatSoundGroup="eat" yellSoundGroup="yellPiglet" yellMinInterval="8000" yellMaxInterval="20000" yellTimerCrowdScale="0.2"/>
+		</animal>
+		<!-- 2 StraighEared Sow Stage 2 -->
+		<animal radius="1.4" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.8" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+			<statesTimers idleMin="6666" idleMax="19998" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="26666" grazeMin="26666" grazeMax="39999" chewMin="9000" chewMax="18000" eatMin="66665" eatMax="93331" wanderMin="1000" wanderMax="2000"/>
+			<assets filename="straightEars/Pigs_F_GS02_type01.i3d" filenamePosed="animals/domesticated/pig/straightEars/static/FM02.i3d" animation="straightEars/Pigs_F_GS02_type01.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1" headIndex="0>0|0|0|0|2|0">
+				<texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Landrace-->
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Landrace-->
+				<texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Pietrain-->
+				<texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Pietrain-->
+				<texture multi="true" tileUIndex="0" tileVIndex="2" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Berkshire-->
+				<texture multi="true" tileUIndex="1" tileVIndex="2" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Berkshire-->
+			</assets>
+			<locomotion filename="animations/pigs_GS02_Locomotion.xml"/>
+			<audio eatSoundGroup="eat" yellSoundGroup="yellPiglet" walkSoundGroup="walk" yellMinInterval="30000" yellMaxInterval="60000" yellTimerCrowdScale="0.4"/>
+		</animal>
+		<!-- 3 StraighEared Sow Stage 3 -->
+		<animal radius="1.6" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="true" headOffset="0.8" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+			<statesTimers idleMin="6666" idleMax="19998" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="26666" grazeMin="26666" grazeMax="39999" chewMin="9000" chewMax="18000" eatMin="66665" eatMax="93331" wanderMin="1000" wanderMax="2000"/>
+			<assets filename="straightEars/Pigs_F_GS03_type01.i3d" filenamePosed="animals/domesticated/pig/straightEars/static/F03.i3d" animation="straightEars/Pigs_F_GS03_type01.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1" headIndex="0>0|0|0|0|2|0">
+				<texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Landrace-->
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Landrace-->
+				<texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Pietrain-->
+				<texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Pietrain-->
+				<texture multi="true" tileUIndex="0" tileVIndex="2" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Berkshire-->
+				<texture multi="true" tileUIndex="1" tileVIndex="2" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Berkshire-->
+			</assets>
+			<locomotion filename="animations/pigs_GS03_Locomotion.xml"/>
+			<audio eatSoundGroup="eat" yellSoundGroup="yell" walkSoundGroup="walk" yellMinInterval="30000" yellMaxInterval="60000" yellTimerCrowdScale="0.4"/>
+		</animal>
+		<!-- 4 StraighEared Sow Stage 4 -->
+		<animal radius="1.8" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="true" headOffset="0.8" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+			<statesTimers idleMin="6666" idleMax="19998" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="26666" grazeMin="26666" grazeMax="39999" chewMin="9000" chewMax="18000" eatMin="66665" eatMax="93331" wanderMin="1000" wanderMax="2000"/>
+			<assets filename="straightEars/Pigs_F_GS04_type01.i3d" filenamePosed="animals/domesticated/pig/straightEars/static/F04.i3d" animation="straightEars/Pigs_F_GS04_type01.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1" headIndex="0>0|0|0|0|2|0">
+				<texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Landrace-->
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Landrace-->
+				<texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Pietrain-->
+				<texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Pietrain-->
+				<texture multi="true" tileUIndex="0" tileVIndex="2" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Berkshire-->
+				<texture multi="true" tileUIndex="1" tileVIndex="2" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Berkshire-->
+			</assets>
+			<locomotion filename="animations/pigs_GS04_Locomotion.xml"/>
+			<audio eatSoundGroup="eat" yellSoundGroup="yell" walkSoundGroup="walk" yellMinInterval="30000" yellMaxInterval="60000" yellTimerCrowdScale="0.4"/>
+		</animal>
+		<!-- 5 StraighEared Boar Stage 1 -->
+		<animal radius="1.2" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.8" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+			<statesTimers idleMin="6666" idleMax="19998" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="26666" grazeMin="26666" grazeMax="39999" chewMin="9000" chewMax="18000" eatMin="66665" eatMax="93331" wanderMin="1000" wanderMax="2000"/>
+			<assets filename="straightEars/Pigs_M_GS01_type01.i3d" filenamePosed="animals/domesticated/pig/straightEars/static/FM01.i3d" animation="straightEars/Pigs_M_GS01_type01.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1" headIndex="0>0|0|0|0|2|0">
+				<texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Landrace-->
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Landrace-->
+				<texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Pietrain-->
+				<texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Pietrain-->
+				<texture multi="true" tileUIndex="0" tileVIndex="2" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Berkshire-->
+				<texture multi="true" tileUIndex="1" tileVIndex="2" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Berkshire-->
+			</assets>
+			<locomotion filename="animations/pigs_GS01_Locomotion.xml"/>
+			<audio eatSoundGroup="eat" yellSoundGroup="yellPiglet" walkSoundGroup="walk" yellMinInterval="30000" yellMaxInterval="60000" yellTimerCrowdScale="0.4"/>
+		</animal>
+		<!-- 6 StraighEared Boar Stage 2 -->
+		<animal radius="1.4" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.8" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+			<statesTimers idleMin="6666" idleMax="19998" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="26666" grazeMin="26666" grazeMax="39999" chewMin="9000" chewMax="18000" eatMin="66665" eatMax="93331" wanderMin="1000" wanderMax="2000"/>
+			<assets filename="straightEars/Pigs_M_GS02_type01.i3d" filenamePosed="animals/domesticated/pig/straightEars/static/FM02.i3d" animation="straightEars/Pigs_M_GS02_type01.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1" headIndex="0>0|0|0|0|2|0">
+				<texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Landrace-->
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Landrace-->
+				<texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Pietrain-->
+				<texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Pietrain-->
+				<texture multi="true" tileUIndex="0" tileVIndex="2" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Berkshire-->
+				<texture multi="true" tileUIndex="1" tileVIndex="2" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Berkshire-->
+			</assets>
+			<locomotion filename="animations/pigs_GS02_Locomotion.xml"/>
+			<audio eatSoundGroup="eat" yellSoundGroup="yellPiglet" walkSoundGroup="walk" yellMinInterval="30000" yellMaxInterval="60000" yellTimerCrowdScale="0.4"/>
+		</animal>
+		<!-- 7 StraighEared Boar Stage 3 -->
+		<animal radius="1.6" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="true" headOffset="0.8" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+			<statesTimers idleMin="6666" idleMax="19998" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="26666" grazeMin="26666" grazeMax="39999" chewMin="9000" chewMax="18000" eatMin="66665" eatMax="93331" wanderMin="1000" wanderMax="2000"/>
+			<assets filename="straightEars/Pigs_M_GS03_type01.i3d" filenamePosed="animals/domesticated/pig/straightEars/static/M03.i3d" animation="straightEars/Pigs_M_GS03_type01.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1" headIndex="0>0|0|0|0|2|0">
+				<texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Landrace-->
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Landrace-->
+				<texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Pietrain-->
+				<texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Pietrain-->
+				<texture multi="true" tileUIndex="0" tileVIndex="2" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Berkshire-->
+				<texture multi="true" tileUIndex="1" tileVIndex="2" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Berkshire-->
+			</assets>
+			<locomotion filename="animations/pigs_GS03_Locomotion.xml"/>
+			<audio eatSoundGroup="eat" yellSoundGroup="yell" walkSoundGroup="walk" yellMinInterval="30000" yellMaxInterval="60000" yellTimerCrowdScale="0.4"/>
+		</animal>
+		<!-- 8 StraighEared Boar Stage 4 -->
+		<animal radius="1.8" handleThreats="false" threatAwarenessRadius="5" slowingDistance="0.5" allowMilkingPlace="true" headOffset="0.8" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+			<statesTimers idleMin="6666" idleMax="19998" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="26666" grazeMin="26666" grazeMax="39999" chewMin="9000" chewMax="18000" eatMin="66665" eatMax="93331" wanderMin="1000" wanderMax="2000"/>
+			<assets filename="straightEars/Pigs_M_GS04_type01.i3d" filenamePosed="animals/domesticated/pig/straightEars/static/M04.i3d" animation="straightEars/Pigs_M_GS04_type01.i3d" skeletonIndex="0" meshIndex="0>1" proxyIndex="1" shaderIndex="0>1" headIndex="0>0|0|0|0|2|0">
+				<texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Landrace-->
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Landrace-->
+				<texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Pietrain-->
+				<texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Pietrain-->
+				<texture multi="true" tileUIndex="0" tileVIndex="2" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Berkshire-->
+				<texture multi="true" tileUIndex="1" tileVIndex="2" numTilesU="2" numTilesV="4" mirrorV="false"/> <!--Berkshire-->
+			</assets>
+			<locomotion filename="animations/pigs_GS04_Locomotion.xml"/>
+			<audio eatSoundGroup="eat" yellSoundGroup="yell" walkSoundGroup="walk" yellMinInterval="30000" yellMaxInterval="60000" yellTimerCrowdScale="0.4"/>
+		</animal>
+	</animals>
+	<sound>
+		<soundGroup name="yell" volume="2" indoorVolume="0.3" range="50" innerRange="1">
+			<sample filename="$data/sounds/animals/pig/anmlPigYell_01.wav"/>
+			<sample filename="$data/sounds/animals/pig/anmlPigYell_02.wav"/>
+			<sample filename="$data/sounds/animals/pig/anmlPigYell_03.wav"/>
+			<sample filename="$data/sounds/animals/pig/anmlPigYell_04.wav"/>
+			<sample filename="$data/sounds/animals/pig/anmlPigYell_05.wav"/>
+			<sample filename="$data/sounds/animals/pig/anmlPigYell_06.wav"/>
+			<sample filename="$data/sounds/animals/pig/anmlPigYell_07.wav"/>
+			<sample filename="$data/sounds/animals/pig/anmlPigYell_08.wav"/>
+		</soundGroup>
+		<soundGroup name="yellPiglet" volume="2" indoorVolume="0.3" range="50" innerRange="1">
+			<sample filename="$data/sounds/animals/pig/anmlPigYell_01.wav"/>
+			<sample filename="$data/sounds/animals/pig/anmlPigYell_02.wav"/>
+			<sample filename="$data/sounds/animals/pig/anmlPigYell_03.wav"/>
+			<sample filename="$data/sounds/animals/pig/anmlPigYell_04.wav"/>
+			<sample filename="$data/sounds/animals/pig/anmlPigYell_05.wav"/>
+			<sample filename="$data/sounds/animals/pig/anmlPigYell_06.wav"/>
+			<sample filename="$data/sounds/animals/pig/anmlPigYell_07.wav"/>
+			<sample filename="$data/sounds/animals/pig/anmlPigYell_08.wav"/>
+		</soundGroup>
+		<soundGroup name="eat" volume="0.15" indoorVolume="0.01" range="20" innerRange="1">
+			<sample filename="$data/sounds/animals/pig/anmlPigEatLoop_01.wav"/>
+		</soundGroup>
+		<soundGroup name="walk" volume="0.85" indoorVolume="0.1" range="12" innerRange="0.4">
+			<sample filename="$data/sounds/animals/pig/anmlPigStep_01.wav"/>
+			<sample filename="$data/sounds/animals/pig/anmlPigStep_02.wav"/>
+			<sample filename="$data/sounds/animals/pig/anmlPigStep_03.wav"/>
+			<sample filename="$data/sounds/animals/pig/anmlPigStep_04.wav"/>
+			<sample filename="$data/sounds/animals/pig/anmlPigStep_05.wav"/>
+			<sample filename="$data/sounds/animals/pig/anmlPigStep_06.wav"/>
+		</soundGroup>
+	</sound>
+</animalHusbandry>

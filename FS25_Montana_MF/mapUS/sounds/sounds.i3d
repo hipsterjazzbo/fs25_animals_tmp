@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="sounds.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/sounds/animals/frog/anmlFrogQuack_01.wav"/>
+    <File fileId="5" filename="$data/sounds/animals/frog/anmlFrogQuack_02.wav"/>
+    <File fileId="6" filename="$data/sounds/animals/frog/anmlFrogQuack_03.wav"/>
+    <File fileId="7" filename="$data/sounds/animals/frog/anmlFrogQuack_04.wav"/>
+    <File fileId="30" filename="$data/sounds/maps/mapEU/Lakes/ambBiglLakeEU_01.wav"/>
+    <File fileId="29" filename="$data/sounds/maps/mapEU/Lakes/ambSmallLakeEU_01.wav"/>
+    <File fileId="1" filename="$data/sounds/maps/mapUS/details/anmlDuckYell_01.wav"/>
+    <File fileId="2" filename="$data/sounds/maps/mapUS/details/anmlDuckYell_02.wav"/>
+    <File fileId="3" filename="$data/sounds/maps/mapUS/details/anmlDuckYell_03.wav"/>
+    <File fileId="8" filename="$data/sounds/maps/mapUS/details/anmlSeagullYell_01.wav"/>
+    <File fileId="9" filename="$data/sounds/maps/mapUS/details/anmlSeagullYell_02.wav"/>
+    <File fileId="78" filename="$data/sounds/maps/mapUS/details/partyMusicIndoor.wav"/>
+    <File fileId="102" filename="$data/sounds/maps/mapUS/fauna/hawk/ambHawkScreamsFreedomField_01.wav"/>
+    <File fileId="103" filename="$data/sounds/maps/mapUS/fauna/hawk/ambHawkScreamsFreedomField_02.wav"/>
+    <File fileId="104" filename="$data/sounds/maps/mapUS/fauna/hawk/ambHawkScreamsFreedomField_03.wav"/>
+    <File fileId="85" filename="$data/sounds/maps/shared/ambDockPlatformCreaking_01.wav"/>
+    <File fileId="86" filename="$data/sounds/maps/shared/ambDockPlatformCreaking_02.wav"/>
+    <File fileId="87" filename="$data/sounds/maps/shared/ambDockPlatformCreaking_03.wav"/>
+    <File fileId="88" filename="$data/sounds/maps/shared/ambDockPlatformCreaking_04.wav"/>
+    <File fileId="89" filename="$data/sounds/maps/shared/ambDockPlatformCreaking_05.wav"/>
+    <File fileId="90" filename="$data/sounds/maps/shared/ambDockPlatformCreaking_06.wav"/>
+    <File fileId="91" filename="$data/sounds/maps/shared/ambDockPlatformCreaking_07.wav"/>
+    <File fileId="92" filename="$data/sounds/maps/shared/ambDockPlatformCreaking_08.wav"/>
+    <File fileId="93" filename="$data/sounds/maps/shared/ambDockPlatformCreaking_09.wav"/>
+    <File fileId="94" filename="$data/sounds/maps/shared/ambDockPlatformMetalCreaking_01.wav"/>
+    <File fileId="95" filename="$data/sounds/maps/shared/ambDockPlatformMetalCreaking_02.wav"/>
+    <File fileId="96" filename="$data/sounds/maps/shared/ambDockPlatformMetalCreaking_03.wav"/>
+    <File fileId="100" filename="$data/sounds/maps/shared/ambDocksWaveImpactRain_Lp_01.wav"/>
+    <File fileId="101" filename="$data/sounds/maps/shared/ambDocksWaveImpactRain_Lp_02.wav"/>
+    <File fileId="97" filename="$data/sounds/maps/shared/ambDocksWaveImpactSun_Lp_01.wav"/>
+    <File fileId="98" filename="$data/sounds/maps/shared/ambDocksWaveImpactSun_Lp_02.wav"/>
+    <File fileId="99" filename="$data/sounds/maps/shared/ambDocksWaveImpactSun_Lp_03.wav"/>
+    <File fileId="60" filename="$data/sounds/maps/shared/ambIndustryFan_01.wav"/>
+    <File fileId="61" filename="$data/sounds/maps/shared/ambIndustryFan_02.wav"/>
+    <File fileId="55" filename="$data/sounds/maps/shared/details/anmlDogBarkDistant_01.wav"/>
+    <File fileId="56" filename="$data/sounds/maps/shared/details/anmlDogBarkDistant_02.wav"/>
+    <File fileId="57" filename="$data/sounds/maps/shared/details/anmlDogBarkDistant_03.wav"/>
+    <File fileId="58" filename="$data/sounds/maps/shared/details/anmlDogBarkDistant_04.wav"/>
+    <File fileId="59" filename="$data/sounds/maps/shared/details/anmlDogBarkDistant_05.wav"/>
+    <File fileId="62" filename="$data/sounds/maps/shared/industrial/doors/objMetalDoorIndustrialDistant50m_01.wav"/>
+    <File fileId="63" filename="$data/sounds/maps/shared/industrial/doors/objMetalDoorIndustrialDistant50m_02.wav"/>
+    <File fileId="64" filename="$data/sounds/maps/shared/industrial/doors/objMetalDoorIndustrialDistant50m_03.wav"/>
+    <File fileId="65" filename="$data/sounds/maps/shared/industrial/doors/objMetalDoorIndustrialDistant50m_04.wav"/>
+    <File fileId="66" filename="$data/sounds/maps/shared/industrial/doors/objMetalDoorIndustrialDistant50m_05.wav"/>
+    <File fileId="67" filename="$data/sounds/maps/shared/industrial/metalPats/objMetalDragIndustrialDistant50m_01.wav"/>
+    <File fileId="68" filename="$data/sounds/maps/shared/industrial/metalPats/objMetalDragIndustrialDistant50m_02.wav"/>
+    <File fileId="69" filename="$data/sounds/maps/shared/industrial/metalPats/objMetalDragIndustrialDistant50m_03.wav"/>
+    <File fileId="70" filename="$data/sounds/maps/shared/industrial/metalPats/objMetalDragIndustrialDistant50m_04.wav"/>
+    <File fileId="71" filename="$data/sounds/maps/shared/industrial/metalPats/objMetalSlideIndustrialDistant50m_01.wav"/>
+    <File fileId="72" filename="$data/sounds/maps/shared/industrial/metalPats/objMetalSlideIndustrialDistant50m_02.wav"/>
+    <File fileId="73" filename="$data/sounds/maps/shared/industrial/metalPats/objMetalSlideIndustrialDistant50m_03.wav"/>
+    <File fileId="74" filename="$data/sounds/maps/shared/industrial/metalPats/objMetalSlideIndustrialDistant50m_04.wav"/>
+    <File fileId="79" filename="$data/sounds/maps/shared/objBoatCargoMediumHonkLong_01.wav"/>
+    <File fileId="80" filename="$data/sounds/maps/shared/objBoatCargoMediumHonkLong_02.wav"/>
+    <File fileId="81" filename="$data/sounds/maps/shared/objBoatCargoMediumHonkShort_01.wav"/>
+    <File fileId="82" filename="$data/sounds/maps/shared/objBoatCargoMediumHonkShort_02.wav"/>
+    <File fileId="83" filename="$data/sounds/maps/shared/objBoatOldMediumHonkLong_01.wav"/>
+    <File fileId="84" filename="$data/sounds/maps/shared/objBoatOldMediumHonkLong_02.wav"/>
+    <File fileId="25" filename="$data/sounds/maps/shared/objDebrisMovement_01.wav"/>
+    <File fileId="26" filename="$data/sounds/maps/shared/objDebrisMovement_02.wav"/>
+    <File fileId="27" filename="$data/sounds/maps/shared/objDebrisMovement_03.wav"/>
+    <File fileId="28" filename="$data/sounds/maps/shared/objDebrisMovement_04.wav"/>
+    <File fileId="21" filename="$data/sounds/maps/shared/objDebrisMovement_05.wav"/>
+    <File fileId="22" filename="$data/sounds/maps/shared/objDebrisMovement_06.wav"/>
+    <File fileId="23" filename="$data/sounds/maps/shared/objDebrisMovement_07.wav"/>
+    <File fileId="24" filename="$data/sounds/maps/shared/objDebrisMovement_08.wav"/>
+    <File fileId="54" filename="$data/sounds/maps/shared/village/ambAlarmOld_01.wav"/>
+    <File fileId="16" filename="$data/sounds/maps/shared/village/ambCatMeowType01_01.wav"/>
+    <File fileId="17" filename="$data/sounds/maps/shared/village/ambCatMeowType01_02.wav"/>
+    <File fileId="19" filename="$data/sounds/maps/shared/village/ambCatMeowType02_01.wav"/>
+    <File fileId="20" filename="$data/sounds/maps/shared/village/ambCatMeowType02_02.wav"/>
+    <File fileId="10" filename="$data/sounds/maps/shared/village/ambCatMeowType03_01.wav"/>
+    <File fileId="11" filename="$data/sounds/maps/shared/village/ambCatMeowType03_02.wav"/>
+    <File fileId="12" filename="$data/sounds/maps/shared/village/ambCatMeowType03_03.wav"/>
+    <File fileId="13" filename="$data/sounds/maps/shared/village/ambCatMeowType03_04.wav"/>
+    <File fileId="14" filename="$data/sounds/maps/shared/village/ambCatMeowType03_05.wav"/>
+    <File fileId="53" filename="$data/sounds/maps/shared/village/ambCoffeMachineNew_01.wav"/>
+    <File fileId="46" filename="$data/sounds/maps/shared/village/ambCoffeMachineOld_01.wav"/>
+    <File fileId="47" filename="$data/sounds/maps/shared/village/ambCoffeMachineOld_02.wav"/>
+    <File fileId="48" filename="$data/sounds/maps/shared/village/ambCoffeMachineOld_03.wav"/>
+    <File fileId="49" filename="$data/sounds/maps/shared/village/ambCoffeMachineOld_04.wav"/>
+    <File fileId="50" filename="$data/sounds/maps/shared/village/ambCoffeMachineOld_05.wav"/>
+    <File fileId="51" filename="$data/sounds/maps/shared/village/ambCoffeMachineOld_06.wav"/>
+    <File fileId="39" filename="$data/sounds/maps/shared/village/objMetalTrashBin_01.wav"/>
+    <File fileId="40" filename="$data/sounds/maps/shared/village/objMetalTrashBin_02.wav"/>
+    <File fileId="41" filename="$data/sounds/maps/shared/village/objMetalTrashBin_03.wav"/>
+    <File fileId="42" filename="$data/sounds/maps/shared/village/objMetalTrashBin_04.wav"/>
+    <File fileId="43" filename="$data/sounds/maps/shared/village/objMetalTrashBin_05.wav"/>
+    <File fileId="44" filename="$data/sounds/maps/shared/village/objMetalTrashBin_06.wav"/>
+    <File fileId="45" filename="$data/sounds/maps/shared/village/objMetalTrashBin_07.wav"/>
+    <File fileId="35" filename="$data/sounds/maps/shared/village/objWindowClose_01.wav"/>
+    <File fileId="36" filename="$data/sounds/maps/shared/village/objWindowClose_02.wav"/>
+    <File fileId="37" filename="$data/sounds/maps/shared/village/objWindowClose_03.wav"/>
+    <File fileId="38" filename="$data/sounds/maps/shared/village/objWindowClose_04.wav"/>
+    <File fileId="31" filename="$data/sounds/maps/shared/village/objWindowOpen_01.wav"/>
+    <File fileId="32" filename="$data/sounds/maps/shared/village/objWindowOpen_02.wav"/>
+    <File fileId="33" filename="$data/sounds/maps/shared/village/objWindowOpen_03.wav"/>
+    <File fileId="34" filename="$data/sounds/maps/shared/village/objWindowOpen_04.wav"/>
+    <File fileId="105" filename="$data/sounds/maps/shared/waterCanal/ambWaterCalmCanal_01.wav"/>
+    <File fileId="106" filename="$data/sounds/maps/shared/waterCanal/ambWaterCalmCanal_02.wav"/>
+    <File fileId="109" filename="$data/sounds/maps/shared/waterStreams/ambSmallWaterStream_01.wav"/>
+    <File fileId="107" filename="$data/sounds/maps/shared/waterStreams/ambWaterStream_01.wav"/>
+    <File fileId="108" filename="$data/sounds/maps/shared/waterStreams/ambWaterStream_02.wav"/>
+    <File fileId="75" filename="$data/sounds/placeables/productions/auctionChantAnimalDealer.wav"/>
+    <File fileId="76" filename="$data/sounds/placeables/productions/placeSiloInterior_01.wav"/>
+    <File fileId="77" filename="$data/sounds/placeables/productions/placeSiloInterior_02.wav"/>
+    <File fileId="15" filename="$data/sounds/silence/Silence10Sec_01.wav"/>
+    <File fileId="52" filename="$data/sounds/silence/Silence3Sec_01.wav"/>
+    <File fileId="18" filename="$data/sounds/silence/Silence5Sec_01.wav"/>
+  </Files>
+
+
+  <Materials>
+  </Materials>
+
+
+  <Shapes externalShapesFile="sounds.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="audio_group" nodeId="272088">
+      <TransformGroup name="environment" nodeId="272089">
+        <TransformGroup name="animals" nodeId="272090" viewerSpacialityPreventMask="0x1">
+          <TransformGroup name="ducks" nodeId="272091" minuteOfDayStart="600" minuteOfDayEnd="1040" weatherPreventMask="0x4" viewerSpacialityPreventMask="0x40">
+            <AudioSource name="anmlDuckYell_01" translation="258.73 36.7358 146.947" rotation="0 -0 -0.406084" nodeId="272092" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlDuckYell_01" translation="229.263 37.4992 166.647" rotation="-6.89566 -0 -32.8589" nodeId="272094" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="254.129 38.3885 94.202" rotation="-0.21784 2.4076 -12.5144" nodeId="272096" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlDuckYell_01" translation="222.623 36.831 79.1505" rotation="27.0887 1.77406 -50.1485" nodeId="272098" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="226.537 36.9859 25.9937" rotation="12.2628 -1.46191 -43.8314" nodeId="272100" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="452.12 38.4618 366.889" rotation="-11.533 3.57114 -51.0684" nodeId="272102" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="545.231 38.7507 275.565" rotation="109.932 -2.06009 4.13577" nodeId="272104" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="626.921 39.7282 216.504" rotation="-27.1919 -8.5428 34.8004" nodeId="272106" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="478.454 38.1185 303.917" rotation="-0.341246 -25.022 -8.74203" nodeId="272108" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="246.983 38.8813 -57.9432" rotation="21.8864 -19.7119 -49.419" nodeId="272110" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="299.28 38.3016 -113.16" rotation="-7.44303 -26.3552 27.7968" nodeId="272112" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="378.733 37.6733 -15.5455" rotation="-7.44303 -26.3552 27.7968" nodeId="272114" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="-493.769 36.5 401.958" rotation="-7.44304 -26.3552 27.7968" nodeId="272116" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="-444.045 36.9725 366.713" rotation="-7.44304 -26.3552 27.7968" nodeId="272118" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="755.657 55.9985 -282.944" rotation="-7.44304 -26.3552 27.7968" nodeId="272120" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="734.95 65.2334 -422.829" rotation="-7.44304 -26.3552 27.7968" nodeId="272122" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="776.262 59.9247 -318.69" rotation="-7.44304 -26.3552 27.7968" nodeId="272124" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="-108.143 36.4999 -561.88" rotation="-7.44304 -26.3552 27.7968" nodeId="272126" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="-56.6228 46.3175 -683.972" rotation="9.0855 -26.3953 -4.6538" nodeId="272128" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="-18.6734 49.6428 -692.788" rotation="8.54253 -26.7119 -2.30277" nodeId="272130" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="36.8461 60.1963 -751.415" rotation="19.566 -24.2031 -15.9178" nodeId="272132" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="82.3374 70.026 -802.754" rotation="8.83445 -28.023 -1.52728" nodeId="272134" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="114.888 76.1131 -848.006" rotation="14.5387 -29.0246 8.58494" nodeId="272136" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="166.191 83.8261 -896.107" rotation="10.7064 -26.7349 -0.101847" nodeId="272138" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="-857.179 41.75 618.608" rotation="10.7064 -26.7349 -0.101847" nodeId="272140" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="-820.404 44.82 641.578" rotation="10.7064 -26.7349 -0.101847" nodeId="272142" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="-900.572 46.9391 781.704" rotation="22.1748 -3.21213 -52.8932" nodeId="272144" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="-139.826 37.2175 -469.818" rotation="-2.37419 -20.3574 3.49964" nodeId="272146" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="-265.665 37.8964 -218.222" rotation="-19.1776 -19.9705 -16.7731" nodeId="272148" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="-163.393 37.5893 -527.845" rotation="20.0723 -22.487 -25.2464" nodeId="272150" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="-470.39 60.4831 -605.967" rotation="20.0723 -22.487 -25.2464" nodeId="272152" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="-525.527 60 -567.799" rotation="20.0723 -22.487 -25.2464" nodeId="272154" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 8"/>
+            <AudioSource name="anmlDuckYell_01" translation="258.73 36.7358 146.947" rotation="0 -0 -0.406084" nodeId="272156" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlDuckYell_01" translation="829.011 58.7303 -248.249" rotation="0 -0 -0.406084" nodeId="272158" fileIds="1 2 3" range="28" innerRange="12" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7" retriggerDelay="2 6"/>
+          </TransformGroup>
+          <TransformGroup name="frogs" nodeId="272160" minuteOfDayStart="480" minuteOfDayEnd="1300" weatherPreventMask="0x40c" viewerSpacialityPreventMask="0x40">
+            <AudioSource name="anmlFrogQuack_01" translation="522.316 40.5391 288.257" rotation="12.7658 -0 -9.28154" nodeId="272161" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="561.844 53.8151 228.194" rotation="-2.18052 -12.5871 90.4754" nodeId="272163" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="652.39 43.1897 207.262" rotation="-19.1569 0.0608902 34.9859" nodeId="272165" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="604.8 42.599 222.807" rotation="1.36379 -12.9768 -6.74447" nodeId="272167" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="680.955 43.9278 150.137" rotation="8.26486 -13.0443 -1.88625" nodeId="272169" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="683.319 44.1724 94.2495" rotation="-6.39586 -13.529 1.72507" nodeId="272171" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="718.841 45.2548 67.4917" rotation="-16.112 -9.33768 28.0775" nodeId="272173" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="718.718 47.1206 21.2577" rotation="3.70794 -16.1071 -1.92171" nodeId="272175" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="715.465 47.6062 -75.0072" rotation="-13.3628 -16.5158 12.0559" nodeId="272177" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="752.609 51.0031 -132.256" rotation="-13.162 -13.6987 23.0634" nodeId="272179" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 5"/>
+            <AudioSource name="anmlFrogQuack_01" translation="717.883 45.93 -111.771" rotation="-2.35387 -15.3162 15.3435" nodeId="272181" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="454.395 38.0467 323.031" rotation="8.34734 -14.7215 -12.0671" nodeId="272183" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="448.319 37.5887 388.126" rotation="-32.9789 -16.5168 30.1482" nodeId="272185" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="209.218 94.6553 -970.983" rotation="3.26929 -28.6273 6.18787" nodeId="272187" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="122.662 80.0711 -881.839" rotation="-0.273898 -28.7948 12.1084" nodeId="272189" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="48.6971 65.8147 -787.357" rotation="2.5249 -28.628 4.78741" nodeId="272191" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="21.5741 55.2159 -715.757" rotation="3.92773 -28.6474 14.7746" nodeId="272193" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="-67.4509 41.1518 -650.144" rotation="-2.76172 -27.5593 3.95184" nodeId="272195" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="-353.229 43.9653 -386" rotation="17.8554 -27.6739 -0.119547" nodeId="272197" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="-453.802 36.5 340.749" rotation="17.8554 -27.6739 -0.119547" nodeId="272199" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="-491.761 36.6617 386.541" rotation="0.229871 -21.716 -16.7638" nodeId="272201" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="-430.204 36.7188 517" rotation="-38.8979 -20.2374 6.09575" nodeId="272203" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="-401.907 42.3937 489.342" rotation="6.61621 28.3583 64.5345" nodeId="272205" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="-864.029 45.1063 647.603" rotation="-10.1224 14.3322 -11.8118" nodeId="272207" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="-828.189 41.9207 621.91" rotation="-6.00723 16.2692 1.87376" nodeId="272209" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="-939.841 56.5885 912.141" rotation="0.878927 13.6312 -16.4718" nodeId="272211" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="-917.448 50.347 837.796" rotation="-5.43301 12.7755 0.888699" nodeId="272213" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="-926.676 52.9854 876.855" rotation="1.32306 10.1352 -19.4336" nodeId="272215" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="-898.565 45.1427 752.359" rotation="-1.73768 9.05275 0.995729" nodeId="272217" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="-294.26 36.7388 -347.683" rotation="-9.16966 8.32926 -13.6321" nodeId="272219" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="-396.631 52.4743 -505.896" rotation="-18.0833 7.96915 -15.8469" nodeId="272221" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="-441.386 62.2291 -592.067" rotation="-14.5134 -10.5871 -70.306" nodeId="272223" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="-258.507 29.0505 66.6101" rotation="1.31176 8.29459 -8.10473" nodeId="272225" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="-222.971 37 -65.4011" rotation="1.31176 8.29459 -8.10473" nodeId="272227" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="-205.98 39.0435 -279.32" rotation="-12.213 4.10623 43.7757" nodeId="272229" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="-12.6071 39.2691 -577.305" rotation="9.07961 -4.99534 2.98718" nodeId="272231" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="297.512 37.2255 -312.669" rotation="1.99528 -5.77114 7.99168" nodeId="272233" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="915.18 72.043 -617.388" rotation="1.99528 -5.77114 7.99167" nodeId="272235" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+            <AudioSource name="anmlFrogQuack_01" translation="784.417 58.4482 -271.181" rotation="1.17561 -5.4984 1.25355" nodeId="272237" fileIds="4 5 6 7" range="20" innerRange="6" volume="0.25" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.7 0.7 0.7 0.7" retriggerDelay="2 6"/>
+          </TransformGroup>
+          <TransformGroup name="seagulls" nodeId="272239" minuteOfDayStart="420" minuteOfDayEnd="1200" viewerSpacialityPreventMask="0x40">
+            <AudioSource name="anmlSeagullYell_01" translation="236.265 50.2413 -25.2798" rotation="36.4209 -0 -90" nodeId="272240" fileIds="8 9" range="45" innerRange="15" volume="0.845" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1" retriggerDelay="4 15"/>
+            <AudioSource name="anmlSeagullYell_01" translation="285.905 39.898 346.138" rotation="31.5541 -35.8003 -12.1759" nodeId="272242" fileIds="8 9" range="45" innerRange="15" volume="0.845" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1" retriggerDelay="4 15"/>
+            <AudioSource name="anmlSeagullYell_01" translation="-170.058 61.2012 -181.271" rotation="44.4915 -14.6805 -41.2746" nodeId="272244" fileIds="8 9" range="45" innerRange="15" volume="0.845" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1" retriggerDelay="4 15"/>
+            <AudioSource name="anmlSeagullYell_01" translation="-301.265 36.6368 -36.8206" rotation="17.3569 -28.9894 -23.8501" nodeId="272246" fileIds="8 9" range="45" innerRange="15" volume="0.845" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1" retriggerDelay="4 15"/>
+            <AudioSource name="anmlSeagullYell_01" translation="-262.03 37.2567 162.962" rotation="-3.7257 -33.3573 5.83505" nodeId="272248" fileIds="8 9" range="45" innerRange="15" volume="0.845" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1" retriggerDelay="4 15"/>
+            <AudioSource name="anmlSeagullYell_01" translation="-430.336 36.8695 355.058" rotation="-3.7257 -33.3573 5.83505" nodeId="272250" fileIds="8 9" range="45" innerRange="15" volume="0.845" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1" retriggerDelay="4 15"/>
+            <AudioSource name="anmlSeagullYell_01" translation="-467.915 36.5 397.524" rotation="-3.7257 -33.3573 5.83505" nodeId="272252" fileIds="8 9" range="45" innerRange="15" volume="0.845" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1" retriggerDelay="4 15"/>
+            <AudioSource name="anmlSeagullYell_01" translation="-515.375 36.4179 474.58" rotation="-3.7257 -33.3573 5.83505" nodeId="272254" fileIds="8 9" range="45" innerRange="15" volume="0.845" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1" retriggerDelay="4 15"/>
+            <AudioSource name="anmlSeagullYell_01" translation="-462.272 36.8901 521.625" rotation="-1.60463 -33.5277 0.886466" nodeId="272256" fileIds="8 9" range="45" innerRange="15" volume="0.845" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1" retriggerDelay="4 15"/>
+            <AudioSource name="anmlSeagullYell_01" translation="-780.318 36.4999 439.403" rotation="-1.60463 -33.5277 0.886466" nodeId="272258" fileIds="8 9" range="45" innerRange="15" volume="0.845" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1" retriggerDelay="4 15"/>
+            <AudioSource name="anmlSeagullYell_01" translation="-774.543 36.6246 408.568" rotation="-1.60464 -33.5277 0.886466" nodeId="272260" fileIds="8 9" range="45" innerRange="15" volume="0.845" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1" retriggerDelay="4 15"/>
+            <AudioSource name="anmlSeagullYell_01" translation="-989.479 43.7181 348.275" rotation="-1.60464 -33.5277 0.886466" nodeId="272262" fileIds="8 9" range="45" innerRange="15" volume="0.845" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1" retriggerDelay="4 15"/>
+            <AudioSource name="anmlSeagullYell_01" translation="-920.333 36.5679 376.779" rotation="-1.60464 -33.5277 0.886466" nodeId="272264" fileIds="8 9" range="45" innerRange="15" volume="0.845" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1" retriggerDelay="4 15"/>
+            <AudioSource name="anmlSeagullYell_01" translation="118.547 36.4999 -372.165" rotation="-1.60464 -33.5277 0.886466" nodeId="272266" fileIds="8 9" range="45" innerRange="15" volume="0.845" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1" retriggerDelay="4 15"/>
+            <AudioSource name="anmlSeagullYell_01" translation="152.906 36.582 -445.359" rotation="-1.60464 -33.5277 0.886466" nodeId="272268" fileIds="8 9" range="45" innerRange="15" volume="0.845" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1" retriggerDelay="4 15"/>
+            <AudioSource name="anmlSeagullYell_01" translation="355.715 36.4999 -78.4589" rotation="-1.60464 -33.5277 0.886466" nodeId="272270" fileIds="8 9" range="45" innerRange="15" volume="0.845" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1" retriggerDelay="4 15"/>
+            <AudioSource name="anmlSeagullYell_01" translation="394.029 36.5393 418.773" rotation="-1.60464 -33.5277 0.886466" nodeId="272272" fileIds="8 9" range="45" innerRange="15" volume="0.845" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1" retriggerDelay="4 15"/>
+            <AudioSource name="anmlSeagullYell_01" translation="566.324 36.6214 373.929" rotation="-1.60464 -33.5277 0.886466" nodeId="272274" fileIds="8 9" range="45" innerRange="15" volume="0.845" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1" retriggerDelay="4 15"/>
+            <AudioSource name="anmlSeagullYell_01" translation="626.985 36.4999 480.603" rotation="-1.60464 -33.5277 0.886466" nodeId="272276" fileIds="8 9" range="45" innerRange="15" volume="0.845" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1" retriggerDelay="4 15"/>
+            <AudioSource name="anmlSeagullYell_01" translation="879.555 36.4435 556.607" rotation="-1.60464 -33.5277 0.886466" nodeId="272278" fileIds="8 9" range="45" innerRange="15" volume="0.845" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1" retriggerDelay="4 15"/>
+            <AudioSource name="anmlSeagullYell_01" translation="952.313 36.5518 542.276" rotation="-1.60464 -33.5277 0.886466" nodeId="272280" fileIds="8 9" range="45" innerRange="15" volume="0.845" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1" retriggerDelay="4 15"/>
+            <AudioSource name="anmlSeagullYell_01" translation="-325.577 42.535 312.83" rotation="-30.6003 -31.9987 17.6232" nodeId="272282" fileIds="8 9" range="45" innerRange="15" volume="0.845" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1" retriggerDelay="4 15"/>
+            <AudioSource name="anmlSeagullYell_01" translation="380.655 36.4999 29.2842" rotation="-5.80105 -23.0873 2.28138" nodeId="272284" fileIds="8 9" range="80" innerRange="15" volume="0.833" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1" retriggerDelay="4 15"/>
+            <AudioSource name="anmlSeagullYell_01" translation="308.376 41.9922 215.597" rotation="-5.80105 -23.0873 2.28138" nodeId="272286" fileIds="8 9" range="80" innerRange="15" volume="0.833" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1" retriggerDelay="4 15"/>
+            <AudioSource name="anmlSeagullYell_01" translation="166.93 63.1636 91.8808" rotation="-5.80105 -23.0873 2.28138" nodeId="272288" fileIds="8 9" range="80" innerRange="15" volume="0.833" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1" retriggerDelay="4 15"/>
+            <AudioSource name="anmlSeagullYell_01" translation="-71.8168 50.5201 -86.5639" rotation="-5.80105 -23.0873 2.28138" nodeId="272290" fileIds="8 9" range="100" innerRange="15" volume="0.65" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1" retriggerDelay="4 15"/>
+            <AudioSource name="anmlSeagullYell_01" translation="126.182 50.5947 -101.906" rotation="-5.80105 -23.0873 2.28138" nodeId="272292" fileIds="8 9" range="100" innerRange="15" volume="0.65" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1" retriggerDelay="4 15"/>
+          </TransformGroup>
+          <TransformGroup name="cats" nodeId="272294" weatherPreventMask="0x0">
+            <AudioSource name="ambCatMeowType03_01" translation="-800.023 62.7149 -132.206" nodeId="272295" fileIds="10 11 12 13 14 15" range="80" innerRange="40" volume="1" loops="1" audioGroup="ENVIRONMENT" minuteOfDayStart="660" minuteOfDayEnd="980" weatherPreventMask="0x40e" viewerSpacialityPreventMask="0x40"/>
+            <AudioSource name="ambCatMeowType01_01" translation="-924.776 68.7221 -146.574" nodeId="272297" fileIds="16 17 18" range="70" innerRange="40" volume="1" loops="1" audioGroup="ENVIRONMENT" weatherPreventMask="0x40e" viewerSpacialityPreventMask="0x40"/>
+            <AudioSource name="ambCatMeowType02_01" translation="-754.287 58.0041 -15.9654" nodeId="272299" fileIds="19 20 18" range="80" innerRange="40" volume="1" loops="1" audioGroup="ENVIRONMENT" weatherPreventMask="0x40e" viewerSpacialityPreventMask="0x40"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="debris" nodeId="272301">
+          <AudioSource name="objDebrisMovement_05" translation="137.309 65.4302 414.727" rotation="-26.5032 -0 -34.6306" nodeId="272302" fileIds="21 22 23 24" range="35" innerRange="15" volume="0.7" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1" retriggerDelay="4 16"/>
+          <AudioSource name="objDebrisMovement_01" translation="-342.237 87.3168 539.986" rotation="-26.3288 -0 42.6814" nodeId="272304" fileIds="25 26 27 28" range="40" innerRange="15" volume="0.75" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1" retriggerDelay="4 16"/>
+          <AudioSource name="objDebrisMovement_01" translation="-299.948 85.6472 438.262" rotation="3.52407 -9.5646 22.7736" nodeId="272306" fileIds="25 26 27 28" range="40" innerRange="15" volume="0.75" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1" retriggerDelay="4 16"/>
+          <AudioSource name="objDebrisMovement_01" translation="-368.559 60.0599 469.887" rotation="-18.3206 -10.1763 45.8188" nodeId="272308" fileIds="25 26 27 28" range="40" innerRange="15" volume="0.75" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1" retriggerDelay="4 16"/>
+          <AudioSource name="objDebrisMovement_01" translation="-300.845 62.6824 368.357" rotation="-58.8182 -10.4625 44.9365" nodeId="272310" fileIds="25 26 27 28" range="40" innerRange="15" volume="0.75" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1" retriggerDelay="4 16"/>
+          <AudioSource name="objDebrisMovement_01" translation="-106.745 79.1839 493.973" rotation="-52.8926 -46.7843 12.1869" nodeId="272312" fileIds="25 26 27 28" range="40" innerRange="15" volume="0.75" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1" retriggerDelay="4 16"/>
+          <AudioSource name="objDebrisMovement_01" translation="-182.035 99.8833 456.665" rotation="-68.5255 -34.9974 22.5375" nodeId="272314" fileIds="25 26 27 28" range="40" innerRange="15" volume="0.75" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1" retriggerDelay="4 16"/>
+          <AudioSource name="objDebrisMovement_05" translation="118.641 57.5269 487.58" rotation="41.6675 -5.62522 -28.3452" nodeId="272316" fileIds="21 22 23 24" range="35" innerRange="15" volume="0.7" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1" retriggerDelay="4 16"/>
+          <AudioSource name="objDebrisMovement_05" translation="50.5306 71.8105 477.307" rotation="62.4374 7.2006 -42.7033" nodeId="272318" fileIds="21 22 23 24" range="35" innerRange="15" volume="0.7" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1" retriggerDelay="4 16"/>
+          <AudioSource name="objDebrisMovement_05" translation="-65.6274 68.2842 460.856" rotation="69.8127 -26.7133 -23.8877" nodeId="272320" fileIds="21 22 23 24" range="35" innerRange="15" volume="0.7" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1" retriggerDelay="4 16"/>
+          <AudioSource name="objDebrisMovement_05" translation="-117.115 70.1546 430.721" rotation="-0.15162 -30.2505 -53.9443" nodeId="272322" fileIds="21 22 23 24" range="35" innerRange="15" volume="0.7" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1" retriggerDelay="4 16"/>
+          <AudioSource name="objDebrisMovement_05" translation="-349.911 81.5605 576.373" rotation="-33.7355 6.77162 47.5024" nodeId="272324" fileIds="21 22 23 24" range="35" innerRange="15" volume="0.7" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1" retriggerDelay="4 16"/>
+          <AudioSource name="objDebrisMovement_05" translation="-181.086 73.8668 666.637" rotation="52.7696 41.9078 24.0252" nodeId="272326" fileIds="21 22 23 24" range="35" innerRange="15" volume="0.7" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1" retriggerDelay="4 16"/>
+          <AudioSource name="objDebrisMovement_01" translation="-250.74 79.1853 666.402" rotation="102.479 43.7231 -162.245" nodeId="272328" fileIds="25 26 27 28" range="40" innerRange="15" volume="0.75" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1" retriggerDelay="4 16"/>
+          <AudioSource name="objDebrisMovement_05" translation="-425.053 48.2948 570.811" rotation="-12.0665 46.093 41.5846" nodeId="272330" fileIds="21 22 23 24" range="35" innerRange="15" volume="0.7" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1" retriggerDelay="4 16"/>
+          <AudioSource name="objDebrisMovement_05" translation="-543.846 55.2222 739.615" rotation="-40.6738 27.4183 -3.28831" nodeId="272332" fileIds="21 22 23 24" range="35" innerRange="15" volume="0.7" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1" retriggerDelay="4 16"/>
+          <AudioSource name="objDebrisMovement_05" translation="-652.641 50.4465 -101.723" rotation="34.977 34.9956 -14.6131" nodeId="272334" fileIds="21 22 23 24" range="35" innerRange="15" volume="0.7" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1" retriggerDelay="4 16"/>
+          <AudioSource name="objDebrisMovement_01" translation="-1006.07 43.4235 172.747" rotation="-178.033 48.7499 167.285" nodeId="272336" fileIds="25 26 27 28" range="40" innerRange="15" volume="0.75" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1" retriggerDelay="4 16"/>
+          <AudioSource name="objDebrisMovement_01" translation="-211.507 78.9008 391.408" rotation="-142.901 40.3644 -153.459" nodeId="272338" fileIds="25 26 27 28" range="40" innerRange="15" volume="0.75" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1" retriggerDelay="4 16"/>
+          <AudioSource name="objDebrisMovement_01" translation="148.432 55.919 250.552" rotation="178.886 49.2711 129.836" nodeId="272340" fileIds="25 26 27 28" range="40" innerRange="15" volume="0.75" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1" retriggerDelay="4 16"/>
+          <AudioSource name="objDebrisMovement_01" translation="201.287 48.5631 334.375" rotation="-175.388 46.4699 156.338" nodeId="272342" fileIds="25 26 27 28" range="40" innerRange="15" volume="0.75" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1" retriggerDelay="4 16"/>
+        </TransformGroup>
+        <TransformGroup name="lake" nodeId="272344" viewerSpacialityPreventMask="0x40">
+          <AudioSource name="ambSmallLake_01" translation="32.7657 48.8544 857.397" nodeId="272345" fileIds="29" range="50" innerRange="38" volume="1" loops="0" audioGroup="ENVIRONMENT"/>
+          <AudioSource name="ambBigLake_01" translation="16.9255 49.1092 928.943" nodeId="272347" fileIds="30" range="50" innerRange="38" volume="1" loops="0" audioGroup="ENVIRONMENT"/>
+          <AudioSource name="ambBigLake_02" translation="121.188 47.6481 1126.42" nodeId="272349" fileIds="30" range="168" innerRange="133" volume="1" loops="0" audioGroup="ENVIRONMENT"/>
+          <AudioSource name="ambBigLake_03" translation="-17.1423 46.9712 1091.9" nodeId="272351" fileIds="30" range="168" innerRange="133" volume="1" loops="0" audioGroup="ENVIRONMENT"/>
+          <AudioSource name="ambSmallLake_02" translation="-454.612 59.2239 -602.916" nodeId="272353" fileIds="29" range="37" innerRange="21" volume="1" loops="0" audioGroup="ENVIRONMENT"/>
+          <AudioSource name="ambBigLake_04" translation="-498.541 57.7778 -585.018" nodeId="272355" fileIds="30" range="46" innerRange="30" volume="1" loops="0" audioGroup="ENVIRONMENT"/>
+          <AudioSource name="ambSmallLake_01" translation="806.688 58.9999 -269.996" nodeId="272357" fileIds="29" range="66" innerRange="25" volume="1" loops="0" audioGroup="ENVIRONMENT"/>
+        </TransformGroup>
+        <TransformGroup name="village" nodeId="272359">
+          <TransformGroup name="windows" nodeId="272360">
+            <TransformGroup name="open" nodeId="272361">
+              <AudioSource name="objWindowOpen_01" translation="-757.99 54.3089 -21.1315" nodeId="272362" fileIds="31 32 33 34 15" range="70" innerRange="45" volume="1" loops="1" audioGroup="ENVIRONMENT" minuteOfDayStart="540" minuteOfDayEnd="720" weatherPreventMask="0x406" viewerSpacialityPreventMask="0x1"/>
+              <AudioSource name="objWindowOpen_02" translation="-935.878 66.3778 -142.273" nodeId="272364" fileIds="31 32 33 34 15" range="70" innerRange="45" volume="1" loops="1" audioGroup="ENVIRONMENT" minuteOfDayStart="540" minuteOfDayEnd="720" weatherPreventMask="0x406" viewerSpacialityPreventMask="0x1"/>
+              <AudioSource name="objWindowOpen_03" translation="-931.887 61.4961 -358.443" nodeId="272366" fileIds="31 32 33 34 15" range="70" innerRange="45" volume="1" loops="1" audioGroup="ENVIRONMENT" minuteOfDayStart="540" minuteOfDayEnd="720" weatherPreventMask="0x406" viewerSpacialityPreventMask="0x1"/>
+              <AudioSource name="objWindowOpen_04" translation="-767.558 73.1599 -483.558" nodeId="272368" fileIds="31 32 33 34 15" range="70" innerRange="45" volume="1" loops="1" audioGroup="ENVIRONMENT" minuteOfDayStart="540" minuteOfDayEnd="720" weatherPreventMask="0x406" viewerSpacialityPreventMask="0x1"/>
+            </TransformGroup>
+            <TransformGroup name="close" nodeId="272370">
+              <AudioSource name="objWindowClose_01" translation="-757.801 54.3158 -20.9077" nodeId="272371" fileIds="35 36 37 38 15 18" range="80" innerRange="42" volume="1" loops="1" audioGroup="ENVIRONMENT" minuteOfDayStart="960" minuteOfDayEnd="1060" weatherPreventMask="0x4" viewerSpacialityPreventMask="0x1"/>
+              <AudioSource name="objWindowClose_02" translation="-935.842 66.4585 -142.232" nodeId="272373" fileIds="35 36 37 38 15 18" range="80" innerRange="42" volume="1" loops="1" audioGroup="ENVIRONMENT" minuteOfDayStart="960" minuteOfDayEnd="1060" weatherPreventMask="0x4" viewerSpacialityPreventMask="0x1"/>
+              <AudioSource name="objWindowClose_03" translation="-931.772 60.9882 -357.647" nodeId="272375" fileIds="35 36 37 38 15 18" range="80" innerRange="42" volume="1" loops="1" audioGroup="ENVIRONMENT" minuteOfDayStart="960" minuteOfDayEnd="1060" weatherPreventMask="0x4" viewerSpacialityPreventMask="0x1"/>
+              <AudioSource name="objWindowClose_04" translation="-767.16 73.3397 -483.496" nodeId="272377" fileIds="35 36 37 38 15 18" range="80" innerRange="42" volume="1" loops="1" audioGroup="ENVIRONMENT" minuteOfDayStart="960" minuteOfDayEnd="1060" weatherPreventMask="0x4" viewerSpacialityPreventMask="0x1"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="trashBin" nodeId="272379">
+            <AudioSource name="objMetalTrashBin_01" translation="-839.19 58.2576 -102.246" nodeId="272380" fileIds="39 40 41 42 43 44 45 15 18" range="75" innerRange="30" volume="1" loops="1" audioGroup="ENVIRONMENT" minuteOfDayStart="720" minuteOfDayEnd="1080" weatherPreventMask="0x44" viewerSpacialityRequiredMask="0x1"/>
+            <AudioSource name="objMetalTrashBin_02" translation="-1023.17 64.8215 -120.013" nodeId="272382" fileIds="39 40 41 42 43 44 45 15 18" range="75" innerRange="30" volume="1" loops="1" audioGroup="ENVIRONMENT" minuteOfDayStart="720" minuteOfDayEnd="1200" weatherPreventMask="0x44" viewerSpacialityRequiredMask="0x1"/>
+            <AudioSource name="objMetalTrashBin_03" translation="-776.961 68.1412 -417.483" nodeId="272384" fileIds="39 40 41 42 43 44 45 15 18" range="75" innerRange="30" volume="1" loops="1" audioGroup="ENVIRONMENT" minuteOfDayStart="720" minuteOfDayEnd="1200" weatherPreventMask="0x44" viewerSpacialityRequiredMask="0x1"/>
+          </TransformGroup>
+          <TransformGroup name="coffeeMachine" nodeId="272386">
+            <AudioSource name="ambCoffeMachineOld_01" translation="-882.007 58.7205 -237.43" nodeId="272387" fileIds="46 47 48 49 50 51 15 18 52" range="40" innerRange="20" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.5 0.5 0.5 0.5 0.5 0.5 0.6 0.6 0.6" retriggerDelay="0.499999 5.6" minuteOfDayStart="540" minuteOfDayEnd="1080" viewerSpacialityPreventMask="0x1"/>
+            <AudioSource name="ambCoffeMachineNew_01" translation="-877.19 57.5653 -33.9398" nodeId="272389" fileIds="53 15" range="40" innerRange="20" volume="1" loops="1" audioGroup="ENVIRONMENT" minuteOfDayStart="420" minuteOfDayEnd="780" viewerSpacialityPreventMask="0x1"/>
+          </TransformGroup>
+          <TransformGroup name="alarmClock" nodeId="272391">
+            <AudioSource name="ambAlarmOld_01" translation="-861.696 64.3511 -174.779" nodeId="272392" fileIds="54" range="140" innerRange="60" volume="1" loops="1" audioGroup="ENVIRONMENT" minuteOfDayStart="420" minuteOfDayEnd="422" weatherRequiredMask="0x100" viewerSpacialityPreventMask="0x1"/>
+          </TransformGroup>
+          <TransformGroup name="dogBarks" nodeId="272394" viewerSpacialityPreventMask="0x41">
+            <AudioSource name="anmlDogBarkDistant_01" translation="-942.505 54.7267 -19.3615" rotation="-25 -0 -90" nodeId="272395" fileIds="55" range="100" innerRange="30" volume="1" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1" retriggerDelay="9 19"/>
+            <AudioSource name="anmlDogBarkDistant_01" translation="-651.825 58.6579 -146.024" rotation="-1.46116 24.7898 -7.92987" nodeId="272397" fileIds="55" range="100" innerRange="30" volume="1" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1" retriggerDelay="9 19"/>
+            <AudioSource name="anmlDogBarkDistant_02" translation="-865.729 71.637 -314.508" nodeId="272399" fileIds="56" range="100" innerRange="30" volume="1" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1" retriggerDelay="9 19"/>
+            <AudioSource name="anmlDogBarkDistant_03" translation="-933.784 84.9339 -555.753" nodeId="272401" fileIds="57" range="100" innerRange="30" volume="1" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1" retriggerDelay="9 19"/>
+            <AudioSource name="anmlDogBarkDistant_04" translation="-916.633 108.139 -693.127" rotation="6.32058 -0 -90" nodeId="272403" fileIds="58" range="100" innerRange="30" volume="1" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1" retriggerDelay="9 19"/>
+            <AudioSource name="anmlDogBarkDistant_05" translation="-848.78 59.0668 -135.317" rotation="2.22825 -0 0" nodeId="272405" fileIds="59" range="100" innerRange="30" volume="1" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1" retriggerDelay="9 19"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="details" nodeId="272407">
+        <TransformGroup name="industrial" nodeId="272408" minuteOfDayStart="440" minuteOfDayEnd="1040" viewerSpacialityPreventMask="0x40">
+          <TransformGroup name="fan" nodeId="272409">
+            <AudioSource name="ambIndustryFan_01" translation="-39.3251 56.3775 -234.164" rotation="90 -0 0" nodeId="272410" fileIds="60" range="30" innerRange="5" volume="0.3" loops="0" audioGroup="ENVIRONMENT"/>
+            <AudioSource name="ambIndustryFan_02" translation="-69.8683 50.6926 -110.398" rotation="5.00896e-06 -0 -90" nodeId="272412" fileIds="61" range="7" innerRange="2" volume="0.15" loops="0" audioGroup="ENVIRONMENT"/>
+            <AudioSource name="ambIndustryFan_03" translation="-70.4234 50.7179 -96.422" rotation="90 1.34675e-07 -90" nodeId="272414" fileIds="61" range="7" innerRange="2" volume="0.15" loops="0" audioGroup="ENVIRONMENT"/>
+            <AudioSource name="ambIndustryFan_04" translation="813.14 72.1939 -781.73" rotation="90 -88.3101 -178.335" nodeId="272416" fileIds="60" range="30" innerRange="5" volume="0.3" loops="0" audioGroup="ENVIRONMENT"/>
+            <AudioSource name="ambIndustryFan_05" translation="813.452 72.0715 -779.832" rotation="-90 -90 0" nodeId="272418" fileIds="61" range="7" innerRange="2" volume="0.15" loops="0" audioGroup="ENVIRONMENT"/>
+            <AudioSource name="ambIndustryFan_06" translation="904.843 49.6725 503.164" rotation="175.937 -88.31 -178.335" nodeId="272420" fileIds="60" range="30" innerRange="5" volume="0.3" loops="0" audioGroup="ENVIRONMENT"/>
+            <AudioSource name="ambIndustryFan_07" translation="279.655 48.4555 528.958" rotation="-98.4641 -88.31 -178.335" nodeId="272422" fileIds="60" range="30" innerRange="5" volume="0.3" loops="0" audioGroup="ENVIRONMENT"/>
+          </TransformGroup>
+          <TransformGroup name="door" nodeId="272424">
+            <AudioSource name="objMetalDoorIndustrialDistant50m_01" translation="336.329 43.1501 172.804" nodeId="272425" fileIds="62 63 64 65 66 15 18" range="70" innerRange="45" volume="1" loops="1" audioGroup="ENVIRONMENT" minuteOfDayStart="540" minuteOfDayEnd="960"/>
+            <AudioSource name="objMetalDoorIndustrialDistant50m_02" translation="143.235 50.7086 45.5462" rotation="0.129722 -0 0" nodeId="272427" fileIds="62 63 64 65 66 15 18" range="70" innerRange="45" volume="1" loops="1" audioGroup="ENVIRONMENT" minuteOfDayStart="540" minuteOfDayEnd="960"/>
+            <AudioSource name="objMetalDoorIndustrialDistant50m_03" translation="740.557 53.3695 -157.198" nodeId="272429" fileIds="62 63 64 65 66 15 18" range="70" innerRange="45" volume="1" loops="1" audioGroup="ENVIRONMENT" minuteOfDayStart="540" minuteOfDayEnd="960"/>
+          </TransformGroup>
+          <TransformGroup name="metalObjects" nodeId="272431">
+            <AudioSource name="objMetalDragIndustrialDistant50m_01" translation="329.914 43.05 174.251" nodeId="272432" fileIds="67 68 69 70 71 72 73 74 18 15" range="80" innerRange="50" volume="1" loops="1" audioGroup="ENVIRONMENT" minuteOfDayStart="540" minuteOfDayEnd="960" viewerSpacialityPreventMask="0x1"/>
+            <AudioSource name="objMetalDragIndustrialDistant50m_02" translation="464.645 56.8642 -730.749" nodeId="272434" fileIds="67 68 69 70 71 72 73 74 18 15" range="110" innerRange="50" volume="1" loops="1" audioGroup="ENVIRONMENT" minuteOfDayStart="540" minuteOfDayEnd="960" viewerSpacialityPreventMask="0x1"/>
+            <AudioSource name="objMetalDragIndustrialDistant50m_03" translation="752.781 63.6708 -223.337" nodeId="272436" fileIds="67 68 69 70 71 72 73 74 18 15" range="75" innerRange="40" volume="1" loops="1" audioGroup="ENVIRONMENT" minuteOfDayStart="540" minuteOfDayEnd="960" viewerSpacialityPreventMask="0x1"/>
+          </TransformGroup>
+          <TransformGroup name="animalTrader" nodeId="272438">
+            <AudioSource name="auctionChantAnimalDealer" translation="-161.086 48.4761 13.4969" nodeId="272439" fileIds="75 18 15" range="78" innerRange="49" volume="1" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.3 0.8 0.8" retriggerDelay="11.5 50.4"/>
+          </TransformGroup>
+          <TransformGroup name="silo" nodeId="272441">
+            <AudioSource name="placeSiloInterior_01" translation="404.845 75.2747 -682.891" nodeId="272442" fileIds="76" range="40" innerRange="20" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1" retriggerDelay="0 0"/>
+            <AudioSource name="placeSiloInterior_02" translation="404.845 75.2747 -674.621" nodeId="272444" fileIds="77" range="40" innerRange="20" volume="1" loops="0" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1" retriggerDelay="0 0"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="partyBoat" nodeId="272448">
+          <AudioSource name="partyMusicIndoor" translation="578.256 39.4619 373.583" rotation="-90 8.53774e-06 6.06643e-20" nodeId="272449" fileIds="78" range="80" innerRange="38" volume="1" loops="0" audioGroup="ENVIRONMENT" minuteOfDayStart="1320" minuteOfDayEnd="300"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="boats" nodeId="272451">
+        <TransformGroup name="cargoBoats" nodeId="272452" minuteOfDayStart="500" minuteOfDayEnd="1080">
+          <AudioSource name="objBoatCargoMediumHonkLong_01" translation="-343.296 42.2602 275.783" nodeId="272453" fileIds="79 80 81 82 52" range="400" innerRange="150" volume="0.5" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.8 0.8 0.9 0.9 1" retriggerDelay="50 100"/>
+          <AudioSource name="objBoatCargoMediumHonkLong_02" translation="-778.327 41.8066 430.632" nodeId="272455" fileIds="79 80 81 82 52" range="400" innerRange="150" volume="0.5" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.8 0.8 0.9 0.9 1" retriggerDelay="50 100"/>
+          <AudioSource name="objBoatCargoMediumHonkLong_03" translation="-343.296 42.2602 275.783" nodeId="272457" fileIds="79 80 81 82 52" range="400" innerRange="150" volume="0.5" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.8 0.8 0.9 0.9 1" retriggerDelay="50 100"/>
+          <AudioSource name="objBoatCargoMediumHonkLong_04" translation="657.865 39.9016 531.089" nodeId="272459" fileIds="79 80 81 82 52" range="400" innerRange="150" volume="0.5" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="0.8 0.8 0.9 0.9 1" retriggerDelay="50 100"/>
+        </TransformGroup>
+        <TransformGroup name="oldBoat" nodeId="272461" minuteOfDayStart="600" minuteOfDayEnd="1020">
+          <AudioSource name="objBoatOldMediumHonkLong_01" nodeId="272462" fileIds="83 84 52" range="400" innerRange="150" volume="0.5" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1" retriggerDelay="50 100"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="docks" nodeId="272464" viewerSpacialityPreventMask="0x40">
+        <AudioSource name="ambDockPlatformCreaking_01" translation="-464.609 35.0516 365.25" nodeId="272465" fileIds="85 86 87 88 89 90 91 92 93" range="43" innerRange="28" volume="0.751" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1 1 1 1 1 1" retriggerDelay="19.3 70.1"/>
+        <AudioSource name="ambDockPlatformCreaking_02" translation="-486.146 35.2276 410.857" nodeId="272467" fileIds="85 86 87 88 89 90 91 92 93" range="43" innerRange="28" volume="0.817" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1 1 1 1 1 1" retriggerDelay="19.3 71.5"/>
+        <AudioSource name="ambDockPlatformCreaking_03" translation="-538.011 36.2693 444.649" nodeId="272469" fileIds="85 86 87 88 89 90 91 92 93" range="43" innerRange="28" volume="0.576" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1 1 1 1 1 1" retriggerDelay="5.5 28"/>
+        <AudioSource name="ambDockPlatformCreaking_04" translation="-741.195 35.6151 411.745" nodeId="272471" fileIds="85 86 87 88 89 90 91 92 93" range="43" innerRange="28" volume="0.927" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1 1 1 1 1 1" retriggerDelay="19.3 71.5"/>
+        <AudioSource name="ambDockPlatformCreaking_05" translation="-812.54 35.5403 386.607" nodeId="272473" fileIds="85 86 87 88 89 90 91 92 93" range="43" innerRange="28" volume="0.86" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1 1 1 1 1 1" retriggerDelay="19.3 65.6"/>
+        <AudioSource name="ambDockPlatformCreaking_06" translation="-854.189 35.8046 381.649" nodeId="272475" fileIds="85 86 87 88 89 90 91 92 93" range="43" innerRange="28" volume="1" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1 1 1 1 1 1" retriggerDelay="19.3 71.6"/>
+        <AudioSource name="ambDockPlatformCreaking_07" translation="511.689 35.4399 462.543" nodeId="272477" fileIds="85 86 87 88 89 90 91 92 93" range="43" innerRange="28" volume="0.829" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1 1 1 1 1 1" retriggerDelay="19.3 72.4"/>
+        <AudioSource name="ambDockPlatformCreaking_08" translation="109.885 55.1839 994.345" nodeId="272479" fileIds="85 86 87 88 89 90 91 92 93" range="24" innerRange="20" volume="0.751" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1 1 1 1 1 1" retriggerDelay="19.3 70.1"/>
+        <AudioSource name="ambDockPlatformCreaking_09" translation="58.5663 55.3176 973.273" nodeId="272481" fileIds="85 86 87 88 89 90 91 92 93" range="24" innerRange="20" volume="0.751" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1 1 1 1 1 1" retriggerDelay="19.3 70.1"/>
+        <AudioSource name="ambDockPlatformCreaking_10" translation="-63.2401 54.7722 974.301" nodeId="272483" fileIds="85 86 87 88 89 90 91 92 93" range="24" innerRange="20" volume="0.751" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1 1 1 1 1 1 1" retriggerDelay="19.3 70.1"/>
+        <TransformGroup name="metalCreaking" nodeId="272485">
+          <AudioSource name="ambDockPlatformMetalCreaking_01" translation="-485.407 35.655 399.053" nodeId="272486" fileIds="94 95 96" range="17" innerRange="9" volume="1" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1" retriggerDelay="3.1 9.2"/>
+          <AudioSource name="ambDockPlatformMetalCreaking_02" translation="-472.634 35.8217 373.008" nodeId="272488" fileIds="94 95 96" range="17" innerRange="9" volume="1" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1" retriggerDelay="0 0"/>
+          <AudioSource name="ambDockPlatformMetalCreaking_03" translation="-460.559 35.2818 357.182" nodeId="272490" fileIds="94 95 96" range="17" innerRange="9" volume="1" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1" retriggerDelay="0 0"/>
+          <AudioSource name="ambDockPlatformMetalCreaking_04" translation="-734.467 35.2787 414.092" nodeId="272492" fileIds="94 95 96" range="17" innerRange="9" volume="1" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1" retriggerDelay="0 0"/>
+          <AudioSource name="ambDockPlatformMetalCreaking_05" translation="488.213 35.4069 461.776" nodeId="272494" fileIds="94 95 96" range="17" innerRange="9" volume="1" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1" retriggerDelay="0 0"/>
+          <AudioSource name="ambDockPlatformMetalCreaking_06" translation="521.776 35.398 437.452" nodeId="272496" fileIds="94 95 96" range="17" innerRange="9" volume="1" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1" retriggerDelay="0 0"/>
+          <AudioSource name="ambDockPlatformMetalCreaking_07" translation="56.4987 55.3293 967.079" nodeId="272498" fileIds="94 95 96" range="17" innerRange="9" volume="1" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1" retriggerDelay="0 0"/>
+          <AudioSource name="ambDockPlatformMetalCreaking_08" translation="-17.8201 54.8201 959.843" nodeId="272500" fileIds="94 95 96" range="21" innerRange="17" volume="1" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1" retriggerDelay="0 0"/>
+          <AudioSource name="ambDockPlatformMetalCreaking_09" translation="-46.6512 54.5642 951.164" nodeId="272502" fileIds="94 95 96" range="21" innerRange="17" volume="1" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1" retriggerDelay="0 0"/>
+          <AudioSource name="ambDockPlatformMetalCreaking_10" translation="-68.5137 53.9458 984.119" nodeId="272504" fileIds="94 95 96" range="21" innerRange="17" volume="1" loops="1" audioGroup="ENVIRONMENT" randomPlayback="true" probabilities="1 1 1" retriggerDelay="0 0"/>
+        </TransformGroup>
+        <TransformGroup name="waves" nodeId="272506" viewerSpacialityPreventMask="0x40">
+          <AudioSource name="ambDocksWaveImpactSun_01" translation="-803.219 35.4571 391.131" rotation="2.18364 -17.5796 -9.09594e-08" nodeId="272507" fileIds="97 98 99" range="22" innerRange="19" volume="1" loops="0" audioGroup="ENVIRONMENT" weatherPreventMask="0xe" viewerSpacialityPreventMask="0x40"/>
+          <AudioSource name="ambDocksWaveImpactRain_01" translation="-802.186 35.4537 392.807" rotation="177.409 -11.6203 180" nodeId="272509" fileIds="100 101" range="22" innerRange="17" volume="1" loops="0" audioGroup="ENVIRONMENT" weatherPreventMask="0x11" viewerSpacialityPreventMask="0x40"/>
+          <AudioSource name="ambDocksWaveImpactSun_02" translation="-856.738 35.3042 381.932" rotation="2.18364 -17.5796 -9.09594e-08" nodeId="272511" fileIds="97 98 99" range="22" innerRange="19" volume="1" loops="0" audioGroup="ENVIRONMENT" weatherPreventMask="0xe" viewerSpacialityPreventMask="0x40"/>
+          <AudioSource name="ambDocksWaveImpactRain_02" translation="-853.807 35.6115 382.948" rotation="177.409 -11.6203 180" nodeId="272513" fileIds="100 101" range="22" innerRange="17" volume="1" loops="0" audioGroup="ENVIRONMENT" weatherPreventMask="0x11" viewerSpacialityPreventMask="0x40"/>
+          <AudioSource name="ambDocksWaveImpactSun_03" translation="-738.43 35.505 418.321" rotation="2.18364 -17.5796 -9.09594e-08" nodeId="272515" fileIds="97 98 99" range="22" innerRange="19" volume="1" loops="0" audioGroup="ENVIRONMENT" weatherPreventMask="0xe" viewerSpacialityPreventMask="0x40"/>
+          <AudioSource name="ambDocksWaveImpactRain_03" translation="-740.624 35.5116 417.206" rotation="177.409 -11.6203 180" nodeId="272517" fileIds="100 101" range="22" innerRange="17" volume="1" loops="0" audioGroup="ENVIRONMENT" weatherPreventMask="0x11" viewerSpacialityPreventMask="0x40"/>
+          <AudioSource name="ambDocksWaveImpactSun_04" translation="-476.758 35.3382 532.15" rotation="2.18364 -17.5796 -9.09594e-08" nodeId="272519" fileIds="97 98 99" range="22" innerRange="19" volume="1" loops="0" audioGroup="ENVIRONMENT" weatherPreventMask="0xe" viewerSpacialityPreventMask="0x40"/>
+          <AudioSource name="ambDocksWaveImpactRain_04" translation="-475.775 35.4222 532.962" rotation="177.409 -11.6203 180" nodeId="272521" fileIds="100 101" range="22" innerRange="17" volume="1" loops="0" audioGroup="ENVIRONMENT" weatherPreventMask="0x11" viewerSpacialityPreventMask="0x40"/>
+          <AudioSource name="ambDocksWaveImpactSun_05" translation="-466.858 35.619 527.563" rotation="2.18364 -17.5796 -9.09594e-08" nodeId="272523" fileIds="97 98 99" range="22" innerRange="19" volume="1" loops="0" audioGroup="ENVIRONMENT" weatherPreventMask="0xe" viewerSpacialityPreventMask="0x40"/>
+          <AudioSource name="ambDocksWaveImpactRain_05" translation="-465.355 35.551 527.913" rotation="177.409 -11.6203 180" nodeId="272525" fileIds="100 101" range="22" innerRange="17" volume="1" loops="0" audioGroup="ENVIRONMENT" weatherPreventMask="0x11" viewerSpacialityPreventMask="0x40"/>
+          <AudioSource name="ambDocksWaveImpactSun_06" translation="-458.949 35.9734 381.452" rotation="2.18365 -17.5796 -9.09594e-08" nodeId="272527" fileIds="97 98 99" range="22" innerRange="19" volume="1" loops="0" audioGroup="ENVIRONMENT" weatherPreventMask="0xe" viewerSpacialityPreventMask="0x40"/>
+          <AudioSource name="ambDocksWaveImpactRain_06" translation="-459.847 35.3462 382.117" rotation="177.409 -11.6203 180" nodeId="272529" fileIds="100 101" range="22" innerRange="17" volume="1" loops="0" audioGroup="ENVIRONMENT" weatherPreventMask="0x11" viewerSpacialityPreventMask="0x40"/>
+          <AudioSource name="ambDocksWaveImpactSun_07" translation="100.876 34.4984 -374.952" rotation="2.18365 -17.5796 -9.09594e-08" nodeId="272531" fileIds="97 98 99" range="22" innerRange="19" volume="1" loops="0" audioGroup="ENVIRONMENT" weatherPreventMask="0xe" viewerSpacialityPreventMask="0x40"/>
+          <AudioSource name="ambDocksWaveImpactRain_07" translation="99.6635 35.3061 -376.888" rotation="177.409 -11.6203 180" nodeId="272533" fileIds="100 101" range="22" innerRange="17" volume="1" loops="0" audioGroup="ENVIRONMENT" weatherPreventMask="0x11" viewerSpacialityPreventMask="0x40"/>
+          <AudioSource name="ambDocksWaveImpactSun_08" translation="105.496 34.3158 -368.466" rotation="2.18365 -17.5796 -9.09594e-08" nodeId="272535" fileIds="97 98 99" range="22" innerRange="19" volume="1" loops="0" audioGroup="ENVIRONMENT" weatherPreventMask="0xe" viewerSpacialityPreventMask="0x40"/>
+          <AudioSource name="ambDocksWaveImpactRain_08" translation="106.304 34.8564 -368.108" rotation="177.409 -11.6203 180" nodeId="272537" fileIds="100 101" range="22" innerRange="17" volume="1" loops="0" audioGroup="ENVIRONMENT" weatherPreventMask="0x11" viewerSpacialityPreventMask="0x40"/>
+          <AudioSource name="ambDocksWaveImpactRain_09" translation="223.216 35.4429 277.002" rotation="177.409 -11.6203 180" nodeId="272539" fileIds="100 101" range="22" innerRange="17" volume="1" loops="0" audioGroup="ENVIRONMENT" weatherPreventMask="0x11" viewerSpacialityPreventMask="0x40"/>
+          <AudioSource name="ambDocksWaveImpactSun_09" translation="223.268 35.244 275.795" rotation="2.18365 -17.5796 -9.09594e-08" nodeId="272541" fileIds="97 98 99" range="22" innerRange="19" volume="1" loops="0" audioGroup="ENVIRONMENT" weatherPreventMask="0xe" viewerSpacialityPreventMask="0x40"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="fauna" nodeId="272543">
+        <TransformGroup name="hawk" nodeId="272544">
+          <AudioSource name="ambHawkField_01" translation="-49.6966 158.634 135.771" nodeId="272545" fileIds="102 103 104 15 18" range="854" innerRange="500" volume="1" loops="1" audioGroup="ENVIRONMENT" minuteOfDayStart="720" minuteOfDayEnd="780" dayOfYearStart="200" dayOfYearEnd="230"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="rivers" nodeId="272547" viewerSpacialityPreventMask="0x40">
+        <TransformGroup name="river1" nodeId="272548">
+          <Shape name="spline" translation="1013.51 36.4998 579.785" shapeId="1" nodeId="272549" castsShadows="false" receiveShadows="false" distanceBlending="false"/>
+          <TransformGroup name="soundNode" nodeId="272550">
+            <AudioSource name="waterCanal_01" nodeId="272551" fileIds="105" range="90" innerRange="80" volume="0.65" loops="0" audioGroup="ENVIRONMENT"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="river2" nodeId="272553">
+          <Shape name="spline" translation="291.858 36.4999 -180.403" rotation="-2.82955e-16 79.4105 -5.947e-10" shapeId="2" nodeId="272554" castsShadows="false" receiveShadows="false" distanceBlending="false"/>
+          <TransformGroup name="soundNode" nodeId="272555">
+            <AudioSource name="waterCanal_02" nodeId="272556" fileIds="106" range="40" innerRange="35" volume="0.7" loops="0" audioGroup="ENVIRONMENT"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="river3" nodeId="272558">
+          <Shape name="spline" translation="262.38 36.4999 12.9829" rotation="6.05604e-15 89.1406 1.03767e-09" shapeId="3" nodeId="272559" castsShadows="false" receiveShadows="false" distanceBlending="false"/>
+          <TransformGroup name="soundNode" nodeId="272560">
+            <AudioSource name="waterCanal_03" nodeId="272561" fileIds="105" range="20" innerRange="16" volume="0.7" loops="0" audioGroup="ENVIRONMENT"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="river4" nodeId="272563">
+          <Shape name="spline" translation="1036.16 91.0686 -813.721" rotation="-180 -78.9801 -180" shapeId="4" nodeId="272564" castsShadows="false" receiveShadows="false" distanceBlending="false"/>
+          <TransformGroup name="soundNode" nodeId="272565">
+            <AudioSource name="lakeVar01" nodeId="272566" fileIds="105" range="70" innerRange="25" volume="0.65" loops="0" audioGroup="ENVIRONMENT"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="river5" nodeId="272568">
+          <Shape name="spline" translation="1022.06 79.9681 -661.87" shapeId="5" nodeId="272569" castsShadows="false" receiveShadows="false" distanceBlending="false"/>
+          <TransformGroup name="soundNode" nodeId="272570">
+            <AudioSource name="waterCanal_05" nodeId="272571" fileIds="105" range="23" innerRange="17" volume="0.7" loops="0" audioGroup="ENVIRONMENT"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="river6" nodeId="272573">
+          <Shape name="spline" translation="710.652 64.2215 -434.032" rotation="-5.4178e-06 67.9266 8.54661e-06" shapeId="6" nodeId="272574" castsShadows="false" receiveShadows="false" distanceBlending="false"/>
+          <TransformGroup name="soundNode" nodeId="272575">
+            <AudioSource name="waterCanal_06" nodeId="272576" fileIds="106" range="30" innerRange="25" volume="0.65" loops="0" audioGroup="ENVIRONMENT"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="river7" nodeId="272578">
+          <Shape name="spline" translation="-1000.29 73.0897 1020.62" rotation="-180 -50.8462 -180" shapeId="7" nodeId="272579" castsShadows="false" receiveShadows="false" distanceBlending="false"/>
+          <TransformGroup name="soundNode" nodeId="272580">
+            <AudioSource name="stream_01" nodeId="272581" fileIds="107" range="29" innerRange="15" volume="1" loops="0" audioGroup="ENVIRONMENT"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="river8" nodeId="272583">
+          <Shape name="spline" translation="-831.074 42.9569 620.417" rotation="-179.918 -44.5747 -180" shapeId="8" nodeId="272584" castsShadows="false" receiveShadows="false" distanceBlending="false"/>
+          <TransformGroup name="soundNode" nodeId="272585">
+            <AudioSource name="stream_02" nodeId="272586" fileIds="108" range="29" innerRange="15" volume="1" loops="0" audioGroup="ENVIRONMENT"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="river9" nodeId="272588">
+          <Shape name="spline" translation="-446.357 59.789 -595.991" rotation="180 74.713 180" shapeId="9" nodeId="272589" castsShadows="false" receiveShadows="false" distanceBlending="false"/>
+          <TransformGroup name="soundNode" nodeId="272590">
+            <AudioSource name="stream_03" nodeId="272591" fileIds="107" range="29" innerRange="15" volume="1" loops="0" audioGroup="ENVIRONMENT"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="waterfall" nodeId="272593">
+          <AudioSource name="ambSmallWaterStream_01" translation="-852.182 41.9678 638.649" nodeId="272594" fileIds="109" range="26" innerRange="16" volume="1" loops="0" audioGroup="ENVIRONMENT"/>
+        </TransformGroup>
+        <TransformGroup name="river10" nodeId="272596">
+          <Shape name="spline" translation="971.451 78.4926 -695.368" rotation="1.23505e-14 85.238 1.17277e-08" shapeId="10" nodeId="272597" castsShadows="false" receiveShadows="false" distanceBlending="false"/>
+          <TransformGroup name="soundNode" nodeId="272598">
+            <AudioSource name="stream_04" nodeId="272599" fileIds="107" range="29" innerRange="15" volume="1" loops="0" audioGroup="ENVIRONMENT"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="river11" nodeId="272601">
+          <Shape name="spline" translation="39.8281 56 831.628" shapeId="11" nodeId="272602" castsShadows="false" receiveShadows="false" distanceBlending="false"/>
+          <TransformGroup name="soundNode" nodeId="272603">
+            <AudioSource name="stream_03" nodeId="272604" fileIds="107" range="29" innerRange="15" volume="1" loops="0" audioGroup="ENVIRONMENT"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="272548">
+      <Attribute name="onCreate" type="scriptCallback" value="AmbientSoundUtil.onCreateMovingSound"/>
+    </UserAttribute>
+    <UserAttribute nodeId="272553">
+      <Attribute name="onCreate" type="scriptCallback" value="AmbientSoundUtil.onCreateMovingSound"/>
+    </UserAttribute>
+    <UserAttribute nodeId="272558">
+      <Attribute name="onCreate" type="scriptCallback" value="AmbientSoundUtil.onCreateMovingSound"/>
+    </UserAttribute>
+    <UserAttribute nodeId="272563">
+      <Attribute name="onCreate" type="scriptCallback" value="AmbientSoundUtil.onCreateMovingSound"/>
+    </UserAttribute>
+    <UserAttribute nodeId="272568">
+      <Attribute name="onCreate" type="scriptCallback" value="AmbientSoundUtil.onCreateMovingSound"/>
+    </UserAttribute>
+    <UserAttribute nodeId="272573">
+      <Attribute name="onCreate" type="scriptCallback" value="AmbientSoundUtil.onCreateMovingSound"/>
+    </UserAttribute>
+    <UserAttribute nodeId="272578">
+      <Attribute name="onCreate" type="scriptCallback" value="AmbientSoundUtil.onCreateMovingSound"/>
+    </UserAttribute>
+    <UserAttribute nodeId="272583">
+      <Attribute name="onCreate" type="scriptCallback" value="AmbientSoundUtil.onCreateMovingSound"/>
+    </UserAttribute>
+    <UserAttribute nodeId="272588">
+      <Attribute name="onCreate" type="scriptCallback" value="AmbientSoundUtil.onCreateMovingSound"/>
+    </UserAttribute>
+    <UserAttribute nodeId="272596">
+      <Attribute name="onCreate" type="scriptCallback" value="AmbientSoundUtil.onCreateMovingSound"/>
+    </UserAttribute>
+    <UserAttribute nodeId="272601">
+      <Attribute name="onCreate" type="scriptCallback" value="AmbientSoundUtil.onCreateMovingSound"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

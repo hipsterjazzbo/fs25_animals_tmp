@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors>Jinkou89</translationContributors>
+    <languageVersion>1.0.0.0</languageVersion>
+	
+	<texts>
+	  
+	<text name="fillType_rye" 				text="Rogge" />
+	<text name="fillType_soybeanUS"        			text="Amerikaanse sojabonen" />
+	<text name="fillType_covercropmix"        		text="Bodembedekkermengsel" />
+	<text name="fillType_roundBaleLavender"        		text="Lavendelbaal" />
+	<text name="fillType_clover1"        			text="Rode klaver" />
+	<text name="fillType_clover2"        			text="Witte klaver" />
+	<text name="fillType_clover_windrow"        		text="Klaver" />
+    	<text name="fillType_alfalfa"       			text="Luzerne" />
+	<text name="fillType_cloverSilage"        		text="Gefermenteerde klaver" />
+   	<text name="fillType_alfalfaSilage"       		text="Gefermenteerde luzerne" />
+   	<text name="fillType_cloverHay"     			text="Klaverhooi" />
+    	<text name="fillType_alfalfaHay"    			text="Luzernehooi" />
+    	<text name="fillType_beanstraw" 			text="Peulvruchtenstro" />
+    	<text name="fillType_cornStalks"    			text="Maïsstengels" />
+	<text name="fillType_flaxFiber"        			text="Vlasvezel" />
+	<text name="fillType_flax"        			text="Vlas" />
+	<text name="fillType_linseed"        			text="Lijnzaad" />
+	<text name="fillType_millet"        			text="Gierst" />
+	<text name="fillType_poppy"        			text="Papaver" />
+	<text name="fillType_drypeas"        			text="Droge erwten" />
+	<text name="fillType_beans"        			text="Pintobonen" />
+	<text name="fillType_mustard"        			text="Mosterd" />
+	<text name="fillType_lentils"        			text="Linzen" />
+	<text name="fillType_silphie"        			text="Zonnekroon" />
+	<text name="fillType_spelt"        			text="Spelt" />
+	<text name="fillType_triticale"        			text="Triticale" />
+	<text name="fillType_soybean2"        			text="Amerikaanse sojaboon" />
+	<text name="fillType_tobacco"        			text="Tabak" />
+	<text name="fillType_tobaccoo"        			text="Tabaksbladeren" />      
+	<text name="fillType_compost" 				text="Compost" />
+	<text name="fillType_organicWaste" 			text="Organisch afval" />
+	<text name="fillType_grapeA" 				text="Rode druiven" />
+	<text name="fillType_grapeB" 				text="Witte druiven" />
+	<text name="fillType_chickpeas" 			text="Kikkererwten" />
+	<text name="fillType_buckwheat" 			text="Boekweit" />
+	<text name="shopItem_grapeb_vine" 			text="Witte druivenstok" />
+	<text name="shopItem_hopsVine" 				text="Hoprank" />
+	<text name="fillType_hemp" 				text="Hennep" />
+	<text name="fillType_hempFiber" 			text="Hennepvezel" />
+	<text name="fillType_lavender" 				text="Lavendel" />
+	<text name="fillType_potatoCut"        			text="Gesneden aardappel" />
+	<text name="fillType_beetrootCut"        		text="Gesneden rode biet" />
+	<text name="fillType_carrotCut"        			text="Gesneden wortel" />
+	<text name="fillType_parsnipCut"        		text="Gesneden pastinaak" />  
+	<text name="fillTypeGroup_TMR"        			text="TMR, Gefermenteerde luzerne/klaver" />	  
+	<text name="fillTypeGroup_hays"        			text="Hooi, Luzerne-/klaverhooi" />
+	<text name="fillTypeGroup_grassa"        		text="Gras, Verse luzerne/klaver" />
+	<text name="fillTypeGroup_moisture"        		text="Vocht: Gesneden wortelgewassen" />
+	<text name="fillTypeGroup_grassHay"        		text="Vers gras/hooi/luzerne/klaver" />
+	<text name="fillType_mineralFeed1"        		text="Mineraalvoer/Droge erwten" />
+	<text name="fillTypeGroup_pigForage"        		text="Mengvoer voor varkens" />
+	<text name="fillType_peanut" 				text="Pinda's" />
+	<text name="fillType_miscanthus" 			text="Olifantsgras" />
+	<text name="fillType_miscanthusCut" 			text="Gehakt olifantsgras" />
+
+
+		<text name="fillType_maize2" 			text="Droge maïs" />
+		<text name="fillType_soymilk" 			text="Sojamelk" />
+		<text name="fillType_pasta" 			text="Pasta" />
+		<text name="fillType_chips" 			text="Chips" />
+		<text name="fillType_ethanol" 			text="Ethanol" />
+		<text name="fillType_cornflour"			text="Maïsmeel" />
+		<text name="fillType_cornOil"			text="Maïsolie" />
+		<text name="fillType_linseedOil"		text="Lijnzaadolie" />
+		<text name="fillType_mustardOil"		text="Mosterdolie" />
+		<text name="fillType_poppyOil"			text="Papaverolie" />
+		<text name="fillType_pizza"			text="Pizza" />
+		<text name="fillType_buckwheatflour"        	text="Boekweitmeel" />
+		<text name="fillType_gramflour"        		text="Kikkererwtenmeel" />
+		<text name="fillType_milletflour"        	text="Gierstmeel" />
+		<text name="fillType_ryeflour"        		text="Roggemeel" />
+		<text name="fillType_sorghumflour"        	text="Sorghummeel" />
+		<text name="fillType_crackedCorn"        	text="Geplette maïs" />
+		<text name="fillType_apple"        		text="Appels" />
+		<text name="fillType_apricot"        		text="Abrikozen" />
+		<text name="fillType_cherry"        		text="Kersen" />
+		<text name="fillType_pear"        		text="Peren" />
+		<text name="fillType_peach"        		text="Perziken" />
+		<text name="fillType_plum"        		text="Pruimen" />
+		<text name="fillType_quince"        		text="Kweeperen" />
+		<text name="fillType_cabbage"        		text="Witte kool" />
+		<text name="fillType_redCabbage"        	text="Rode kool" />
+		<text name="fillType_melon"        		text="Meloen" />
+		<text name="fillType_pumpkin"        		text="Pompoen" />
+		<text name="fillType_watermelon"        	text="Watermeloen" />
+		<text name="fillType_cucumber"        		text="Komkommer" />
+		<text name="fillType_eggplant"        		text="Aubergine" />
+		<text name="fillType_pepper"        		text="Paprika" />
+		<text name="fillType_cauliflower" 		text="Bloemkool" />
+		<text name="fillType_bran"        		text="Zemelen" />
+		<text name="fillType_molasses"        		text="Melasse" />
+		<text name="fillType_appleJuice"        	text="Appelsap" />
+		<text name="fillType_apricotJuice"        	text="Abrikozensap" />
+		<text name="fillType_beetrootJuice"        	text="Bietensap" />
+		<text name="fillType_carrotJuice"        	text="Wortelsap" />
+		<text name="fillType_cherryJuice"        	text="Kersensap" />
+		<text name="fillType_melonJuice"        	text="Meloensap" />
+		<text name="fillType_multifruitJuice"        	text="Vruchtenmixsap" />
+		<text name="fillType_peachJuice"        	text="Perziksap" />
+		<text name="fillType_pearJuice"        		text="Perensap" />
+		<text name="fillType_plumJuice"        		text="Pruimensap" />
+		<text name="fillType_quinceJuice"        	text="Kweepeersap" />
+		<text name="fillType_strawberryJuice"        	text="Aardbeiensap" />
+		<text name="fillType_tomatoJuice"        	text="Tomatensap" />
+		<text name="fillType_watermelonJuice"        	text="Watermeloensap" />
+ 		<text name="fillType_cattle" 			text="Runderen" />
+		<text name="fillType_pigs" 			text="Varkens" />
+		<text name="fillType_sheepGoat" 		text="Schapen/Geiten" />
+ 		<text name="fillType_beef" 			text="Rundvlees" />
+		<text name="fillType_pork" 			text="Varkensvlees" />
+		<text name="fillType_poultryMeat" 		text="Kippenvlees" />
+		<text name="fillType_lamb" 			text="Lamsvlees" />
+		<text name="fillType_cigar" 			text="Sigaar" />
+		<text name="fillType_cigarette" 		text="Sigaret" />
+		<text name="fillType_animalFat" 		text="Dierlijk vet" />
+		<text name="fillType_perfume" 			text="Parfum" />
+		<text name="fillType_soap" 			text="Zeep" />
+		<text name="fillType_lavenderOil" 		text="Lavendelolie" />
+		<text name="fillType_bourbonBarrel" 		text="Bourbon" />
+		<text name="fillType_brandyBarrel" 		text="Brandy" />
+		<text name="fillType_ciderBarrel" 		text="Cider" />
+		<text name="fillType_meadBarrel" 		text="Mede" />
+		<text name="fillType_liqueurBarrel" 		text="Vruchtenlikeur" />
+		<text name="fillType_vodkaBarrel" 		text="Wodka" />
+		<text name="fillType_whiskeyBarrel" 		text="Whisky" />
+		<text name="fillType_rumBarrel" 		text="Rum" />
+		<text name="fillType_peanutflour" 		text="Pindameel" />
+		<text name="fillType_peanutOil" 		text="Pindaolie" />
+		<text name="fillType_peanutButter" 		text="Pindakaas" />
+		<text name="fillType_mayo" 			text="Mayonaise" />
+		<text name="fillType_ketchup" 			text="Ketchup" />
+		<text name="fillType_hotSauce" 			text="Hete saus" />
+		<text name="fillType_soySauce" 			text="Sojasaus" />
+		<text name="fillType_garlicSauce" 		text="Knoflooksaus" />
+		<text name="fillType_mustardSauce" 		text="Mosterdsaus" />
+		<text name="fillType_pickledCucumber" 		text="Augurken" />
+		<text name="fillType_pickledCabbage" 		text="Zure kool" />
+		<text name="fillType_pickledCauliflower" 	text="Ingelegde bloemkool" />
+		<text name="fillType_beansSoup" 		text="Bonensoep" />
+		<text name="fillType_peanutBags" 		text="Zakken pinda's" />
+		<text name="fillType_beansBags" 		text="Zakken bonen" />
+		<text name="fillType_cannedBeans" 		text="Bonen in blik" />
+		<text name="fillType_tofu" 			text="Tofukaas" />
+		<text name="fillType_chocomilk" 		text="Chocolademelk" />
+		<text name="fillType_oatmilk" 			text="Havermelk" />
+		<text name="fillType_mushroomSoup" 		text="Champignonsoep" />
+		<text name="fillType_beer" 			text="Bier" />
+		<text name="fillType_wine" 			text="Wijn" />
+		<text name="fillType_icecream" 			text="IJs" />
+		<text name="fillType_sourcream" 		text="Zure room" />
+		<text name="fillType_yoghurt" 			text="Yoghurt" />
+		<text name="fillType_sunflowerBags" 		text="Zakken zonnebloempitten" />
+		<text name="fillType_pumpkinSeeds" 		text="Zakken pompoenpitten" />
+		<text name="fillType_pumpkinPuree" 		text="Pompoenpuree" />
+		<text name="fillType_eggplantPuree" 		text="Auberginepuree" />
+		<text name="fillType_popcorn" 			text="Popcorn" />
+		<text name="fillType_cheesePuffs" 		text="Kaaswafels" />
+		<text name="fillType_peanutPuffs" 		text="Pindawafels" />
+		<text name="fillType_tortilla" 			text="Tortillachips" />
+		<text name="fillType_garlicBread" 		text="Knoflookbrood" />
+		<text name="fillType_onionRings" 		text="Uienringen" />
+		<text name="fillType_pie" 			text="Vruchtentaart" />
+		<text name="fillType_cocoaPowder" 		text="Cacaopoeder" />
+		<text name="fillType_cookingSalt" 		text="Keukenzout" />
+		<text name="fillType_yeast" 		 	text="Gist" />
+		<text name="fillType_roulade"                   text="Roulade" />
+		<text name="fillType_strudel"                   text="Strudel" />
+		<text name="fillType_milkBread"                 text="Melkbrood" />
+		<text name="fillType_potatoBread"               text="Aardappelbrood" />
+		<text name="fillType_sweetBread"                text="Suikerbrood" />
+		<text name="fillType_bagel"                     text="Bagel" />
+		<text name="fillType_baguette" 			text="Stokbrood"/>
+		<text name="fillType_hops" 			text="Hop"/>
+		<text name="fillType_cowFood" 			text="Koeienvoerpellets"/>
+		<text name="fillType_hayPellets" 		text="Hooipellets"/>
+		<text name="fillType_strawPellets" 		text="Stropellets"/>
+		<text name="fillType_woodChipsPellets" 		text="Houtsnipperpellets"/>
+		<text name="fillType_chocoCake" 		text="Chocoladetaart"/>
+		<text name="fillType_sesame" 			text="Sesam"/>
+		<text name="fillType_sesameOil" 		text="Sesamolie"/>
+		<text name="fillType_sesameBags" 		text="Verpakt sesamzaad"/>
+		<text name="fillType_chickpeasBags" 		text="Verpakte kikkererwten"/>
+		<text name="fillType_lentilsBags" 		text="Verpakte linzen"/>
+		<text name="fillType_sesameRolls" 		text="Honing-sesamsnack"/>
+		<text name="fillType_hummus" 			text="Hummus"/>
+
+	<text name="pigProcessing"        			text="Varkensverwerking" />
+		<text name="poultryProcessing"        			text="Kippenverwerking" />
+		<text name="cattleProcessing"        			text="Koeienverwerking" />
+		<text name="sheepProcessing"        			text="Schapen- en geitenverwerking" />
+		<text name="message_unloadAnimalSuccess" 		text="Dieren zijn succesvol verplaatst naar %s!" />
+        	<text name="message_unloadAnimalConfirmation" 		text="Wilt u %d dieren (%s) verplaatsen naar de %s?" />
+        	<text name="button_moveAnimal" 				text="Verplaats naar %s" />
+		<text name="message_animalTooYoung" 			text="Dit dier is te jong." />
+		<text name="message_animalTooOld" 			text="Dit dier is te oud." />
+        	<text name="configuration_grapeB" 			text="Witte druiven"/>
+        	<text name="configuration_hops" 			text="Hop"/>
+		<text name="function_fermentingTower" 			text="In deze faciliteit kun je gras, hakselsel, luzerne of klaver fermenteren." />
+		<text name="function_grainDryer" 			text="In deze faciliteit kun je maïs drogen." />
+		<text name="function_hopsVine" 			        text="Ranken om hop te verbouwen. Je hebt de multifruit-druivenoogstmachine nodig om hop te oogsten." />
+		<text name="function_buyingPoint" 			text="Bij dit station kun je bijna alles in bulk kopen." />
+
+
+	<text name="shopItem_appleOrchard" 		text="Kleine appelboomgaard" />	
+		<text name="shopItem_apricotOrchard" 		text="Kleine abrikozenboomgaard" />	
+		<text name="shopItem_appleTree" 		text="Appelboom" />	
+		<text name="shopItem_apricotTree" 		text="Abrikozenboom" />
+		<text name="shopItem_cherryOrchard" 		text="Kleine kersenboomgaard" />	
+		<text name="shopItem_pearOrchard" 		text="Kleine perenboomgaard" />	
+		<text name="shopItem_cherryTree" 		text="Kersenboom" />	
+		<text name="shopItem_pearTree" 			text="Perenboom" />	
+		<text name="shopItem_peachOrchard" 		text="Kleine perzikenboomgaard" />	
+		<text name="shopItem_peachTree" 		text="Perzikboom" />		
+		<text name="shopItem_plumOrchard" 		text="Kleine pruimenboomgaard" />	
+		<text name="shopItem_plumTree" 			text="Pruimenboom" />		
+		<text name="shopItem_quinceOrchard" 		text="Kleine kweepeerboomgaard" />	
+		<text name="shopItem_quinceTree" 		text="Kweepeerboom" />	
+		<text name="shopItem_grainCrusher" 		text="Graanpletter" />	
+		<text name="shopItem_juiceFactory" 		text="Sapfabriek" />
+		<text name="shopItem_slaughterHouse" 		text="Slachthuis" />
+		<text name="shopItem_tobaccoProd" 		text="Tabaksfabriek" />
+		<text name="shopItem_lavenderProd" 		text="Lavendelverwerkingsfabriek" />
+		<text name="shopItem_openGarden" 		text="Open tuin" />
+		<text name="shopItem_distillery" 		text="Stokerij" />
+		<text name="shopItem_preservedFood" 		text="Conservenfabriek" />
+		<text name="shopItem_foodProd" 			text="Snackproductie" />
+		<text name="shopItem_fermentingTower" 		text="Fermentatietoren" />
+		<text name="shopItem_wineCellar" 		text="Bier- en wijnkelder" />
+		<text name="shopItem_grainDryer" 		text="Maïsdroger" />
+		<text name="shopItem_openGardenFieldCrops" 	text="Open tuin voor akkerbouwgewassen" />
+		<text name="shopItem_industrialGreenhouse" 	text="Industriële kas" />
+		<text name="shopItem_vegetarianProd" 		text="Veganistische voedselproductie" />
+		<text name="shopItem_pelletizer" 		text="Pelletmachine" />
+		<text name="shopItem_buyingPoint1" 		text="Inkoopstation Multifruit" />
+		<text name="shopItem_buyingPoint2" 		text="Inkoopstation Multifruit met korting" />
+
+
+		<text name="shopItem_jamProd" 				text="Jamfabriek" />
+		<text name="fillType_edamame" 				text="Edamame (Groene sojabonen)"/>
+		<text name="fillType_taro" 				text="Taro"/>
+		<text name="fillType_okra" 				text="Okra"/>
+		<text name="fillType_mint" 				text="Munt"/>
+		<text name="fillType_greenRye" 				text="Groene rogge" />
+		<text name="fillType_taroCut" 				text="Gehakte taro" />
+		<text name="fillType_taroFlour" 			text="Taromeel" />
+		<text name="fillType_taroSoup" 				text="Tarosoep" />
+		<text name="fillType_taroChips" 			text="Tarochips" />
+		<text name="fillType_muffin" 				text="Muffins" />
+		<text name="fillType_donut" 				text="Donuts" />
+		<text name="fillType_ccm" 				text="CCM gefermenteerd (Maïskolvenmix)" />
+		<text name="fillType_ccmraw" 				text="CCM (Maïskolvenmix)" />
+		<text name="fillType_cropWindrow" 			text="Gehakseld gewas" />
+		<text name="fillType_cropSilage" 			text="Gewas-kuilvoer" />
+		<text name="fillType_grassSilage" 			text="Graskuil" />
+		<text name="fillType_safflower" 			text="Saffloer" />
+		<text name="fillType_appleJam"        			text="Appeljam" />
+		<text name="fillType_apricotJam"        		text="Abrikozenjam" />
+		<text name="fillType_cherryJam"        			text="Kersenjam" />
+		<text name="fillType_grapeJam"        			text="Druivenjam" />
+		<text name="fillType_melonJam"        			text="Meloenjam" />
+		<text name="fillType_peachJam"        			text="Perzikjam" />
+		<text name="fillType_pearJam"        			text="Perenjam" />
+		<text name="fillType_plumJam"        			text="Pruimenjam" />
+		<text name="fillType_strawberryJam"        		text="Aardbeienjam" />
+		<text name="fillType_quinceJam"        			text="Kweepeerjam" />
+		<text name="fillType_safflowerOil" 			text="Saffloerolie" />
+		<text name="fillType_mintOil" 				text="Essentiële muntolie"/>
+		<text name="fillType_mintBarrel" 			text="Muntlikeur"/>
+		<text name="fillType_jarredOkra"        		text="Okra in pot" />
+		<text name="fillType_jarredEdamame"        		text="Edamame in pot" />
+
+<text name="fillType_duckEgg"                 text="Eendeneieren"/>
+        <text name="shopItem_duckGooseBarn"             text="Eenden- en ganzenstal"/>
+        <text name="shopItem_duckGoosePasture"             text="Eenden- en ganzenweide"/>
+        <text name="shopItem_rabbitHutch"             text="Konijnenhok"/>
+        <text name="function_animalPenDuck"             text="Hier kun je eenden en ganzen houden. Voer ze en gebruik stro als strooisel om eendeneieren en mest te krijgen."/>
+        <text name="function_animalPenRabbit"             text="Hier kun je konijnen houden. Voer ze en gebruik stro als strooisel. Als ze volgroeid zijn, kun je ze met winst verkopen."/>
+        <text name="fillTypeGroup_clover"                text="Verse klaver" />
+        <text name="fillTypeGroup_fruitVegetables"             text="Groenten en fruit" />
+
+    <text name="fillType_goose"                            text="Gans" />
+        <text name="animal_group_goose"                        text="Ganzen en eenden" />
+        <text name="shopItem_animalGooseGrowthStage0"           text="Ganzenkuikens" />
+        <text name="shopItem_animalGooseGrowthStage1"           text="Gans" />
+        <text name="animal_descriptionGooseProfitGrowthStage0" text="Jonge ganzen kunnen worden gemest en daarna met winst worden verkocht." />
+        <text name="animal_descriptionGooseProfitGrowthStage1" text="Ganzen kunnen worden gefokt en daarna met winst worden verkocht." />
+        <text name="animal_descriptionGooseFeed"               text="Voer ze net als kippen. Water wordt automatisch geleverd, afhankelijk van het type huisvesting." />
+        <text name="animal_descriptionGooseReproduction"       text="Ganzen zijn geslachtsrijp na 10 maanden. Het broedseizoen duurt één maand." />
+
+    <text name="fillType_duck"                             text="Eend" />
+        <text name="shopItem_animalDuckGrowthStage0"           text="Eendenkuikens" />
+        <text name="animal_duckGrowthStage0Description"        text="Eendenkuikens leggen nog geen eieren. Ze zijn geschikt voor de fok of kunnen worden verkocht." />    
+        <text name="shopItem_animalDuckGrowthStage1"           text="Eend" />    
+        <text name="animal_duckGrowthStage1Description"        text="Eenden leveren eieren die je kunt verkopen bij een verkooppunt of verder kunt verwerken in je productiefaciliteiten." />    
+        <text name="animal_poultryFoodDescription"             text="Pluimvee heeft graan en water nodig om te produceren. Let op: Sommige hokken zijn uitgerust met automatische watertoevoer; in dat geval is water toevoegen niet nodig." />
+        
+         <text name="fillType_rabbit"                            text="Voedster (Vrouwtje)" />
+            <text name="fillType_rabbitMale"                        text="Rammelaar (Mannetje)" />
+            <text name="animal_group_rabbits"                       text="Konijnen" />
+            <text name="shopItem_animalRabbitGrowthStage0"          text="Konijnen (jongen)" />
+            <text name="shopItem_animalRabbitGrowthStage1"          text="Konijnen (halfwas)" />
+            <text name="shopItem_animalRabbitGrowthStage2"          text="Konijn (vrouwtje)" />
+            <text name="shopItem_animalRabbitGrowthStage3"          text="Konijn (mannetje)" />
+            <text name="animal_rabbitGrowthStage0Description"       text="Konijnenjongen zijn de jongste van deze soort. Ze kunnen niet individueel worden gekocht en worden geboren uit een moederdier." />
+            <text name="animal_rabbitGrowthStage1Description"       text="Een jong konijn kan worden gebruikt voor de fok." />
+            <text name="animal_rabbitGrowthStage2Description"       text="Vrouwtjeskonijnen, ook wel voedsters genoemd, kunnen nakomelingen krijgen of worden verkocht. De nakomelingen zijn jonger en kleiner dan jonge konijnen." />
+            <text name="animal_rabbitGrowthStage3Description"       text="Mannetjeskonijnen, ook wel rammelaars genoemd." />
+            <text name="animal_rabbitBeddingDescription"            text="Mannetjes kunnen alleen worden gekocht en verkocht." />
+            <text name="animal_rabbitFoodDescription"               text="Konijnen hebben stro nodig voor hun comfort." />
+
+        <text name="geeseProcessing"                     text="Verwerking van ganzen en eenden" />
+        <text name="rabbitProcessing"                     text="Verwerking van konijnen" />
+        <text name="fillType_leather"              text="Echt leer"/>
+        <text name="fillType_leatherJacket"          text="Leren jassen"/>
+        <text name="fillType_pillow"              text="Kussens"/>
+        <text name="fillType_furCoat"              text="Bontjassen"/>
+        <text name="fillType_feathers"              text="Veren" />
+        <text name="fillType_rabbitMeat"          text="Konijnenvlees" />
+        <text name="fillType_rabbitFur"          text="Konijnenbont" />
+        <text name="fillType_poultry2"              text="Pluimvee (Ganzen en eenden)" />
+        <text name="fillType_hare"              text="Konijnen" />
+        <text name="fillType_poultry"              text="Pluimvee (Kippen)" />
+
+<text name="fillType_anhydrous"          text="Vloeibare ammoniak (NH3)" />
+        <text name="fillType_propane"           text="Propaangas" />
+<text name="shopItem_bakeryFactory"     text="Bakkerij Montana" />    
+        <text name="shopItem_beerFactory"       text="Bierbrouwerij Yuengling" />        
+        <text name="shopItem_ethanolFactory"    text="Ethanolfabriek Rocky Mountain" />    
+        <text name="shopItem_whiskeyFactory"    text="Jack Daniels Whiskey-stokerij" />    
+        <text name="shopItem_dairyFactory"      text="Zuivelfabriek Country View" />    
+        <text name="shopItem_wineFactory"       text="Wijnhuis Duckhorn" />    
+        <text name="shopItem_pizzaFactory"      text="American Pizza Company" />    
+        <text name="shopItem_grainFlourFactory" text="Meelmolen" />    
+        <text name="shopItem_oilFactory"        text="Oliefabriek" />    
+    <text name="station_grainSiloTrainC1"     text="Graanhandel Great Plains" />    
+        <text name="station_grainSiloTrainC2"     text="Graansilo's Montana Prairie" />    
+        <text name="station_grainSiloTrainC3"     text="Graanterminal Yellowstone" />    
+        <text name="station_balesStorageC1"       text="Hooihandel Montana" />
+        <text name="station_grainSiloStoreC2"     text="Landbouwbenodigdheden Montana Prairie" />    
+        <text name="station_grainSiloStoreC3"     text="Flathead Voer en Graan" />    
+        <text name="station_grainSiloStoreC4"     text="Graansilo Iron Ridge" />    
+        <text name="station_grainSiloStoreC5"     text="Graanbedrijf Lone Pine" />    
+        <text name="station_grainSiloStoreC6"     text="AgriCore Montana" />
+        <text name="station_productStoreC1"       text="Restaurant" />    
+        <text name="station_productStoreC2"       text="Winkelcentrum Hobson" />    
+        <text name="station_productStoreC3"       text="Algemene Winkel Hobson" />    
+        <text name="station_productStoreC4"       text="Dollar General Winkel" />    
+        <text name="station_productStoreC5"       text="BP Tankstation" />    
+        <text name="station_productStoreC6"       text="Casey's Tankstation" />    
+        <text name="station_productStoreC7"       text="Applebee's Restaurant" />    
+        <text name="station_productStoreC8"       text="Brouwerij Kodiac" />    
+        <text name="station_productStoreC9"       text="Winkelcentrum Moccasin" />    
+        <text name="station_productStoreC10"      text="Algemene Winkel Moccasin" />    
+        <text name="station_productStoreC11"      text="Subway Filiaal" />
+	
+	</texts>
+</l10n>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="billboard2.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="$data/maps/textures/shared/default_normal.png"/>
+    <File fileId="2" filename="$data/maps/textures/shared/props/billboards/billboards_diffuse.png"/>
+    <File fileId="3" filename="$data/maps/textures/shared/props/billboards/billboards_normal.png"/>
+    <File fileId="4" filename="$data/maps/textures/shared/props/billboards/billboards_specular.png"/>
+    <File fileId="5" filename="billboard2_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="ad2x1_01_mat" materialId="5">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+    </Material>
+    <Material name="billboards_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="7" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="billboard2.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="electricityGenerator1" nodeId="14">
+        <TransformGroup name="clearAreas" nodeId="15">
+          <TransformGroup name="clearArea1Start" translation="-0.227878 0 -0.229246" nodeId="16">
+            <TransformGroup name="clearArea1Width" translation="0 0 0.459724" nodeId="17"/>
+            <TransformGroup name="clearArea1Height" translation="0.465449 0 7.10543e-17" nodeId="18"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelAreas" nodeId="19">
+          <TransformGroup name="levelArea1Start" translation="-0.228128 0 -0.227688" nodeId="20">
+            <TransformGroup name="levelArea1Width" translation="3.55271e-17 0 0.459471" nodeId="21"/>
+            <TransformGroup name="levelArea1Height" translation="0.46476 0 -3.55271e-17" nodeId="22"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" nodeId="23">
+          <TransformGroup name="testArea1Start" translation="-0.347608 0 -0.3441" nodeId="24">
+            <TransformGroup name="testArea1End" translation="0.704985 4.40769 1.49756" nodeId="25"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="26">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-0.253681 0 -0.253677" nodeId="27">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="0.537642 0 0.483754" nodeId="28"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipCollision" nodeId="29">
+          <Shape shapeId="1" name="collision" visibility="false" static="true" collisionMask="524288" nodeId="30" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="visuals" nodeId="31">
+          <Shape shapeId="2" name="billboard2x1" lockedgroup="true" static="true" density="0.0001" clipDistance="350" nodeId="32" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <Shape shapeId="3" name="billboard2x1Vis" clipDistance="350" nodeId="33" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="_2x1PanelDecal" clipDistance="200" nodeId="34" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="collisions" nodeId="35"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

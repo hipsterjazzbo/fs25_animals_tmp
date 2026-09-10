@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="ButcherTable.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.11"/>
+  </Asset>
+
+  <Files>
+    <File fileId="26" filename="$data/maps/mapAS/textures/props/metalTools/metalTools_diffuse.dds"/>
+    <File fileId="27" filename="$data/maps/mapAS/textures/props/metalTools/metalTools_normal.dds"/>
+    <File fileId="28" filename="$data/maps/mapAS/textures/props/metalTools/metalTools_specular.dds"/>
+    <File fileId="29" filename="$data/maps/mapAS/textures/props/metalTools/metalToolsbigSawAlpha_diffuse.dds"/>
+    <File fileId="30" filename="$data/maps/mapAS/textures/props/metalTools/metalToolsbigSawAlpha_normal.dds"/>
+    <File fileId="31" filename="$data/maps/mapAS/textures/props/metalTools/metalToolsbigSawAlpha_specular.dds"/>
+    <File fileId="15" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="13" filename="$data/shared/default_normal.dds"/>
+    <File fileId="17" filename="$data/shared/detailLibrary/flat_normal.dds"/>
+    <File fileId="18" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.dds"/>
+    <File fileId="16" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.dds"/>
+    <File fileId="12" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.dds"/>
+    <File fileId="3" filename="$data/shared/warningStripes_diffuse.png"/>
+    <File fileId="4" filename="$data/shared/warningStripes_normal.png"/>
+    <File fileId="5" filename="$data/shared/warningStripes_specular.png"/>
+    <File fileId="6" filename="texture/cabinetWorkbench2_diffuse.dds"/>
+    <File fileId="7" filename="texture/cabinetWorkbench2_normal.dds"/>
+    <File fileId="8" filename="texture/cabinetWorkbench2_specular.dds"/>
+    <File fileId="14" filename="texture/defaultDirty_specular.dds"/>
+    <File fileId="32" filename="texture/meatBoxes/meat_diffuse.dds"/>
+    <File fileId="33" filename="texture/meatBoxes/meat_normal.dds"/>
+    <File fileId="34" filename="texture/meatBoxes/meat_specular.dds"/>
+    <File fileId="23" filename="texture/plasticCrates_diffuse.dds"/>
+    <File fileId="24" filename="texture/plasticCrates_normal.dds"/>
+    <File fileId="25" filename="texture/plasticCrates_specular.dds"/>
+    <File fileId="9" filename="texture/tableSawButcher_diffuse.dds"/>
+    <File fileId="10" filename="texture/tableSawButcher_normal.dds"/>
+    <File fileId="11" filename="texture/tableSawButcher_specular.dds"/>
+    <File fileId="36" filename="texture/tile02_normal.dds"/>
+    <File fileId="37" filename="texture/tile02_specular.dds"/>
+    <File fileId="35" filename="texture/tile03_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="cabinetWorkbench_mat" materialId="5">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <Glossmap fileId="8"/>
+    </Material>
+    <Material name="cabinetWorkbench_mat" materialId="6">
+      <Texture fileId="32"/>
+      <Normalmap fileId="33"/>
+      <Glossmap fileId="34"/>
+    </Material>
+    <Material name="cabinetWorkbench_mat" materialId="7">
+      <Texture fileId="23"/>
+      <Normalmap fileId="24"/>
+      <Glossmap fileId="25"/>
+    </Material>
+    <Material name="cabinetWorkbench_mat" materialId="115">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+    </Material>
+    <Material name="lambert1" materialId="9" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert1" materialId="10" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="metalTools_mat" materialId="11">
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="28"/>
+    </Material>
+    <Material name="metalToolsbigSawAlpha_mat" materialId="12">
+      <Texture fileId="29"/>
+      <Normalmap fileId="30"/>
+      <Glossmap fileId="31"/>
+    </Material>
+    <Material name="saw_mat" materialId="120" customShaderId="15">
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="14"/>
+      <Custommap name="detailSpecular" fileId="16"/>
+      <Custommap name="detailNormal" fileId="17"/>
+      <Custommap name="detailDiffuse" fileId="18"/>
+      <CustomParameter name="scratches_dirt_snow_wetness" value="0 0.44 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0 0"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="14">
+      <Texture fileId="35"/>
+      <Normalmap fileId="36"/>
+      <Glossmap fileId="37"/>
+    </Material>
+    <Material name="warningStripes_mat" materialId="15">
+      <Texture fileId="3"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="ButcherTable.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="Table" lockedgroup="true" clipDistance="250" nodeId="36">
+      <TransformGroup name="clearAreas" rotation="-180 -0 180" nodeId="37">
+        <TransformGroup name="clearAreaStart01" translation="-2.117 1.11586e-14 -1.573" nodeId="38">
+          <TransformGroup name="clearAreaWidth01" translation="4.47878e-21 2.69472e-14 1.75" nodeId="39"/>
+          <TransformGroup name="clearAreaHeight01" translation="3.175 -4.37012e-14 5.12687e-21" nodeId="40"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="levelAreas" translation="0 -1.2275e-07 0" rotation="-180 -0 180" nodeId="41">
+        <TransformGroup name="levelAreaStart01" translation="-2.117 0 -1.573" nodeId="42">
+          <TransformGroup name="levelAreaWidth01" translation="0 0 1.75" nodeId="43"/>
+          <TransformGroup name="levelAreaHeight01" translation="3.175 0 0" nodeId="44"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="paintAreas" translation="0 -1.2275e-07 0" rotation="-180 -0 180" nodeId="45">
+        <TransformGroup name="paintAreaStart01" translation="0 1.37668e-14 0" nodeId="46">
+          <TransformGroup name="paintAreaWidth01" translation="-2.84881e-21 -2.27318e-14 0" nodeId="47"/>
+          <TransformGroup name="paintAreaHeight01" translation="0 -1.30451e-15 0" nodeId="48"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="indoorAreas" translation="0 -1.2275e-07 0" rotation="-180 -0 180" nodeId="49">
+        <TransformGroup name="indoorAreaStart01" translation="0 3.38618e-15 0" nodeId="50">
+          <TransformGroup name="indoorAreaWidth01" translation="0 -3.81362e-14 0" nodeId="51"/>
+          <TransformGroup name="indoorAreaHeight01" translation="0 3.12528e-14 0" nodeId="52"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="testAreas" translation="0 -1.2275e-07 0" rotation="-180 -0 180" nodeId="53">
+        <TransformGroup name="testAreaStart01" translation="0 1.33227e-14 0" nodeId="54">
+          <TransformGroup name="testAreaEnd01" nodeId="55"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tipOcclusionUpdateAreas" translation="0 -1.2275e-07 0" rotation="-180 -0 180" nodeId="56">
+        <TransformGroup name="tipOcclusionUpdateAreaStart01" translation="0 1.43219e-14 0" nodeId="57">
+          <TransformGroup name="tipOcclusionUpdateAreaEnd01" translation="0 -1.33157e-14 0" nodeId="58"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="lights" translation="1.79082 -1.2275e-07 0.812937" rotation="-180 -0 180" visibility="false" nodeId="59">
+        <TransformGroup name="realLights" visibility="false" nodeId="60">
+          <TransformGroup name="realLightsLow" visibility="false" nodeId="61">
+            <Light name="pointLightLow01" translation="0.015313 2.80362 1.4528" clipDistance="75" nodeId="62" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="7"/>
+          </TransformGroup>
+          <TransformGroup name="realLightsHigh" visibility="false" nodeId="63">
+            <Light name="spotLightHigh01" translation="0.015313 2.81613 1.44589" rotation="-90 0 0" visibility="false" clipDistance="75" nodeId="64" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="4"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="linkedLights" visibility="false" nodeId="65">
+          <TransformGroup name="lightNode01" translation="0.015313 2.78882 1.44791" rotation="90 88.2409 90" visibility="false" nodeId="66"/>
+        </TransformGroup>
+        <TransformGroup name="lightSwitch01" translation="1.97443 1.5 0.0608941" scale="0.5 0.5 0.5" visibility="false" static="true" collisionFilterMask="0xfffffbff" nodeId="67"/>
+        <Shape name="lightTrigger01" translation="2.21181 1 1.53225" shapeId="1" visibility="false" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="68" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+      </TransformGroup>
+      <Shape name="infoTrigger" translation="-1.26476 -5.64877e-08 1.53203" rotation="-180 -0 180" scale="0.374777 1 0.356283" shapeId="2" static="true" trigger="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="69" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+      <TransformGroup name="sellingStation" translation="-1.23454 3.28498e-07 1.92869" rotation="-180 -0 180" nodeId="70">
+        <Shape name="unloadTrigger" translation="-2.75 0.15 -0.895722" shapeId="3" static="true" trigger="true" collisionFilterGroup="0x60000000" collisionFilterMask="0x20000000" nodeId="71" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+        <Shape name="palletTrigger" translation="-2.75 2 -0.895722" shapeId="4" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x10000" nodeId="72" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+        <TransformGroup name="unloadTriggerMarker" translation="-2.75 1.40998e-14 -0.610226" nodeId="73"/>
+        <TransformGroup name="unloadTriggerAINode" translation="-2.75 1.32533e-14 -0.604994" nodeId="74"/>
+      </TransformGroup>
+      <TransformGroup name="productionPoint" translation="0.876256 6.00022e-08 1.98881" rotation="-180 -0 180" nodeId="75">
+        <Shape name="playerTrigger" translation="0.780953 1 -0.201085" rotation="-4.07111e-13 -0 0" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="76" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+        <TransformGroup name="playerTriggerMarker" translation="0.780953 1 0.894476" rotation="-4.07111e-13 -0 0" nodeId="77"/>
+        <Shape name="animalTrigger" translation="-0.0287783 1.78181 -0.946494" rotation="180 -9.7343e-07 -180" scale="2 1 2" shapeId="5" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="78" castsShadows="false" receiveShadows="false" nonRenderable="true" distanceBlending="false" materialIds="9"/>
+      </TransformGroup>
+      <TransformGroup name="warningStripes" translation="1.79082 -2.89096e-07 0.0896293" rotation="-180 -0 180" nodeId="79">
+        <Shape name="warningStripes01" translation="0.275155 0.01 -2.77507" shapeId="6" visibility="false" clipDistance="200" nodeId="80" castsShadows="true" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="15"/>
+        <Shape name="warningStripes02" translation="1.49979 0.01 -2.77507" shapeId="7" clipDistance="200" nodeId="81" castsShadows="true" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="15"/>
+      </TransformGroup>
+      <TransformGroup name="palletSpawner" translation="1.79082 -3.70548e-07 -0.449805" rotation="-180 -0 180" nodeId="82">
+        <TransformGroup name="palletAreaStart01" translation="-0.5 0 -2.75" rotation="0 90 0" nodeId="83">
+          <TransformGroup name="palletAreaEnd01" translation="0 0 4.5" nodeId="84"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="Decor" translation="1.79082 -0.149506 0" nodeId="85">
+        <Shape name="cabinetWorkbenchTable01" translation="-1.77535 0.197461 -0.221537" rotation="-0 90 0" scale="1 1.1126 0.860909" shapeId="8" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="129" nodeId="86" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        <Shape name="tableSaw" translation="-0.416977 0.0907943 0.337208" rotation="3.0963e-05 -90 0" shapeId="9" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="100" nodeId="87" castsShadows="true" receiveShadows="true" materialIds="115">
+          <Shape name="sawBlade" translation="0.145 0.847 0.157342" scale="0.820618 1.31716 1.31716" shapeId="10" nodeId="88" castsShadows="true" receiveShadows="true" materialIds="120"/>
+        </Shape>
+        <Shape name="meatbox" translation="-2.31615 0.280468 0.328375" rotation="0 -0.0466638 -8.00105e-19" scale="0.68484 0.68484 0.68484" shapeId="11" clipDistance="40" nodeId="89" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        <TransformGroup name="butcheryToolShelf" lockedgroup="true" translation="1.14055 1.72332 -1.87577" rotation="-5.30624 90 0" scale="1 1 0.923361" nodeId="90">
+          <TransformGroup name="bigSaw" lockedgroup="true" translation="-2.45539 -0.420705 -2.64865" rotation="90.0018 70.0075 2.27598" nodeId="91">
+            <TransformGroup name="visual_lod" lodDistance="0 8" lodBlending="false" clipDistance="15" nodeId="92">
+              <Shape name="LOD0" shapeId="12" nodeId="93" castsShadows="true" receiveShadows="true" materialIds="11">
+                <Shape name="alpha" translation="0.284684 0.151527 0" shapeId="13" nodeId="94" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="12"/>
+              </Shape>
+              <Shape name="LOD1" shapeId="14" nodeId="95" castsShadows="true" receiveShadows="true" materialIds="11"/>
+            </TransformGroup>
+            <Shape name="collision" shapeId="15" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="150" nodeId="96" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+          </TransformGroup>
+        </TransformGroup>
+        <Shape name="pork02" translation="-1.45258 0.277494 0.305662" shapeId="16" clipDistance="40" nodeId="97" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="pork01" translation="-1.90821 0.283213 0.288296" shapeId="17" clipDistance="40" nodeId="98" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="beef03" translation="-2.33203 0.274329 0.295428" rotation="-1.28415e-14 -0 -1.46887e-07" shapeId="18" clipDistance="40" nodeId="99" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="meatbox" translation="-1.8808 0.283983 0.32873" rotation="0 -0.0466638 -8.00105e-19" scale="0.68484 0.68484 0.68484" shapeId="11" clipDistance="40" nodeId="100" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        <Shape name="meatbox" translation="-1.45594 0.276395 0.329076" rotation="0 -0.0466638 -8.00105e-19" scale="0.68484 0.68484 0.68484" shapeId="11" clipDistance="40" nodeId="101" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        <Shape name="plane" shapeId="19" nodeId="102" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="14"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

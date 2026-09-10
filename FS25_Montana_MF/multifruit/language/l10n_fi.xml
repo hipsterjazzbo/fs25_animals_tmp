@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors>Jinkou89</translationContributors>
+    <languageVersion>1.0.0.0</languageVersion>
+	
+	<texts>
+	  
+	<text name="fillType_rye" 				text="Ruis" />
+	<text name="fillType_soybeanUS"        			text="Amerikkalainen soijapapu" />
+	<text name="fillType_covercropmix"        		text="Kerääjäkasviseos" />
+	<text name="fillType_roundBaleLavender"        		text="Laventelipaali" />
+	<text name="fillType_clover1"        			text="Puna-apila" />
+	<text name="fillType_clover2"        			text="Valkoapila" />
+	<text name="fillType_clover_windrow"        		text="Apila" />
+    	<text name="fillType_alfalfa"       			text="Sinimailanen" />
+	<text name="fillType_cloverSilage"        		text="Apilasäilörehu" />
+   	<text name="fillType_alfalfaSilage"       		text="Sinimailassäilörehu" />
+   	<text name="fillType_cloverHay"     			text="Apilaheinä" />
+    	<text name="fillType_alfalfaHay"    			text="Sinimailasheinä" />
+    	<text name="fillType_beanstraw" 			text="Palkokasvin olki" />
+    	<text name="fillType_cornStalks"    			text="Maissinvarsi" />
+	<text name="fillType_flaxFiber"        			text="Pellavakuitu" />
+	<text name="fillType_flax"        			text="Pellava" />
+	<text name="fillType_linseed"        			text="Pellavansiemen" />
+	<text name="fillType_millet"        			text="Hirssi" />
+	<text name="fillType_poppy"        			text="Unikko" />
+	<text name="fillType_drypeas"        			text="Kuivaherne" />
+	<text name="fillType_beans"        			text="Kirjopapu" />
+	<text name="fillType_mustard"        			text="Sinappi" />
+	<text name="fillType_lentils"        			text="Linssi" />
+	<text name="fillType_silphie"        			text="Kompassikukka" />
+	<text name="fillType_spelt"        			text="Dinkkelivehnä" />
+	<text name="fillType_triticale"        			text="Ruisvehnä" />
+	<text name="fillType_soybean2"        			text="Amerikkalainen soijapapu" />
+	<text name="fillType_tobacco"        			text="Tupakka" />
+	<text name="fillType_tobaccoo"        			text="Tupakanlehdet" />      
+	<text name="fillType_compost" 				text="Komposti" />
+	<text name="fillType_organicWaste" 			text="Biojäte" />
+	<text name="fillType_grapeA" 				text="Tummat rypäleet" />
+	<text name="fillType_grapeB" 				text="Vaaleat rypäleet" />
+	<text name="fillType_chickpeas" 			text="Kikherne" />
+	<text name="fillType_buckwheat" 			text="Tattari" />
+	<text name="shopItem_grapeb_vine" 			text="Valkoviiniköynnös" />
+	<text name="shopItem_hopsVine" 				text="Humalaköynnös" />
+	<text name="fillType_hemp" 				text="Hamppu" />
+	<text name="fillType_hempFiber" 			text="Hamppukuitu" />
+	<text name="fillType_lavender" 				text="Laventeli" />
+	<text name="fillType_potatoCut"        			text="Perunaviipaleet" />
+	<text name="fillType_beetrootCut"        		text="Punajuuriviipaleet" />
+	<text name="fillType_carrotCut"        			text="Porkkanaviipaleet" />
+	<text name="fillType_parsnipCut"        		text="Palsternakkaviipaleet" />  
+	<text name="fillTypeGroup_TMR"        			text="TMR, Säilötty sinimailanen/apila" />	  
+	<text name="fillTypeGroup_hays"        			text="Heinä, Sinimailas-/apilaheinä" />
+	<text name="fillTypeGroup_grassa"        		text="Ruoho, Tuore sinimailanen/apila" />
+	<text name="fillTypeGroup_moisture"        		text="Kosteus: Viipaloidut juurekset" />
+	<text name="fillTypeGroup_grassHay"        		text="Tuore/Heinä Ruoho/Sinimailanen/Apila" />
+	<text name="fillType_mineralFeed1"        		text="Kivennäisrehu / Kuivaherneet" />
+	<text name="fillTypeGroup_pigForage"        		text="Sikojen rehuseos" />
+	<text name="fillType_peanut" 				text="Maapähkinä" />
+	<text name="fillType_miscanthus" 			text="Norsunheinä" />
+	<text name="fillType_miscanthusCut" 			text="Norsunheinäsilppu" />
+
+
+		<text name="fillType_maize2" 			text="Kuivattu maissi" />
+		<text name="fillType_soymilk" 			text="Soijamaito" />
+		<text name="fillType_pasta" 			text="Pasta" />
+		<text name="fillType_chips" 			text="Sipsit" />
+		<text name="fillType_ethanol" 			text="Etanoli" />
+		<text name="fillType_cornflour"			text="Maissijauho" />
+		<text name="fillType_cornOil"			text="Maissiöljy" />
+		<text name="fillType_linseedOil"		text="Pellavaöljy" />
+		<text name="fillType_mustardOil"		text="Sinappiöljy" />
+		<text name="fillType_poppyOil"			text="Unikkoöljy" />
+		<text name="fillType_pizza"			text="Pitsa" />
+		<text name="fillType_buckwheatflour"        	text="Tattarijauho" />
+		<text name="fillType_gramflour"        		text="Kikhernejauho" />
+		<text name="fillType_milletflour"        	text="Hirssijauho" />
+		<text name="fillType_ryeflour"        		text="Ruisjauho" />
+		<text name="fillType_sorghumflour"        	text="Sorghumjauho" />
+		<text name="fillType_crackedCorn"        	text="Rouhittu maissi" />
+		<text name="fillType_apple"        		text="Omenat" />
+		<text name="fillType_apricot"        		text="Aprikoosit" />
+		<text name="fillType_cherry"        		text="Kirsikat" />
+		<text name="fillType_pear"        		text="Päärynät" />
+		<text name="fillType_peach"        		text="Persikat" />
+		<text name="fillType_plum"        		text="Luumut" />
+		<text name="fillType_quince"        		text="Kvittenit" />
+		<text name="fillType_cabbage"        		text="Kaali" />
+		<text name="fillType_redCabbage"        	text="Punakaali" />
+		<text name="fillType_melon"        		text="Meloni" />
+		<text name="fillType_pumpkin"        		text="Kurpitsa" />
+		<text name="fillType_watermelon"        	text="Vesimeloni" />
+		<text name="fillType_cucumber"        		text="Kurkku" />
+		<text name="fillType_eggplant"        		text="Munakoiso" />
+		<text name="fillType_pepper"        		text="Paprika" />
+		<text name="fillType_cauliflower" 		text="Kukkakaali" />
+		<text name="fillType_bran"        		text="Leseet" />
+		<text name="fillType_molasses"        		text="Melassi" />
+		<text name="fillType_appleJuice"        	text="Omenamehu" />
+		<text name="fillType_apricotJuice"        	text="Aprikoosimehu" />
+		<text name="fillType_beetrootJuice"        	text="Punajuurimehu" />
+		<text name="fillType_carrotJuice"        	text="Porkkanamehu" />
+		<text name="fillType_cherryJuice"        	text="Kirsikkamehu" />
+		<text name="fillType_melonJuice"        	text="Melonimehu" />
+		<text name="fillType_multifruitJuice"        	text="Sekamehu" />
+		<text name="fillType_peachJuice"        	text="Persikkamehu" />
+		<text name="fillType_pearJuice"        		text="Päärynämehu" />
+		<text name="fillType_plumJuice"        		text="Luumumehu" />
+		<text name="fillType_quinceJuice"        	text="Kvittenimehu" />
+		<text name="fillType_strawberryJuice"        	text="Mansikkamehu" />
+		<text name="fillType_tomatoJuice"        	text="Tomaattimehu" />
+		<text name="fillType_watermelonJuice"        	text="Vesimelonimehu" />
+ 		<text name="fillType_cattle" 			text="Nauta" />
+		<text name="fillType_pigs" 			text="Siat" />
+		<text name="fillType_sheepGoat" 		text="Lampaat/Vuohet" />
+ 		<text name="fillType_beef" 			text="Naudanliha" />
+		<text name="fillType_pork" 			text="Sianliha" />
+		<text name="fillType_poultryMeat" 		text="Siipikarjanliha" />
+		<text name="fillType_lamb" 			text="Lampaanliha" />
+		<text name="fillType_cigar" 			text="Sikari" />
+		<text name="fillType_cigarette" 		text="Savuke" />
+		<text name="fillType_animalFat" 		text="Eläinrasva" />
+		<text name="fillType_perfume" 			text="Hajuvesi" />
+		<text name="fillType_soap" 			text="Saippua" />
+		<text name="fillType_lavenderOil" 		text="Laventeliöljy" />
+		<text name="fillType_bourbonBarrel" 		text="Bourbon" />
+		<text name="fillType_brandyBarrel" 		text="Brandy" />
+		<text name="fillType_ciderBarrel" 		text="Siideri" />
+		<text name="fillType_meadBarrel" 		text="Sima" />
+		<text name="fillType_liqueurBarrel" 		text="Hedelmälikööri" />
+		<text name="fillType_vodkaBarrel" 		text="Vodka" />
+		<text name="fillType_whiskeyBarrel" 		text="Viski" />
+		<text name="fillType_rumBarrel" 		text="Rommi" />
+		<text name="fillType_peanutflour" 		text="Maapähkinäjauho" />
+		<text name="fillType_peanutOil" 		text="Maapähkinäöljy" />
+		<text name="fillType_peanutButter" 		text="Maapähkinävoi" />
+		<text name="fillType_mayo" 			text="Majoneesi" />
+		<text name="fillType_ketchup" 			text="Ketsuppi" />
+		<text name="fillType_hotSauce" 			text="Chilikastike" />
+		<text name="fillType_soySauce" 			text="Soijakastike" />
+		<text name="fillType_garlicSauce" 		text="Valkosipulikastike" />
+		<text name="fillType_mustardSauce" 		text="Sinappikastike" />
+		<text name="fillType_pickledCucumber" 		text="Suolakurkku" />
+		<text name="fillType_pickledCabbage" 		text="Hapankaali" />
+		<text name="fillType_pickledCauliflower" 	text="Säilötty kukkakaali" />
+		<text name="fillType_beansSoup" 		text="Papukeitto" />
+		<text name="fillType_peanutBags" 		text="Pähkinäsäkit" />
+		<text name="fillType_beansBags" 		text="Papusäkit" />
+		<text name="fillType_cannedBeans" 		text="Papusäilyke" />
+		<text name="fillType_tofu" 			text="Tofu" />
+		<text name="fillType_chocomilk" 		text="Suklaamaito" />
+		<text name="fillType_oatmilk" 			text="Kauramaito" />
+		<text name="fillType_mushroomSoup" 		text="Sienikeitto" />
+		<text name="fillType_beer" 			text="Olut" />
+		<text name="fillType_wine" 			text="Viini" />
+		<text name="fillType_icecream" 			text="Jäätelö" />
+		<text name="fillType_sourcream" 		text="Hapankerma" />
+		<text name="fillType_yoghurt" 			text="Jogurtti" />
+		<text name="fillType_sunflowerBags" 		text="Auringonkukansiemenet" />
+		<text name="fillType_pumpkinSeeds" 		text="Kurpitsansiemenet" />
+		<text name="fillType_pumpkinPuree" 		text="Kurpitsasose" />
+		<text name="fillType_eggplantPuree" 		text="Munakoisosose" />
+		<text name="fillType_popcorn" 			text="Popcorn" />
+		<text name="fillType_cheesePuffs" 		text="Juustonaksut" />
+		<text name="fillType_peanutPuffs" 		text="Pähkinänaksut" />
+		<text name="fillType_tortilla" 			text="Tortillalastut" />
+		<text name="fillType_garlicBread" 		text="Valkosipulileipä" />
+		<text name="fillType_onionRings" 		text="Sipulirenkaat" />
+		<text name="fillType_pie" 			text="Hedelmäpiirakka" />
+		<text name="fillType_cocoaPowder" 		text="Kaakaojauhe" />
+		<text name="fillType_cookingSalt" 		text="Ruokasuola" />
+		<text name="fillType_yeast" 		 	text="Hiiva" />
+		<text name="fillType_roulade"                   text="Kääretorttu" />
+		<text name="fillType_strudel"                   text="Struudeli" />
+		<text name="fillType_milkBread"                 text="Maitoleipä" />
+		<text name="fillType_potatoBread"               text="Perunaleipä" />
+		<text name="fillType_sweetBread"                text="Pullaleipä" />
+		<text name="fillType_bagel"                     text="Bagel-leipä" />
+		<text name="fillType_baguette" 			text="Patonki"/>
+		<text name="fillType_hops" 			text="Humala"/>
+		<text name="fillType_cowFood" 			text="Lehmänrehupelletit"/>
+		<text name="fillType_hayPellets" 		text="Heinäpelletit"/>
+		<text name="fillType_strawPellets" 		text="Olkippelletit"/>
+		<text name="fillType_woodChipsPellets" 		text="Puupelletit"/>
+		<text name="fillType_chocoCake" 		text="Suklaakakku"/>
+		<text name="fillType_sesame" 			text="Seesami"/>
+		<text name="fillType_sesameOil" 		text="Seesamiöljy"/>
+		<text name="fillType_sesameBags" 		text="Seesamisäkit"/>
+		<text name="fillType_chickpeasBags" 		text="Kikhernesäkit"/>
+		<text name="fillType_lentilsBags" 		text="Linssisäkit"/>
+		<text name="fillType_sesameRolls" 		text="Seesamisämpylät"/>
+		<text name="fillType_hummus" 			text="Hummus"/>
+
+	<text name="pigProcessing"        			text="Sianlihan jalostus" />
+		<text name="poultryProcessing"        			text="Siipikarjan jalostus" />
+		<text name="cattleProcessing"        			text="Naudanlihan jalostus" />
+		<text name="sheepProcessing"        			text="Lampaan jalostus" />
+		<text name="message_unloadAnimalSuccess" 		text="Eläimet siirretty onnistuneesti kohteeseen %s!" />
+        	<text name="message_unloadAnimalConfirmation" 		text="Haluatko siirtää %d eläintä (%s) kohteeseen %s?" />
+        	<text name="button_moveAnimal" 				text="Siirrä kohteeseen %s" />
+		<text name="message_animalTooYoung" 			text="Tämä eläin on liian nuori." />
+		<text name="message_animalTooOld" 			text="Tämä eläin on liian vanha." />
+        	<text name="configuration_grapeB" 			text="Valkoiset rypäleet"/>
+        	<text name="configuration_hops" 			text="Humala"/>
+		<text name="function_fermentingTower" 			text="Tässä rakennuksessa voit säilöä ruohoa, silppua, sinimailasta tai apilaa." />
+		<text name="function_grainDryer" 			text="Tässä rakennuksessa voit kuivata maissisi." />
+		<text name="function_hopsVine" 			        text="Humalaköynnöksiä humalan kasvattamiseen. Tarvitset rypälepuimurin sadonkorjuuseen." />
+		<text name="function_buyingPoint" 			text="Tältä asemalta voit ostaa lähes mitä tahansa irtotavarana." />
+
+
+	<text name="shopItem_appleOrchard" 		text="Pieni omenatarha" />	
+		<text name="shopItem_apricotOrchard" 		text="Pieni aprikoositarha" />	
+		<text name="shopItem_appleTree" 		text="Omenapuu" />	
+		<text name="shopItem_apricotTree" 		text="Aprikoosipuu" />
+		<text name="shopItem_cherryOrchard" 		text="Pieni kirsikkatarha" />	
+		<text name="shopItem_pearOrchard" 		text="Pieni päärynätarha" />	
+		<text name="shopItem_cherryTree" 		text="Kirsikkapuu" />	
+		<text name="shopItem_pearTree" 			text="Päärynäpuu" />	
+		<text name="shopItem_peachOrchard" 		text="Pieni persikkatarha" />	
+		<text name="shopItem_peachTree" 		text="Persikkapuu" />		
+		<text name="shopItem_plumOrchard" 		text="Pieni luumutarha" />	
+		<text name="shopItem_plumTree" 			text="Luumupuu" />		
+		<text name="shopItem_quinceOrchard" 		text="Pieni kvittenitarha" />	
+		<text name="shopItem_quinceTree" 		text="Kvittenipuu" />	
+		<text name="shopItem_grainCrusher" 		text="Viljamylly" />	
+		<text name="shopItem_juiceFactory" 		text="Mehutehdas" />
+		<text name="shopItem_slaughterHouse" 		text="Teurastamo" />
+		<text name="shopItem_tobaccoProd" 		text="Tupakkatehdas" />
+		<text name="shopItem_lavenderProd" 		text="Laventelin jalostus" />
+		<text name="shopItem_openGarden" 		text="Avopuutarha" />
+		<text name="shopItem_distillery" 		text="Tislaamo" />
+		<text name="shopItem_preservedFood" 		text="Säilyketehdas" />
+		<text name="shopItem_foodProd" 			text="Snack-tehdas" />
+		<text name="shopItem_fermentingTower" 		text="Säilöntätorni" />
+		<text name="shopItem_wineCellar" 		text="Olut- ja viinikellari" />
+		<text name="shopItem_grainDryer" 		text="Viljankuivuri" />
+		<text name="shopItem_openGardenFieldCrops" 	text="Avopuutarha peltokasveille" />
+		<text name="shopItem_industrialGreenhouse" 	text="Teollisuuskasvihuone" />
+		<text name="shopItem_vegetarianProd" 		text="Kasvistuotteiden valmistus" />
+		<text name="shopItem_pelletizer" 		text="Pelletöintikone" />
+		<text name="shopItem_buyingPoint1" 		text="Monitoimiostopaikka" />
+		<text name="shopItem_buyingPoint2" 		text="Monitoimiostopaikka (alennus)" />
+
+
+		<text name="shopItem_jamProd" 				text="Hillotehdas" />
+		<text name="fillType_edamame" 				text="Edamame (vihreä soijapapu)"/>
+		<text name="fillType_taro" 				text="Taro"/>
+		<text name="fillType_okra" 				text="Okra"/>
+		<text name="fillType_mint" 				text="Minttu"/>
+		<text name="fillType_greenRye" 				text="Tuore ruis" />
+		<text name="fillType_taroCut" 				text="Taropalat" />
+		<text name="fillType_taroFlour" 			text="Tarojauho" />
+		<text name="fillType_taroSoup" 				text="Tarokeitto" />
+		<text name="fillType_taroChips" 			text="Tarolastut" />
+		<text name="fillType_muffin" 				text="Muffinssit" />
+		<text name="fillType_donut" 				text="Donitsit" />
+		<text name="fillType_ccm" 				text="CCM säilötty (maissintähkäseos)" />
+		<text name="fillType_ccmraw" 				text="CCM (maissintähkäseos)" />
+		<text name="fillType_cropWindrow" 			text="Kokokasvisilppu" />
+		<text name="fillType_cropSilage" 			text="Kokokasvisäilörehu" />
+		<text name="fillType_grassSilage" 			text="Ruohosäilörehu" />
+		<text name="fillType_safflower" 			text="Saflori" />
+		<text name="fillType_appleJam"        			text="Omenahillo" />
+		<text name="fillType_apricotJam"        		text="Aprikoosihillo" />
+		<text name="fillType_cherryJam"        			text="Kirsikkahillo" />
+		<text name="fillType_grapeJam"        			text="Rypälehillo" />
+		<text name="fillType_melonJam"        			text="Melonihillo" />
+		<text name="fillType_peachJam"        			text="Persikkahillo" />
+		<text name="fillType_pearJam"        			text="Päärynähillo" />
+		<text name="fillType_plumJam"        			text="Luumuhillo" />
+		<text name="fillType_strawberryJam"        		text="Mansikkahillo" />
+		<text name="fillType_quinceJam"        			text="Kvittenihillo" />
+		<text name="fillType_safflowerOil" 			text="Safloriöljy" />
+		<text name="fillType_mintOil" 				text="Minttuöljy"/>
+		<text name="fillType_mintBarrel" 			text="Minttulikööri"/>
+		<text name="fillType_jarredOkra"        		text="Säilötty okra" />
+		<text name="fillType_jarredEdamame"        		text="Säilötty edamame" />
+
+<text name="fillType_duckEgg"                 text="Ankanmunat"/>
+        <text name="shopItem_duckGooseBarn"             text="Ankka- ja hanhisuoja"/>
+        <text name="shopItem_duckGoosePasture"             text="Ankka- ja hanhilaidun"/>
+        <text name="shopItem_rabbitHutch"             text="Kanihäkki"/>
+        <text name="function_animalPenDuck"             text="Täällä voit kasvattaa ankkoja ja hanhia. Ruoki ne ja käytä olkia kuivikkeena saadaksesi ankanmunia ja lantaa."/>
+        <text name="function_animalPenRabbit"             text="Täällä voit kasvattaa kaneja. Ruoki ne ja lisää olkia kuivikkeeksi. Kun ne kasvavat, voit myydä ne voitolla."/>
+        <text name="fillTypeGroup_clover"                text="Tuore apila" />
+        <text name="fillTypeGroup_fruitVegetables"             text="Hedelmät ja vihannekset" />
+
+    <text name="fillType_goose"                            text="Hanhi" />
+        <text name="animal_group_goose"                        text="Hanhet ja ankat" />
+        <text name="shopItem_animalGooseGrowthStage0"           text="Untuvikot (Hanhi)" />
+        <text name="shopItem_animalGooseGrowthStage1"           text="Hanhi" />
+        <text name="animal_descriptionGooseProfitGrowthStage0" text="Nuoria hanhia voidaan lihottaa ja myydä sen jälkeen voitolla." />
+        <text name="animal_descriptionGooseProfitGrowthStage1" text="Hanhia voidaan kasvattaa lisääntymistä varten ja myydä sen jälkeen voitolla." />
+        <text name="animal_descriptionGooseFeed"               text="Ruoki niitä kuten kanoja. Vesi toimitetaan automaattisesti rakennustyypistä riippuen." />
+        <text name="animal_descriptionGooseReproduction"       text="Hanhet tulevat sukukypsiksi 10 kuukauden iässä. Lisääntymiskausi kestää kuukauden." />
+
+    <text name="fillType_duck"                             text="Ankka" />
+        <text name="shopItem_animalDuckGrowthStage0"           text="Ankanpoikaset" />
+        <text name="animal_duckGrowthStage0Description"        text="Ankanpoikaset eivät vielä muni. Ne soveltuvat kasvatukseen tai ne voidaan myydä." />    
+        <text name="shopItem_animalDuckGrowthStage1"           text="Ankka" />    
+        <text name="animal_duckGrowthStage1Description"        text="Ankat tuottavat munia, joita voit myydä myyntipisteissä tai jatkojalostaa tuotantolaitoksissasi." />    
+        <text name="animal_poultryFoodDescription"             text="Siipikarja tarvitsee viljaa ja vettä tuottaakseen mitään. Huomautus: Jotkin kanalat on varustettu automaattisella vesijärjestelmällä, jolloin vettä ei tarvitse lisätä manuaalisesti." />
+        
+         <text name="fillType_rabbit"                            text="Naaraskani" />
+            <text name="fillType_rabbitMale"                        text="Uroskani" />
+            <text name="animal_group_rabbits"                       text="Kanit" />
+            <text name="shopItem_animalRabbitGrowthStage0"          text="Kanit (poikaset)" />
+            <text name="shopItem_animalRabbitGrowthStage1"          text="Kanit (nuoret yksilöt)" />
+            <text name="shopItem_animalRabbitGrowthStage2"          text="Kani (naaras)" />
+            <text name="shopItem_animalRabbitGrowthStage3"          text="Kani (uros)" />
+            <text name="animal_rabbitGrowthStage0Description"       text="Kaninpoikaset ovat lajin nuorimpia edustajia. Niitä ei voi ostaa erikseen, vaan ne syntyvät emosta." />
+            <text name="animal_rabbitGrowthStage1Description"       text="Nuorta kania voidaan käyttää lisääntymiseen." />
+            <text name="animal_rabbitGrowthStage2Description"       text="Naaraskaneilla voi olla poikasia tai ne voidaan myydä. Poikaset ovat nuorempia ja pienempiä kuin nuoret kanit." />
+            <text name="animal_rabbitGrowthStage3Description"       text="Uroskanit." />
+            <text name="animal_rabbitBeddingDescription"            text="Uroskaneja voi ainoastaan ostaa ja myydä." />
+            <text name="animal_rabbitFoodDescription"               text="Kanit tarvitsevat olkia pysyäkseen tyytyväisinä." />
+
+        <text name="geeseProcessing"                     text="Hanhien ja ankkojen jalostus" />
+        <text name="rabbitProcessing"                     text="Kanien jalostus" />
+        <text name="fillType_leather"              text="Aito nahka"/>
+        <text name="fillType_leatherJacket"          text="Nahkatakit"/>
+        <text name="fillType_pillow"              text="Tyynyt"/>
+        <text name="fillType_furCoat"              text="Turkit"/>
+        <text name="fillType_feathers"              text="Höyhenet" />
+        <text name="fillType_rabbitMeat"          text="Kaninliha" />
+        <text name="fillType_rabbitFur"          text="Kaninturkis" />
+        <text name="fillType_poultry2"              text="Siipikarja (Hanhet ja ankat)" />
+        <text name="fillType_hare"              text="Kanit" />
+        <text name="fillType_poultry"              text="Siipikarja (Kanat)" />
+
+<text name="fillType_anhydrous"          text="Vedetön ammoniakki (NH3)" />
+        <text name="fillType_propane"           text="Propaanikaasu" />
+<text name="shopItem_bakeryFactory"     text="Montanan leipomo" />    
+        <text name="shopItem_beerFactory"       text="Yuengling-panimo" />        
+        <text name="shopItem_ethanolFactory"    text="Rocky Mountainin etanolitehdas" />    
+        <text name="shopItem_whiskeyFactory"    text="Jack Danielsin viskitislaamo" />    
+        <text name="shopItem_dairyFactory"      text="Country View -meijeri" />    
+        <text name="shopItem_wineFactory"       text="Duckhornin viinitila" />    
+        <text name="shopItem_pizzaFactory"      text="American Pizza Company" />    
+        <text name="shopItem_grainFlourFactory" text="Jauhomylly" />    
+        <text name="shopItem_oilFactory"        text="Öljynpuristamo" />    
+    <text name="station_grainSiloTrainC1"     text="Great Plains -viljayhtiö" />    
+        <text name="station_grainSiloTrainC2"     text="Montana Prairien viljasiilot" />    
+        <text name="station_grainSiloTrainC3"     text="Yellowstonen viljaterminaali" />    
+        <text name="station_balesStorageC1"       text="Montanan heinäyhtiö" />
+        <text name="station_grainSiloStoreC2"     text="Montana Prairie -maataloustarvike" />    
+        <text name="station_grainSiloStoreC3"     text="Flatheadin rehu ja vilja" />    
+        <text name="station_grainSiloStoreC4"     text="Iron Ridgen viljasiilo" />    
+        <text name="station_grainSiloStoreC5"     text="Lone Pine -viljayhtiö" />    
+        <text name="station_grainSiloStoreC6"     text="AgriCore Montana" />
+        <text name="station_productStoreC1"       text="Ravintola" />    
+        <text name="station_productStoreC2"       text="Hobsonin liikekeskus" />    
+        <text name="station_productStoreC3"       text="Hobsonin sekatavarakauppa" />    
+        <text name="station_productStoreC4"       text="Dollar General -myymälä" />    
+        <text name="station_productStoreC5"       text="BP-huoltoasema" />    
+        <text name="station_productStoreC6"       text="Casey's-huoltoasema" />    
+        <text name="station_productStoreC7"       text="Applebee's-ravintola" />    
+        <text name="station_productStoreC8"       text="Kodiac-panimo" />    
+        <text name="station_productStoreC9"       text="Moccasinin liikekeskus" />    
+        <text name="station_productStoreC10"      text="Moccasinin sekatavarakauppa" />    
+        <text name="station_productStoreC11"      text="Subway-ravintola" />
+	
+	</texts>
+</l10n>

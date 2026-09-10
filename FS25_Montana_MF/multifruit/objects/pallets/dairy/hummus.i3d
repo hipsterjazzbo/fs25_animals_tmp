@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="hummus" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="1" filename="$data/objects/pallets/cannedPeasBoxPallet/newPalletsFoil_diffuse.png" />
+    <File fileId="2" filename="$data/objects/pallets/cannedPeasBoxPallet/newPalletsFoil_normal.png" />
+    <File fileId="3" filename="$data/objects/pallets/cannedPeasBoxPallet/newPalletsFoil_specular.png" />
+    <File fileId="4" filename="textures/hummus_diffuse.png" />
+    <File fileId="5" filename="$data/objects/pallets/goatCheeseBoxPallet/goatCheeseBox_normal.png" />
+    <File fileId="6" filename="$data/objects/pallets/goatCheeseBoxPallet/goatCheeseBox_specular.png" />
+  </Files>
+
+  <Materials>
+    <Material name="lambert1" materialId="1" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+    <Material name="newPalletsFoil_mat" materialId="3" alphaBlending="true">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="goatCheeseBox_mat" materialId="2">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="hummus.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="goatCheeseBoxPallet_main_component1" shapeId="1" dynamic="true" compound="true" staticFriction="1" dynamicFriction="1" density="0" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="150" nodeId="1">
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="2"/>
+      <TransformGroup name="dischargeNode" translation="0 0.5 0" nodeId="3"/>
+      <TransformGroup name="content" nodeId="4">
+        <TransformGroup name="goatCheeseBox01" translation="-0.448951 0.144938 0.19684" rotation="0 -90 0" collision="false" density="0" collisionFilterMask="0xfe3ffb83" nodeId="5">
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" collision="false" density="0" collisionFilterMask="0xfe3ffb83" clipDistance="75" nodeId="6">
+            <Shape name="LOD0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="7">
+              <Shape name="foil" translation="0 -0.00219 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="8"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="9"/>
+          </TransformGroup>
+          <Shape name="goatCheeseBox_Tension01" shapeId="6" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="10"/>
+        </TransformGroup>
+        <TransformGroup name="goatCheeseBox02" translation="-0.448951 0.144938 -0.20251" rotation="0 -90 0" collision="false" density="0" collisionFilterMask="0xfe3ffb83" nodeId="11">
+          <Shape name="goatCheeseBox_Tension02" shapeId="7" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="12"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" collision="false" density="0" collisionFilterMask="0xfe3ffb83" clipDistance="75" nodeId="13">
+            <Shape name="LOD0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="14">
+              <Shape name="foil" translation="0 -0.00219 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="15"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="16"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="goatCheeseBox03" translation="-0.147983 0.144938 -0.20251" rotation="0 -90 0" collision="false" density="0" collisionFilterMask="0xfe3ffb83" nodeId="17">
+          <Shape name="goatCheeseBox_Tension03" shapeId="8" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="18"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" collision="false" density="0" collisionFilterMask="0xfe3ffb83" clipDistance="75" nodeId="19">
+            <Shape name="LOD0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="20">
+              <Shape name="foil" translation="0 -0.00219 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="21"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="22"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="goatCheeseBox04" translation="-0.147983 0.144938 0.19684" rotation="0 -90 0" collision="false" density="0" collisionFilterMask="0xfe3ffb83" nodeId="23">
+          <Shape name="goatCheeseBox_Tension04" shapeId="9" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="24"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" collision="false" density="0" collisionFilterMask="0xfe3ffb83" clipDistance="75" nodeId="25">
+            <Shape name="LOD0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="26">
+              <Shape name="foil" translation="0 -0.00219 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="27"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="28"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="goatCheeseBox05" translation="0.152409 0.144938 -0.20251" rotation="0 -90 0" collision="false" density="0" collisionFilterMask="0xfe3ffb83" nodeId="29">
+          <Shape name="goatCheeseBox_Tension05" translation="0 0 -0.000575" shapeId="10" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="30"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" collision="false" density="0" collisionFilterMask="0xfe3ffb83" clipDistance="75" nodeId="31">
+            <Shape name="LOD0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="32">
+              <Shape name="foil" translation="0 -0.00219 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="33"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="34"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="goatCheeseBox06" translation="0.152409 0.144938 0.19684" rotation="0 -90 0" collision="false" density="0" collisionFilterMask="0xfe3ffb83" nodeId="35">
+          <Shape name="goatCheeseBox_Tension06" translation="0 0 -0.000575" shapeId="11" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="36"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" collision="false" density="0" collisionFilterMask="0xfe3ffb83" clipDistance="75" nodeId="37">
+            <Shape name="LOD0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="38">
+              <Shape name="foil" translation="0 -0.00219 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="39"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="40"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="goatCheeseBox07" translation="0.452115 0.144938 -0.20251" rotation="0 -90 0" collision="false" density="0" collisionFilterMask="0xfe3ffb83" nodeId="41">
+          <Shape name="goatCheeseBox_Tension07" translation="0 0 -0.001836" shapeId="12" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="42"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" collision="false" density="0" collisionFilterMask="0xfe3ffb83" clipDistance="75" nodeId="43">
+            <Shape name="LOD0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="44">
+              <Shape name="foil" translation="0 -0.00219 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="45"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="46"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="goatCheeseBox08" translation="0.452115 0.144938 0.19684" rotation="0 -90 0" collision="false" density="0" collisionFilterMask="0xfe3ffb83" nodeId="47">
+          <Shape name="goatCheeseBox_Tension08" translation="0 0 -0.001836" shapeId="13" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="48"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" collision="false" density="0" collisionFilterMask="0xfe3ffb83" clipDistance="75" nodeId="49">
+            <Shape name="LOD0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="50">
+              <Shape name="foil" translation="0 -0.00219 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="51"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="52"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="goatCheeseBox09" translation="-0.448951 0.344432 0.19684" rotation="0 -90 0" collision="false" density="0" collisionFilterMask="0xfe3ffb83" nodeId="53">
+          <Shape name="goatCheeseBox_Tension09" translation="0 0.001129 0" shapeId="14" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="54"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" collision="false" density="0" collisionFilterMask="0xfe3ffb83" clipDistance="75" nodeId="55">
+            <Shape name="LOD0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="56">
+              <Shape name="foil" translation="0 -0.00219 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="57"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="58"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="goatCheeseBox10" translation="-0.448951 0.344432 -0.20251" rotation="0 -90 0" collision="false" density="0" collisionFilterMask="0xfe3ffb83" nodeId="59">
+          <Shape name="goatCheeseBox_Tension10" translation="0 0.001129 0" shapeId="15" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="60"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" collision="false" density="0" collisionFilterMask="0xfe3ffb83" clipDistance="75" nodeId="61">
+            <Shape name="LOD0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="62">
+              <Shape name="foil" translation="0 -0.00219 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="63"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="64"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="goatCheeseBox11" translation="-0.147983 0.344432 -0.20251" rotation="0 -90 0" collision="false" density="0" collisionFilterMask="0xfe3ffb83" nodeId="65">
+          <Shape name="goatCheeseBox_Tension11" translation="0 0.001129 0" shapeId="16" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="66"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" collision="false" density="0" collisionFilterMask="0xfe3ffb83" clipDistance="75" nodeId="67">
+            <Shape name="LOD0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="68">
+              <Shape name="foil" translation="0 -0.00219 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="69"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="70"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="goatCheeseBox12" translation="-0.147983 0.344432 0.19684" rotation="0 -90 0" collision="false" density="0" collisionFilterMask="0xfe3ffb83" nodeId="71">
+          <Shape name="goatCheeseBox_Tension12" translation="0 0.001129 0" shapeId="17" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="72"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" collision="false" density="0" collisionFilterMask="0xfe3ffb83" clipDistance="75" nodeId="73">
+            <Shape name="LOD0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="74">
+              <Shape name="foil" translation="0 -0.00219 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="75"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="76"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="goatCheeseBox13" translation="0.152409 0.344432 -0.20251" rotation="0 -90 0" collision="false" density="0" collisionFilterMask="0xfe3ffb83" nodeId="77">
+          <Shape name="goatCheeseBox_Tension13" translation="0 0.001129 -0.000575" shapeId="18" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="78"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" collision="false" density="0" collisionFilterMask="0xfe3ffb83" clipDistance="75" nodeId="79">
+            <Shape name="LOD0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="80">
+              <Shape name="foil" translation="0 -0.00219 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="81"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="82"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="goatCheeseBox14" translation="0.152409 0.344432 0.19684" rotation="0 -90 0" collision="false" density="0" collisionFilterMask="0xfe3ffb83" nodeId="83">
+          <Shape name="goatCheeseBox_Tension14" translation="0 0.001129 -0.000575" shapeId="19" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="84"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" collision="false" density="0" collisionFilterMask="0xfe3ffb83" clipDistance="75" nodeId="85">
+            <Shape name="LOD0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="86">
+              <Shape name="foil" translation="0 -0.00219 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="87"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="88"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="goatCheeseBox15" translation="0.452115 0.344432 -0.20251" rotation="0 -90 0" collision="false" density="0" collisionFilterMask="0xfe3ffb83" nodeId="89">
+          <Shape name="goatCheeseBox_Tension15" translation="0 0.001129 -0.001836" shapeId="20" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="90"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" collision="false" density="0" collisionFilterMask="0xfe3ffb83" clipDistance="75" nodeId="91">
+            <Shape name="LOD0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="92">
+              <Shape name="foil" translation="0 -0.00219 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="93"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="94"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="goatCheeseBox16" translation="0.452115 0.344432 0.19684" rotation="0 -90 0" collision="false" density="0" collisionFilterMask="0xfe3ffb83" nodeId="95">
+          <Shape name="goatCheeseBox_Tension16" translation="0 0.001129 -0.001836" shapeId="21" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="96"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" collision="false" density="0" collisionFilterMask="0xfe3ffb83" clipDistance="75" nodeId="97">
+            <Shape name="LOD0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="98">
+              <Shape name="foil" translation="0 -0.00219 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="99"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="100"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="goatCheeseBox17" translation="-0.448951 0.543926 0.19684" rotation="0 -90 0" collision="false" density="0" collisionFilterMask="0xfe3ffb83" nodeId="101">
+          <Shape name="goatCheeseBox_Tension17" translation="0 0.002259 0" shapeId="22" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="102"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" collision="false" density="0" collisionFilterMask="0xfe3ffb83" clipDistance="75" nodeId="103">
+            <Shape name="LOD0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="104">
+              <Shape name="foil" translation="0 -0.00219 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="105"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="106"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="goatCheeseBox18" translation="-0.448951 0.543926 -0.20251" rotation="0 -90 0" collision="false" density="0" collisionFilterMask="0xfe3ffb83" nodeId="107">
+          <Shape name="goatCheeseBox_Tension18" translation="0 0.002259 0" shapeId="23" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="108"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" collision="false" density="0" collisionFilterMask="0xfe3ffb83" clipDistance="75" nodeId="109">
+            <Shape name="LOD0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="110">
+              <Shape name="foil" translation="0 -0.00219 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="111"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="112"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="goatCheeseBox19" translation="-0.147983 0.543926 -0.20251" rotation="0 -90 0" collision="false" density="0" collisionFilterMask="0xfe3ffb83" nodeId="113">
+          <Shape name="goatCheeseBox_Tension19" translation="0 0.002259 0" shapeId="24" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="114"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" collision="false" density="0" collisionFilterMask="0xfe3ffb83" clipDistance="75" nodeId="115">
+            <Shape name="LOD0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="116">
+              <Shape name="foil" translation="0 -0.00219 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="117"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="118"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="goatCheeseBox20" translation="-0.147983 0.543926 0.19684" rotation="0 -90 0" collision="false" density="0" collisionFilterMask="0xfe3ffb83" nodeId="119">
+          <Shape name="goatCheeseBox_Tension20" translation="0 0.002259 0" shapeId="25" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="120"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" collision="false" density="0" collisionFilterMask="0xfe3ffb83" clipDistance="75" nodeId="121">
+            <Shape name="LOD0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="122">
+              <Shape name="foil" translation="0 -0.00219 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="123"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="124"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="goatCheeseBox21" translation="0.152409 0.543926 -0.20251" rotation="0 -90 0" collision="false" density="0" collisionFilterMask="0xfe3ffb83" nodeId="125">
+          <Shape name="goatCheeseBox_Tension21" translation="0 0.002259 -0.000575" shapeId="26" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="126"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" collision="false" density="0" collisionFilterMask="0xfe3ffb83" clipDistance="75" nodeId="127">
+            <Shape name="LOD0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="128">
+              <Shape name="foil" translation="0 -0.00219 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="129"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="130"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="goatCheeseBox22" translation="0.152409 0.543926 0.19684" rotation="0 -90 0" collision="false" density="0" collisionFilterMask="0xfe3ffb83" nodeId="131">
+          <Shape name="goatCheeseBox_Tension22" translation="0 0.002259 -0.000575" shapeId="27" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="132"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" collision="false" density="0" collisionFilterMask="0xfe3ffb83" clipDistance="75" nodeId="133">
+            <Shape name="LOD0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="134">
+              <Shape name="foil" translation="0 -0.00219 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="135"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="136"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="goatCheeseBox23" translation="0.452115 0.543926 -0.20251" rotation="0 -90 0" collision="false" density="0" collisionFilterMask="0xfe3ffb83" nodeId="137">
+          <Shape name="goatCheeseBox_Tension23" translation="0 0.002259 -0.001836" shapeId="28" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="138"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" collision="false" density="0" collisionFilterMask="0xfe3ffb83" clipDistance="75" nodeId="139">
+            <Shape name="LOD0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="140">
+              <Shape name="foil" translation="0 -0.00219 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="141"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="142"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="goatCheeseBox24" translation="0.452115 0.543926 0.19684" rotation="0 -90 0" collision="false" density="0" collisionFilterMask="0xfe3ffb83" nodeId="143">
+          <Shape name="goatCheeseBox_Tension24" translation="0 0.002259 -0.001836" shapeId="29" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="144"/>
+          <TransformGroup name="visual_lod" lodDistance="0 10" lodBlending="false" collision="false" density="0" collisionFilterMask="0xfe3ffb83" clipDistance="75" nodeId="145">
+            <Shape name="LOD0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="146">
+              <Shape name="foil" translation="0 -0.00219 0" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="147"/>
+            </Shape>
+            <Shape name="LOD1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="148"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" collision="false" clipDistance="10" nodeId="149">
+        <Shape name="floorCollision01" translation="0.3 0 0" shapeId="30" compoundChild="true" staticFriction="1" dynamicFriction="1" density="0" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="150"/>
+        <Shape name="floorCollision02" translation="-0.3 0 0" shapeId="31" compoundChild="true" staticFriction="1" dynamicFriction="1" density="0" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="151"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

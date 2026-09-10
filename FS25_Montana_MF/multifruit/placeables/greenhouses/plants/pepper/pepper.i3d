@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="pepper.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="8" filename="$data/placeables/brandless/greenhouses/vegetables/tomatoes/tomatoesStage03_diffuse.dds"/>
+    <File fileId="9" filename="$data/placeables/brandless/greenhouses/vegetables/tomatoes/tomatoesStage03_normal.dds"/>
+    <File fileId="2" filename="pepper_bark_Normal.dds"/>
+    <File fileId="1" filename="pepper_bark_diffuse.dds"/>
+    <File fileId="6" filename="pepper_diffuse.dds"/>
+    <File fileId="4" filename="pepper_leaf_diffuse.dds"/>
+    <File fileId="5" filename="pepper_leaf_normal.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="bark_Mat" materialId="5" specularColor="0.192157 1 0">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="fruit_Mat" materialId="7" specularColor="0.690196 1 0.0509804">
+      <Texture fileId="6"/>
+    </Material>
+    <Material name="leaf_Mat" materialId="8">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+    </Material>
+    <Material name="mat_dead" materialId="10" specularColor="0.192157 1 0">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="pepper.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="peppers" nodeId="15">
+      <TransformGroup name="greenSmall_lod" translation="0 -0.0441501 0" nodeId="16">
+        <TransformGroup name="pepper" translation="0 -0.244758 0" nodeId="17">
+          <Shape name="bark" translation="8.42873e-09 0 0" rotation="0 85.7321 0" scale="0.00554957 0.00554957 0.00554957" shapeId="1" nodeId="18" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="leaf" translation="8.42873e-09 0 0" rotation="0 85.7321 0" scale="0.00554957 0.00554957 0.00554957" shapeId="2" nodeId="20" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="greenBig_lod" nodeId="21">
+        <TransformGroup name="pepper" nodeId="22">
+          <Shape name="bark" translation="8.42873e-09 0 0" rotation="0 85.7321 0" scale="0.00554957 0.00554957 0.00554957" shapeId="1" nodeId="23" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="fruit" translation="8.42873e-09 0 0" rotation="0 85.7321 0" scale="0.00554957 0.00554957 0.00554957" shapeId="3" nodeId="24" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="leaf" translation="8.42873e-09 0 0" rotation="0 85.7321 0" scale="0.00554957 0.00554957 0.00554957" shapeId="2" nodeId="25" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="dead_lod" nodeId="26">
+        <TransformGroup name="pepper" nodeId="27">
+          <Shape name="bark" translation="8.42873e-09 0 0" rotation="0 85.7321 0" scale="0.00554957 0.00554957 0.00554957" shapeId="1" nodeId="28" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

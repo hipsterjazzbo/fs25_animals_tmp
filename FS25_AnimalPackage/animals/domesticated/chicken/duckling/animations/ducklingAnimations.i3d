@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="s_w_modding" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+  </Materials>
+
+
+  <Shapes>
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="skeleton" nodeId="7">
+        <TransformGroup name="skeleton" rotation="-90 0 0" visibility="false" nodeId="8">
+          <TransformGroup name="handle" translation="0 0.056469 0.0679035" visibility="false" nodeId="9">
+            <TransformGroup name="ready:duck_Pelvis_bone" translation="-1.38239e-11 0 0" rotation="-90 2.1519 90" nodeId="10">
+              <TransformGroup name="ready:duck_Tail_bone" translation="0.0345704 -1.24345e-17 4.09647e-10" rotation="1.26374e-05 -1.83745e-05 -22.4179" nodeId="11">
+                <TransformGroup name="ready:duck_TailFBXASC045nub_bone" translation="0.0294035 1.86517e-17 6.67572e-09" rotation="-7.58303e-21 6.06643e-21 6.83019e-06" nodeId="12"/>
+              </TransformGroup>
+              <TransformGroup name="ready:duck_r_Femur_bone" translation="-0.0189468 -0.0113094 0.022715" rotation="3.18471e-05 2.56498e-05 -54.0553" nodeId="13">
+                <TransformGroup name="ready:duck_r_Tibia_bone" translation="-0.0375225 -1.66893e-08 -3.33786e-09" rotation="0.0190972 0.00510816 -52.7672" nodeId="14">
+                  <TransformGroup name="ready:duck_r_Metatarsus_bone" translation="-0.0287432 3.33786e-09 -1.66893e-09" rotation="1.3659e-05 -1.73024e-05 35.1156" nodeId="15">
+                    <TransformGroup name="ready:duck_r_Ankle_bone" translation="-0.0213323 -9.1791e-09 -2.3365e-08" rotation="0.000217199 0.000250893 43.1193" nodeId="16">
+                      <TransformGroup name="ready:duck_r_Toe_bone" translation="-0.00978096 7.7188e-09 3.67164e-08" rotation="0.000887956 0.0305085 23.5691" nodeId="17">
+                        <TransformGroup name="ready:duck_r_ToeFBXASC045nub_bone" translation="-0.0238588 5.21542e-09 -3.33786e-09" rotation="1.25211e-17 -6.21202e-18 -1.23246e-14" nodeId="18"/>
+                      </TransformGroup>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="ready:duck_l_Femur_bone" translation="-0.0189468 -0.0113094 -0.0227142" rotation="3.67374e-05 4.25111e-06 125.945" nodeId="19">
+                <TransformGroup name="ready:duck_l_Tibia_bone" translation="0.0375225 3.33786e-09 -3.33786e-09" rotation="-0.0270202 -0.00718536 -52.7672" nodeId="20">
+                  <TransformGroup name="ready:duck_l_Metatarsus_bone" translation="0.0287432 3.33786e-09 5.00679e-09" rotation="-8.19603e-05 3.84072e-05 35.1157" nodeId="21">
+                    <TransformGroup name="ready:duck_l_Ankle_bone" translation="0.0213323 2.5034e-09 1.66893e-09" rotation="0.0196436 -0.0333313 43.1194" nodeId="22">
+                      <TransformGroup name="ready:duck_l_Toe_bone" translation="0.00978096 1.55431e-18 1.66893e-09" rotation="-0.000136604 0.0444509 23.5515" nodeId="23">
+                        <TransformGroup name="ready:duck_l_ToeFBXASC045nub_bone" translation="0.0238588 -1.87755e-09 1.66893e-09" rotation="1.89931e-06 -1.2424e-17 -1.55052e-14" nodeId="24"/>
+                      </TransformGroup>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="ready:duck_Spine1_bone" translation="0 -6.67572e-09 1.66893e-09" rotation="-2.51317e-05 4.07111e-13 -162.365" nodeId="25">
+                <TransformGroup name="ready:duck_Spine2_bone" translation="0.05446 -1.24345e-17 9.51349e-09" rotation="-9.73454e-05 6.39946e-05 27.7994" nodeId="26">
+                  <TransformGroup name="ready:duck_Neck1_bone" translation="0.0521353 -1.24345e-17 6.07152e-21" rotation="-0.000210837 0.000409049 27.3333" nodeId="27">
+                    <TransformGroup name="ready:duck_Neck2_bone" translation="0.0241756 -6.67572e-09 5.09317e-14" rotation="-0.0015846 -0.00035517 0.975215" nodeId="28">
+                      <TransformGroup name="ready:duck_Neck3_bone" translation="0.0201605 -5.34058e-08 -6.07152e-21" rotation="-0.000910962 -0.0021308 5.95071" nodeId="29">
+                        <TransformGroup name="ready:duck_Head_bone" translation="0.0253369 6.67572e-09 -4.07453e-13" rotation="-0.000953403 -0.000452981 -60.4243" nodeId="30">
+                          <TransformGroup name="ready:duck_Nostril_bone" translation="0.02623 -2.26975e-07 4.07453e-13" rotation="-0.00114531 -0.000326438 -59.1719" nodeId="31">
+                            <TransformGroup name="ready:duck_NostrilFBXASC045nub_bone" translation="0.0552353 2.67029e-08 1.33517e-08" rotation="-5.00899e-06 -5.00915e-06 6.83019e-06" nodeId="32"/>
+                          </TransformGroup>
+                          <TransformGroup name="ready:duck_Mandible_bone" translation="0.014929 -0.0131172 -1.56212e-06" rotation="-0.00125986 -0.000247506 -39.3808" nodeId="33">
+                            <TransformGroup name="ready:duck_Beak_bone" translation="0.0149316 1.33514e-08 -1.51002e-09" rotation="2.10908e-05 0.000200704 -2.45787" nodeId="34">
+                              <TransformGroup name="ready:duck_BeakFBXASC045nub_bone" translation="0.036646 1.33514e-08 1.33512e-08" rotation="-3.23298e-05 -5.00925e-06 2.73208e-05" nodeId="35"/>
+                            </TransformGroup>
+                          </TransformGroup>
+                        </TransformGroup>
+                      </TransformGroup>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="duckling" nodeId="36">
+        <TransformGroup name="mesh" clipDistance="300" nodeId="37"/>
+      </TransformGroup>
+  </Scene>
+
+
+  <Animation externalAnimFile="ducklingAnimations.i3d.anim" />
+</i3D>

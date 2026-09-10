@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="jambonPallet1.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.11"/>
+  </Asset>
+
+  <Files>
+    <File fileId="8" filename="jambonBoxes/sack/cuerda.dds"/>
+    <File fileId="9" filename="jambonBoxes/sack/jamon.dds"/>
+    <File fileId="6" filename="../../texture/fill_Jambon.dds"/>
+    <File fileId="7" filename="../../texture/filll_pig.dds"/>
+    <File fileId="3" filename="../../texture/plasticBox_diffuse.dds"/>
+    <File fileId="4" filename="../../texture/plasticBox_normal.dds"/>
+    <File fileId="5" filename="../../texture/plasticBox_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="mat1" materialId="6" specularColor="0.4 1 0.4">
+    </Material>
+    <Material name="Material #25" materialId="7">
+      <Texture fileId="8"/>
+    </Material>
+    <Material name="MaterialJamonCurado" materialId="8">
+      <Texture fileId="9"/>
+    </Material>
+    <Material name="plasticBox01_mat" materialId="9">
+      <Texture fileId="3"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="10">
+      <Texture fileId="6"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="11">
+      <Texture fileId="7"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="jambonPallet1.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="JambonPallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="22" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <Shape name="dynamicMountTrigger" translation="0 0.150572 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="23" castsShadows="true" receiveShadows="true" materialIds="5"/>
+      <TransformGroup name="content" translation="0 -3.72529e-08 0" scale="1 0.900001 1" nodeId="24">
+        <Shape name="cereals01" translation="0.00485786 0.69612 0.00363407" rotation="-90 -90 4.64663e-06" scale="0.02542 0.0244321 0.0152194" shapeId="3" nodeId="25" castsShadows="true" receiveShadows="true" materialIds="6,6,6">
+          <Shape name="cereals01Tension" translation="0.0335403 -25.4293 -7.17966" scale="52.6063 164.612 71.477" shapeId="4" nodeId="26" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="plasticBox" lockedgroup="true" translation="0.00223846 -0.00348395 -0.00283237" scale="1.33834 0.952558 0.899918" shapeId="5" clipDistance="100" nodeId="27" castsShadows="true" receiveShadows="true" materialIds="9">
+          <TransformGroup name="image" translation="-0.00292229 -0.257173 0.00664475" scale="0.817134 1.36061 1.23479" nodeId="28">
+            <Shape name="plane" translation="0.271978 0.756988 0.363156" rotation="90 -0 0" scale="0.222654 0.222654 0.222654" shapeId="6" clipDistance="300" nodeId="29" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="10"/>
+            <Shape name="plane" translation="-0.281778 0.756988 0.361124" rotation="90 -0 0" scale="0.222654 0.222654 0.222654" shapeId="6" clipDistance="300" nodeId="30" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="11"/>
+            <Shape name="plane" translation="0.271978 0.756988 -0.372284" rotation="-90 -0 180" scale="0.222654 0.222654 0.222654" shapeId="6" clipDistance="300" nodeId="31" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="11"/>
+            <Shape name="plane" translation="-0.281778 0.756988 -0.371976" rotation="-90 -0 180" scale="0.222654 0.222654 0.222654" shapeId="6" clipDistance="300" nodeId="32" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="10"/>
+          </TransformGroup>
+        </Shape>
+        <TransformGroup name="visibilityNodes" translation="-0.624214 0.665534 -0.0409312" rotation="0 -0 -90" scale="1 1.51094 1.37076" nodeId="33">
+          <TransformGroup name="fillBags" translation="-0.188026 -0.0656002 0.0680913" scale="0.545135 0.376597 0.377805" nodeId="34">
+            <TransformGroup name="jamon" translation="0.311039 0.428 -0.318895" rotation="180 2.12642 180" nodeId="35">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="36" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="37" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="0.35147 0.428182 -0.0288295" rotation="180 0 180" nodeId="38">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="39" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="1.05725 0.469743 -0.35276" rotation="180 0 180" nodeId="41">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="42" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="43" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="0.359674 0.428179 -0.0369781" rotation="-1.66051e-13 0 0.000497219" nodeId="44">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="45" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="46" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="-0.201369 0.428174 -0.0369781" rotation="-1.66051e-13 0 0.000497219" nodeId="47">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="48" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="-0.522517 0.428266 0.582715" rotation="1.75536e-09 90 0.01934" nodeId="50">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="51" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="52" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="1.05725 0.428182 -0.075974" rotation="180 0 180" nodeId="53">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="54" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="55" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="1.05725 0.428182 0.170943" rotation="180 0 180" nodeId="56">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="57" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="58" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="1.05725 0.428182 0.459532" rotation="180 0 180" nodeId="59">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="60" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="0.35147 0.428182 0.228401" rotation="180 0 180" nodeId="62">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="63" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="64" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="0.00447382 0.428182 0.289968" rotation="-180 90 -180" nodeId="65">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="66" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="67" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="0.00447399 0.428182 -0.19788" rotation="-180 90 -180" nodeId="68">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="69" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="70" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="0.449001 0.428182 0.852985" rotation="180 0 180" nodeId="71">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="72" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="73" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="-0.208412 0.999074 0.667867" rotation="1.75536e-09 90 0.01934" nodeId="74">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="75" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="76" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="-0.208412 0.999074 -0.177926" rotation="1.75536e-09 90 0.01934" nodeId="77">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="78" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="79" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="-0.156048 0.962586 0.265233" rotation="1.75536e-09 90 0.01934" nodeId="80">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="81" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="82" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="0.0838433 1.12308 0.192932" rotation="89 -173 -92" scale="1 1.13057 1" nodeId="83">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="84" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="85" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="0.194359 1.44271 -0.460998" rotation="94.0277 -2.78603e-10 -90" scale="1 1.13057 1" nodeId="86">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="87" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="88" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="visibilityNodes" translation="0.609875 0.668634 -0.00960885" rotation="180 -0 -90" scale="1 1.51094 1.37076" nodeId="89">
+          <TransformGroup name="fillBags" translation="-0.188026 -0.0656002 0.0680913" scale="0.545135 0.376597 0.377805" nodeId="90">
+            <TransformGroup name="jamon" translation="0.311039 0.428 -0.318895" rotation="180 2.12642 180" nodeId="91">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="92" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="93" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="0.35147 0.428182 -0.0288295" rotation="180 0 180" nodeId="94">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="95" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="96" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="1.05725 0.428182 -0.35276" rotation="180 0 180" nodeId="97">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="98" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="99" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="0.359674 0.428179 -0.0369781" rotation="-1.66051e-13 0 0.000497219" nodeId="100">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="101" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="102" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="-0.201369 0.428174 -0.0369781" rotation="-1.66051e-13 0 0.000497219" nodeId="103">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="104" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="105" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="-0.522517 0.428266 0.582715" rotation="1.75536e-09 90 0.01934" nodeId="106">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="107" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="108" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="1.05725 0.428182 -0.075974" rotation="180 0 180" nodeId="109">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="110" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="111" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="1.05725 0.428182 0.170943" rotation="180 0 180" nodeId="112">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="113" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="114" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="1.05725 0.428182 0.459532" rotation="180 0 180" nodeId="115">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="116" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="117" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="0.35147 0.428182 0.228401" rotation="180 0 180" nodeId="118">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="119" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="120" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="0.00447382 0.428182 0.289968" rotation="-180 90 -180" nodeId="121">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="122" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="123" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="jamon" translation="0.00447399 0.428182 -0.19788" rotation="-180 90 -180" nodeId="124">
+              <Shape name="Torus001" translation="0.74941 1.68758 0.749441" shapeId="7" clipDistance="15" nodeId="125" castsShadows="false" receiveShadows="false" materialIds="7"/>
+              <Shape name="pata" translation="0.732842 0.0463646 0.0202566" rotation="1.71244e-08 -89.8042 -1.51027e-08" shapeId="8" clipDistance="50" nodeId="126" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" translation="0 -3.72529e-08 0" clipDistance="10" nodeId="127">
+        <Shape name="floorCollision01" translation="0.3 0 0" shapeId="9" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="128" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="floorCollision02" translation="-0.3 0 0" shapeId="9" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="129" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+</i3D>

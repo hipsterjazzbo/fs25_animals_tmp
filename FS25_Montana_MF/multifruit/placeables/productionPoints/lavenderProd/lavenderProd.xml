@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_lavenderProd</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>multifruit/placeables/productionPoints/lavenderProd/store_lavenderProd.dds</image>
+        <price>50000</price>
+        <lifetime>1000</lifetime>
+        <dailyUpkeep>5</dailyUpkeep>
+        <rotation>0</rotation>
+        <brand>JINKOU</brand>
+        <species>PLACEABLE</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+        <vertexBufferMemoryUsage>776448</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>178432</indexBufferMemoryUsage>
+        <textureMemoryUsage>12976128</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+    <base>
+        <filename>multifruit/placeables/productionPoints/lavenderProd/lavenderProd.i3d</filename>
+	<boughtWithFarmland>false</boughtWithFarmland>
+	<canBeDeleted>true</canBeDeleted>
+	<canBeRenamed>true</canBeRenamed>
+    </base>
+    <placement useRandomYRotation="false" useManualYRotation="true">
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End"/>
+        </testAreas>
+        <sounds>
+            <place template="smallImp"/>
+        </sounds>
+    </placement>
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height"/>
+        </levelAreas>
+        <paintAreas>
+            <paintArea startNode="paintArea1Start" widthNode="paintArea1Width" heightNode="paintArea1Height" groundType="asphalt"/>
+        </paintAreas>
+    </leveling>
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
+    </indoorAreas>
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End"/>
+    </tipOcclusionUpdateAreas>
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End"/>
+        </updateAreas>
+    </ai>
+    <infoTrigger triggerNode="infoTrigger"/>
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="unloadTriggerMarker" teleportNode="unloadTriggerMarker"/>
+    </hotspots>
+    <triggerMarkers>
+        <triggerMarker node="warningStripes"/>
+        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIconWrench.i3d" adjustToGround="true"/>
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true"/>
+        <!-- <triggerMarker node="loadingTriggerMarker" filename="$data/shared/assets/marker/markerIconLoad.i3d"/> -->
+    </triggerMarkers>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart filename="$data/effects/chimneySmoke/smokeTrailSubUV.i3d" node="0" linkNode="chimneySmoke" shaderParameterName="colorAlpha" shaderParameter="0.5 0.5 0.5 0.5"/>
+    </dynamicallyLoadedParts>
+
+    <productionPoint>
+        <productions sharedThroughputCapacity="false">
+
+	<production id="perfume" name="$l10n_fillType_perfume" cyclesPerHour="1" costsPerActiveHour="15">
+                <inputs>
+                    <input fillType="LAVENDER" amount="1100" />  
+                    <input fillType="ETHANOL" amount="500" /> 
+                    <input fillType="CARTONROLL" amount="10" /> 
+                </inputs>
+                <outputs>
+                    <output fillType="PERFUME" amount="400" /> 
+                </outputs>
+            </production>
+
+	<production id="soap1" name="$l10n_fillType_soap" cyclesPerHour="1" costsPerActiveHour="10">
+                <inputs>
+                    <input fillType="LAVENDER" amount="1200" /> 
+                    <input fillType="ANIMAL_FAT" amount="250" />
+                    <input fillType="CARTONROLL" amount="15" />
+                    <input fillType="PAPERROLL" amount="25" />
+                </inputs>
+                <outputs>
+                    <output fillType="SOAP" amount="450" />
+                </outputs>
+            </production>
+
+	<production id="soap2" name="$l10n_fillType_soap" cyclesPerHour="1" costsPerActiveHour="10">
+                <inputs>
+                    <input fillType="MINT" amount="1200" /> 
+                    <input fillType="ANIMAL_FAT" amount="250" />
+                    <input fillType="CARTONROLL" amount="15" />
+                    <input fillType="PAPERROLL" amount="25" />
+                </inputs>
+                <outputs>
+                    <output fillType="SOAP" amount="450" />
+                </outputs>
+            </production>
+
+	<production id="vegetal_soap1" name="$l10n_fillType_soap" cyclesPerHour="1" costsPerActiveHour="10">
+                <inputs>
+                    <input fillType="LAVENDER" amount="1200" /> 
+                    <input fillType="OLIVE_OIL" amount="200" />
+                    <input fillType="CARTONROLL" amount="15" />
+                    <input fillType="PAPERROLL" amount="25" />
+                </inputs>
+                <outputs>
+                    <output fillType="SOAP" amount="450" />
+                </outputs>
+            </production>
+
+	<production id="vegetal_soap2" name="$l10n_fillType_soap" cyclesPerHour="1" costsPerActiveHour="10">
+                <inputs>
+                    <input fillType="MINT" amount="1200" /> 
+                    <input fillType="OLIVE_OIL" amount="200" />
+                    <input fillType="CARTONROLL" amount="15" />
+                    <input fillType="PAPERROLL" amount="25" />
+                </inputs>
+                <outputs>
+                    <output fillType="SOAP" amount="450" />
+                </outputs>
+            </production>
+
+	<production id="lavenderOil" name="$l10n_fillType_lavenderOil" cyclesPerHour="2" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="LAVENDER" amount="1000" /> 
+                    <input fillType="CARTONROLL" amount="20" /> 
+                </inputs>
+                <outputs>
+                    <output fillType="LAVENDER_OIL" amount="300" />  
+                </outputs>
+            </production>
+
+	<production id="mintOil" name="$l10n_fillType_mintOil" cyclesPerHour="2" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="MINT" amount="1000" /> 
+                    <input fillType="CARTONROLL" amount="20" /> 
+                </inputs>
+                <outputs>
+                    <output fillType="MINT_OIL" amount="300" />  
+                </outputs>
+            </production>
+
+        </productions>
+
+        <storage isExtension="false" fillLevelSyncThreshold="50">
+
+            <capacity fillType="LAVENDER"             	capacity="250000" />
+            <capacity fillType="MINT"             	capacity="250000" />
+            <capacity fillType="ETHANOL" 		capacity="100000" />
+            <capacity fillType="ANIMAL_FAT" 		capacity="100000" />
+            <capacity fillType="OLIVE_OIL" 		capacity="100000" />
+            <capacity fillType="CARTONROLL" 		capacity="100000" />
+            <capacity fillType="PAPERROLL" 		capacity="100000" />
+            <capacity fillType="PERFUME"          	capacity="50000" />
+            <capacity fillType="SOAP"     	     	capacity="50000" />
+            <capacity fillType="LAVENDER_OIL"          	capacity="50000" />
+            <capacity fillType="MINT_OIL"          	capacity="50000" />
+
+        </storage>
+
+        <sellingStation node="sellingStation" supportsExtension="false" allowMissions="false" appearsOnStats="false" hideFromPricesMenu="true" >
+            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="LAVENDER MINT"/>
+		<baleTrigger triggerNode="baleTrigger" deleteLitersPerSecond="2000" fillTypes="LAVENDER"/>
+		<palletTrigger triggerNode="palletTrigger" deleteLitersPerSecond="2000" aiNode="unloadTriggerAINode" fillTypes="ETHANOL ANIMAL_FAT OLIVE_OIL CARTONROLL PAPERROLL" />		
+        </sellingStation>
+
+    <!--    <loadingStation supportsExtension="false" >
+            <loadTrigger triggerNode="loadingTrigger" fillTypeCategories="LAVENDER MINT" fillLitersPerSecond="2000" aiNode="unloadTriggerAINode">
+            </loadTrigger>
+        </loadingStation> -->
+
+        <palletSpawner node="palletSpawner">
+            <spawnPlaces>
+                <spawnPlace startNode="spawnSpace1start" fillTypeCategories="product" />
+            </spawnPlaces>
+        </palletSpawner>
+
+        <playerTrigger node="playerTrigger" />
+
+	  <sounds>
+            <idle template="cerealFactoryIdle" linkNode="0>" />
+            <active template="cerealFactoryWork" linkNode="0>" />
+        </sounds>
+    </productionPoint>
+
+    <i3dMappings>
+        <i3dMapping id="farmProductionBuilding" node="0>0|1|0|0"/>
+        <i3dMapping id="chimneySmoke" node="0>0|2"/>
+        <i3dMapping id="clearArea1Start" node="0>1|0"/>
+        <i3dMapping id="clearArea1Width" node="0>1|0|0"/>
+        <i3dMapping id="clearArea1Height" node="0>1|0|1"/>
+        <i3dMapping id="levelArea1Start" node="0>2|0"/>
+        <i3dMapping id="levelArea1Width" node="0>2|0|0"/>
+        <i3dMapping id="levelArea1Height" node="0>2|0|1"/>
+        <i3dMapping id="paintArea1Start" node="0>3|0"/>
+        <i3dMapping id="paintArea1Width" node="0>3|0|0"/>
+        <i3dMapping id="paintArea1Height" node="0>3|0|1"/>
+        <i3dMapping id="indoorArea1Start" node="0>4|0"/>
+        <i3dMapping id="indoorArea1Width" node="0>4|0|0"/>
+        <i3dMapping id="indoorArea1Height" node="0>4|0|1"/>
+        <i3dMapping id="testArea1Start" node="0>5|0"/>
+        <i3dMapping id="testArea1End" node="0>5|0|0"/>
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>6|0"/>
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>6|0|0"/>
+        <i3dMapping id="infoTrigger" node="0>7"/>
+        <i3dMapping id="sellingStation" node="0>11"/>
+        <i3dMapping id="unloadTrigger" node="0>11|0"/>
+        <i3dMapping id="unloadTriggerMarker" node="0>11|0|0"/>
+        <i3dMapping id="baleTrigger" node="0>11|0|1"/>
+        <i3dMapping id="palletTrigger" node="0>11|0|2"/>
+        <i3dMapping id="unloadTriggerAINode" node="0>11|1"/>
+
+        <i3dMapping id="loadingTrigger" node="0>11|2"/>
+        <i3dMapping id="loadingTriggerMarker" node="0>11|2|0"/>
+
+        <i3dMapping id="playerTrigger" node="0>12|0"/>
+        <i3dMapping id="playerTriggerMarker" node="0>12|0|0"/>
+        <i3dMapping id="palletSpawner" node="0>13"/>
+        <i3dMapping id="spawnSpace1start" node="0>13|0"/>
+        <i3dMapping id="warningStripes" node="0>14"/>
+    </i3dMappings>
+</placeable>

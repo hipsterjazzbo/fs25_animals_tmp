@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="poultryMeatBox1.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.11"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="../../texture/fill_chickenMeat.dds"/>
+    <File fileId="7" filename="../../texture/filll_roostMeat1.dds"/>
+    <File fileId="8" filename="../../texture/meatBoxes/meat_diffuse.dds"/>
+    <File fileId="9" filename="../../texture/meatBoxes/meat_normal.dds"/>
+    <File fileId="10" filename="../../texture/meatBoxes/meat_specular.dds"/>
+    <File fileId="3" filename="../../texture/plasticBox_diffuse.dds"/>
+    <File fileId="4" filename="../../texture/plasticBox_normal.dds"/>
+    <File fileId="5" filename="../../texture/plasticBox_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="mat1" materialId="6" specularColor="0.4 1 0.4">
+    </Material>
+    <Material name="meat_mat" materialId="7">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="plasticBox01_mat" materialId="8">
+      <Texture fileId="3"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="9">
+      <Texture fileId="6"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="10">
+      <Texture fileId="7"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="poultryMeatBox1.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="chickenMeatPallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="66" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <Shape name="dynamicMountTrigger" translation="0 0.16415 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="67" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="content" scale="1 0.9 1" nodeId="68">
+        <Shape name="cereals01" rotation="-90 -90 4.64663e-06" scale="0.02542 0.0244321 0.0152194" shapeId="3" nodeId="69" castsShadows="true" receiveShadows="true" materialIds="6,6,6">
+          <Shape name="cereals01Tension" scale="52.6063 164.612 71.477" shapeId="4" nodeId="70" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="plasticBox" lockedgroup="true" scale="1.33834 0.952558 0.899918" shapeId="5" clipDistance="100" nodeId="71" castsShadows="true" receiveShadows="true" materialIds="8">
+          <TransformGroup name="image" scale="0.81967 1.36061 1.23479" nodeId="72">
+            <Shape name="plane" rotation="90 -0 0" scale="0.222654 0.222654 0.222654" shapeId="6" clipDistance="300" nodeId="73" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="9"/>
+            <Shape name="plane" rotation="90 -0 0" scale="0.222654 0.222654 0.222654" shapeId="7" clipDistance="300" nodeId="74" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="10"/>
+            <Shape name="plane" rotation="-90 -0 180" scale="0.222654 0.222654 0.222654" shapeId="8" clipDistance="300" nodeId="75" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="10"/>
+            <Shape name="plane" rotation="-90 -0 180" scale="0.222654 0.222654 0.222654" shapeId="9" clipDistance="300" nodeId="76" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="9"/>
+          </TransformGroup>
+        </Shape>
+        <TransformGroup name="visibilityNodes" scale="1.62171 1 1.56966" nodeId="77">
+          <Shape name="chicken" scale="0.45194 0.45194 0.45194" shapeId="10" clipDistance="40" nodeId="78" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" scale="0.45194 0.45194 0.45194" shapeId="11" clipDistance="40" nodeId="79" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" scale="0.45194 0.45194 0.45194" shapeId="12" clipDistance="40" nodeId="80" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" scale="0.45194 0.45194 0.45194" shapeId="13" clipDistance="40" nodeId="81" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" scale="0.45194 0.45194 0.45194" shapeId="14" clipDistance="40" nodeId="82" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" scale="0.45194 0.45194 0.45194" shapeId="15" clipDistance="40" nodeId="83" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" rotation="0 2.57598 0" scale="0.45194 0.45194 0.45194" shapeId="16" clipDistance="40" nodeId="84" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" rotation="0 -1.62252 0" scale="0.45194 0.45194 0.45194" shapeId="17" clipDistance="40" nodeId="85" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" scale="0.45194 0.45194 0.45194" shapeId="18" clipDistance="40" nodeId="86" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" scale="0.45194 0.45194 0.45194" shapeId="19" clipDistance="40" nodeId="87" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" scale="0.45194 0.45194 0.45194" shapeId="20" clipDistance="40" nodeId="88" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" scale="0.45194 0.45194 0.45194" shapeId="21" clipDistance="40" nodeId="89" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" scale="0.45194 0.45194 0.45194" shapeId="22" clipDistance="40" nodeId="90" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" scale="0.45194 0.45194 0.45194" shapeId="23" clipDistance="40" nodeId="91" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" rotation="-180 84.9254 -180" scale="0.45194 0.45194 0.45194" shapeId="24" clipDistance="40" nodeId="92" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" rotation="-180 84.9254 -180" scale="0.45194 0.45194 0.45194" shapeId="25" clipDistance="40" nodeId="93" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" rotation="-180 84.9254 -180" scale="0.45194 0.45194 0.45194" shapeId="26" clipDistance="40" nodeId="94" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" rotation="-180 84.9254 -180" scale="0.45194 0.45194 0.45194" shapeId="27" clipDistance="40" nodeId="95" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" rotation="-180 84.9254 -180" scale="0.45194 0.45194 0.45194" shapeId="28" clipDistance="40" nodeId="96" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" rotation="-180 84.9254 -180" scale="0.45194 0.45194 0.45194" shapeId="29" clipDistance="40" nodeId="97" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" rotation="-180 84.9254 -180" scale="0.45194 0.45194 0.45194" shapeId="30" clipDistance="40" nodeId="98" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" rotation="-180 84.9254 -180" scale="0.45194 0.45194 0.45194" shapeId="31" clipDistance="40" nodeId="99" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        </TransformGroup>
+        <TransformGroup name="visibilityNodes" scale="1.62171 1 1.56966" nodeId="100">
+          <Shape name="chicken" scale="0.45194 0.45194 0.45194" shapeId="32" clipDistance="40" nodeId="101" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" scale="0.45194 0.45194 0.45194" shapeId="33" clipDistance="40" nodeId="102" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" scale="0.45194 0.45194 0.45194" shapeId="34" clipDistance="40" nodeId="103" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" scale="0.45194 0.45194 0.45194" shapeId="35" clipDistance="40" nodeId="104" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" scale="0.45194 0.45194 0.45194" shapeId="36" clipDistance="40" nodeId="105" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" scale="0.45194 0.45194 0.45194" shapeId="37" clipDistance="40" nodeId="106" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" rotation="0 2.57598 0" scale="0.45194 0.45194 0.45194" shapeId="38" clipDistance="40" nodeId="107" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" rotation="0 -1.62252 0" scale="0.45194 0.45194 0.45194" shapeId="39" clipDistance="40" nodeId="108" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" scale="0.45194 0.45194 0.45194" shapeId="40" clipDistance="40" nodeId="109" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" scale="0.45194 0.45194 0.45194" shapeId="41" clipDistance="40" nodeId="110" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" scale="0.45194 0.45194 0.45194" shapeId="42" clipDistance="40" nodeId="111" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" scale="0.45194 0.45194 0.45194" shapeId="43" clipDistance="40" nodeId="112" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" scale="0.45194 0.45194 0.45194" shapeId="44" clipDistance="40" nodeId="113" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" scale="0.45194 0.45194 0.45194" shapeId="45" clipDistance="40" nodeId="114" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" rotation="-180 84.9254 -180" scale="0.45194 0.45194 0.45194" shapeId="46" clipDistance="40" nodeId="115" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" rotation="-180 84.9254 -180" scale="0.45194 0.45194 0.45194" shapeId="47" clipDistance="40" nodeId="116" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" rotation="-180 84.9254 -180" scale="0.45194 0.45194 0.45194" shapeId="48" clipDistance="40" nodeId="117" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" rotation="-180 84.9254 -180" scale="0.45194 0.45194 0.45194" shapeId="49" clipDistance="40" nodeId="118" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" rotation="-180 84.9254 -180" scale="0.45194 0.45194 0.45194" shapeId="50" clipDistance="40" nodeId="119" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" rotation="-180 84.9254 -180" scale="0.45194 0.45194 0.45194" shapeId="51" clipDistance="40" nodeId="120" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" rotation="-180 84.9254 -180" scale="0.45194 0.45194 0.45194" shapeId="52" clipDistance="40" nodeId="121" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chicken" rotation="-180 84.9254 -180" scale="0.45194 0.45194 0.45194" shapeId="53" clipDistance="40" nodeId="122" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="123">
+        <Shape name="floorCollision01" translation="0.3 0 0" shapeId="54" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="124" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="floorCollision02" translation="-0.3 0 0" shapeId="54" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="125" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+</i3D>

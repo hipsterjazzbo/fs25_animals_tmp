@@ -1,0 +1,25 @@
+# FS25 heavyweight binary assets
+*.dds
+*.i3d.shapes
+
+# Audio
+*.ogg
+*.wav
+*.mp3
+
+# Video
+*.mp4
+*.webm
+
+# Archives
+*.zip
+*.7z
+*.rar
+
+# Generated / temp junk
+Thumbs.db
+.DS_Store
+*.log
+*.bak
+*.tmp
+~$*

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+
+<animalHusbandry>
+    <animals> 
+		<!-- RABBIT BUNNY -->	
+        <animal radius="0.3" handleThreats="false" threatAwarenessRadius="1" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.755" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true">
+            <statesTimers idleMin="13333" idleMax="26666" sleepMin="120000" sleepMax="180000" restMin="18000" restMax="30000" grazeMin="11666" grazeMax="23332" chewMin="8000" chewMax="16000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="20000" />
+            <assets filename="rabbit_bunny.i3d" filenamePosed="animals/domesticated/rabbit/rabbit_bunny_posed.i3d" animation="animations/adult/rabbit_bunny/rabbit_bunny.i3d" skeletonIndex="0" meshIndex="1" proxyIndex="2" shaderIndex="1|0">
+                <texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false" />
+                <texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false" />
+                <texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false" />
+                <texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="locomotionBunny.xml"/>
+            <audio eatSoundGroup="eat" yellSoundGroup="yell" yellMinInterval="8000" yellMaxInterval="20000" yellTimerCrowdScale="0.2" />
+        </animal>
+        
+		<!-- RABBIT YOUNG -->
+		<animal radius="0.3" handleThreats="false" threatAwarenessRadius="1" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.755" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true">
+            <statesTimers idleMin="13333" idleMax="26666" sleepMin="120000" sleepMax="180000" restMin="18000" restMax="30000" grazeMin="11666" grazeMax="23332" chewMin="8000" chewMax="16000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="20000" />
+            <assets filename="rabbit_young.i3d" filenamePosed="animals/domesticated/rabbit/rabbit_young_posed.i3d" animation="animations/adult/rabbit_young/youngAdultAnimations.i3d" skeletonIndex="0" meshIndex="1" proxyIndex="2" shaderIndex="1|0">
+                <texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false" />
+                <texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false" />
+                <texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false" />
+                <texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="locomotionYoung.xml"/>
+            <audio eatSoundGroup="eat" yellSoundGroup="yell" yellMinInterval="8000" yellMaxInterval="20000" yellTimerCrowdScale="0.2" />
+        </animal>
+		
+		<!-- RABBIT FEMALE -->
+		<animal radius="0.3" handleThreats="false" threatAwarenessRadius="1" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.755" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true">
+            <statesTimers idleMin="13333" idleMax="26666" sleepMin="120000" sleepMax="180000" restMin="18000" restMax="30000" grazeMin="11666" grazeMax="23332" chewMin="8000" chewMax="16000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="20000" />
+            <assets filename="rabbit_female.i3d" filenamePosed="animals/domesticated/rabbit/rabbit_female_posed.i3d" animation="animations/adult/rabbit_female/femaleAdultAnimations.i3d" skeletonIndex="0" meshIndex="1" proxyIndex="2" shaderIndex="1|0">
+                <texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false" />
+                <texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false" />
+                <texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false" />
+                <texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="locomotionFemale.xml"/>
+            <audio eatSoundGroup="eat" yellSoundGroup="yell" yellMinInterval="8000" yellMaxInterval="20000" yellTimerCrowdScale="0.2" />
+        </animal>
+		
+		<!-- RABBIT MALE -->
+		<animal radius="0.3" handleThreats="false" threatAwarenessRadius="1" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.755" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true">
+            <statesTimers idleMin="13333" idleMax="26666" sleepMin="120000" sleepMax="180000" restMin="18000" restMax="30000" grazeMin="11666" grazeMax="23332" chewMin="8000" chewMax="16000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="20000" />
+            <assets filename="rabbit_male.i3d" filenamePosed="animals/domesticated/rabbit/rabbit_male_posed.i3d" animation="animations/adult/rabbit_male/maleAdultAnimations.i3d" skeletonIndex="0" meshIndex="1" proxyIndex="2" shaderIndex="1|0">
+                <texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false" />
+                <texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false" />
+                <texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false" />
+                <texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="locomotionMale.xml"/>
+            <audio eatSoundGroup="eat" yellSoundGroup="yell" yellMinInterval="8000" yellMaxInterval="20000" yellTimerCrowdScale="0.2" />
+        </animal>
+    </animals>
+    
+	<sound>
+       <soundGroup name="yell" volume="2.0" indoorVolume="0.3" range="50" innerRange="1">
+            <sample filename="rabbitEat.wav" />
+          
+        </soundGroup>
+		
+       <soundGroup name="eat" volume="0.1" indoorVolume="0.01" range="20" innerRange="1">
+            <sample filename="rabbitEat.wav" />
+        </soundGroup>
+        <soundGroup name="walk" volume="1" indoorVolume="0.1" range="12" innerRange="0.4">
+            <sample filename="../../../sound/pig_step_grass_1.wav"/>
+            <sample filename="../../../sound/pig_step_grass_2.wav"/>
+            <sample filename="../../../sound/pig_step_grass_3.wav"/>
+            <sample filename="../../../sound/pig_step_grass_4.wav"/>
+            <sample filename="../../../sound/pig_step_grass_5.wav"/>
+            <sample filename="../../../sound/pig_step_grass_6.wav"/>
+        </soundGroup>
+    </sound>
+</animalHusbandry>

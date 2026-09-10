@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<foliageType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/foliageType.xsd">
+	
+<fruitType name="taro" shownOnMap="true" useForFieldMissions="false">
+        	<mapColors default="0.0700 0.2200 0.3000 1" colorBlind="0.2500 0.3500 0.4000 1"/>
+        	<harvest litersPerSqm="4.31"/>
+        	<growth resetsSpray="true" growthRequiresLime="true"/>
+        	<soil lowDensityRequired="true" increasesDensity="true" consumesLime="true" startSprayLevel="0"/>
+        	<seeding directionSnapAngle="0" needsRolling="true" litersPerSqm="0.0044" isAvailable="true" plantsWeed="false" requiredFieldType="RICE"/>
+        	<cultivation isAllowed="true"/>
+        	<haulm layerName="taro_haulm"/>
+    	</fruitType>
+
+    <foliageLayer cellSize="8" objectMask="16711935" decalLayer="0" densityMapChannelOffset="0" numDensityMapChannels="4" numBlocksPerUnit="0.8" shapeSource="taro/taro.i3d">
+        <foliageStateDefaults distanceMapLayer="1" widthVariance="0" heightVariance="0.5" horizontalPositionVariance="0" width="2" height="1.8" />
+        <!-- default LOD distances etc -->
+        <foliageLodDefaults lod="0" viewDistance="18"  blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
+        <foliageLodDefaults lod="1" viewDistance="80" blendOutDistance="5" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
+
+        <foliageState name="1 invisible" isGrowing="true" maxWaterLitersPerSqm="0"/>
+
+        <foliageState name="2 small" numBlocksPerUnit="1" width="2" height="1.8" distanceMap="distances/foliage_sugarBeet_distance2_diffuse.png" isGrowing="true" isDestructibleByDisaster="true" minWaterLitersPerSqm="50" maxWaterLitersPerSqm="110" penaltyPercentage="0.15">
+            <foliageShape>
+                <foliageLod blockShape="0>0|1" />
+                <foliageLod blockShape="0>1|1" />
+            </foliageShape>
+        </foliageState>
+
+        <foliageState name="3 middle" numBlocksPerUnit="1" width="2.4" height="2.2" distanceMap="distances/foliage_sugarBeet_distance2_diffuse.png" isGrowing="true" isDestructibleByDisaster="true" minWaterLitersPerSqm="50" penaltyStateName="6 dead" penaltyPercentage="0.15">
+            <foliageShape>
+                <foliageLod blockShape="0>0|1" />
+                <foliageLod blockShape="0>1|1" />
+            </foliageShape>
+        </foliageState>
+
+        <foliageState name="4 big" width="1.8" height="1.6" distanceMap="distances/foliage_sugarBeet_distance3_diffuse.png" isGrowing="true" isDestructibleByDisaster="true" maxWaterLitersPerSqm="0" penaltyStateName="6 dead" penaltyPercentage="0.15">
+            <foliageShape>
+                <foliageLod blockShape="0>0|2" />
+                <foliageLod blockShape="0>1|2" />
+            </foliageShape>
+        </foliageState>
+		
+        <foliageState name="5 ready" distanceMap="distances/foliage_sugarBeet_distance4_diffuse.png" isGrowing="true" isDestructibleByDisaster="true" isPreparable="true" maxWaterLitersPerSqm="0" groundType="HARVEST_READY_OTHER">
+            <foliageShape>
+                <foliageLod blockShape="0>0|3" />
+                <foliageLod blockShape="0>1|3" />
+            </foliageShape>
+        </foliageState>
+
+        <foliageState name="6 dead" numBlocksPerUnit="0.5" width="5" height="4.8" distanceMap="distances/foliage_sugarBeet_distance6_diffuse.png" isWithered="true" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0>0|0" />
+                <foliageLod blockShape="0>1|0" />
+            </foliageShape>
+        </foliageState>
+
+        <!-- 0 0 0 1 - harvested -->
+        <foliageState name="7 harvested" isCut="true" isDestructibleByDisaster="true" isDestructedByWheel="true"/>
+	
+        <foliageState name="8 cutHaulm" numBlocksPerUnit="0.4" width="3" height="2" isDestructibleByDisaster="true" isHarvestReady="true" isPrepared="true" maxWaterLitersPerSqm="0">
+            <foliageShape>
+                <foliageLod blockShape="0>0|4" />
+                <foliageLod blockShape="0>1|4" />
+            </foliageShape>
+        </foliageState>
+
+    </foliageLayer>
+
+    <!-- taro haulm -->
+    <foliageLayer name="haulm" densityMapChannelOffset="4" numDensityMapChannels="1" numBlocksPerUnit="1.4" shapeSource="taro/taroHaulm.i3d">
+        <foliageStateDefaults width="1.0" height="1.0" widthVariance="0" heightVariance="0" horizontalPositionVariance="0.1"/>
+        <foliageLodDefaults lod="0" viewDistance="80"/>
+        <foliageState distanceMapLayer="2" distanceMap="distances/foliage_sugarBeet_distance7_diffuse.png">
+            <foliageShape>
+                <foliageLod blockShape="0" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1"/>
+            </foliageShape>
+        </foliageState>
+    </foliageLayer>
+	
+<growth>
+        <seasonal initialState="4 big">
+            <period name="EARLY_SPRING" plantingAllowed="true">
+                <update startState="1 invisible" endState="2 small" />
+            </period>
+            <period name="MID_SPRING" plantingAllowed="true">
+                <update startState="1 invisible" endState="2 small" />
+                <update startState="2 small" endState="3 middle" />
+            </period>
+            <period name="LATE_SPRING">
+                <update startState="2 small" endState="3 middle" />
+                <update startState="3 middle" endState="4 big" />
+            </period>
+            <period name="EARLY_SUMMER">
+                <update startState="3 middle" endState="4 big" />
+                <update startState="4 big" endState="5 ready" />
+            </period>
+            <period name="MID_SUMMER">
+                <update startState="4 big" endState="5 ready" />
+                <update startState="5 ready" endState="6 dead" />
+            </period>
+            <period name="LATE_SUMMER">
+                <update startState="5 ready" endState="6 dead" />
+            </period>
+            <period name="EARLY_AUTUMN" />
+            <period name="MID_AUTUMN" />
+            <period name="LATE_AUTUMN" />
+            <period name="EARLY_WINTER" />
+            <period name="MID_WINTER" />
+            <period name="LATE_WINTER" />
+        </seasonal>
+    </growth>
+	
+</foliageType>

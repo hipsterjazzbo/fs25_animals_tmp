@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="locomotive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_train</name>
+        <image>placeables/trainSystem/mapIcon_trainSale.png</image>
+        <price>1</price>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <category>misc</category>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_locomotive</typeDesc>
+        <filename>placeables/trainSystem/ac4400cw.i3d</filename>
+        <sounds filename="$data/vehicles/train/locomotiveUS/sounds/locomotive04.xml" volumeFactor="2.7"/>
+        <size width="3.5" length="20.5"/>
+        <components>
+            <component centerOfMass="0 1 -0.4" solverIterationCount="20" mass="25000" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="VEHICLE" />
+        <mapHotspot type="TRAIN" />
+    </base>
+	
+	<design7Configurations title="railroad">
+		<design7Configuration name="BNSF">
+			<material materialSlotName="ac44_liverycalibratedGlossPaintMat">
+				<textures diffuse="placeables/trainSystem/textures/ac4400bnsf.dds" normal="placeables/trainSystem/textures/ac4400_normal.dds" specular="placeables/trainSystem/textures/ac4400_Vmask.dds"/>
+			</material>
+            <objectChange node="hoodnumber" visibilityActive="false"/>
+            <objectChange node="roofnumber" visibilityActive="true"/>
+			
+			<material materialSlotName="ac44_stepscalibratedPaintMat">
+				<colorScale value="0.007 0.027 0.012"/>
+			</material>
+			<material materialSlotName="ac44_framecalibratedPaintMat">
+				<colorScale value="0.323 0.319 0.296"/>
+				<clearCoat smoothness="0.85" intensity="0.5"/>
+				<detail diffuse="$data/shared/detailLibrary/calibrated/grainSmall_diffuse.png" normal="$data/shared/detailLibrary/flat_normal.png" specular="$data/shared/detailLibrary/calibrated/grainClearSmall_specular.png"/>
+				<smoothness value="0.85"/>
+			</material>
+			<material materialSlotName="ac44_walkwaycalibratedPaintMat">
+				<colorScale value="0.007 0.027 0.012"/>
+			</material>
+			<material materialSlotName="ac44_reflectorSideMat">
+				<colorScale value="0.007 0.027 0.012"/>
+			</material>
+			<material materialSlotName="ac44_reflectorFrontMat">
+				<colorScale value="0.973 0.644 0.001"/>
+			</material>
+			<material materialSlotName="ac44_reflectorStepMat">
+				<colorScale value="1 1 1"/>
+			</material>
+			<material materialSlotName="ac44_cabgrillcalibratedGlossPaintMat">
+				<colorScale value="0.007 0.027 0.012"/>
+			</material>
+			<material materialSlotName="ac44_hoodlowergrillcalibratedGlossPaintMat">
+				<colorScale value="0.973 0.144 0.004"/>
+			</material>
+			<material materialSlotName="ac44_hooduppergrillcalibratedGlossPaintMat">
+				<colorScale value="0.007 0.027 0.012"/>
+			</material>
+			<material materialSlotName="ac44_radsidegrillcalibratedGlossPaintMat">
+				<colorScale value="0.973 0.144 0.004"/>
+			</material>
+			<material materialSlotName="ac44_radtopgrillcalibratedGlossPaintMat">
+				<colorScale value="0.007 0.027 0.012"/>
+			</material>
+        </design7Configuration>
+    </design7Configurations>
+
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration>
+                <wheels surfaceSoundLinkNode="surfaceSoundNode" />
+            </wheelConfiguration>
+        </wheelConfigurations>
+    </wheels>
+
+    <splineVehicle>
+        <dollies frontNode="frontNode" backNode="backNode" dolly1Node="dollyFront" dolly2Node="dollyBack" />
+    </splineVehicle>
+
+    <speedRotatingParts>
+        <speedRotatingPart node="wheel01" radius="0.46" />
+        <speedRotatingPart node="wheel02" radius="0.46" />
+        <speedRotatingPart node="wheel03" radius="0.46" />
+        <speedRotatingPart node="wheel04" radius="0.46" />
+		<speedRotatingPart node="wheel05" radius="0.46" />
+        <speedRotatingPart node="wheel06" radius="0.46" />
+    </speedRotatingParts>
+
+    <lights>
+        <states>
+            <state lightTypes="0" />
+        </states>
+
+        <realLights>
+            <low>
+                <dayTimeLight node="frontLightLow" lightTypes="0" />
+                <dayTimeLight node="highBeamLow"   lightTypes="0" />
+            </low>
+            <high>
+                <dayTimeLight node="frontLightHigh"      lightTypes="0" />
+                <dayTimeLight node="highBeamHigh"        lightTypes="0" />
+            </high>
+        </realLights>
+
+        <dayTimeLights>
+			<dayTimeLight shaderNode="headlight1" lightTypes="0" intensity="45"/>
+            <dayTimeLight shaderNode="headlight2" lightTypes="0" intensity="45"/>
+            <dayTimeLight shaderNode="ditch1" lightTypes="0" intensity="45"/>
+            <dayTimeLight shaderNode="ditch2" lightTypes="0" intensity="45"/>
+        </dayTimeLights>
+    </lights>
+
+    <enterable isTabbable="false" canBeEnteredFromMenu="true">
+        <exitPoint node="exitNode" />
+        <enterReferenceNode interactionRadius="6" node="enterNode"/>
+
+        <cameras>
+            <camera node="outdoorCamera1" rotatable="true" rotateNode="outdoorCameraTarget" limit="true" useWorldXZRotation="true" rotMinX="-1.4" rotMaxX="1" transMin="12" transMax="50" >
+                <raycastNode node="cameraRaycastNode1" />
+                <raycastNode node="cameraRaycastNode2" />
+            </camera>
+            <camera node="indoorCamera1" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" positionSmoothingParameter="0" useMirror="true" isInside="true" shadowFocusBox="shadowFocusBox" />
+        </cameras>
+
+        <characterNode node="playerFrontSkin" cameraMinDistance="0.5">
+            <target ikChain="rightFoot" targetNode="playerRightFootTarget" />
+            <target ikChain="leftFoot"  targetNode="playerLeftFootTarget" />
+            <target ikChain="leftArm"   targetNode="playerLeftHandTarget" />
+        </characterNode>
+    </enterable>
+
+    <motorized forceSpeedHudDisplay="true">
+        <motorConfigurations>
+            <motorConfiguration hp="4400" >
+                <motor torqueScale="1.5" minRpm="850" maxRpm="2200" maxForwardSpeed="80" maxBackwardSpeed="80" brakeForce="5" lowBrakeForceScale="0.22" rotInertia="0.004"  startAnimationName="startMotor">
+                    <torque normRpm="0.45" torque="0.9"/>
+                    <torque normRpm="0.50" torque="0.97"/>
+                    <torque normRpm="0.59" torque="1"/>
+                    <torque normRpm="0.72" torque="1"/>
+                    <torque normRpm="0.86" torque="0.88"/>
+                    <torque normRpm="1.00" torque="0.72"/>
+                </motor>
+                <transmission minForwardGearRatio="10" maxForwardGearRatio="10" minBackwardGearRatio="10" maxBackwardGearRatio="10" />
+            </motorConfiguration>
+        </motorConfigurations>
+
+        <exhaustEffects>
+            <exhaustEffect node="exhaustParticles" filename="$data/effects/exhaust/exhaust.i3d" minRpmColor="0.01 0.01 0.01 2" maxRpmColor="0.01 0.01 0.01 6" minRpmScale="0.2" maxRpmScale="0.88" />
+        </exhaustEffects>
+
+        <motorStartDuration>3000</motorStartDuration>
+    </motorized>
+
+    <drivable>
+    </drivable>
+
+    <attacherJoints>
+        <attacherJoint node="trailerAttacherJointNode" jointType="train" allowsLowering="false">
+            <schema position="1 0" rotation="0" invertX="false" />
+            <bottomArm rotationNode="linkArm" referenceNode="referenceNode" zScale="-1" startRotation="-17 0 0" lockDirection="false" toggleVisibility="true"/>
+        </attacherJoint>
+    </attacherJoints>
+
+    <dashboard>
+        <groups>
+            <group name="MOTOR_ACTIVE" electronicsStarting="true" electronicsRunning="true"/>
+        </groups>
+    </dashboard>
+
+    <i3dMappings>
+        <i3dMapping id="forestryLocomotive_main_component1" node="0>" />
+        <i3dMapping id="dollyFront" node="0>0" />
+        <i3dMapping id="wheel01" node="0>0|0" />
+        <i3dMapping id="wheel02" node="0>0|1" />
+		<i3dMapping id="wheel03" node="0>0|2" />
+        <i3dMapping id="dollyBack" node="0>1" />
+        <i3dMapping id="wheel04" node="0>1|0" />
+        <i3dMapping id="wheel05" node="0>1|1" />
+		<i3dMapping id="wheel06" node="0>1|2" />
+        <i3dMapping id="outdoorCameraTarget" node="0>2|0" />
+        <i3dMapping id="outdoorCamera1" node="0>2|0|0" />
+        <i3dMapping id="indoorCamera1" node="0>2|1" />
+        <i3dMapping id="cameraRaycastNode1" node="0>2|2" />
+        <i3dMapping id="cameraRaycastNode2" node="0>2|3" />
+        <i3dMapping id="headlight1" node="0>3|0|0|0" />
+		<i3dMapping id="headlight2" node="0>3|0|1|0" />
+		<i3dMapping id="ditch1" node="0>3|0|2|0" />
+		<i3dMapping id="ditch2" node="0>3|0|3|0" />
+		<i3dMapping id="rear1" node="0>3|0|4|0" />
+		<i3dMapping id="rear2" node="0>3|0|5|0" />
+        <i3dMapping id="frontLightLow" node="0>3|1|0" />
+        <i3dMapping id="highBeamLow" node="0>3|1|1" />
+        <i3dMapping id="frontLightHigh" node="0>3|1|2" />
+        <i3dMapping id="highBeamHigh" node="0>3|1|3" />
+        <i3dMapping id="character" node="0>4" />
+        <i3dMapping id="playerFrontSkin" node="0>4|0" />
+        <i3dMapping id="playerRightFootTarget" node="0>4|1" />
+        <i3dMapping id="playerLeftFootTarget" node="0>4|2" />
+        <i3dMapping id="playerLeftHandTarget" node="0>4|3" />
+        <i3dMapping id="shadowFocusBox" node="0>5" />
+        <i3dMapping id="inputAttacherJointNode" node="0>6|0" />
+        <i3dMapping id="trailerAttacherJointNode" node="0>7|0" />
+		<i3dMapping id="linkArm" node="0>7|0|0" />
+        <i3dMapping id="referenceNode" node="0>7|0|0|0" />
+        <i3dMapping id="exitNode" node="0>8" />
+        <i3dMapping id="enterNode" node="0>9" />
+        <i3dMapping id="frontNode" node="0>10" />
+        <i3dMapping id="backNode" node="0>11" />
+        <i3dMapping id="surfaceSoundNode" node="0>12" />
+        <i3dMapping id="exhaustParticles" node="0>13" />
+		<i3dMapping id="hoodnumber" node="0>14|0" />
+        <i3dMapping id="roofnumber" node="0>14|1" />
+    </i3dMappings>
+</vehicle>

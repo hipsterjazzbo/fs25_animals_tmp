@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_preservedFood</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>$data/placeables/mapEU/soupFactory/store_soupFactoryPlaceable.png</image>
+        <price>455000</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>JINKOU</brand>
+        <species>PLACEABLE</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+        <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>0</indexBufferMemoryUsage>
+        <textureMemoryUsage>0</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>multifruit/placeables/productionPoints/preservedFood/preservedFood.i3d</filename>
+	<boughtWithFarmland>false</boughtWithFarmland>
+	<canBeDeleted>true</canBeDeleted>
+	<canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testAreaStart01" endNode="testAreaEnd01" />
+        </testAreas>
+        <sounds>
+            <place template="largeImp"/>
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+        <levelAreas>
+            <levelArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart01" widthNode="indoorAreaWidth01" heightNode="indoorAreaHeight01" />
+        <indoorArea startNode="indoorAreaStart02" widthNode="indoorAreaWidth02" heightNode="indoorAreaHeight02" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart filename="$data/placeables/shared/sellingStationGeneric/sellingStationGenericNoCoverWideGrid.i3d" node="0" linkNode="exactFillNode" rotation="0 90 0" />
+        <dynamicallyLoadedPart filename="$data/placeables/mapEU/soupFactory/propsPlaceable.i3d"                                  node="0" linkNode="soupFactory" />
+        <dynamicallyLoadedPart filename="$data/effects/chimneySmoke/smokeTrailSubUV.i3d"                                         node="1" linkNode="smoke01" shaderParameterName="colorAlpha" shaderParameter="0.5 0.5 0.5 0.5" position="0 -0.3 0"/>
+        <dynamicallyLoadedPart filename="$data/effects/chimneySmoke/smokeTrailSubUV.i3d"                                         node="1" linkNode="smoke02" shaderParameterName="colorAlpha" shaderParameter="0.5 0.5 0.5 0.5" position="0 -0.3 0"/>
+        <dynamicallyLoadedPart filename="$data/effects/chimneySmoke/smokeTrailSubUV.i3d"                                         node="1" linkNode="smoke03" shaderParameterName="colorAlpha" shaderParameter="0.5 0.5 0.5 0.5" position="0 -0.3 0"/>
+        <dynamicallyLoadedPart filename="$data/effects/chimneySmoke/smokeTrailSubUV.i3d"                                         node="1" linkNode="smoke04" shaderParameterName="colorAlpha" shaderParameter="0.5 0.5 0.5 0.5" position="0 -0.3 0"/>
+    </dynamicallyLoadedParts>
+
+    <productionPoint>
+        <productions sharedThroughputCapacity="false">
+            
+<production id="preservedFoodCarrots" name="$l10n_fillType_preservedFoodCarrots" cyclesPerHour="10" costsPerActiveHour="4">
+                <inputs>
+                    <input fillType="CARROT" amount="100" />
+                    <input fillType="COOKING_SALT" amount="10" />
+                </inputs>
+                <outputs>
+                    <output fillType="PRESERVEDCARROTS" amount="55" />
+                </outputs>
+            </production>
+         
+<production id="preservedFoodParsnip" name="$l10n_fillType_preservedFoodParsnip" cyclesPerHour="10" costsPerActiveHour="4">
+                <inputs>
+                    <input fillType="PARSNIP" amount="100" />
+                    <input fillType="COOKING_SALT" amount="10" />
+                </inputs>
+                <outputs>
+                    <output fillType="PRESERVEDPARSNIP" amount="55" />
+                </outputs>
+            </production>
+            
+<production id="preservedFoodBeetRoot" name="$l10n_fillType_preservedFoodBeetRoot" cyclesPerHour="10" costsPerActiveHour="4">
+                <inputs>
+                    <input fillType="BEETROOT" amount="100" />
+                    <input fillType="COOKING_SALT" amount="10" />
+                </inputs>
+                <outputs>
+                    <output fillType="PRESERVEDBEETROOT" amount="55" />
+                </outputs>
+            </production>
+            
+<production id="preservedFoodCannedPea" name="$l10n_fillType_cannedPea" cyclesPerHour="10" costsPerActiveHour="2">
+                <inputs>
+                    <input fillType="PEA" amount="100" />
+                    <input fillType="COOKING_SALT" amount="10" />
+                </inputs>
+                <outputs>
+                    <output fillType="CANNED_PEAS" amount="55" />
+                </outputs>
+            </production>
+
+<production id="preservedFoodCannedBeans" name="$l10n_fillType_cannedBeans" cyclesPerHour="10" costsPerActiveHour="2">
+                <inputs>
+                    <input fillType="BEANS" amount="100" />
+                    <input fillType="COOKING_SALT" amount="10" />
+                </inputs>
+                <outputs>
+                    <output fillType="CANNED_BEANS" amount="50" />
+                </outputs>
+            </production>
+            
+<production id="preservedFoodSpinachBags" name="$l10n_fillType_spinachBag" cyclesPerHour="10" costsPerActiveHour="2">
+                <inputs>
+                    <input fillType="SPINACH" amount="100" />
+			<input fillType="PAPERROLL" amount="3" />
+                </inputs>
+                <outputs>
+                    <output fillType="SPINACH_BAGS" amount="55" />
+                </outputs>
+            </production>
+            
+<production id="preservedFoodRiceBags" name="$l10n_fillType_riceBag" cyclesPerHour="10" costsPerActiveHour="2">
+                <inputs>
+                    <input fillType="RICE" amount="100" />
+			<input fillType="PAPERROLL" amount="3" />
+                </inputs>
+                <outputs>
+                    <output fillType="RICE_BAGS" amount="90" />
+                </outputs>
+            </production>
+
+<production id="preservedFoodSesameBags" name="$l10n_fillType_sesameBags" cyclesPerHour="10" costsPerActiveHour="2">
+                <inputs>
+                    <input fillType="SESAME" amount="100" />
+			<input fillType="PAPERROLL" amount="3" />
+                </inputs>
+                <outputs>
+                    <output fillType="SESAME_BAGS" amount="90" />
+                </outputs>
+            </production>
+
+<production id="preservedFoodBeansBags" name="$l10n_fillType_beansBags" cyclesPerHour="10" costsPerActiveHour="2">
+                <inputs>
+                    <input fillType="BEANS" amount="100" />
+			<input fillType="PAPERROLL" amount="3" />
+                </inputs>
+                <outputs>
+                    <output fillType="BEANS_BAGS" amount="80" />
+                </outputs>
+            </production>
+
+<production id="preservedFoodLentilsBags" name="$l10n_fillType_lentilsBags" cyclesPerHour="10" costsPerActiveHour="2">
+                <inputs>
+                    <input fillType="LENTILS" amount="100" />
+			<input fillType="PAPERROLL" amount="3" />
+                </inputs>
+                <outputs>
+                    <output fillType="LENTILS_BAGS" amount="90" />
+                </outputs>
+            </production>
+
+<production id="preservedFoodChickpeasBags" name="$l10n_fillType_chickpeasBags" cyclesPerHour="10" costsPerActiveHour="2">
+                <inputs>
+                    <input fillType="CHICKPEAS" amount="100" />
+			<input fillType="PAPERROLL" amount="3" />
+                </inputs>
+                <outputs>
+                    <output fillType="CHICKPEAS_BAGS" amount="90" />
+                </outputs>
+            </production>
+            
+<production id="preservedFoodRiceBoxes" name="$l10n_fillType_riceBox" cyclesPerHour="10" costsPerActiveHour="2">
+                <inputs>
+                    <input fillType="RICE" amount="100" />
+			<input fillType="CARTONROLL" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="RICE_BOXES" amount="75" />
+                </outputs>
+            </production>
+            
+<production id="preservedFoodjarredGreenbean" name="$l10n_fillType_jarredGreenBean" cyclesPerHour="10" costsPerActiveHour="2">
+                <inputs>
+                    <input fillType="GREENBEAN" amount="100" />
+                    <input fillType="COOKING_SALT" amount="10" />
+                </inputs>
+                <outputs>
+                    <output fillType="JARRED_GREENBEAN" amount="55" />
+                </outputs>
+            </production>
+            
+<production id="preservedFoodjarredEdamame" name="$l10n_fillType_jarredEdamame" cyclesPerHour="10" costsPerActiveHour="2">
+                <inputs>
+                    <input fillType="EDAMAME" amount="100" />
+                    <input fillType="COOKING_SALT" amount="10" />
+                </inputs>
+                <outputs>
+                    <output fillType="JARRED_EDAMAME" amount="55" />
+                </outputs>
+            </production>
+            
+<production id="preservedFoodjarredOkra" name="$l10n_fillType_jarredOkra" cyclesPerHour="10" costsPerActiveHour="2">
+                <inputs>
+                    <input fillType="OKRA" amount="100" />
+                    <input fillType="COOKING_SALT" amount="10" />
+                </inputs>
+                <outputs>
+                    <output fillType="JARRED_OKRA" amount="55" />
+                </outputs>
+            </production>
+
+<production id="eggplantPuree" name="$l10n_fillType_eggplantPuree" cyclesPerHour="10" costsPerActiveHour="2">
+                <inputs>
+                    <input fillType="EGGPLANT" amount="100" />
+                </inputs>
+                <outputs>
+                    <output fillType="EGGPLANT_PUREE" amount="85" />
+                </outputs>
+            </production>
+            
+<production id="preservedFoodFermentedNapaCabbage" name="$l10n_fillType_fermentedNapaCabbage" cyclesPerHour="10" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="NAPACABBAGE"  amount="20" />
+                    <input fillType="GARLIC"       amount="2" />
+                    <input fillType="SPRING_ONION" amount="2" />
+                    <input fillType="CHILLI"       amount="2" />
+                    <input fillType="COOKING_SALT" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="FERMENTEDNAPACABBAGE" amount="47" />
+                </outputs>
+            </production>
+
+<production id="soupCansMixed" name="$l10n_fillType_soupCansMixed" cyclesPerHour="5" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="CARROT"   amount="60" />
+                    <input fillType="PARSNIP"  amount="60" />
+                    <input fillType="POTATO" amount="60" />
+                    <input fillType="SPRING_ONION" amount="20" />
+                    <input fillType="PEPPER" amount="30" />
+                    <input fillType="TOMATO" amount="30" />
+                    <input fillType="COOKING_SALT" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="SOUPCANSMIXED" amount="100" />
+                </outputs>
+            </production>
+          
+<production id="soupCansCarrots" name="$l10n_fillType_soupCansCarrots" cyclesPerHour="5" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="CARROT" amount="250" />
+                    <input fillType="SPRING_ONION" amount="40" />
+                    <input fillType="PEPPER" amount="20" />
+                    <input fillType="TOMATO" amount="20" />
+                    <input fillType="COOKING_SALT" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="SOUPCANSCARROTS" amount="100" />
+                </outputs>
+            </production>
+            
+<production id="soupCansParsnip" name="$l10n_fillType_soupCansParsnip" cyclesPerHour="5" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="PARSNIP" amount="250" />
+                    <input fillType="SPRING_ONION" amount="20" />
+                    <input fillType="PEPPER" amount="30" />
+                    <input fillType="TOMATO" amount="30" />
+                    <input fillType="COOKING_SALT" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="SOUPCANSPARSNIP" amount="100" />
+                </outputs>
+            </production>
+            
+<production id="soupCansBeetroot" name="$l10n_fillType_soupCansBeetroot" cyclesPerHour="5" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="BEETROOT" amount="250" />
+                    <input fillType="SPRING_ONION" amount="20" />
+                    <input fillType="PEPPER" amount="30" />
+                    <input fillType="TOMATO" amount="30" />
+                    <input fillType="COOKING_SALT" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="SOUPCANSBEETROOT" amount="100" />
+                </outputs>
+            </production>
+            
+<production id="soupCansPotato" name="$l10n_fillType_soupCansPotato" cyclesPerHour="5" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="POTATO" amount="250" />
+                    <input fillType="SPRING_ONION" amount="20" />
+                    <input fillType="PEPPER" amount="30" />
+                    <input fillType="TOMATO" amount="30" />
+                    <input fillType="COOKING_SALT" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="SOUPCANSPOTATO" amount="100" />
+                </outputs>
+            </production>
+            
+<production id="soupCansTaro" name="$l10n_fillType_taroSoup" cyclesPerHour="5" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="TARO" amount="250" />
+                    <input fillType="SPRING_ONION" amount="20" />
+                    <input fillType="PEPPER" amount="30" />
+                    <input fillType="TOMATO" amount="30" />
+                    <input fillType="COOKING_SALT" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="TARO_SOUP" amount="100" />
+                </outputs>
+            </production>
+
+<production id="soupCansBeans" name="$l10n_fillType_beansSoup" cyclesPerHour="5" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="BEANS" amount="180" />
+                    <input fillType="SPRING_ONION" amount="20" />
+                    <input fillType="PEPPER" amount="30" />
+                    <input fillType="TOMATO" amount="30" />
+                    <input fillType="COOKING_SALT" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="BEANS_SOUP" amount="100" />
+                </outputs>
+            </production>
+
+<production id="soupCansMushroom" name="$l10n_fillType_mushroomSoup" cyclesPerHour="6" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="ENOKI" amount="75" />
+                    <input fillType="SPRING_ONION" amount="15" />
+                    <input fillType="GARLIC" amount="10" />
+                    <input fillType="COOKING_SALT" amount="3" />
+                </inputs>
+                <outputs>
+                    <output fillType="MUSHROOM_SOUP" amount="85" />
+                </outputs>
+            </production>
+
+<production id="pickledCucumbers" name="$l10n_fillType_pickledCucumber" cyclesPerHour="10" costsPerActiveHour="4">
+                <inputs>
+                    <input fillType="CUCUMBER" amount="65" />
+                    <input fillType="GARLIC" amount="7" />
+                    <input fillType="COOKING_SALT" amount="2" />
+                </inputs>
+                <outputs>
+                    <output fillType="PICKLED_CUCUMBER" amount="60" />
+                </outputs>
+            </production>
+
+<production id="pickledCabbage" name="$l10n_fillType_pickledCabbage" cyclesPerHour="10" costsPerActiveHour="4">
+                <inputs>
+                    <input fillType="CABBAGE" amount="55" />
+                    <input fillType="BEETROOT" amount="15" />
+                    <input fillType="GARLIC" amount="5" />
+                    <input fillType="COOKING_SALT" amount="3" />
+                </inputs>
+                <outputs>
+                    <output fillType="PICKLED_CABBAGE" amount="60" />
+                </outputs>
+            </production>
+
+<production id="pickledCauliflower" name="$l10n_fillType_pickledCauliflower" cyclesPerHour="10" costsPerActiveHour="4">
+                <inputs>
+                    <input fillType="CAULIFLOWER" amount="65" />
+                    <input fillType="GARLIC" amount="5" />
+                    <input fillType="COOKING_SALT" amount="2" />
+                </inputs>
+                <outputs>
+                    <output fillType="PICKLED_CAULIFLOWER" amount="60" />
+                </outputs>
+            </production>
+
+<production id="soy sauce" name="$l10n_fillType_soySauce" cyclesPerHour="27" costsPerActiveHour="3">
+               <inputs>
+			<input fillType="WATER" amount="40" />
+		    	<input fillType="SOYBEAN" amount="20" />
+                    <input fillType="COOKING_SALT" amount="3" />
+               </inputs>
+               <outputs>
+               		<output fillType="SOY_SAUCE" amount="20" />
+               </outputs>
+           </production>
+	
+<production id="garlic sauce" name="$l10n_fillType_garlicSauce" cyclesPerHour="27" costsPerActiveHour="1">
+               <inputs>>
+		    	<input fillType="GARLIC" amount="25" />
+			<input fillType="SUNFLOWER_OIL" amount="8" />
+                    <input fillType="COOKING_SALT" amount="1" />
+               </inputs>
+               <outputs>
+               		<output fillType="GARLIC_SAUCE" amount="25" />
+               </outputs>
+           </production>
+	
+<production id="ketchup" name="$l10n_fillType_ketchup" cyclesPerHour="27" costsPerActiveHour="1">
+               <inputs>
+		    	<input fillType="TOMATO" amount="25" /> 
+			<input fillType="SUGAR" amount="5" /> 
+			<input fillType="SUNFLOWER_OIL" amount="10" /> 
+                    <input fillType="COOKING_SALT" amount="1" />
+               </inputs>
+               <outputs>
+               		<output fillType="KETCHUP" amount="20" />
+               </outputs>
+           </production>
+	
+<production id="hot sauce" name="$l10n_fillType_hotSauce" cyclesPerHour="27" costsPerActiveHour="1.2">
+               <inputs>
+		    	<input fillType="CHILLI" amount="25" />
+		    	<input fillType="PEPPER" amount="12" />
+			<input fillType="SUGAR" amount="5" />
+                    <input fillType="COOKING_SALT" amount="1" />
+               </inputs>
+               <outputs>
+               		<output fillType="HOT_SAUCE" amount="20" />
+               </outputs>
+           </production>
+	
+<production id="mayonnaise" name="$l10n_fillType_mayo" cyclesPerHour="27" costsPerActiveHour="1">
+               <inputs>
+		    	<input fillType="EGG" amount="15" />
+			<input fillType="SUNFLOWER_OIL" amount="15" /> 
+                    <input fillType="COOKING_SALT" amount="3" /> 
+               </inputs>
+               <outputs>
+               		<output fillType="MAYO" amount="20" /> 
+               </outputs>
+           </production>
+
+<production id="pumpkinPuree" name="$l10n_fillType_pumpkinPuree" cyclesPerHour="10" costsPerActiveHour="1">
+                <inputs>
+                    <input fillType="PUMPKIN" amount="220" />
+                </inputs>
+                <outputs>
+                    <output fillType="PUMPKIN_PUREE" amount="150" />
+                    <output fillType="PUMPKIN_SEEDS" amount="50" />
+                </outputs>
+            </production>
+
+<production id="sunflowerBags" name="$l10n_fillType_sunflowerBags" cyclesPerHour="10" costsPerActiveHour="2">
+                <inputs>
+                    <input fillType="SUNFLOWER" amount="200" />
+			<input fillType="PAPERROLL" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="SUNFLOWER_BAGS" amount="180" />
+                </outputs>
+            </production>
+
+        </productions>
+
+        <storage isExtension="false" fillLevelSyncThreshold="50">
+            <capacity fillType="WATER"               	capacity="240000" />
+            <capacity fillType="CARROT"               	capacity="240000" />
+            <capacity fillType="PARSNIP"              	capacity="240000" />
+            <capacity fillType="BEETROOT"             	capacity="240000" />
+            <capacity fillType="TARO"               	capacity="240000" />
+            <capacity fillType="PEA"                  	capacity="240000" />
+            <capacity fillType="SPINACH"              	capacity="240000" />
+            <capacity fillType="RICE"                 	capacity="240000" />
+            <capacity fillType="GREENBEAN"            	capacity="240000" />
+            <capacity fillType="EDAMAME"            	capacity="240000" />
+            <capacity fillType="OKRA"            	capacity="240000" />
+            <capacity fillType="BEANS"                	capacity="240000" />
+            <capacity fillType="SESAME"                	capacity="240000" />
+            <capacity fillType="LENTILS"               	capacity="240000" />
+            <capacity fillType="CHICKPEAS"              capacity="240000" />
+            <capacity fillType="SUNFLOWER"              capacity="240000" />
+            <capacity fillType="SOYBEAN"              	capacity="240000" />
+            <capacity fillType="POTATO"               	capacity="240000" />
+            <capacity fillType="SPRING_ONION"           capacity="48000" />
+            <capacity fillType="NAPACABBAGE"          	capacity="48000" />
+            <capacity fillType="EGGPLANT"          	capacity="48000" />
+            <capacity fillType="CABBAGE"              	capacity="48000" />
+            <capacity fillType="CAULIFLOWER"           	capacity="48000" />
+            <capacity fillType="CUCUMBER"          	capacity="48000" />
+            <capacity fillType="GARLIC"               	capacity="48000" />
+            <capacity fillType="SPRING_ONION"         	capacity="48000" />
+            <capacity fillType="CHILLI"               	capacity="48000" />
+            <capacity fillType="PEPPER"               	capacity="48000" />
+            <capacity fillType="TOMATO"               	capacity="48000" />
+            <capacity fillType="ENOKI"               	capacity="48000" />
+            <capacity fillType="PUMPKIN"               	capacity="48000" />
+            <capacity fillType="SUGAR"                	capacity="48000" />
+            <capacity fillType="COOKING_SALT"           capacity="48000" />
+            <capacity fillType="SUNFLOWER_OIL"         	capacity="48000" />
+            <capacity fillType="PAPERROLL"         	capacity="48000" />
+            <capacity fillType="CARTONROLL"         	capacity="48000" />
+            <capacity fillType="EGG"                  	capacity="24000" />
+
+            <capacity fillType="PRESERVEDCARROTS"     		capacity="110000" />
+            <capacity fillType="PRESERVEDPARSNIP"     		capacity="110000" />
+            <capacity fillType="PRESERVEDBEETROOT"    		capacity="110000" />
+            <capacity fillType="CANNED_PEAS"          		capacity="110000" />
+            <capacity fillType="CANNED_BEANS"          		capacity="110000" />
+            <capacity fillType="SPINACH_BAGS"         		capacity="110000" />
+            <capacity fillType="RICE_BAGS"            		capacity="110000" />
+            <capacity fillType="BEANS_BAGS"            		capacity="110000" />
+            <capacity fillType="SESAME_BAGS"            	capacity="110000" />
+            <capacity fillType="LENTILS_BAGS"            	capacity="110000" />
+            <capacity fillType="CHICKPEAS_BAGS"            	capacity="110000" />
+            <capacity fillType="BEANS_SOUP"            		capacity="110000" />
+            <capacity fillType="TARO_SOUP"            		capacity="110000" />
+            <capacity fillType="MUSHROOM_SOUP"            	capacity="110000" />
+            <capacity fillType="RICE_BOXES"           		capacity="110000" />
+            <capacity fillType="JARRED_GREENBEAN"     		capacity="110000" />
+            <capacity fillType="JARRED_EDAMAME"     		capacity="110000" />
+            <capacity fillType="JARRED_OKRA"     		capacity="110000" />
+            <capacity fillType="FERMENTEDNAPACABBAGE" 		capacity="110000" />
+            <capacity fillType="SOUPCANSMIXED"           	capacity="96000" />
+            <capacity fillType="SOUPCANSPOTATO"           	capacity="96000" />
+            <capacity fillType="SOUPCANSCARROTS"           	capacity="96000" />
+            <capacity fillType="SOUPCANSPARSNIP"           	capacity="96000" />
+            <capacity fillType="SOUPCANSBEETROOT"           	capacity="96000" />
+            <capacity fillType="PICKLED_CUCUMBER" 		capacity="110000" />
+            <capacity fillType="PICKLED_CABBAGE" 		capacity="110000" />
+            <capacity fillType="PICKLED_CAULIFLOWER" 		capacity="110000" />
+            <capacity fillType="SOY_SAUCE" 			capacity="110000" />
+            <capacity fillType="GARLIC_SAUCE" 			capacity="110000" />
+            <capacity fillType="HOT_SAUCE" 			capacity="110000" />
+            <capacity fillType="KETCHUP" 			capacity="110000" />
+            <capacity fillType="MAYO" 				capacity="110000" />
+            <capacity fillType="EGGPLANT_PUREE" 		capacity="110000" />
+            <capacity fillType="SUNFLOWER_BAGS"   		capacity="110000" />
+            <capacity fillType="PUMPKIN_SEEDS"   		capacity="110000" />
+            <capacity fillType="PUMPKIN_PUREE"   		capacity="110000" />
+        </storage>
+
+        <sellingStation node="sellingStation" appearsOnStats="false" supportsExtension="false" allowMissions="false" hideFromPricesMenu="true">
+            <unloadTrigger exactFillRootNode="exactFillNode" aiNode="unloadTriggerAINode" fillTypes="SOYBEAN2 EDAMAME OKRA TARO ONION WATER BEANS SESAME LENTILS CHICKPEAS SUNFLOWER SOYBEAN POTATO CARROT PARSNIP BEETROOT PEA GREENBEAN SPINACH RICE RICELONGGRAIN" >
+			<fillTypeConversion ratio="0.9" incomingFillType="RICELONGGRAIN" 	outgoingFillType="RICE" />
+			<fillTypeConversion ratio="0.3" incomingFillType="ONION" 		outgoingFillType="SPRING_ONION" />
+			<fillTypeConversion ratio="1.1" incomingFillType="SOYBEAN2" 		outgoingFillType="SOYBEAN" />
+		</unloadTrigger>
+            <palletTrigger triggerNode="palletTrigger" aiNode="unloadTriggerAINode" fillTypes="DUCK_EGG SAFFLOWER_OIL TARO SPRING_ONION COOKING_SALT EGGPLANT PUMPKIN ENOKI OYSTER CARROT POTATO PARSNIP BEETROOT NAPACABBAGE TOMATO CUCUMBER CABBAGE REDCABBAGE CAULIFLOWER PEPPER GARLIC SPRING_ONION CHILLI SUGAR EGG SESAME_OIL SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL LINSEED_OIL POPPY_OIL RICE_OIL CARTONROLL PAPERROLL" >
+			<fillTypeConversion ratio="1" incomingFillType="CANOLA_OIL" 		outgoingFillType="SUNFLOWER_OIL" />
+			<fillTypeConversion ratio="1.3" incomingFillType="OLIVE_OIL" 		outgoingFillType="SUNFLOWER_OIL" />
+			<fillTypeConversion ratio="1.1" incomingFillType="POPPY_OIL" 		outgoingFillType="SUNFLOWER_OIL" />
+			<fillTypeConversion ratio="1.2" incomingFillType="LINSEED_OIL" 		outgoingFillType="SUNFLOWER_OIL" />
+			<fillTypeConversion ratio="1.4" incomingFillType="RICE_OIL" 		outgoingFillType="SUNFLOWER_OIL" />
+			<fillTypeConversion ratio="1.4" incomingFillType="SESAME_OIL" 		outgoingFillType="SUNFLOWER_OIL" />
+			<fillTypeConversion ratio="1.4" incomingFillType="SAFFLOWER_OIL" 	outgoingFillType="SUNFLOWER_OIL" />
+			<fillTypeConversion ratio="0.7" incomingFillType="REDCABBAGE" 		outgoingFillType="CABBAGE" />
+			<fillTypeConversion ratio="1.2" incomingFillType="OYSTER" 		outgoingFillType="ENOKI" />
+			<fillTypeConversion ratio="1.3"   incomingFillType="DUCK_EGG" 		outgoingFillType="EGG" />
+		</palletTrigger>
+        </sellingStation>
+
+        <palletSpawner>
+            <spawnPlaces>
+                <spawnPlace startNode="palletAreaStart01" endNode="palletAreaEnd01"/>
+                <spawnPlace startNode="palletAreaStart02" endNode="palletAreaEnd02"/>
+            </spawnPlaces>
+        </palletSpawner>
+
+        <playerTrigger node="playerTrigger" />
+        <sounds>
+            <idle   template="soupFactoryIdle" linkNode="0>" outerRadius="50"/>
+            <active template="soupFactoryWork" linkNode="0>" outerRadius="50"/>
+        </sounds>
+    </productionPoint>
+
+    <triggerMarkers>
+        <triggerMarker node="warningStripes01"/>
+        <triggerMarker node="playerTriggerMarker" adjustToGround="true" filename="$data/shared/assets/marker/markerIconWrench.i3d"/>
+        <triggerMarker node="unloadTriggerMarker" adjustToGround="true" filename="$data/shared/assets/marker/markerIconUnload.i3d"/>
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="unloadTriggerMarker" teleportNode="unloadTriggerMarker" />
+    </hotspots>
+
+    <i3dMappings>
+        <i3dMapping id="soupFactory" node="0>" />
+        <i3dMapping id="clearAreaStart01" node="0>0|0" />
+        <i3dMapping id="clearAreaWidth01" node="0>0|0|0" />
+        <i3dMapping id="clearAreaHeight01" node="0>0|0|1" />
+        <i3dMapping id="testAreaStart01" node="0>1|0" />
+        <i3dMapping id="testAreaEnd01" node="0>1|0|0" />
+        <i3dMapping id="indoorAreaStart01" node="0>2|0" />
+        <i3dMapping id="indoorAreaWidth01" node="0>2|0|0" />
+        <i3dMapping id="indoorAreaHeight01" node="0>2|0|1" />
+        <i3dMapping id="indoorAreaStart02" node="0>2|1" />
+        <i3dMapping id="indoorAreaWidth02" node="0>2|1|0" />
+        <i3dMapping id="indoorAreaHeight02" node="0>2|1|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>3|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>3|0|0" />
+        <i3dMapping id="infoTrigger" node="0>4" />
+        <i3dMapping id="sellingStation" node="0>5" />
+        <i3dMapping id="exactFillNode" node="0>5|0" />
+        <i3dMapping id="unloadTriggerMarker" node="0>5|0|0" />
+        <i3dMapping id="unloadTriggerAINode" node="0>5|0|1" />
+        <i3dMapping id="palletTrigger" node="0>5|1" />
+        <i3dMapping id="playerTrigger" node="0>6|0" />
+        <i3dMapping id="playerTriggerMarker" node="0>6|0|0" />
+        <i3dMapping id="palletSpawner" node="0>7" />
+        <i3dMapping id="palletAreaStart01" node="0>7|0" />
+        <i3dMapping id="palletAreaEnd01" node="0>7|0|0" />
+        <i3dMapping id="palletAreaStart02" node="0>7|1" />
+        <i3dMapping id="palletAreaEnd02" node="0>7|1|0" />
+        <i3dMapping id="warningStripes01" node="0>7|2" />
+        <i3dMapping id="smoke01" node="0>8|0" />
+        <i3dMapping id="smoke02" node="0>8|1" />
+        <i3dMapping id="smoke03" node="0>8|2" />
+        <i3dMapping id="smoke04" node="0>8|3" />
+    </i3dMappings>
+</placeable>

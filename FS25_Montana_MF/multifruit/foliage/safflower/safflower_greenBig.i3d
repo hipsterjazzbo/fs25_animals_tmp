@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="cutterEffects" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="5" filename="safflowerStage03_alpha.png" />
+    <File fileId="1" filename="safflowerStage03_diffuse.png" />
+    <File fileId="2" filename="safflowerStage03_normal.png" />
+    <File fileId="4" filename="$data/shaders/motionPathShader.xml" />
+    <File fileId="3" filename="$data/shared/default_specular.png" />
+  </Files>
+
+  <Materials>
+    <Material name="safflowerStage03_mat" materialId="1" customShaderId="4" customShaderVariation="scaleByTexture_alphaMap">
+      <CustomParameter name="keepNormals" value="1 0 0 0"/>
+      <CustomParameter name="verticalOffset" value="-0.15 0 0 0"/>
+      <Custommap name="alphaMap" fileId="5"/>
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="safflower_greenBig.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="cutterEffects_safflower" nodeId="1">
+      <TransformGroup name="cutterEffects_safflower_meshes" nodeId="2">
+        <Shape name="cutterEffects_safflower_nr6_rl5_v1" shapeId="1" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="1" nodeId="3"/>
+        <Shape name="cutterEffects_safflower_nr6_rl20_v1" shapeId="2" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="1" nodeId="4"/>
+        <Shape name="cutterEffects_safflower_nr12_rl26_v1" shapeId="3" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="1" nodeId="5"/>
+        <Shape name="cutterEffects_safflower_nr20_rl36_v1" shapeId="4" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="1" nodeId="6"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

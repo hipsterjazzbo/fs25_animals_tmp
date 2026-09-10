@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="destructibleRocksSpots.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+    </Asset>
+    <Files/>
+    <Materials/>
+    <Shapes/>
+    <Scene>
+        <TransformGroup name="rockMissionSpots" nodeId="266599">
+            <TransformGroup name="spot1" translation="-359.629 157.348 347.464" nodeId="266600"/>
+            <TransformGroup name="spot2" translation="645.713 99.0022 584.477" nodeId="266601"/>
+            <TransformGroup name="spot3" translation="615.791 124.399 -1456.01" nodeId="266602"/>
+            <TransformGroup name="spot4" translation="1394.66 117.015 -1518.75" nodeId="266603"/>
+            <TransformGroup name="spot5" translation="1437.93 72.0726 1022.96" nodeId="266604"/>
+            <TransformGroup name="spot6" translation="-236.167 114.82 1379.31" nodeId="266605"/>
+        </TransformGroup>
+    </Scene>
+    <UserAttributes>
+        <UserAttribute nodeId="266600">
+            <Attribute name="radius" type="float" value="20"/>
+        </UserAttribute>
+        <UserAttribute nodeId="266601">
+            <Attribute name="radius" type="float" value="20"/>
+        </UserAttribute>
+        <UserAttribute nodeId="266602">
+            <Attribute name="radius" type="float" value="13"/>
+        </UserAttribute>
+        <UserAttribute nodeId="266603">
+            <Attribute name="radius" type="float" value="20"/>
+        </UserAttribute>
+        <UserAttribute nodeId="266604">
+            <Attribute name="radius" type="float" value="14"/>
+        </UserAttribute>
+        <UserAttribute nodeId="266605">
+            <Attribute name="radius" type="float" value="16"/>
+        </UserAttribute>
+    </UserAttributes>
+</i3D>

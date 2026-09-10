@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="marmelade.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="jamBox_normal.dds"/>
+    <File fileId="4" filename="$data/objects/pallets/honeyBoxPallet/honeyBox_specular.dds"/>
+    <File fileId="2" filename="appleBox_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="honeyBox_mat1" materialId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="6" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="marmelade.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="honeyBoxPallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="14" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6">
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="15" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+      <TransformGroup name="content" nodeId="16">
+        <TransformGroup name="honeyBox01" translation="-0.275439 0.144825 -0.201" nodeId="17">
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="18">
+            <Shape name="LOD0" shapeId="3" nodeId="19" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="LOD1" shapeId="4" nodeId="20" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          </TransformGroup>
+          <Shape name="honeyBox_Tension01" shapeId="5" nodeId="21" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+        </TransformGroup>
+        <TransformGroup name="honeyBox02" translation="-0.275439 0.144825 0.203" nodeId="22">
+          <Shape name="honeyBox_Tension02" translation="0 0 -0.002" shapeId="5" nodeId="23" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="24">
+            <Shape name="LOD0" shapeId="3" nodeId="25" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="LOD1" shapeId="4" nodeId="26" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="honeyBox03" translation="0.261894 0.144825 -0.203" nodeId="27">
+          <Shape name="honeyBox_Tension03" translation="0.001264 0 0.002" shapeId="5" nodeId="28" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="29">
+            <Shape name="LOD0" shapeId="3" nodeId="30" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="LOD1" shapeId="4" nodeId="31" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="honeyBox04" translation="0.26286 0.144825 0.2" nodeId="32">
+          <Shape name="honeyBox_Tension04" translation="0.000298 0 0.001" shapeId="5" nodeId="33" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="34">
+            <Shape name="LOD0" shapeId="3" nodeId="35" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="LOD1" shapeId="4" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="honeyBox05" translation="-0.274169 0.390468 -0.202271" rotation="0 180 0" nodeId="37">
+          <Shape name="honeyBox_Tension05" translation="0.000332 0.001125 -0.001271" rotation="0 180 0" shapeId="5" nodeId="38" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="39">
+            <Shape name="LOD0" shapeId="3" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="LOD1" shapeId="4" nodeId="41" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="honeyBox06" translation="-0.274169 0.390468 0.201729" rotation="0 180 0" nodeId="42">
+          <Shape name="honeyBox_Tension06" translation="0.000332 0.001125 0.000729" rotation="0 180 0" shapeId="5" nodeId="43" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="44">
+            <Shape name="LOD0" shapeId="3" nodeId="45" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="LOD1" shapeId="4" nodeId="46" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="honeyBox07" translation="0.263164 0.390468 -0.204271" nodeId="47">
+          <Shape name="honeyBox_Tension07" translation="0.000933 0.001125 0.003271" shapeId="5" nodeId="48" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="49">
+            <Shape name="LOD0" shapeId="3" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="LOD1" shapeId="4" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="honeyBox08" translation="0.264131 0.390468 0.198729" nodeId="52">
+          <Shape name="honeyBox_Tension08" translation="-3.4e-05 0.001125 0.002271" shapeId="5" nodeId="53" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="visual_lod" lodDistance="0 15" lodBlending="false" clipDistance="80" nodeId="54">
+            <Shape name="LOD0" shapeId="3" nodeId="55" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="LOD1" shapeId="4" nodeId="56" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="57">
+        <Shape name="floorCollision01" translation="0.3 0 0" shapeId="6" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="58" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+        <Shape name="floorCollision02" translation="-0.3 0 0" shapeId="6" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="59" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+</i3D>

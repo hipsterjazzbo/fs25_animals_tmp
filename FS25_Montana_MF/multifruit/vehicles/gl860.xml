@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="sowingMachine" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>GL 860 Compacta Multifruit</name>
+        <specs>
+            <neededPower>170</neededPower>
+            <workingWidth>6.0</workingWidth>
+            <combination filterCategory="weights" filterSpec="weight" filterSpecMin="750" filterSpecMax="900"/>
+        </specs>
+        <functions>
+            <function>$l10n_function_sowingMachinePotato</function>
+        </functions>
+        <image>$data/vehicles/grimme/gl860/store_gl860.png</image>
+        <price>199500</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>GRIMME</brand>
+        <category>potatoPlanting</category>
+        <shopTranslationOffset>0 0.022 0</shopTranslationOffset>
+        <shopRotationOffset>0.101 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>0</indexBufferMemoryUsage>
+        <textureMemoryUsage>0</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_planter</typeDesc>
+        <filename>$data/vehicles/grimme/gl860/gl860.i3d</filename>
+        <size width="4" length="7.35" height="4"/>
+        <speedLimit value="12"/>
+        <components>
+            <component centerOfMass="0 0.8 -1" solverIterationCount="10" mass="6190"/>
+            <component centerOfMass="0 0.8 0" solverIterationCount="10" mass="500"/>
+            <joint component1="1" component2="2" node="componentJointDrawbar" rotLimit="0 0 0" transLimit="0 0 0"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT"/>
+        <mapHotspot type="TOOL_TRAILED"/>
+    </base>
+
+    <powerConsumer forceNode="gl860_main_component1" maxForce="26"/>
+
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TM600/320_85R20.xml" isLeft="true">
+                        <physics restLoad="3.0" repr="wheelLeftOuter"  forcePointRatio="0.3" initialCompression="38" suspTravel="0.1" spring="75" damper="40" rotationDamping="0.002" supportsWheelSink="false" yOffset="0.025"/>
+                        <additionalWheel filename="$data/shared/wheels/tires/trelleborg/TM600/320_85R20.xml" isLeft="false" offset="0.335"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TM600/320_85R20.xml" isLeft="false">
+                        <physics restLoad="3.0" repr="wheelRightOuter" forcePointRatio="0.3" initialCompression="38" suspTravel="0.1" spring="75" damper="40" rotationDamping="0.002" supportsWheelSink="false" yOffset="0.025"/>
+                        <additionalWheel filename="$data/shared/wheels/tires/trelleborg/TM600/320_85R20.xml" isLeft="true" offset="0.335"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+
+        <rimMaterial materialTemplateName="RIM_DEFAULT"/>
+        <hubMaterial materialTemplateName="HUB_DEFAULT"/>
+
+        <hubs>
+            <hub linkNode="wheelLeftOuter"  filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="true"  scale="0.13 0.16 0.16" offset="0.005"/>
+            <hub linkNode="wheelLeftInner"  filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="false" scale="0.13 0.16 0.16" offset="0.005"/>
+            <hub linkNode="wheelRightOuter" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="false" scale="0.13 0.16 0.16" offset="0.005"/>
+            <hub linkNode="wheelRightInner" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="true"  scale="0.13 0.16 0.16" offset="0.005"/>
+
+            <hub linkNode="wheelFront01" filename="$data/shared/wheels/hubs/hubSmall_n0_1.xml" isLeft="true"  scale="0.1 0.1 0.1" />
+            <hub linkNode="wheelFront02" filename="$data/shared/wheels/hubs/hubSmall_n0_1.xml" isLeft="true"  scale="0.1 0.1 0.1" />
+            <hub linkNode="wheelFront03" filename="$data/shared/wheels/hubs/hubSmall_n0_1.xml" isLeft="false" scale="0.1 0.1 0.1" />
+            <hub linkNode="wheelFront04" filename="$data/shared/wheels/hubs/hubSmall_n0_1.xml" isLeft="false" scale="0.1 0.1 0.1" />
+        </hubs>
+
+        <dynamicallyLoadedWheels>
+            <dynamicallyLoadedWheel linkNode="wheelFront01" filename="$data/shared/wheels/tires/trelleborg/T510/220_45R8.xml" isLeft="true" />
+            <dynamicallyLoadedWheel linkNode="wheelFront02" filename="$data/shared/wheels/tires/trelleborg/T510/220_45R8.xml" isLeft="true" />
+            <dynamicallyLoadedWheel linkNode="wheelFront03" filename="$data/shared/wheels/tires/trelleborg/T510/220_45R8.xml" isLeft="false" />
+            <dynamicallyLoadedWheel linkNode="wheelFront04" filename="$data/shared/wheels/tires/trelleborg/T510/220_45R8.xml" isLeft="false" />
+        </dynamicallyLoadedWheels>
+    </wheels>
+
+     <speedRotatingParts>
+        <speedRotatingPart node="wheelFront01" onlyActiveWhenLowered="true" radius="0.184" groundReferenceNodeIndex="1"/>
+        <speedRotatingPart node="wheelFront02" onlyActiveWhenLowered="true" radius="0.184" groundReferenceNodeIndex="1"/>
+        <speedRotatingPart node="wheelFront03" onlyActiveWhenLowered="true" radius="0.184" groundReferenceNodeIndex="1"/>
+        <speedRotatingPart node="wheelFront04" onlyActiveWhenLowered="true" radius="0.184" groundReferenceNodeIndex="1"/>
+
+        <speedRotatingPart node="rollerCenter" onlyActiveWhenLowered="true" radius="0.35" groundReferenceNodeIndex="1"/>
+        <speedRotatingPart node="rollerLeft"   onlyActiveWhenLowered="true" radius="0.35" groundReferenceNodeIndex="1"/>
+        <speedRotatingPart node="rollerRight"  onlyActiveWhenLowered="true" radius="0.35" groundReferenceNodeIndex="1"/>
+
+        <speedRotatingPart node="wheelLeftInner"  wheelIndex="1" />
+        <speedRotatingPart node="wheelRightInner" wheelIndex="2" />
+
+        <speedRotatingPart node="ridgeMarkerLeftDisc"  radius="0.181"  groundReferenceNodeIndex="2" />
+        <speedRotatingPart node="ridgeMarkerRightDisc" radius="-0.181" groundReferenceNodeIndex="3" />
+
+        <speedRotatingPart shaderNode="armLeftDiscs"  radius="-0.246" groundReferenceNodeIndex="1" />
+        <speedRotatingPart shaderNode="centerDiscs"   radius="-0.246" groundReferenceNodeIndex="1" />
+        <speedRotatingPart shaderNode="armRightDiscs" radius="-0.246" groundReferenceNodeIndex="1" />
+
+        <speedRotatingPart node="planterCenterRotPart" radius="0.246" groundReferenceNodeIndex="1" />
+        <speedRotatingPart node="planterLeftRotPart" radius="0.246" groundReferenceNodeIndex="1" />
+        <speedRotatingPart node="planterRightRotPart" radius="0.246" groundReferenceNodeIndex="1" />
+
+        <speedRotatingPart shaderNode="beltCenter" radius="5" groundReferenceNodeIndex="1" scrollLength="7.479" shaderComponent="2"/>
+        <speedRotatingPart shaderNode="beltLeft" radius="5" groundReferenceNodeIndex="1" scrollLength="7.479" shaderComponent="2"/>
+        <speedRotatingPart shaderNode="beltRight" radius="5" groundReferenceNodeIndex="1" scrollLength="7.479" shaderComponent="2"/>
+
+        <speedRotatingPart shaderNode="potatoBeltLeft"           radius="10" groundReferenceNodeIndex="1" scrollLength="0.069"/>
+        <speedRotatingPart shaderNode="potatoBeltLeftPotatoes"   radius="10" groundReferenceNodeIndex="1" scrollLength="0.069"/>
+        <speedRotatingPart shaderNode="potatoBeltCenter"         radius="10" groundReferenceNodeIndex="1" scrollLength="0.069"/>
+        <speedRotatingPart shaderNode="potatoBeltCenterPotatoes" radius="10" groundReferenceNodeIndex="1" scrollLength="0.069"/>
+        <speedRotatingPart shaderNode="potatoBeltRight"          radius="10" groundReferenceNodeIndex="1" scrollLength="0.069"/>
+        <speedRotatingPart shaderNode="potatoBeltRightPotatoes"  radius="10" groundReferenceNodeIndex="1" scrollLength="0.069"/>
+    </speedRotatingParts>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="trailer" rootNode="gl860_drawbar_component2" attacherHeight="0.75"/>
+        </inputAttacherJoints>
+        <brakeForce force="1.2"/>
+        <support animationName="moveSupport" />
+        <sounds>
+            <active file="$data/sounds/tools/sowing/generalRattle_02.wav" innerRadius="10" outerRadius="50" volumeScale="6.3" isLocalSound="true" pitchScale="0.8">
+                <volume indoor="0.7" outdoor="0.9" >
+                    <modifier type="WHEEL_SUSPENSION" value="-0.08" modifiedValue="0.3"/>
+                    <modifier type="WHEEL_SUSPENSION" value="-0.04" modifiedValue="0.3"/>
+                    <modifier type="WHEEL_SUSPENSION" value="-0.03" modifiedValue="0.2"/>
+                    <modifier type="WHEEL_SUSPENSION" value="-0.02" modifiedValue="0.1"/>
+                    <modifier type="WHEEL_SUSPENSION" value="-0.01" modifiedValue="0.05"/>
+                    <modifier type="WHEEL_SUSPENSION" value="-0.00" modifiedValue="0.0"/>
+                    <modifier type="WHEEL_SUSPENSION" value="0.01" modifiedValue="0.05"/>
+                    <modifier type="WHEEL_SUSPENSION" value="0.02" modifiedValue="0.1"/>
+                    <modifier type="WHEEL_SUSPENSION" value="0.03" modifiedValue="0.2"/>
+                    <modifier type="WHEEL_SUSPENSION" value="0.04" modifiedValue="0.3"/>
+                    <modifier type="WHEEL_SUSPENSION" value="0.08" modifiedValue="0.3"/>
+
+                    <modifier type="SPEED" value="0.0" modifiedValue="0.0"/>
+                    <modifier type="SPEED" value="2.0" modifiedValue="1.0"/>
+                    <modifier type="SPEED" value="40.0" modifiedValue="1.0"/>
+                </volume>
+                <lowpassCutoffFrequency indoor="250" outdoor="20000" />
+                <lowpassGain indoor="0.5" outdoor="1" />
+            </active>
+        </sounds>
+    </attachable>
+
+    <connectionHoses>
+        <hose inputAttacherJointIndices="1" type="electric" node="electric" length="0.1" diameter="0.008" straighteningFactor="0.1" adapterNode="electric_connector">
+           <objectChange node="electric_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn" node="hydraulicIn01" length="0.1" diameter="0.018" straighteningFactor="0.1" adapterNode="hydraulicIn01_connector">
+           <objectChange node="hydraulicIn01_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicOut" node="hydraulicOut01" length="0.1" diameter="0.018" straighteningFactor="0.1" adapterNode="hydraulicOut01_connector">
+           <objectChange node="hydraulicOut01_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+    </connectionHoses>
+
+    <groundReferenceNodes>
+        <groundReferenceNode node="groundReferenceNode"  forceFactor="1" threshold="0.25" depthNode="groundReferenceNode"/>
+        <groundReferenceNode node="ridgeMarkerLeftNode"  forceFactor="0" threshold="0.3" depthNode="ridgeMarkerLeftNode"/>
+        <groundReferenceNode node="ridgeMarkerRightNode" forceFactor="0" threshold="0.3" depthNode="ridgeMarkerRightNode"/>
+    </groundReferenceNodes>
+
+    <foldable>
+        <foldingConfigurations>
+            <foldingConfiguration>
+                <foldingParts startAnimTime="1" turnOnFoldDirection="-1" foldMiddleAnimTime="0.1" turnOnFoldMaxLimit="0.1" turnOnFoldMinLimit="0">
+                    <foldingPart animationName="folding" speedScale="0.5" />
+                </foldingParts>
+            </foldingConfiguration>
+        </foldingConfigurations>
+    </foldable>
+
+    <animations>
+        <animation name="folding">
+            <!-- lowering -->
+            <part node="armBack"       startTime="0.0" endTime="1.0" startRot="6 0 0" endRot="10 0 0" />
+            <part node="drawbarPhy"    startTime="0.0" endTime="1.0" startRot="0 0 0" endRot="8 0 0" />
+            <part node="supportWheels" startTime="0.0" endTime="1.0" startRot="5 0 0" endRot="-20 0 0" />
+
+            <!-- folding -->
+            <part node="componentJointDrawbar"   startTime="1.0" endTime="2.5" startTrans="0 0 1.428" endTrans="0 0 2.500" tangentType="spline" />
+            <part node="bunker"                  startTime="2.5" endTime="4.0" startRot="5 0 0" endRot="60 0 0" />
+            <part node="armLeft"                 startTime="4.0" endTime="9.0" startRot="0 0 0" endRot="0 -179 0" />
+            <part node="armRight"                startTime="4.0" endTime="9.0" startRot="0 0 0" endRot="0 179 0" />
+            <part node="armBackPartLeft"         startTime="5.0" endTime="9.0" startRot="0 0 0" endRot="0 0 180" />
+            <part node="armBackPartLeftFolding"  startTime="7.8" endTime="8.0" startRot="0 0 0" endRot="37 0 0" direction="1"/>
+            <part node="armBackPartLeftFolding"  startTime="6.2" endTime="6.4" startRot="0 0 0" endRot="37 0 0" direction="-1"/>
+            <part node="armBackPartRight"        startTime="5.0" endTime="9.0" startRot="0 0 0" endRot="0 0 -180" />
+            <part node="armBackPartRightFolding" startTime="7.8" endTime="8.0" startRot="0 0 0" endRot="37 0 0" direction="1"/>
+            <part node="armBackPartRightFolding" startTime="6.2" endTime="6.4" startRot="0 0 0" endRot="37 0 0" direction="-1"/>
+            <part node="bunker"                  startTime="9.0" endTime="10.0" startRot="60 0 0" endRot="33 0 0" />
+
+            <part node="fillVolumeDeformerLeft" startTime="2.5" endTime="4.0" startTrans="0 0 -0.1" endTrans="0 -0.2 -0.85" />
+            <part node="fillVolumeDeformerRight" startTime="2.5" endTime="4.0" startTrans="0 0 -0.1" endTrans="0 -0.2 -0.85" />
+
+
+            <part node="fillVolumeDeformerLeft" startTime="9.0" endTime="10.0" startTrans="0 -0.2 -0.85" endTrans="0 0 -0.45" />
+            <part node="fillVolumeDeformerRight" startTime="9.0" endTime="10.0" startTrans="0 -0.2 -0.85" endTrans="0 0 -0.45" />
+
+
+            <sound template="hydraulicClose01"      startTime="9"    endTime="9.99" direction="-1"    volumeScale="3.6" pitchScale="0.6" fadeIn="0.1"     fadeOut="0.1"/>
+            <sound template="hydraulicOpen06"       startTime="9"    endTime="9.99" direction="1"     volumeScale="1.6" pitchScale="0.6" fadeIn="0.1"     fadeOut="0.1"/>
+            <sound template="hydraulicClose03"      startTime="5"    endTime="9"    volumeScale="4"   pitchScale="1.3"  fadeIn="0.1"     fadeOut="0.1"/>
+            <sound template="hydraulicOpen02"       startTime="4"    endTime="9"    volumeScale="4"   pitchScale="0.7"  fadeIn="0.1"     fadeOut="0.1"/>
+            <sound template="hydraulicClose03"      startTime="2.5"  endTime="4"    direction="1"     volumeScale="4"   pitchScale="0.8" fadeIn="0.1" fadeOut="0.1"/>
+            <sound template="hydraulicOpen06"       startTime="2.5"  endTime="4"    direction="-1"    volumeScale="1.6" startPitchScale="0.5" endPitchScale="0.55" fadeIn="0.1" fadeOut="0.1"/>
+            <sound template="hydraulicClose02"      startTime="1.01" endTime="2.5"  volumeScale="3.8" pitchScale="0.9"  fadeIn="0.1"     fadeOut="0.1"/>
+            <sound template="hydraulicOpen06"       startTime="0.01" endTime="0.99" direction="-1"    volumeScale="2"   pitchScale="0.5" fadeIn="0.1" fadeOut="0.1"/>
+            <sound template="hydraulicClose01"      startTime="0.01" endTime="0.99" direction="1"     volumeScale="4"   pitchScale="0.6" fadeIn="0.1" fadeOut="0.1"/>
+            <sound template="thudVar2"              startTime="9.99" direction="-1" volumeScale="2.5" pitchScale="0.8"/>
+            <sound template="clackVar6"             startTime="9"    direction="-1" volumeScale="1.8" pitchScale="0.8"/>
+            <sound template="cylinderPunch"         startTime="9"    direction="-1" volumeScale="0.5" pitchScale="1.4"/>
+            <sound template="vibratingImp"          startTime="9"    direction="-1" volumeScale="1.2" pitchScale="1.1"/>
+            <sound template="clackVar6"             startTime="6.2"  direction="-1" volumeScale="0.7" pitchScale="1.3"/>
+            <sound template="sheetImp02"            startTime="6.2"  direction="-1" volumeScale="2"   pitchScale="1.1"/>
+            <sound template="vibratingImp"          startTime="6.2"  direction="-1" volumeScale="1.2" pitchScale="1.5"/>
+            <sound template="sheetImp02"            startTime="5"    direction="-1" volumeScale="2.4" pitchScale="0.8"/>
+            <sound template="vibratingImp"          startTime="5"    direction="-1" volumeScale="1.2" pitchScale="1.2"/>
+            <sound template="metalImpHigh02"        startTime="5"    direction="-1" volumeScale="0.7" pitchScale="0.8"/>
+            <sound template="metalImpHigh04"        startTime="5.1"  direction="-1" volumeScale="0.7" pitchScale="0.8"/>
+            <sound template="clackVar6"             startTime="4"                   volumeScale="1.5" pitchScale="0.7"/>
+            <sound template="cylinderPunch"         startTime="4"                   volumeScale="0.5" pitchScale="1"/>
+            <sound template="trailerCloseImpact_01" startTime="4"                   volumeScale="0.6" pitchScale="0.7"/>
+            <sound template="clackVar6"             startTime="2.5"  direction="-1" volumeScale="1.5" pitchScale="0.7"/>
+            <sound template="cylinderPunch"         startTime="2.5"  direction="-1" volumeScale="0.6" pitchScale="0.9"/>
+            <sound template="vibratingImp"          startTime="2.5"  direction="-1" volumeScale="1.3" pitchScale="0.9"/>
+            <sound template="foldStartMed02"        startTime="2.5"  direction="1"  volumeScale="2.4" pitchScale="0.9"/>
+            <sound template="cylinderPunch"         startTime="2.5"  direction="1"  volumeScale="0.5" pitchScale="1.4"/>
+            <sound template="hingeImp"              startTime="2.3"  direction="1"  volumeScale="1.1" pitchScale="0.5"/>
+            <sound template="foldStartMed02"        startTime="7.8"  direction="1"  volumeScale="2.4" pitchScale="0.9"/>
+            <sound template="clackVar6"             startTime="8"    direction="1"  volumeScale="0.7" pitchScale="1.3"/>
+            <sound template="sheetImp02"            startTime="8"    direction="1"  volumeScale="2"   pitchScale="1.1"/>
+            <sound template="foldStartMed02"        startTime="9"    direction="1"  volumeScale="3.4" pitchScale="0.9"/>
+            <sound template="vibratingImp"          startTime="9"    direction="1"  volumeScale="1.4" pitchScale="0.9"/>
+            <sound template="trailerCloseImpact_01" startTime="9"    direction="1"  volumeScale="1.2" pitchScale="0.7"/>
+            <sound template="metalImpHigh05"        startTime="8.9"  direction="1"  volumeScale="0.7" pitchScale="0.7"/>
+            <sound template="clackVar6"             startTime="9.99" direction="1"  volumeScale="1.5" pitchScale="0.7"/>
+            <sound template="cylinderPunch"         startTime="9.99" direction="1"  volumeScale="0.6" pitchScale="1.3"/>
+            <sound template="vibratingImp"          startTime="9.99" direction="1"  volumeScale="0.9" pitchScale="1.1"/>
+            <sound template="clackVar6"             startTime="0.01" direction="-1" volumeScale="1.5" pitchScale="0.7"/>
+            <sound template="foldStartMed02"        startTime="0.05" direction="-1" volumeScale="3.5" pitchScale="0.7"/>
+            <sound template="sheetImp02"            startTime="0.01" direction="-1" volumeScale="2.5" pitchScale="0.8"/>
+            <sound template="clackVar6"             startTime="0.99" direction="1"  volumeScale="1.5" pitchScale="0.7"/>
+            <sound template="sheetImp02"            startTime="0.99" direction="1"  volumeScale="2.5" pitchScale="0.8"/>
+        </animation>
+
+        <animation name="ridgeMarkerLeft">
+            <part node="ridgeMarkerLeft"     startTime="0.0" endTime="2.0" startRot="0 0 0" endRot="0 0 -95" />
+            <part node="ridgeMarkerLeftPart" startTime="0.0" endTime="2.0" startRot="0 0 0" endRot="0 0 -90" />
+
+            <sound template="hydraulicOpen01"  startTime="0.01" endTime="1.99" direction="1"     volumeScale="1.0" pitchScale="2.3" linkNode="ridgeMarkerLeft" fadeIn="0.1" fadeOut="0.1"/>
+            <sound template="hydraulicOpen06"  startTime="0.01" endTime="1.99" direction="1"     volumeScale="0.8" pitchScale="0.6" linkNode="ridgeMarkerLeft" fadeIn="0.1" fadeOut="0.1"/>
+            <sound template="hydraulicClose01" startTime="0.01" endTime="1.99" direction="-1"    volumeScale="1"   pitchScale="0.8" linkNode="ridgeMarkerLeft" fadeIn="0.1" fadeOut="0.1"/>
+            <sound template="hydraulicClose03" startTime="0.01" endTime="1.99" direction="-1"    volumeScale="2"   pitchScale="1.8" linkNode="ridgeMarkerLeft" fadeIn="0.1" fadeOut="0.1"/>
+            <sound template="metalImpHigh03"   startTime="1.99" direction="1"  volumeScale="0.1" pitchScale="1.1"  linkNode="ridgeMarkerLeft"/>
+            <sound template="vibratingImp"     startTime="1.99" direction="1"  volumeScale="0.8" pitchScale="1.4"  linkNode="ridgeMarkerLeft"/>
+            <sound template="metalImpHigh01"   startTime="1.99" direction="1"  volumeScale="0.4" pitchScale="1.4"  linkNode="ridgeMarkerLeft"/>
+            <sound template="vibratingImp"     startTime="0.01" direction="-1" volumeScale="0.8" pitchScale="1.2"  linkNode="ridgeMarkerLeft"/>
+            <sound template="grabImp"          startTime="0.01" direction="-1" volumeScale="0.3" pitchScale="1.4"  linkNode="ridgeMarkerLeft"/>
+        </animation>
+
+        <animation name="ridgeMarkerRight">
+            <part node="ridgeMarkerRight"     startTime="0.0" endTime="2.0" startRot="0 0 0" endRot="0 0 95" />
+            <part node="ridgeMarkerRightPart" startTime="0.0" endTime="2.0" startRot="0 0 0" endRot="0 0 90" />
+
+            <sound template="hydraulicOpen01"  startTime="0.01" endTime="1.99" direction="1"     volumeScale="1.0" pitchScale="2.1"  linkNode="ridgeMarkerRight" fadeIn="0.1" fadeOut="0.1"/>
+            <sound template="hydraulicOpen06"  startTime="0.01" endTime="1.99" direction="1"     volumeScale="0.8" pitchScale="0.75" linkNode="ridgeMarkerRight" fadeIn="0.1" fadeOut="0.1"/>
+            <sound template="hydraulicClose01" startTime="0.01" endTime="1.99" direction="-1"    volumeScale="1"   pitchScale="1.0"  linkNode="ridgeMarkerRight" fadeIn="0.1" fadeOut="0.1"/>
+            <sound template="hydraulicClose03" startTime="0.01" endTime="1.99" direction="-1"    volumeScale="2"   pitchScale="1.6"  linkNode="ridgeMarkerRight" fadeIn="0.1" fadeOut="0.1"/>
+            <sound template="metalImpHigh03"   startTime="1.99" direction="1"  volumeScale="0.1" pitchScale="1.1"  linkNode="ridgeMarkerRight"/>
+            <sound template="vibratingImp"     startTime="1.99" direction="1"  volumeScale="0.8" pitchScale="1.4"  linkNode="ridgeMarkerRight"/>
+            <sound template="metalImpHigh01"   startTime="1.99" direction="1"  volumeScale="0.4" pitchScale="1.4"  linkNode="ridgeMarkerRight"/>
+            <sound template="vibratingImp"     startTime="0.01" direction="-1" volumeScale="0.8" pitchScale="1.4"  linkNode="ridgeMarkerRight"/>
+            <sound template="grabImp"          startTime="0.01" direction="-1" volumeScale="0.3" pitchScale="1.2"  linkNode="ridgeMarkerRight"/>
+            <sound template="metalImpHigh01"   startTime="0.01" direction="-1" volumeScale="0.5" pitchScale="1.2"  linkNode="ridgeMarkerRight"/>
+        </animation>
+
+        <animation name="moveSupport">
+            <part node="supportCol" startTime="0" endTime="0.5" startTrans="0 0.154 1.220" endTrans="0 -0.445 1.220" />
+            <part node="supportArm" startTime="0" endTime="0.5" startRot="0 0 0" endRot="-72 0 0" />
+
+            <sound template="hydraulicClose03" startTime="0.01" endTime="0.49" volumeScale="2.3" pitchScale="1.3" linkNode="attacherJoint" fadeIn="0.1" fadeOut="0.1"/>
+            <sound template="metalClose"       startTime="0.01" direction="-1" volumeScale="1.4" pitchScale="1.8" linkNode="attacherJoint"/>
+            <sound template="clackVar6"        startTime="0.01" direction="-1" volumeScale="1.5" pitchScale="1"   linkNode="attacherJoint"/>
+            <sound template="hingeImp"         startTime="0.1"  direction="-1" volumeScale="0.6" pitchScale="1"   linkNode="attacherJoint"/>
+        </animation>
+
+        <animation name="fillLevelAnimation">
+            <part node="potatoBeltLeftPotatoes" startTime="0" endTime="0.001" visibility="false"/>
+            <part node="potatoBeltLeftPotatoes" startTime="0.001" endTime="1" visibility="true"/>
+            <part node="potatoBeltCenterPotatoes" startTime="0" endTime="0.001" visibility="false"/>
+            <part node="potatoBeltCenterPotatoes" startTime="0.001" endTime="1" visibility="true"/>
+            <part node="potatoBeltRightPotatoes" startTime="0" endTime="0.001" visibility="false"/>
+            <part node="potatoBeltRightPotatoes" startTime="0.001" endTime="1" visibility="true"/>
+        </animation>
+    </animations>
+
+    <workAreas>
+        <workArea type="sowingMachine" functionName="processSowingMachineArea" needsSetIsTurnedOn="false">
+            <area startNode="workAreaStart" widthNode="workAreaWidth" heightNode="workAreaHeight" />
+            <groundReferenceNode index="1" />
+            <onlyActiveWhenLowered value="true" />
+        </workArea>
+        <workArea type="ridgemarker" functionName="processRidgeMarkerArea" disableBackwards="false" needsSetIsTurnedOn="false">
+            <ridgeMarkerArea node="ridgeMarkerLeftNode" size="0.1" testAreaOffset="0.75"/>
+            <groundReferenceNode index="2" />
+            <onlyActiveWhenLowered value="false"/>
+        </workArea>
+        <workArea type="ridgemarker" functionName="processRidgeMarkerArea" disableBackwards="false" needsSetIsTurnedOn="false">
+            <ridgeMarkerArea node="ridgeMarkerRightNode" size="0.1" testAreaOffset="0.75"/>
+            <groundReferenceNode index="3" />
+            <onlyActiveWhenLowered value="false"/>
+        </workArea>
+    </workAreas>
+
+    <cylindered>
+        <movingTools>
+            <movingTool node="armBack">
+                <dependentPart node="armBackHydraulic"/>
+            </movingTool>
+
+            <movingTool node="armLeft">
+                <dependentPart node="armLeftHydraulic"/>
+                <dependentPart node="armLeftHydraulicPart01"/>
+            </movingTool>
+            <movingTool node="armRight">
+                <dependentPart node="armRightHydraulic"/>
+                <dependentPart node="armRightHydraulicPart01"/>
+            </movingTool>
+
+            <movingTool node="armBackPartLeft">
+                <dependentPart node="armBackPartLeftHydraulic"/>
+                <dependentPart node="armBackPartLeftHydraulicPart01"/>
+            </movingTool>
+            <movingTool node="armBackPartRight">
+                <dependentPart node="armBackPartRightHydraulic"/>
+                <dependentPart node="armBackPartRightHydraulicPart01"/>
+            </movingTool>
+
+            <movingTool node="componentJointDrawbar">
+                <componentJoint index="1" />
+            </movingTool>
+
+            <movingTool node="drawbarPhy">
+                <componentJoint index="1" />
+            </movingTool>
+
+            <movingTool node="supportWheels" wheelIndices="1 2">
+                <dependentPart node="supportWheelsHydraulic"/>
+            </movingTool>
+
+            <movingTool node="ridgeMarkerLeft">
+                <dependentPart node="ridgeMarkerLeftHydraulic"/>
+            </movingTool>
+            <movingTool node="ridgeMarkerRight">
+                <dependentPart node="ridgeMarkerRightHydraulic"/>
+            </movingTool>
+
+            <movingTool node="ridgeMarkerLeftPart">
+                <dependentPart node="ridgeMarkerLeftPartAlign"/>
+            </movingTool>
+            <movingTool node="ridgeMarkerRightPart">
+                <dependentPart node="ridgeMarkerRightPartAlign"/>
+            </movingTool>
+
+            <movingTool node="bunker">
+                <dependentPart node="bunkerHydraulic"/>
+                <fillVolume fillVolumeIndex="1" deformerNodeIndices="1 2" />
+            </movingTool>
+
+            <movingTool node="supportArm">
+                <dependentPart node="supportArmHydraulic"/>
+            </movingTool>
+
+            <movingTool node="armBackPartLeftFolding">
+                <dependentPart node="armBackPartLeftFoldingPart"/>
+            </movingTool>
+            <movingTool node="armBackPartRightFolding">
+                <dependentPart node="armBackPartRightFoldingPart"/>
+            </movingTool>
+        </movingTools>
+
+        <movingParts>
+            <movingPart node="ridgeMarkerLeftPartAlign" referencePoint="ridgeMarkerLeftPartAlignRef" referenceFrame="ridgeMarkerLeftPartAlignRefFrame" scaleZ="true"/>
+            <movingPart node="ridgeMarkerRightPartAlign" referencePoint="ridgeMarkerRightPartAlignRef" referenceFrame="ridgeMarkerRightPartAlignRefFrame" scaleZ="true"/>
+
+            <movingPart node="ridgeMarkerLeftHydraulic" referencePoint="ridgeMarkerLeftHydraulicRef" referenceFrame="ridgeMarkerLeftHydraulicRef">
+                <translatingPart node="ridgeMarkerLeftHydraulicPunch"/>
+            </movingPart>
+            <movingPart node="ridgeMarkerRightHydraulic" referencePoint="ridgeMarkerRightHydraulicRef" referenceFrame="ridgeMarkerRightHydraulicRef">
+                <translatingPart node="ridgeMarkerRightHydraulicPunch"/>
+            </movingPart>
+
+            <movingPart node="drawbar" referencePoint="drawbarRef" referenceFrame="gl860_main_component1" isActiveDirty="true" maxUpdateDistance="150">
+                <translatingPart node="drawbarPart" />
+                <dependentPart node="drawbarHydraulic" />
+            </movingPart>
+
+            <movingPart node="armLeftHydraulic" referencePoint="armLeftHydraulicRef" referenceFrame="armLeftHydraulicRef">
+                <translatingPart node="armLeftHydraulicPunch"/>
+            </movingPart>
+            <movingPart node="armRightHydraulic" referencePoint="armRightHydraulicRef" referenceFrame="armRightHydraulicRef">
+                <translatingPart node="armRightHydraulicPunch"/>
+            </movingPart>
+
+            <movingPart node="drawbarHydraulic" referencePoint="drawbarHydraulicRef" referenceFrame="drawbarHydraulicRef">
+                <translatingPart node="drawbarHydraulicPunch"/>
+            </movingPart>
+
+            <movingPart node="supportArmHydraulic" referencePoint="supportArmHydraulicRef" referenceFrame="supportArmHydraulicRef">
+                <translatingPart node="supportArmHydraulicPunch"/>
+            </movingPart>
+
+            <movingPart node="armLeftHydraulicPart01" referencePoint="armLeftHydraulicPart02Ref" localReferencePoint="armLeftHydraulicPart02" referenceFrame="armLeftHydraulicPart01RefFrame">
+                <dependentPart node="armLeftHydraulicPart02"/>
+            </movingPart>
+            <movingPart node="armLeftHydraulicPart02" referencePoint="armLeftHydraulicPart02Ref" referenceFrame="armLeftHydraulicPart02RefFrame"/>
+
+            <movingPart node="armRightHydraulicPart01" referencePoint="armRightHydraulicPart02Ref" localReferencePoint="armRightHydraulicPart02" referenceFrame="armRightHydraulicPart01RefFrame">
+                <dependentPart node="armRightHydraulicPart02"/>
+            </movingPart>
+            <movingPart node="armRightHydraulicPart02" referencePoint="armRightHydraulicPart02Ref" referenceFrame="armRightHydraulicPart02RefFrame"/>
+
+            <movingPart node="armBackPartLeftHydraulic" referencePoint="armBackPartLeftHydraulicRef" referenceFrame="armBackPartLeftHydraulicRef">
+                <translatingPart node="armBackPartLeftHydraulicPunch"/>
+            </movingPart>
+            <movingPart node="armBackPartRightHydraulic" referencePoint="armBackPartRightHydraulicRef" referenceFrame="armBackPartRightHydraulicRef">
+                <translatingPart node="armBackPartRightHydraulicPunch"/>
+            </movingPart>
+
+            <movingPart node="armBackPartLeftHydraulicPart01" referencePoint="armBackPartLeftHydraulicPart02Ref" localReferencePoint="armBackPartLeftHydraulicPart02" referenceFrame="armBackPartLeftHydraulicPart01RefFrame">
+                <dependentPart node="armBackPartLeftHydraulicPart02"/>
+            </movingPart>
+            <movingPart node="armBackPartLeftHydraulicPart02" referencePoint="armBackPartLeftHydraulicPart02Ref" referenceFrame="armBackPartLeftHydraulicPart02RefFrame"/>
+
+            <movingPart node="armBackPartRightHydraulicPart01" referencePoint="armBackPartRightHydraulicPart02Ref" localReferencePoint="armBackPartRightHydraulicPart02" referenceFrame="armBackPartRightHydraulicPart01RefFrame">
+                <dependentPart node="armBackPartRightHydraulicPart02"/>
+            </movingPart>
+            <movingPart node="armBackPartRightHydraulicPart02" referencePoint="armBackPartRightHydraulicPart02Ref" referenceFrame="armBackPartRightHydraulicPart02RefFrame"/>
+
+            <movingPart node="supportWheelsHydraulic" referencePoint="supportWheelsHydraulicRef" referenceFrame="supportWheelsHydraulicRef">
+                <translatingPart node="supportWheelsHydraulicPunch"/>
+            </movingPart>
+
+            <movingPart node="armBackHydraulic" referencePoint="armBackHydraulicRef" referenceFrame="armBackHydraulicRef">
+                <translatingPart node="armBackHydraulicPunch"/>
+            </movingPart>
+
+            <movingPart node="bunkerHydraulic" referencePoint="bunkerHydraulicRef" referenceFrame="bunkerHydraulicRef">
+                <translatingPart node="bunkerHydraulicPunch"/>
+            </movingPart>
+
+            <movingPart node="armBackPartLeftFoldingPart"  referencePoint="armBackPartLeftFoldingPartRef"  referenceFrame="armBackPartLeftFoldingPartRef"/>
+            <movingPart node="armBackPartRightFoldingPart" referencePoint="armBackPartRightFoldingPartRef" referenceFrame="armBackPartRightFoldingPartRef"/>
+        </movingParts>
+    </cylindered>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit shopDisplayUnit="LITER" fillTypes="potato miscanthus seeds" capacity="8000">
+                        <exactFillRootNode node="exactFillRootNode" />
+                        <fillLevelAnimation name="fillLevelAnimation"/>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <fillVolume>
+        <fillVolumeConfigurations>
+            <fillVolumeConfiguration>
+                <volumes>
+                    <volume node="fillVolume" maxDelta="0.5" maxAllowedHeapAngle="20" fillUnitIndex="1">
+                        <deformNode node="fillVolumeDeformerLeft" />
+                        <deformNode node="fillVolumeDeformerRight" />
+                    </volume>
+                    <volume node="fillVolume01" maxDelta="0.5" maxAllowedHeapAngle="20" maxSubDivEdgeLength="0.075" fillUnitIndex="1" />
+                    <volume node="fillVolume02" maxDelta="0.5" maxAllowedHeapAngle="20" maxSubDivEdgeLength="0.075" fillUnitIndex="1" />
+                    <volume node="fillVolume03" maxDelta="0.5" maxAllowedHeapAngle="20" maxSubDivEdgeLength="0.075" fillUnitIndex="1" />
+                    <volume node="fillVolume04" maxDelta="0.5" maxAllowedHeapAngle="20" maxSubDivEdgeLength="0.075" fillUnitIndex="1" />
+                </volumes>
+            </fillVolumeConfiguration>
+        </fillVolumeConfigurations>
+
+        <unloadInfos>
+            <unloadInfo>
+                <node node="unloadNode" width="1.5" length="1.0" />
+            </unloadInfo>
+        </unloadInfos>
+    </fillVolume>
+
+    <turnOnVehicle turnOffIfNotAllowed="true" />
+
+    <sowingMachine fillUnitIndex="1">
+        <seedFruitTypes>potato miscanthus</seedFruitTypes>
+        <fieldGroundType value="RIDGE" />
+        <needsActivation value="false" />
+        <sounds>
+            <work template="defaultSowingWork" linkNode="0>" volumeScale="1.4" />
+        </sounds>
+    </sowingMachine>
+
+    <workParticles>
+        <effect workAreaIndex="1">
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="soilEffectFront">
+                <motionPathEffect textureFilename="$data/vehicles/grimme/gl860/soilEffectFrontArray.dds" numRows="60" rowLength="18" minFade="0.07" />
+            </effectNode>
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="soilEffectBack">
+                <motionPathEffect textureFilename="$data/vehicles/grimme/gl860/soilEffectBackArray.dds" numRows="40" rowLength="18" minFade="0.07" />
+            </effectNode>
+        </effect>
+
+        <effect workAreaIndex="2">
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="ridgeMarkerLeftDiscEffect">
+                <motionPathEffect textureFilename="$data/effects/cultivator/arrays/sharedRidgeMarkerLeftArray.dds" numRows="3" rowLength="18" minFade="0.07" />
+            </effectNode>
+        </effect>
+        <effect workAreaIndex="3">
+            <effectNode effectClass="CultivatorMotionPathEffect" effectType="CULTIVATOR" linkNode="ridgeMarkerRightDiscEffect">
+                <motionPathEffect textureFilename="$data/effects/cultivator/arrays/sharedRidgeMarkerRightArray.dds" numRows="3" rowLength="18" minFade="0.07" />
+            </effectNode>
+        </effect>
+
+        <particle>
+            <node node="smokeEmitter" refNodeIndex="1" particleType="SOIL_SMOKE" emitCountScale="2" speedThreshold="2"/>
+        </particle>
+    </workParticles>
+
+    <ridgeMarker foldMinLimit="0" foldMaxLimit="0.13">
+        <marker animName="ridgeMarkerLeft"  workAreaIndex="2"/>
+        <marker animName="ridgeMarkerRight" workAreaIndex="3"/>
+    </ridgeMarker>
+
+    <ai>
+        <areaMarkers leftNode="aiMarkerLeft" rightNode="aiMarkerRight" backNode="aiMarkerBack"/>
+        <collisionTrigger node="aiCollisionNode" width="6.3" height="4.0"/>
+        <needsLowering value="true"/>
+        <allowTurnBackward value="false"/>
+        <toolReverserDirectionNode node="aiMarkerBack"/>
+        <turningRadiusLimitation radius="7"/>
+        <agentAttachment jointNode="attacherJoint" rotCenterWheelIndices="1 2" width="3.8" height="3.7" length="6.4" lengthOffset="1"/>
+    </ai>
+
+    <foliageBending>
+        <bendingNode minX="-1.65" maxX="1.65" minZ="-3.7" maxZ="0.8" yOffset="0.5"/>
+        <bendingNode minX="0" maxX="1.4" minZ="-1.45" maxZ="0.15" yOffset="-0.5" node="armLeft"/>
+        <bendingNode minX="-1.4" maxX="0" minZ="-1.45" maxZ="0.15" yOffset="-0.5" node="armRight"/>
+        <bendingNode minX="0.1" maxX="1.45" minZ="-1.3" maxZ="0.15" yOffset="-0.65" node="armBackPartLeft"/>
+        <bendingNode minX="-1.45" maxX="-0.1" minZ="-1.3" maxZ="0.15" yOffset="-0.65" node="armBackPartRight"/>
+        <bendingNode minX="-0.25" maxX="0.25" minZ="0.8" maxZ="2.2" yOffset="0.8"/>
+    </foliageBending>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="6" fieldMultiplier="2"/>
+
+    <i3dMappings>
+        <i3dMapping id="gl860_main_component1" node="0>" />
+        <i3dMapping id="gl860_vis" node="0>0" />
+        <i3dMapping id="wheelFront02" node="0>0|0|0" />
+        <i3dMapping id="wheelFront03" node="0>0|0|1" />
+        <i3dMapping id="drawbarPhy" node="0>0|1" />
+        <i3dMapping id="componentJointDrawbar" node="0>0|1|1" />
+        <i3dMapping id="supportCol" node="0>0|1|2|0" />
+        <i3dMapping id="drawbar" node="0>0|2|0" />
+        <i3dMapping id="drawbarPart" node="0>0|2|0|0" />
+        <i3dMapping id="connectionHoses" node="0>0|2|0|0|0|0" />
+        <i3dMapping id="hydraulicIn01" node="0>0|2|0|0|0|0|0" />
+        <i3dMapping id="hydraulicIn01_detached" node="0>0|2|0|0|0|0|0|0" />
+        <i3dMapping id="hydraulicIn01_connector" node="0>0|2|0|0|0|0|0|0|0" />
+        <i3dMapping id="hydraulicOut01" node="0>0|2|0|0|0|0|1" />
+        <i3dMapping id="hydraulicOut01_detached" node="0>0|2|0|0|0|0|1|0" />
+        <i3dMapping id="hydraulicOut01_connector" node="0>0|2|0|0|0|0|1|0|0" />
+        <i3dMapping id="electric" node="0>0|2|0|0|0|0|2" />
+        <i3dMapping id="electric_detached" node="0>0|2|0|0|0|0|2|0" />
+        <i3dMapping id="electric_connector" node="0>0|2|0|0|0|0|2|0|0" />
+        <i3dMapping id="drawbarHydraulicRef" node="0>0|2|0|1" />
+        <i3dMapping id="supportArm" node="0>0|2|0|2|0" />
+        <i3dMapping id="supportArmHydraulicRef" node="0>0|2|0|2|0|0" />
+        <i3dMapping id="supportArmHydraulic" node="0>0|2|0|2|1" />
+        <i3dMapping id="supportArmHydraulicPunch" node="0>0|2|0|2|1|0" />
+        <i3dMapping id="drawbarHydraulic" node="0>0|2|1" />
+        <i3dMapping id="drawbarHydraulicPunch" node="0>0|2|1|0" />
+        <i3dMapping id="bunker" node="0>0|2|2" />
+        <i3dMapping id="exactFillRootNode" node="0>0|2|2|0|0" />
+        <i3dMapping id="fillVolume" node="0>0|2|2|0|1" />
+        <i3dMapping id="fillVolumeDeformerLeft" node="0>0|2|2|0|2|0" />
+        <i3dMapping id="fillVolumeDeformerRight" node="0>0|2|2|0|3|0" />
+        <i3dMapping id="unloadNode" node="0>0|2|2|0|4" />
+        <i3dMapping id="bunkerHydraulicRef" node="0>0|2|2|1" />
+        <i3dMapping id="bunkerHydraulic" node="0>0|2|3" />
+        <i3dMapping id="bunkerHydraulicPunch" node="0>0|2|3|0" />
+        <i3dMapping id="armLeft" node="0>0|2|4" />
+        <i3dMapping id="ridgeMarkerLeft" node="0>0|2|4|0" />
+        <i3dMapping id="ridgeMarkerLeftPart" node="0>0|2|4|0|0" />
+        <i3dMapping id="ridgeMarkerLeftPartAlignRefFrame" node="0>0|2|4|0|0|0" />
+        <i3dMapping id="ridgeMarkerLeftPartAlign" node="0>0|2|4|0|0|0|0" />
+        <i3dMapping id="ridgeMarkerLeftDisc" node="0>0|2|4|0|0|1|0" />
+        <i3dMapping id="ridgeMarkerLeftDiscEffect" node="0>0|2|4|0|0|1|1" />
+        <i3dMapping id="ridgeMarkerLeftNode" node="0>0|2|4|0|0|2" />
+        <i3dMapping id="ridgeMarkerLeftHydraulicRef" node="0>0|2|4|0|1" />
+        <i3dMapping id="ridgeMarkerLeftHydraulic" node="0>0|2|4|1" />
+        <i3dMapping id="ridgeMarkerLeftHydraulicPunch" node="0>0|2|4|1|0" />
+        <i3dMapping id="armLeftHydraulicPart01RefFrame" node="0>0|2|4|2" />
+        <i3dMapping id="armLeftHydraulicPart01" node="0>0|2|4|2|0" />
+        <i3dMapping id="armLeftHydraulicPart02RefFrame" node="0>0|2|4|2|0|0" />
+        <i3dMapping id="armLeftHydraulicPart02" node="0>0|2|4|2|0|0|0" />
+        <i3dMapping id="armLeftHydraulicRef" node="0>0|2|4|2|0|1" />
+        <i3dMapping id="armLeftDiscs" node="0>0|2|4|3" />
+        <i3dMapping id="wheelFront01" node="0>0|2|4|4" />
+        <i3dMapping id="ridgeMarkerLeftPartAlignRef" node="0>0|2|4|5" />
+        <i3dMapping id="beltLeft" node="0>0|2|4|6|0" />
+        <i3dMapping id="potatoBeltLeft" node="0>0|2|4|6|1" />
+        <i3dMapping id="potatoBeltLeftPotatoes" node="0>0|2|4|6|1|0" />
+        <i3dMapping id="planterLeftRotPart" node="0>0|2|4|6|2" />
+        <i3dMapping id="fillVolume01" node="0>0|2|4|8" />
+        <i3dMapping id="fillVolume02" node="0>0|2|4|9" />
+        <i3dMapping id="armLeftHydraulic" node="0>0|2|5" />
+        <i3dMapping id="armLeftHydraulicPunch" node="0>0|2|5|0" />
+        <i3dMapping id="armRight" node="0>0|2|6" />
+        <i3dMapping id="ridgeMarkerRight" node="0>0|2|6|0" />
+        <i3dMapping id="ridgeMarkerRightPart" node="0>0|2|6|0|0" />
+        <i3dMapping id="ridgeMarkerRightPartAlignRefFrame" node="0>0|2|6|0|0|0" />
+        <i3dMapping id="ridgeMarkerRightPartAlign" node="0>0|2|6|0|0|0|0" />
+        <i3dMapping id="ridgeMarkerRightDisc" node="0>0|2|6|0|0|1|0" />
+        <i3dMapping id="ridgeMarkerRightDiscEffect" node="0>0|2|6|0|0|1|1" />
+        <i3dMapping id="ridgeMarkerRightNode" node="0>0|2|6|0|0|2" />
+        <i3dMapping id="ridgeMarkerRightHydraulicRef" node="0>0|2|6|0|1" />
+        <i3dMapping id="ridgeMarkerRightHydraulic" node="0>0|2|6|1" />
+        <i3dMapping id="ridgeMarkerRightHydraulicPunch" node="0>0|2|6|1|0" />
+        <i3dMapping id="armRightHydraulicPart01RefFrame" node="0>0|2|6|2" />
+        <i3dMapping id="armRightHydraulicPart01" node="0>0|2|6|2|0" />
+        <i3dMapping id="armRightHydraulicPart02RefFrame" node="0>0|2|6|2|0|0" />
+        <i3dMapping id="armRightHydraulicPart02" node="0>0|2|6|2|0|0|0" />
+        <i3dMapping id="armRightHydraulicRef" node="0>0|2|6|2|0|1" />
+        <i3dMapping id="armRightDiscs" node="0>0|2|6|3" />
+        <i3dMapping id="wheelFront04" node="0>0|2|6|4" />
+        <i3dMapping id="ridgeMarkerRightPartAlignRef" node="0>0|2|6|5" />
+        <i3dMapping id="beltRight" node="0>0|2|6|6|0" />
+        <i3dMapping id="potatoBeltRight" node="0>0|2|6|6|1" />
+        <i3dMapping id="potatoBeltRightPotatoes" node="0>0|2|6|6|1|0" />
+        <i3dMapping id="planterRightRotPart" node="0>0|2|6|6|2" />
+        <i3dMapping id="fillVolume03" node="0>0|2|6|8" />
+        <i3dMapping id="fillVolume04" node="0>0|2|6|9" />
+        <i3dMapping id="armRightHydraulic" node="0>0|2|7" />
+        <i3dMapping id="armRightHydraulicPunch" node="0>0|2|7|0" />
+        <i3dMapping id="armBack" node="0>0|2|8" />
+        <i3dMapping id="armBackPartLeft" node="0>0|2|8|0" />
+        <i3dMapping id="armBackPartLeftFolding" node="0>0|2|8|0|0" />
+        <i3dMapping id="rollerLeft" node="0>0|2|8|0|0|0" />
+        <i3dMapping id="armBackPartLeftFoldingPartRef" node="0>0|2|8|0|0|1" />
+        <i3dMapping id="armBackPartLeftFoldingPart" node="0>0|2|8|0|1" />
+        <i3dMapping id="armBackPartLeftHydraulicPart01RefFrame" node="0>0|2|8|0|2" />
+        <i3dMapping id="armBackPartLeftHydraulicPart01" node="0>0|2|8|0|2|0" />
+        <i3dMapping id="armBackPartLeftHydraulicPart02RefFrame" node="0>0|2|8|0|2|0|0" />
+        <i3dMapping id="armBackPartLeftHydraulicPart02" node="0>0|2|8|0|2|0|0|0" />
+        <i3dMapping id="armBackPartLeftHydraulicRef" node="0>0|2|8|0|2|0|1" />
+        <i3dMapping id="armBackPartLeftHydraulic" node="0>0|2|8|1" />
+        <i3dMapping id="armBackPartLeftHydraulicPunch" node="0>0|2|8|1|0" />
+        <i3dMapping id="armBackPartRight" node="0>0|2|8|2" />
+        <i3dMapping id="armBackPartRightFolding" node="0>0|2|8|2|0" />
+        <i3dMapping id="rollerRight" node="0>0|2|8|2|0|0" />
+        <i3dMapping id="armBackPartRightFoldingPartRef" node="0>0|2|8|2|0|1" />
+        <i3dMapping id="armBackPartRightFoldingPart" node="0>0|2|8|2|1" />
+        <i3dMapping id="armBackPartRightHydraulicPart01RefFrame" node="0>0|2|8|2|2" />
+        <i3dMapping id="armBackPartRightHydraulicPart01" node="0>0|2|8|2|2|0" />
+        <i3dMapping id="armBackPartRightHydraulicPart02RefFrame" node="0>0|2|8|2|2|0|0" />
+        <i3dMapping id="armBackPartRightHydraulicPart02" node="0>0|2|8|2|2|0|0|0" />
+        <i3dMapping id="armBackPartRightHydraulicRef" node="0>0|2|8|2|2|0|1" />
+        <i3dMapping id="armBackPartRightHydraulic" node="0>0|2|8|3" />
+        <i3dMapping id="armBackPartRightHydraulicPunch" node="0>0|2|8|3|0" />
+        <i3dMapping id="rollerCenter" node="0>0|2|8|4" />
+        <i3dMapping id="armBackHydraulicRef" node="0>0|2|8|5" />
+        <i3dMapping id="soilEffectBack" node="0>0|2|8|6|0" />
+        <i3dMapping id="armBackPartLeftHydraulicPart02Ref" node="0>0|2|8|8" />
+        <i3dMapping id="armBackPartRightHydraulicPart02Ref" node="0>0|2|8|9" />
+        <i3dMapping id="armBackHydraulic" node="0>0|2|9" />
+        <i3dMapping id="armBackHydraulicPunch" node="0>0|2|9|0" />
+        <i3dMapping id="supportWheels" node="0>0|2|10" />
+        <i3dMapping id="wheelLeftOuter" node="0>0|2|10|0" />
+        <i3dMapping id="wheelLeftInner" node="0>0|2|10|1" />
+        <i3dMapping id="wheelRightInner" node="0>0|2|10|2" />
+        <i3dMapping id="wheelRightOuter" node="0>0|2|10|3" />
+        <i3dMapping id="supportWheelsHydraulicRef" node="0>0|2|10|4" />
+        <i3dMapping id="supportWheelsHydraulic" node="0>0|2|11" />
+        <i3dMapping id="supportWheelsHydraulicPunch" node="0>0|2|11|0" />
+        <i3dMapping id="beltCenter" node="0>0|2|12|0" />
+        <i3dMapping id="potatoBeltCenter" node="0>0|2|12|1" />
+        <i3dMapping id="potatoBeltCenterPotatoes" node="0>0|2|12|1|0" />
+        <i3dMapping id="planterCenterRotPart" node="0>0|2|12|2" />
+        <i3dMapping id="centerDiscs" node="0>0|2|13" />
+        <i3dMapping id="armLeftHydraulicPart02Ref" node="0>0|2|14" />
+        <i3dMapping id="armRightHydraulicPart02Ref" node="0>0|2|15" />
+        <i3dMapping id="workAreaStart" node="0>0|3|0" />
+        <i3dMapping id="workAreaWidth" node="0>0|3|1" />
+        <i3dMapping id="workAreaHeight" node="0>0|3|2" />
+        <i3dMapping id="groundReferenceNode" node="0>0|3|3" />
+        <i3dMapping id="soilEffectFront" node="0>0|4|0" />
+        <i3dMapping id="smokeEmitter" node="0>0|4|1" />
+        <i3dMapping id="aiMarkerLeft" node="0>0|5|0" />
+        <i3dMapping id="aiMarkerRight" node="0>0|5|1" />
+        <i3dMapping id="aiMarkerBack" node="0>0|5|2" />
+        <i3dMapping id="aiCollisionNode" node="0>0|5|3" />
+        <i3dMapping id="gl860_drawbar_component2" node="1>" />
+        <i3dMapping id="attacherJoint" node="1>0" />
+        <i3dMapping id="drawbarRef" node="1>1" />
+    </i3dMappings>
+</vehicle>

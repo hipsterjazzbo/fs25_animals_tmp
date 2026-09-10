@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="weighingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_storeItem_weighingStationSmall</name>
+        <functions>
+            <function>$l10n_function_weighingstation</function>
+        </functions>
+        <image>$data/placeables/brandless/weighingStations/weighingStationSmall/store_weighingStationSmall.png</image>
+        <price>1</price>
+		<canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>silos</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>tools</tab>
+        </brush>
+        <vertexBufferMemoryUsage>161024</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>24576</indexBufferMemoryUsage>
+        <textureMemoryUsage>3080192</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings cameraYRot="-120" />
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/weighingStation.i3d</filename>
+    </base>
+
+    <placement>
+    </placement>
+
+    <clearAreas>
+    </clearAreas>
+
+    <leveling>
+        <levelAreas>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+        </updateAreas>
+    </ai>
+
+    <weighingStation triggerNode="weighingTrigger">
+        <display node="displayNode1" font="DIGIT" mask="00000000.0" alignment="RIGHT" size="0.13" emissiveScale="1" color="0.6 0 0" hiddenColor="0.05 0.05 0.05"/>
+        <display node="displayNode2" font="DIGIT" mask="00000000.0" alignment="RIGHT" size="0.13" emissiveScale="1" color="0.6 0 0" hiddenColor="0.05 0.05 0.05"/>
+        <display node="displayNode3" font="DIGIT" mask="00000000.0" alignment="RIGHT" size="0.13" emissiveScale="1" color="0.6 0 0" hiddenColor="0.05 0.05 0.05"/>
+        <display node="displayNode4" font="DIGIT" mask="00000000.0" alignment="RIGHT" size="0.13" emissiveScale="1" color="0.6 0 0" hiddenColor="0.05 0.05 0.05"/>
+    </weighingStation>
+
+    <i3dMappings>
+        <i3dMapping id="weighingTrigger" node="0>0" />
+        <i3dMapping id="displayNode1" node="0>1|0" />
+        <i3dMapping id="displayNode2" node="0>2|0" />
+        <i3dMapping id="displayNode3" node="0>3|0" />
+        <i3dMapping id="displayNode4" node="0>4|0" />
+    </i3dMappings>
+</placeable>

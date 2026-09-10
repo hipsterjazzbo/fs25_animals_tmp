@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="$data/shared/xml/schema/fillTypes.xsd">
+    <fillTypes>
+		<fillType name="CHICKS" title="$l10n_fillType_chicks" isBulkType="false" isPalletType="true" showOnPriceTable="false" unitShort="$l10n_unit_pieces">
+            <physics massPerLiter="0.1" maxPhysicalSurfaceAngle="15" />
+            <economy pricePerLiter="2.0" />
+            <image      hud     ="hud/hud_fill_chicks.png" />
+			<pallet     filename="objects/pallets/chickBox/chickBox.xml" />
+        </fillType>
+	<!-- bulls -->
+        <fillType name="BULL" title="$l10n_fillType_bull" showOnPriceTable="false">
+            <physics massPerLiter ="600.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="2000.0" />
+            <image   hud          ="$dataS/menu/hud/fillTypes/hud_fill_cow.png" />
+        </fillType>
+        <!-- Új bikák kezdete -->
+        <fillType name="BRC_BULL_HOLSTEIN" title="$l10n_fillType_bullHolsteinBRC" showOnPriceTable="false">
+            <physics massPerLiter ="600.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="2000.0" />
+            <image   hud          ="$dataS/menu/hud/fillTypes/hud_fill_cow.png" />
+        </fillType>
+        <fillType name="BRC_BULL_REDHOLSTEIN" title="$l10n_fillType_bullRedHolsteinBRC" showOnPriceTable="false">
+            <physics massPerLiter ="600.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="2000.0" />
+            <image   hud          ="$dataS/menu/hud/fillTypes/hud_fill_cow.png" />
+        </fillType>
+        <fillType name="BRC_BULL_ANGUS_BLACK" title="$l10n_fillType_bullAngusBlackBRC" showOnPriceTable="false">
+            <physics massPerLiter ="600.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="2500.0" />
+            <image   hud          ="$dataS/menu/hud/fillTypes/hud_fill_cow.png" />
+        </fillType>
+        <fillType name="BRC_BULL_ANGUS_RED" title="$l10n_fillType_bullAngusRedBRC" showOnPriceTable="false">
+            <physics massPerLiter ="600.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="2500.0" />
+            <image   hud          ="$dataS/menu/hud/fillTypes/hud_fill_cow.png" />
+        </fillType>
+        <!-- Új bikák vége -->
+        <fillType name="BRC_COW_BROWNSWISS" title="$l10n_fillType_cowBrownSwissBRC" showOnPriceTable="false">
+            <physics massPerLiter="300.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="1800.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_cow.png" />
+        </fillType>
+        <fillType name="BRC_COW_HOLSTEIN" title="$l10n_fillType_cowHolsteinBRC" showOnPriceTable="false">
+            <physics massPerLiter="300.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="1800.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_cow.png" />
+        </fillType>
+		<fillType name="BRC_COW_REDHOLSTEIN" title="$l10n_fillType_cowRedHolsteinBRC" showOnPriceTable="false">
+            <physics massPerLiter="300.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="1800.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_cow.png" />
+        </fillType>
+        <fillType name="BRC_COW_ANGUS" title="$l10n_fillType_cowAngusBRC" showOnPriceTable="false">
+            <physics massPerLiter="300.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="2200.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_cow.png" />
+        </fillType>
+        <fillType name="BRC_COW_LIMOUSIN" title="$l10n_fillType_cowLimousinBRC" showOnPriceTable="false">
+            <physics massPerLiter="300.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="2200.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_cow.png" />
+        </fillType>
+		<fillType name="BRC_COW_WATERBUFFALO" title="$l10n_fillType_cowWaterbuffaloBRC" showOnPriceTable="false">
+            <physics massPerLiter="300.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="2500.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_cow.png" />
+        </fillType>
+		<fillType name="BRC_BULL_WATERBUFFALO" title="$l10n_fillType_bullWaterbuffaloBRC" showOnPriceTable="false">
+            <physics massPerLiter="400.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="2800.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_cow.png" />
+        </fillType>
+		<fillType name="BRC_SOW_LANDRACE" title="$l10n_fillType_sowLandraceBRC" showOnPriceTable="false">
+            <physics massPerLiter="150.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="350.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_pig.png" />
+        </fillType>
+        <fillType name="BRC_BOAR_LANDRACE" title="$l10n_fillType_boarLandraceBRC" showOnPriceTable="false">
+            <physics massPerLiter="200.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="400.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_pig.png" />
+        </fillType>
+		<fillType name="BRC_SOW_PIETRAIN" title="$l10n_fillType_sowPietrainBRC" showOnPriceTable="false">
+            <physics massPerLiter="150.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="350.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_pig.png" />
+        </fillType>
+        <fillType name="BRC_BOAR_PIETRAIN" title="$l10n_fillType_boarPietrainBRC" showOnPriceTable="false">
+            <physics massPerLiter="200.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="400.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_pig.png" />
+        </fillType>
+		<fillType name="BRC_SOW_BERKSHIRE" title="$l10n_fillType_sowBerkshireBRC" showOnPriceTable="false">
+            <physics massPerLiter="150.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="380.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_pig.png" />
+        </fillType>
+        <fillType name="BRC_BOAR_BERKSHIRE" title="$l10n_fillType_boarBerkshireBRC" showOnPriceTable="false">
+            <physics massPerLiter="200.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="450.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_pig.png" />
+        </fillType>
+		<fillType name="BRC_EWE_MERINO" title="$l10n_fillType_eweMerinoBRC" showOnPriceTable="false">
+            <physics massPerLiter="100.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="250.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_sheep.png" />
+        </fillType>
+        <fillType name="BRC_RAM_MERINO" title="$l10n_fillType_ramMerinoBRC" showOnPriceTable="false">
+            <physics massPerLiter="150.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="300.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_sheep.png" />
+        </fillType>
+		<fillType name="BRC_EWE_SUFFOLK" title="$l10n_fillType_eweSuffolkBRC" showOnPriceTable="false">
+            <physics massPerLiter="100.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="250.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_sheep.png" />
+        </fillType>
+        <fillType name="BRC_RAM_SUFFOLK" title="$l10n_fillType_ramSuffolkBRC" showOnPriceTable="false">
+            <physics massPerLiter="150.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="300.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_sheep.png" />
+        </fillType>
+		<fillType name="BRC_EWE_MOUNTAINSHEEP" title="$l10n_fillType_eweMountainsheepBRC" showOnPriceTable="false">
+            <physics massPerLiter="100.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="280.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_sheep.png" />
+        </fillType>
+        <fillType name="BRC_RAM_MOUNTAINSHEEP" title="$l10n_fillType_ramMountainsheepBRC" showOnPriceTable="false">
+            <physics massPerLiter="150.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="330.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_sheep.png" />
+        </fillType>
+		<fillType name="BRC_DOE_THURINGIAN" title="$l10n_fillType_doeThuringiangoatBRC" showOnPriceTable="false">
+            <physics massPerLiter="100.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="250.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_goat.png" />
+        </fillType>
+        <fillType name="BRC_BUCK_THURINGIAN" title="$l10n_fillType_buckThuringiangoatBRC" showOnPriceTable="false">
+            <physics massPerLiter="150.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="300.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_goat.png" />
+        </fillType>
+		<fillType name="BRC_HEN_LOHMANN" title="$l10n_fillType_henLohmannBRC" showOnPriceTable="false">
+            <physics massPerLiter="20.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="25.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_chicken.png" />
+        </fillType>
+        <fillType name="BRC_ROOSTER_LOHMANN" title="$l10n_fillType_roosterLohmannBRC" showOnPriceTable="false">
+            <physics massPerLiter="20.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="20.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_chicken.png" />
+        </fillType>
+		<fillType name="BRC_HEN_LEGHORN" title="$l10n_fillType_henLeghornBRC" showOnPriceTable="false">
+            <physics massPerLiter="20.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="25.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_chicken.png" />
+        </fillType>
+		<fillType name="BRC_ROOSTER_LEGHORN" title="$l10n_fillType_roosterLeghornBRC" showOnPriceTable="false">
+            <physics massPerLiter="20.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="20.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_chicken.png" />
+        </fillType>
+		<fillType name="BRC_HEN_PLYMOUTHROCK" title="$l10n_fillType_henPlymouthrockBRC" showOnPriceTable="false">
+            <physics massPerLiter="20.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="30.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_chicken.png" />
+        </fillType>
+		<fillType name="BRC_ROOSTER_PLYMOUTHROCK" title="$l10n_fillType_roosterPlymouthrockBRC" showOnPriceTable="false">
+            <physics massPerLiter="20.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="25.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_chicken.png" />
+        </fillType>
+		<fillType name="BRC_HEN_BOHUSDAL" title="$l10n_fillType_henBohusdalBRC" showOnPriceTable="false">
+            <physics massPerLiter="20.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="35.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_chicken.png" />
+        </fillType>
+		<fillType name="BRC_ROOSTER_BOHUSDAL" title="$l10n_fillType_roosterBohusdalBRC" showOnPriceTable="false">
+            <physics massPerLiter="20.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="30.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_chicken.png" />
+        </fillType>
+		<fillType name="BRC_RABBIT_FEMALE" title="$l10n_fillType_rabbitFemaleBRC" showOnPriceTable="false">
+            <physics massPerLiter="5.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="25.0" />
+            <image hud="hud/fillTypes/hud_fill_rabbit.png" />
+        </fillType>
+        <fillType name="BRC_RABBIT_MALE" title="$l10n_fillType_rabbitMaleBRC" showOnPriceTable="false">
+            <physics massPerLiter="5.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="20.0" />
+            <image hud="hud/fillTypes/hud_fill_rabbit.png" />
+        </fillType>
+		<!-- duck -->
+        <fillType name="DUCK_FEMALE" title="$l10n_fillType_kacsaTojo" showOnPriceTable="false">
+            <physics massPerLiter="3.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="30.0" />
+            <image      hud     ="hud/fillTypes/hud_fill_duck.png" />
+        </fillType>
+        <fillType name="DUCK_MALE" title="$l10n_fillType_kacsaGacser" showOnPriceTable="false">
+            <physics massPerLiter="3.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="25.0" />
+            <image      hud     ="hud/fillTypes/hud_fill_duck.png" />
+        </fillType>
+        <!-- liba -->
+		<fillType name="LIBA" title="$l10n_fillType_libaTojo" showOnPriceTable="false">
+            <physics massPerLiter="3.5" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="40.0" />
+            <image      hud     ="hud/fillTypes/hud_fill_liba.png" />
+        </fillType>		
+		<fillType name="LIBA_HIM" title="$l10n_fillType_libaGunar" showOnPriceTable="false">
+            <physics massPerLiter="3.5" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="35.0" />
+            <image      hud     ="hud/fillTypes/hud_fill_liba.png" />
+        </fillType>
+	    <!-- pulyka -->
+        <fillType name="PULYKA" title="$l10n_fillType_pulykaTojo" showOnPriceTable="false">
+            <physics massPerLiter="3.5" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="50.0" />
+            <image      hud     ="hud/fillTypes/hud_fill_pulyka.png" />
+        </fillType>        
+		<fillType name="PULYKA_HIM" title="$l10n_fillType_pulykaKakas" showOnPriceTable="false">
+            <physics massPerLiter="3.5" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="45.0" />
+            <image      hud     ="hud/fillTypes/hud_fill_pulyka.png" />
+        </fillType>
+    </fillTypes>
+    <fillTypeCategories>
+        <fillTypeCategory name="ANIMAL">BRC_BULL_HOLSTEIN BRC_BULL_REDHOLSTEIN BRC_BULL_ANGUS_BLACK BRC_BULL_ANGUS_RED DUCK_FEMALE DUCK_MALE LIBA PULYKA PULYKA_HIM LIBA_HIM BRC_RABBIT_MALE BRC_RABBIT_FEMALE BRC_COW_ANGUS BRC_COW_HOLSTEIN BRC_COW_REDHOLSTEIN BRC_COW_LIMOUSIN BRC_COW_BROWNSWISS BRC_COW_WATERBUFFALO BRC_BULL_WATERBUFFALO BRC_SOW_LANDRACE BRC_BOAR_LANDRACE BRC_SOW_PIETRAIN BRC_BOAR_PIETRAIN BRC_SOW_BERKSHIRE BRC_BOAR_BERKSHIRE BRC_EWE_MERINO BRC_RAM_MERINO BRC_EWE_SUFFOLK BRC_RAM_SUFFOLK BRC_EWE_MOUNTAINSHEEP BRC_RAM_MOUNTAINSHEEP BRC_DOE_THURINGIAN BRC_BUCK_THURINGIAN BRC_HEN_LOHMANN BRC_ROOSTER_LOHMANN BRC_HEN_LEGHORN BRC_ROOSTER_LEGHORN BRC_HEN_PLYMOUTHROCK BRC_ROOSTER_PLYMOUTHROCK BRC_HEN_BOHUSDAL BRC_ROOSTER_BOHUSDAL</fillTypeCategory>
+        <fillTypeCategory name="PRODUCT">CHICKS BRC_BULL_HOLSTEIN BRC_BULL_REDHOLSTEIN BRC_BULL_ANGUS_BLACK BRC_BULL_ANGUS_RED DUCK_FEMALE DUCK_MALE LIBA PULYKA PULYKA_HIM LIBA_HIM BRC_RABBIT_MALE BRC_RABBIT_FEMALE BRC_COW_ANGUS BRC_COW_HOLSTEIN BRC_COW_REDHOLSTEIN BRC_COW_LIMOUSIN BRC_COW_BROWNSWISS BRC_COW_WATERBUFFALO BRC_BULL_WATERBUFFALO BRC_SOW_LANDRACE BRC_BOAR_LANDRACE BRC_SOW_PIETRAIN BRC_BOAR_PIETRAIN BRC_SOW_BERKSHIRE BRC_BOAR_BERKSHIRE BRC_EWE_MERINO BRC_RAM_MERINO BRC_EWE_SUFFOLK BRC_RAM_SUFFOLK BRC_EWE_MOUNTAINSHEEP BRC_RAM_MOUNTAINSHEEP BRC_DOE_THURINGIAN BRC_BUCK_THURINGIAN BRC_HEN_LOHMANN BRC_ROOSTER_LOHMANN BRC_HEN_LEGHORN BRC_ROOSTER_LEGHORN BRC_HEN_PLYMOUTHROCK BRC_ROOSTER_PLYMOUTHROCK BRC_HEN_BOHUSDAL BRC_ROOSTER_BOHUSDAL</fillTypeCategory>
+        <fillTypeCategory name="SELLINGSTATION_PRODUCTSFOOD">CHICKS BRC_BULL_HOLSTEIN BRC_BULL_REDHOLSTEIN BRC_BULL_ANGUS_BLACK BRC_BULL_ANGUS_RED DUCK_FEMALE DUCK_MALE LIBA PULYKA PULYKA_HIM LIBA_HIM BRC_RABBIT_MALE BRC_RABBIT_FEMALE BRC_COW_ANGUS BRC_COW_HOLSTEIN BRC_COW_REDHOLSTEIN BRC_COW_LIMOUSIN BRC_COW_BROWNSWISS BRC_COW_WATERBUFFALO BRC_BULL_WATERBUFFALO BRC_SOW_LANDRACE BRC_BOAR_LANDRACE BRC_SOW_PIETRAIN BRC_BOAR_PIETRAIN BRC_SOW_BERKSHIRE BRC_BOAR_BERKSHIRE BRC_EWE_MERINO BRC_RAM_MERINO BRC_EWE_SUFFOLK BRC_RAM_SUFFOLK BRC_EWE_MOUNTAINSHEEP BRC_RAM_MOUNTAINSHEEP BRC_DOE_THURINGIAN BRC_BUCK_THURINGIAN BRC_HEN_LOHMANN BRC_ROOSTER_LOHMANN BRC_HEN_LEGHORN BRC_ROOSTER_LEGHORN BRC_HEN_PLYMOUTHROCK BRC_ROOSTER_PLYMOUTHROCK BRC_HEN_BOHUSDAL BRC_ROOSTER_BOHUSDAL</fillTypeCategory>
+	</fillTypeCategories>
+	
+		<fillTypeSound fillTypes="CHICKS">
+			<sound file="sound/foleyDrop.wav" innerRadius="0" outerRadius="0" >
+				<volume indoor="0" outdoor="0" />
+				<pitch indoor="1" outdoor="1" />
+				<lowpassGain indoor="0.50" outdoor="1.00" />
+			</sound>	
+        </fillTypeSound>
+</map>

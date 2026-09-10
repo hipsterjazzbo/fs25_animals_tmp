@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="lentils_harvestReady.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="$data/foliage/soybean/soybeanStage04_fmask.png"/>
+    <File fileId="4" filename="$data/shaders/motionPathShader.xml"/>
+    <File fileId="7" filename="lentilsStage03_alpha.dds"/>
+    <File fileId="2" filename="lentilsStage03_normal.dds"/>
+    <File fileId="1" filename="lentilsStage04_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="soybeanStage04_mat" materialId="5" customShaderId="4" customShaderVariation="scaleByTexture_verticalOffsetCut_alphaMap">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="alphaMap" fileId="7"/>
+      <CustomParameter name="verticalOffset" value="-0.15"/>
+    </Material>
+    <Material name="soybeanStage04_mat" materialId="6" customShaderId="4" customShaderVariation="scaleByTexture_verticalOffsetCut_alphaMap">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="alphaMap" fileId="7"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="lentils_harvestReady.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="cutterEffects_soybean" nodeId="13">
+      <TransformGroup name="cutterEffects_soybean_meshes" scale="1 0.5 1" nodeId="14">
+        <Shape name="cutterEffects_soybean_nr32_rl42_v1" translation="0 0 -0.2" shapeId="1" nodeId="15" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="cutterEffects_soybean_nr6_rl5_v1" shapeId="2" nodeId="16" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        <Shape name="cutterEffects_soybean_nr6_rl20_v1" shapeId="3" nodeId="17" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        <Shape name="cutterEffects_soybean_nr12_rl26_v1" shapeId="4" nodeId="18" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        <Shape name="cutterEffects_soybean_nr20_rl36_v1" shapeId="5" nodeId="19" castsShadows="true" receiveShadows="true" materialIds="5"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

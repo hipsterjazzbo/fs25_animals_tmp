@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="wineCellar.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/shared/warningStripes_diffuse.png"/>
+    <File fileId="3" filename="$data/shared/warningStripes_normal.png"/>
+    <File fileId="4" filename="$data/shared/warningStripes_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="warningStripes_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="wineCellar.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="wineCellar" lockedgroup="true" nodeId="12">
+      <TransformGroup name="clearAreas" nodeId="13"/>
+      <TransformGroup name="levelAreas" nodeId="14"/>
+      <TransformGroup name="paintAreas" nodeId="15"/>
+      <TransformGroup name="indoorAreas" nodeId="16"/>
+      <TransformGroup name="testAreas" nodeId="17"/>
+      <TransformGroup name="tipOcclusionUpdateAreas" nodeId="18"/>
+      <TransformGroup name="lights" nodeId="19"/>
+      <Shape name="infoTrigger" translation="2.74878e-07 0 3.14424" rotation="-2.1804e-07 90 0" scale="1.73916 1 1.64774" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="20" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="sellingStation" translation="-1.61414 0.072403 32.1222" nodeId="21">
+        <Shape name="unloadTrigger" shapeId="2" kinematic="true" compound="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="22" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <TransformGroup name="unloadTriggerMarker" nodeId="23"/>
+        <TransformGroup name="unloadTriggerAINode" nodeId="24"/>
+        <TransformGroup name="unloadTriggerLinkNode" nodeId="25"/>
+      </TransformGroup>
+      <TransformGroup name="productionPoint" translation="8.2778 -0.00350952 11.0009" nodeId="26">
+        <Shape name="playerTrigger" translation="0 1.5 0" shapeId="3" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="27" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <TransformGroup name="playerTriggerMarker" translation="0 0.5 0" nodeId="28"/>
+      </TransformGroup>
+      <TransformGroup name="warningStripes" nodeId="29">
+        <Shape name="warningStripes01" translation="-2.7287 0.00038147 -6.06409" shapeId="4" clipDistance="200" nodeId="30" castsShadows="true" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="6"/>
+      </TransformGroup>
+      <TransformGroup name="palletSpawner" nodeId="31">
+        <TransformGroup name="palletAreaStart01" translation="-6.71613 0.00038147 -7.41392" rotation="-0 90 0" nodeId="32">
+          <TransformGroup name="palletAreaEnd01" translation="0 0 8.5" nodeId="33"/>
+        </TransformGroup>
+        <TransformGroup name="palletAreaStart02" translation="-6.66602 0.00038147 -6.1541" rotation="-0 90 0" nodeId="34">
+          <TransformGroup name="palletAreaEnd02" translation="0 0 8.5" nodeId="35"/>
+        </TransformGroup>
+        <TransformGroup name="palletAreaStart03" translation="-6.64594 0.00038147 -4.6666" rotation="-0 90 0" nodeId="36">
+          <TransformGroup name="palletAreaEnd03" translation="0 0 8.5" nodeId="37"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="dynamicallyLoadedParts" nodeId="38"/>
+      <TransformGroup name="visual_lod" clipDistance="650" nodeId="39"/>
+      <TransformGroup name="collisions" nodeId="40"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

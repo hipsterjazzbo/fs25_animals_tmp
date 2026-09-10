@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="quinces.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/shared/default_normal.dds"/>
+    <File fileId="3" filename="$data/shared/window02_specular.dds"/>
+    <File fileId="1" filename="textures/quinceTree_diffuse.dds"/>
+    <File fileId="2" filename="textures/quinceTree_normal.dds"/>
+    <File fileId="4" filename="textures/quince_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="americanElmBranch_mat" materialId="48">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="appleMaterial" materialId="49">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="quinces.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="appleTree" nodeId="55">
+      <TransformGroup name="appleTree" lockedgroup="true" clipDistance="1000" nodeId="56">
+        <Shape name="apples" shapeId="1" clipDistance="300" nodeId="57" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="48"/>
+      </TransformGroup>
+      <TransformGroup name="apples" nodeId="58">
+        <Shape name="apples" shapeId="1" clipDistance="300" nodeId="59" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="48"/>
+        <Shape name="apple" translation="-1.58139 3.37652 0.958125" rotation="-90 -0 0" shapeId="2" clipDistance="200" nodeId="60" castsShadows="true" receiveShadows="true" materialIds="49"/>
+        <Shape name="apple" translation="1.90789 3.96688 1.52922" rotation="-90 -0 0" shapeId="3" clipDistance="200" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="49"/>
+        <Shape name="apple" translation="0.00476896 3.79552 2.42357" rotation="-90 -67.5458 3.04956e-05" shapeId="4" clipDistance="200" nodeId="62" castsShadows="true" receiveShadows="true" materialIds="49"/>
+        <Shape name="apple" translation="1.65993 4.11846 -0.872781" rotation="-90 0 3.04956e-05" shapeId="4" clipDistance="200" nodeId="63" castsShadows="true" receiveShadows="true" materialIds="49"/>
+        <Shape name="apple" translation="-1.182 3.4026 -1.13504" rotation="-90 0 3.04956e-05" shapeId="4" clipDistance="200" nodeId="64" castsShadows="true" receiveShadows="true" materialIds="49"/>
+        <Shape name="apple" translation="1.28994 4.05628 -1.65835" rotation="-90 0 3.04956e-05" shapeId="4" clipDistance="200" nodeId="65" castsShadows="true" receiveShadows="true" materialIds="49"/>
+        <Shape name="apple" translation="0.580963 4.88247 -3.06907" rotation="-90 64.7494 2.04162e-06" shapeId="4" clipDistance="200" nodeId="66" castsShadows="true" receiveShadows="true" materialIds="49"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Corn Dryer</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>placeables/icons/grainDryer.dds</image>
+        <price>50000</price>
+		<dailyUpkeep>120</dailyUpkeep>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+        <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>0</indexBufferMemoryUsage>
+        <textureMemoryUsage>0</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/grainDryerComplexF1.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement>
+    </placement>
+
+    <clearAreas>
+    </clearAreas>
+
+    <leveling>
+    </leveling>
+
+    <indoorAreas>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="mapPosition" teleportNode="playerTriggerMarker" />
+    </hotspots>
+
+    <dynamicallyLoadedParts>
+	</dynamicallyLoadedParts>
+
+    <triggerMarkers>
+        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIconWrench.i3d"/>
+        <triggerMarker node="markerLoading"   filename="$data/shared/assets/marker/markerIconLoad.i3d" />
+        <triggerMarker node="markerUnloading" filename="$data/shared/assets/marker/markerIconUnload.i3d" />
+    </triggerMarkers>
+
+    <productionPoint>
+        <productions sharedThroughputCapacity="false">
+			<production id="cornDryer" name="Corn Dryer" cyclesPerHour="30" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="MAIZE" 	amount="500" />
+                    <input fillType="PROPANE" 	amount="50" />
+                </inputs>
+                <outputs>
+                    <output fillType="MAIZE2" amount="425" />
+                </outputs>
+            </production>
+        </productions>
+
+        <storage isExtension="false" fillLevelSyncThreshold="50">
+            <capacity fillType="MAIZE"  	capacity="1000000" />
+            <capacity fillType="MAIZE2"  	capacity="1000000" />
+            <capacity fillType="PROPANE"  	capacity="1000000" />
+        </storage>
+
+		<sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="false">
+            <unloadTrigger exactFillRootNode="exactFillRootNode" aiNode="aiUnloadingNode" fillTypes="MAIZE MAIZE2 PROPANE"/>
+			<fillType name="MAIZE"          priceScale="0.2" supportsGreatDemand="true" disablePriceDrop="false" />
+			<fillType name="MAIZE2"      	priceScale="0.2" supportsGreatDemand="true" disablePriceDrop="false" />
+			<fillType name="PROPANE"      	priceScale="0.2" supportsGreatDemand="true" disablePriceDrop="false" />
+        </sellingStation>
+		
+		<loadingStation node="loadingTrigger" supportsExtension="true" storageRadius="50">
+            <loadTrigger triggerNode="loadingTrigger" fillLitersPerSecond="5000" dischargeNode="dischargeNode" fillTypes="MAIZE MAIZE2 PROPANE" aiNode="aiLoadingNode">
+                <effectNode effectClass="PipeEffect" effectNode="pipeEffect"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0"/>
+                <effectNode                          effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.5" />
+                <sounds>
+                    <loading template="silosActive" />
+                </sounds>
+            </loadTrigger>
+        </loadingStation>
+
+		<playerTrigger node="playerTrigger" />
+        
+		<sounds>
+            <idle   template="bakeryIdle" linkNode="0>" outerRadius="50"/>
+            <active template="bakeryWork" linkNode="0>" outerRadius="50"/>
+        </sounds>
+		
+		<effectNodes>
+            <effectNode effectClass="ParticleEffect" effectNode="smokeEffectChimney" particleType="SMOKE_CHIMNEY" scale="1 1 1" shaderParameterName="colorAlpha" shaderParameter="1 1 1 0.7"/>
+        </effectNodes>
+    </productionPoint>
+
+    <i3dMappings>
+        <i3dMapping id="grainDryerComplex" node="0>" />
+        <i3dMapping id="loadingTrigger" node="0>0|0|0" />
+        <i3dMapping id="dischargeNode" node="0>0|0|1" />
+        <i3dMapping id="pipeEffect" node="0>0|0|2|0" />
+        <i3dMapping id="pipeEffectSmoke" node="0>0|0|2|1" />
+        <i3dMapping id="aiLoadingNode" node="0>0|0|3" />
+        <i3dMapping id="sellingStation" node="0>1" />
+        <i3dMapping id="exactFillRootNode" node="0>1|0" />
+        <i3dMapping id="aiUnloadingNode" node="0>1|1" />
+        <i3dMapping id="mapPosition" node="0>2" />        
+		<i3dMapping id="storage" node="0>3" />		
+		<i3dMapping id="infoTrigger" node="0>4" />
+        <i3dMapping id="playerTrigger" node="0>5|0" />
+        <i3dMapping id="playerTriggerMarker" node="0>5|1" />
+		<i3dMapping id="markerLoading" node="0>6|0" />
+        <i3dMapping id="markerUnloading" node="0>6|1" />
+		<i3dMapping id="smokeEffectChimney" node="0>7|0" />
+    </i3dMappings>
+</placeable>

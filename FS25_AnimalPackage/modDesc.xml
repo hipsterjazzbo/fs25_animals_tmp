@@ -1,0 +1,2537 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="90">
+    <author>Leslie Jr.</author>
+    <contributors>GBM</contributors>
+    <version>1.1</version>
+    <title>
+        <en>Animal Package Vanilla Edition</en>
+        <de>Tier Paket Vanilla Edition</de>
+    </title>
+    <description>
+<en>
+<![CDATA[
+Bring more life and optical realism to your farm!
+This mod introduces new models for cattle, pigs, sheep, goats, and chickens — including male animals and additional growth stages.
+In the Vanilla Edition, all of the above-mentioned animals found in the base game are covered. Horses, buffalo, and chickens are currently only partially affected or not yet included.
+
+Key Features:
+ - Male and female animals are visually distinct
+ - More detailed growth stages for a natural progression
+ - Realistic ear tags on livestock
+ - Greater variety in coat and spot patterns
+ - Spot patterns remain consistent as animals grow
+ 
+All modifications are purely cosmetic and do not affect gameplay balance.
+For a more in-depth and realistic animal system that adds functionality to these new models, we recommend pairing this mod with "FS25_EnhancedAnimalSystem" by Chissel.
+
+Warning!
+When adding this mod to an existing savegame, all previously owned animals may be removed.
+
+Version 1.0.2.1
+- adjusted foodconsumption for all animals
+- sheep, goats and chicken now produce manure
+- fixed cattle glitching out of navMeshes
+- removed abillity for male animals to reproduce on their own
+- added sounds for goats
+- added partial support for highlands fishing expansion
+- added eartags for pigs
+- added red holstein cattle as a standalone breed
+- minor optical tweaks for various animals
+- added possibility to automaticly raise filltypes, if needed
+Note: Due to the way i've setup my filltypes, when playing in new farmer mode on kinlaig map, you will start without any sheep in your pen.
+]]>
+</en>
+<de>
+<![CDATA[
+Bringe mehr Leben und Realismus auf deinen Hof!
+Diese Mod fügt neue Modelle für Rinder, Schweine, Schafe, Ziegen und Hühner hinzu – einschließlich männlicher Tiere und zusätzlicher Wachstumsstufen.
+In der Vanilla Edition sind alle oben genannten Tiere aus dem Basisspiel enthalten. Pferde, Büffel und Hühner sind derzeit nur teilweise oder noch gar nicht berücksichtigt.
+
+Features im Überblick:
+ - Unterscheidung zwischen männlichen und weiblichen Tieren
+ - Detailliertere Wachstumsstufen für einen natürlichen Wachstumsverlauf
+ - Realistische Ohrmarken bei Nutztieren
+ - Mehr Vielfalt bei Fell- und Fleckenmustern
+ - Fleckenmuster bleiben beim Aufwachsen der Tiere erhalten
+ 
+Alle Änderungen sind rein kosmetischer Natur und beeinflussen das Gameplay nicht.
+Um den hinzugefügten Tieren realistische Funktionen zu verleihen, empfehlen wir die Mod "FS25_EnhancedAnimalSystem" von Chissel.
+
+Achtung!
+Beim Hinzufügen dieser Mod, zu einem laufenden Spielstand, werden möglicherweise alle vorher vorhandenen Tiere entfernt.
+
+Version 1.0.2.1
+- Futterverbrauch für alle Tiere angepasst
+- Schafe, Ziegen und Hühner produzieren jetzt Mist
+- Problem behoben, bei dem sich Rinder aus den NavMeshes herausbewegt haben
+- Möglichkeit entfernt, dass männliche Tiere sich allein vermehren
+- Ziegen bekommen nun passende Geräusche / Sounds
+- Teilweise Unterstützung für das Highlands Fishing Expansion-Addon hinzugefügt
+- Ohrmarken für Schweine hinzugefügt
+- Rote Holstein-Rinder als eigenständige Rasse hinzugefügt
+- Kleinere optische Verbesserungen für verschiedene Tiere
+- Automatische Erhöhung der Filltypes, falls nötig
+Hinweis: Aufgrund der Art, wie ich meine Filltypes eingerichtet habe, startest du im „Neuer Farmer“-Modus auf der Kinlaig-Karte ohne Schafe im Stall.
+]]>
+</de>
+<hu>
+<![CDATA[
+Vigyél több életet és realizmust a farmodba!
+
+Ez a mod új modelleket ad hozzá szarvasmarhák, sertések, juhok, kecskék és csirkék számára – beleértve a hímeket és a további növekedési szakaszokat is.
+
+A vanilla kiadás tartalmazza az összes fent említett állatot az alapjátékból. A lovak, bivalyok és csirkék jelenleg csak részben vagy egyáltalán nem szerepelnek.
+
+Jellemzők áttekintése:
+
+- A hím és nőstény állatok megkülönböztetése
+
+- Részletesebb növekedési szakaszok a természetes növekedési minta érdekében
+
+- Reális füljelzők a haszonállatokon
+
+- Nagyobb változatosság a szőrzetben és a foltmintákban
+
+- A foltminták megmaradnak az állatok növekedésével
+
+Minden változtatás pusztán kozmetikai jellegű, és nem befolyásolja a játékmenetet.
+
+A hozzáadott állatok realisztikus tulajdonságainak biztosítása érdekében a Chissel "FS25_EnhancedAnimalSystem" modját ajánljuk.
+
+Figyelem!
+
+Ha ezt a modot egy meglévő mentéshez adjuk hozzá, az eltávolíthatja az összes korábban telepített állatot.
+
+1.0.2.1-es verzió
+
+- Módosított takarmányfogyasztás minden állatnál
+
+- A juhok, kecskék és csirkék mostantól trágyát termelnek
+
+- Kijavítottunk egy hibát, amely miatt a szarvasmarhák kikerültek a NavMeshes-ekből
+
+- Eltávolítottuk a hím állatok önálló szaporodásának lehetőségét
+
+- A kecskéknek mostantól megfelelő hangjuk van
+
+- Részleges támogatást adtunk a Highlands Fishing Expansion kiegészítőhöz
+
+- Füljelzőket adtunk hozzá a sertésekhez
+
+- Hozzáadtuk a Red Holstein szarvasmarhát külön fajtaként
+
+- Kisebb vizuális fejlesztések különböző állatoknál
+
+- Automatikusan megnöveltük a kitöltési típusokat, ha szükséges
+
+Megjegyzés: A kitöltési típusok beállításának módja miatt a Kinlaig térképen "Új gazda" módban kezdesz, juhok nélkül az istállóban.
+]]>
+</hu>
+    </description>
+    <iconFilename>icon_animalPackage.dds</iconFilename>
+    <multiplayer supported="true"/>
+    
+    <l10n>
+	<text name="fillType_catTiger">
+        <en>Tabby Cat</en>
+        <de>Getigerte Katze</de>
+        <fr>Chat tigré</fr>
+        <pl>Kot pręgowany</pl>
+        <hu>Cirmos macska</hu>
+    </text>
+    <text name="fillType_catBlackWhite">
+        <en>Black and White Cat</en>
+        <de>Schwarz-weiße Katze</de>
+        <fr>Chat noir et blanc</fr>
+        <pl>Kot czarno-biały</pl>
+        <hu>Fekete-fehér macska</hu>
+    </text>
+    <text name="fillType_catBlack">
+        <en>Black Cat</en>
+        <de>Schwarze Katze</de>
+        <fr>Chat noir</fr>
+        <pl>Czarny kot</pl>
+        <hu>Fekete macska</hu>
+    </text>
+    <text name="fillType_catGrey">
+        <en>Grey Cat</en>
+        <de>Graue Katze</de>
+        <fr>Chat gris</fr>
+        <pl>Szary kot</pl>
+        <hu>Szürke macska</hu>
+    </text>
+    <text name="fillType_catRed">
+        <en>Orange Cat</en>
+        <de>Rote Katze</de>
+        <fr>Chat roux</fr>
+        <pl>Rudy kot</pl>
+        <hu>Vörös macska</hu>
+    </text>
+    <text name="fillType_catWhite">
+        <en>White Cat</en>
+        <de>Weiße Katze</de>
+        <fr>Chat blanc</fr>
+        <pl>Biały kot</pl>
+        <hu>Fehér macska</hu>
+    </text>
+	<text name="storeItem_chickBox">
+    <en>Chick Box</en>
+    <de>Kükenbox</de>
+    <fr>Boîte à poussins</fr>
+    <hu>Csibe doboz</hu>
+    <pl>Pudełko z pisklętami</pl>
+	</text>
+	<text name="storeItem_animalBarnChickenSmall_uj">
+    <en>Small Modded Chicken Coop</en>
+    <de>Kleiner gemoddeter Hühnerstall</de>
+    <fr>Petit poulailler moddé</fr>
+    <hu>Kicsi tyúk ól modolt</hu>
+    <pl>Mały zmodyfikowany kurnik</pl>
+	</text>
+	<text name="storeItem_animalBarnChickenBig_uj">
+		<en>Large Modded Chicken Coop</en>
+		<de>Großer gemoddeter Hühnerstall</de>
+		<fr>Grand poulailler moddé</fr>
+		<hu>Csirke ól nagy modolt</hu>
+		<pl>Duży zmodyfikowany kurnik</pl>
+	</text>
+	<text name="fillType_chicks">
+    <en>Chicks</en>
+    <de>Küken</de>
+    <fr>Poussin</fr>
+    <pl>Pisklę</pl>
+    <hu>Csibe</hu>
+	</text>	
+	<text name="fillType_catFood">
+    <en>Cat Food</en>
+    <de>Katzenfutter</de>
+    <fr>Nourriture pour chats</fr>
+    <pl>Karma dla kotów</pl>
+    <hu>Macskaeledel</hu>
+	</text>
+	<text name="fillType_eggHB">
+		<en>HB Egg</en>
+		<de>HB Ei</de>
+		<fr>HB Œuf</fr>
+		<pl>HB Jajko</pl>
+		<hu>HB Tojás</hu>
+	</text>
+	<text name="animal_catZone">
+		<en>Farm Cats</en>
+		<de>Hofkatzen</de>
+		<fr>Chats de ferme</fr>
+		<pl>Koty wiejskie</pl>
+		<hu>Tanyasi Macskák</hu>
+	</text>
+	<text name="fillType_cat">
+		<en>Cat</en>
+		<de>Katze</de>
+		<fr>Chat</fr>
+		<pl>Kot</pl>
+		<hu>Macska</hu>
+	</text>
+	<text name="animal_group_cats">
+		<en>Cats</en>
+		<de>Katzen</de>
+		<fr>Chats</fr>
+		<pl>Koty</pl>
+		<hu>Macskák</hu>
+	</text>
+	<text name="shopItem_animalCatGrowthStage0">
+		<en>Kitten</en>
+		<de>Kätzchen</de>
+		<fr>Chaton</fr>
+		<pl>Kociak</pl>
+		<hu>Kismacska</hu>
+	</text>
+	<text name="shopItem_animalCatTigerGrowthStage1">
+		<en>Tabby Cat</en>
+		<de>Getigerte Katze</de>
+		<fr>Chat tigré</fr>
+		<pl>Kot pręgowany</pl>
+		<hu>Cirmos macska</hu>
+	</text>
+	<text name="shopItem_animalCatBWGrowthStage1">
+		<en>Black and White Cat</en>
+		<de>Schwarz-weiße Katze</de>
+		<fr>Chat noir et blanc</fr>
+		<pl>Kot czarno-biały</pl>
+		<hu>Fekete-fehér macska</hu>
+	</text>
+	<text name="shopItem_animalCatBlackGrowthStage1">
+		<en>Black Cat</en>
+		<de>Schwarze Katze</de>
+		<fr>Chat noir</fr>
+		<pl>Czarny kot</pl>
+		<hu>Fekete macska</hu>
+	</text>
+	<text name="shopItem_animalCatGreyGrowthStage1">
+		<en>Grey Cat</en>
+		<de>Graue Katze</de>
+		<fr>Chat gris</fr>
+		<pl>Szary kot</pl>
+		<hu>Szürke macska</hu>
+	</text>
+	<text name="shopItem_animalCatRedGrowthStage1">
+		<en>Orange Cat</en>
+		<de>Rote Katze</de>
+		<fr>Chat roux</fr>
+		<pl>Rudy kot</pl>
+		<hu>Vörös macska</hu>
+	</text>
+	<text name="shopItem_animalCatWhiteGrowthStage1">
+		<en>White Cat</en>
+		<de>Weiße Katze</de>
+		<fr>Chat blanc</fr>
+		<pl>Biały kot</pl>
+		<hu>Fehér macska</hu>
+	</text>
+	<text name="animal_descriptionCatFeed">
+		<en>Cats need regular cat food to stay healthy and active.</en>
+		<de>Katzen brauchen regelmäßiges Katzenfutter, um gesund und aktiv zu bleiben.</de>
+		<fr>Les chats ont besoin de nourriture régulière pour rester en bonne santé et actifs.</fr>
+		<pl>Koty potrzebują regularnej karmy, aby zachować zdrowie i aktywność.</pl>
+		<hu>A macskák egészségének és aktivitásának megőrzéséhez rendszeres macskaeledelre van szükség.</hu>
+	</text>
+	<text name="animal_catGrowthStage0Description">
+		<en>A young kitten.</en>
+		<de>Ein kleines Kätzchen.</de>
+		<fr>Un jeune chaton.</fr>
+		<pl>Młody kociak.</pl>
+		<hu>Egy fiatal kismacska.</hu>
+	</text>
+	<text name="animal_catGrowthStage1Description">
+		<en>An adult cat.</en>
+		<de>Eine erwachsene Katze.</de>
+		<fr>Un chat adulte.</fr>
+		<pl>Dorosły kot.</pl>
+		<hu>Egy felnőtt macska.</hu>
+	</text>
+	<text name="storeItem_catFoodPallet">
+    <en>Cat Food Pallet</en>
+    <de>Katzenfutterpalette</de>
+    <fr>Palette de nourriture pour chats</fr>
+    <pl>Paleta karmy dla kotów</pl>
+    <hu>Macskaeledel raklap</hu>
+	</text>
+	<text name="function_catFoodPallet">
+		<en>Provides food for your cats.</en>
+		<de>Versorgt deine Katzen mit Futter.</de>
+		<fr>Fournit de la nourriture pour vos chats.</fr>
+		<pl>Zapewnia karmę dla twoich kotów.</pl>
+		<hu>Eledelt biztosít a macskáid számára.</hu>
+	</text>
+		<text name="animal_descriptionBullYoung">
+            <hu>Fiatal bika (6-12 hónap)</hu>
+            <en>Young bull (6-12 months)</en>
+            <de>Jungbulle (6-12 Monate)</de>
+            <fr>Jeune taureau (6-12 mois)</fr>
+            <pl>Młody byk (6-12 miesięcy)</pl>
+        </text>
+        <text name="animal_descriptionBullMature">
+            <hu>Az ivarérett bika (12-24 hónap) jó ondótermelő.</hu>
+            <en>A mature bull (12-24 months) is a good semen producer.</en>
+            <de>Ein geschlechtsreifer Bulle (12-24 Monate) ist ein guter Spermaproduzent.</de>
+            <fr>Un taureau mature (12-24 mois) est un bon producteur de semence.</fr>
+            <pl>Dojrzały byk (12-24 miesiące) jest dobrym reproduktorem nasienia.</pl>
+        </text>
+        <text name="fillType_bullAngusRedBRC">
+            <hu>Barna Angus Bika</hu>
+            <en>Brown Angus Bull</en>
+            <de>Brauner Angus-Bulle</de>
+            <fr>Taureau Angus brun</fr>
+            <pl>Brązowy byk Angus</pl>
+        </text>        
+        <text name="fillType_bullAngusBlackBRC">
+            <hu>Fekete Angus Bika</hu>
+            <en>Black Angus Bull</en>
+            <de>Schwarzer Angus-Bulle</de>
+            <fr>Taureau Black Angus</fr>
+            <pl>Byk Black Angus</pl>
+        </text>        
+		<text name="animal_descriptionBullFeed">
+            <hu>A bikáknak megfelelő takarmányra és vízre van szükségük a folyamatos súlygyarapodáshoz.</hu>
+            <en>Bulls require appropriate food and water for continuous weight gain.</en>
+            <de>Bullen benötigen geeignetes Futter und Wasser für eine kontinuierliche Gewichtszunahme.</de>
+            <fr>Les taureaux ont besoin d'une nourriture appropriée et d'eau pour une prise de poids continue.</fr>
+            <pl>Byki wymagają odpowiedniej paszy i wody do ciągłego przyrostu masy ciała.</pl>
+        </text>
+        
+        <text name="animal_descriptionBullOldMature">
+            <hu>Ez a bika teljesen kifejlett, elérte a maximális súlyát és a legmagasabb eladási árát.</hu>
+            <en>This bull is fully mature, having reached its maximum weight and highest selling price.</en>
+            <de>Dieser Bulle ist voll ausgewachsen und hat sein Maximalgewicht sowie seinen höchsten Verkaufspreis erreicht.</de>
+            <fr>Ce taureau est arrivé à maturité, ayant atteint son poids maximum et son prix de vente le plus élevé.</fr>
+            <pl>Ten byk jest w pełni dojrzały, osiągnął swoją maksymalną wagę i najwyższą cenę sprzedaży.</pl>
+        </text>
+        
+        <text name="animal_descriptionBullReproduction">
+            <hu>A bikák nem szaporodnak, kizárólag hústermelésre alkalmasak.</hu>
+            <en>Bulls do not reproduce; they are exclusively suitable for meat production.</en>
+            <de>Bullen vermehren sich nicht; sie eignen sich ausschließlich zur Fleischproduktion.</de>
+            <fr>Les taureaux ne se reproduisent pas ; ils sont exclusivement destinés à la production de viande.</fr>
+            <pl>Byki nie rozmnażają się; nadają się wyłącznie do produkcji mięsa.</pl>
+        </text>
+        
+        <text name="animal_descriptionBullCalfMilk">
+            <hu>A borjaknak az első hónapokban tejre van szükségük az egészséges fejlődéshez.</hu>
+            <en>Calves need milk during their first months for healthy development.</en>
+            <de>Kälber benötigen in den ersten Monaten Milch für eine gesunde Entwicklung.</de>
+            <fr>Les veaux ont besoin de lait pendant leurs premiers mois pour un développement sain.</fr>
+            <pl>Cielęta w pierwszych miesiącach życia potrzebują mleka do zdrowego rozwoju.</pl>
+        </text>
+        
+        <text name="animal_descriptionBullCalf">
+            <hu>Fiatal borjú, amely gondos odafigyelést igényel, mielőtt kifejlett hústermelő bikává válna.</hu>
+            <en>A young calf that requires careful attention before growing into a mature meat-producing bull.</en>
+            <de>Ein junges Kalb, das sorgfältige Pflege benötigt, bevor es zu einem ausgewachsenen Fleischbullen heranwächst.</de>
+            <fr>Un jeune veau qui nécessite une attention particulière avant de devenir un taureau adulte producteur de viande.</fr>
+            <pl>Młode cielę, które wymaga starannej opieki, zanim wyrośnie na dojrzałego byka mięsnego.</pl>
+        </text>
+        <text name="animal_visual_adult">
+            <hu>Felnőtt Bika egyed.</hu>
+            <en>Adult Bull.</en>
+            <de>Ausgewachsener Bulle.</de>
+            <fr>Taureau adulte.</fr>
+            <pl>Dorosły byk.</pl>
+        </text>          
+        <text name="animal_visual_middle_adult">
+            <hu>Ő egy közép korú Bika egyed.</hu>
+            <en>He is still a mid-adult bull.</en>
+            <de>Er ist noch ein mittelalter Bulle.</de>
+            <fr>C'est encore un taureau d'âge moyen.</fr>
+            <pl>Jest jeszcze bykiem w średnim wieku.</pl>
+        </text>          
+        <text name="animal_visual_kid">
+            <hu>Ő még bébi Bika egyed.</hu>
+            <en>He's still a kid bull, a small individual.</en>
+            <de>Er ist noch ein junger Bulle, ein kleines Individuum.</de>
+            <fr>C'est encore un jeune taureau, un petit individu.</fr>
+            <pl>To wciąż młody byczek, niewielki osobnik.</pl>
+        </text>          
+        <text name="animal_visual_baby">
+            <hu>Ő még bébi Bika egyed.</hu>
+            <en>He's still a small individual the size of a baby bull</en>
+            <de>Er ist noch ein kleines Exemplar, etwa so groß wie ein Stierbaby.</de>
+            <fr>Il est encore petit, de la taille d'un jeune taureau.</fr>
+            <pl>Nadal jest małym osobnikiem wielkości małego byka</pl>
+        </text>          
+        <text name="animal_bullStable">
+            <hu>Bika ól</hu>
+            <en>Bull Stable</en>
+            <de>Bullenstall</de>
+            <fr>Enclos à taureaux</fr>
+            <pl>Zagroda dla byków</pl>
+        </text>          
+		<text name="function_cryoBarrel">
+            <hu>Kriogén tartály bikaondó szállításához.</hu>
+            <en>Cryogenic container for transporting bull semen.</en>
+            <de>Kryogener Behälter für den Transport von Bullensperma.</de>
+            <fr>Conteneur cryogénique pour le transport de semence de taureau.</fr>
+            <pl>Kriogeniczny pojemnik do transportu nasienia buhaja.</pl>
+        </text>         
+		<text name="fillType_bull">
+            <hu>Bika</hu>
+            <en>Bull</en>
+            <de>Stier</de>
+            <fr>Taureau</fr>
+            <pl>Byk</pl>
+        </text>                
+		<text name="animal_rabbitHutch1">
+            <hu>Nyúl ól</hu>
+            <en>Rabbit Hutch</en>
+            <de>Kaninchenstall</de>
+            <fr>Clapier à lapins</fr>
+            <pl>Klatka dla królików</pl>
+        </text>        
+		<text name="fillTypeGroup_carrot">
+            <hu>Répa Árpa és Zab</hu>
+            <en>Carrot Barley and Oats</en>
+            <de>Karotten, Gerste und Hafer</de>
+            <fr>Carottes, orge et avoine</fr>
+            <pl>Marchew, jęczmień i owies</pl>
+        </text>
+        <!--CATTLE-->
+        <text name="animal_cattleF_GS01">
+            <hu>Ez egy nőstény borjú. Egy napon produktív tehénné válik.</hu>
+            <en>This is a female calf. It will become a productive cow one day.</en>
+            <de>Dies ist ein weibliches Kalb. Es wird eines Tages eine produktive Kuh werden.</de>
+            <fr>C'est un veau femelle. Il deviendra un jour une vache productive.</fr>
+            <pl>To jest cieliczka. Pewnego dnia stanie się produktywną krową.</pl>
+        </text>
+        <text name="animal_cattleF_GS02">
+            <hu>Ez egy nőstény választási borjú. A választási borjak már szilárd táplálékot esznek.</hu>
+            <en>This is a female weaner. Weaners already eat solid food.</en>
+            <de>Dies ist ein weiblicher Absetzer. Absetzer fressen bereits feste Nahrung.</de>
+            <fr>C'est un veau sevré femelle. Les veaux sevrés mangent déjà de la nourriture solide.</fr>
+            <pl>To jest odsadzona samica. Odsadki jedzą już stały pokarm.</pl>
+        </text>
+        <text name="animal_cattleF_GS03">
+            <hu>Ez egy üsző.</hu>
+            <en>This is a heifer.</en>
+            <de>Dies ist eine Färse.</de>
+            <fr>C'est une génisse.</fr>
+            <pl>To jest jałówka.</pl>
+        </text>
+        <text name="animal_cattleF_GS04">
+            <hu>Ez egy teljesen kifejlett tehén.</hu>
+            <en>This is a fully grown cow.</en>
+            <de>Dies ist eine ausgewachsene Kuh.</de>
+            <fr>C'est une vache adulte.</fr>
+            <pl>To w pełni dorosła krowa.</pl>
+        </text>
+        <text name="animal_cattleM_GS01">
+            <hu>Ez egy hím borjú. Egy napon produktív bikává érik.</hu>
+            <en>This is a male calf. It will grow into a productive bull one day.</en>
+            <de>Dies ist ein männliches Kalb. Es wird eines Tages zu einem produktiven Bullen heranwachsen.</de>
+            <fr>C'est un veau mâle. Il deviendra un jour un taureau productif.</fr>
+            <pl>To jest byczek. Pewnego dnia wyrośnie na produktywnego byka.</pl>
+        </text>
+        <text name="animal_cattleM_GS02">
+            <hu>Ez egy hím választási borjú. A választási borjak már szilárd táplálékot esznek.</hu>
+            <en>This is a male weaner. Weaners already eat solid food.</en>
+            <de>Dies ist ein männlicher Absetzer. Absetzer fressen bereits feste Nahrung.</de>
+            <fr>C'est un veau sevré mâle. Les veaux sevrés mangent déjà de la nourriture solide.</fr>
+            <pl>To jest odsadzony samiec. Odsadki jedzą już stały pokarm.</pl>
+        </text>
+        <text name="animal_cattleM_GS03">
+            <hu>Ez egy növendék bika.</hu>
+            <en>This is a young bull.</en>
+            <de>Dies ist ein Jungbulle.</de>
+            <fr>C'est un jeune taureau.</fr>
+            <pl>To jest młody byk.</pl>
+        </text>
+        <text name="animal_cattleM_GS04">
+            <hu>Ez a bika teljesen kifejlett. Haszonnal eladható.</hu>
+            <en>This bull is fully grown. It can be sold for profit.</en>
+            <de>Dieser Bulle ist ausgewachsen. Er kann mit Gewinn verkauft werden.</de>
+            <fr>Ce taureau est adulte. Il peut être vendu à profit.</fr>
+            <pl>Ten byk jest w pełni dorosły. Można go sprzedać z zyskiem.</pl>
+        </text>
+        <text name="fillType_cowHolsteinBRC">
+            <hu>Holstein tehén</hu>
+            <en>Holstein Cow</en>
+            <de>Holstein Kuh</de>
+            <fr>Vache Holstein</fr>
+            <pl>Krowa Holsztyńska</pl>
+        </text>
+        <text name="fillType_bullHolsteinBRC">
+            <hu>Holstein bika</hu>
+            <en>Holstein Bull</en>
+            <de>Holstein Bulle</de>
+            <fr>Taureau Holstein</fr>
+            <pl>Byk Holsztyński</pl>
+        </text>
+        <text name="fillType_cowRedHolsteinBRC">
+            <hu>Vörös holstein tehén</hu>
+            <en>Red Holstein Cow</en>
+            <de>Red Holstein Kuh</de>
+            <fr>Vache Red Holstein</fr>
+            <pl>Krowa Czerwona Holsztyńska</pl>
+        </text>
+        <text name="fillType_bullRedHolsteinBRC">
+            <hu>Vörös holstein bika</hu>
+            <en>Red Holstein Bull</en>
+            <de>Red Holstein Bulle</de>
+            <fr>Taureau Red Holstein</fr>
+            <pl>Byk Czerwony Holsztyński</pl>
+        </text>
+        <text name="fillType_cowBrownSwissBRC">
+            <hu>Brown Swiss tehén</hu>
+            <en>Brown Swiss Cow</en>
+            <de>Braunvieh Kuh</de>
+            <fr>Vache Brune</fr>
+            <pl>Krowa rasy Brown Swiss</pl>
+        </text>
+        <text name="fillType_bullBrownSwissBRC">
+            <hu>Brown Swiss bika</hu>
+            <en>Brown Swiss Bull</en>
+            <de>Braunvieh Bulle</de>
+            <fr>Taureau Brun</fr>
+            <pl>Byk rasy Brown Swiss</pl>
+        </text>
+        <text name="fillType_cowLimousinBRC">
+            <hu>Limousin tehén</hu>
+            <en>Limousin Cow</en>
+            <de>Limousin Kuh</de>
+            <fr>Vache Limousine</fr>
+            <pl>Krowa Limousine</pl>
+        </text>
+        <text name="fillType_bullLimousinBRC">
+            <hu>Limousin bika</hu>
+            <en>Limousin Bull</en>
+            <de>Limousin Bulle</de>
+            <fr>Taureau Limousin</fr>
+            <pl>Byk Limousine</pl>
+        </text>
+        <text name="fillType_cowAngusBRC">
+            <hu>Angus tehén</hu>
+            <en>Angus Cow</en>
+            <de>Angus Kuh</de>
+            <fr>Vache Angus</fr>
+            <pl>Krowa Angus</pl>
+        </text>
+        <text name="fillType_bullAngusBRC">
+            <hu>Angus bika</hu>
+            <en>Angus Bull</en>
+            <de>Angus Bulle</de>
+            <fr>Taureau Angus</fr>
+            <pl>Byk Angus</pl>
+        </text>
+        <text name="fillType_cowWaterbuffaloBRC">
+            <hu>Vízibivaly tehén</hu>
+            <en>Water Buffalo Cow</en>
+            <de>Wasserbüffel Kuh</de>
+            <fr>Bufflonne</fr>
+            <pl>Krowa bawołu wodnego</pl>
+        </text>
+        <text name="fillType_bullWaterbuffaloBRC">
+            <hu>Vízibivaly bika</hu>
+            <en>Water Buffalo Bull</en>
+            <de>Wasserbüffel Bulle</de>
+            <fr>Buffle d'eau</fr>
+            <pl>Byk bawołu wodnego</pl>
+        </text>
+        <text name="shopItem_animalHolstein_F_GS01">
+            <hu>Holstein üszőborjú</hu>
+            <en>Holstein Heifer Calf</en>
+            <de>Holstein Färsenkalb</de>
+            <fr>Veau génisse Holstein</fr>
+            <pl>Cieliczka Holsztyńska</pl>
+        </text>
+        <text name="shopItem_animalHolstein_F_GS02">
+            <hu>Holstein nőstény választási borjú</hu>
+            <en>Holstein Weaner Female</en>
+            <de>Holstein weiblicher Absetzer</de>
+            <fr>Veau sevré femelle Holstein</fr>
+            <pl>Odsadzona samica Holsztyńska</pl>
+        </text>
+        <text name="shopItem_animalHolstein_F_GS03">
+            <hu>Holstein üsző</hu>
+            <en>Holstein Heifer</en>
+            <de>Holstein Färse</de>
+            <fr>Génisse Holstein</fr>
+            <pl>Jałówka Holsztyńska</pl>
+        </text>
+        <text name="shopItem_animalHolstein_F_GS04">
+            <hu>Holstein tehén</hu>
+            <en>Holstein Cow</en>
+            <de>Holstein Kuh</de>
+            <fr>Vache Holstein</fr>
+            <pl>Krowa Holsztyńska</pl>
+        </text>
+        <text name="shopItem_animalHolstein_M_GS01">
+            <hu>Holstein bikaborjú</hu>
+            <en>Holstein Bull Calf</en>
+            <de>Holstein Bullenkalb</de>
+            <fr>Veau mâle Holstein</fr>
+            <pl>Byczek Holsztyński</pl>
+        </text>
+        <text name="shopItem_animalHolstein_M_GS02">
+            <hu>Holstein hím választási borjú</hu>
+            <en>Holstein Weaner Male</en>
+            <de>Holstein männlicher Absetzer</de>
+            <fr>Veau sevré mâle Holstein</fr>
+            <pl>Odsadzony samiec Holsztyński</pl>
+        </text>
+        <text name="shopItem_animalHolstein_M_GS03">
+            <hu>Holstein növendék bika</hu>
+            <en>Holstein Young Bull</en>
+            <de>Holstein Jungbulle</de>
+            <fr>Jeune taureau Holstein</fr>
+            <pl>Młody byk Holsztyński</pl>
+        </text>
+        <text name="shopItem_animalHolstein_M_GS04">
+            <hu>Holstein bika</hu>
+            <en>Holstein Bull</en>
+            <de>Holstein Bulle</de>
+            <fr>Taureau Holstein</fr>
+            <pl>Byk Holsztyński</pl>
+        </text>
+        <text name="shopItem_animalRedHolstein_F_GS01">
+            <hu>Vörös holstein üszőborjú</hu>
+            <en>Red Holstein Heifer Calf</en>
+            <de>Red Holstein Färsenkalb</de>
+            <fr>Veau génisse Red Holstein</fr>
+            <pl>Cieliczka Czerwona Holsztyńska</pl>
+        </text>
+        <text name="shopItem_animalRedHolstein_F_GS02">
+            <hu>Vörös holstein nőstény választási borjú</hu>
+            <en>Red Holstein Weaner Female</en>
+            <de>Red Holstein weiblicher Absetzer</de>
+            <fr>Veau sevré femelle Red Holstein</fr>
+            <pl>Odsadzona samica Czerwona Holsztyńska</pl>
+        </text>
+        <text name="shopItem_animalRedHolstein_F_GS03">
+            <hu>Vörös holstein üsző</hu>
+            <en>Red Holstein Heifer</en>
+            <de>Red Holstein Färse</de>
+            <fr>Génisse Red Holstein</fr>
+            <pl>Jałówka Czerwona Holsztyńska</pl>
+        </text>
+        <text name="shopItem_animalRedHolstein_F_GS04">
+            <hu>Vörös holstein tehén</hu>
+            <en>Red Holstein Cow</en>
+            <de>Red Holstein Kuh</de>
+            <fr>Vache Red Holstein</fr>
+            <pl>Krowa Czerwona Holsztyńska</pl>
+        </text>
+        <text name="shopItem_animalRedHolstein_M_GS01">
+            <hu>Vörös holstein bikaborjú</hu>
+            <en>Red Holstein Bull Calf</en>
+            <de>Red Holstein Bullenkalb</de>
+            <fr>Veau mâle Red Holstein</fr>
+            <pl>Byczek Czerwony Holsztyński</pl>
+        </text>
+        <text name="shopItem_animalRedHolstein_M_GS02">
+            <hu>Vörös holstein hím választási borjú</hu>
+            <en>Red Holstein Weaner Male</en>
+            <de>Red Holstein männlicher Absetzer</de>
+            <fr>Veau sevré mâle Red Holstein</fr>
+            <pl>Odsadzony samiec Czerwony Holsztyński</pl>
+        </text>
+        <text name="shopItem_animalRedHolstein_M_GS03">
+            <hu>Vörös holstein növendék bika</hu>
+            <en>Red Holstein Young Bull</en>
+            <de>Red Holstein Jungbulle</de>
+            <fr>Jeune taureau Red Holstein</fr>
+            <pl>Młody byk Czerwony Holsztyński</pl>
+        </text>
+        <text name="shopItem_animalRedHolstein_M_GS04">
+            <hu>Vörös holstein bika</hu>
+            <en>Red Holstein Bull</en>
+            <de>Red Holstein Bulle</de>
+            <fr>Taureau Red Holstein</fr>
+            <pl>Byk Czerwony Holsztyński</pl>
+        </text>
+        <text name="shopItem_animalBrownSwiss_F_GS01">
+            <hu>Brown Swiss üszőborjú</hu>
+            <en>Brown Swiss Heifer Calf</en>
+            <de>Braunvieh Färsenkalb</de>
+            <fr>Veau génisse Brune</fr>
+            <pl>Cieliczka rasy Brown Swiss</pl>
+        </text>
+        <text name="shopItem_animalBrownSwiss_F_GS02">
+            <hu>Brown Swiss nőstény választási borjú</hu>
+            <en>Brown Swiss Weaner Female</en>
+            <de>Braunvieh weiblicher Absetzer</de>
+            <fr>Veau sevré femelle Brune</fr>
+            <pl>Odsadzona samica rasy Brown Swiss</pl>
+        </text>
+        <text name="shopItem_animalBrownSwiss_F_GS03">
+            <hu>Brown Swiss üsző</hu>
+            <en>Brown Swiss Heifer</en>
+            <de>Braunvieh Färse</de>
+            <fr>Génisse Brune</fr>
+            <pl>Jałówka rasy Brown Swiss</pl>
+        </text>
+        <text name="shopItem_animalBrownSwiss_F_GS04">
+            <hu>Brown Swiss tehén</hu>
+            <en>Brown Swiss Cow</en>
+            <de>Braunvieh Kuh</de>
+            <fr>Vache Brune</fr>
+            <pl>Krowa rasy Brown Swiss</pl>
+        </text>
+        <text name="shopItem_animalBrownSwiss_M_GS01">
+            <hu>Brown Swiss bikaborjú</hu>
+            <en>Brown Swiss Bull Calf</en>
+            <de>Braunvieh Bullenkalb</de>
+            <fr>Veau mâle Brune</fr>
+            <pl>Byczek rasy Brown Swiss</pl>
+        </text>
+        <text name="shopItem_animalBrownSwiss_M_GS02">
+            <hu>Brown Swiss hím választási borjú</hu>
+            <en>Brown Swiss Weaner Male</en>
+            <de>Braunvieh männlicher Absetzer</de>
+            <fr>Veau sevré mâle Brune</fr>
+            <pl>Odsadzony samiec rasy Brown Swiss</pl>
+        </text>
+        <text name="shopItem_animalBrownSwiss_M_GS03">
+            <hu>Brown Swiss növendék bika</hu>
+            <en>Brown Swiss Young Bull</en>
+            <de>Braunvieh Jungbulle</de>
+            <fr>Jeune taureau Brun</fr>
+            <pl>Młody byk rasy Brown Swiss</pl>
+        </text>
+        <text name="shopItem_animalBrownSwiss_M_GS04">
+            <hu>Brown Swiss bika</hu>
+            <en>Brown Swiss Bull</en>
+            <de>Braunvieh Bulle</de>
+            <fr>Taureau Brun</fr>
+            <pl>Byk rasy Brown Swiss</pl>
+        </text>
+        <text name="shopItem_animalLimousin_F_GS01">
+            <hu>Limousin üszőborjú</hu>
+            <en>Limousin Heifer Calf</en>
+            <de>Limousin Färsenkalb</de>
+            <fr>Veau génisse Limousine</fr>
+            <pl>Cieliczka Limousine</pl>
+        </text>
+        <text name="shopItem_animalLimousin_F_GS02">
+            <hu>Limousin nőstény választási borjú</hu>
+            <en>Limousin Weaner Female</en>
+            <de>Limousin weiblicher Absetzer</de>
+            <fr>Veau sevré femelle Limousine</fr>
+            <pl>Odsadzona samica Limousine</pl>
+        </text>
+        <text name="shopItem_animalLimousin_F_GS03">
+            <hu>Limousin üsző</hu>
+            <en>Limousin Heifer</en>
+            <de>Limousin Färse</de>
+            <fr>Génisse Limousine</fr>
+            <pl>Jałówka Limousine</pl>
+        </text>
+        <text name="shopItem_animalLimousin_F_GS04">
+            <hu>Limousin tehén</hu>
+            <en>Limousin Cow</en>
+            <de>Limousin Kuh</de>
+            <fr>Vache Limousine</fr>
+            <pl>Krowa Limousine</pl>
+        </text>
+        <text name="shopItem_animalLimousin_M_GS01">
+            <hu>Limousin bikaborjú</hu>
+            <en>Limousin Bull Calf</en>
+            <de>Limousin Bullenkalb</de>
+            <fr>Veau mâle Limousin</fr>
+            <pl>Byczek Limousine</pl>
+        </text>
+        <text name="shopItem_animalLimousin_M_GS02">
+            <hu>Limousin hím választási borjú</hu>
+            <en>Limousin Weaner Male</en>
+            <de>Limousin männlicher Absetzer</de>
+            <fr>Veau sevré mâle Limousin</fr>
+            <pl>Odsadzony samiec Limousine</pl>
+        </text>
+        <text name="shopItem_animalLimousin_M_GS03">
+            <hu>Limousin növendék bika</hu>
+            <en>Limousin Young Bull</en>
+            <de>Limousin Jungbulle</de>
+            <fr>Jeune taureau Limousin</fr>
+            <pl>Młody byk Limousine</pl>
+        </text>
+        <text name="shopItem_animalLimousin_M_GS04">
+            <hu>Limousin bika</hu>
+            <en>Limousin Bull</en>
+            <de>Limousin Bulle</de>
+            <fr>Taureau Limousin</fr>
+            <pl>Byk Limousine</pl>
+        </text>
+        <text name="shopItem_animalAngus_F_GS01">
+            <hu>Angus üszőborjú</hu>
+            <en>Angus Heifer Calf</en>
+            <de>Angus Färsenkalb</de>
+            <fr>Veau génisse Angus</fr>
+            <pl>Cieliczka Angus</pl>
+        </text>
+        <text name="shopItem_animalAngus_F_GS02">
+            <hu>Angus nőstény választási borjú</hu>
+            <en>Angus Weaner Female</en>
+            <de>Angus weiblicher Absetzer</de>
+            <fr>Veau sevré femelle Angus</fr>
+            <pl>Odsadzona samica Angus</pl>
+        </text>
+        <text name="shopItem_animalAngus_F_GS03">
+            <hu>Angus üsző</hu>
+            <en>Angus Heifer</en>
+            <de>Angus Färse</de>
+            <fr>Génisse Angus</fr>
+            <pl>Jałówka Angus</pl>
+        </text>
+        <text name="shopItem_animalAngus_F_GS04">
+            <hu>Angus tehén</hu>
+            <en>Angus Cow</en>
+            <de>Angus Kuh</de>
+            <fr>Vache Angus</fr>
+            <pl>Krowa Angus</pl>
+        </text>
+        <text name="shopItem_animalAngus_M_GS01">
+            <hu>Angus bikaborjú</hu>
+            <en>Angus Bull Calf</en>
+            <de>Angus Bullenkalb</de>
+            <fr>Veau mâle Angus</fr>
+            <pl>Byczek Angus</pl>
+        </text>
+        <text name="shopItem_animalAngus_M_GS02">
+            <hu>Angus hím választási borjú</hu>
+            <en>Angus Weaner Male</en>
+            <de>Angus männlicher Absetzer</de>
+            <fr>Veau sevré mâle Angus</fr>
+            <pl>Odsadzony samiec Angus</pl>
+        </text>
+        <text name="shopItem_animalAngus_M_GS03">
+            <hu>Angus növendék bika</hu>
+            <en>Angus Young Bull</en>
+            <de>Angus Jungbulle</de>
+            <fr>Jeune taureau Angus</fr>
+            <pl>Młody byk Angus</pl>
+        </text>
+        <text name="shopItem_animalAngus_M_GS04">
+            <hu>Angus bika</hu>
+            <en>Angus Bull</en>
+            <de>Angus Bulle</de>
+            <fr>Taureau Angus</fr>
+            <pl>Byk Angus</pl>
+        </text>
+        <text name="shopItem_animalWaterbuffalo_F_GS01">
+            <hu>Vízibivaly üszőborjú</hu>
+            <en>Water Buffalo Heifer Calf</en>
+            <de>Wasserbüffel Färsenkalb</de>
+            <fr>Veau génisse Bufflonne</fr>
+            <pl>Cieliczka bawołu wodnego</pl>
+        </text>
+        <text name="shopItem_animalWaterbuffalo_F_GS02">
+            <hu>Vízibivaly nőstény választási borjú</hu>
+            <en>Water Buffalo Weaner Female</en>
+            <de>Wasserbüffel weiblicher Absetzer</de>
+            <fr>Veau sevré femelle Bufflonne</fr>
+            <pl>Odsadzona samica bawołu wodnego</pl>
+        </text>
+        <text name="shopItem_animalWaterbuffalo_F_GS03">
+            <hu>Vízibivaly üsző</hu>
+            <en>Water Buffalo Heifer</en>
+            <de>Wasserbüffel Färse</de>
+            <fr>Génisse Bufflonne</fr>
+            <pl>Jałówka bawołu wodnego</pl>
+        </text>
+        <text name="shopItem_animalWaterbuffalo_F_GS04">
+            <hu>Vízibivaly tehén</hu>
+            <en>Water Buffalo Cow</en>
+            <de>Wasserbüffel Kuh</de>
+            <fr>Bufflonne</fr>
+            <pl>Krowa bawołu wodnego</pl>
+        </text>
+        <text name="shopItem_animalWaterbuffalo_M_GS01">
+            <hu>Vízibivaly bikaborjú</hu>
+            <en>Water Buffalo Bull Calf</en>
+            <de>Wasserbüffel Bullenkalb</de>
+            <fr>Veau mâle Buffle d'eau</fr>
+            <pl>Byczek bawołu wodnego</pl>
+        </text>
+        <text name="shopItem_animalWaterbuffalo_M_GS02">
+            <hu>Vízibivaly hím választási borjú</hu>
+            <en>Water Buffalo Weaner Male</en>
+            <de>Wasserbüffel männlicher Absetzer</de>
+            <fr>Veau sevré mâle Buffle d'eau</fr>
+            <pl>Odsadzony samiec bawołu wodnego</pl>
+        </text>
+        <text name="shopItem_animalWaterbuffalo_M_GS03">
+            <hu>Vízibivaly növendék bika</hu>
+            <en>Water Buffalo Young Bull</en>
+            <de>Wasserbüffel Jungbulle</de>
+            <fr>Jeune Buffle d'eau</fr>
+            <pl>Młody byk bawołu wodnego</pl>
+        </text>
+        <text name="shopItem_animalWaterbuffalo_M_GS04">
+            <hu>Vízibivaly bika</hu>
+            <en>Water Buffalo Bull</en>
+            <de>Wasserbüffel Bulle</de>
+            <fr>Buffle d'eau adulte</fr>
+            <pl>Byk bawołu wodnego</pl>
+        </text>
+
+        <!--CHICKEN-->
+        <text name="animal_ChickensF_GS01Description">
+            <hu>Ez egy tojócsibe. Egy napon produktív tojótyúkká érik.</hu>
+            <en>This is a female chick. It will one day grow into a productive laying hen.</en>
+            <de>Dies ist ein weibliches Küken. Es wird eines Tages zu einer produktiven Legehenne heranwachsen.</de>
+            <fr>C'est un poussin femelle. Il deviendra un jour une poule pondeuse productive.</fr>
+            <pl>To jest żeńskie pisklę. Pewnego dnia wyrośnie na produktywną nioskę.</pl>
+        </text>
+        <text name="animal_ChickensF_GS02Description">
+            <hu>Ez egy tojócsibe. Egy napon produktív tojótyúkká érik.</hu>
+            <en>This is a female chick. It will one day grow into a productive laying hen.</en>
+            <de>Dies ist ein weibliches Küken. Es wird eines Tages zu einer produktiven Legehenne heranwachsen.</de>
+            <fr>C'est un poussin femelle. Il deviendra un jour une poule pondeuse productive.</fr>
+            <pl>To jest żeńskie pisklę. Pewnego dnia wyrośnie na produktywną nioskę.</pl>
+        </text>
+        <text name="animal_ChickensF_GS03Description">
+            <hu>Ez egy jérce. Hamarosan elkezd tojást tojni.</hu>
+            <en>This is a young hen. It will soon start laying eggs.</en>
+            <de>Dies ist ein Junghuhn. Es wird bald anfangen, Eier zu legen.</de>
+            <fr>C'est une jeune poule. Elle commencera bientôt à pondre des œufs.</fr>
+            <pl>To jest młoda kura. Wkrótce zacznie znosić jajka.</pl>
+        </text>
+        <text name="animal_ChickensF_GS04Description">
+            <hu>Ez egy teljesen kifejlett tyúk.</hu>
+            <en>This is a fully grown hen.</en>
+            <de>Dies ist ein ausgewachsenes Huhn.</de>
+            <fr>C'est une poule adulte.</fr>
+            <pl>To w pełni dorosła kura.</pl>
+        </text>
+        <text name="animal_ChickensM_GS01Description">
+            <hu>Ez egy kakascsibe. Egy napon produktív kakassá érik.</hu>
+            <en>This is a male chick. It will one day grow into a productive rooster.</en>
+            <de>Dies ist ein männliches Küken. Es wird eines Tages zu einem produktiven Hahn heranwachsen.</de>
+            <fr>C'est un poussin mâle. Il deviendra un jour un coq productif.</fr>
+            <pl>To jest męskie pisklę. Pewnego dnia wyrośnie na produktywnego koguta.</pl>
+        </text>
+        <text name="animal_ChickensM_GS02Description">
+            <hu>Ez egy kakascsibe. Egy napon produktív kakassá érik.</hu>
+            <en>This is a male chick. It will one day grow into a productive rooster.</en>
+            <de>Dies ist ein männliches Küken. Es wird eines Tages zu einem produktiven Hahn heranwachsen.</de>
+            <fr>C'est un poussin mâle. Il deviendra un jour un coq productif.</fr>
+            <pl>To jest męskie pisklę. Pewnego dnia wyrośnie na produktywnego koguta.</pl>
+        </text>
+        <text name="animal_ChickensM_GS03Description">
+            <hu>Ez egy fiatal kakas.</hu>
+            <en>This is a young rooster.</en>
+            <de>Dies ist ein junger Hahn.</de>
+            <fr>C'est un jeune coq.</fr>
+            <pl>To jest młody kogut.</pl>
+        </text>
+        <text name="animal_ChickensM_GS04Description">
+            <hu>Ez egy teljesen kifejlett kakas.</hu>
+            <en>This is a fully grown rooster.</en>
+            <de>Dies ist ein ausgewachsener Hahn.</de>
+            <fr>C'est un coq adulte.</fr>
+            <pl>To w pełni dorosły kogut.</pl>
+        </text>
+        <text name="fillType_henLohmannBRC">
+            <hu>Lohmann tyúk</hu>
+            <en>Lohmann Hen</en>
+            <de>Lohmann Huhn</de>
+            <fr>Poule Lohmann</fr>
+            <pl>Kura Lohmann</pl>
+        </text>
+        <text name="fillType_roosterLohmannBRC">
+            <hu>Lohmann kakas</hu>
+            <en>Lohmann Rooster</en>
+            <de>Lohmann Hahn</de>
+            <fr>Coq Lohmann</fr>
+            <pl>Kogut Lohmann</pl>
+        </text>
+        <text name="fillType_henLeghornBRC">
+            <hu>Leghorn tyúk</hu>
+            <en>Leghorn Hen</en>
+            <de>Leghorn Huhn</de>
+            <fr>Poule Leghorn</fr>
+            <pl>Kura Leghorn</pl>
+        </text>
+        <text name="fillType_roosterLeghornBRC">
+            <hu>Leghorn kakas</hu>
+            <en>Leghorn Rooster</en>
+            <de>Leghorn Hahn</de>
+            <fr>Coq Leghorn</fr>
+            <pl>Kogut Leghorn</pl>
+        </text>
+        <text name="fillType_henPlymouthrockBRC">
+            <hu>Plymouth Rock tyúk</hu>
+            <en>Plymouthrock Hen</en>
+            <de>Plymouth Rock Huhn</de>
+            <fr>Poule Plymouth Rock</fr>
+            <pl>Kura Plymouth Rock</pl>
+        </text>
+        <text name="fillType_roosterPlymouthrockBRC">
+            <hu>Plymouth Rock kakas</hu>
+            <en>Plymouthrock Rooster</en>
+            <de>Plymouth Rock Hahn</de>
+            <fr>Coq Plymouth Rock</fr>
+            <pl>Kogut Plymouth Rock</pl>
+        </text>
+        <text name="fillType_henBohusdalBRC">
+            <hu>Bohusdal tyúk</hu>
+            <en>Bohusdal Hen</en>
+            <de>Bohusdal Huhn</de>
+            <fr>Poule Bohusdal</fr>
+            <pl>Kura Bohusdal</pl>
+        </text>
+        <text name="fillType_roosterBohusdalBRC">
+            <hu>Bohusdal kakas</hu>
+            <en>Bohusdal Rooster</en>
+            <de>Bohusdal Hahn</de>
+            <fr>Coq Bohusdal</fr>
+            <pl>Kogut Bohusdal</pl>
+        </text>
+        <text name="shopItem_animalLohmann_F_GS01">
+            <hu>Lohmann tojócsibe</hu>
+            <en>Lohmann Female Chick</en>
+            <de>Lohmann weibliches Küken</de>
+            <fr>Poussin femelle Lohmann</fr>
+            <pl>Żeńskie pisklę Lohmann</pl>
+        </text>
+        <text name="shopItem_animalLohmann_F_GS02">
+            <hu>Lohmann tojócsibe</hu>
+            <en>Lohmann Female Chick</en>
+            <de>Lohmann weibliches Küken</de>
+            <fr>Poussin femelle Lohmann</fr>
+            <pl>Żeńskie pisklę Lohmann</pl>
+        </text>
+        <text name="shopItem_animalLohmann_F_GS03">
+            <hu>Lohmann jérce</hu>
+            <en>Lohmann Young Hen</en>
+            <de>Lohmann Junghuhn</de>
+            <fr>Jeune poule Lohmann</fr>
+            <pl>Młoda kura Lohmann</pl>
+        </text>
+        <text name="shopItem_animalLohmann_F_GS04">
+            <hu>Lohmann tyúk</hu>
+            <en>Lohmann Hen</en>
+            <de>Lohmann Huhn</de>
+            <fr>Poule Lohmann</fr>
+            <pl>Kura Lohmann</pl>
+        </text>
+        <text name="shopItem_animalLohmann_M_GS01">
+            <hu>Lohmann kakascsibe</hu>
+            <en>Lohmann Male Chick</en>
+            <de>Lohmann männliches Küken</de>
+            <fr>Poussin mâle Lohmann</fr>
+            <pl>Męskie pisklę Lohmann</pl>
+        </text>
+        <text name="shopItem_animalLohmann_M_GS02">
+            <hu>Lohmann kakascsibe</hu>
+            <en>Lohmann Male Chick</en>
+            <de>Lohmann männliches Küken</de>
+            <fr>Poussin mâle Lohmann</fr>
+            <pl>Męskie pisklę Lohmann</pl>
+        </text>
+        <text name="shopItem_animalLohmann_M_GS03">
+            <hu>Lohmann fiatal kakas</hu>
+            <en>Lohmann Young Rooster</en>
+            <de>Lohmann junger Hahn</de>
+            <fr>Jeune coq Lohmann</fr>
+            <pl>Młody kogut Lohmann</pl>
+        </text>
+        <text name="shopItem_animalLohmann_M_GS04">
+            <hu>Lohmann kakas</hu>
+            <en>Lohmann Rooster</en>
+            <de>Lohmann Hahn</de>
+            <fr>Coq Lohmann</fr>
+            <pl>Kogut Lohmann</pl>
+        </text>
+        <text name="shopItem_animalLeghorn_F_GS01">
+            <hu>Leghorn tojócsibe</hu>
+            <en>Leghorn Female Chick</en>
+            <de>Leghorn weibliches Küken</de>
+            <fr>Poussin femelle Leghorn</fr>
+            <pl>Żeńskie pisklę Leghorn</pl>
+        </text>
+        <text name="shopItem_animalLeghorn_F_GS02">
+            <hu>Leghorn tojócsibe</hu>
+            <en>Leghorn Female Chick</en>
+            <de>Leghorn weibliches Küken</de>
+            <fr>Poussin femelle Leghorn</fr>
+            <pl>Żeńskie pisklę Leghorn</pl>
+        </text>
+        <text name="shopItem_animalLeghorn_F_GS03">
+            <hu>Leghorn jérce</hu>
+            <en>Leghorn Young Hen</en>
+            <de>Leghorn Junghuhn</de>
+            <fr>Jeune poule Leghorn</fr>
+            <pl>Młoda kura Leghorn</pl>
+        </text>
+        <text name="shopItem_animalLeghorn_F_GS04">
+            <hu>Leghorn tyúk</hu>
+            <en>Leghorn Hen</en>
+            <de>Leghorn Huhn</de>
+            <fr>Poule Leghorn</fr>
+            <pl>Kura Leghorn</pl>
+        </text>
+        <text name="shopItem_animalLeghorn_M_GS01">
+            <hu>Leghorn kakascsibe</hu>
+            <en>Leghorn Male Chick</en>
+            <de>Leghorn männliches Küken</de>
+            <fr>Poussin mâle Leghorn</fr>
+            <pl>Męskie pisklę Leghorn</pl>
+        </text>
+        <text name="shopItem_animalLeghorn_M_GS02">
+            <hu>Leghorn kakascsibe</hu>
+            <en>Leghorn Male Chick</en>
+            <de>Leghorn männliches Küken</de>
+            <fr>Poussin mâle Leghorn</fr>
+            <pl>Męskie pisklę Leghorn</pl>
+        </text>
+        <text name="shopItem_animalLeghorn_M_GS03">
+            <hu>Leghorn fiatal kakas</hu>
+            <en>Leghorn Young Rooster</en>
+            <de>Leghorn junger Hahn</de>
+            <fr>Jeune coq Leghorn</fr>
+            <pl>Młody kogut Leghorn</pl>
+        </text>
+        <text name="shopItem_animalLeghorn_M_GS04">
+            <hu>Leghorn kakas</hu>
+            <en>Leghorn Rooster</en>
+            <de>Leghorn Hahn</de>
+            <fr>Coq Leghorn</fr>
+            <pl>Kogut Leghorn</pl>
+        </text>
+        <text name="shopItem_animalPlymouthrock_F_GS01">
+            <hu>Plymouth Rock tojócsibe</hu>
+            <en>Plymouthrock Female Chick</en>
+            <de>Plymouth Rock weibliches Küken</de>
+            <fr>Poussin femelle Plymouth Rock</fr>
+            <pl>Żeńskie pisklę Plymouth Rock</pl>
+        </text>
+        <text name="shopItem_animalPlymouthrock_F_GS02">
+            <hu>Plymouth Rock tojócsibe</hu>
+            <en>Plymouthrock Female Chick</en>
+            <de>Plymouth Rock weibliches Küken</de>
+            <fr>Poussin femelle Plymouth Rock</fr>
+            <pl>Żeńskie pisklę Plymouth Rock</pl>
+        </text>
+        <text name="shopItem_animalPlymouthrock_F_GS03">
+            <hu>Plymouth Rock jérce</hu>
+            <en>Plymouthrock Young Hen</en>
+            <de>Plymouth Rock Junghuhn</de>
+            <fr>Jeune poule Plymouth Rock</fr>
+            <pl>Młoda kura Plymouth Rock</pl>
+        </text>
+        <text name="shopItem_animalPlymouthrock_F_GS04">
+            <hu>Plymouth Rock tyúk</hu>
+            <en>Plymouthrock Hen</en>
+            <de>Plymouth Rock Huhn</de>
+            <fr>Poule Plymouth Rock</fr>
+            <pl>Kura Plymouth Rock</pl>
+        </text>
+        <text name="shopItem_animalPlymouthrock_M_GS01">
+            <hu>Plymouth Rock kakascsibe</hu>
+            <en>Plymouthrock Male Chick</en>
+            <de>Plymouth Rock männliches Küken</de>
+            <fr>Poussin mâle Plymouth Rock</fr>
+            <pl>Męskie pisklę Plymouth Rock</pl>
+        </text>
+        <text name="shopItem_animalPlymouthrock_M_GS02">
+            <hu>Plymouth Rock kakascsibe</hu>
+            <en>Plymouthrock Male Chick</en>
+            <de>Plymouth Rock männliches Küken</de>
+            <fr>Poussin mâle Plymouth Rock</fr>
+            <pl>Męskie pisklę Plymouth Rock</pl>
+        </text>
+        <text name="shopItem_animalPlymouthrock_M_GS03">
+            <hu>Plymouth Rock fiatal kakas</hu>
+            <en>Plymouthrock Young Rooster</en>
+            <de>Plymouth Rock junger Hahn</de>
+            <fr>Jeune coq Plymouth Rock</fr>
+            <pl>Młody kogut Plymouth Rock</pl>
+        </text>
+        <text name="shopItem_animalPlymouthrock_M_GS04">
+            <hu>Plymouth Rock kakas</hu>
+            <en>Plymouthrock Rooster</en>
+            <de>Plymouth Rock Hahn</de>
+            <fr>Coq Plymouth Rock</fr>
+            <pl>Kogut Plymouth Rock</pl>
+        </text>
+        <text name="shopItem_animalBohusdal_F_GS01">
+            <hu>Bohusdal tojócsibe</hu>
+            <en>Bohusdal Female Chick</en>
+            <de>Bohusdal weibliches Küken</de>
+            <fr>Poussin femelle Bohusdal</fr>
+            <pl>Żeńskie pisklę Bohusdal</pl>
+        </text>
+        <text name="shopItem_animalBohusdal_F_GS02">
+            <hu>Bohusdal tojócsibe</hu>
+            <en>Bohusdal Female Chick</en>
+            <de>Bohusdal weibliches Küken</de>
+            <fr>Poussin femelle Bohusdal</fr>
+            <pl>Żeńskie pisklę Bohusdal</pl>
+        </text>
+        <text name="shopItem_animalBohusdal_F_GS03">
+            <hu>Bohusdal jérce</hu>
+            <en>Bohusdal Young Hen</en>
+            <de>Bohusdal Junghuhn</de>
+            <fr>Jeune poule Bohusdal</fr>
+            <pl>Młoda kura Bohusdal</pl>
+        </text>
+        <text name="shopItem_animalBohusdal_F_GS04">
+            <hu>Bohusdal tyúk</hu>
+            <en>Bohusdal Hen</en>
+            <de>Bohusdal Huhn</de>
+            <fr>Poule Bohusdal</fr>
+            <pl>Kura Bohusdal</pl>
+        </text>
+        <text name="shopItem_animalBohusdal_M_GS01">
+            <hu>Bohusdal kakascsibe</hu>
+            <en>Bohusdal Male Chick</en>
+            <de>Bohusdal männliches Küken</de>
+            <fr>Poussin mâle Bohusdal</fr>
+            <pl>Męskie pisklę Bohusdal</pl>
+        </text>
+        <text name="shopItem_animalBohusdal_M_GS02">
+            <hu>Bohusdal kakascsibe</hu>
+            <en>Bohusdal Male Chick</en>
+            <de>Bohusdal männliches Küken</de>
+            <fr>Poussin mâle Bohusdal</fr>
+            <pl>Męskie pisklę Bohusdal</pl>
+        </text>
+        <text name="shopItem_animalBohusdal_M_GS03">
+            <hu>Bohusdal fiatal kakas</hu>
+            <en>Bohusdal Young Rooster</en>
+            <de>Bohusdal junger Hahn</de>
+            <fr>Jeune coq Bohusdal</fr>
+            <pl>Młody kogut Bohusdal</pl>
+        </text>
+        <text name="shopItem_animalBohusdal_M_GS04">
+            <hu>Bohusdal kakas</hu>
+            <en>Bohusdal Rooster</en>
+            <de>Bohusdal Hahn</de>
+            <fr>Coq Bohusdal</fr>
+            <pl>Kogut Bohusdal</pl>
+        </text>
+
+        <!--GOATS-->
+        <text name="animal_GoatsF_GS01Description">
+            <hu>Ez egy fiatal anyakecske.</hu>
+            <en>This is a young doe.</en>
+            <de>Dies ist eine junge Zicke.</de>
+            <fr>C'est une jeune chèvre.</fr>
+            <pl>To jest młoda koza.</pl>
+        </text>
+        <text name="animal_GoatsF_GS02Description">
+            <hu>Ez egy fiatal anyakecske.</hu>
+            <en>This is a young doe.</en>
+            <de>Dies ist eine junge Zicke.</de>
+            <fr>C'est une jeune chèvre.</fr>
+            <pl>To jest młoda koza.</pl>
+        </text>
+        <text name="animal_GoatsF_GS03Description">
+            <hu>Ez egy fiatal anyakecske.</hu>
+            <en>This is a young doe.</en>
+            <de>Dies ist eine junge Zicke.</de>
+            <fr>C'est une jeune chèvre.</fr>
+            <pl>To jest młoda koza.</pl>
+        </text>
+        <text name="animal_GoatsF_GS04Description">
+            <hu>Ez egy teljesen kifejlett anyakecske.</hu>
+            <en>This is a fully grown doe.</en>
+            <de>Dies ist eine ausgewachsene Zicke.</de>
+            <fr>C'est une chèvre adulte.</fr>
+            <pl>To w pełni dorosła koza.</pl>
+        </text>
+        <text name="animal_GoatsM_GS01Description">
+            <hu>Ez egy fiatal bakkecske.</hu>
+            <en>This is a young buck.</en>
+            <de>Dies ist ein junger Ziegenbock.</de>
+            <fr>C'est un jeune bouc.</fr>
+            <pl>To jest młody kozioł.</pl>
+        </text>
+        <text name="animal_GoatsM_GS02Description">
+            <hu>Ez egy fiatal bakkecske.</hu>
+            <en>This is a young buck.</en>
+            <de>Dies ist ein junger Ziegenbock.</de>
+            <fr>C'est un jeune bouc.</fr>
+            <pl>To jest młody kozioł.</pl>
+        </text>
+        <text name="animal_GoatsM_GS03Description">
+            <hu>Ez egy fiatal bakkecske.</hu>
+            <en>This is a young buck.</en>
+            <de>Dies ist ein junger Ziegenbock.</de>
+            <fr>C'est un jeune bouc.</fr>
+            <pl>To jest młody kozioł.</pl>
+        </text>
+        <text name="animal_GoatsM_GS04Description">
+            <hu>Ez egy teljesen kifejlett bakkecske.</hu>
+            <en>This is a fully grown buck.</en>
+            <de>Dies ist ein ausgewachsener Ziegenbock.</de>
+            <fr>C'est un bouc adulte.</fr>
+            <pl>To w pełni dorosły kozioł.</pl>
+        </text>
+        <text name="fillType_doeThuringiangoatBRC">
+            <hu>Türingiai erdei anyakecske</hu>
+            <en>Thuringian Forest Goat Doe</en>
+            <de>Thüringer Wald Zicke</de>
+            <fr>Chèvre de la forêt de Thuringe</fr>
+            <pl>Koza Lasu Turyńskiego</pl>
+        </text>
+        <text name="fillType_buckThuringiangoatBRC">
+            <hu>Türingiai erdei bakkecske</hu>
+            <en>Thuringian Forest Goat Buck</en>
+            <de>Thüringer Wald Ziegenbock</de>
+            <fr>Bouc de la forêt de Thuringe</fr>
+            <pl>Kozioł Lasu Turyńskiego</pl>
+        </text>
+        <text name="shopItem_animalThuringiangoat_F_GS01">
+            <hu>Türingiai erdei nőstény kecskegida</hu>
+            <en>Thuringian Forest Goat Female Kid</en>
+            <de>Thüringer Wald weibliches Zicklein</de>
+            <fr>Chevreau femelle de Thuringe</fr>
+            <pl>Samica koźlęcia Turyńskiego</pl>
+        </text>
+        <text name="shopItem_animalThuringiangoat_F_GS02">
+            <hu>Türingiai erdei nőstény kecskegida</hu>
+            <en>Thuringian Forest Goat Female Kid</en>
+            <de>Thüringer Wald weibliches Zicklein</de>
+            <fr>Chevreau femelle de Thuringe</fr>
+            <pl>Samica koźlęcia Turyńskiego</pl>
+        </text>
+        <text name="shopItem_animalThuringiangoat_F_GS03">
+            <hu>Türingiai erdei fiatal anyakecske</hu>
+            <en>Thuringian Forest Goat Young Doe</en>
+            <de>Thüringer Wald junge Zicke</de>
+            <fr>Jeune chèvre de Thuringe</fr>
+            <pl>Młoda koza Turyńska</pl>
+        </text>
+        <text name="shopItem_animalThuringiangoat_F_GS04">
+            <hu>Türingiai erdei anyakecske</hu>
+            <en>Thuringian Forest Goat Doe</en>
+            <de>Thüringer Wald Zicke</de>
+            <fr>Chèvre de la forêt de Thuringe</fr>
+            <pl>Koza Lasu Turyńskiego</pl>
+        </text>
+        <text name="shopItem_animalThuringiangoat_M_GS01">
+            <hu>Türingiai erdei hím kecskegida</hu>
+            <en>Thuringian Forest Goat Male Kid</en>
+            <de>Thüringer Wald männliches Zicklein</de>
+            <fr>Chevreau mâle de Thuringe</fr>
+            <pl>Samiec koźlęcia Turyńskiego</pl>
+        </text>
+        <text name="shopItem_animalThuringiangoat_M_GS02">
+            <hu>Türingiai erdei hím kecskegida</hu>
+            <en>Thuringian Forest Goat Male Kid</en>
+            <de>Thüringer Wald männliches Zicklein</de>
+            <fr>Chevreau mâle de Thuringe</fr>
+            <pl>Samiec koźlęcia Turyńskiego</pl>
+        </text>
+        <text name="shopItem_animalThuringiangoat_M_GS03">
+            <hu>Türingiai erdei fiatal bakkecske</hu>
+            <en>Thuringian Forest Goat Young Buck</en>
+            <de>Thüringer Wald junger Ziegenbock</de>
+            <fr>Jeune bouc de Thuringe</fr>
+            <pl>Młody kozioł Turyński</pl>
+        </text>
+        <text name="shopItem_animalThuringiangoat_M_GS04">
+            <hu>Türingiai erdei bakkecske</hu>
+            <en>Thuringian Forest Goat Buck</en>
+            <de>Thüringer Wald Ziegenbock</de>
+            <fr>Bouc de la forêt de Thuringe</fr>
+            <pl>Kozioł Lasu Turyńskiego</pl>
+        </text>
+
+        <!--SHEEP-->
+        <text name="animal_SheepF_GS01Description">
+            <hu>Ez egy fiatal anyajuh.</hu>
+            <en>This is a young ewe.</en>
+            <de>Dies ist ein junges Mutterschaf.</de>
+            <fr>C'est une jeune brebis.</fr>
+            <pl>To jest młoda maciorka.</pl>
+        </text>
+        <text name="animal_SheepF_GS02Description">
+            <hu>Ez egy fiatal anyajuh.</hu>
+            <en>This is a young ewe.</en>
+            <de>Dies ist ein junges Mutterschaf.</de>
+            <fr>C'est une jeune brebis.</fr>
+            <pl>To jest młoda maciorka.</pl>
+        </text>
+        <text name="animal_SheepF_GS03Description">
+            <hu>Ez egy fiatal anyajuh.</hu>
+            <en>This is a young ewe.</en>
+            <de>Dies ist ein junges Mutterschaf.</de>
+            <fr>C'est une jeune brebis.</fr>
+            <pl>To jest młoda maciorka.</pl>
+        </text>
+        <text name="animal_SheepF_GS04Description">
+            <hu>Ez egy teljesen kifejlett anyajuh.</hu>
+            <en>This is a fully grown ewe.</en>
+            <de>Dies ist ein ausgewachsenes Mutterschaf.</de>
+            <fr>C'est une brebis adulte.</fr>
+            <pl>To w pełni dorosła maciorka.</pl>
+        </text>
+        <text name="animal_SheepM_GS01Description">
+            <hu>Ez egy fiatal kos.</hu>
+            <en>This is a young ram.</en>
+            <de>Dies ist ein junger Widder.</de>
+            <fr>C'est un jeune bélier.</fr>
+            <pl>To jest młody baran.</pl>
+        </text>
+        <text name="animal_SheepM_GS02Description">
+            <hu>Ez egy fiatal kos.</hu>
+            <en>This is a young ram.</en>
+            <de>Dies ist ein junger Widder.</de>
+            <fr>C'est un jeune bélier.</fr>
+            <pl>To jest młody baran.</pl>
+        </text>
+        <text name="animal_SheepM_GS03Description">
+            <hu>Ez egy fiatal kos.</hu>
+            <en>This is a young ram.</en>
+            <de>Dies ist ein junger Widder.</de>
+            <fr>C'est un jeune bélier.</fr>
+            <pl>To jest młody baran.</pl>
+        </text>
+        <text name="animal_SheepM_GS04Description">
+            <hu>Ez egy teljesen kifejlett kos.</hu>
+            <en>This is a fully grown ram.</en>
+            <de>Dies ist ein ausgewachsener Widder.</de>
+            <fr>C'est un bélier adulte.</fr>
+            <pl>To w pełni dorosły baran.</pl>
+        </text>
+        <text name="fillType_eweMerinoBRC">
+            <hu>Merinó anyajuh</hu>
+            <en>Merino Ewe</en>
+            <de>Merino Mutterschaf</de>
+            <fr>Brebis Mérinos</fr>
+            <pl>Maciorka Merynos</pl>
+        </text>
+        <text name="fillType_ramMerinoBRC">
+            <hu>Merinó kos</hu>
+            <en>Merino Ram</en>
+            <de>Merino Widder</de>
+            <fr>Bélier Mérinos</fr>
+            <pl>Baran Merynos</pl>
+        </text>
+        <text name="fillType_eweSuffolkBRC">
+            <hu>Suffolk anyajuh</hu>
+            <en>Suffolk Ewe</en>
+            <de>Suffolk Mutterschaf</de>
+            <fr>Brebis Suffolk</fr>
+            <pl>Maciorka Suffolk</pl>
+        </text>
+        <text name="fillType_ramSuffolkBRC">
+            <hu>Suffolk kos</hu>
+            <en>Suffolk Ram</en>
+            <de>Suffolk Widder</de>
+            <fr>Bélier Suffolk</fr>
+            <pl>Baran Suffolk</pl>
+        </text>
+        <text name="fillType_eweMountainsheepBRC">
+            <hu>Hegyi anyajuh</hu>
+            <en>Mountain Sheep Ewe</en>
+            <de>Bergschaf Mutterschaf</de>
+            <fr>Brebis de montagne</fr>
+            <pl>Owca górska maciorka</pl>
+        </text>
+        <text name="fillType_ramMountainsheepBRC">
+            <hu>Hegyi kos</hu>
+            <en>Mountain Sheep Ram</en>
+            <de>Bergschaf Widder</de>
+            <fr>Bélier de montagne</fr>
+            <pl>Baran górski</pl>
+        </text>
+        <text name="shopItem_animalMerino_F_GS01">
+            <hu>Merinó jerkebárány</hu>
+            <en>Merino Female Lamb</en>
+            <de>Merino weibliches Lamm</de>
+            <fr>Agnelle Mérinos</fr>
+            <pl>Jarka Merynos</pl>
+        </text>
+        <text name="shopItem_animalMerino_F_GS02">
+            <hu>Merinó jerkebárány</hu>
+            <en>Merino Female Lamb</en>
+            <de>Merino weibliches Lamm</de>
+            <fr>Agnelle Mérinos</fr>
+            <pl>Jarka Merynos</pl>
+        </text>
+        <text name="shopItem_animalMerino_F_GS03">
+            <hu>Merinó fiatal anyajuh</hu>
+            <en>Merino Young Ewe</en>
+            <de>Merino junges Mutterschaf</de>
+            <fr>Jeune brebis Mérinos</fr>
+            <pl>Młoda maciorka Merynos</pl>
+        </text>
+        <text name="shopItem_animalMerino_F_GS04">
+            <hu>Merinó anyajuh</hu>
+            <en>Merino Ewe</en>
+            <de>Merino Mutterschaf</de>
+            <fr>Brebis Mérinos</fr>
+            <pl>Maciorka Merynos</pl>
+        </text>
+        <text name="shopItem_animalMerino_M_GS01">
+            <hu>Merinó kosbárány</hu>
+            <en>Merino Male Lamb</en>
+            <de>Merino männliches Lamm</de>
+            <fr>Agneau mâle Mérinos</fr>
+            <pl>Tryczek Merynos</pl>
+        </text>
+        <text name="shopItem_animalMerino_M_GS02">
+            <hu>Merinó kosbárány</hu>
+            <en>Merino Male Lamb</en>
+            <de>Merino männliches Lamm</de>
+            <fr>Agneau mâle Mérinos</fr>
+            <pl>Tryczek Merynos</pl>
+        </text>
+        <text name="shopItem_animalMerino_M_GS03">
+            <hu>Merinó fiatal kos</hu>
+            <en>Merino Young Ram</en>
+            <de>Merino junger Widder</de>
+            <fr>Jeune bélier Mérinos</fr>
+            <pl>Młody baran Merynos</pl>
+        </text>
+        <text name="shopItem_animalMerino_M_GS04">
+            <hu>Merinó kos</hu>
+            <en>Merino Ram</en>
+            <de>Merino Widder</de>
+            <fr>Bélier Mérinos</fr>
+            <pl>Baran Merynos</pl>
+        </text>
+        <text name="shopItem_animalSuffolk_F_GS01">
+            <hu>Suffolk jerkebárány</hu>
+            <en>Suffolk Female Lamb</en>
+            <de>Suffolk weibliches Lamm</de>
+            <fr>Agnelle Suffolk</fr>
+            <pl>Jarka Suffolk</pl>
+        </text>
+        <text name="shopItem_animalSuffolk_F_GS02">
+            <hu>Suffolk jerkebárány</hu>
+            <en>Suffolk Female Lamb</en>
+            <de>Suffolk weibliches Lamm</de>
+            <fr>Agnelle Suffolk</fr>
+            <pl>Jarka Suffolk</pl>
+        </text>
+        <text name="shopItem_animalSuffolk_F_GS03">
+            <hu>Suffolk fiatal anyajuh</hu>
+            <en>Suffolk Young Ewe</en>
+            <de>Suffolk junges Mutterschaf</de>
+            <fr>Jeune brebis Suffolk</fr>
+            <pl>Młoda maciorka Suffolk</pl>
+        </text>
+        <text name="shopItem_animalSuffolk_F_GS04">
+            <hu>Suffolk anyajuh</hu>
+            <en>Suffolk Ewe</en>
+            <de>Suffolk Mutterschaf</de>
+            <fr>Brebis Suffolk</fr>
+            <pl>Maciorka Suffolk</pl>
+        </text>
+        <text name="shopItem_animalSuffolk_M_GS01">
+            <hu>Suffolk kosbárány</hu>
+            <en>Suffolk Male Lamb</en>
+            <de>Suffolk männliches Lamm</de>
+            <fr>Agneau mâle Suffolk</fr>
+            <pl>Tryczek Suffolk</pl>
+        </text>
+        <text name="shopItem_animalSuffolk_M_GS02">
+            <hu>Suffolk kosbárány</hu>
+            <en>Suffolk Male Lamb</en>
+            <de>Suffolk männliches Lamm</de>
+            <fr>Agneau mâle Suffolk</fr>
+            <pl>Tryczek Suffolk</pl>
+        </text>
+        <text name="shopItem_animalSuffolk_M_GS03">
+            <hu>Suffolk fiatal kos</hu>
+            <en>Suffolk Young Ram</en>
+            <de>Suffolk junger Widder</de>
+            <fr>Jeune bélier Suffolk</fr>
+            <pl>Młody baran Suffolk</pl>
+        </text>
+        <text name="shopItem_animalSuffolk_M_GS04">
+            <hu>Suffolk kos</hu>
+            <en>Suffolk Ram</en>
+            <de>Suffolk Widder</de>
+            <fr>Bélier Suffolk</fr>
+            <pl>Baran Suffolk</pl>
+        </text>
+        <text name="shopItem_animalMountainsheep_F_GS01">
+            <hu>Hegyi jerkebárány</hu>
+            <en>Mountain Sheep Female Lamb</en>
+            <de>Bergschaf weibliches Lamm</de>
+            <fr>Agnelle de montagne</fr>
+            <pl>Jarka owcy górskiej</pl>
+        </text>
+        <text name="shopItem_animalMountainsheep_F_GS02">
+            <hu>Hegyi jerkebárány</hu>
+            <en>Mountain Sheep Female Lamb</en>
+            <de>Bergschaf weibliches Lamm</de>
+            <fr>Agnelle de montagne</fr>
+            <pl>Jarka owcy górskiej</pl>
+        </text>
+        <text name="shopItem_animalMountainsheep_F_GS03">
+            <hu>Hegyi fiatal anyajuh</hu>
+            <en>Mountain Sheep Young Ewe</en>
+            <de>Bergschaf junges Mutterschaf</de>
+            <fr>Jeune brebis de montagne</fr>
+            <pl>Młoda maciorka owcy górskiej</pl>
+        </text>
+        <text name="shopItem_animalMountainsheep_F_GS04">
+            <hu>Hegyi anyajuh</hu>
+            <en>Mountain Sheep Ewe</en>
+            <de>Bergschaf Mutterschaf</de>
+            <fr>Brebis de montagne</fr>
+            <pl>Maciorka owcy górskiej</pl>
+        </text>
+        <text name="shopItem_animalMountainsheep_M_GS01">
+            <hu>Hegyi kosbárány</hu>
+            <en>Mountain Sheep Male Lamb</en>
+            <de>Bergschaf männliches Lamm</de>
+            <fr>Agneau mâle de montagne</fr>
+            <pl>Tryczek owcy górskiej</pl>
+        </text>
+        <text name="shopItem_animalMountainsheep_M_GS02">
+            <hu>Hegyi kosbárány</hu>
+            <en>Mountain Sheep Male Lamb</en>
+            <de>Bergschaf männliches Lamm</de>
+            <fr>Agneau mâle de montagne</fr>
+            <pl>Tryczek owcy górskiej</pl>
+        </text>
+        <text name="shopItem_animalMountainsheep_M_GS03">
+            <hu>Hegyi fiatal kos</hu>
+            <en>Mountain Sheep Young Ram</en>
+            <de>Bergschaf junger Widder</de>
+            <fr>Jeune bélier de montagne</fr>
+            <pl>Młody baran owcy górskiej</pl>
+        </text>
+        <text name="shopItem_animalMountainsheep_M_GS04">
+            <hu>Hegyi kos</hu>
+            <en>Mountain Sheep Ram</en>
+            <de>Bergschaf Widder</de>
+            <fr>Bélier de montagne</fr>
+            <pl>Baran owcy górskiej</pl>
+        </text>
+
+        <!--PIGS-->
+        <text name="animal_PigsF_GS01Description">
+            <hu>Ez egy fiatal koca.</hu>
+            <en>This is a young sow.</en>
+            <de>Dies ist eine junge Sau.</de>
+            <fr>C'est une jeune truie.</fr>
+            <pl>To jest młoda locha.</pl>
+        </text>
+        <text name="animal_PigsF_GS02Description">
+            <hu>Ez egy fiatal koca.</hu>
+            <en>This is a young sow.</en>
+            <de>Dies ist eine junge Sau.</de>
+            <fr>C'est une jeune truie.</fr>
+            <pl>To jest młoda locha.</pl>
+        </text>
+        <text name="animal_PigsF_GS03Description">
+            <hu>Ez egy fiatal koca. Hamarosan először fog fialni.</hu>
+            <en>This is a young sow. She will soon farrow for the first time.</en>
+            <de>Dies ist eine junge Sau. Sie wird bald zum ersten Mal ferkeln.</de>
+            <fr>C'est une jeune truie. Elle mettra bientôt bas pour la première fois.</fr>
+            <pl>To jest młoda locha. Wkrótce oprosiona zostanie po raz pierwszy.</pl>
+        </text>
+        <text name="animal_PigsF_GS04Description">
+            <hu>Ez egy teljesen kifejlett koca.</hu>
+            <en>This is a fully grown sow.</en>
+            <de>Dies ist eine ausgewachsene Sau.</de>
+            <fr>C'est une truie adulte.</fr>
+            <pl>To w pełni dorosła locha.</pl>
+        </text>
+        <text name="animal_PigsM_GS01Description">
+            <hu>Ez egy fiatal kan.</hu>
+            <en>This is a young boar.</en>
+            <de>Dies ist ein junger Eber.</de>
+            <fr>C'est un jeune verrat.</fr>
+            <pl>To jest młody knur.</pl>
+        </text>
+        <text name="animal_PigsM_GS02Description">
+            <hu>Ez egy hízósüldő. Hízlalás után haszonnal eladható.</hu>
+            <en>This is a young Porker. It can be sold for profit after fattening.</en>
+            <de>Dies ist ein junger Läufer. Er kann nach der Mast mit Gewinn verkauft werden.</de>
+            <fr>C'est un jeune porc charcutier. Il peut être vendu à profit après engraissement.</fr>
+            <pl>To jest warchlak. Można go sprzedać z zyskiem po utuczeniu.</pl>
+        </text>
+        <text name="animal_PigsM_GS03Description">
+            <hu>Ez egy fiatal kan. Haszonnal eladható.</hu>
+            <en>This is a young boar. It can be sold for profit.</en>
+            <de>Dies ist ein junger Eber. Er kann mit Gewinn verkauft werden.</de>
+            <fr>C'est un jeune verrat. Il peut être vendu à profit.</fr>
+            <pl>To jest młody knur. Można go sprzedać z zyskiem.</pl>
+        </text>
+        <text name="animal_PigsM_GS04Description">
+            <hu>Ez egy teljesen kifejlett kan.</hu>
+            <en>This is a fully grown boar.</en>
+            <de>Dies ist ein ausgewachsener Eber.</de>
+            <fr>C'est un verrat adulte.</fr>
+            <pl>To w pełni dorosły knur.</pl>
+        </text>
+        <text name="fillType_sowLandraceBRC">
+            <hu>Német lapály koca</hu>
+            <en>German Landrace Sow</en>
+            <de>Deutsche Landrasse Sau</de>
+            <fr>Truie Landrace Allemand</fr>
+            <pl>Locha Niemiecka zwisłoucha</pl>
+        </text>
+        <text name="fillType_boarLandraceBRC">
+            <hu>Német lapály kan</hu>
+            <en>German Landrace Boar</en>
+            <de>Deutsche Landrasse Eber</de>
+            <fr>Verrat Landrace Allemand</fr>
+            <pl>Knur Niemiecka zwisłoucha</pl>
+        </text>
+        <text name="fillType_sowPietrainBRC">
+            <hu>Pietrain koca</hu>
+            <en>Pietrain Sow</en>
+            <de>Pietrain Sau</de>
+            <fr>Truie Pietrain</fr>
+            <pl>Locha Pietrain</pl>
+        </text>
+        <text name="fillType_boarPietrainBRC">
+            <hu>Pietrain kan</hu>
+            <en>Pietrain Boar</en>
+            <de>Pietrain Eber</de>
+            <fr>Verrat Pietrain</fr>
+            <pl>Knur Pietrain</pl>
+        </text>
+        <text name="fillType_sowBerkshireBRC">
+            <hu>Berkshire koca</hu>
+            <en>Berkshire Sow</en>
+            <de>Berkshire Sau</de>
+            <fr>Truie Berkshire</fr>
+            <pl>Locha Berkshire</pl>
+        </text>
+        <text name="fillType_boarBerkshireBRC">
+            <hu>Berkshire kan</hu>
+            <en>Berkshire Boar</en>
+            <de>Berkshire Eber</de>
+            <fr>Verrat Berkshire</fr>
+            <pl>Knur Berkshire</pl>
+        </text>
+        <text name="shopItem_animalLandrace_F_GS01">
+            <hu>Német lapály nőstény malac</hu>
+            <en>Landrace Female Piglet</en>
+            <de>Landrasse weibliches Ferkel</de>
+            <fr>Porcelet femelle Landrace</fr>
+            <pl>Samica prosięcia Landrace</pl>
+        </text>
+        <text name="shopItem_animalLandrace_F_GS02">
+            <hu>Német lapály nőstény süldő</hu>
+            <en>Landrace Female Porker</en>
+            <de>Landrasse weiblicher Läufer</de>
+            <fr>Porc charcutier femelle Landrace</fr>
+            <pl>Samica warchlaka Landrace</pl>
+        </text>
+        <text name="shopItem_animalLandrace_F_GS03">
+            <hu>Német lapály fiatal koca</hu>
+            <en>Landrace Young Sow</en>
+            <de>Landrasse junge Sau</de>
+            <fr>Jeune truie Landrace</fr>
+            <pl>Młoda locha Landrace</pl>
+        </text>
+        <text name="shopItem_animalLandrace_F_GS04">
+            <hu>Német lapály koca</hu>
+            <en>Landrace Sow</en>
+            <de>Landrasse Sau</de>
+            <fr>Truie Landrace</fr>
+            <pl>Locha Landrace</pl>
+        </text>
+        <text name="shopItem_animalLandrace_M_GS01">
+            <hu>Német lapály hím malac</hu>
+            <en>Landrace Male Piglet</en>
+            <de>Landrasse männliches Ferkel</de>
+            <fr>Porcelet mâle Landrace</fr>
+            <pl>Samiec prosięcia Landrace</pl>
+        </text>
+        <text name="shopItem_animalLandrace_M_GS02">
+            <hu>Német lapály hím süldő</hu>
+            <en>Landrace Male Porker</en>
+            <de>Landrasse männlicher Läufer</de>
+            <fr>Porc charcutier mâle Landrace</fr>
+            <pl>Samiec warchlaka Landrace</pl>
+        </text>
+        <text name="shopItem_animalLandrace_M_GS03">
+            <hu>Német lapály fiatal kan</hu>
+            <en>Landrace Young Boar</en>
+            <de>Landrasse junger Eber</de>
+            <fr>Jeune verrat Landrace</fr>
+            <pl>Młody knur Landrace</pl>
+        </text>
+        <text name="shopItem_animalLandrace_M_GS04">
+            <hu>Német lapály kan</hu>
+            <en>Landrace Boar</en>
+            <de>Landrasse Eber</de>
+            <fr>Verrat Landrace</fr>
+            <pl>Knur Landrace</pl>
+        </text>
+        <text name="shopItem_animalPietrain_F_GS01">
+            <hu>Pietrain nőstény malac</hu>
+            <en>Pietrain Female Piglet</en>
+            <de>Pietrain weibliches Ferkel</de>
+            <fr>Porcelet femelle Pietrain</fr>
+            <pl>Samica prosięcia Pietrain</pl>
+        </text>
+        <text name="shopItem_animalPietrain_F_GS02">
+            <hu>Pietrain nőstény süldő</hu>
+            <en>Pietrain Female Porker</en>
+            <de>Pietrain weiblicher Läufer</de>
+            <fr>Porc charcutier femelle Pietrain</fr>
+            <pl>Samica warchlaka Pietrain</pl>
+        </text>
+        <text name="shopItem_animalPietrain_F_GS03">
+            <hu>Pietrain fiatal koca</hu>
+            <en>Pietrain Young Sow</en>
+            <de>Pietrain junge Sau</de>
+            <fr>Jeune truie Pietrain</fr>
+            <pl>Młoda locha Pietrain</pl>
+        </text>
+        <text name="shopItem_animalPietrain_F_GS04">
+            <hu>Pietrain koca</hu>
+            <en>Pietrain Sow</en>
+            <de>Pietrain Sau</de>
+            <fr>Truie Pietrain</fr>
+            <pl>Locha Pietrain</pl>
+        </text>
+        <text name="shopItem_animalPietrain_M_GS01">
+            <hu>Pietrain hím malac</hu>
+            <en>Pietrain Male Piglet</en>
+            <de>Pietrain männliches Ferkel</de>
+            <fr>Porcelet mâle Pietrain</fr>
+            <pl>Samiec prosięcia Pietrain</pl>
+        </text>
+        <text name="shopItem_animalPietrain_M_GS02">
+            <hu>Pietrain hím süldő</hu>
+            <en>Pietrain Male Porker</en>
+            <de>Pietrain männlicher Läufer</de>
+            <fr>Porc charcutier mâle Pietrain</fr>
+            <pl>Samiec warchlaka Pietrain</pl>
+        </text>
+        <text name="shopItem_animalPietrain_M_GS03">
+            <hu>Pietrain fiatal kan</hu>
+            <en>Pietrain Young Boar</en>
+            <de>Pietrain junger Eber</de>
+            <fr>Jeune verrat Pietrain</fr>
+            <pl>Młody knur Pietrain</pl>
+        </text>
+        <text name="shopItem_animalPietrain_M_GS04">
+            <hu>Pietrain kan</hu>
+            <en>Pietrain Boar</en>
+            <de>Pietrain Eber</de>
+            <fr>Verrat Pietrain</fr>
+            <pl>Knur Pietrain</pl>
+        </text>
+        <text name="shopItem_animalBerkshire_F_GS01">
+            <hu>Berkshire nőstény malac</hu>
+            <en>Berkshire Female Piglet</en>
+            <de>Berkshire weibliches Ferkel</de>
+            <fr>Porcelet femelle Berkshire</fr>
+            <pl>Samica prosięcia Berkshire</pl>
+        </text>
+        <text name="shopItem_animalBerkshire_F_GS02">
+            <hu>Berkshire nőstény süldő</hu>
+            <en>Berkshire Female Porker</en>
+            <de>Berkshire weiblicher Läufer</de>
+            <fr>Porc charcutier femelle Berkshire</fr>
+            <pl>Samica warchlaka Berkshire</pl>
+        </text>
+        <text name="shopItem_animalBerkshire_F_GS03">
+            <hu>Berkshire fiatal koca</hu>
+            <en>Berkshire Young Sow</en>
+            <de>Berkshire junge Sau</de>
+            <fr>Jeune truie Berkshire</fr>
+            <pl>Młoda locha Berkshire</pl>
+        </text>
+        <text name="shopItem_animalBerkshire_F_GS04">
+            <hu>Berkshire koca</hu>
+            <en>Berkshire Sow</en>
+            <de>Berkshire Sau</de>
+            <fr>Truie Berkshire</fr>
+            <pl>Locha Berkshire</pl>
+        </text>
+        <text name="shopItem_animalBerkshire_M_GS01">
+            <hu>Berkshire hím malac</hu>
+            <en>Berkshire Male Piglet</en>
+            <de>Berkshire männliches Ferkel</de>
+            <fr>Porcelet mâle Berkshire</fr>
+            <pl>Samiec prosięcia Berkshire</pl>
+        </text>
+        <text name="shopItem_animalBerkshire_M_GS02">
+            <hu>Berkshire hím süldő</hu>
+            <en>Berkshire Male Porker</en>
+            <de>Berkshire männlicher Läufer</de>
+            <fr>Porc charcutier mâle Berkshire</fr>
+            <pl>Samiec warchlaka Berkshire</pl>
+        </text>
+        <text name="shopItem_animalBerkshire_M_GS03">
+            <hu>Berkshire fiatal kan</hu>
+            <en>Berkshire Young Boar</en>
+            <de>Berkshire junger Eber</de>
+            <fr>Jeune verrat Berkshire</fr>
+            <pl>Młody knur Berkshire</pl>
+        </text>
+        <text name="shopItem_animalBerkshire_M_GS04">
+            <hu>Berkshire kan</hu>
+            <en>Berkshire Boar</en>
+            <de>Berkshire Eber</de>
+            <fr>Verrat Berkshire</fr>
+            <pl>Knur Berkshire</pl>
+        </text>
+
+        <!--RABBITS-->
+        <text name="fillType_rabbitFemaleBRC">
+            <hu>Nőstény Nyúl</hu>
+            <en>Female Rabbit</en>
+            <de>Weibliches Kaninchen</de>
+            <fr>Lapine</fr>
+            <pl>Samica królika</pl>
+        </text>
+        <text name="fillType_rabbitMaleBRC">
+            <hu>Bak Nyúl</hu>
+            <en>Male Rabbit</en>
+            <de>Männliches Kaninchen</de>
+            <fr>Lapin mâle</fr>
+            <pl>Samiec królika</pl>
+        </text>
+        <text name="animal_group_rabbits">
+            <hu>Nyulak</hu>
+            <en>Rabbits</en>
+            <de>Kaninchen</de>
+            <fr>Lapins</fr>
+            <pl>Króliki</pl>
+        </text>
+        <text name="animal_descriptionRabbitYoung">
+            <hu>Ez egy kisnyúl. Később felnőtt állattá válik.</hu>
+            <en>This is a young rabbit. It will later become an adult animal.</en>
+            <de>Dies ist ein junges Kaninchen. Es wird später zu einem erwachsenen Tier.</de>
+            <fr>C'est un jeune lapin. Il deviendra plus tard un animal adulte.</fr>
+            <pl>To jest młody królik. Później stanie się dorosłym zwierzęciem.</pl>
+        </text>
+        <text name="animal_descriptionRabbitAdult">
+            <hu>Kifejlett nyúl, amely eladható vagy szaporítható.</hu>
+            <en>This is a fully grown rabbit. It can be sold or used for breeding.</en>
+            <de>Dies ist ein ausgewachsenes Kaninchen. Es kann verkauft oder zur Zucht verwendet werden.</de>
+            <fr>C'est un lapin adulte. Il peut être vendu ou utilisé pour l'élevage.</fr>
+            <pl>To w pełni dorosły królik. Można go sprzedać lub wykorzystać do hodowli.</pl>
+        </text>
+        <text name="animal_female_descriptionRabbitYoung">
+            <hu>Ez egy fiatal nőstény nyúl. Később felnőtt állattá válik.</hu>
+            <en>This is a young female rabbit. It will later become an adult animal.</en>
+            <de>Dies ist ein junges weibliches Kaninchen. Es wird später zu einem erwachsenen Tier.</de>
+            <fr>C'est une jeune lapine. Elle deviendra plus tard un animal adulte.</fr>
+            <pl>To jest młoda samica królika. Później stanie się dorosłym zwierzęciem.</pl>
+        </text>
+        <text name="animal_female_serdulo_descriptionRabbitYoung">
+            <hu>Ez egy növendék nőstény nyúl. Hamarosan kifejlett állattá válik.</hu>
+            <en>This is an adolescent female rabbit. It will soon become an adult.</en>
+            <de>Dies ist ein heranwachsendes weibliches Kaninchen. Es wird bald erwachsen.</de>
+            <fr>C'est une lapine adolescente. Elle deviendra bientôt adulte.</fr>
+            <pl>To jest dorastająca samica królika. Wkrótce stanie się dorosła.</pl>
+        </text>
+        <text name="animal_female_descriptionRabbitAdult">
+            <hu>Kifejlett nőstény nyúl, amely eladható vagy szaporítható.</hu>
+            <en>This is a fully grown female rabbit. It can be sold or used for breeding.</en>
+            <de>Dies ist ein ausgewachsenes weibliches Kaninchen. Es kann verkauft oder zur Zucht verwendet werden.</de>
+            <fr>C'est une lapine adulte. Elle peut être vendue ou utilisée pour l'élevage.</fr>
+            <pl>To w pełni dorosła samica królika. Można ją sprzedać lub wykorzystać do hodowli.</pl>
+        </text>
+        <text name="animal_male_descriptionRabbitYoung">
+            <hu>Ez egy fiatal bak nyúl. Később felnőtt állattá válik.</hu>
+            <en>This is a young male rabbit. It will later become an adult animal.</en>
+            <de>Dies ist ein junges männliches Kaninchen. Es wird später zu einem erwachsenen Tier.</de>
+            <fr>C'est un jeune lapin mâle. Il deviendra plus tard un animal adulte.</fr>
+            <pl>To jest młody samiec królika. Później stanie się dorosłym zwierzęciem.</pl>
+        </text>
+        <text name="animal_male_serdulo_descriptionRabbitYoung">
+            <hu>Ez egy növendék bak nyúl. Hamarosan kifejlett állattá válik.</hu>
+            <en>This is an adolescent male rabbit. It will soon become an adult.</en>
+            <de>Dies ist ein heranwachsendes männliches Kaninchen. Es wird bald erwachsen.</de>
+            <fr>C'est un lapin mâle adolescent. Il deviendra bientôt adulte.</fr>
+            <pl>To jest dorastający samiec królika. Wkrótce stanie się dorosły.</pl>
+        </text>
+        <text name="animal_male_descriptionRabbitAdult">
+            <hu>Kifejlett bak nyúl, amely eladható vagy szaporítható.</hu>
+            <en>This is a fully grown male rabbit. It can be sold or used for breeding.</en>
+            <de>Dies ist ein ausgewachsenes männliches Kaninchen. Es kann verkauft oder zur Zucht verwendet werden.</de>
+            <fr>C'est un lapin mâle adulte. Il peut être vendu ou utilisé pour l'élevage.</fr>
+            <pl>To w pełni dorosły samiec królika. Można go sprzedać lub wykorzystać do hodowli.</pl>
+        </text>        
+		<text name="shopItem_animalSack">
+            <hu>Állatszállító zsák.</hu>
+            <en>Animal Bag.</en>
+            <de>Tiertransport Tasche</de>
+            <fr>sac en forme d'animal</fr>
+            <pl>torba na zwierzęta.</pl>
+        </text>
+		<text name="function_animalSack">
+            <hu>Állatszállító zsák.</hu>
+            <en>Animal Bag.</en>
+            <de>Tiertransport Tasche</de>
+            <fr>sac en forme d'animal</fr>
+            <pl>torba na zwierzęta.</pl>
+        </text>		
+		<text name="category_petTransport">
+            <hu>Állatszállító eszközök</hu>
+            <en>Pet Transport</en>
+            <de>Tiertransportausrüstung</de>
+            <fr>équipement de transport d'animaux</fr>
+            <pl>Sprzęt do transportu zwierząt</pl>
+        </text>
+		<text name="shopItem_animalDuckGrowthStage0_female">
+            <hu>Nőstény kiskacsa</hu>
+            <en>Female Duckling</en>
+            <de>Weibliches Entenküken</de>
+            <fr>Caneton femelle</fr>
+            <pl>Samica kaczuszki</pl>
+        </text>
+        <text name="animal_duckGrowthStage0Description_female">
+            <hu>Ez egy nőstény kiskacsa. Később tojó kacsává fejlődik.</hu>
+            <en>This is a female duckling. It will grow into a laying duck.</en>
+            <de>Dies ist ein weibliches Entenküken. Es wird zu einer Legeente heranwachsen.</de>
+            <fr>C'est un caneton femelle. Elle deviendra une cane pondeuse.</fr>
+            <pl>To jest samica kaczuszki. Wyrośnie na kaczkę nioskę.</pl>
+        </text>
+        <text name="shopItem_animalDuckGrowthStage1_female">
+            <hu>Nőstény kacsa</hu>
+            <en>Female Duck</en>
+            <de>Weibliche Ente</de>
+            <fr>Cane</fr>
+            <pl>Kaczka</pl>
+        </text>
+        <text name="animal_duckGrowthStage1Description_female">
+            <hu>Kifejlett nőstény kacsa, amely tojást tojik.</hu>
+            <en>A fully grown female duck that lays eggs.</en>
+            <de>Eine ausgewachsene weibliche Ente, die Eier legt.</de>
+            <fr>Une cane adulte qui pond des œufs.</fr>
+            <pl>Dorosła kaczka, która znosi jajka.</pl>
+        </text>
+        <text name="shopItem_animalDuckGrowthStage0_male">
+            <hu>Hím kiskacsa</hu>
+            <en>Male Duckling</en>
+            <de>Männliches Entenküken</de>
+            <fr>Caneton mâle</fr>
+            <pl>Samiec kaczuszki</pl>
+        </text>
+        <text name="animal_duckGrowthStage0Description_male">
+            <hu>Ez egy hím kiskacsa. Később gácsérrá fejlődik.</hu>
+            <en>This is a male duckling. It will grow into a drake.</en>
+            <de>Dies ist ein männliches Entenküken. Es wird zu einem Erpel heranwachsen.</de>
+            <fr>C'est un caneton mâle. Il deviendra un canard.</fr>
+            <pl>To jest samiec kaczuszki. Wyrośnie na kaczora.</pl>
+        </text>
+        <text name="shopItem_animalDuckGrowthStage1_male">
+            <hu>Gácsér</hu>
+            <en>Drake</en>
+            <de>Erpel</de>
+            <fr>Canard</fr>
+            <pl>Kaczor</pl>
+        </text>
+        <text name="animal_duckGrowthStage1Description_male">
+            <hu>Kifejlett gácsér.</hu>
+            <en>A fully grown drake.</en>
+            <de>Ein ausgewachsener Erpel.</de>
+            <fr>Un canard adulte.</fr>
+            <pl>Dorosły kaczor.</pl>
+        </text>
+        <text name="shopItem_animallibaGrowthStage0_female">
+            <hu>Nőstény kisliba</hu>
+            <en>Female Gosling</en>
+            <de>Weibliches Gänseküken</de>
+            <fr>Oison femelle</fr>
+            <pl>Samica gąsiątka</pl>
+        </text>
+        <text name="animal_libaGrowthStage0Description_female">
+            <hu>Ez egy nőstény kisliba. Később tojó libává fejlődik.</hu>
+            <en>This is a female gosling. It will grow into a laying goose.</en>
+            <de>Dies ist ein weibliches Gänseküken. Es wird zu einer Legegans heranwachsen.</de>
+            <fr>C'est un oison femelle. Elle deviendra une oie pondeuse.</fr>
+            <pl>To jest samica gąsiątka. Wyrośnie na gęś nioskę.</pl>
+        </text>
+        <text name="shopItem_animallibaGrowthStage1_female">
+            <hu>Növendék nőstény liba</hu>
+            <en>Young Female Goose</en>
+            <de>Junge weibliche Gans</de>
+            <fr>Jeune oie femelle</fr>
+            <pl>Młoda samica gęsi</pl>
+        </text>
+        <text name="animal_libaGrowthStage1Description_female">
+            <hu>Ez egy növendék nőstény liba.</hu>
+            <en>This is a young female goose.</en>
+            <de>Dies ist eine junge weibliche Gans.</de>
+            <fr>C'est une jeune oie femelle.</fr>
+            <pl>To jest młoda samica gęsi.</pl>
+        </text>
+        <text name="shopItem_animallibaGrowthStage2_female">
+            <hu>Nőstény liba</hu>
+            <en>Female Goose</en>
+            <de>Weibliche Gans</de>
+            <fr>Oie femelle</fr>
+            <pl>Samica gęsi</pl>
+        </text>
+        <text name="animal_libaGrowthStage2Description_female">
+            <hu>Kifejlett nőstény liba, amely tojást tojik.</hu>
+            <en>A fully grown female goose that lays eggs.</en>
+            <de>Eine ausgewachsene weibliche Gans, die Eier legt.</de>
+            <fr>Une oie femelle adulte qui pond des œufs.</fr>
+            <pl>Dorosła samica gęsi, która znosi jajka.</pl>
+        </text>
+        <text name="shopItem_animalliba_himGrowthStage0_male">
+            <hu>Hím kisliba</hu>
+            <en>Male Gosling</en>
+            <de>Männliches Gänseküken</de>
+            <fr>Oison mâle</fr>
+            <pl>Samiec gąsiątka</pl>
+        </text>
+        <text name="animal_liba_himGrowthStage0Description_male">
+            <hu>Ez egy hím kisliba. Később gúnárrá fejlődik.</hu>
+            <en>This is a male gosling. It will grow into a gander.</en>
+            <de>Dies ist ein männliches Gänseküken. Es wird zu einem Ganter heranwachsen.</de>
+            <fr>C'est un oison mâle. Il deviendra un jars.</fr>
+            <pl>To jest samiec gąsiątka. Wyrośnie na gąsiora.</pl>
+        </text>
+        <text name="shopItem_animallibahimGrowthStage1">
+            <hu>Növendék gúnár</hu>
+            <en>Young Gander</en>
+            <de>Junger Ganter</de>
+            <fr>Jeune jars</fr>
+            <pl>Młody gąsior</pl>
+        </text>
+        <text name="animal_liba_himGrowthStage1Description">
+            <hu>Ez egy növendék gúnár.</hu>
+            <en>This is a young gander.</en>
+            <de>Dies ist ein junger Ganter.</de>
+            <fr>C'est un jeune jars.</fr>
+            <pl>To jest młody gąsior.</pl>
+        </text>
+        <text name="shopItem_animalliba_himGrowthStage2">
+            <hu>Gúnár</hu>
+            <en>Gander</en>
+            <de>Ganter</de>
+            <fr>Jars</fr>
+            <pl>Gąsior</pl>
+        </text>
+        <text name="animal_liba_himGrowthStage2Description">
+            <hu>Kifejlett gúnár.</hu>
+            <en>A fully grown gander.</en>
+            <de>Ein ausgewachsener Ganter.</de>
+            <fr>Un jars adulte.</fr>
+            <pl>Dorosły gąsior.</pl>
+        </text>
+        <text name="shopItem_animalpulykaGrowthStage0">
+            <hu>Nőstény kispulyka</hu>
+            <en>Female Turkey Poult</en>
+            <de>Weibliches Putenküken</de>
+            <fr>Dindonneau femelle</fr>
+            <pl>Samica indyczka</pl>
+        </text>
+        <text name="animal_pulykaGrowthStage0Description">
+            <hu>Ez egy nőstény kispulyka. Később tojó pulykává fejlődik.</hu>
+            <en>This is a female turkey poult. It will grow into a laying turkey.</en>
+            <de>Dies ist ein weibliches Putenküken. Es wird zu einer Legepute heranwachsen.</de>
+            <fr>C'est un dindonneau femelle. Elle deviendra une dinde pondeuse.</fr>
+            <pl>To jest samica indyczka. Wyrośnie na indyczkę nioskę.</pl>
+        </text>
+        <text name="shopItem_animalpulykaGrowthStage1">
+            <hu>Növendék tojó pulyka</hu>
+            <en>Young Female Turkey</en>
+            <de>Junge weibliche Pute</de>
+            <fr>Jeune dinde</fr>
+            <pl>Młoda indyczka</pl>
+        </text>
+        <text name="animal_pulykaGrowthStage1Description">
+            <hu>Ez egy növendék tojó pulyka.</hu>
+            <en>This is a young female turkey.</en>
+            <de>Dies ist eine junge weibliche Pute.</de>
+            <fr>C'est une jeune dinde.</fr>
+            <pl>To jest młoda indyczka.</pl>
+        </text>
+        <text name="shopItem_animalpulykaGrowthStage2">
+            <hu>Tojó pulyka</hu>
+            <en>Female Turkey</en>
+            <de>Weibliche Pute</de>
+            <fr>Dinde</fr>
+            <pl>Indyczka</pl>
+        </text>
+        <text name="animal_pulykaGrowthStage2Description">
+            <hu>Kifejlett tojó pulyka, amely tojást tojik.</hu>
+            <en>A fully grown female turkey that lays eggs.</en>
+            <de>Eine ausgewachsene weibliche Pute, die Eier legt.</de>
+            <fr>Une dinde adulte qui pond des œufs.</fr>
+            <pl>Dorosła indyczka, która znosi jajka.</pl>
+        </text>
+        <text name="shopItem_animalpulyka_himGrowthStage0">
+            <hu>Hím kispulyka</hu>
+            <en>Male Turkey Poult</en>
+            <de>Männliches Putenküken</de>
+            <fr>Dindonneau mâle</fr>
+            <pl>Samiec indyczka</pl>
+        </text>
+        <text name="animal_pulyka_himGrowthStage0Description">
+            <hu>Ez egy hím kispulyka. Később bak pulykává fejlődik.</hu>
+            <en>This is a male turkey poult. It will grow into a tom turkey.</en>
+            <de>Dies ist ein männliches Putenküken. Es wird zu einem Truthahn heranwachsen.</de>
+            <fr>C'est un dindonneau mâle. Il deviendra un dindon.</fr>
+            <pl>To jest samiec indyczka. Wyrośnie na indora.</pl>
+        </text>
+        <text name="shopItem_animalpulyka_himGrowthStage1">
+            <hu>Növendék bak pulyka</hu>
+            <en>Young Tom Turkey</en>
+            <de>Junger Truthahn</de>
+            <fr>Jeune dindon</fr>
+            <pl>Młody indor</pl>
+        </text>
+        <text name="animal_pulyka_himGrowthStage1Description">
+            <hu>Ez egy növendék bak pulyka.</hu>
+            <en>This is a young tom turkey.</en>
+            <de>Dies ist ein junger Truthahn.</de>
+            <fr>C'est un jeune dindon.</fr>
+            <pl>To jest młody indor.</pl>
+        </text>
+        <text name="shopItem_animalpulykaGrowthStage3">
+            <hu>Bak pulyka</hu>
+            <en>Tom Turkey</en>
+            <de>Truthahn</de>
+            <fr>Dindon</fr>
+            <pl>Indor</pl>
+        </text>
+        <text name="animal_pulyka_himGrowthStage3Description">
+            <hu>Kifejlett bak pulyka.</hu>
+            <en>A fully grown tom turkey.</en>
+            <de>Ein ausgewachsener Truthahn.</de>
+            <fr>Un dindon adulte.</fr>
+            <pl>Dorosły indor.</pl>
+        </text>
+        <text name="fillType_duck">
+            <hu>Kacsa</hu>
+            <en>Duck</en>
+            <de>Ente</de>
+            <fr>Canard</fr>
+            <pl>Kaczka</pl>
+        </text>
+        <text name="fillType_liba">
+            <hu>Liba</hu>
+            <en>Goose</en>
+            <de>Gans</de>
+            <fr>Oie</fr>
+            <pl>Gęś</pl>
+        </text>
+        <text name="fillType_pulyka">
+            <hu>Pulyka</hu>
+            <en>Turkey</en>
+            <de>Truthahn</de>
+            <fr>Dinde</fr>
+            <pl>indyk</pl>
+        </text>         
+		<text name="shopItem_transportCartAnimal">
+            <hu>Szállítókocsi állat</hu>
+            <en>Transport Cart Animal</en>
+            <de>Transport Karrentier</de>
+            <fr>transport Chariot Animal</fr>
+            <pl>transport Wózek dla zwierząt</pl>
+        </text>   		
+		<text name="function_transportCartAnimal">
+            <hu>Szállítókocsi állat</hu>
+            <en>Transport Cart Animal</en>
+            <de>Transport Karrentier</de>
+            <fr>transport Chariot Animal</fr>
+            <pl>transport Wózek dla zwierząt</pl>
+        </text>       
+		<text name="fillTypeGroup_cowForage">
+            <hu>Összetett takarmány (TMR) / Bála (Legelő)</hu>
+            <en>Total Mixed Ration (TMR) / Bale (Pasture)</en>
+            <de>Mischration (TMR) / Ballen (Weide)</de>
+            <fr>Ration mélangée totale (RMT) / Balle (Pâturage)</fr>
+            <pl>Pasza mieszana (TMR) / Bela (Pastwisko)</pl>
+        </text>
+        <text name="fillTypeGroup_cowHay">
+            <hu>Szilázs vagy széna</hu>
+            <en>Silage or Hay</en>
+            <de>Silage oder Heu</de>
+            <fr>Ensilage ou Foin</fr>
+            <pl>Kiszonka lub Siano</pl>
+        </text>
+        <text name="fillTypeGroup_cowGrass">
+            <hu>Fű / Lucerna</hu>
+            <en>Grass / Alfalfa</en>
+            <de>Gras / Luzerne</de>
+            <fr>Herbe / Luzerne</fr>
+            <pl>Trawa / Lucerna</pl>
+        </text>
+        <text name="fillTypeGroup_cowEarth">
+            <hu>Vörös Cékla</hu>
+            <en>Beetroot</en>
+            <de>Rote Bete</de>
+            <fr>Betterave Rouge</fr>
+            <pl>Burak Czerwony</pl>
+        </text>
+        <text name="fillTypeGroup_cowSpecial">
+            <hu>Borjútej (csak borjú igluk)</hu>
+            <en>Calf Milk (calf igloos only)</en>
+            <de>Kälbermilch (nur Kälberiglus)</de>
+            <fr>Lait pour Veaux (igloos pour veaux uniquement)</fr>
+            <pl>Mleko dla Cieląt (tylko igloo dla cieląt)</pl>
+        </text>
+		<text name="productionPoint_eggIncubator">
+			<en>Egg Incubator</en>
+			<de>Brutapparat</de>
+			<fr>Couveuse</fr>
+			<pl>Inkubator do jaj</pl>
+			<hu>Tojáskeltető</hu>
+		</text>
+		<text name="action_openEggIncubator">
+			<en>Open Incubator</en>
+			<de>Brutapparat öffnen</de>
+			<fr>Ouvrir la couveuse</fr>
+			<pl>Otwórz inkubator</pl>
+			<hu>Keltető kinyitása</hu>
+		</text>		
+		<text name="openEggIncubator">
+			<en>Open Incubator</en>
+			<de>Brutapparat öffnen</de>
+			<fr>Ouvrir la couveuse</fr>
+			<pl>Otwórz inkubator</pl>
+			<hu>Keltető kinyitása</hu>
+		</text>
+		<text name="action_closeEggIncubator">
+			<en>Close Incubator</en>
+			<de>Brutapparat schließen</de>
+			<fr>Fermer la couveuse</fr>
+			<pl>Zamknij inkubator</pl>
+			<hu>Keltető bezárása</hu>
+		</text>		
+		<text name="closeEggIncubator">
+			<en>Close Incubator</en>
+			<de>Brutapparat schließen</de>
+			<fr>Fermer la couveuse</fr>
+			<pl>Zamknij inkubator</pl>
+			<hu>Keltető bezárása</hu>
+		</text>
+		<text name="productionName_eggIncubator">
+			<en>Chick Hatching</en>
+			<de>Kükenaufzucht</de>
+			<fr>Éclosion de poussins</fr>
+			<pl>Wylęg piskląt</pl>
+			<hu>Csibekeltetés</hu>
+		</text>
+		<text name="fillType_kacsaTojo">
+    <en>Duck (Female)</en>
+    <de>Ente (Weiblich)</de>
+    <fr>Canard (Femelle)</fr>
+    <hu>Kacsa nőstény</hu>
+    <pl>Kaczka (Samica)</pl>
+	</text>
+	<text name="fillType_kacsaGacser">
+		<en>Drake (Male)</en>
+		<de>Erpel (Männlich)</de>
+		<fr>Canard (Mâle)</fr>
+		<hu>Gácsér</hu>
+		<pl>Kaczor (Samiec)</pl>
+	</text>
+	<text name="fillType_libaTojo">
+		<en>Goose (Female)</en>
+		<de>Gans (Weiblich)</de>
+		<fr>Oie (Femelle)</fr>
+		<hu>Liba nőstény</hu>
+		<pl>Gęś (Samica)</pl>
+	</text>
+	<text name="fillType_libaGunar">
+		<en>Gander (Male)</en>
+		<de>Ganter (Männlich)</de>
+		<fr>Jars (Mâle)</fr>
+		<hu>Gúnár</hu>
+		<pl>Gąsior (Samiec)</pl>
+	</text>
+	<text name="fillType_pulykaTojo">
+		<en>Turkey (Female)</en>
+		<de>Pute (Weiblich)</de>
+		<fr>Dinde (Femelle)</fr>
+		<hu>Pulyka nőstény</hu>
+		<pl>Indyczka (Samica)</pl>
+	</text>
+	<text name="fillType_pulykaKakas">
+		<en>Tom Turkey (Male)</en>
+		<de>Truthahn (Männlich)</de>
+		<fr>Dindon (Mâle)</fr>
+		<hu>Pulykakas</hu>
+		<pl>Indyk (Samiec)</pl>
+	</text>
+	<text name="shopItem_oldAnimalTrailer">
+        <en>Old Animal Trailer</en>
+        <de>Alter Viehanhänger</de>
+        <fr>Vieux van à bestiaux</fr>
+        <pl>Stara przyczepa na zwierzęta</pl>
+        <hu>Régi állatszállító pótkocsi</hu>
+    </text>
+    <text name="function_oldAnimalTrailer">
+        <en>This trailer is used to transport animals.</en>
+        <de>Dieser Anhänger wird für den Transport von Tieren verwendet.</de>
+        <fr>Cette remorque est utilisée pour transporter des animaux.</fr>
+        <pl>Ta przyczepa służy do transportu zwierząt.</pl>
+        <hu>Ez a pótkocsi állatok szállítására szolgál.</hu>
+    </text>
+    </l10n>
+    
+    <placeableTypes>
+        <type name="mapRabbitHusbandry" parent="baseHusbandry" filename="$dataS/scripts/placeables/Placeable.lua">
+            <specialization name="hotspotsExtension" />
+			<specialization name="husbandryWater" />
+			<specialization name="husbandryStraw" />
+			<specialization name="manureHeap" />
+        </type>
+		<type name="mapCowHusbandry" parent="placeable" filename="$dataS/scripts/placeables/Placeable.lua">
+				<specialization name="placement" />
+				<specialization name="animatedObjects" />
+				<specialization name="hotspots" />
+				<specialization name="triggerMarkers" />
+				<specialization name="husbandry" />
+				<specialization name="husbandryAnimals" />
+				<specialization name="husbandryFood" />
+				<specialization name="infoTrigger" />
+				<specialization name="husbandryWater" />
+				<specialization name="husbandryStraw" />
+				<specialization name="husbandryLiquidManure" />
+				<specialization name="manureHeap" />
+			</type>
+			<type name="mapCatZone" parent="placeable" filename="$dataS/scripts/placeables/Placeable.lua">
+			<specialization name="placement" />
+			<specialization name="hotspots" />
+			<specialization name="hotspotsExtension" />
+			<specialization name="triggerMarkers" />
+			<specialization name="husbandry" />
+			<specialization name="husbandryAnimals" />
+			<specialization name="husbandryFood" />
+			<specialization name="infoTrigger" />
+		</type>
+		<type name="mapProductionPointExtended" parent="placeable" filename="$dataS/scripts/placeables/Placeable.lua">
+			<specialization name="animatedObjects" />
+			<specialization name="placement" />
+			<specialization name="dynamicallyLoadedParts"/>
+			<specialization name="hotspots" />
+			<specialization name="triggerMarkers" />
+			<specialization name="extendedProductionPoint"/>
+			<specialization name="infoTrigger" />
+			<specialization name="lights"/>
+			<specialization name="hotspotsExtension" />
+			<specialization name="ladders"/>
+		</type>
+    </placeableTypes>
+    
+    <placeableSpecializations>
+        <specialization name="hotspotsExtension"         className="PlaceableHotspotsExtension"             filename="scripts/placeableSpecializations/PlaceableHotspotsExtension.lua"/>
+		<specialization name="extendedProductionPoint" 	 className="PlaceableExtendedProductionPoint" 		filename="scripts/PlaceableExtendedProductionPoint.lua"/>
+    </placeableSpecializations>
+	
+		<vehicleTypes>
+		<type name="simpleObject" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="tipOccluder" />
+			<specialization name="foliageBending" />
+			<specialization name="mountable" />
+			<specialization name="dashboard" />
+			<specialization name="animatedVehicle" />
+			<specialization name="fillUnit" />
+			<specialization name="fillVolume" />
+			<specialization name="fillTriggerVehicle" />
+			<specialization name="dischargeable" />
+			<specialization name="tensionBeltObject" />
+			<specialization name="pallet" />
+			<specialization name="dashboardAlwaysUpdate" />
+		</type>
+		<type name="livestockTrailerPushable" parent="baseDrivable" filename="$dataS/scripts/vehicles/Vehicle.lua">
+			<specialization name="attachable" />
+			<specialization name="groundReference" />
+			<specialization name="workArea" />
+			<specialization name="workParticles" />
+			<specialization name="testAreas" />
+			<specialization name="turnOnVehicle" />
+			<specialization name="powerConsumer" />
+			<specialization name="foldable" />
+			<specialization name="fillVolume"/>
+			<specialization name="cylinderedFoldable" />
+			<specialization name="workMode" />
+			<specialization name="pushHandTool" />
+			<specialization name="dischargeable"/>
+			<specialization name="trailer"/>
+			<specialization name="enterableEnterText" />
+			<specialization name="livestockTrailer" />
+			<specialization name="animatedLivestockTrailer" />
+		</type>		
+		</vehicleTypes>
+		
+	<specializations>
+		<specialization name="dashboardAlwaysUpdate" 	className="DashboardAlwaysUpdate" 		filename="scripts/DashboardAlwaysUpdate.lua"/>
+		<specialization name="enterableEnterText" 		className="EnterableEnterText" 			filename="scripts/EnterableEnterText.lua"/>
+		<specialization name="animatedLivestockTrailer" className="AnimatedLivestockTrailer" 	filename="scripts/AnimatedLivestockTrailer.lua"/>
+	</specializations>
+	
+    <extraSourceFiles>
+        <sourceFile filename="src/AnimalsLoader.lua"/>
+		<sourceFile filename="scripts/PlayerLivestockDriver.lua" />
+		<sourceFile filename="scripts/ExtendedLoadingStation.lua"/>
+		<sourceFile filename="scripts/AnimatedPartAnimation.lua"/>
+        <sourceFile filename="src/AnimalFoodLoader.lua"/>
+        <sourceFile filename="src/FillTypeLoader.lua"/>
+        <sourceFile filename="src/RabbitReproduction.lua"/>
+        <sourceFile filename="src/OtherAnimalsReproduction.lua"/>
+    </extraSourceFiles>
+    
+    <storeItems>
+        <storeItem xmlFilename="rabbitHutch/rabbitHutch.xml" />
+        <storeItem xmlFilename="transport/oldAnimalTrailer.xml" />
+        <storeItem xmlFilename="animalSack/animalSack.xml" />
+        <storeItem xmlFilename="objects/pallets/chickBox/chickBox.xml" />
+        <storeItem xmlFilename="placeables/productionPoints/eggIncubator/eggIncubator.xml" />
+    </storeItems>
+</modDesc>

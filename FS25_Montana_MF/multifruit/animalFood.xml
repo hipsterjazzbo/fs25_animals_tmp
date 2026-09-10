@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<animalFood>
+    <animals>
+        <animal animalType="COW" consumptionType="SERIAL">
+            <foodGroup title="$l10n_fillTypeGroup_TMR" productionWeight="1.00" fillTypes="FORAGE COWFOOD"/>
+            <foodGroup title="$l10n_fillTypeGroup_hays" productionWeight="0.60" fillTypes="GRASS_FERMENTED DRYGRASS_WINDROW DRYALFALFA_WINDROW DRYCLOVER_WINDROW"/>
+            <foodGroup title="$l10n_fillTypeGroup_silage" productionWeight="0.80" fillTypes="CROP_FERMENTED SILAGE ALFALFA_FERMENTED CLOVER_FERMENTED"/>
+            <foodGroup title="$l10n_fillTypeGroup_grassa" productionWeight="0.40" fillTypes="GRASS_WINDROW CLOVER_WINDROW ALFALFA_WINDROW"/>
+            <foodGroup title="$l10n_fillTypeGroup_moisture" productionWeight="0.30" fillTypes="MINT POTATO_CUT TARO_CUT SUGARBEET_CUT CARROT_CUT PARSNIP_CUT BEETROOT_CUT MOLASSES"/>  
+        </animal>
+
+        <animal animalType="SHEEP" consumptionType="PARALLEL">
+            <foodGroup title="$l10n_fillTypeGroup_grassHay" productionWeight="0.70" eatWeight="0.60" fillTypes="GRASS_WINDROW DRYGRASS_WINDROW DRYALFALFA_WINDROW DRYCLOVER_WINDROW HAY_PELLETS"/>
+            <foodGroup title="$l10n_fillTypeGroup_moisture" productionWeight="0.30" eatWeight="0.40" fillTypes="MINT GRASS_FERMENTED CLOVER_WINDROW ALFALFA_WINDROW TARO_CUT POTATO_CUT SUGARBEET_CUT CARROT_CUT PARSNIP_CUT BEETROOT_CUT MOLASSES"/>  
+        </animal>
+
+        <animal animalType="PIG" consumptionType="PARALLEL">
+	    <foodGroup title="$l10n_fillTypeGroup_pigForage" productionWeight="1.00" eatWeight="0.75" fillTypes="FORAGE PUMPKIN PIGFOOD CCM APPLE APRICOT CHERRY PEAR PEACH PLUM QUINCE"/>
+            <foodGroup title="$l10n_fillTypeGroup_base" productionWeight="0.40" eatWeight="0.50" fillTypes="MAIZE SORGHUM MILLET CCMRAW"/>
+            <foodGroup title="$l10n_fillTypeGroup_grain" productionWeight="0.25" eatWeight="0.25" fillTypes="WHEAT BARLEY RYE BUCKWHEAT CRACKEDCORN SPELT TRITICALE"/>
+            <foodGroup title="$l10n_fillTypeGroup_protein" productionWeight="0.20" eatWeight="0.20" fillTypes="SOYBEAN DRYPEAS BEANS CANOLA SUNFLOWER LENTILS CHICKPEAS LINSEED POPPY SESAME"/>
+            <foodGroup title="$l10n_fillTypeGroup_earth" productionWeight="0.15" eatWeight="0.05" fillTypes="MINT TARO TARO_CUT POTATO SUGARBEET CARROT PARSNIP BEETROOT POTATO_CUT SUGARBEET_CUT CARROT_CUT PARSNIP_CUT BEETROOT_CUT MOLASSES"/>
+        </animal>
+
+        <animal animalType="HORSE" consumptionType="PARALLEL">
+            <foodGroup title="$l10n_fillTypeGroup_grain" productionWeight="0.50" eatWeight="0.25" fillTypes="OAT SORGHUM MILLET DRYPEAS"/>
+            <foodGroup title="$l10n_fillTypeGroup_hay" productionWeight="0.30" eatWeight="0.55" fillTypes="DRYGRASS_WINDROW DRYALFALFA_WINDROW DRYCLOVER_WINDROW HAY_PELLETS"/>
+            <foodGroup title="$l10n_fillTypeGroup_moisture" productionWeight="0.20" fillTypes="MINT GRASS_FERMENTED CLOVER_WINDROW ALFALFA_WINDROW TARO_CUT POTATO_CUT SUGARBEET_CUT CARROT_CUT PARSNIP_CUT BEETROOT_CUT MOLASSES"/>  
+        </animal>
+
+        <animal animalType="CHICKEN" consumptionType="PARALLEL">
+            <foodGroup title="$l10n_fillTypeGroup_grain" productionWeight="0.70" eatWeight="0.80" fillTypes="CRACKEDCORN BUCKWHEAT WHEAT BARLEY SPELT TRITICALE MILLET SORGHUM RYE PEA GREENBEAN LENTILS LINSEED POPPY SESAME CANOLA SUNFLOWER"/>        
+            <foodGroup title="$l10n_fillTypeGroup_moisture" productionWeight="0.30" eatWeight="0.20" fillTypes="MINT TARO_CUT POTATO_CUT SUGARBEET_CUT CARROT_CUT PARSNIP_CUT BEETROOT_CUT MOLASSES"/>  
+		</animal>
+
+		<animal animalType="RABBIT" consumptionType="PARALLEL">
+            <foodGroup title="$l10n_fillTypeGroup_clover"             productionWeight="0.70" eatWeight="0.60" fillTypes="CLOVER_WINDROW HAY_PELLETS" />
+            <foodGroup title="$l10n_fillTypeGroup_fruitVegetables"  productionWeight="0.30" eatWeight="0.40" fillTypes="MINT LETTUCE CARROT PARSNIP APPLE CABBAGE REDCABBAGE CARROT_CUT PARSNIP_CUT TARO_CUT" />
+        </animal>
+		<animal animalType="GOOSE" consumptionType="PARALLEL">
+            <foodGroup title="$l10n_fillTypeGroup_grain" productionWeight="0.70" eatWeight="0.80" fillTypes="CRACKEDCORN BUCKWHEAT WHEAT BARLEY MILLET SORGHUM RYE PEA GREENBEAN LENTILS LINSEED POPPY SESAME CANOLA SUNFLOWER"/>        
+            <foodGroup title="$l10n_fillTypeGroup_moisture" productionWeight="0.30" eatWeight="0.20" fillTypes="MINT TARO_CUT POTATO_CUT SUGARBEET_CUT CARROT_CUT PARSNIP_CUT BEETROOT_CUT MOLASSES"/>  
+		</animal>
+
+	
+	<mixtures>
+        <mixture animalType="PIG" fillType="PIGFOOD">
+            <ingredient fillTypes="MAIZE MAIZE2 SORGHUM MILLET" weight="0.4"/>
+            <ingredient fillTypes="CRACKEDCORN WHEAT BARLEY SPELT TRITICALE RYE BUCKWHEAT" weight="0.25"/>
+            <ingredient fillTypes="SOYBEAN DRYPEAS BEANS CANOLA SUNFLOWER LENTILS CHICKPEAS LINSEED POPPY SESAME" weight="0.2"/>
+            <ingredient fillTypes="TARO POTATO SUGARBEET CARROT PARSNIP BEETROOT POTATO_CUT SUGARBEET_CUT CARROT_CUT PARSNIP_CUT TARO_CUT BEETROOT_CUT MOLASSES" weight="0.15"/>
+        </mixture>
+    </mixtures>
+	
+    </animals>
+	
+	<recipes>
+        <recipe fillType="FORAGE">
+            <ingredient name="dryGrass"     title="$l10n_fillType_dryGrass"     fillTypes="DRYGRASS_WINDROW DRYCLOVER_WINDROW DRYALFALFA_WINDROW HAY_PELLETS"   minPercentage="20" maxPercentage="70"/>
+            <ingredient name="silage"       title="$l10n_fillType_silage"       fillTypes="CROP_FERMENTED GRASS_FERMENTED SILAGE ALFALFA_FERMENTED CLOVER_FERMENTED"               minPercentage="20" maxPercentage="70"/>
+            <ingredient name="straw"        title="$l10n_fillType_straw"        fillTypes="STRAW BEANSTRAW CORN_STALKS MISCANTHUS_CUT STRAW_PELLETS"                             minPercentage="0" maxPercentage="30"/>
+            <ingredient name="mineralFeed"  title="$l10n_fillType_mineralFeed1"  fillTypes="MINERAL_FEED MOLASSES"            minPercentage="0" maxPercentage="20"/>
+        </recipe>
+	<recipe fillType="PIGFOOD">
+		<ingredient name="corn" title="$l10n_fillTypeGroup_base" fillTypes="MAIZE MAIZE2" minPercentage="0" maxPercentage="65"/>
+		<ingredient name="sorghum" title="$l10n_fillTypeGroup_base" fillTypes="SORGHUM MILLET" minPercentage="0" maxPercentage="60"/>
+		<ingredient name="wheat" title="$l10n_fillTypeGroup_grain" fillTypes="CRACKEDCORN WHEAT BARLEY SPELT TRITICALE RYE BUCKWHEAT" minPercentage="0" maxPercentage="50"/>
+		<ingredient name="soybean" title="$l10n_fillTypeGroup_protein" fillTypes="SOYBEAN BEANS CANOLA SUNFLOWER LENTILS CHICKPEAS LINSEED POPPY SESAME" minPercentage="10" maxPercentage="55"/>
+		<ingredient name="potato" title="$l10n_fillTypeGroup_earth" fillTypes="TARO POTATO SUGARBEET CARROT PARSNIP BEETROOT TARO_CUT POTATO_CUT SUGARBEET_CUT CARROT_CUT PARSNIP_CUT BEETROOT_CUT MOLASSES" minPercentage="0" maxPercentage="20"/>
+		<ingredient name="mineralFeed" title="$l10n_fillType_mineralFeed" fillTypes="MINERAL_FEED DRYPEAS" minPercentage="3" maxPercentage="10"/>
+	</recipe>
+    </recipes>
+</animalFood>

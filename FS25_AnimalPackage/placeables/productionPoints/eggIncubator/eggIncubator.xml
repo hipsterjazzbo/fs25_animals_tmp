@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="mapProductionPointExtended" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+	<storeData>
+		<name>$l10n_productionPoint_eggIncubator</name>
+		<image>hud/icon_eggIncubator.dds</image>
+		<canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+        <price>1</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+		<species>placeable</species>
+		<category>placeableMisc</category>
+		<brush>
+			<type>placeable</type>
+			<category>buildings</category>
+			<tab>tools</tab>
+		</brush>
+	</storeData>
+
+	<base>
+		<filename>placeables/productionPoints/eggIncubator/eggIncubator.i3d</filename>
+		<canBeRenamed>true</canBeRenamed>
+		<canBeDeleted>true</canBeDeleted>
+	</base>
+	
+	<placement useRandomYRotation="false" useManualYRotation="true" placementRotationSnapAngle="15" placementPositionSnapSize="0.5" placementPositionSnapOffset="0">
+        <!-- Mivel a modellben jelenleg nincsenek testArea és clearArea node-ok, ideiglenesen üresen hagyjuk a tereprendezést -->
+	</placement>
+	
+	<hotspots/>
+       
+	<animatedObjects>
+		<animatedObject saveId="incubatorDoors" >
+            <animation duration="1.0">
+                <part node="doorLeft">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 -105 0"/>
+                </part>
+				
+				<part node="doorRight">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 100 0"/>
+                </part>
+				
+				<part node="unloading">
+                    <keyFrame time="0.0" translation="0 -100 0"/>
+                    <keyFrame time="1.0" translation="0 0 0"/>
+                </part>
+				
+				<part node="loading">
+                    <keyFrame time="0.0" translation="0 -100 0"/>
+                    <keyFrame time="1.0" translation="0 0 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="eggIncubatorDoors_trigger" posAction="INTERACT" posText="Open" negText="Close" />
+			
+			<sounds>
+                <moving template="fenceMetalLoop"   linkNode="eggIncubatorDoors_trigger" pitchScale="0.7" volumeScale="0.2"/>
+                <posEnd template="fenceMetalOpen"   linkNode="eggIncubatorDoors_trigger" pitchScale="0.7" volumeScale="0.1"/>
+                <negEnd template="fenceMetalClose"  linkNode="eggIncubatorDoors_trigger" pitchScale="0.7" volumeScale="0.1"/>
+            </sounds>
+        </animatedObject>
+    </animatedObjects>
+
+	<infoTrigger triggerNode="infoTrigger"/>
+	
+	<triggerMarkers/>
+	
+	<extendedProductionPoint>
+		<operatingConditions alwaysActive="false"/>
+	
+        <productions sharedThroughputCapacity="false">
+            <production autoOff="false" id="chicks" name="$l10n_productionName_eggIncubator" cyclesPerHour="10" costsPerActiveHour="5" >
+                <inputs>
+                    <input fillType="EGG" amount="1.0" >
+						<visibilityNodeGroups>
+                            <visibilityNodeGroup node="visibilityNodes_input"/>
+                        </visibilityNodeGroups>
+					</input>
+                </inputs>
+                
+				<outputs>
+                    <output fillType="CHICKS" amount="1.0" >
+						<visibilityNodeGroups>
+                            <!-- <visibilityNodeGroup node="visibilityNodes_output"/> -->
+                            <visibilityNodeGroup node="visibilityNodes_outputAnimated"/>
+                        </visibilityNodeGroups>
+						<displays>
+							<display node="hud_temperatur" type="text" alignment="left" color="1 0 0" emissiveScale="0.8" fillLevelColorType="NONE" font="digit" mask="37.5 C" scaleX="1" scaleY="1" size="0.043" upperCase="false"/>
+                        </displays>
+					</output>	
+                </outputs>
+				
+				<operatingObjectChanges>
+                    <objectChange node="incubatorLight1_illum" visibilityActive="true" visibilityInactive="false"/>
+                    <objectChange node="incubatorLight2_illum" visibilityActive="true" visibilityInactive="false"/>
+                    <objectChange node="incubatorLight3_illum" visibilityActive="true" visibilityInactive="false"/>
+                    <objectChange node="hud_temperatur" 	   visibilityActive="true" visibilityInactive="false"/>
+                </operatingObjectChanges>
+				
+				<operatingSounds>
+					<work linkNode="soundNode" file="sound/objElectricGenerator_01.wav" innerRadius="7" outerRadius="10" loops="0" fadeIn="0.1" fadeOut="0.1" volumeScale="0.7">
+						<volume indoor="0.35" outdoor="0.85" />
+						<pitch indoor="1" outdoor="1"/>
+						<lowpassGain indoor="0.5" outdoor="1"/>
+					</work>
+				</operatingSounds>
+				
+				<playerTrigger menuAction="INTERACT" node="playerTrigger"/>
+            </production>
+        </productions>
+		
+		<animationNodes>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed001" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed002" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_restSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed003" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_sleepSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed004" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed005" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_sleepSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed006" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed007" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_sleepSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed008" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_restSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed009" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed010" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed011" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_sleepSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed012" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed013" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_sleepSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed014" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed015" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_restSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed016" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_sleepSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed017" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed018" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_restSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed019" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_sleepSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed020" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_restSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed021" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed022" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_sleepSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed023" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed024" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_restSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed025" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed026" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_sleepSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed027" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed028" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_restSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed029" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_sleepSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed030" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed031" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_sleepSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed032" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed033" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_restSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed034" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed035" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_sleepSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed036" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_sleepSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed037" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed038" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_sleepSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed039" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_restSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed040" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed041" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_sleepSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed042" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed043" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed044" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_restSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed045" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed046" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed047" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_sleepSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed048" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed049" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_sleepSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed050" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_restSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed051" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed052" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_sleepSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed053" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed054" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_restSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed055" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed056" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_restSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed057" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed058" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_sleepSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed059" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed060" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_sleepSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed061" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_restSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed062" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed063" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_sleepSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed064" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed065" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_sleepSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed066" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed067" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed068" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_sleepSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed069" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed070" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_restSource" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed071" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_idle01Source" looping="true"/>
+            </animationNode>
+			<animationNode class="AnimatedPartAnimation" >
+                <clip node="chick_posed072" characterFilename="animals/domesticated/chicken/chick/fowlChick.i3d" animationFilename="animals/domesticated/chicken/chick/animations/chickAdultAnimations.i3d" skeletonNode="0|0" name="s_w_sleepSource" looping="true"/>
+            </animationNode>
+		</animationNodes>
+		
+		<storage isExtension="false" fillLevelSyncThreshold="5">
+            <capacity fillType="EGG"  	capacity="72" />
+            <capacity fillType="CHICKS"  capacity="72" />
+        </storage>
+
+        <sellingStation node="sellingStation" hideFromPricesMenu="true" supportsExtension="false" allowMissions="false" appearsOnStats="false">
+			<palletTrigger triggerNode="palletTrigger" fillTypes="EGG" />
+        </sellingStation>
+		
+		<extendedLoadingStation supportsExtension="false" storageRadius="2">
+            <loadTrigger triggerNode="loadingTrigger" fillLitersPerSecond="1" fillTypes="CHICKS" autoStart="false">
+				<playerTrigger node="loadingTriggerPlayer" externalActivation="true"/> 
+			</loadTrigger>
+        </extendedLoadingStation>
+	</extendedProductionPoint>
+	
+	<i3dMappings>
+		<i3dMapping id="eggIncubator" node="0>" />
+		<i3dMapping id="doorLeft" node="0>0|0|0" />
+		<i3dMapping id="doorRight" node="0>0|0|1" />
+		<i3dMapping id="eggIncubatorDoors_trigger" node="0>0|0|2" />
+		<i3dMapping id="unloading" node="0>1" />
+		<i3dMapping id="palletTrigger" node="0>1|0" />
+		<i3dMapping id="loading" node="0>2" />
+		<i3dMapping id="loadingStation" node="0>2|0" />
+		<i3dMapping id="loadingTrigger" node="0>2|0|0" />
+		<i3dMapping id="loadingTriggerPlayer" node="0>2|0|1" />
+		<i3dMapping id="storage" node="0>2|1" />
+		<i3dMapping id="productionPoint" node="0>3" />
+		<i3dMapping id="playerTrigger" node="0>3|0" />
+		<i3dMapping id="hud_temperatur" node="0>3|1|0|1" />
+		<i3dMapping id="visibilityNodes_input" node="0>3|2" />
+		<i3dMapping id="visibilityNodes_output" node="0>3|3" />
+		<i3dMapping id="soundNode" node="0>3|4" />
+		<!-- <i3dMapping id="incubatorLight1_illum" node="0>3|5|0|0" />
+		<i3dMapping id="incubatorLight2_illum" node="0>3|5|1|0" />
+		<i3dMapping id="incubatorLight3_illum" node="0>3|5|2|0" /> -->
+		<i3dMapping id="incubatorLight1_illum" node="0>3|5|3|1" />
+		<i3dMapping id="incubatorLight2_illum" node="0>3|5|4|1" />
+		<i3dMapping id="incubatorLight3_illum" node="0>3|5|5|1" />
+
+		<i3dMapping id="infoTrigger" node="0>4" />
+		
+		<i3dMapping id="visibilityNodes_outputAnimated" node="0>3|6" />
+		<i3dMapping id="chick_posed001" node="0>3|6|0" />
+		<i3dMapping id="chick_posed002" node="0>3|6|1" />
+		<i3dMapping id="chick_posed003" node="0>3|6|2" />
+		<i3dMapping id="chick_posed004" node="0>3|6|3" />
+		<i3dMapping id="chick_posed005" node="0>3|6|4" />
+		<i3dMapping id="chick_posed006" node="0>3|6|5" />
+		<i3dMapping id="chick_posed007" node="0>3|6|6" />
+		<i3dMapping id="chick_posed008" node="0>3|6|7" />
+		<i3dMapping id="chick_posed009" node="0>3|6|8" />
+		<i3dMapping id="chick_posed010" node="0>3|6|9" />
+		<i3dMapping id="chick_posed011" node="0>3|6|10" />
+		<i3dMapping id="chick_posed012" node="0>3|6|11" />
+		<i3dMapping id="chick_posed013" node="0>3|6|12" />
+		<i3dMapping id="chick_posed014" node="0>3|6|13" />
+		<i3dMapping id="chick_posed015" node="0>3|6|14" />
+		<i3dMapping id="chick_posed016" node="0>3|6|15" />
+		<i3dMapping id="chick_posed017" node="0>3|6|16" />
+		<i3dMapping id="chick_posed018" node="0>3|6|17" />
+		<i3dMapping id="chick_posed019" node="0>3|6|18" />
+		<i3dMapping id="chick_posed020" node="0>3|6|19" />
+		<i3dMapping id="chick_posed021" node="0>3|6|20" />
+		<i3dMapping id="chick_posed022" node="0>3|6|21" />
+		<i3dMapping id="chick_posed023" node="0>3|6|22" />
+		<i3dMapping id="chick_posed024" node="0>3|6|23" />
+		<i3dMapping id="chick_posed025" node="0>3|6|24" />
+		<i3dMapping id="chick_posed026" node="0>3|6|25" />
+		<i3dMapping id="chick_posed027" node="0>3|6|26" />
+		<i3dMapping id="chick_posed028" node="0>3|6|27" />
+		<i3dMapping id="chick_posed029" node="0>3|6|28" />
+		<i3dMapping id="chick_posed030" node="0>3|6|29" />
+		<i3dMapping id="chick_posed031" node="0>3|6|30" />
+		<i3dMapping id="chick_posed032" node="0>3|6|31" />
+		<i3dMapping id="chick_posed033" node="0>3|6|32" />
+		<i3dMapping id="chick_posed034" node="0>3|6|33" />
+		<i3dMapping id="chick_posed035" node="0>3|6|34" />
+		<i3dMapping id="chick_posed036" node="0>3|6|35" />
+		<i3dMapping id="chick_posed037" node="0>3|6|36" />
+		<i3dMapping id="chick_posed038" node="0>3|6|37" />
+		<i3dMapping id="chick_posed039" node="0>3|6|38" />
+		<i3dMapping id="chick_posed040" node="0>3|6|39" />
+		<i3dMapping id="chick_posed041" node="0>3|6|40" />
+		<i3dMapping id="chick_posed042" node="0>3|6|41" />
+		<i3dMapping id="chick_posed043" node="0>3|6|42" />
+		<i3dMapping id="chick_posed044" node="0>3|6|43" />
+		<i3dMapping id="chick_posed045" node="0>3|6|44" />
+		<i3dMapping id="chick_posed046" node="0>3|6|45" />
+		<i3dMapping id="chick_posed047" node="0>3|6|46" />
+		<i3dMapping id="chick_posed048" node="0>3|6|47" />
+		<i3dMapping id="chick_posed049" node="0>3|6|48" />
+		<i3dMapping id="chick_posed050" node="0>3|6|49" />
+		<i3dMapping id="chick_posed051" node="0>3|6|50" />
+		<i3dMapping id="chick_posed052" node="0>3|6|51" />
+		<i3dMapping id="chick_posed053" node="0>3|6|52" />
+		<i3dMapping id="chick_posed054" node="0>3|6|53" />
+		<i3dMapping id="chick_posed055" node="0>3|6|54" />
+		<i3dMapping id="chick_posed056" node="0>3|6|55" />
+		<i3dMapping id="chick_posed057" node="0>3|6|56" />
+		<i3dMapping id="chick_posed058" node="0>3|6|57" />
+		<i3dMapping id="chick_posed059" node="0>3|6|58" />
+		<i3dMapping id="chick_posed060" node="0>3|6|59" />
+		<i3dMapping id="chick_posed061" node="0>3|6|60" />
+		<i3dMapping id="chick_posed062" node="0>3|6|61" />
+		<i3dMapping id="chick_posed063" node="0>3|6|62" />
+		<i3dMapping id="chick_posed064" node="0>3|6|63" />
+		<i3dMapping id="chick_posed065" node="0>3|6|64" />
+		<i3dMapping id="chick_posed066" node="0>3|6|65" />
+		<i3dMapping id="chick_posed067" node="0>3|6|66" />
+		<i3dMapping id="chick_posed068" node="0>3|6|67" />
+		<i3dMapping id="chick_posed069" node="0>3|6|68" />
+		<i3dMapping id="chick_posed070" node="0>3|6|69" />
+		<i3dMapping id="chick_posed071" node="0>3|6|70" />
+		<i3dMapping id="chick_posed072" node="0>3|6|71" />
+	</i3dMappings>
+</placeable>

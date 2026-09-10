@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_spinnery</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>multifruit/placeables/productionPoints/spinnery/store_spinnery.png</image>
+        <price>200000</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>JINKOU</brand>
+        <species>PLACEABLE</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+        <vertexBufferMemoryUsage>471808</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>121088</indexBufferMemoryUsage>
+        <textureMemoryUsage>3080192</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>multifruit/placeables/productionPoints/spinnery/spinnery.i3d</filename>
+	<boughtWithFarmland>false</boughtWithFarmland>
+	<canBeDeleted>true</canBeDeleted>
+	<canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testAreaStart01" endNode="testAreaEnd01" />
+            <testArea startNode="testAreaStart02" endNode="testAreaEnd02" />
+        </testAreas>
+        <sounds>
+            <place template="largeImp" pitchScale="1.6"/>
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01"/>
+        <clearArea startNode="clearAreaStart02" widthNode="clearAreaWidth02" heightNode="clearAreaHeight02"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+        <levelAreas>
+            <levelArea startNode="levelAreaStart01" widthNode="levelAreaWidth01" heightNode="levelAreaHeight01" groundType="asphalt"/>
+            <levelArea startNode="levelAreaStart02" widthNode="levelAreaWidth02" heightNode="levelAreaHeight02" groundType="asphalt"/>
+        </levelAreas>
+        <paintAreas>
+            <paintArea startNode="paintAreaStart01" widthNode="paintAreaWidth01" heightNode="paintAreaHeight01" groundType="asphalt"/>
+            <paintArea startNode="paintAreaStart02" widthNode="paintAreaWidth02" heightNode="paintAreaHeight02" groundType="asphalt"/>
+        </paintAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart01" widthNode="indoorAreaWidth01" heightNode="indoorAreaHeight01" />
+        <indoorArea startNode="indoorAreaStart02" widthNode="indoorAreaWidth02" heightNode="indoorAreaHeight02" />
+        <indoorArea startNode="indoorAreaStart03" widthNode="indoorAreaWidth03" heightNode="indoorAreaHeight03" />
+        <indoorArea startNode="indoorAreaStart04" widthNode="indoorAreaWidth04" heightNode="indoorAreaHeight04" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="unloadTriggerMarker" teleportNode="playerTriggerMarker" />
+    </hotspots>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart filename="$data/effects/chimneySmoke/smokeTrailSubUV.i3d" node="0" linkNode="smokeBig01" shaderParameterName="colorAlpha" shaderParameter="0.5 0.5 0.5 0.5"/>
+        <dynamicallyLoadedPart filename="$data/effects/chimneySmoke/smokeTrailSubUV.i3d" node="0" linkNode="smokeBig02" shaderParameterName="colorAlpha" shaderParameter="0.5 0.5 0.5 0.5"/>
+        <dynamicallyLoadedPart filename="$data/effects/chimneySmoke/smokeTrailSubUV.i3d" node="0" linkNode="smokeBig03" shaderParameterName="colorAlpha" shaderParameter="0.5 0.5 0.5 0.5"/>
+    </dynamicallyLoadedParts>
+
+    <triggerMarkers>
+        <triggerMarker node="warningStripes01"/>
+        <triggerMarker node="warningStripes02"/>
+        <triggerMarker node="playerTriggerMarker" adjustToGround="true" filename="$data/shared/assets/marker/markerIconWrench.i3d"/>
+        <triggerMarker node="unloadTriggerMarker" adjustToGround="true" filename="$data/shared/assets/marker/markerIconUnload.i3d"/>
+    </triggerMarkers>
+
+    <lights>
+        <group weatherRequiredFlags="NIGHT" />
+
+        <lightShape node="interior" groupIndex="1"/>
+
+        <realLights>
+            <low>
+                <light node="realLights" groupIndex="1"/>
+            </low>
+            <high>
+                <light node="realLights" groupIndex="1"/>
+            </high>
+        </realLights>
+    </lights>
+
+    <productionPoint>
+        <productions>
+            <production id="fabric_wool" name="%s (%s)" params="$l10n_fillType_fabric|$l10n_fillType_wool" cyclesPerHour="60" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="WOOL" amount="6" />
+                </inputs>
+                <outputs>
+                    <output fillType="FABRIC" amount="2" />
+                </outputs>
+            </production>
+            <production id="fabric_cotton" name="%s (%s)" params="$l10n_fillType_fabric|$l10n_fillType_cotton" cyclesPerHour="100" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="COTTON" amount="12" />
+                </inputs>
+                <outputs>
+                    <output fillType="FABRIC" amount="4" />
+                </outputs>
+            </production>
+            <production id="fabric_hempFiber" name="%s (%s)" params="$l10n_fillType_fabric|$l10n_fillType_hempFiber" cyclesPerHour="100" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="HEMP_FIBER" amount="12" />
+                </inputs>
+                <outputs>
+                    <output fillType="FABRIC" amount="4" />
+                </outputs>
+            </production>
+            <production id="fabric_flaxFiber" name="%s (%s)" params="$l10n_fillType_fabric|$l10n_fillType_flaxFiber" cyclesPerHour="100" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="FLAX_FIBER" amount="12" />
+                </inputs>
+                <outputs>
+                    <output fillType="FABRIC" amount="4" />
+                </outputs>
+            </production>
+	   <production id="rope1" name="%s (%s)" params="$l10n_fillType_rope|$l10n_fillType_wool" cyclesPerHour="410" costsPerActiveHour="1.25">
+                <inputs>
+                    <input fillType="WOOL" amount="20" />
+                </inputs>
+                <outputs>
+                    <output fillType="ROPE" amount="4" />
+                </outputs>
+            </production>
+
+            <production id="rope2" name="%s (%s)" params="$l10n_fillType_rope|$l10n_fillType_cotton" cyclesPerHour="8" costsPerActiveHour="1">
+                <inputs>
+                    <input fillType="COTTON" amount="150" />
+                </inputs>
+                <outputs>
+                    <output fillType="ROPE" amount="40" />
+                </outputs>
+            </production>
+	    <production id="rope3" name="%s (%s)" params="$l10n_fillType_rope|$l10n_fillType_flaxFiber" cyclesPerHour="8" costsPerActiveHour="1">
+                <inputs>
+                    <input fillType="FLAX_FIBER" amount="140" />
+                </inputs>
+                <outputs>
+                    <output fillType="ROPE" amount="45" />
+                </outputs>
+            </production>
+
+            <production id="rope4" name="%s (%s)" params="$l10n_fillType_rope|$l10n_fillType_hempFiber" cyclesPerHour="8" costsPerActiveHour="1">
+                <inputs>
+                    <input fillType="HEMP_FIBER" amount="140" />
+                </inputs>
+                <outputs>
+                    <output fillType="ROPE" amount="40" />
+                </outputs>
+            </production>
+	</productions>
+
+        <storage isExtension="false" fillLevelSyncThreshold="50">
+            <capacity fillType="WOOL"   		capacity="95000" />
+            <capacity fillType="COTTON" 		capacity="900000" />
+            <capacity fillType="HEMP_FIBER" 		capacity="900000" />
+            <capacity fillType="FLAX_FIBER" 		capacity="900000" />
+            <capacity fillType="FABRIC" 		capacity="90000" />
+            <capacity fillType="ROPE" 			capacity="90000" />
+        </storage>
+
+        <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="false">
+            <palletTrigger triggerNode="palletTrigger" aiNode="unloadTriggerAINode" fillTypes="WOOL COTTON" />
+            <baleTrigger triggerNode="baleTrigger" deleteLitersPerSecond="3000" aiNode="unloadTriggerAINode" fillTypes="WOOL COTTON HEMP_FIBER FLAX_FIBER" />
+        </sellingStation>
+
+        <palletSpawner>
+            <spawnPlaces>
+                <spawnPlace startNode="palletAreaStart01" endNode="palletAreaEnd01"/>
+                <spawnPlace startNode="palletAreaStart02" endNode="palletAreaEnd02"/>
+            </spawnPlaces>
+        </palletSpawner>
+
+        <playerTrigger node="playerTrigger" />
+        <sounds>
+            <idle   template="placeableSmallIdleGeneric" linkNode="0>" pitchScale="1.0"/>
+            <active template="placeableSmallWorkGeneric" linkNode="0>" pitchScale="1.0"/>
+        </sounds>
+    </productionPoint>
+
+    <i3dMappings>
+        <i3dMapping id="ropeMakerUS" node="0>" />
+        <i3dMapping id="clearAreaStart01" node="0>0|0" />
+        <i3dMapping id="clearAreaWidth01" node="0>0|0|0" />
+        <i3dMapping id="clearAreaHeight01" node="0>0|0|1" />
+        <i3dMapping id="clearAreaStart02" node="0>0|1" />
+        <i3dMapping id="clearAreaWidth02" node="0>0|1|0" />
+        <i3dMapping id="clearAreaHeight02" node="0>0|1|1" />
+        <i3dMapping id="levelAreaStart01" node="0>1|0" />
+        <i3dMapping id="levelAreaWidth01" node="0>1|0|0" />
+        <i3dMapping id="levelAreaHeight01" node="0>1|0|1" />
+        <i3dMapping id="levelAreaStart02" node="0>1|1" />
+        <i3dMapping id="levelAreaWidth02" node="0>1|1|0" />
+        <i3dMapping id="levelAreaHeight02" node="0>1|1|1" />
+        <i3dMapping id="paintAreaStart01" node="0>2|0" />
+        <i3dMapping id="paintAreaWidth01" node="0>2|0|0" />
+        <i3dMapping id="paintAreaHeight01" node="0>2|0|1" />
+        <i3dMapping id="paintAreaStart02" node="0>2|1" />
+        <i3dMapping id="paintAreaWidth02" node="0>2|1|0" />
+        <i3dMapping id="paintAreaHeight02" node="0>2|1|1" />
+        <i3dMapping id="indoorAreaStart01" node="0>3|0" />
+        <i3dMapping id="indoorAreaWidth01" node="0>3|0|0" />
+        <i3dMapping id="indoorAreaHeight01" node="0>3|0|1" />
+        <i3dMapping id="indoorAreaStart02" node="0>3|1" />
+        <i3dMapping id="indoorAreaWidth02" node="0>3|1|0" />
+        <i3dMapping id="indoorAreaHeight02" node="0>3|1|1" />
+        <i3dMapping id="indoorAreaStart03" node="0>3|2" />
+        <i3dMapping id="indoorAreaWidth03" node="0>3|2|0" />
+        <i3dMapping id="indoorAreaHeight03" node="0>3|2|1" />
+        <i3dMapping id="indoorAreaStart04" node="0>3|3" />
+        <i3dMapping id="indoorAreaWidth04" node="0>3|3|0" />
+        <i3dMapping id="indoorAreaHeight04" node="0>3|3|1" />
+        <i3dMapping id="testAreaStart01" node="0>4|0" />
+        <i3dMapping id="testAreaEnd01" node="0>4|0|0" />
+        <i3dMapping id="testAreaStart02" node="0>4|1" />
+        <i3dMapping id="testAreaEnd02" node="0>4|1|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>5|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>5|0|0" />
+        <i3dMapping id="interior" node="0>6|0" />
+        <i3dMapping id="realLights" node="0>6|1" />
+        <i3dMapping id="infoTrigger" node="0>7" />
+        <i3dMapping id="sellingStation" node="0>8" />
+        <i3dMapping id="palletTrigger" node="0>8|0" />
+        <i3dMapping id="unloadTriggerMarker" node="0>8|1" />
+        <i3dMapping id="unloadTriggerAINode" node="0>8|2" />
+        <i3dMapping id="warningStripes02" node="0>8|3" />
+        <i3dMapping id="baleTrigger" node="0>8|4" />
+        <i3dMapping id="playerTrigger" node="0>9|0" />
+        <i3dMapping id="playerTriggerMarker" node="0>9|1" />
+        <i3dMapping id="palletSpawner" node="0>10" />
+        <i3dMapping id="palletAreaStart01" node="0>10|0" />
+        <i3dMapping id="palletAreaEnd01" node="0>10|0|0" />
+        <i3dMapping id="palletAreaStart02" node="0>10|1" />
+        <i3dMapping id="palletAreaEnd02" node="0>10|1|0" />
+        <i3dMapping id="warningStripes01" node="0>10|2" />
+        <i3dMapping id="smokeBig01" node="0>11|1|0" />
+        <i3dMapping id="smokeBig02" node="0>11|1|1" />
+        <i3dMapping id="smokeBig03" node="0>11|1|2" />
+    </i3dMappings>
+</placeable>

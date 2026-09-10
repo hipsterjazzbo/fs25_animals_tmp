@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="dairyUS.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/shared/warningStripes_diffuse.png"/>
+    <File fileId="3" filename="$data/shared/warningStripes_normal.png"/>
+    <File fileId="4" filename="$data/shared/warningStripes_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="warningStripes_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="dairyUS.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="dairy" lockedgroup="true" static="true" nodeId="14">
+      <TransformGroup name="clearAreas" nodeId="15"/>
+      <TransformGroup name="levelAreas" nodeId="16"/>
+      <TransformGroup name="paintAreas" nodeId="17"/>
+      <TransformGroup name="indoorAreas" nodeId="18"/>
+      <TransformGroup name="testAreas" nodeId="19"/>
+      <TransformGroup name="tipOcclusionUpdateAreas" nodeId="20"/>
+      <TransformGroup name="lights" nodeId="21"/>
+      <Shape name="infoTrigger" translation="19.9752 0 5.60323" scale="3.77841 1 2.55468" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="22" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="sellingStation" translation="25.2911 0 25.9113" nodeId="23">
+        <Shape name="exactFillRootNode" translation="0 0.15 -6" shapeId="2" kinematic="true" compound="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="24" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="palletTrigger" translation="0 2 -6" shapeId="3" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x10000" nodeId="25" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <TransformGroup name="unloadTriggerMarker" translation="0 0 -6" nodeId="26"/>
+        <TransformGroup name="unloadTriggerAINode" translation="0 0 -6" rotation="0 90 0" nodeId="27"/>
+      </TransformGroup>
+      <TransformGroup name="warningStripes" nodeId="28">
+        <Shape name="warningStripes01" translation="25.2393 0 19.9296" shapeId="4" clipDistance="200" nodeId="29" castsShadows="true" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="6"/>
+        <Shape name="warningStripes02" translation="7.61462 0 3.62256" rotation="-0 90 0" shapeId="4" clipDistance="200" nodeId="30" castsShadows="true" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="6"/>
+      </TransformGroup>
+      <TransformGroup name="productionPoint" translation="35.7667 0.543564 -9.87701" nodeId="31">
+        <Shape name="playerTrigger" translation="-1 1 1" shapeId="5" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="32" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <TransformGroup name="playerTriggerMarker" translation="-1 0 1" nodeId="33"/>
+      </TransformGroup>
+      <TransformGroup name="palletSpawner" translation="1.41854 0 2.67894" nodeId="34">
+        <TransformGroup name="palletAreaStart01" translation="6.75 0.1 -1.99953" nodeId="35">
+          <TransformGroup name="palletAreaEnd01" translation="0 0 6" nodeId="36"/>
+        </TransformGroup>
+        <TransformGroup name="palletAreaStart02" translation="5.25 0.1 -2" nodeId="37">
+          <TransformGroup name="palletAreaEnd02" translation="0 0 6" nodeId="38"/>
+        </TransformGroup>
+        <Shape name="fillTrigger" translation="3.5 0 0" shapeId="6" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="39" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="visuals" nodeId="40"/>
+      <TransformGroup name="collisions" nodeId="41"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

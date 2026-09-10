@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <texts>
+        <!--New Shop Item Names & Functions-->
+        <text name="shopItem_Butcher" text="Butcher Shop"/>
+        <text name="shopItem_ButcherTable" text="Butcher's Table"/>
+        <text name="function_Butcher" text="In the butcher shop, cows, pigs, sheep/goat,horse and chickens can be processed into beef, pork, sheep/goat, chicken meat horse meat."/>
+        <!--New fillTypes-->
+        <text name="fillType_beef" text="Cattle" />
+		<text name="fillType_pork" text="Pigs" />
+		<text name="fillType_poultry" text="Poultry" />
+		<text name="fillType_horse" text="Horse" />
+		<text name="fillType_sheepGoat" text="Sheep/Goats" />
+        
+        <text name="fillType_Jambon" text="Pork" />			
+		<text name="fillType_Meat" text="Beef" />			
+		<text name="fillType_poultryMeat" text="Poultry Meat" />
+		<text name="fillType_horseMeat" text="Horse Meat" />
+		<text name="fillType_sheepGoatMeat" text="Sheep/Goat Meat" />
+        <!--New Pallets-->    
+        <text name="storeItem_MeatPallet" text="Beef pallet"/>
+        <text name="storeItem_JambonPallet" text="Pork jambon pallet"/>
+        <text name="storeItem_sheepMeatPallet" text="Sheep/Goat meat pallet"/>
+        <text name="storeItem_chickenMeatPallet" text="Chicken pallet"/>
+		 <text name="storeItem_horseMeatPallet" text="Horse pallet"/>
+		
+		<text name="message_unloadAnimalSuccess" text="Animals were successfully moved to %s!" />
+        <text name="message_unloadAnimalConfirmation" text="Do you want to move %d animals (%s) to the %s?" />
+        <text name="button_moveAnimal" text="Move to %s" />
+
+         <!-- Only required when a 'minimumAge' is set as part of the </animalInput> -->
+        <text name="message_animalTooYoung" text="This animal is too young." />
+
+        <!-- Only required when a 'maximumAge' is set as part of the </animalInput> -->
+        <text name="message_animalTooOld" text="This animal is too old." />
+
+<!-- change wall -->
+<text name="storeItem_rustic_walls" text="Rustic Walls." />
+<text name="storeItem_plastered_walls" text="Walls with Plaster." />
+<text name="storeItem_title_Walls" text="Type Walls." />
+
+<!-- Processing -->
+<text name="Cow_Processing" text="Cow_Processing." />
+<text name="Chicken_Processing" text="Chicken_Processing." />
+<text name="Sheep/Goat_Processing" text="Sheep/Goat_Processing." />
+<text name="Horse_Processing" text="Horse_Processing." />
+<text name="Pig_Processing" text="Pig_Processing." />
+
+
+
+
+    </texts>
+</l10n>

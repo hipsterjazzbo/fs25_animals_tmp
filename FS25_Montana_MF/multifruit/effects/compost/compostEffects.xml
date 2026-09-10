@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<motionPathEffects xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/mapMotionPathEffects.xsd">
+    <motionPathEffect effectClass="TypedMotionPathEffect" effectType="COMPOST_SPREADER" filename="multifruit/effects/compost/compost.i3d">
+        <effectGeneration rootNode="0|0"/>
+        <typeDefinition speedScale="0.55"/>
+
+        <effectMeshes>
+            <effectMesh node="0|0|0" numRows="28" rowLength="46" skipPositions="0" boundingBox="34 5 14" boundingBoxCenter="0 0 -7"/>
+            <effectMesh node="0|0|1" numRows="22" rowLength="24" skipPositions="0" boundingBox="24 5 14" boundingBoxCenter="0 0 -7"/>
+            <effectMesh node="0|0|2" numRows="28" rowLength="24" skipPositions="0" boundingBox="24 5 14" boundingBoxCenter="0 0 -7"/>
+            <effectMesh node="0|0|3" numRows="54" rowLength="24" skipPositions="0" boundingBox="20 8 14" boundingBoxCenter="0 1 -7"/>
+        </effectMeshes>
+
+        <customShaderDefaults>
+            <customShaderVariation name="subUV"/>
+            <customShaderMap       name="shapeArray" filename="multifruit/effects/compost/arrays/compostArray54x24.dds"/>
+            <customShaderParameter name="sizeScale"     value="0.75 3.75 0.0 0.0"/>
+            <customShaderParameter name="subUVelements" value="8.0 4.0 1.0 1.0"/>
+            <customShaderParameter name="density"       value="0.5 0.0 0.0 0.0"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+</motionPathEffects>

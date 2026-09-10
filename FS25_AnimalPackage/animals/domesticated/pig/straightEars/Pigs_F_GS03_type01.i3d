@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Pigs_F_GS03_type01.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.10"/>
+  </Asset>
+
+  <Files>
+    <File fileId="7" filename="$data/shaders/tileAndMirrorShader.xml"/>
+    <File fileId="4" filename="../textures/pigs_F_GS0304_diffuse.dds"/>
+    <File fileId="6" filename="../textures/pigs_F_GS0304_specular.dds"/>
+    <File fileId="5" filename="../textures/sow_normal.dds"/>
+    <File fileId="1" filename="../../../shared/eartagDE_diffuse.dds"/>
+    <File fileId="2" filename="../../../shared/eartagDE_normal.dds"/>
+    <File fileId="3" filename="../../../shared/eartagDE_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="cattleAccessoiresDE" materialId="57">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2" bumpDepth="0"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="Pigs_F_GS03_type01" materialId="5" customShaderId="7" customShaderVariation="dirtEnabled">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+      <CustomParameter name="dirtColor" value="0.05 0.03 0.01 0"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="6" diffuseColor="1 1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Pigs_F_GS03_type01.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="Arm_Pig" clipDistance="200" nodeId="10">
+      <TransformGroup name="Root_bone" rotation="90 1.73028e-05 -5.91094e-12" nodeId="11">
+        <TransformGroup name="Base_spine" translation="2.26962e-23 6.85407e-30 -0.741363" rotation="-5.28718e-35 -1.75406e-21 1.73028e-05" nodeId="12">
+          <TransformGroup name="spine_01" translation="2.3137e-30 -2.75814e-37 5.96046e-08" rotation="99.7002 0.000175047 2.99221e-05" nodeId="13">
+            <TransformGroup name="spine_02" translation="-8.3019e-14 -1.11759e-08 -0.207518" rotation="0.597969 1.02124e-05 179.999" nodeId="14">
+              <TransformGroup name="hip_f1.L" translation="-0.133793 0.0462638 -0.13287" rotation="-60.1137 3.02017 -3.66004" nodeId="15">
+                <TransformGroup name="hip_f2.L" translation="-5.58794e-09 -1.90921e-08 -0.253094" rotation="65.5811 6.87216 -175.395" nodeId="16">
+                  <TransformGroup name="leg_f.L" translation="9.31323e-09 1.29803e-08 -0.200628" rotation="65.843 0.010842 171.447" nodeId="17">
+                    <TransformGroup name="shin_f.L" translation="-1.02445e-08 -2.25846e-08 -0.179767" rotation="-26.2036 7.4072 -1.14805" nodeId="18">
+                      <TransformGroup name="feet_f.L" translation="-6.17001e-09 -2.22353e-08 -0.108271" rotation="33.7346 2.59682 0.41969" nodeId="19"/>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="hip_f1.R" translation="0.133791 0.0462684 -0.13287" rotation="-60.1137 -3.02017 3.662" nodeId="20">
+                <TransformGroup name="hip_f2.R" translation="-1.86265e-09 1.30385e-08 -0.253094" rotation="65.5811 -6.87215 175.395" nodeId="21">
+                  <TransformGroup name="leg_f.R" translation="-1.11759e-08 -1.72877e-08 -0.200628" rotation="65.843 -0.0108443 -171.447" nodeId="22">
+                    <TransformGroup name="shin_f.R" translation="-2.79397e-09 -4.65661e-09 -0.179767" rotation="-26.2036 -7.4072 1.14804" nodeId="23">
+                      <TransformGroup name="feet_f.R" translation="9.31323e-10 1.0652e-08 -0.108271" rotation="33.7346 -2.59682 -0.419703" nodeId="24"/>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="neck" translation="-7.87625e-13 3.72529e-09 -0.177409" rotation="-4.26891 -5.72801e-06 0.000901803" nodeId="25">
+                <TransformGroup name="head" translation="-1.00321e-14 -4.47035e-08 -0.196305" rotation="-13.4704 -1.15616e-05 2.86835e-05" nodeId="26">
+                  <TransformGroup name="ear_1.L" translation="-0.0930791 0.0683585 -0.0486576" rotation="-43.2973 77.1668 -97.703" nodeId="27">
+                    <TransformGroup name="ear_2.L" translation="-7.07805e-08 0 -0.0996598" rotation="20.9661 -16.5971 -4.99296" nodeId="28">
+                      <Shape name="sheepEartag01" translation="-0.00418785 0.0056202 -0.010634" rotation="-173.443 51.7651 103.124" scale="1 0.683799 1" shapeId="1" clipDistance="50" nodeId="83" castsShadows="true" receiveShadows="true" materialIds="57"/>
+                    </TransformGroup>
+                  </TransformGroup>
+                  <TransformGroup name="ear_1.R" translation="0.093079 0.0683587 -0.0486575" rotation="-43.2974 -77.1668 97.7031" nodeId="29">
+                    <TransformGroup name="ear_2.R" translation="9.0804e-08 1.49012e-08 -0.0996599" rotation="20.9661 16.5971 4.99294" nodeId="30">
+                      <Shape name="earTagRight" translation="0.00373789 0.00814084 -0.0129112" rotation="-97.2335 19.2686 107.296" scale="0.7 0.7 0.418254" shapeId="2" clipDistance="50" nodeId="86" castsShadows="true" receiveShadows="true" materialIds="57"/>
+                    </TransformGroup>
+                  </TransformGroup>
+                  <TransformGroup name="eye.L" translation="-0.0522244 0.0591014 -0.181545" rotation="-58.5138 40.2029 -117.971" nodeId="31"/>
+                  <TransformGroup name="eye.R" translation="0.0522243 0.0591015 -0.181545" rotation="-58.5138 -40.2029 117.971" nodeId="32"/>
+                  <TransformGroup name="mouth_1" translation="5.31211e-08 -0.061323 -0.13213" rotation="-7.58268 1.91674e-05 0.000193618" nodeId="33"/>
+                  <TransformGroup name="nose" translation="4.17878e-15 0 -0.336358" rotation="-6.03254 8.08728e-06 0.00012616" nodeId="34"/>
+                </TransformGroup>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="spine_03" translation="2.3137e-30 -2.75814e-37 5.96046e-08" rotation="-93.3851 9.59643e-14 3.25046e-12" nodeId="35">
+            <TransformGroup name="spine_04" translation="-2.37814e-23 3.72529e-09 -0.210694" rotation="0.216967 1.78917e-15 6.75326e-17" nodeId="36">
+              <TransformGroup name="hip_b.L" translation="0.136222 0.023685 -0.210384" rotation="-106.984 -1.2296 -3.94708" nodeId="37">
+                <TransformGroup name="leg_b.L" translation="-3.72529e-09 -1.65128e-08 -0.336783" rotation="57.7943 -3.78516 1.73458" nodeId="38">
+                  <TransformGroup name="shin_f..L" translation="-6.98492e-09 3.27127e-08 -0.268155" rotation="49.5162 2.5989 -179.483" nodeId="39">
+                    <TransformGroup name="feet_b.L" translation="-6.28643e-09 -2.26786e-08 -0.145265" rotation="27.0687 -1.48736 1.98766e-05" nodeId="40"/>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="hip_b.R" translation="-0.136222 0.023685 -0.210384" rotation="-106.984 1.2296 3.94708" nodeId="41">
+                <TransformGroup name="leg_b.R" translation="3.72529e-09 -1.65128e-08 -0.336783" rotation="57.7943 3.78516 -1.73458" nodeId="42">
+                  <TransformGroup name="shin_f..R" translation="6.98492e-09 3.27127e-08 -0.268155" rotation="49.5162 -2.5989 179.483" nodeId="43">
+                    <TransformGroup name="feet_b.R" translation="6.28643e-09 -2.26786e-08 -0.145265" rotation="27.0687 1.48736 -1.98766e-05" nodeId="44"/>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="spine_05" translation="1.81153e-22 3.91155e-08 -0.188346" rotation="2.08201 -4.96282e-07 1.36514e-05" nodeId="45">
+                <TransformGroup name="tail_01" translation="4.27026e-15 1.30385e-08 -0.158341" rotation="-22.0189 1.97499e-13 -1.36604e-05" nodeId="46"/>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="Help_feet_b.L" translation="0.108074 -0.440088 -0.0714647" rotation="-141.167 -5.00896e-06 -180" nodeId="47"/>
+        <TransformGroup name="Help_feet_b.R" translation="-0.108074 -0.440089 -0.0714647" rotation="-141.167 5.00896e-06 -180" nodeId="48"/>
+        <TransformGroup name="Help_feet_f.L" translation="0.0982986 0.353125 -0.0804001" rotation="-150.341 -5.00896e-06 180" scale="1 0.999999 1" nodeId="49"/>
+        <TransformGroup name="Help_feet_f.R" translation="-0.0982988 0.353125 -0.0804001" rotation="-150.341 5.00896e-06 -180" scale="1 0.999999 1" nodeId="50"/>
+        <TransformGroup name="Help_knee_f.L" translation="0.106655 0.577632 -0.191706" rotation="-90 2.62755e-06 180" nodeId="51"/>
+        <TransformGroup name="Help_knee_f.R" translation="-0.106655 0.577632 -0.191706" rotation="-90 2.62755e-06 180" nodeId="52"/>
+      </TransformGroup>
+      <Shape name="Pigs_F_GS03_type01" shapeId="3" clipDistance="200" nodeId="53" castsShadows="true" receiveShadows="true" skinBindNodeIds="13 14 25 26 34 33 27 28 29 30 31 32 15 16 17 18 19 20 21 22 23 24 35 36 45 46 37 38 39 40 41 42 43 44" materialIds="5"/>
+    </TransformGroup>
+    <Shape name="proxy" shapeId="4" visibility="false" kinematic="true" collisionFilterGroup="0x10200000" collisionFilterMask="0xfffffbff" linearDamping="0.5" angularDamping="0.5" nodeId="54" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="6"/>
+  </Scene>
+
+
+  <Animation externalAnimFile="Pigs_F_GS03_type01.i3d.anim" />
+</i3D>

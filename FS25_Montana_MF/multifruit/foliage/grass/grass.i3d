@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="grass.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.5"/>
+  </Asset>
+
+  <Files>
+    <File fileId="57" filename="grassHarvestReadyLOD_SPRING_diffuse.dds"/>
+    <File fileId="56" filename="grassMiddleLOD_SPRING_diffuse.dds"/>
+    <File fileId="55" filename="grassSmallLOD_SPRING_diffuse.dds"/>
+    <File fileId="87" filename="grassStage04LOD1_diffuse.dds"/>
+    <File fileId="70" filename="grassStage04_diffuse.dds"/>
+    <File fileId="28" filename="meadowUSRollerLOD1SUMMER_diffuse.dds"/>
+    <File fileId="8" filename="meadowUSsummer_diffuse.dds"/>
+    <File fileId="35" filename="textures/dandelion/dandelionLOD_alpha.dds"/>
+    <File fileId="33" filename="textures/dandelion/dandelionLOD_diffuse.dds"/>
+    <File fileId="34" filename="textures/dandelion/dandelionLOD_normal.dds"/>
+    <File fileId="32" filename="textures/dandelion/dandelion_alpha.dds"/>
+    <File fileId="29" filename="textures/dandelion/dandelion_diffuse.png"/>
+    <File fileId="30" filename="textures/dandelion/dandelion_normal.png"/>
+    <File fileId="31" filename="textures/dandelion/dandelion_specular.png"/>
+    <File fileId="109" filename="textures/meadowButtercup/meadowButtercupLOD_alpha.dds"/>
+    <File fileId="107" filename="textures/meadowButtercup/meadowButtercupLOD_diffuse.dds"/>
+    <File fileId="108" filename="textures/meadowButtercup/meadowButtercupLOD_normal.dds"/>
+    <File fileId="106" filename="textures/meadowButtercup/meadowButtercup_alpha.dds"/>
+    <File fileId="103" filename="textures/meadowButtercup/meadowButtercup_diffuse.png"/>
+    <File fileId="104" filename="textures/meadowButtercup/meadowButtercup_normal.png"/>
+    <File fileId="105" filename="textures/meadowButtercup/meadowButtercup_specular.png"/>
+    <File fileId="39" filename="textures/meadowDLC_alpha.dds"/>
+    <File fileId="36" filename="textures/meadowDLC_diffuse.png"/>
+    <File fileId="38" filename="textures/meadowDLC_fmask.png"/>
+    <File fileId="37" filename="textures/meadowDLC_normal.png"/>
+    <File fileId="43" filename="textures/meadowDLC_whiteOnlyHarvestReadyLOD_alpha_H.dds"/>
+    <File fileId="40" filename="textures/meadowDLC_whiteOnlyHarvestReadyLOD_diffuse_H.png"/>
+    <File fileId="41" filename="textures/meadowDLC_whiteOnlyHarvestReadyLOD_normal_H.png"/>
+    <File fileId="46" filename="textures/meadowDLC_yellowOnlyHarvestReadyLOD_alpha_H.dds"/>
+    <File fileId="44" filename="textures/meadowDLC_yellowOnlyHarvestReadyLOD_diffuse_H.png"/>
+    <File fileId="45" filename="textures/meadowDLC_yellowOnlyHarvestReadyLOD_normal_H.png"/>
+    <File fileId="53" filename="textures/meadowUSGREEN_diffuse.dds"/>
+    <File fileId="49" filename="textures/meadowUS_alpha.dds"/>
+    <File fileId="47" filename="textures/meadowUS_diffuse.dds"/>
+    <File fileId="48" filename="textures/meadowUS_normal.png"/>
+    <File fileId="54" filename="textures/meadowUSdryGREENGrassHarvestReadyLOD1_diffuse.png"/>
+    <File fileId="52" filename="textures/meadowUSdryGrassHarvestReadyLOD1_alpha.dds"/>
+    <File fileId="50" filename="textures/meadowUSdryGrassHarvestReadyLOD1_diffuse.png"/>
+    <File fileId="51" filename="textures/meadowUSdryGrassHarvestReadyLOD1_normal.png"/>
+    <File fileId="94" filename="$data/foliage/grass/grassRollerLOD1_alpha.png"/>
+    <File fileId="91" filename="$data/foliage/grass/grassRollerLOD1_diffuse.png"/>
+    <File fileId="93" filename="$data/foliage/grass/grassRollerLOD1_fmask.png"/>
+    <File fileId="92" filename="$data/foliage/grass/grassRollerLOD1_normal.png"/>
+    <File fileId="78" filename="$data/foliage/grass/grassStage01LOD1_alpha.png"/>
+    <File fileId="75" filename="$data/foliage/grass/grassStage01LOD1_diffuse.png"/>
+    <File fileId="77" filename="$data/foliage/grass/grassStage01LOD1_fmask.png"/>
+    <File fileId="76" filename="$data/foliage/grass/grassStage01LOD1_normal.png"/>
+    <File fileId="61" filename="$data/foliage/grass/grassStage01_alpha.png"/>
+    <File fileId="58" filename="$data/foliage/grass/grassStage01_diffuse.png"/>
+    <File fileId="60" filename="$data/foliage/grass/grassStage01_fmask.png"/>
+    <File fileId="59" filename="$data/foliage/grass/grassStage01_normal.png"/>
+    <File fileId="82" filename="$data/foliage/grass/grassStage02LOD1_alpha.png"/>
+    <File fileId="79" filename="$data/foliage/grass/grassStage02LOD1_diffuse.png"/>
+    <File fileId="81" filename="$data/foliage/grass/grassStage02LOD1_fmask.png"/>
+    <File fileId="80" filename="$data/foliage/grass/grassStage02LOD1_normal.png"/>
+    <File fileId="65" filename="$data/foliage/grass/grassStage02_alpha.png"/>
+    <File fileId="62" filename="$data/foliage/grass/grassStage02_diffuse.png"/>
+    <File fileId="64" filename="$data/foliage/grass/grassStage02_fmask.png"/>
+    <File fileId="63" filename="$data/foliage/grass/grassStage02_normal.png"/>
+    <File fileId="86" filename="$data/foliage/grass/grassStage03LOD1_alpha.png"/>
+    <File fileId="83" filename="$data/foliage/grass/grassStage03LOD1_diffuse.png"/>
+    <File fileId="85" filename="$data/foliage/grass/grassStage03LOD1_fmask.png"/>
+    <File fileId="84" filename="$data/foliage/grass/grassStage03LOD1_normal.png"/>
+    <File fileId="69" filename="$data/foliage/grass/grassStage03_alpha.png"/>
+    <File fileId="66" filename="$data/foliage/grass/grassStage03_diffuse.png"/>
+    <File fileId="68" filename="$data/foliage/grass/grassStage03_fmask.png"/>
+    <File fileId="67" filename="$data/foliage/grass/grassStage03_normal.png"/>
+    <File fileId="90" filename="$data/foliage/grass/grassStage04LOD1_alpha.png"/>
+    <File fileId="89" filename="$data/foliage/grass/grassStage04LOD1_fmask.png"/>
+    <File fileId="88" filename="$data/foliage/grass/grassStage04LOD1_normal.png"/>
+    <File fileId="73" filename="$data/foliage/grass/grassStage04_alpha.png"/>
+    <File fileId="74" filename="$data/foliage/grass/grassStage04_diffuse.png"/>
+    <File fileId="72" filename="$data/foliage/grass/grassStage04_fmask.png"/>
+    <File fileId="71" filename="$data/foliage/grass/grassStage04_normal.png"/>
+    <File fileId="21" filename="$data/foliage/meadow/meadowUS/grassCutLOD_diffuse.png"/>
+    <File fileId="23" filename="$data/foliage/meadow/meadowUS/grassCutLOD_fmask.png"/>
+    <File fileId="24" filename="$data/foliage/meadow/meadowUS/grassCutLOD_mask.png"/>
+    <File fileId="22" filename="$data/foliage/meadow/meadowUS/grassCutLOD_normal.png"/>
+    <File fileId="17" filename="$data/foliage/meadow/meadowUS/grassHarvestReadyLOD_diffuse.png"/>
+    <File fileId="19" filename="$data/foliage/meadow/meadowUS/grassHarvestReadyLOD_fmask.png"/>
+    <File fileId="20" filename="$data/foliage/meadow/meadowUS/grassHarvestReadyLOD_mask.dds"/>
+    <File fileId="18" filename="$data/foliage/meadow/meadowUS/grassHarvestReadyLOD_normal.png"/>
+    <File fileId="13" filename="$data/foliage/meadow/meadowUS/grassMiddleLOD_diffuse.png"/>
+    <File fileId="15" filename="$data/foliage/meadow/meadowUS/grassMiddleLOD_fmask.png"/>
+    <File fileId="16" filename="$data/foliage/meadow/meadowUS/grassMiddleLOD_mask.dds"/>
+    <File fileId="14" filename="$data/foliage/meadow/meadowUS/grassMiddleLOD_normal.png"/>
+    <File fileId="9" filename="$data/foliage/meadow/meadowUS/grassSmallLOD_diffuse.png"/>
+    <File fileId="11" filename="$data/foliage/meadow/meadowUS/grassSmallLOD_fmask.png"/>
+    <File fileId="12" filename="$data/foliage/meadow/meadowUS/grassSmallLOD_mask.dds"/>
+    <File fileId="10" filename="$data/foliage/meadow/meadowUS/grassSmallLOD_normal.png"/>
+    <File fileId="25" filename="$data/foliage/meadow/meadowUS/meadowUSRollerLOD1_diffuse.png"/>
+    <File fileId="26" filename="$data/foliage/meadow/meadowUS/meadowUSRollerLOD1_fmask.png"/>
+    <File fileId="27" filename="$data/foliage/meadow/meadowUS/meadowUSRollerLOD1_mask.dds"/>
+    <File fileId="1" filename="$data/foliage/meadow/meadowUS/meadowUS_diffuse.dds"/>
+    <File fileId="3" filename="$data/foliage/meadow/meadowUS/meadowUS_fmask.png"/>
+    <File fileId="7" filename="$data/foliage/meadow/meadowUS/meadowUS_mask.dds"/>
+    <File fileId="2" filename="$data/foliage/meadow/meadowUS/meadowUS_normal.png"/>
+    <File fileId="95" filename="$data/foliage/meadow/meadowUS/slenderMountainMint01LOD_diffuse.png"/>
+    <File fileId="97" filename="$data/foliage/meadow/meadowUS/slenderMountainMint01LOD_fmask.png"/>
+    <File fileId="98" filename="$data/foliage/meadow/meadowUS/slenderMountainMint01LOD_mask.png"/>
+    <File fileId="96" filename="$data/foliage/meadow/meadowUS/slenderMountainMint01LOD_normal.png"/>
+    <File fileId="99" filename="$data/foliage/meadow/meadowUS/slenderMountainMint02LOD_diffuse.png"/>
+    <File fileId="101" filename="$data/foliage/meadow/meadowUS/slenderMountainMint02LOD_fmask.png"/>
+    <File fileId="102" filename="$data/foliage/meadow/meadowUS/slenderMountainMint02LOD_mask.png"/>
+    <File fileId="100" filename="$data/foliage/meadow/meadowUS/slenderMountainMint02LOD_normal.png"/>
+    <File fileId="4" filename="$data/shaders/fruitGrowthFoliageShader.xml"/>
+    <File fileId="42" filename="$data/shared/default_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="dandelion_mat" materialId="5" customShaderId="4">
+      <Texture fileId="29"/>
+      <Normalmap fileId="30"/>
+      <Glossmap fileId="31"/>
+      <Custommap name="alphaMap" fileId="32"/>
+    </Material>
+    <Material name="dandelionLOD_mat" materialId="6" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="33"/>
+      <Normalmap fileId="34"/>
+      <Custommap name="alphaMap" fileId="35"/>
+    </Material>
+    <Material name="grassCutLOD_mat" materialId="7" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="21"/>
+      <Normalmap fileId="22"/>
+      <Glossmap fileId="23"/>
+      <Custommap name="mMaskMap" fileId="24"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="grassHarvestReadyLOD_mat" materialId="8" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="57"/>
+      <Normalmap fileId="18"/>
+      <Glossmap fileId="19"/>
+      <Custommap name="alphaMap" fileId="20"/>
+    </Material>
+    <Material name="grassHarvestReadyLOD_mat" materialId="9" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="17"/>
+      <Normalmap fileId="18"/>
+      <Glossmap fileId="19"/>
+      <Custommap name="mMaskMap" fileId="20"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="grassMiddleLOD_mat" materialId="10" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="56"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+      <Custommap name="alphaMap" fileId="16"/>
+    </Material>
+    <Material name="grassMiddleLOD_mat" materialId="11" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+      <Custommap name="mMaskMap" fileId="16"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="grassRollerLOD1_mat" materialId="12" customShaderId="4">
+      <Texture fileId="91"/>
+      <Normalmap fileId="92"/>
+      <Glossmap fileId="93"/>
+      <Custommap name="alphaMap" fileId="94"/>
+      <CustomParameter name="snowScale" value="0.36"/>
+      <CustomParameter name="aoIntensity" value="2 1"/>
+    </Material>
+    <Material name="grassSmallLOD_mat" materialId="13" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="55"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+      <Custommap name="alphaMap" fileId="12"/>
+    </Material>
+    <Material name="grassSmallLOD_mat" materialId="14" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+      <Custommap name="mMaskMap" fileId="12"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="grassStage01_mat" materialId="15" customShaderId="4">
+      <Texture fileId="58"/>
+      <Normalmap fileId="59"/>
+      <Glossmap fileId="60"/>
+      <Custommap name="alphaMap" fileId="61"/>
+      <CustomParameter name="snowScale" value="0.36"/>
+    </Material>
+    <Material name="grassStage01LOD1_mat" materialId="16" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="75"/>
+      <Normalmap fileId="76"/>
+      <Glossmap fileId="77"/>
+      <Custommap name="alphaMap" fileId="78"/>
+      <CustomParameter name="snowScale" value="0.36"/>
+    </Material>
+    <Material name="grassStage02_mat" materialId="17" customShaderId="4">
+      <Texture fileId="62"/>
+      <Normalmap fileId="63"/>
+      <Glossmap fileId="64"/>
+      <Custommap name="alphaMap" fileId="65"/>
+      <CustomParameter name="snowScale" value="0.36"/>
+    </Material>
+    <Material name="grassStage02LOD1_mat" materialId="18" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="79"/>
+      <Normalmap fileId="80"/>
+      <Glossmap fileId="81"/>
+      <Custommap name="alphaMap" fileId="82"/>
+      <CustomParameter name="snowScale" value="0.36"/>
+    </Material>
+    <Material name="grassStage03_mat" materialId="19" customShaderId="4">
+      <Texture fileId="66"/>
+      <Normalmap fileId="67"/>
+      <Glossmap fileId="68"/>
+      <Custommap name="alphaMap" fileId="69"/>
+      <CustomParameter name="snowScale" value="0.36"/>
+    </Material>
+    <Material name="grassStage03LOD1_mat" materialId="20" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="83"/>
+      <Normalmap fileId="84"/>
+      <Glossmap fileId="85"/>
+      <Custommap name="alphaMap" fileId="86"/>
+      <CustomParameter name="snowScale" value="0.36"/>
+    </Material>
+    <Material name="grassStage04_mat" materialId="21" customShaderId="4">
+      <Texture fileId="70"/>
+      <Normalmap fileId="71"/>
+      <Glossmap fileId="72"/>
+      <Custommap name="alphaMap" fileId="73"/>
+      <CustomParameter name="snowScale" value="0.36"/>
+      <CustomParameter name="aoIntensity" value="2 1"/>
+    </Material>
+    <Material name="grassStage04_mat" materialId="22" customShaderId="4">
+      <Texture fileId="74"/>
+      <Normalmap fileId="71"/>
+      <Glossmap fileId="72"/>
+      <Custommap name="alphaMap" fileId="73"/>
+      <CustomParameter name="snowScale" value="0.36"/>
+      <CustomParameter name="aoIntensity" value="2 1"/>
+    </Material>
+    <Material name="grassStage04LOD1_mat" materialId="23" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="87"/>
+      <Normalmap fileId="88"/>
+      <Glossmap fileId="89"/>
+      <Custommap name="alphaMap" fileId="90"/>
+      <CustomParameter name="snowScale" value="0.36"/>
+      <CustomParameter name="aoIntensity" value="2 1"/>
+    </Material>
+    <Material name="meadowButtercup_mat" materialId="24" customShaderId="4">
+      <Texture fileId="103"/>
+      <Normalmap fileId="104"/>
+      <Glossmap fileId="105"/>
+      <Custommap name="alphaMap" fileId="106"/>
+    </Material>
+    <Material name="meadowButtercupLOD_mat" materialId="25" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="107"/>
+      <Normalmap fileId="108"/>
+      <Custommap name="alphaMap" fileId="109"/>
+    </Material>
+    <Material name="meadowDLC_mat" materialId="26" customShaderId="4">
+      <Texture fileId="36"/>
+      <Normalmap fileId="37"/>
+      <Glossmap fileId="38"/>
+      <Custommap name="alphaMap" fileId="39"/>
+    </Material>
+    <Material name="meadowDLC_whiteOnlyHarvestReadyLOD_mat" materialId="27" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="40"/>
+      <Normalmap fileId="41"/>
+      <Glossmap fileId="42"/>
+      <Custommap name="alphaMap" fileId="43"/>
+    </Material>
+    <Material name="meadowDLC_yellowOnlyHarvestReadyLOD_mat" materialId="28" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="44"/>
+      <Normalmap fileId="45"/>
+      <Glossmap fileId="42"/>
+      <Custommap name="alphaMap" fileId="46"/>
+    </Material>
+    <Material name="meadowUS_mat" materialId="29" customShaderId="4">
+      <Texture fileId="8"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="alphaMap" fileId="7"/>
+    </Material>
+    <Material name="meadowUS_mat" materialId="30" customShaderId="4">
+      <Texture fileId="47"/>
+      <Normalmap fileId="48"/>
+      <Glossmap fileId="42"/>
+      <Custommap name="alphaMap" fileId="49"/>
+    </Material>
+    <Material name="meadowUS_mat" materialId="31" customShaderId="4">
+      <Texture fileId="53"/>
+      <Normalmap fileId="48"/>
+      <Glossmap fileId="42"/>
+      <Custommap name="alphaMap" fileId="49"/>
+    </Material>
+    <Material name="meadowUS_mat" materialId="32" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="alphaMap" fileId="27"/>
+    </Material>
+    <Material name="meadowUS_mat" materialId="33" customShaderId="4" customShaderVariation="SEASONAL">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mMaskMap" fileId="7"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="meadowUSdryGrassHarvestReadyLOD1_mat" materialId="34" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="50"/>
+      <Normalmap fileId="51"/>
+      <Custommap name="alphaMap" fileId="52"/>
+    </Material>
+    <Material name="meadowUSdryGrassHarvestReadyLOD1_mat" materialId="35" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="54"/>
+      <Normalmap fileId="51"/>
+      <Custommap name="alphaMap" fileId="52"/>
+    </Material>
+    <Material name="meadowUSRollerLOD1_mat" materialId="36" customShaderId="4">
+      <Texture fileId="28"/>
+      <Glossmap fileId="26"/>
+      <Custommap name="alphaMap" fileId="27"/>
+      <CustomParameter name="aoIntensity" value="0 0.5"/>
+    </Material>
+    <Material name="meadowUSRollerLOD1_mat" materialId="37" customShaderId="4" customShaderVariation="SEASONAL">
+      <Texture fileId="25"/>
+      <Glossmap fileId="26"/>
+      <Custommap name="mMaskMap" fileId="27"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+      <CustomParameter name="aoIntensity" value="0 0.5"/>
+    </Material>
+    <Material name="slenderMountainMint01LOD_mat" materialId="38" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="95"/>
+      <Normalmap fileId="96"/>
+      <Glossmap fileId="97"/>
+      <Custommap name="mMaskMap" fileId="98"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+    <Material name="slenderMountainMint02LOD_mat" materialId="39" customShaderId="4" customShaderVariation="BILLBOARD_SEASONAL">
+      <Texture fileId="99"/>
+      <Normalmap fileId="100"/>
+      <Glossmap fileId="101"/>
+      <Custommap name="mMaskMap" fileId="102"/>
+      <CustomParameter name="seasonalTintIntensity" value="0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="grass.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="grassPure" nodeId="90">
+      <TransformGroup name="LOD0" nodeId="91">
+        <Shape name="grassSmall" shapeId="1" nodeId="92" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="33"/>
+        <Shape name="grassMiddle" shapeId="2" nodeId="93" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="33"/>
+        <Shape name="harvestReady" shapeId="3" nodeId="94" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="33"/>
+        <Shape name="cut" shapeId="4" nodeId="95" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="33"/>
+        <Shape name="roller" shapeId="5" nodeId="96" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="33"/>
+        <Shape name="tireTracks" shapeId="6" nodeId="97" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="29"/>
+      </TransformGroup>
+      <TransformGroup name="LOD1" nodeId="98">
+        <Shape name="grassSmall" shapeId="7" nodeId="99" castsShadows="true" receiveShadows="true" materialIds="14"/>
+        <Shape name="grassMiddle" shapeId="8" nodeId="100" castsShadows="true" receiveShadows="true" materialIds="11"/>
+        <Shape name="harvestReady" shapeId="9" nodeId="101" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        <Shape name="cut" shapeId="10" nodeId="102" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        <Shape name="roller" shapeId="11" nodeId="103" castsShadows="true" receiveShadows="true" materialIds="37"/>
+        <Shape name="tireTracks" shapeId="11" nodeId="104" castsShadows="true" receiveShadows="true" materialIds="36"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="dandelion" nodeId="105">
+      <TransformGroup name="LOD0" nodeId="106">
+        <Shape name="dandelion01_LOD0" shapeId="12" nodeId="107" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="5"/>
+        <Shape name="dandelion02_LOD0" shapeId="13" nodeId="108" castsShadows="true" receiveShadows="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="LOD1" nodeId="109">
+        <Shape name="dandelion01_LOD1" shapeId="14" nodeId="110" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="dandelion02_LOD1" shapeId="15" nodeId="111" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="daisyPure" nodeId="112">
+      <TransformGroup name="LOD0" static="true" nodeId="113">
+        <Shape name="harvestReady" shapeId="16" nodeId="114" castsShadows="true" receiveShadows="true" materialIds="26"/>
+        <Shape name="small" shapeId="17" nodeId="115" castsShadows="true" receiveShadows="true" materialIds="26"/>
+      </TransformGroup>
+      <TransformGroup name="LOD1" nodeId="116">
+        <Shape name="harvestReady" shapeId="18" nodeId="117" castsShadows="false" receiveShadows="true" materialIds="27"/>
+        <Shape name="small" shapeId="19" nodeId="118" castsShadows="false" receiveShadows="true" materialIds="27"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="orangeDaisyPure" nodeId="119">
+      <TransformGroup name="LOD0" static="true" nodeId="120">
+        <Shape name="harvestReady" shapeId="20" nodeId="121" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="26"/>
+      </TransformGroup>
+      <TransformGroup name="LOD1" nodeId="122">
+        <Shape name="harvestReady" shapeId="21" nodeId="123" castsShadows="false" receiveShadows="true" materialIds="28"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="fieldGrassHR" nodeId="124">
+      <Shape name="harvestReady" shapeId="22" nodeId="125" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="30"/>
+      <Shape name="harvestReady" shapeId="23" nodeId="126" castsShadows="false" receiveShadows="true" materialIds="34"/>
+      <Shape name="harvestReadyGreen" shapeId="22" nodeId="127" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="31"/>
+      <Shape name="harvestReadyGreen" shapeId="23" nodeId="128" castsShadows="false" receiveShadows="true" materialIds="35"/>
+    </TransformGroup>
+    <TransformGroup name="grassPureNonSeasonal" nodeId="129">
+      <TransformGroup name="LOD0" nodeId="130">
+        <Shape name="grassSmall" shapeId="1" nodeId="131" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="29"/>
+        <Shape name="grassMiddle" shapeId="2" nodeId="132" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="29"/>
+        <Shape name="harvestReady" shapeId="3" nodeId="133" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="29"/>
+        <Shape name="cut" shapeId="4" nodeId="134" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="29"/>
+        <Shape name="roller" shapeId="5" nodeId="135" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="32"/>
+      </TransformGroup>
+      <TransformGroup name="LOD1" nodeId="136">
+        <Shape name="grassSmall" shapeId="7" nodeId="137" castsShadows="true" receiveShadows="true" materialIds="13"/>
+        <Shape name="grassMiddle" shapeId="8" nodeId="138" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="harvestReady" shapeId="9" nodeId="139" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="cut" shapeId="10" nodeId="140" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        <Shape name="roller" shapeId="11" nodeId="141" castsShadows="true" receiveShadows="true" materialIds="37"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="fieldGrass" nodeId="142">
+      <TransformGroup name="LOD0" static="true" clipDistance="500" nodeId="143">
+        <Shape name="greenSmall" shapeId="24" clipDistance="500" nodeId="144" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="15"/>
+        <Shape name="greenMiddle" shapeId="25" clipDistance="500" nodeId="145" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="17"/>
+        <Shape name="harvestReady" shapeId="26" clipDistance="500" nodeId="146" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="19"/>
+        <Shape name="cut" shapeId="27" clipDistance="500" nodeId="147" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="21"/>
+        <Shape name="roller" shapeId="28" clipDistance="500" nodeId="148" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="22"/>
+      </TransformGroup>
+      <TransformGroup name="LOD1" nodeId="149">
+        <Shape name="greenSmall" shapeId="29" clipDistance="500" nodeId="150" castsShadows="true" receiveShadows="true" materialIds="16"/>
+        <Shape name="greenMiddle" shapeId="30" clipDistance="500" nodeId="151" castsShadows="true" receiveShadows="true" materialIds="18"/>
+        <Shape name="harvestReady" shapeId="31" clipDistance="500" nodeId="152" castsShadows="true" receiveShadows="true" materialIds="20"/>
+        <Shape name="cut" shapeId="32" clipDistance="500" nodeId="153" castsShadows="true" receiveShadows="true" materialIds="23"/>
+        <Shape name="roller" shapeId="33" clipDistance="500" nodeId="154" castsShadows="true" receiveShadows="true" materialIds="12"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="slenderMountainMint" nodeId="155">
+      <TransformGroup name="LOD0" nodeId="156">
+        <Shape name="slenderMountainMintSmall_1" shapeId="34" clipDistance="500" nodeId="157" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="33"/>
+        <Shape name="slenderMountainMintSmall_2" shapeId="35" clipDistance="500" nodeId="158" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="33"/>
+        <Shape name="slenderMountainMintMiddle_1" shapeId="36" clipDistance="500" nodeId="159" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="33"/>
+        <Shape name="slenderMountainMintMiddle_2" shapeId="37" clipDistance="500" nodeId="160" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="33"/>
+        <Shape name="slenderMountainMintHarvestReady_1" shapeId="38" clipDistance="500" nodeId="161" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="33"/>
+        <Shape name="slenderMountainMintHarvestReady_2" shapeId="39" clipDistance="500" nodeId="162" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="33"/>
+      </TransformGroup>
+      <TransformGroup name="LOD1" nodeId="163">
+        <Shape name="slenderMountainMintSmall_1" shapeId="40" clipDistance="500" nodeId="164" castsShadows="true" receiveShadows="true" materialIds="38"/>
+        <Shape name="slenderMountainMintSmall_2" shapeId="41" clipDistance="500" nodeId="165" castsShadows="true" receiveShadows="true" materialIds="39"/>
+        <Shape name="slenderMountainMintMiddle_1" shapeId="42" clipDistance="500" nodeId="166" castsShadows="true" receiveShadows="true" materialIds="38"/>
+        <Shape name="slenderMountainMintMiddle_2" shapeId="43" clipDistance="500" nodeId="167" castsShadows="true" receiveShadows="true" materialIds="39"/>
+        <Shape name="slenderMountainMintHarvestReady_1" shapeId="44" clipDistance="500" nodeId="168" castsShadows="true" receiveShadows="true" materialIds="38"/>
+        <Shape name="slenderMountainMintHarvestReady_2" shapeId="45" clipDistance="500" nodeId="169" castsShadows="true" receiveShadows="true" materialIds="39"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="meadowButtercup" nodeId="170">
+      <TransformGroup name="LOD0" nodeId="171">
+        <Shape name="meadowButtercup01_LOD0" shapeId="46" clipDistance="500" nodeId="172" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="24"/>
+        <Shape name="meadowButtercup02_LOD0" shapeId="47" clipDistance="500" nodeId="173" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="24"/>
+      </TransformGroup>
+      <TransformGroup name="LOD1" nodeId="174">
+        <Shape name="meadowButtercup01_LOD1" shapeId="48" clipDistance="500" nodeId="175" castsShadows="true" receiveShadows="true" materialIds="25"/>
+        <Shape name="meadowButtercup02_LOD1" shapeId="49" clipDistance="500" nodeId="176" castsShadows="true" receiveShadows="true" materialIds="25"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="gooseYoung_posed.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/tileAndMirrorShader.xml"/>
+    <File fileId="6" filename="goose_alphaMap.dds"/>
+    <File fileId="1" filename="goose_diffuse.dds"/>
+    <File fileId="2" filename="goose_normal.dds"/>
+    <File fileId="3" filename="goose_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="goose_mat" materialId="5" customShaderId="4" customShaderVariation="sssSpecularDirt_alphaMap">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="alphaMap" fileId="6"/>
+      <CustomParameter name="mirrorScaleAndOffsetUV" value="1 1 0 0"/>
+      <CustomParameter name="atlasInvSizeAndOffsetUV" value="0.5 0.5 0 0.5"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="gooseYoung_posed.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="goose_posed" scale="0.8 0.8 0.8" shapeId="1" clipDistance="100" nodeId="8" castsShadows="true" receiveShadows="true" materialIds="5"/>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+	<storeData>
+		<name>$l10n_shopItem_juiceFactory</name>
+		<functions>
+			<function>$l10n_function_productionPoint</function>
+		</functions>
+		<image>multifruit/placeables/productionPoints/juiceFactory/store_juiceFactory.png</image>
+		<price>300000</price>
+		<lifetime>1000</lifetime>
+        	<dailyUpkeep>150</dailyUpkeep>
+		<rotation>0</rotation>
+		<brand>JINKOU</brand>
+        	<species>PLACEABLE</species>
+        	<category>productionPoints</category>
+        		<brush>
+            			<type>placeable</type>
+            			<category>production</category>
+            			<tab>factories</tab>
+        		</brush>
+		<vertexBufferMemoryUsage>1033728</vertexBufferMemoryUsage>
+		<indexBufferMemoryUsage>152832</indexBufferMemoryUsage>
+		<textureMemoryUsage>11730944</textureMemoryUsage>
+		<instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+		<instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+		<audioMemoryUsage>0</audioMemoryUsage>
+	</storeData>
+
+	<base>
+		<filename>multifruit/placeables/productionPoints/juiceFactory/juiceFactory.i3d</filename>
+		<boughtWithFarmland>false</boughtWithFarmland>
+		<canBeDeleted>true</canBeDeleted>
+		<canBeRenamed>true</canBeRenamed>
+	</base>
+
+	<placement useRandomYRotation="false" useManualYRotation="true" >
+		<testAreas>
+			<testArea startNode="testArea1Start" endNode="testArea1End" />
+		</testAreas>
+
+		<sounds>
+			<place template="smallImp" />
+		</sounds>
+	</placement>
+
+	<clearAreas>
+		<clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+		<clearArea startNode="clearArea2Start" widthNode="clearArea2Width" heightNode="clearArea2Height"/>
+	</clearAreas>
+
+	<leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+		<levelAreas>
+			<levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="asphalt"/>
+			<levelArea startNode="levelArea2Start" widthNode="levelArea2Width" heightNode="levelArea2Height" groundType="asphalt"/>
+		</levelAreas>
+	</leveling>
+
+	<indoorAreas>
+		<indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height" />
+	</indoorAreas>
+
+	<tipOcclusionUpdateAreas>
+		<tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+	</tipOcclusionUpdateAreas>
+
+	<ai>
+		<updateAreas>
+			<updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+		</updateAreas>
+	</ai>
+
+	<infoTrigger triggerNode="infoTrigger" />
+
+	<productionPoint>
+		<productions sharedThroughputCapacity="false">
+
+		<!-- Juice -->
+			
+	<production id="APPLE_JUICE" name="$l10n_fillType_appleJuice" cyclesPerHour="4" costsPerActiveHour="3">
+                <inputs>
+                	<input fillType="APPLE" amount="150" />
+			<input fillType="WATER" amount="100" />
+			<input fillType="SUGAR" amount="25" />
+			<input fillType="CARTONROLL" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="APPLE_JUICE" amount="150" />
+                </outputs>
+            </production>
+
+	<production id="APRICOT_JUICE" name="$l10n_fillType_apricotJuice" cyclesPerHour="4" costsPerActiveHour="3">
+                <inputs>
+                	<input fillType="APRICOT" amount="150" />
+			<input fillType="WATER" amount="100" />
+			<input fillType="SUGAR" amount="25" />
+			<input fillType="CARTONROLL" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="APRICOT_JUICE" amount="150" />
+                </outputs>
+            </production>
+
+	<production id="BEETROOT_JUICE" name="$l10n_fillType_beetrootJuice" cyclesPerHour="4" costsPerActiveHour="3">
+                <inputs>
+                	<input fillType="BEETROOT" amount="1700" />
+			<input fillType="WATER" amount="250" />
+			<input fillType="SUGAR" amount="25" />
+			<input fillType="CARTONROLL" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="BEETROOT_JUICE" amount="150" />
+                </outputs>
+            </production>
+
+	<production id="CARROT_JUICE" name="$l10n_fillType_carrotJuice" cyclesPerHour="4" costsPerActiveHour="2">
+                <inputs>
+                	<input fillType="CARROT" amount="1500" />
+			<input fillType="WATER" amount="150" />
+			<input fillType="SUGAR" amount="20" />
+			<input fillType="CARTONROLL" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="CARROT_JUICE" amount="150" />
+                </outputs>
+            </production>
+
+	<production id="CHERRY_JUICE" name="$l10n_fillType_cherryJuice" cyclesPerHour="4" costsPerActiveHour="3">
+                <inputs>
+                	<input fillType="CHERRY" amount="125" />
+			<input fillType="WATER" amount="100" />
+			<input fillType="SUGAR" amount="30" />
+			<input fillType="CARTONROLL" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="CHERRY_JUICE" amount="150" />
+                </outputs>
+            </production>
+
+	<production id="MELON_JUICE" name="$l10n_fillType_melonJuice" cyclesPerHour="4" costsPerActiveHour="5">
+                <inputs>
+                	<input fillType="MELON" amount="100" />
+			<input fillType="WATER" amount="150" />
+			<input fillType="SUGAR" amount="20" />
+			<input fillType="CARTONROLL" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="MELON_JUICE" amount="150" />
+                </outputs>
+            </production>
+
+	<production id="MULTIFRUIT_JUICE" name="$l10n_fillType_multifruitJuice" cyclesPerHour="4" costsPerActiveHour="2">
+                <inputs>
+                	<input fillType="APPLE" amount="75" />
+			<input fillType="PLUM" amount="20" />
+			<input fillType="CARROT" amount="110" />
+			<input fillType="WATER" amount="50" />
+			<input fillType="SUGAR" amount="20" />
+			<input fillType="CARTONROLL" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="MULTIFRUIT_JUICE" amount="150" />
+                </outputs>
+            </production>
+
+	<production id="PEACH_JUICE" name="$l10n_fillType_peachJuice" cyclesPerHour="4" costsPerActiveHour="4">
+                <inputs>
+                	<input fillType="PEACH" amount="100" />
+			<input fillType="WATER" amount="100" />
+			<input fillType="SUGAR" amount="15" />
+			<input fillType="CARTONROLL" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="PEACH_JUICE" amount="150" />
+                </outputs>
+            </production>
+
+	<production id="PEAR_JUICE" name="$l10n_fillType_pearJuice" cyclesPerHour="4" costsPerActiveHour="4">
+                <inputs>
+                	<input fillType="PEAR" amount="130" />
+			<input fillType="WATER" amount="100" />
+			<input fillType="SUGAR" amount="20" />
+			<input fillType="CARTONROLL" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="PEAR_JUICE" amount="150" />
+                </outputs>
+            </production>
+
+	<production id="PLUM_JUICE" name="$l10n_fillType_plumJuice" cyclesPerHour="4" costsPerActiveHour="3">
+                <inputs>
+                	<input fillType="PLUM" amount="150" />
+			<input fillType="WATER" amount="120" />
+			<input fillType="SUGAR" amount="30" />
+			<input fillType="CARTONROLL" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="PLUM_JUICE" amount="150" />
+                </outputs>
+            </production>
+
+	<production id="QUINCE_JUICE" name="$l10n_fillType_quinceJuice" cyclesPerHour="4" costsPerActiveHour="3">
+                <inputs>
+                	<input fillType="QUINCE" amount="150" />
+			<input fillType="WATER" amount="130" />
+			<input fillType="SUGAR" amount="30" />
+			<input fillType="CARTONROLL" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="QUINCE_JUICE" amount="150" />
+                </outputs>
+            </production>
+
+	<production id="STRAWBERRY_JUICE" name="$l10n_fillType_strawberryJuice" cyclesPerHour="4" costsPerActiveHour="3">
+                <inputs>
+                	<input fillType="STRAWBERRY" amount="130" />
+			<input fillType="WATER" amount="100" />
+			<input fillType="SUGAR" amount="25" />
+			<input fillType="CARTONROLL" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="STRAWBERRY_JUICE" amount="150" />
+                </outputs>
+            </production>
+
+	<production id="TOMATO_JUICE" name="$l10n_fillType_tomatoJuice" cyclesPerHour="4" costsPerActiveHour="3">
+                <inputs>
+                	<input fillType="TOMATO" amount="200" />
+			<!-- <input fillType="WATER" amount="250"  /> -->
+			<input fillType="SUGAR" amount="30" />
+			<input fillType="CARTONROLL" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="TOMATO_JUICE" amount="150" />
+                </outputs>
+            </production>
+
+	<production id="WATERMELON_JUICE" name="$l10n_fillType_watermelonJuice" cyclesPerHour="4" costsPerActiveHour="2">
+                <inputs>
+                	<input fillType="WATERMELON" amount="200" />
+			<!-- <input fillType="WATER" amount="100" /> -->
+			<input fillType="SUGAR" amount="25" />
+			<input fillType="CARTONROLL" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="WATERMELON_JUICE" amount="150" />
+                </outputs>
+            </production>
+
+	<production id="grapejuice" name="$l10n_fillType_grapeJuice" cyclesPerHour="4" costsPerActiveHour="6">
+                <inputs>
+                	<input fillType="GRAPE" amount="200" />
+			<!-- <input fillType="WATER" amount="100" /> -->
+			<input fillType="SUGAR" amount="20" />
+			<input fillType="CARTONROLL" amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="GRAPEJUICE" amount="150" />
+                </outputs>
+            </production>
+
+		</productions>
+
+		<sellingStation node="sellingStation" supportsExtension="false">
+		<unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="GRAPE WATER BEETROOT CARROT">
+			</unloadTrigger>
+		<palletTrigger triggerNode="palletTrigger" aiNode="unloadTriggerAINode" fillTypes="SUGAR CARTONROLL GRAPE WATER BEETROOT CARROT APPLE APRICOT CHERRY MELON WATERMELON PEACH PEAR PLUM STRAWBERRY QUINCE TOMATO" />
+		</sellingStation>
+		
+		<storage isExtension="false" fillLevelSyncThreshold="50">
+		<!-- input -->
+		<capacity fillType="WATER"             		capacity="500000" />
+        	<capacity fillType="APPLE"               	capacity="100000" />
+		<capacity fillType="APRICOT"               	capacity="100000" />
+		<capacity fillType="BEETROOT"               	capacity="100000" />
+		<capacity fillType="CARROT"               	capacity="100000" />
+		<capacity fillType="CHERRY"               	capacity="100000" />
+		<capacity fillType="MELON"               	capacity="100000" />
+		<capacity fillType="PEACH"               	capacity="100000" />
+		<capacity fillType="PEAR"               	capacity="100000" />
+		<capacity fillType="PLUM"               	capacity="100000" />
+		<capacity fillType="QUINCE"               	capacity="100000" />
+		<capacity fillType="STRAWBERRY"               	capacity="100000" />
+		<capacity fillType="TOMATO"               	capacity="100000" />
+		<capacity fillType="WATERMELON"               	capacity="100000" />
+		<capacity fillType="GRAPE"               	capacity="100000" />
+            	<capacity fillType="SUGAR"              	capacity="100000" />
+            	<capacity fillType="CARTONROLL"              	capacity="100000" />
+            
+
+		<!-- output -->
+			<!-- Juice -->
+			
+		<capacity fillType="APPLE_JUICE"             	capacity="50000" />
+		<capacity fillType="APRICOT_JUICE"             	capacity="50000" />
+		<capacity fillType="BEETROOT_JUICE"             capacity="50000" />
+		<capacity fillType="PLUM_JUICE"             	capacity="50000" />
+		<capacity fillType="CARROT_JUICE"             	capacity="50000" />
+		<capacity fillType="CHERRY_JUICE"             	capacity="50000" />
+		<capacity fillType="MELON_JUICE"             	capacity="50000" />
+		<capacity fillType="MULTIFRUIT_JUICE"           capacity="50000" />
+		<capacity fillType="PEAR_JUICE"             	capacity="50000" />
+		<capacity fillType="PEACH_JUICE"             	capacity="50000" />
+		<capacity fillType="PLUM_JUICE"             	capacity="50000" />
+		<capacity fillType="QUINCE_JUICE"             	capacity="50000" />
+		<capacity fillType="STRAWBERRY_JUICE"           capacity="50000" />
+		<capacity fillType="TOMATO_JUICE"             	capacity="50000" />
+		<capacity fillType="WATERMELON_JUICE"           capacity="50000" />
+		<capacity fillType="GRAPEJUICE"             	capacity="50000" />
+
+		</storage>
+
+		<palletSpawner node="palletSpawner">
+			<spawnPlaces>
+				<spawnPlace startNode="spawnPlace1Start" />
+				<spawnPlace startNode="spawnPlace2Start" />
+			</spawnPlaces>
+		</palletSpawner>
+
+		<playerTrigger node="playerTrigger" />
+
+		<sounds>
+			<idle template="raisinIdle" linkNode="0>" />
+			<active template="raisinWork" linkNode="0>" />
+		</sounds>
+	</productionPoint>
+	
+	<triggerMarkers>
+		<triggerMarker node="warningStripes" />
+		<triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIconWrench.i3d"  adjustToGround="true" />
+		<triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true"/>
+	</triggerMarkers>
+
+	<hotspots>
+		<hotspot type="PRODUCTION_POINT" linkNode="unloadTriggerMarker" teleportNode="playerTriggerMarker" />
+	</hotspots>
+
+	<i3dMappings>		
+		<i3dMapping id="sellingStation" 				node="0>0|1" />
+		<i3dMapping id="unloadTriggerMarker" 			node="0>0|1|0" />
+		<i3dMapping id="unloadTriggerAINode" 			node="0>0|1|1" />
+		<i3dMapping id="unloadTrigger" 					node="0>0|1|2" />
+		<i3dMapping id="palletTrigger"					node="0>0|1|3" />
+		<i3dMapping id="storage" 						node="0>0|2" />
+		<i3dMapping id="player" 						node="0>0|3" />
+		<i3dMapping id="playerTrigger" 					node="0>0|3|0" />
+		<i3dMapping id="playerTriggerMarker" 			node="0>0|3|1" />
+		<i3dMapping id="infoTrigger" 					node="0>0|4" />
+		<i3dMapping id="palletSpawn" 					node="0>0|5" />
+		<i3dMapping id="warningStripes" 				node="0>0|5|0" />
+		<i3dMapping id="palletSpawner" 					node="0>0|5|1" />
+		<i3dMapping id="spawnPlace1Start" 				node="0>0|5|1|0" />
+		<i3dMapping id="spawnPlace1End" 				node="0>0|5|1|0|0" />
+		<i3dMapping id="spawnPlace2Start" 				node="0>0|5|1|1" />
+		<i3dMapping id="spawnPlace2End"   				node="0>0|5|1|1|0" />
+		<i3dMapping id="clearArea1Start" 				node="0>1|0" />
+		<i3dMapping id="clearArea1Width" 				node="0>1|0|0" />
+		<i3dMapping id="clearArea1Height"				node="0>1|0|1" />
+		<i3dMapping id="clearArea2Start" 				node="0>1|1" />
+		<i3dMapping id="clearArea2Width" 				node="0>1|1|0" />
+		<i3dMapping id="clearArea2Height"				node="0>1|1|1" />
+		<i3dMapping id="levelArea1Start" 				node="0>2|0" />
+		<i3dMapping id="levelArea1Width" 				node="0>2|0|0" />
+		<i3dMapping id="levelArea1Height" 				node="0>2|0|1" />
+		<i3dMapping id="levelArea2Start" 				node="0>2|1" />
+		<i3dMapping id="levelArea2Width" 				node="0>2|1|0" />
+		<i3dMapping id="levelArea2Height" 				node="0>2|1|1" />
+		<i3dMapping id="indoorArea1Start" 				node="0>3|0" />
+		<i3dMapping id="indoorArea1Width" 				node="0>3|0|0" />
+		<i3dMapping id="indoorArea1Height" 				node="0>3|0|1" />
+		<i3dMapping id="testArea1Start" 				node="0>4|0" />
+		<i3dMapping id="testArea1End" 					node="0>4|0|0" />
+		<i3dMapping id="tipOcclusionUpdateArea1Start" 	node="0>5|0" />
+		<i3dMapping id="tipOcclusionUpdateArea1End" 	node="0>5|0|0" />
+	</i3dMappings>
+</placeable>

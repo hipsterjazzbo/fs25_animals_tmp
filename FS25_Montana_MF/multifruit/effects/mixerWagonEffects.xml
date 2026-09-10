@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<motionPathEffects xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/mapMotionPathEffects.xsd">
+    <motionPathEffect effectClass="TypedMotionPathEffect" effectType="MIXERWAGON" filename="$data/effects/mixerWagon/mixerWagon.i3d">
+        <effectGeneration rootNode="0|0"/>
+        <typeDefinition fillTypes="ALFALFA_WINDROW DRYALFALFA_WINDROW ALFALFA_FERMENTED CLOVER_WINDROW DRYCLOVER_WINDROW CLOVER_FERMENTED" speedScale="1.4"/>
+
+        <effectMeshes>
+            <effectMesh node="0|0|0" numRows="8"  rowLength="15" skipPositions="0" boundingBox="7 4 4"/>
+            <effectMesh node="0|0|1" numRows="8"  rowLength="30" skipPositions="0" boundingBox="7 4 4"/>
+        </effectMeshes>
+
+        <effectMaterials rootNode="0|1">
+            <effectMaterial node="0|1|0" fillTypes="" />
+            <effectMaterial node="0|1|1" fillTypes="ALFALFA_FERMENTED CLOVER_FERMENTED" />
+            <effectMaterial node="0|1|2" fillTypes="ALFALFA_WINDROW CLOVER_WINDROW" />
+            <effectMaterial node="0|1|3" fillTypes="DRYALFALFA_WINDROW DRYCLOVER_WINDROW" />
+            <effectMaterial node="0|1|4" fillTypes="" />
+            <effectMaterial node="0|1|5" fillTypes="" />
+        </effectMaterials>
+
+        <customShaderDefaults>
+            <customShaderVariation name="alphaMapGradient_cosOffsetY"/>
+            <customShaderParameter name="visibilityX"   value="1.5 -1.5 0.0 0.0"/>
+            <customShaderParameter name="sizeScale"     value="1.0 1.0 0.0 0.0"/>
+            <customShaderMap name="shapeArray" filename="$data/effects/pickup/sharedPickupArrayIN.dds"/>
+            <customShaderMap name="alphaMap"   filename="$data/effects/pickup/shared/gradient_diffuse.png"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+</motionPathEffects>

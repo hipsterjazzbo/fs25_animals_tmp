@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="buildableFarmHouse01.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="15" filename="$data/placeables/brandless/constructibles/buildableFarmHouse01/buildableFarmHouse01Details_diffuse.png"/>
+    <File fileId="16" filename="$data/placeables/brandless/constructibles/buildableFarmHouse01/buildableFarmHouse01Details_normal.png"/>
+    <File fileId="17" filename="$data/placeables/brandless/constructibles/buildableFarmHouse01/buildableFarmHouse01Details_specular.png"/>
+    <File fileId="5" filename="$data/placeables/brandless/constructibles/buildableFarmHouse01/buildableFarmHouse01_diffuse.png"/>
+    <File fileId="14" filename="$data/placeables/brandless/constructibles/buildableFarmHouse01/buildableFarmHouse01_height.png"/>
+    <File fileId="9" filename="$data/placeables/brandless/constructibles/buildableFarmHouse01/buildableFarmHouse01_mask.png"/>
+    <File fileId="6" filename="$data/placeables/brandless/constructibles/buildableFarmHouse01/buildableFarmHouse01_normal.png"/>
+    <File fileId="7" filename="$data/placeables/brandless/constructibles/buildableFarmHouse01/buildableFarmHouse01_specular.png"/>
+    <File fileId="22" filename="$data/placeables/brandless/constructibles/shared/propsFurniture_diffuse.png"/>
+    <File fileId="23" filename="$data/placeables/brandless/constructibles/shared/propsFurniture_normal.png"/>
+    <File fileId="24" filename="$data/placeables/brandless/constructibles/shared/propsFurniture_specular.png"/>
+    <File fileId="25" filename="$data/placeables/brandless/constructibles/shared/propsRug_diffuse.png"/>
+    <File fileId="26" filename="$data/placeables/brandless/constructibles/shared/propsRug_normal.png"/>
+    <File fileId="27" filename="$data/placeables/brandless/constructibles/shared/propsRug_specular.png"/>
+    <File fileId="8" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="21" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="18" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="31" filename="$data/shared/default_normal.png"/>
+    <File fileId="2" filename="$data/shared/warningStripes_diffuse.png"/>
+    <File fileId="3" filename="$data/shared/warningStripes_normal.png"/>
+    <File fileId="4" filename="$data/shared/warningStripes_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="buildableFarmHouse01_01_mat" materialId="5" customShaderId="8" customShaderVariation="customParallax">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+      <Custommap name="mMaskMap" fileId="9"/>
+      <Custommap name="mParallaxMap" fileId="14"/>
+    </Material>
+    <Material name="buildableFarmHouse01_02_mat" materialId="6" customShaderId="8" customShaderVariation="mergeChildren_hideByIndex_customParallax">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+      <Custommap name="mMaskMap" fileId="9"/>
+      <Custommap name="mParallaxMap" fileId="14"/>
+    </Material>
+    <Material name="buildableFarmHouse01Details_01_mat" materialId="7">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+    </Material>
+    <Material name="buildableFarmHouse01Details_02_mat" materialId="8" customShaderId="18" customShaderVariation="mergeChildren_hideByIndex">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+    </Material>
+    <Material name="glass_mat" materialId="9" diffuseColor="0.121569 0.121569 0.121569 0.109804" specularColor="0.501961 1 0.501961" alphaBlending="true">
+    </Material>
+    <Material name="lambert1" materialId="10" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="lightbulb_mat" materialId="11" diffuseColor="0.564706 0.47451 0.34902 1" specularColor="1 1 0" customShaderId="21">
+      <CustomParameter name="lightControl" value="0.5"/>
+    </Material>
+    <Material name="propsFurniture_mat" materialId="12">
+      <Texture fileId="22"/>
+      <Normalmap fileId="23"/>
+      <Glossmap fileId="24"/>
+    </Material>
+    <Material name="propsRug_mat" materialId="13">
+      <Texture fileId="25"/>
+      <Normalmap fileId="26"/>
+      <Glossmap fileId="27"/>
+    </Material>
+    <Material name="warningStripes_mat" materialId="14">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="windowoOpaque_mat" materialId="15" diffuseColor="0.192157 0.192157 0.192157 1" specularColor="1 1 0.501961">
+      <Normalmap fileId="31"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="buildableFarmHouse01.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="buildableFarmHouse01" lockedgroup="true" clipDistance="300" nodeId="150">
+      <TransformGroup name="clearAreas" nodeId="151">
+        <TransformGroup name="clearAreaStart01" translation="-11.5 0 -12.5" nodeId="152">
+          <TransformGroup name="clearAreaWidth01" translation="0 0 25" nodeId="153"/>
+          <TransformGroup name="clearAreaHeight01" translation="23 0 0" nodeId="154"/>
+        </TransformGroup>
+        <TransformGroup name="clearAreaStart02" translation="-4 0 12" nodeId="155">
+          <TransformGroup name="clearAreaWidth02" translation="0 0 4.5" nodeId="156"/>
+          <TransformGroup name="clearAreaHeight02" translation="8 0 0" nodeId="157"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="levelAreas" nodeId="158">
+        <TransformGroup name="levelAreaStart01" translation="-12.5 0 -13.5" nodeId="159">
+          <TransformGroup name="levelAreaWidth01" translation="0 0 27" nodeId="160"/>
+          <TransformGroup name="levelAreaHeight01" translation="25 0 0" nodeId="161"/>
+        </TransformGroup>
+        <TransformGroup name="levelAreaStart02" translation="-4 0 12" nodeId="162">
+          <TransformGroup name="levelAreaWidth02" translation="0 0 4.5" nodeId="163"/>
+          <TransformGroup name="levelAreaHeight02" translation="8 0 0" nodeId="164"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="paintAreas" nodeId="165">
+        <TransformGroup name="paintAreaStart01" translation="-11.5 0 -12.5" nodeId="166">
+          <TransformGroup name="paintAreaWidth01" translation="0 0 25" nodeId="167"/>
+          <TransformGroup name="paintAreaHeight01" translation="23 0 0" nodeId="168"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="indoorAreas" nodeId="169">
+        <TransformGroup name="indoorAreaStart01" translation="-7.75 0 -11" nodeId="170">
+          <TransformGroup name="indoorAreaWidth01" translation="0 0 10.5" nodeId="171"/>
+          <TransformGroup name="indoorAreaHeight01" translation="15 0 0" nodeId="172"/>
+        </TransformGroup>
+        <TransformGroup name="indoorAreaStart02" translation="-6.5 0 -4.25" nodeId="173">
+          <TransformGroup name="indoorAreaWidth02" translation="0 0 14" nodeId="174"/>
+          <TransformGroup name="indoorAreaHeight02" translation="16.5 0 0" nodeId="175"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="testAreas" nodeId="176">
+        <TransformGroup name="testAreaStart01" translation="-11.5 0 -12.5" nodeId="177">
+          <TransformGroup name="testAreaEnd01" translation="23 10 29" nodeId="178"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tipOcclusionUpdateAreas" nodeId="179">
+        <TransformGroup name="tipOcclusionUpdateAreaStart01" translation="-11.5 0 -12.5" nodeId="180">
+          <TransformGroup name="tipOcclusionUpdateAreaEnd01" translation="23 0 29" nodeId="181"/>
+        </TransformGroup>
+      </TransformGroup>
+      <Shape name="infoTrigger" translation="0 1 0" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="182" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+      <TransformGroup name="sellingStation" translation="0 0.02 0" nodeId="183">
+        <TransformGroup name="warningStripes" nodeId="184">
+          <Shape name="warningStripes01" translation="-0.000422 0.01 13.9999" shapeId="2" clipDistance="100" nodeId="185" castsShadows="false" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="14"/>
+        </TransformGroup>
+        <Shape name="palletTrigger" translation="0 2.05609 14" shapeId="3" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x10000" nodeId="186" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+        <TransformGroup name="unloadTriggerMarker" translation="0 0 14" nodeId="187"/>
+        <TransformGroup name="unloadTriggerAINode" translation="0 0 15" rotation="0 -90 0" nodeId="188"/>
+      </TransformGroup>
+      <TransformGroup name="farmhouseFeatures" nodeId="189">
+        <Camera name="sleepCamera" translation="41.0895 18.8965 14.1286" rotation="-22.3857 71.0245 3.40517e-06" nodeId="190" fov="54.4322" nearClip="0.0559864" farClip="559.864" orthographicHeight="1"/>
+        <Shape name="sleepingTrigger" translation="6.349 1.61296 5.21065" shapeId="4" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="191" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+        <TransformGroup name="sleepTriggerMarker" translation="6.34879 1.44596 5.21065" nodeId="192"/>
+        <TransformGroup name="spawnPoint" translation="3.02393 1.07861 7.6617" nodeId="193"/>
+      </TransformGroup>
+      <TransformGroup name="wardrobe" nodeId="194">
+        <Shape name="wardrobeTrigger" translation="3.741 2 -8.35087" shapeId="5" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="195" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+        <TransformGroup name="wardrobeTriggerMarker" translation="3.74056 1.47073 -8.35087" nodeId="196"/>
+      </TransformGroup>
+      <TransformGroup name="visuals" nodeId="197">
+        <TransformGroup name="visual_lod" lockedgroup="true" lodDistance="0 80" clipDistance="300" nodeId="198">
+          <TransformGroup name="buildableFarmHouse01_lod0" nodeId="199">
+            <TransformGroup name="buildableFarmHouse01PartsExisting" nodeId="200">
+              <Shape name="stonePillars" shapeId="6" clipDistance="300" nodeId="201" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="buildableFarmHouse01PartsToBuild" nodeId="202">
+              <Shape name="phase01" shapeId="7" nodeId="203" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="phase02" shapeId="8" nodeId="204" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="phase03" shapeId="9" nodeId="205" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="phase04" shapeId="10" nodeId="206" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="phase05" shapeId="11" nodeId="207" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="phase06" shapeId="12" nodeId="208" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="phase07" shapeId="13" nodeId="209" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="phase08" shapeId="14" nodeId="210" castsShadows="true" receiveShadows="true" materialIds="8"/>
+              <Shape name="phase09" shapeId="15" nodeId="211" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <TransformGroup name="phase10" nodeId="212">
+                <TransformGroup name="illum" nodeId="213">
+                  <TransformGroup name="selfIllum" nodeId="214" weatherRequiredMask="0x40">
+                    <Shape name="interior" shapeId="16" nodeId="215" castsShadows="true" receiveShadows="true" materialIds="11" weatherRequiredMask="0x40"/>
+                  </TransformGroup>
+                  <TransformGroup name="realLights" nodeId="216" weatherRequiredMask="0x40">
+                    <Light name="pointLight01" translation="-2.89051 2.97653 3.40144" nodeId="217" type="point" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="4"/>
+                    <Light name="pointLight02" translation="-0.919001 2.97653 3.40144" nodeId="218" type="point" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="4"/>
+                    <Light name="pointLight03" translation="-1.8583 2.97653 1.72583" nodeId="219" type="point" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="4"/>
+                    <Light name="spotLight01" translation="-1.84985 2.97653 2.74254" rotation="-90 0 0" nodeId="220" type="spot" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="130" dropOff="4"/>
+                    <Light name="pointLight04" translation="-2.73938 2.97671 -5.46499" nodeId="221" type="point" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="4"/>
+                    <Light name="pointLight05" translation="-0.634597 2.97671 -5.46499" nodeId="222" type="point" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="4"/>
+                    <Light name="pointLight06" translation="-1.68481 2.97671 -7.51997" nodeId="223" type="point" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="4"/>
+                    <Light name="spotLight02" translation="-1.67636 2.97671 -6.35772" rotation="-90 0 0" nodeId="224" type="spot" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" softShadowsLightSize="0.05" softShadowsLightDistance="15" softShadowsDepthBiasFactor="5" softShadowsMaxPenumbraSize="0.5" range="10" coneAngle="130" dropOff="4"/>
+                    <Light name="pointLight07" translation="5.82294 2.98108 6.48606" nodeId="225" type="point" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="4"/>
+                    <Light name="pointLight08" translation="7.77868 2.98108 6.48606" nodeId="226" type="point" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="4"/>
+                    <Light name="pointLight09" translation="6.87869 2.98108 4.61462" nodeId="227" type="point" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="4"/>
+                    <Light name="spotLight03" translation="6.88713 2.98108 5.71657" rotation="-90 0 0" nodeId="228" type="spot" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" softShadowsLightSize="0.05" softShadowsLightDistance="15" softShadowsDepthBiasFactor="5" softShadowsMaxPenumbraSize="0.5" range="5" coneAngle="130" dropOff="4"/>
+                    <Light name="pointLight10" translation="5.31996 6.35504 3.42543" nodeId="229" type="point" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="4"/>
+                    <Light name="pointLight11" translation="7.16974 6.35504 3.41838" nodeId="230" type="point" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="4"/>
+                    <Light name="pointLight12" translation="6.27893 6.35504 1.61951" nodeId="231" type="point" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="4"/>
+                    <Light name="spotLight04" translation="6.28737 6.35504 2.71556" rotation="-90 0 0" nodeId="232" type="spot" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" softShadowsLightSize="0.05" softShadowsLightDistance="15" softShadowsDepthBiasFactor="5" softShadowsMaxPenumbraSize="0.5" range="10" coneAngle="130" dropOff="4"/>
+                    <Light name="pointLight13" translation="3.7019 3.09358 -8.41049" nodeId="233" type="point" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="4"/>
+                    <Light name="spotLight05" translation="3.7019 3.09358 -8.41049" rotation="-90 0 0" nodeId="234" type="spot" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="130" dropOff="4"/>
+                    <Light name="pointLight14" translation="3.96447 3.09377 -4.39132" nodeId="235" type="point" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="4"/>
+                    <Light name="spotLight06" translation="3.96447 3.09377 -4.39132" rotation="-90 0 0" nodeId="236" type="spot" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="130" dropOff="4"/>
+                    <Light name="pointLight15" translation="1.78831 3.09203 -4.39132" nodeId="237" type="point" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="4"/>
+                    <Light name="spotLight07" translation="1.78831 3.09203 -4.39132" rotation="-90 0 0" nodeId="238" type="spot" color="0.167 0.1461 0.079" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="130" dropOff="4"/>
+                    <Light name="pointLight16" translation="0.356803 6.44915 -6.12662" nodeId="239" type="point" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="4"/>
+                    <Light name="spotLight08" translation="0.356803 6.44915 -6.12662" rotation="-90 0 0" nodeId="240" type="spot" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="10" coneAngle="130" dropOff="4"/>
+                    <Light name="pointLight17" translation="0.356803 6.44944 -8.23406" nodeId="241" type="point" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="4"/>
+                    <Light name="spotLight09" translation="0.356803 6.44944 -8.23406" rotation="-90 0 0" nodeId="242" type="spot" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="10" coneAngle="130" dropOff="4"/>
+                    <Light name="pointLight18" translation="6.71164 3.09105 -1.31451" nodeId="243" type="point" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="4"/>
+                    <Light name="spotLight10" translation="6.71164 3.09105 -1.31451" rotation="-90 0 0" nodeId="244" type="spot" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="10" coneAngle="130" dropOff="4"/>
+                    <Light name="pointLight19" translation="6.71164 3.09128 0.75426" nodeId="245" type="point" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="4"/>
+                    <Light name="spotLight11" translation="6.71164 3.09128 0.75426" rotation="-90 0 0" nodeId="246" type="spot" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="10" coneAngle="130" dropOff="4"/>
+                    <Light name="pointLight20" translation="3.08115 3.09334 3.67661" nodeId="247" type="point" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="4"/>
+                    <Light name="spotLight12" translation="3.08115 3.09334 3.67661" rotation="-90 0 0" nodeId="248" type="spot" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="130" dropOff="4"/>
+                    <Light name="pointLight21" translation="1.8387 6.51438 4.33512" nodeId="249" type="point" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="4"/>
+                    <Light name="spotLight13" translation="1.8387 6.51438 4.33512" rotation="-90 0 0" nodeId="250" type="spot" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="130" dropOff="4"/>
+                    <Light name="pointLight22" translation="-1.60272 6.43146 2.71576" nodeId="251" type="point" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="4"/>
+                    <Light name="spotLight14" translation="-1.60272 6.43146 2.71576" rotation="-90 0 0" nodeId="252" type="spot" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="130" dropOff="4"/>
+                    <Light name="pointLight23" translation="-3.74014 6.43147 2.71576" nodeId="253" type="point" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="4"/>
+                    <Light name="spotLight15" translation="-3.74014 6.43147 2.71576" rotation="-90 0 0" nodeId="254" type="spot" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="130" dropOff="4"/>
+                    <Light name="pointLight24" translation="3.08115 3.09358 -0.304425" nodeId="255" type="point" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="4"/>
+                    <Light name="spotLight16" translation="3.08115 3.09358 -0.304425" rotation="-90 0 0" nodeId="256" type="spot" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="5" coneAngle="130" dropOff="4"/>
+                    <Light name="pointLight25" translation="0.356357 6.4467 -1.79934" nodeId="257" type="point" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="4"/>
+                    <Light name="spotLight17" translation="0.356357 6.4467 -1.79934" rotation="-90 0 0" nodeId="258" type="spot" color="0.167 0.1461 0.0786" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="130" dropOff="4"/>
+                  </TransformGroup>
+                </TransformGroup>
+                <TransformGroup name="furniture1_lod" translation="-5.36899 1.07514 -1.53145" rotation="0 90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="259">
+                  <Shape name="LOD0" shapeId="17" nodeId="260" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="18" nodeId="261" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture2_lod" translation="6.04235 1.07394 -2.94084" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="262">
+                  <Shape name="LOD0" shapeId="19" nodeId="263" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="20" nodeId="264" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture3_lod" translation="6.30555 1.07509 2.78749" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="265">
+                  <Shape name="LOD0" shapeId="21" nodeId="266" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="22" nodeId="267" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture4_lod" translation="1.8145 1.07423 -8.11743" rotation="0 -90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="268">
+                  <Shape name="LOD0" shapeId="23" nodeId="269" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="24" nodeId="270" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture5_lod" translation="1.79168 1.07756 0.437399" rotation="0 -90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="271">
+                  <Shape name="LOD0" shapeId="25" nodeId="272" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="26" nodeId="273" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture6_lod" translation="2.38015 1.06544 -10.0934" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="274">
+                  <Shape name="LOD0" shapeId="27" nodeId="275" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="28" nodeId="276" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture7_lod" translation="-0.115432 3.75157 3.28622" rotation="0 90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="277">
+                  <Shape name="LOD0" shapeId="29" nodeId="278" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="30" nodeId="279" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture8_lod" translation="8.99656 1.0772 -2.33409" rotation="0 -90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="280">
+                  <Shape name="LOD0" shapeId="31" nodeId="281" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="32" nodeId="282" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture9_lod" translation="3.79868 3.75402 3.97685" rotation="0 90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="283">
+                  <Shape name="LOD0" shapeId="33" nodeId="284" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="34" nodeId="285" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture10_lod" translation="4.34708 1.07649 0.928797" rotation="0 90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="286">
+                  <Shape name="LOD0" shapeId="35" nodeId="287" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="36" nodeId="288" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture11_lod" translation="-4.24288 1.0723 -10.0971" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="289">
+                  <Shape name="LOD0" shapeId="37" nodeId="290" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="38" nodeId="291" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture12_lod" translation="-2.70338 0.956614 -10.2586" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="292">
+                  <Shape name="LOD0" translation="0 0 0.006431" shapeId="39" nodeId="293" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" translation="0 0 0.006431" shapeId="40" nodeId="294" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture13_lod" translation="1.97379 1.07644 -6.15991" rotation="0 90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="295">
+                  <Shape name="LOD0" shapeId="41" nodeId="296" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="42" nodeId="297" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture14" translation="-0.111561 5.2158 4.74367" rotation="0 90 0" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="298">
+                  <Shape name="LOD0" shapeId="43" nodeId="299" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture15_lod" translation="-5.37729 3.76039 5.14865" rotation="0 -270 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="300">
+                  <Shape name="LOD0" shapeId="44" nodeId="301" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="45" nodeId="302" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture16_lod" translation="-3.44232 1.07446 -10.0897" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="303">
+                  <Shape name="LOD0" shapeId="46" nodeId="304" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="47" nodeId="305" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture17_lod" translation="-5.22605 1.07446 -10.0889" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="306">
+                  <Shape name="LOD0" shapeId="48" nodeId="307" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="49" nodeId="308" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture18_lod" translation="-1.84948 3.73467 2.7418" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="309">
+                  <Shape name="LOD0" shapeId="50" nodeId="310" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="51" nodeId="311" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture19_lod" translation="-0.139374 3.75798 5.93148" rotation="0 90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="312">
+                  <Shape name="LOD0" shapeId="41" nodeId="313" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="42" nodeId="314" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture20_lod" translation="1.21825 3.76867 4.97176" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="315">
+                  <Shape name="LOD0" shapeId="52" nodeId="316" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="53" nodeId="317" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture21_lod" translation="5.35067 1.14785 -6.79935" rotation="0 -90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="318">
+                  <Shape name="LOD0" translation="0 0 -0.005096" shapeId="54" nodeId="319" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" translation="0 0 -0.005096" shapeId="55" nodeId="320" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture22_lod" translation="7.52867 1.10461 5.33922" rotation="0 -1.22592 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="321">
+                  <Shape name="LOD0" translation="0 0 -1e-06" shapeId="56" nodeId="322" castsShadows="true" receiveShadows="true" materialIds="13"/>
+                  <Shape name="LOD1" translation="0 0 -1e-06" shapeId="57" nodeId="323" castsShadows="true" receiveShadows="true" materialIds="13"/>
+                </TransformGroup>
+                <TransformGroup name="furniture23_lod" translation="-0.369729 2.62151 -0.906187" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="324">
+                  <Shape name="LOD0" shapeId="58" nodeId="325" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="59" nodeId="326" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture24_lod" translation="0.109549 2.414 -0.906187" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="327">
+                  <Shape name="LOD0" shapeId="60" nodeId="328" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="59" nodeId="329" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture25_lod" translation="-5.26019 3.69523 3.06973" rotation="0 90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="330">
+                  <Shape name="LOD0" shapeId="61" nodeId="331" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="62" nodeId="332" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture26_lod" translation="3.658 3.85768 4.08273" rotation="0 270 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="333">
+                  <Shape name="LOD0" translation="0 0 -0.005096" shapeId="54" nodeId="334" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" translation="0 0 -0.005096" shapeId="55" nodeId="335" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture27_lod" translation="3.65537 3.75879 6.18075" rotation="0 -135 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="336">
+                  <Shape name="LOD0" translation="0 0 -1e-06" shapeId="63" nodeId="337" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" translation="0 0 -1e-06" shapeId="64" nodeId="338" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture28_lod" translation="-3.53804 2.61207 -1.07481" rotation="0 180 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="339">
+                  <Shape name="LOD0" shapeId="65" nodeId="340" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="66" nodeId="341" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture29_lod" translation="2.17791 1.07054 5.74178" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="342">
+                  <Shape name="LOD0" shapeId="67" nodeId="343" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="68" nodeId="344" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture30_lod" translation="9.00124 3.7588 1.86085" rotation="0 -90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="345">
+                  <Shape name="LOD0" shapeId="69" nodeId="346" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="70" nodeId="347" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture31_lod" translation="-0.65076 1.08426 6.16206" rotation="0 180 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="348">
+                  <Shape name="LOD0" shapeId="71" nodeId="349" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="72" nodeId="350" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture32_lod" translation="1.6963 1.08426 4.55515" rotation="0 -126.097 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="351">
+                  <Shape name="LOD0" shapeId="73" nodeId="352" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="74" nodeId="353" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture33_lod" translation="5.32873 1.07299 -5.52185" rotation="0 -90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="354">
+                  <Shape name="LOD0" shapeId="75" nodeId="355" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="76" nodeId="356" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture34_lod" translation="-2.59227 1.07587 -0.920756" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="357">
+                  <Shape name="LOD0" shapeId="77" nodeId="358" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="78" nodeId="359" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture35_lod" translation="-2.74735 1.08455 -6.8403" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="360">
+                  <Shape name="LOD0" shapeId="79" nodeId="361" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="80" nodeId="362" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture36_lod" translation="3.77283 3.76025 5.72613" rotation="0 -270 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="363">
+                  <Shape name="LOD0" shapeId="81" nodeId="364" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="82" nodeId="365" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture37_lod" translation="-5.33174 1.08426 0.42491" rotation="0 -309.526 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="366">
+                  <Shape name="LOD0" shapeId="73" nodeId="367" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="74" nodeId="368" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture38_lod" translation="-2.25966 1.08327 -5.66985" rotation="0 -192.287 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="369">
+                  <Shape name="LOD0" shapeId="83" nodeId="370" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="84" nodeId="371" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture39_lod" translation="-2.1827 1.08327 -6.98484" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="372">
+                  <Shape name="LOD0" shapeId="85" nodeId="373" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="86" nodeId="374" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture40_lod" translation="-0.470945 1.08327 -6.33686" rotation="0 -90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="375">
+                  <Shape name="LOD0" shapeId="87" nodeId="376" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="88" nodeId="377" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture41_lod" translation="-5.38726 1.07861 -3.111" rotation="0 90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="378">
+                  <Shape name="LOD0" shapeId="35" nodeId="379" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="36" nodeId="380" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture42_lod" translation="0.80909 1.07709 -7.52647" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="381">
+                  <Shape name="LOD0" shapeId="89" nodeId="382" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="90" nodeId="383" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture43_lod" translation="4.48227 1.08327 -4.35251" rotation="0 -243.243 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="384">
+                  <Shape name="LOD0" shapeId="87" nodeId="385" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="88" nodeId="386" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture44_lod" translation="-2 1.1045 2.85057" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="387">
+                  <Shape name="LOD0" translation="0 0 -1e-06" shapeId="91" nodeId="388" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" translation="0 0 -1e-06" shapeId="92" nodeId="389" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture45" translation="-1.52399 2.61207 -10.0907" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="390">
+                  <Shape name="LOD0" shapeId="93" nodeId="391" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture46" translation="3.8341 4.53584 5.20343" rotation="-4.75668 90 0" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="392">
+                  <Shape name="LOD0" shapeId="43" nodeId="393" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture47_lod" translation="-1.67206 1.09718 -6.39378" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="394">
+                  <Shape name="LOD0" shapeId="94" nodeId="395" castsShadows="true" receiveShadows="true" materialIds="13"/>
+                  <Shape name="LOD1" shapeId="95" nodeId="396" castsShadows="true" receiveShadows="true" materialIds="13"/>
+                </TransformGroup>
+                <TransformGroup name="furniture48_lod" translation="1.55431 1.07598 -2.40501" rotation="0 -180 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="397">
+                  <Shape name="LOD0" shapeId="71" nodeId="398" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="72" nodeId="399" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture49_lod" translation="-1.21985 1.08327 -6.98484" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="400">
+                  <Shape name="LOD0" shapeId="85" nodeId="401" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="86" nodeId="402" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture50_lod" translation="-5.14954 1.07054 -4.68096" rotation="0 -15.3633 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="403">
+                  <Shape name="LOD0" shapeId="67" nodeId="404" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="68" nodeId="405" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture51_lod" translation="-1.66903 3.73493 -6.35749" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="406">
+                  <Shape name="LOD0" shapeId="50" nodeId="407" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="51" nodeId="408" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture52_lod" translation="-4.03653 2.41521 -0.906187" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="409">
+                  <Shape name="LOD0" shapeId="58" nodeId="410" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="59" nodeId="411" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture53_lod" translation="-3.55725 2.2077 -0.906187" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="412">
+                  <Shape name="LOD0" shapeId="60" nodeId="413" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="59" nodeId="414" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture54_lod" translation="-2.4564 1.08416 3.6198" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="415">
+                  <Shape name="LOD0" shapeId="96" nodeId="416" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="97" nodeId="417" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture55_lod" translation="3.79868 3.75402 2.88986" rotation="0 90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="418">
+                  <Shape name="LOD0" shapeId="33" nodeId="419" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="34" nodeId="420" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture56_lod" translation="3.63333 3.76014 2.31172" rotation="0 270 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="421">
+                  <Shape name="LOD0" shapeId="33" nodeId="422" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="34" nodeId="423" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture57_lod" translation="4.5332 3.76104 5.19185" rotation="0 -113.882 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="424">
+                  <Shape name="LOD0" shapeId="83" nodeId="425" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="84" nodeId="426" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture58_lod" translation="-5.37746 1.06955 5.42512" rotation="0 90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="427">
+                  <Shape name="LOD0" translation="-2e-06 0 -0.000884" shapeId="98" nodeId="428" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" translation="-2e-06 0 -0.000884" shapeId="99" nodeId="429" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture59_lod" translation="8.99781 3.76184 -0.459202" rotation="0 -90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="430">
+                  <Shape name="LOD0" shapeId="21" nodeId="431" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="22" nodeId="432" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture60" translation="1.97452 2.40091 -7.3298" rotation="0 90 0" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="433">
+                  <Shape name="LOD0" shapeId="43" nodeId="434" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture61_lod" translation="-2.99429 3.76063 -0.806075" rotation="0 360 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="435">
+                  <Shape name="LOD0" shapeId="71" nodeId="436" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="72" nodeId="437" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture62_lod" translation="-3.19859 3.75584 -4.28686" rotation="0 90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="438">
+                  <Shape name="LOD0" shapeId="71" nodeId="439" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="72" nodeId="440" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture63_lod" translation="-0.298928 3.75846 5.33552" rotation="0 211.764 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="441">
+                  <Shape name="LOD0" shapeId="73" nodeId="442" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="74" nodeId="443" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture64_lod" translation="-0.27848 3.75158 2.37678" rotation="0 -90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="444">
+                  <Shape name="LOD0" translation="-2e-06 0 -0.000884" shapeId="98" nodeId="445" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" translation="-2e-06 0 -0.000884" shapeId="99" nodeId="446" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture65_lod" translation="-5.374 3.75809 1.53376" rotation="0 90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="447">
+                  <Shape name="LOD0" translation="0 1e-06 0" shapeId="100" nodeId="448" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" translation="0 1e-06 0" shapeId="101" nodeId="449" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture66_lod" translation="-2.47791 3.77569 2.69637" rotation="0 11.0571 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="450">
+                  <Shape name="LOD0" translation="0 0 -1e-06" shapeId="91" nodeId="451" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" translation="0 0 -1e-06" shapeId="92" nodeId="452" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture67_lod" translation="5.35195 1.08197 -10.1222" rotation="0 -45 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="453">
+                  <Shape name="LOD0" translation="0 0 -1e-06" shapeId="63" nodeId="454" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" translation="0 0 -1e-06" shapeId="64" nodeId="455" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture68_lod" translation="2.17277 3.76704 -8.45106" rotation="0 4.47008 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="456">
+                  <Shape name="LOD0" translation="0 0 -1e-06" shapeId="56" nodeId="457" castsShadows="true" receiveShadows="true" materialIds="13"/>
+                  <Shape name="LOD1" translation="0 0 -1e-06" shapeId="57" nodeId="458" castsShadows="true" receiveShadows="true" materialIds="13"/>
+                </TransformGroup>
+                <TransformGroup name="furniture69_lod" translation="4.19763 1.07119 4.53591" rotation="0 -90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="459">
+                  <Shape name="LOD0" translation="0 1e-06 0" shapeId="100" nodeId="460" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" translation="0 1e-06 0" shapeId="101" nodeId="461" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture70" translation="1.97531 2.09981 0.764126" rotation="0 90 0" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="462">
+                  <Shape name="LOD0" shapeId="93" nodeId="463" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture71" translation="0.197444 5.07129 -3.70747" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="464">
+                  <Shape name="LOD0" shapeId="93" nodeId="465" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture72_lod" translation="-0.104177 5.05545 -0.070123" rotation="0 450 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="466">
+                  <Shape name="LOD0" shapeId="65" nodeId="467" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="66" nodeId="468" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture73_lod" translation="8.99954 5.37858 2.68642" rotation="0 270 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="469">
+                  <Shape name="LOD0" shapeId="65" nodeId="470" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="66" nodeId="471" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture74_lod" translation="6.79046 2.55112 2.61234" rotation="0 180 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="472">
+                  <Shape name="LOD0" shapeId="65" nodeId="473" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="66" nodeId="474" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture75_lod" translation="6.65886 2.72615 2.79238" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="475">
+                  <Shape name="LOD0" shapeId="65" nodeId="476" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="66" nodeId="477" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture76_lod" translation="6.2862 7.83976 2.71549" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="478">
+                  <Shape name="LOD0" shapeId="102" nodeId="479" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="103" nodeId="480" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture77" translation="4.38171 1.84934 5.31018" rotation="-2.64155 90 0" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="481">
+                  <Shape name="LOD0" shapeId="43" nodeId="482" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture78_lod" translation="5.11301 1.07577 5.40712" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="483">
+                  <Shape name="LOD0" shapeId="89" nodeId="484" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="90" nodeId="485" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture79_lod" translation="6.08973 1.07679 7.68668" rotation="0 -158.716 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="486">
+                  <Shape name="LOD0" shapeId="87" nodeId="487" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="88" nodeId="488" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture80_lod" translation="4.33282 1.07491 5.84624" rotation="0 90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="489">
+                  <Shape name="LOD0" shapeId="81" nodeId="490" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="82" nodeId="491" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture81_lod" translation="4.35296 1.07377 8.05284" rotation="0 90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="492">
+                  <Shape name="LOD0" shapeId="29" nodeId="493" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="30" nodeId="494" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture82_lod" translation="9.00048 1.07492 3.75491" rotation="0 -90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="495">
+                  <Shape name="LOD0" shapeId="104" nodeId="496" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="105" nodeId="497" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture83_lod" translation="9.00048 1.07492 6.30238" rotation="0 -90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="498">
+                  <Shape name="LOD0" shapeId="104" nodeId="499" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="105" nodeId="500" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture84_lod" translation="9.00108 1.07364 4.52315" rotation="0 -90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="501">
+                  <Shape name="LOD0" shapeId="69" nodeId="502" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="70" nodeId="503" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture85_lod" translation="6.88696 3.73934 5.72293" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="504">
+                  <Shape name="LOD0" shapeId="50" nodeId="505" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="51" nodeId="506" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture86_lod" translation="0.358227 7.82091 -1.80355" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="507">
+                  <Shape name="LOD0" shapeId="106" nodeId="508" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="107" nodeId="509" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture87_lod" translation="-1.60085 7.80588 2.71155" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="510">
+                  <Shape name="LOD0" shapeId="106" nodeId="511" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="107" nodeId="512" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture88_lod" translation="-3.73827 7.80588 2.71155" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="513">
+                  <Shape name="LOD0" shapeId="106" nodeId="514" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="107" nodeId="515" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture89_lod" translation="0.358674 7.82384 -6.13084" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="516">
+                  <Shape name="LOD0" shapeId="106" nodeId="517" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="107" nodeId="518" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture90_lod" translation="0.358674 7.82384 -8.23827" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="519">
+                  <Shape name="LOD0" shapeId="106" nodeId="520" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="107" nodeId="521" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture91" translation="-1.64748 4.76024 -10.058" rotation="-3.58414 0 0" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="522">
+                  <Shape name="LOD0" shapeId="43" nodeId="523" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture92_lod" translation="-2.25719 3.7443 -10.0939" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="524">
+                  <Shape name="LOD0" translation="0 1e-06 0" shapeId="100" nodeId="525" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" translation="0 1e-06 0" shapeId="101" nodeId="526" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture93_lod" translation="3.0961 3.74725 -10.1009" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="527">
+                  <Shape name="LOD0" shapeId="104" nodeId="528" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="105" nodeId="529" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture94_lod" translation="0.688838 3.74725 -10.1009" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="530">
+                  <Shape name="LOD0" shapeId="104" nodeId="531" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="105" nodeId="532" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture95_lod" translation="9.00356 3.76019 3.55212" rotation="0 -90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="533">
+                  <Shape name="LOD0" shapeId="104" nodeId="534" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="105" nodeId="535" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture96_lod" translation="9.00356 3.76019 1.15254" rotation="0 -90 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="536">
+                  <Shape name="LOD0" shapeId="104" nodeId="537" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="105" nodeId="538" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture97_lod" translation="1.39066 3.74881 -9.99243" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="539">
+                  <Shape name="LOD0" shapeId="69" nodeId="540" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="70" nodeId="541" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture98_lod" translation="7.74777 1.0707 2.62401" rotation="0 -180 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="542">
+                  <Shape name="LOD0" shapeId="75" nodeId="543" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="76" nodeId="544" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture99_lod" translation="6.79331 1.07385 1.82555" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="545">
+                  <Shape name="LOD0" shapeId="85" nodeId="546" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="86" nodeId="547" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture100_lod" translation="6.71173 3.74005 0.754425" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="548">
+                  <Shape name="LOD0" shapeId="108" nodeId="549" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="109" nodeId="550" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture101_lod" translation="6.71173 3.74005 -1.31434" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="551">
+                  <Shape name="LOD0" shapeId="108" nodeId="552" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="109" nodeId="553" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture102_lod" translation="3.96456 3.74005 -4.39116" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="554">
+                  <Shape name="LOD0" shapeId="108" nodeId="555" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="109" nodeId="556" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture103_lod" translation="1.7884 3.74005 -4.39116" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="557">
+                  <Shape name="LOD0" shapeId="108" nodeId="558" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="109" nodeId="559" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture104_lod" translation="3.08124 3.74005 -0.304261" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="560">
+                  <Shape name="LOD0" shapeId="108" nodeId="561" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="109" nodeId="562" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture105_lod" translation="3.08124 3.74005 3.67677" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="563">
+                  <Shape name="LOD0" shapeId="108" nodeId="564" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="109" nodeId="565" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture106_lod" translation="3.70199 3.74005 -8.41032" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="566">
+                  <Shape name="LOD0" shapeId="108" nodeId="567" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="109" nodeId="568" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture107_lod" translation="1.83879 7.16062 4.33528" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="569">
+                  <Shape name="LOD0" shapeId="108" nodeId="570" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="109" nodeId="571" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture108_lod" translation="-5.00997 1.09067 2.71139" rotation="0 89.4839 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="572">
+                  <Shape name="LOD0" shapeId="110" nodeId="573" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="111" nodeId="574" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture109_lod" translation="6.65889 1.1025 2.14052" rotation="0 -6.74393 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="575">
+                  <Shape name="LOD0" shapeId="112" nodeId="576" castsShadows="true" receiveShadows="true" materialIds="13"/>
+                  <Shape name="LOD1" shapeId="113" nodeId="577" castsShadows="true" receiveShadows="true" materialIds="13"/>
+                </TransformGroup>
+                <TransformGroup name="furniture110_lod" translation="2.80926 1.09155 -7.38267" rotation="0 -1.78732 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="578">
+                  <Shape name="LOD0" shapeId="114" nodeId="579" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="115" nodeId="580" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+                <TransformGroup name="furniture111_lod" translation="6.83481 3.76772 2.81968" rotation="0 2.53781 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="581">
+                  <Shape name="LOD0" shapeId="94" nodeId="582" castsShadows="true" receiveShadows="true" materialIds="13"/>
+                  <Shape name="LOD1" shapeId="95" nodeId="583" castsShadows="true" receiveShadows="true" materialIds="13"/>
+                </TransformGroup>
+                <TransformGroup name="furniture112_lod" translation="0.36543 1.09067 -9.75993" rotation="0 -0.069947 0" lodDistance="0 20" lodBlending="false" static="true" collision="false" collisionFilterMask="0xfffffbff" clipDistance="70" nodeId="584">
+                  <Shape name="LOD0" shapeId="110" nodeId="585" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                  <Shape name="LOD1" shapeId="111" nodeId="586" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="phase11" nodeId="587">
+                <TransformGroup name="door01" translation="-5.4908 3.20923 -5.14037" nodeId="588">
+                  <Shape name="visual" shapeId="116" nodeId="589" castsShadows="true" receiveShadows="true" materialIds="8"/>
+                  <Shape name="glass" shapeId="117" nodeId="590" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="9"/>
+                  <Shape name="col" shapeId="118" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="591" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+                </TransformGroup>
+                <TransformGroup name="door02" translation="3.51365 3.20923 6.27183" nodeId="592">
+                  <Shape name="visual" shapeId="119" nodeId="593" castsShadows="true" receiveShadows="true" materialIds="8"/>
+                  <Shape name="glass" translation="-0.477039 -0.806247 0.022151" shapeId="120" nodeId="594" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="9"/>
+                  <Shape name="col" shapeId="121" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="595" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+                </TransformGroup>
+                <Shape name="glass" shapeId="122" nodeId="596" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                <Shape name="door01Trigger" translation="-5.4908 3.20923 -5.14037" shapeId="123" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="597" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+                <Shape name="door02Trigger" translation="3.51365 3.20923 6.27183" shapeId="124" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="598" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="buildableFarmHouse01_lod1" nodeId="599">
+            <Shape name="buildableFarmHouse01" shapeId="125" clipDistance="300" nodeId="600" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <TransformGroup name="doorsWindows" nodeId="601">
+              <Shape name="window48" shapeId="126" clipDistance="300" nodeId="602" castsShadows="true" receiveShadows="true" materialIds="7"/>
+              <Shape name="window50" shapeId="127" clipDistance="300" nodeId="603" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </TransformGroup>
+            <Shape name="glassOpaque" shapeId="128" clipDistance="300" nodeId="604" castsShadows="true" receiveShadows="true" materialIds="15"/>
+            <Shape name="boxes" shapeId="129" clipDistance="300" nodeId="605" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            <Shape name="opaqueGlass" shapeId="130" nodeId="606" castsShadows="true" receiveShadows="true" materialIds="15"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="props" nodeId="607"/>
+      </TransformGroup>
+      <TransformGroup name="collisions" nodeId="608">
+        <Shape name="tipCollision" translation="0.75 0 -0.75" shapeId="131" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" nodeId="609" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+        <Shape name="colProps" shapeId="132" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="610" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+        <Shape name="colStructure" translation="0 -0.049007 0" shapeId="133" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="611" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="10"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="203">
+      <Attribute name="hideByIndexMaxIndex" type="integer" value="5"/>
+    </UserAttribute>
+    <UserAttribute nodeId="204">
+      <Attribute name="hideByIndexMaxIndex" type="integer" value="32"/>
+    </UserAttribute>
+    <UserAttribute nodeId="205">
+      <Attribute name="hideByIndexMaxIndex" type="integer" value="8"/>
+    </UserAttribute>
+    <UserAttribute nodeId="206">
+      <Attribute name="hideByIndexMaxIndex" type="integer" value="42"/>
+    </UserAttribute>
+    <UserAttribute nodeId="207">
+      <Attribute name="hideByIndexMaxIndex" type="integer" value="2"/>
+    </UserAttribute>
+    <UserAttribute nodeId="208">
+      <Attribute name="hideByIndexMaxIndex" type="integer" value="15"/>
+    </UserAttribute>
+    <UserAttribute nodeId="209">
+      <Attribute name="hideByIndexMaxIndex" type="integer" value="5"/>
+    </UserAttribute>
+    <UserAttribute nodeId="210">
+      <Attribute name="hideByIndexMaxIndex" type="integer" value="39"/>
+    </UserAttribute>
+    <UserAttribute nodeId="211">
+      <Attribute name="hideByIndexMaxIndex" type="integer" value="14"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

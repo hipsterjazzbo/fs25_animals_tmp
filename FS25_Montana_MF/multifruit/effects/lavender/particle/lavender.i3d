@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="lavender.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.5"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="lavender16x4_diffuse.dds"/>
+    <File fileId="2" filename="lavender16x4_normal.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="lavender.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="emitShape" translation="0 4.987 0.967" rotation="-3.699 0 0" shapeId="1" nodeId="8" castsShadows="true" receiveShadows="true" materialIds="5"/>
+  </Scene>
+
+</i3D>

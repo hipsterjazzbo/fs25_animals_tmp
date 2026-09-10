@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="silo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Valley Bluff Grain Silo</name>
+        <functions>
+            <function>$l10n_function_farmSilo</function>
+        </functions>
+        <image>$data/placeables/neuero/nl1622_2000/store_nl1622_2000.png</image>
+        <price>198000</price>
+		<showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <dailyUpkeep>50</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NEUERO</brand>
+        <species>PLACEABLE</species>
+        <category>silos</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>silos</tab>
+        </brush>
+        <vertexBufferMemoryUsage>1589760</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>268544</indexBufferMemoryUsage>
+        <textureMemoryUsage>851968</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/grainSiloStorageF1.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+		<boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement>
+    </placement>
+
+    <clearAreas>
+    </clearAreas>
+
+    <leveling>
+    </leveling>
+
+    <indoorAreas/>
+
+    <tipOcclusionUpdateAreas>
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+	    <updateAreas>
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <silo>
+        <loadingStation node="loadingTrigger" supportsExtension="true" storageRadius="50">
+            <loadTrigger triggerNode="loadingTrigger" fillLitersPerSecond="5000" dischargeNode="dischargeNode" fillTypeCategories="farmSilo" aiNode="aiLoadingNode">
+                <effectNode effectClass="PipeEffect" effectNode="pipeEffect"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0"/>
+                <effectNode                          effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.5" />
+                <sounds>
+                    <loading template="silosActive" />
+                </sounds>
+            </loadTrigger>
+        </loadingStation>
+
+        <unloadingStation supportsExtension="true" storageRadius="50">
+            <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypeCategories="farmSilo" aiNode="aiUnloadingNode"/>
+        </unloadingStation>
+
+        <storages>
+            <storage node="storage" fillTypeCategories="farmSilo" capacity="2000000" isExtension="false"/>
+        </storages>
+    </silo>
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="mapPosition" teleportNode="markerLoading" />
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="markerLoading"   filename="$data/shared/assets/marker/markerIconLoad.i3d" />
+        <triggerMarker node="markerUnloading" filename="$data/shared/assets/marker/markerIconUnload.i3d" />
+    </triggerMarkers>
+
+    <i3dMappings>
+        <i3dMapping id="loadingTrigger" node="0>5|0|0|0" />
+        <i3dMapping id="dischargeNode" node="0>5|0|0|1" />
+        <i3dMapping id="pipeEffect" node="0>5|0|0|2|0" />
+        <i3dMapping id="pipeEffectSmoke" node="0>5|0|0|2|1" />
+        <i3dMapping id="aiLoadingNode" node="0>5|0|0|3" />
+        <i3dMapping id="exactFillRootNode" node="0>5|1|0" />
+        <i3dMapping id="aiUnloadingNode" node="0>5|1|1" />
+        <i3dMapping id="mapPosition" node="0>5|2" />
+        <i3dMapping id="storage" node="0>5|3" />
+        <i3dMapping id="infoTrigger" node="0>5|4" />
+        <i3dMapping id="markerLoading" node="0>6|0" />
+        <i3dMapping id="markerUnloading" node="0>6|1" />
+    </i3dMappings>
+</placeable>

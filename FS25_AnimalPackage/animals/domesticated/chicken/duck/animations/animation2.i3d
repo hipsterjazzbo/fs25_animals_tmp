@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="animation2.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+  </Materials>
+
+
+  <Shapes>
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="GLTF_created_0" rotation="-90 0 0" nodeId="94">
+        <TransformGroup name="GLTF_created_0_rootJoint" rotation="9.65935e-06 -0 0" nodeId="95">
+          <TransformGroup name="Chicken_MAINSHJnt_27" rotation="89.9998 3.71489e-12 1.07344e-06" nodeId="96">
+            <TransformGroup name="Chicken_ROOTSHJnt_26" translation="1.19148e-05 0.459865 -0.0338277" rotation="179.998 -90 0" nodeId="97">
+              <TransformGroup name="Chicken_l_Leg_HipSHJnt_9" translation="0.00496441 0.197951 0.0782321" rotation="-90.0111 87.89 -89.6853" nodeId="98">
+                <TransformGroup name="Chicken_l_Leg_KneeSHJnt_8" translation="8.11324e-08 0.131181 -7.67432e-08" rotation="10.3435 -0.788128 7.50219" nodeId="99">
+                  <TransformGroup name="Chicken_l_Leg_AnkleSHJnt_7" translation="2.39832e-08 0.11415 -4.88172e-08" rotation="89.8029 10.041 84.5216" nodeId="100">
+                    <TransformGroup name="Chicken_l_Leg_BallSHJnt_2" translation="0.0132488 0.0940743 0.000156109" rotation="-8.56719e-06 -90 0" nodeId="101">
+                      <TransformGroup name="Chicken_l_Leg_BallSHJnt_2_end" translation="0 0.0293812 0" nodeId="102"/>
+                    </TransformGroup>
+                    <TransformGroup name="Chicken_l_Toe_01_01SHJnt_4" translation="0.00563884 0.0148365 0.0120406" rotation="35.9804 1.29649e-05 3.05554e-05" nodeId="103">
+                      <TransformGroup name="Chicken_l_Toe_01_02SHJnt_3" translation="0.00714612 0.0465319 0.00457636" rotation="-5.75118e-06 -3.40099e-05 -1.15556e-05" nodeId="104">
+                        <TransformGroup name="Chicken_l_Toe_01_02SHJnt_3_end" translation="0 0.0415598 0" nodeId="105"/>
+                      </TransformGroup>
+                    </TransformGroup>
+                    <TransformGroup name="Chicken_l_Toe_02_01SHJnt_6" translation="0.00221833 0.0145483 -0.0143334" rotation="-43.0508 -4.89541 -5.0123" nodeId="106">
+                      <TransformGroup name="Chicken_l_Toe_02_02SHJnt_5" translation="0.00526492 0.037262 -0.00149771" rotation="-2.32177 0.142028 7.00047" nodeId="107">
+                        <TransformGroup name="Chicken_l_Toe_02_02SHJnt_5_end" translation="0 0.0376618 0" nodeId="108"/>
+                      </TransformGroup>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="Chicken_r_Leg_HipSHJnt_17" translation="0.00496464 0.197951 -0.070072" rotation="-90.0333 89.3532 -89.7117" nodeId="109">
+                <TransformGroup name="Chicken_r_Leg_KneeSHJnt_16" translation="8.1073e-10 0.131101 -4.93914e-08" rotation="8.33601 0.245353 -3.37466" nodeId="110">
+                  <TransformGroup name="Chicken_r_Leg_AnkleSHJnt_15" translation="0.00354846 0.113826 -2.11123e-05" rotation="90.3443 8.00631 94.0632" nodeId="111">
+                    <TransformGroup name="Chicken_r_Leg_BallSHJnt_10" translation="0.0117873 0.0934601 0.000807887" rotation="-1.37375e-05 -90 0" nodeId="112">
+                      <TransformGroup name="Chicken_r_Leg_BallSHJnt_10_end" translation="0 0.0323151 0" nodeId="113"/>
+                    </TransformGroup>
+                    <TransformGroup name="Chicken_r_Toe_01_01SHJnt_12" translation="0.00435001 0.0116157 -0.0133125" rotation="-143.368 1.82712 177.517" nodeId="114">
+                      <TransformGroup name="Chicken_r_Toe_01_02SHJnt_11" translation="-0.00419756 0.0538582 -0.001334" rotation="-0.611447 -0.0164358 -3.08227" nodeId="115">
+                        <TransformGroup name="Chicken_r_Toe_01_02SHJnt_11_end" translation="0 0.0415598 0" nodeId="116"/>
+                      </TransformGroup>
+                    </TransformGroup>
+                    <TransformGroup name="Chicken_r_Toe_02_01SHJnt_14" translation="0.00340495 0.0165164 0.0135368" rotation="135.137 -6.56565 173.232" nodeId="117">
+                      <TransformGroup name="Chicken_r_Toe_02_02SHJnt_13" translation="-0.000500408 0.0412081 -0.000445856" rotation="1.84012 0.151604 -9.41734" nodeId="118">
+                        <TransformGroup name="Chicken_r_Toe_02_02SHJnt_13_end" translation="0 0.0376618 0" nodeId="119"/>
+                      </TransformGroup>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="Chicken_Tail_01_01SHJnt_18" translation="-0.122107 0.105131 -7.80237e-05" rotation="0.0140701 0.544916 119.276" nodeId="120">
+                <TransformGroup name="Chicken_Tail_01_01SHJnt_18_end" translation="0 0.161125 0" nodeId="121"/>
+              </TransformGroup>
+              <TransformGroup name="Chicken_Chest_01_01SHJnt_25" translation="0.070668 0.209841 9.30739e-06" rotation="-179.99 0.00094393 57.6108" nodeId="122">
+                <TransformGroup name="Chicken_Chest_01_02SHJnt_24" translation="0.0472408 0.14086 -6.47997e-06" rotation="0.00301765 -0.000550223 1.33985" nodeId="123">
+                  <TransformGroup name="Chicken_Chest_01_03SHJnt_23" translation="-0.0102892 0.185895 -4.12522e-05" rotation="0.0174159 -0.00657803 42.2011" nodeId="124">
+                    <TransformGroup name="Chicken_Neck_01_01SHJnt_22" translation="7.66703e-08 0.056614 2.69519e-11" rotation="-0.0267213 0.0166807 18.1758" nodeId="125">
+                      <TransformGroup name="Chicken_Neck_01_02SHJnt_21" translation="2.12678e-07 0.0685965 -5.83938e-11" rotation="-0.0377755 0.020856 6.76779" nodeId="126">
+                        <TransformGroup name="Chicken_Neck_01_03SHJnt_20" translation="-2.64473e-07 0.0718714 1.77286e-11" rotation="-0.0236147 -0.00704976 -127.128" nodeId="127">
+                          <TransformGroup name="Chicken_Head_JawSHJnt_19" translation="0.00528521 0.0673492 2.73842e-06" rotation="-79.3349 86.8375 -67.3458" nodeId="128">
+                            <TransformGroup name="Chicken_Head_JawSHJnt_19_end" translation="0 0.0442867 0" nodeId="129"/>
+                          </TransformGroup>
+                        </TransformGroup>
+                      </TransformGroup>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+
+  <Animation externalAnimFile="animation2.i3d.anim" />
+</i3D>

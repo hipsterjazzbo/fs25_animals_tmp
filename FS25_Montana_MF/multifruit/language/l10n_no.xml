@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors>Jinkou89</translationContributors>
+    <languageVersion>1.0.0.0</languageVersion>
+	
+	<texts>
+	  
+	<text name="fillType_rye" 				text="Rug" />
+	<text name="fillType_soybeanUS"        			text="Amerikansk soya" />
+	<text name="fillType_covercropmix"        		text="Blandingsvekst" />
+	<text name="fillType_roundBaleLavender"        		text="Lavendelball" />
+	<text name="fillType_clover1"        			text="Rødkløver" />
+	<text name="fillType_clover2"        			text="Hvitkløver" />
+	<text name="fillType_clover_windrow"        		text="Kløver" />
+    	<text name="fillType_alfalfa"       			text="Luserne" />
+	<text name="fillType_cloverSilage"        		text="Fermentert kløver" />
+   	<text name="fillType_alfalfaSilage"       		text="Fermentert luserne" />
+   	<text name="fillType_cloverHay"     			text="Kløverhøy" />
+    	<text name="fillType_alfalfaHay"    			text="Lusernehøy" />
+    	<text name="fillType_beanstraw" 			text="Bønnehalm" />
+    	<text name="fillType_cornStalks"    			text="Maisstengler" />
+	<text name="fillType_flaxFiber"        			text="Lin-fiber" />
+	<text name="fillType_flax"        			text="Lin" />
+	<text name="fillType_linseed"        			text="Linfrø" />
+	<text name="fillType_millet"        			text="Hirse" />
+	<text name="fillType_poppy"        			text="Valmue" />
+	<text name="fillType_drypeas"        			text="Tørre erter" />
+	<text name="fillType_beans"        			text="Pintobønner" />
+	<text name="fillType_mustard"        			text="Sennep" />
+	<text name="fillType_lentils"        			text="Linser" />
+	<text name="fillType_silphie"        			text="Silphium" />
+	<text name="fillType_spelt"        			text="Spelt" />
+	<text name="fillType_triticale"        			text="Rugbete" />
+	<text name="fillType_soybean2"        			text="Amerikansk soya" />
+	<text name="fillType_tobacco"        			text="Tobakk" />
+	<text name="fillType_tobaccoo"        			text="Tobakksblader" />      
+	<text name="fillType_compost" 				text="Kompost" />
+	<text name="fillType_organicWaste" 			text="Organisk avfall" />
+	<text name="fillType_grapeA" 				text="Røde druer" />
+	<text name="fillType_grapeB" 				text="Hvite druer" />
+	<text name="fillType_chickpeas" 			text="Kikerter" />
+	<text name="fillType_buckwheat" 			text="Bokhvete" />
+	<text name="shopItem_grapeb_vine" 			text="Hvit drueplante" />
+	<text name="shopItem_hopsVine" 				text="Humleplante" />
+	<text name="fillType_hemp" 				text="Hamp" />
+	<text name="fillType_hempFiber" 			text="Hampfiber" />
+	<text name="fillType_lavender" 				text="Lavendel" />
+	<text name="fillType_potatoCut"        			text="Kuttet potet" />
+	<text name="fillType_beetrootCut"        		text="Kuttet rødbete" />
+	<text name="fillType_carrotCut"        			text="Kuttet gulrot" />
+	<text name="fillType_parsnipCut"        		text="Kuttet pastinakk" />  
+	<text name="fillTypeGroup_TMR"        			text="TMR, Fermentert Luserne/Kløver" />	  
+	<text name="fillTypeGroup_hays"        			text="Høy, Luserne/Kløverhøy" />
+	<text name="fillTypeGroup_grassa"        		text="Gress, Frisk luserne/kløver" />
+	<text name="fillTypeGroup_moisture"        		text="Fuktighet: Kuttede rotvekster" />
+	<text name="fillTypeGroup_grassHay"        		text="Frisk gress/høy/luserne/kløver" />
+	<text name="fillType_mineralFeed1"        		text="Mineralfôr/Tørre erter" />
+	<text name="fillTypeGroup_pigForage"        		text="Blandingsfôr til gris" />
+	<text name="fillType_peanut" 				text="Peanøtter" />
+	<text name="fillType_miscanthus" 			text="Elefantgress" />
+	<text name="fillType_miscanthusCut" 			text="Hakket elefantgress" />
+
+
+		<text name="fillType_maize2" 			text="Tørr mais" />
+		<text name="fillType_soymilk" 			text="Soyamelk" />
+		<text name="fillType_pasta" 			text="Pasta" />
+		<text name="fillType_chips" 			text="Chips" />
+		<text name="fillType_ethanol" 			text="Etanol" />
+		<text name="fillType_cornflour"			text="Maismel" />
+		<text name="fillType_cornOil"			text="Maisolje" />
+		<text name="fillType_linseedOil"		text="Linfrøolje" />
+		<text name="fillType_mustardOil"		text="Sennepsolje" />
+		<text name="fillType_poppyOil"			text="Valmueolje" />
+		<text name="fillType_pizza"			text="Pizza" />
+		<text name="fillType_buckwheatflour"        	text="Bokhvetemel" />
+		<text name="fillType_gramflour"        		text="Kikertmel" />
+		<text name="fillType_milletflour"        	text="Hirsemel" />
+		<text name="fillType_ryeflour"        		text="Rugmel" />
+		<text name="fillType_sorghumflour"        	text="Sorghummel" />
+		<text name="fillType_crackedCorn"        	text="Knust mais" />
+		<text name="fillType_apple"        		text="Epler" />
+		<text name="fillType_apricot"        		text="Aprikoser" />
+		<text name="fillType_cherry"        		text="Kirsebær" />
+		<text name="fillType_pear"        		text="Pærer" />
+		<text name="fillType_peach"        		text="Ferskener" />
+		<text name="fillType_plum"        		text="Plommer" />
+		<text name="fillType_quince"        		text="Kvede" />
+		<text name="fillType_cabbage"        		text="Hvitkål" />
+		<text name="fillType_redCabbage"        	text="Rødkål" />
+		<text name="fillType_melon"        		text="Melon" />
+		<text name="fillType_pumpkin"        		text="Gresskar" />
+		<text name="fillType_watermelon"        	text="Vannmelon" />
+		<text name="fillType_cucumber"        		text="Agurk" />
+		<text name="fillType_eggplant"        		text="Aubergine" />
+		<text name="fillType_pepper"        		text="Paprika" />
+		<text name="fillType_cauliflower" 		text="Blomkål" />
+		<text name="fillType_bran"        		text="Kli" />
+		<text name="fillType_molasses"        		text="Melasse" />
+		<text name="fillType_appleJuice"        	text="Eplejuice" />
+		<text name="fillType_apricotJuice"        	text="Aprikosjuice" />
+		<text name="fillType_beetrootJuice"        	text="Rødbetejuice" />
+		<text name="fillType_carrotJuice"        	text="Gulrotjuice" />
+		<text name="fillType_cherryJuice"        	text="Kirsebærjuice" />
+		<text name="fillType_melonJuice"        	text="Melonjuice" />
+		<text name="fillType_multifruitJuice"        	text="Multifruktjuice" />
+		<text name="fillType_peachJuice"        	text="Ferskenjuice" />
+		<text name="fillType_pearJuice"        		text="Pærejuice" />
+		<text name="fillType_plumJuice"        		text="Plommejuice" />
+		<text name="fillType_quinceJuice"        	text="Kvedejuice" />
+		<text name="fillType_strawberryJuice"        	text="Jordbærjuice" />
+		<text name="fillType_tomatoJuice"        	text="Tomatjuice" />
+		<text name="fillType_watermelonJuice"        	text="Vannmelonjuice" />
+ 		<text name="fillType_cattle" 			text="Kveg" />
+		<text name="fillType_pigs" 			text="Griser" />
+		<text name="fillType_sheepGoat" 		text="Sauer/Geiter" />
+ 		<text name="fillType_beef" 			text="Storfekjøtt" />
+		<text name="fillType_pork" 			text="Svinekjøtt" />
+		<text name="fillType_poultryMeat" 		text="Fjærkrekjøtt" />
+		<text name="fillType_lamb" 			text="Lammekjøtt" />
+		<text name="fillType_cigar" 			text="Sigar" />
+		<text name="fillType_cigarette" 		text="Sigarett" />
+		<text name="fillType_animalFat" 		text="Dyrefett" />
+		<text name="fillType_perfume" 			text="Parfyme" />
+		<text name="fillType_soap" 			text="Såpe" />
+		<text name="fillType_lavenderOil" 		text="Eterisk lavendelolje" />
+		<text name="fillType_bourbonBarrel" 		text="Bourbon" />
+		<text name="fillType_brandyBarrel" 		text="Brandy" />
+		<text name="fillType_ciderBarrel" 		text="Sider" />
+		<text name="fillType_meadBarrel" 		text="Mjød" />
+		<text name="fillType_liqueurBarrel" 		text="Fruktlikør" />
+		<text name="fillType_vodkaBarrel" 		text="Vodka" />
+		<text name="fillType_whiskeyBarrel" 		text="Whiskey" />
+		<text name="fillType_rumBarrel" 		text="Rom" />
+		<text name="fillType_peanutflour" 		text="Peanøttmel" />
+		<text name="fillType_peanutOil" 		text="Peanøttolje" />
+		<text name="fillType_peanutButter" 		text="Peanøttsmør" />
+		<text name="fillType_mayo" 			text="Majones" />
+		<text name="fillType_ketchup" 			text="Ketchup" />
+		<text name="fillType_hotSauce" 			text="Sterk saus" />
+		<text name="fillType_soySauce" 			text="Soyasaus" />
+		<text name="fillType_garlicSauce" 		text="Hvitløkssaus" />
+		<text name="fillType_mustardSauce" 		text="Sennepssaus" />
+		<text name="fillType_pickledCucumber" 		text="Sylteagurk" />
+		<text name="fillType_pickledCabbage" 		text="Surkål" />
+		<text name="fillType_pickledCauliflower" 	text="Syltet blomkål" />
+		<text name="fillType_beansSoup" 		text="Bønnesuppe" />
+		<text name="fillType_peanutBags" 		text="Peanøttposer" />
+		<text name="fillType_beansBags" 		text="Bønneposer" />
+		<text name="fillType_cannedBeans" 		text="Hermetiske bønner" />
+		<text name="fillType_tofu" 			text="Tofu" />
+		<text name="fillType_chocomilk" 		text="Sjokolademelk" />
+		<text name="fillType_oatmilk" 			text="Havremelk" />
+		<text name="fillType_mushroomSoup" 		text="Soppsuppe" />
+		<text name="fillType_beer" 			text="Øl" />
+		<text name="fillType_wine" 			text="Vin" />
+		<text name="fillType_icecream" 			text="Is" />
+		<text name="fillType_sourcream" 		text="Rømme" />
+		<text name="fillType_yoghurt" 			text="Yoghurt" />
+		<text name="fillType_sunflowerBags" 		text="Solsikkefrøposer" />
+		<text name="fillType_pumpkinSeeds" 		text="Gresskarfrøposer" />
+		<text name="fillType_pumpkinPuree" 		text="Gresskarpuré" />
+		<text name="fillType_eggplantPuree" 		text="Auberginepuré" />
+		<text name="fillType_popcorn" 			text="Popcorn" />
+		<text name="fillType_cheesePuffs" 		text="Ostepop" />
+		<text name="fillType_peanutPuffs" 		text="Peanøttsnacks" />
+		<text name="fillType_tortilla" 			text="Tortillachips" />
+		<text name="fillType_garlicBread" 		text="Hvitløksbrød" />
+		<text name="fillType_onionRings" 		text="Løkringer" />
+		<text name="fillType_pie" 			text="Fruktpai" />
+		<text name="fillType_cocoaPowder" 		text="Kakaopulver" />
+		<text name="fillType_cookingSalt" 		text="Koksalt" />
+		<text name="fillType_yeast" 		 	text="Gjær" />
+		<text name="fillType_roulade"                   text="Ruladekake" />
+		<text name="fillType_strudel"                   text="Strudel" />
+		<text name="fillType_milkBread"                 text="Melkebrød" />
+		<text name="fillType_potatoBread"               text="Potetbrød" />
+		<text name="fillType_sweetBread"                text="Søtbakst" />
+		<text name="fillType_bagel"                     text="Bagel" />
+		<text name="fillType_baguette" 			text="Baguette"/>
+		<text name="fillType_hops" 			text="Humle"/>
+		<text name="fillType_cowFood" 			text="Kufôr-pellets"/>
+		<text name="fillType_hayPellets" 		text="Høypellets"/>
+		<text name="fillType_strawPellets" 		text="Halmpellets"/>
+		<text name="fillType_woodChipsPellets" 		text="Flis-pellets"/>
+		<text name="fillType_chocoCake" 		text="Sjokoladekake"/>
+		<text name="fillType_sesame" 			text="Sesam"/>
+		<text name="fillType_sesameOil" 		text="Sesamolje"/>
+		<text name="fillType_sesameBags" 		text="Pakket sesamfrø"/>
+		<text name="fillType_chickpeasBags" 		text="Pakkede kikerter"/>
+		<text name="fillType_lentilsBags" 		text="Pakkede linser"/>
+		<text name="fillType_sesameRolls" 		text="Honning- og sesamsnacks"/>
+		<text name="fillType_hummus" 			text="Hummus"/>
+
+	<text name="pigProcessing"        			text="Svineforedling" />
+		<text name="poultryProcessing"        			text="Kyllingforedling" />
+		<text name="cattleProcessing"        			text="Kuforedling" />
+		<text name="sheepProcessing"        			text="Saue- og geiteforedling" />
+		<text name="message_unloadAnimalSuccess" 		text="Dyr ble flyttet til %s!" />
+        	<text name="message_unloadAnimalConfirmation" 		text="Vil du flytte %d dyr (%s) til %s?" />
+        	<text name="button_moveAnimal" 				text="Flytt til %s" />
+		<text name="message_animalTooYoung" 			text="Dette dyret er for ungt." />
+		<text name="message_animalTooOld" 			text="Dette dyret er for gammelt." />
+        	<text name="configuration_grapeB" 			text="Hvite druer"/>
+        	<text name="configuration_hops" 			text="Humle"/>
+		<text name="function_fermentingTower" 			text="I dette anlegget kan du fermentere gress, hakk, luserne eller kløver." />
+		<text name="function_grainDryer" 			text="I dette anlegget kan du tørke maisen din." />
+		<text name="function_hopsVine" 			        text="Planter for å dyrke humle. Du trenger multifrukt-druehøsteren for å høste humle." />
+		<text name="function_buyingPoint" 			text="Fra denne stasjonen kan du kjøpe nesten alt i bulk." />
+
+
+	<text name="shopItem_appleOrchard" 		text="Liten eplehage" />	
+		<text name="shopItem_apricotOrchard" 		text="Liten aprikoshage" />	
+		<text name="shopItem_appleTree" 		text="Epletre" />	
+		<text name="shopItem_apricotTree" 		text="Aprikostre" />
+		<text name="shopItem_cherryOrchard" 		text="Liten kirsebærhage" />	
+		<text name="shopItem_pearOrchard" 		text="Liten pærehage" />	
+		<text name="shopItem_cherryTree" 		text="Kirsebærtre" />	
+		<text name="shopItem_pearTree" 			text="Pæretre" />	
+		<text name="shopItem_peachOrchard" 		text="Liten ferskenhage" />	
+		<text name="shopItem_peachTree" 		text="Ferskentre" />		
+		<text name="shopItem_plumOrchard" 		text="Liten plommevangs" />	
+		<text name="shopItem_plumTree" 			text="Plommetre" />		
+		<text name="shopItem_quinceOrchard" 		text="Liten kvedehage" />	
+		<text name="shopItem_quinceTree" 		text="Kvedetre" />	
+		<text name="shopItem_grainCrusher" 		text="Kornknuser" />	
+		<text name="shopItem_juiceFactory" 		text="Juicefabrikk" />
+		<text name="shopItem_slaughterHouse" 		text="Slakteri" />
+		<text name="shopItem_tobaccoProd" 		text="Tobakkfabrikk" />
+		<text name="shopItem_lavenderProd" 		text="Lavendelforedlingsfabrikk" />
+		<text name="shopItem_openGarden" 		text="Åpen hage" />
+		<text name="shopItem_distillery" 		text="Brenneri" />
+		<text name="shopItem_preservedFood" 		text="Hermetikkfabrikk" />
+		<text name="shopItem_foodProd" 			text="Snackproduksjon" />
+		<text name="shopItem_fermentingTower" 		text="Fermenteringstårn" />
+		<text name="shopItem_wineCellar" 		text="Øl- og vinkjeller" />
+		<text name="shopItem_grainDryer" 		text="Maistørker" />
+		<text name="shopItem_openGardenFieldCrops" 	text="Åpen hage for åkervekster" />
+		<text name="shopItem_industrialGreenhouse" 	text="Industrielt drivhus" />
+		<text name="shopItem_vegetarianProd" 		text="Vegansk matproduksjon" />
+		<text name="shopItem_pelletizer" 		text="Pelletmaskin" />
+		<text name="shopItem_buyingPoint1" 		text="Innkjøpsstasjon multifrukt" />
+		<text name="shopItem_buyingPoint2" 		text="Innkjøpsstasjon multifrukt rabatert" />
+
+
+		<text name="shopItem_jamProd" 				text="Syltetøyfabrikk" />
+		<text name="fillType_edamame" 				text="Edamame (Grønne soyabønner)"/>
+		<text name="fillType_taro" 				text="Taro"/>
+		<text name="fillType_okra" 				text="Okra"/>
+		<text name="fillType_mint" 				text="Mynte"/>
+		<text name="fillType_greenRye" 				text="Grønnrug" />
+		<text name="fillType_taroCut" 				text="Hakket taro" />
+		<text name="fillType_taroFlour" 			text="Taromel" />
+		<text name="fillType_taroSoup" 				text="Tarosuppe" />
+		<text name="fillType_taroChips" 			text="Tarochips" />
+		<text name="fillType_muffin" 				text="Muffins" />
+		<text name="fillType_donut" 				text="Donuts" />
+		<text name="fillType_ccm" 				text="Maiskolbe-miks fermentert" />
+		<text name="fillType_ccmraw" 				text="Maiskolbe-miks" />
+		<text name="fillType_cropWindrow" 			text="Hakket helgrøde" />
+		<text name="fillType_cropSilage" 			text="Helgrøde-ensilasje" />
+		<text name="fillType_grassSilage" 			text="Gress-ensilasje" />
+		<text name="fillType_safflower" 			text="Fargetistel" />
+		<text name="fillType_appleJam"        			text="Eplesyltetøy" />
+		<text name="fillType_apricotJam"        		text="Aprikossyltetøy" />
+		<text name="fillType_cherryJam"        			text="Kirsebærsyltetøy" />
+		<text name="fillType_grapeJam"        			text="Druesyltetøy" />
+		<text name="fillType_melonJam"        			text="Melonsyltetøy" />
+		<text name="fillType_peachJam"        			text="Ferskensyltetøy" />
+		<text name="fillType_pearJam"        			text="Pæresyltetøy" />
+		<text name="fillType_plumJam"        			text="Plommesyltetøy" />
+		<text name="fillType_strawberryJam"        		text="Jordbærsyltetøy" />
+		<text name="fillType_quinceJam"        			text="Kvedesyltetøy" />
+		<text name="fillType_safflowerOil" 			text="Tistelolje" />
+		<text name="fillType_mintOil" 				text="Eterisk mynteolje"/>
+		<text name="fillType_mintBarrel" 			text="Myntelikør"/>
+		<text name="fillType_jarredOkra"        		text="Okra på glass" />
+		<text name="fillType_jarredEdamame"        		text="Edamame på glass" />
+
+<text name="fillType_duckEgg"                 text="Andeegg"/>
+        <text name="shopItem_duckGooseBarn"             text="Fjøs for ender og gjess"/>
+        <text name="shopItem_duckGoosePasture"             text="Beite for ender og gjess"/>
+        <text name="shopItem_rabbitHutch"             text="Kaninbur"/>
+        <text name="function_animalPenDuck"             text="Her kan du ale opp ender og gjess. Gi dem mat og legg ut halm som strø for å få andeegg og gjødsel."/>
+        <text name="function_animalPenRabbit"             text="Her kan du ale opp kaniner. Gi dem mat og legg ut halm. Når de har vokst, kan du selge dem med fortjeneste."/>
+        <text name="fillTypeGroup_clover"                text="Frisk kløver" />
+        <text name="fillTypeGroup_fruitVegetables"             text="Frukt og grønnsaker" />
+
+    <text name="fillType_goose"                            text="Gås" />
+        <text name="animal_group_goose"                        text="Gjess og ender" />
+        <text name="shopItem_animalGooseGrowthStage0"           text="Gjesslinger" />
+        <text name="shopItem_animalGooseGrowthStage1"           text="Gås" />
+        <text name="animal_descriptionGooseProfitGrowthStage0" text="Gjesslinger kan fôres opp og deretter selges med fortjeneste." />
+        <text name="animal_descriptionGooseProfitGrowthStage1" text="Gjess kan ales opp og deretter selges med fortjeneste." />
+        <text name="animal_descriptionGooseFeed"               text="Gi dem mat på samme måte som høner. Vann tilføres automatisk avhengig av type oppstalling." />
+        <text name="animal_descriptionGooseReproduction"       text="Gjess blir kjønnsmodne etter 10 måneder. Hekketiden varer i én måned." />
+
+    <text name="fillType_duck"                             text="And" />
+        <text name="shopItem_animalDuckGrowthStage0"           text="Andunger" />
+        <text name="animal_duckGrowthStage0Description"        text="Andunger legger ikke egg ennå. De er egnet for avl eller kan selges." />    
+        <text name="shopItem_animalDuckGrowthStage1"           text="And" />    
+        <text name="animal_duckGrowthStage1Description"        text="Ender gir deg egg, som du kan selge på et salgssted eller foredle videre i produksjonsanleggene dine." />    
+        <text name="animal_poultryFoodDescription"             text="Fjørfe trenger korn og vann for å produsere noe. Merk: Enkelte hus er utstyrt med automatisk vannforsyning, i så fall er det ikke nødvendig å fylle på vann manuelt." />
+        
+         <text name="fillType_rabbit"                            text="Hunnkanin" />
+            <text name="fillType_rabbitMale"                        text="Hannkanin" />
+            <text name="animal_group_rabbits"                       text="Kaniner" />
+            <text name="shopItem_animalRabbitGrowthStage0"          text="Kaniner (unger)" />
+            <text name="shopItem_animalRabbitGrowthStage1"          text="Kaniner (ungdyr)" />
+            <text name="shopItem_animalRabbitGrowthStage2"          text="Kanin (hunn)" />
+            <text name="shopItem_animalRabbitGrowthStage3"          text="Kanin (hann)" />
+            <text name="animal_rabbitGrowthStage0Description"       text="Kaninunger er de yngste av arten. De kan ikke kjøpes individuelt, men fødes av et mordyr." />
+            <text name="animal_rabbitGrowthStage1Description"       text="En ung kanin kan brukes til avl." />
+            <text name="animal_rabbitGrowthStage2Description"       text="Hunnkaniner kan få avkom eller selges. Avkommet er yngre og mindre enn ungkaniner." />
+            <text name="animal_rabbitGrowthStage3Description"       text="Hannkaniner." />
+            <text name="animal_rabbitBeddingDescription"            text="Hannkaniner kan kun kjøpes og selges." />
+            <text name="animal_rabbitFoodDescription"               text="Kaniner trenger halm for å trives." />
+
+        <text name="geeseProcessing"                     text="Foredling av gjess og ender" />
+        <text name="rabbitProcessing"                     text="Foredling av kaniner" />
+        <text name="fillType_leather"              text="Ekte lær"/>
+        <text name="fillType_leatherJacket"          text="Skinnjakker"/>
+        <text name="fillType_pillow"              text="Puter"/>
+        <text name="fillType_furCoat"              text="Pels kåper"/>
+        <text name="fillType_feathers"              text="Fjær" />
+        <text name="fillType_rabbitMeat"          text="Kaninkjøtt" />
+        <text name="fillType_rabbitFur"          text="Kaninpels" />
+        <text name="fillType_poultry2"              text="Fjørfe (gjess og ender)" />
+        <text name="fillType_hare"              text="Kaniner" />
+        <text name="fillType_poultry"              text="Fjørfe (høner)" />
+
+<text name="fillType_anhydrous"          text="Vannfri ammoniakk (NH3)" />
+        <text name="fillType_propane"           text="Propangass" />
+<text name="shopItem_bakeryFactory"     text="Montana Bakeri" />    
+        <text name="shopItem_beerFactory"       text="Yuengling Bryggeri" />        
+        <text name="shopItem_ethanolFactory"    text="Rocky Mountain Etanolfabrikk" />    
+        <text name="shopItem_whiskeyFactory"    text="Jack Daniels Whiskey-destilleri" />    
+        <text name="shopItem_dairyFactory"      text="Country View Meieri" />    
+        <text name="shopItem_wineFactory"       text="Duckhorn Vingård" />    
+        <text name="shopItem_pizzaFactory"      text="American Pizza Company" />    
+        <text name="shopItem_grainFlourFactory" text="Melmølle" />    
+        <text name="shopItem_oilFactory"        text="Oliefabrikk" />    
+    <text name="station_grainSiloTrainC1"     text="Great Plains Kornmottak" />    
+        <text name="station_grainSiloTrainC2"     text="Montana Prairie kornsiloer" />    
+        <text name="station_grainSiloTrainC3"     text="Yellowstone kornterminal" />    
+        <text name="station_balesStorageC1"       text="Montana Høyselskap" />
+        <text name="station_grainSiloStoreC2"     text="Montana Prairie landbruksutstyr" />    
+        <text name="station_grainSiloStoreC3"     text="Flathead fôr og korn" />    
+        <text name="station_grainSiloStoreC4"     text="Iron Ridge kornsilo" />    
+        <text name="station_grainSiloStoreC5"     text="Lone Pine Kornfirma" />    
+        <text name="station_grainSiloStoreC6"     text="AgriCore Montana" />
+        <text name="station_productStoreC1"       text="Restaurant" />    
+        <text name="station_productStoreC2"       text="Hobson kjøpesenter" />    
+        <text name="station_productStoreC3"       text="Hobson landhandel" />    
+        <text name="station_productStoreC4"       text="Dollar General-butikk" />    
+        <text name="station_productStoreC5"       text="BP bensinstasjon" />    
+        <text name="station_productStoreC6"       text="Casey's bensinstasjon" />    
+        <text name="station_productStoreC7"       text="Applebee's restaurant" />    
+        <text name="station_productStoreC8"       text="Kodiac bryggeri" />    
+        <text name="station_productStoreC9"       text="Moccasin kjøpesenter" />    
+        <text name="station_productStoreC10"      text="Moccasin landhandel" />    
+        <text name="station_productStoreC11"      text="Subway-restaurant" />
+	
+	</texts>
+</l10n>

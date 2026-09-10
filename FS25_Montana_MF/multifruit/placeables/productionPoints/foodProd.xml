@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_foodProd</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>$data/placeables/mapEU/potatoProcessingPlant/store_potatoProcessingPlantPlaceable.png</image>
+        <price>360000</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>JINKOU</brand>
+        <species>PLACEABLE</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+        <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>0</indexBufferMemoryUsage>
+        <textureMemoryUsage>0</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>$data/placeables/mapEU/potatoProcessingPlant/potatoProcessingPlantPlaceable.i3d</filename>
+	<boughtWithFarmland>false</boughtWithFarmland>
+	<canBeDeleted>true</canBeDeleted>
+	<canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testAreaStart01" endNode="testAreaEnd01" />
+        </testAreas>
+        <sounds>
+            <place template="largeImp"/>
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+        <levelAreas>
+            <levelArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart01" widthNode="indoorAreaWidth01" heightNode="indoorAreaHeight01" />
+        <indoorArea startNode="indoorAreaStart02" widthNode="indoorAreaWidth02" heightNode="indoorAreaHeight02" />
+        <indoorArea startNode="indoorAreaStart03" widthNode="indoorAreaWidth03" heightNode="indoorAreaHeight03" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart filename="$data/placeables/shared/sellingStationGeneric/sellingStationGenericNoCoverWideGrid.i3d" node="0" linkNode="exactFillNode" rotation="0 90 0" />
+        <dynamicallyLoadedPart filename="$data/placeables/mapEU/potatoProcessingPlant/props02.i3d"                               node="0" linkNode="potatoProcessingPlantPlaceable" />
+        <dynamicallyLoadedPart filename="$data/effects/chimneySmoke/smokeTrailSubUV.i3d"                                         node="1" linkNode="smoke01" shaderParameterName="colorAlpha" shaderParameter="0.5 0.5 0.5 0.5" position="0 -0.2 0"/>
+        <dynamicallyLoadedPart filename="$data/effects/chimneySmoke/smokeTrailSubUV.i3d"                                         node="1" linkNode="smoke02" shaderParameterName="colorAlpha" shaderParameter="0.5 0.5 0.5 0.5" position="0 -0.2 0"/>
+        <dynamicallyLoadedPart filename="$data/effects/chimneySmoke/smokeTrailSubUV.i3d"                                         node="1" linkNode="smoke03" shaderParameterName="colorAlpha" shaderParameter="0.5 0.5 0.5 0.5" position="0 -0.2 0"/>
+    </dynamicallyLoadedParts>
+
+    <productionPoint>
+        <productions>
+
+<production id="noodleSoupFlour" name="$l10n_fillType_noodleSoup" cyclesPerHour="10" costsPerActiveHour="2">
+                <inputs>
+                    <input fillType="FLOUR" amount="55" />
+                    <input fillType="EGG"   amount="10" />
+                    <input fillType="PAPERROLL"   amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="NOODLESOUP" amount="40" />
+                </outputs>
+            </production>
+            
+<production id="riceRollsRice" name="$l10n_fillType_riceRolls" cyclesPerHour="10" costsPerActiveHour="7">
+                <inputs>
+                    <input fillType="RICE" amount="56" />
+                    <input fillType="PAPERROLL"   amount="3" />
+                </inputs>
+                <outputs>
+                    <output fillType="RICEROLLS" amount="50" />
+                </outputs>
+            </production>
+
+<production id="honeySesameSnack" name="$l10n_fillType_sesameRolls" cyclesPerHour="10" costsPerActiveHour="7">
+                <inputs>
+                    <input fillType="SESAME" amount="50" />
+                    <input fillType="HONEY"   amount="9" />
+                    <input fillType="PAPERROLL"   amount="3" />
+                </inputs>
+                <outputs>
+                    <output fillType="SESAMEROLLS" amount="57" />
+                </outputs>
+            </production>
+
+<production id="garlicBread" name="$l10n_fillType_garlicBread" cyclesPerHour="10" costsPerActiveHour="2">
+                <inputs>
+                    <input fillType="BREAD" amount="25" />
+                    <input fillType="CHEESE"   amount="10" />
+                    <input fillType="GARLIC"   amount="10" />
+                    <input fillType="PAPERROLL"   amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="GARLIC_BREAD" amount="50" />
+                </outputs>
+            </production>
+
+<production id="popcorn1" name="Plain Popcorn" cyclesPerHour="10" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="MAIZE" amount="100" />
+                    <input fillType="SUNFLOWER_OIL" amount="3" />
+                    <input fillType="CARTONROLL"   amount="5" />
+                    <input fillType="COOKING_SALT"   amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="POPCORN" amount="50" />
+                </outputs>
+            </production>
+
+<production id="popcorn2" name="Chilli Popcorn" cyclesPerHour="10" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="MAIZE" amount="100" />
+			<input fillType="CHILLI" amount="10" />
+                    <input fillType="SUNFLOWER_OIL" amount="3" />
+                    <input fillType="CARTONROLL"   amount="5" />
+                    <input fillType="COOKING_SALT"   amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="POPCORN" amount="60" />
+                </outputs>
+            </production>
+
+<production id="popcorn3" name="Butter Popcorn" cyclesPerHour="10" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="MAIZE" amount="100" />
+			<input fillType="BUTTER" amount="10" />
+                    <input fillType="SUNFLOWER_OIL" amount="3" />
+                    <input fillType="CARTONROLL"   amount="5" />
+                    <input fillType="COOKING_SALT"   amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="POPCORN" amount="70" />
+                </outputs>
+            </production>
+
+<production id="popcorn4" name="Caramel Popcorn" cyclesPerHour="10" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="MAIZE" amount="100" />
+			<input fillType="SUGAR" amount="15" />
+                    <input fillType="SUNFLOWER_OIL" amount="3" />
+                    <input fillType="CARTONROLL"   amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="POPCORN" amount="70" />
+                </outputs>
+            </production>
+
+<production id="popcorn5" name="Chocolate Popcorn" cyclesPerHour="10" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="MAIZE" amount="100" />
+			<input fillType="CHOCOLATE" amount="10" />
+                    <input fillType="SUNFLOWER_OIL" amount="3" />
+                    <input fillType="CARTONROLL"   amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="POPCORN" amount="80" />
+                </outputs>
+            </production>
+
+<production id="tortillaChips1" name="Chilli Tortilla Chips" cyclesPerHour="10" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="MAIZE" amount="80" />  
+                    <input fillType="CHILLI" amount="10" /> 
+                    <input fillType="TOMATO" amount="10" /> 
+                    <input fillType="SUNFLOWER_OIL" amount="5" /> 
+                    <input fillType="PAPERROLL"   amount="5" /> 
+                    <input fillType="COOKING_SALT"   amount="1" /> 
+                </inputs>
+                <outputs>
+                    <output fillType="TORTILLA" amount="50" />  
+                </outputs>
+            </production>
+
+<production id="tortillaChips2" name="Cheese Tortilla Chips" cyclesPerHour="10" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="MAIZE" amount="80" />
+                    <input fillType="CHEESE" amount="10" />
+                    <input fillType="TOMATO" amount="10" />
+                    <input fillType="SUNFLOWER_OIL" amount="5" />
+                    <input fillType="PAPERROLL"   amount="5" />
+                    <input fillType="COOKING_SALT"   amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="TORTILLA" amount="70" />
+                </outputs>
+            </production>
+
+<production id="cheesePuffs" name="$l10n_fillType_cheesePuffs" cyclesPerHour="10" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="MAIZE" amount="80" />
+                    <input fillType="CHEESE" amount="10" />
+                    <input fillType="PAPERROLL"   amount="5" />
+                    <input fillType="COOKING_SALT"   amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="CHEESE_PUFFS" amount="40" />
+                </outputs>
+            </production>
+            
+<production id="potatoChips1" name="Potato Chips" cyclesPerHour="10" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="POTATO" amount="100" />
+                    <input fillType="SUNFLOWER_OIL" amount="5" />
+                    <input fillType="PAPERROLL"   amount="5" />
+                    <input fillType="COOKING_SALT"   amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="POTATOCHIPS" amount="30" />
+                </outputs>
+            </production>
+	
+<production id="potatoChips2" name="Chilli Potato Chips" cyclesPerHour="10" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="POTATO" amount="100" />
+                    <input fillType="CHILLI" amount="10" />
+                    <input fillType="SUNFLOWER_OIL" amount="5" />
+                    <input fillType="PAPERROLL"   amount="5" />
+                    <input fillType="COOKING_SALT"   amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="POTATOCHIPS" amount="40" />
+                </outputs>
+            </production>
+
+<production id="potatoChips3" name="Cheese Potato Chips" cyclesPerHour="10" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="POTATO" amount="100" />
+                    <input fillType="CHEESE" amount="10" />
+                    <input fillType="SUNFLOWER_OIL" amount="5" />
+                    <input fillType="PAPERROLL"   amount="5" />
+                    <input fillType="COOKING_SALT"   amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="POTATOCHIPS" amount="60" />
+                </outputs>
+            </production>
+            
+<production id="taroChips" name="Taro Chips" cyclesPerHour="10" costsPerActiveHour="6">
+                <inputs>
+                    <input fillType="TARO" amount="100" />
+                    <input fillType="SUNFLOWER_OIL" amount="5" />
+                    <input fillType="PAPERROLL"   amount="5" />
+                    <input fillType="COOKING_SALT"   amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="TAROCHIPS" amount="30" />
+                </outputs>
+            </production>
+            
+<production id="pasta1" name="Pasta" cyclesPerHour="5" costsPerActiveHour="3">
+                <inputs>
+                    <input fillType="FLOUR" amount="100" />
+                    <input fillType="CARTONROLL"   amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="PASTA" amount="100" />
+                </outputs>
+            </production>
+
+<production id="pasta2" name="Pasta with egg" cyclesPerHour="5" costsPerActiveHour="3">
+                <inputs>
+                    <input fillType="FLOUR" amount="90" />
+                    <input fillType="EGG" amount="10" />
+                    <input fillType="CARTONROLL"   amount="3" />
+                </inputs>
+                <outputs>
+                    <output fillType="PASTA" amount="120" />
+                </outputs>
+            </production>
+			
+<production id="gnocchiPasta" name="Gnocchi Pasta" cyclesPerHour="5" costsPerActiveHour="3">
+                <inputs>
+                    <input fillType="FLOUR" amount="75" />
+		    <input fillType="POTATO" amount="100" />
+                    <input fillType="CARTONROLL"   amount="5" />
+                </inputs>
+                <outputs>
+                    <output fillType="PASTA" amount="160" />
+                </outputs>
+            </production>
+			
+<production id="tricolorPasta" name="Tricolor Pasta" cyclesPerHour="5" costsPerActiveHour="3">
+                <inputs>
+                    <input fillType="FLOUR" amount="100" />
+		    <input fillType="TOMATO" amount="55" />
+		    <input fillType="SPINACH" amount="80" />
+		    <input fillType="CARROT" amount="80" />
+                    <input fillType="CARTONROLL"   amount="3" />
+                </inputs>
+                <outputs>
+                    <output fillType="PASTA" amount="200" />
+                </outputs>
+            </production>
+
+        </productions>
+
+        <storage isExtension="false" fillLevelSyncThreshold="50">
+            <capacity fillType="POTATO"        		capacity="240000" />
+            <capacity fillType="TARO"        		capacity="240000" />
+            <capacity fillType="RICE"        		capacity="240000" />
+            <capacity fillType="MAIZE"        		capacity="240000" />
+            <capacity fillType="SESAME"        		capacity="240000" />
+            <capacity fillType="CARROT"        		capacity="240000" />
+            <capacity fillType="SUNFLOWER_OIL" 		capacity="52000" />
+            <capacity fillType="FLOUR" 			capacity="52000" />
+            <capacity fillType="COOKING_SALT" 		capacity="52000" />
+            <capacity fillType="EGG" 			capacity="52000" />
+            <capacity fillType="HONEY" 			capacity="52000" />
+            <capacity fillType="TOMATO" 		capacity="52000" />
+            <capacity fillType="SPINACH" 		capacity="52000" />
+            <capacity fillType="CHILLI" 		capacity="52000" />
+            <capacity fillType="CHEESE" 		capacity="52000" />
+            <capacity fillType="BREAD" 			capacity="52000" />
+            <capacity fillType="GARLIC" 		capacity="52000" />
+            <capacity fillType="CHOCOLATE" 		capacity="52000" />
+            <capacity fillType="SUGAR" 			capacity="52000" />
+            <capacity fillType="BUTTER" 		capacity="52000" />
+            <capacity fillType="CARTONROLL" 		capacity="52000" />
+            <capacity fillType="PAPERROLL" 		capacity="52000" />
+
+            <capacity fillType="POTATOCHIPS"   			capacity="50000" />
+            <capacity fillType="TAROCHIPS" 			capacity="50000" />
+            <capacity fillType="PASTA" 				capacity="50000" />
+            <capacity fillType="GARLIC_BREAD" 			capacity="50000" />
+            <capacity fillType="TORTILLA" 			capacity="50000" />
+            <capacity fillType="RICEROLLS" 			capacity="50000" />
+            <capacity fillType="SESAMEROLLS" 			capacity="50000" />
+            <capacity fillType="NOODLESOUP" 			capacity="50000" />
+            <capacity fillType="CHEESE_PUFFS" 			capacity="50000" />
+            <capacity fillType="POPCORN" 			capacity="50000" />
+        </storage>
+
+        <sellingStation node="sellingStation" appearsOnStats="false" supportsExtension="false" allowMissions="false" hideFromPricesMenu="true">
+            <unloadTrigger exactFillRootNode="exactFillNode" aiNode="unloadTriggerAINode" fillTypes="TARO POTATO CARROT RICE SESAME RICELONGGRAIN MAIZE MAIZE2 SPINACH">
+		<fillTypeConversion ratio="0.9" incomingFillType="RICELONGGRAIN" 		outgoingFillType="RICE" />
+		<fillTypeConversion ratio="0.9" incomingFillType="MAIZE2" 			outgoingFillType="MAIZE" />
+	</unloadTrigger>
+            <palletTrigger triggerNode="palletTrigger" aiNode="unloadTriggerAINode" fillTypes="DUCK_EGG SAFFLOWER_OIL TARO POTATO CARROT HONEY SESAME_OIL COOKING_SALT CARTONROLL PAPERROLL SUGAR CHOCOLATE CHEESE GOATCHEESE BUTTER BREAD GARLIC EGG FLOUR BUCKWHEATFLOUR GRAMFLOUR RYEFLOUR CORNFLOUR MILLETFLOUR SORGHUMFLOUR TAROFLOUR RICEFLOUR TOMATO CHILLI PEPPER SPINACH POPPY_OIL LINSEED_OIL CORN_OIL SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL">
+		<fillTypeConversion ratio="1.2" incomingFillType="RICEFLOUR" 		outgoingFillType="FLOUR" />
+		<fillTypeConversion ratio="0.9" incomingFillType="RYEFLOUR" 		outgoingFillType="FLOUR" />
+		<fillTypeConversion ratio="1.3" incomingFillType="GRAMFLOUR" 		outgoingFillType="FLOUR" />
+		<fillTypeConversion ratio="1.1" incomingFillType="SORGHUMFLOUR" 	outgoingFillType="FLOUR" />
+		<fillTypeConversion ratio="1.1" incomingFillType="MILLETFLOUR" 		outgoingFillType="FLOUR" />
+		<fillTypeConversion ratio="0.7" incomingFillType="BUCKWHEATFLOUR" 	outgoingFillType="FLOUR" />
+		<fillTypeConversion ratio="0.8" incomingFillType="CORNFLOUR" 		outgoingFillType="FLOUR" />
+		<fillTypeConversion ratio="1.5" incomingFillType="TAROFLOUR" 		outgoingFillType="FLOUR" />
+		<fillTypeConversion ratio="0.7" incomingFillType="PEPPER" 		outgoingFillType="CHILLI" />
+		<fillTypeConversion ratio="0.7" incomingFillType="GOATCHEESE" 		outgoingFillType="CHEESE" />
+		<fillTypeConversion ratio="1.5"   incomingFillType="OLIVE_OIL" 		outgoingFillType="SUNFLOWER_OIL" />
+		<fillTypeConversion ratio="1.1"   incomingFillType="CANOLA_OIL" 	outgoingFillType="SUNFLOWER_OIL" />
+		<fillTypeConversion ratio="1.2"   incomingFillType="POPPY_OIL" 		outgoingFillType="SUNFLOWER_OIL" />
+		<fillTypeConversion ratio="1.3"   incomingFillType="LINSEED_OIL" 	outgoingFillType="SUNFLOWER_OIL" />
+		<fillTypeConversion ratio="1"     incomingFillType="CORN_OIL" 		outgoingFillType="SUNFLOWER_OIL" />
+		<fillTypeConversion ratio="1.4"   incomingFillType="SESAME_OIL" 	outgoingFillType="SUNFLOWER_OIL" />
+		<fillTypeConversion ratio="1.4"   incomingFillType="SAFFLOWER_OIL" 	outgoingFillType="SUNFLOWER_OIL" />
+		<fillTypeConversion ratio="1.3"   incomingFillType="DUCK_EGG" 		outgoingFillType="EGG" />
+	</palletTrigger>
+        </sellingStation>
+
+        <palletSpawner>
+            <spawnPlaces>
+                <spawnPlace startNode="palletAreaStart01" endNode="palletAreaEnd01"/>
+                <spawnPlace startNode="palletAreaStart02" endNode="palletAreaEnd02"/>
+            </spawnPlaces>
+        </palletSpawner>
+
+        <playerTrigger node="playerTrigger" />
+        <sounds>
+            <idle   template="cerealFactoryIdle" linkNode="0>" outerRadius="50"/>
+            <active template="cerealFactoryWork" linkNode="0>" outerRadius="50"/>
+        </sounds>
+    </productionPoint>
+
+    <triggerMarkers>
+        <triggerMarker node="warningStripes01"/>
+        <triggerMarker node="playerTriggerMarker" adjustToGround="true" filename="$data/shared/assets/marker/markerIconWrench.i3d"/>
+        <triggerMarker node="unloadTriggerMarker" adjustToGround="true" filename="$data/shared/assets/marker/markerIconUnload.i3d"/>
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="unloadTriggerMarker" teleportNode="unloadTriggerMarker" />
+    </hotspots>
+
+	<deletedNodes>
+		<!-- potato processing plant logo decals -->
+        	<deletedNode node="0>9|1|1" />
+		<deletedNode node="0>9|1|0" />
+		<deletedNode node="0>9|1" />
+    	</deletedNodes>
+
+    <i3dMappings>
+        <i3dMapping id="potatoProcessingPlantPlaceable" node="0>" />
+        <i3dMapping id="clearAreaStart01" node="0>0|0" />
+        <i3dMapping id="clearAreaWidth01" node="0>0|0|0" />
+        <i3dMapping id="clearAreaHeight01" node="0>0|0|1" />
+        <i3dMapping id="testAreaStart01" node="0>1|0" />
+        <i3dMapping id="testAreaEnd01" node="0>1|0|0" />
+        <i3dMapping id="indoorAreaStart01" node="0>2|0" />
+        <i3dMapping id="indoorAreaWidth01" node="0>2|0|0" />
+        <i3dMapping id="indoorAreaHeight01" node="0>2|0|1" />
+        <i3dMapping id="indoorAreaStart02" node="0>2|1" />
+        <i3dMapping id="indoorAreaWidth02" node="0>2|1|0" />
+        <i3dMapping id="indoorAreaHeight02" node="0>2|1|1" />
+        <i3dMapping id="indoorAreaStart03" node="0>2|2" />
+        <i3dMapping id="indoorAreaWidth03" node="0>2|2|0" />
+        <i3dMapping id="indoorAreaHeight03" node="0>2|2|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>3|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>3|0|0" />
+        <i3dMapping id="infoTrigger" node="0>4" />
+        <i3dMapping id="sellingStation" node="0>5" />
+        <i3dMapping id="exactFillNode" node="0>5|0" />
+        <i3dMapping id="unloadTriggerMarker" node="0>5|0|0" />
+        <i3dMapping id="unloadTriggerAINode" node="0>5|0|1" />
+        <i3dMapping id="palletTrigger" node="0>5|1" />
+        <i3dMapping id="playerTrigger" node="0>6|0" />
+        <i3dMapping id="playerTriggerMarker" node="0>6|0|0" />
+        <i3dMapping id="palletSpawner" node="0>7" />
+        <i3dMapping id="palletAreaStart01" node="0>7|0" />
+        <i3dMapping id="palletAreaEnd01" node="0>7|0|0" />
+        <i3dMapping id="palletAreaStart02" node="0>7|1" />
+        <i3dMapping id="palletAreaEnd02" node="0>7|1|0" />
+        <i3dMapping id="warningStripes01" node="0>7|2" />
+        <i3dMapping id="smoke01" node="0>8|0" />
+        <i3dMapping id="smoke02" node="0>8|1" />
+        <i3dMapping id="smoke03" node="0>8|2" />
+    </i3dMappings>
+</placeable>

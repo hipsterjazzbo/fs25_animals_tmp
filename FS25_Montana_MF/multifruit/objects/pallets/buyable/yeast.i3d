@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="yeast.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="textures/yeast_diffuse.png"/>
+    <File fileId="12" filename="textures/eurPalletBrands_diffuse.png"/>
+    <File fileId="4" filename="textures/euroPallet_normal.png"/>
+    <File fileId="5" filename="textures/euroPallet_specular.png"/>
+    <File fileId="3" filename="textures/euroPallet_diffuse.png"/>
+    <File fileId="7" filename="$data/objects/pallets/pioneer/pioneerPallet_normal.png"/>
+    <File fileId="8" filename="$data/objects/pallets/pioneer/pioneerPallet_specular.png"/>
+    <File fileId="14" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="9" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="2" filename="$data/shared/default_normal.png"/>
+    <File fileId="13" filename="$data/shared/default_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="default_mat" materialId="516" diffuseColor="0.494118 0.494118 0.494118 1">
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="euroPallet02_mat" materialId="517">
+      <Texture fileId="3"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+    </Material>
+    <Material name="eurPalletBrands_mat" materialId="518" alphaBlending="true" customShaderId="14">
+      <Texture fileId="12"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="13"/>
+    </Material>
+    <Material name="lambert1" materialId="519" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="landbauerPallet02_mat" materialId="520" customShaderId="9" customShaderVariation="mergeChildren_hideByIndex">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <Glossmap fileId="8"/>
+      <CustomParameter name="hideByIndex" value="-1 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="yeast.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="landbauerPallet_main_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.1" clipDistance="150" nodeId="534" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="519">
+      <Shape name="dynamicMountTrigger" translation="0 0.175 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x8000000" collisionFilterMask="0x8000000" nodeId="535" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="519"/>
+      <TransformGroup name="functionalNodes" nodeId="536">
+        <TransformGroup name="raycastNode" nodeId="537"/>
+        <TransformGroup name="effects" nodeId="538">
+          <Shape name="pipeEffect" translation="0 0.022001 -0" rotation="90 0 0" shapeId="3" clipDistance="100" nodeId="539" castsShadows="true" receiveShadows="true" materialIds="516"/>
+          <Shape name="smokeEffect" translation="0 -2.18029 0" shapeId="4" visibility="false" clipDistance="100" nodeId="540" castsShadows="true" receiveShadows="true" materialIds="516"/>
+        </TransformGroup>
+        <Shape name="fillTrigger" translation="0 1.93843 0" shapeId="5" visibility="false" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x40000000" clipDistance="300" nodeId="541" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="519"/>
+        <Shape name="dischargeActivationTrigger" translation="0 -1.79605 0" shapeId="6" visibility="false" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x40000000" nodeId="542" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="519"/>
+      </TransformGroup>
+      <Shape name="euroPalletOld_vis" shapeId="7" clipDistance="50" nodeId="543" castsShadows="true" receiveShadows="true" materialIds="517">
+        <Shape name="seedBags" shapeId="8" nodeId="544" castsShadows="true" receiveShadows="true" materialIds="520"/>
+        <TransformGroup name="fillCollisions" translation="0 0.118392 0" visibility="false" nodeId="545">
+          <Shape name="fillCollision01" translation="0 0.094759 0" shapeId="9" compoundChild="true" collisionFilterGroup="0x203002" collisionFilterMask="0x203002" density="0.001" nodeId="546" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="519"/>
+          <Shape name="fillCollision02" translation="0 0.187222 0" shapeId="9" compoundChild="true" collisionFilterGroup="0x203002" collisionFilterMask="0x203002" density="0.001" nodeId="547" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="519"/>
+          <Shape name="fillCollision03" translation="0 0.283555 0" shapeId="9" compoundChild="true" collisionFilterGroup="0x203002" collisionFilterMask="0x203002" density="0.001" nodeId="548" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="519"/>
+          <Shape name="fillCollision04" translation="0 0.373 0" shapeId="9" compoundChild="true" collisionFilterGroup="0x203002" collisionFilterMask="0x203002" density="0.001" nodeId="549" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="519"/>
+          <Shape name="fillCollision05" translation="0 0.469573 0" shapeId="9" compoundChild="true" collisionFilterGroup="0x203002" collisionFilterMask="0x203002" density="0.001" nodeId="550" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="519"/>
+          <Shape name="fillCollision06" translation="0 0.567467 0" shapeId="9" compoundChild="true" collisionFilterGroup="0x203002" collisionFilterMask="0x203002" density="0.001" nodeId="551" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="519"/>
+        </TransformGroup>
+        <Shape name="brandDecal" shapeId="10" clipDistance="120" nodeId="552" castsShadows="false" receiveShadows="true" materialIds="518"/>
+      </Shape>
+      <Shape name="tensionBeltNode" translation="0.016019 0.200271 0.012051" shapeId="11" visibility="false" clipDistance="100" nodeId="553" castsShadows="true" receiveShadows="true" materialIds="519"/>
+      <TransformGroup name="collisions" nodeId="554">
+        <Shape name="floorCollision01" translation="0.3 0 0" shapeId="12" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="50" nodeId="555" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="519"/>
+        <Shape name="floorCollision02" translation="-0.3 0 0" shapeId="12" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="50" nodeId="556" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="519"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+</i3D>

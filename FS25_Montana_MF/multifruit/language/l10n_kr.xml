@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors>Jinkou89</translationContributors>
+    <languageVersion>1.0.0.0</languageVersion>
+	
+	<texts>
+	  
+	<text name="fillType_rye" 				text="호밀" />
+	<text name="fillType_soybeanUS"        			text="미국산 대두" />
+	<text name="fillType_covercropmix"        		text="피복 작물 믹스" />
+	<text name="fillType_roundBaleLavender"        		text="라벤더 베일" />
+	<text name="fillType_clover1"        			text="레드 클로버" />
+	<text name="fillType_clover2"        			text="화이트 클로버" />
+	<text name="fillType_clover_windrow"        		text="클로버" />
+    	<text name="fillType_alfalfa"       			text="알파파" />
+	<text name="fillType_cloverSilage"        		text="발효 클로버" />
+   	<text name="fillType_alfalfaSilage"       		text="발효 알파파" />
+   	<text name="fillType_cloverHay"     			text="클로버 건초" />
+    	<text name="fillType_alfalfaHay"    			text="알파파 건초" />
+    	<text name="fillType_beanstraw" 			text="콩 짚" />
+    	<text name="fillType_cornStalks"    			text="옥수수 대" />
+	<text name="fillType_flaxFiber"        			text="아마 섬유" />
+	<text name="fillType_flax"        			text="아마" />
+	<text name="fillType_linseed"        			text="아마씨" />
+	<text name="fillType_millet"        			text="기장" />
+	<text name="fillType_poppy"        			text="양귀비" />
+	<text name="fillType_drypeas"        			text="말린 완두콩" />
+	<text name="fillType_beans"        			text="핀토콩" />
+	<text name="fillType_mustard"        			text="겨자" />
+	<text name="fillType_lentils"        			text="렌틸콩" />
+	<text name="fillType_silphie"        			text="실피움" />
+	<text name="fillType_spelt"        			text="스펠트밀" />
+	<text name="fillType_triticale"        			text="트리티케일" />
+	<text name="fillType_soybean2"        			text="미국산 대두" />
+	<text name="fillType_tobacco"        			text="담배" />
+	<text name="fillType_tobaccoo"        			text="담뱃잎" />      
+	<text name="fillType_compost" 				text="퇴비" />
+	<text name="fillType_organicWaste" 			text="유기 폐기물" />
+	<text name="fillType_grapeA" 				text="적포도" />
+	<text name="fillType_grapeB" 				text="청포도" />
+	<text name="fillType_chickpeas" 			text="병아리콩" />
+	<text name="fillType_buckwheat" 			text="메밀" />
+	<text name="shopItem_grapeb_vine" 			text="청포도 덩굴" />
+	<text name="shopItem_hopsVine" 				text="홉 덩굴" />
+	<text name="fillType_hemp" 				text="대마" />
+	<text name="fillType_hempFiber" 			text="대마 섬유" />
+	<text name="fillType_lavender" 				text="라벤더" />
+	<text name="fillType_potatoCut"        			text="자른 감자" />
+	<text name="fillType_beetrootCut"        		text="자른 비트" />
+	<text name="fillType_carrotCut"        			text="자른 당근" />
+	<text name="fillType_parsnipCut"        		text="자른 파스닙" />  
+	<text name="fillTypeGroup_TMR"        			text="완전배합사료(TMR), 발효 알파파/클로버" />	  
+	<text name="fillTypeGroup_hays"        			text="건초, 알파파/클로버 건초" />
+	<text name="fillTypeGroup_grassa"        		text="풀, 신선한 알파파/클로버" />
+	<text name="fillTypeGroup_moisture"        		text="수분: 자른 뿌리 작물" />
+	<text name="fillTypeGroup_grassHay"        		text="신선한 풀/건초/알파파/클로버" />
+	<text name="fillType_mineralFeed1"        		text="미네랄 배합사료/말린 완두콩" />
+	<text name="fillTypeGroup_pigForage"        		text="돼지용 혼합 사료" />
+	<text name="fillType_peanut" 				text="땅콩" />
+	<text name="fillType_miscanthus" 			text="억새" />
+	<text name="fillType_miscanthusCut" 			text="분쇄된 억새" />
+
+
+		<text name="fillType_maize2" 			text="말린 옥수수" />
+		<text name="fillType_soymilk" 			text="두유" />
+		<text name="fillType_pasta" 			text="파스타" />
+		<text name="fillType_chips" 			text="칩" />
+		<text name="fillType_ethanol" 			text="에탄올" />
+		<text name="fillType_cornflour"			text="옥수수 가루" />
+		<text name="fillType_cornOil"			text="옥수수유" />
+		<text name="fillType_linseedOil"		text="아마씨유" />
+		<text name="fillType_mustardOil"		text="겨자유" />
+		<text name="fillType_poppyOil"			text="양귀비씨유" />
+		<text name="fillType_pizza"			text="피자" />
+		<text name="fillType_buckwheatflour"        	text="메밀 가루" />
+		<text name="fillType_gramflour"        		text="병아리콩 가루" />
+		<text name="fillType_milletflour"        	text="기장 가루" />
+		<text name="fillType_ryeflour"        		text="호밀 가루" />
+		<text name="fillType_sorghumflour"        	text="수수 가루" />
+		<text name="fillType_crackedCorn"        	text="압착 옥수수" />
+		<text name="fillType_apple"        		text="사과" />
+		<text name="fillType_apricot"        		text="살구" />
+		<text name="fillType_cherry"        		text="체리" />
+		<text name="fillType_pear"        		text="배" />
+		<text name="fillType_peach"        		text="복숭아" />
+		<text name="fillType_plum"        		text="자두" />
+		<text name="fillType_quince"        		text="모과" />
+		<text name="fillType_cabbage"        		text="양배추" />
+		<text name="fillType_redCabbage"        	text="적양배추" />
+		<text name="fillType_melon"        		text="멜론" />
+		<text name="fillType_pumpkin"        		text="호박" />
+		<text name="fillType_watermelon"        	text="수박" />
+		<text name="fillType_cucumber"        		text="오이" />
+		<text name="fillType_eggplant"        		text="가지" />
+		<text name="fillType_pepper"        		text="피망" />
+		<text name="fillType_cauliflower" 		text="콜리플라워" />
+		<text name="fillType_bran"        		text="밀기울" />
+		<text name="fillType_molasses"        		text="당밀" />
+		<text name="fillType_appleJuice"        	text="사과 주스" />
+		<text name="fillType_apricotJuice"        	text="살구 주스" />
+		<text name="fillType_beetrootJuice"        	text="비트 주스" />
+		<text name="fillType_carrotJuice"        	text="당근 주스" />
+		<text name="fillType_cherryJuice"        	text="체리 주스" />
+		<text name="fillType_melonJuice"        	text="멜론 주스" />
+		<text name="fillType_multifruitJuice"        	text="멀티프루트 주스" />
+		<text name="fillType_peachJuice"        	text="복숭아 주스" />
+		<text name="fillType_pearJuice"        		text="배 주스" />
+		<text name="fillType_plumJuice"        		text="자두 주스" />
+		<text name="fillType_quinceJuice"        	text="모과 주스" />
+		<text name="fillType_strawberryJuice"        	text="딸기 주스" />
+		<text name="fillType_tomatoJuice"        	text="토마토 주스" />
+		<text name="fillType_watermelonJuice"        	text="수박 주스" />
+ 		<text name="fillType_cattle" 			text="소" />
+		<text name="fillType_pigs" 			text="돼지" />
+		<text name="fillType_sheepGoat" 		text="양/염소" />
+ 		<text name="fillType_beef" 			text="쇠고기" />
+		<text name="fillType_pork" 			text="돼지고기" />
+		<text name="fillType_poultryMeat" 		text="가금육" />
+		<text name="fillType_lamb" 			text="양고기" />
+		<text name="fillType_cigar" 			text="시가" />
+		<text name="fillType_cigarette" 		text="담배" />
+		<text name="fillType_animalFat" 		text="동물성 지방" />
+		<text name="fillType_perfume" 			text="향수" />
+		<text name="fillType_soap" 			text="비누" />
+		<text name="fillType_lavenderOil" 		text="라벤더 에센셜 오일" />
+		<text name="fillType_bourbonBarrel" 		text="버번" />
+		<text name="fillType_brandyBarrel" 		text="브랜디" />
+		<text name="fillType_ciderBarrel" 		text="사이다" />
+		<text name="fillType_meadBarrel" 		text="벌꿀술" />
+		<text name="fillType_liqueurBarrel" 		text="과일 리큐어" />
+		<text name="fillType_vodkaBarrel" 		text="보드카" />
+		<text name="fillType_whiskeyBarrel" 		text="위스키" />
+		<text name="fillType_rumBarrel" 		text="럼" />
+		<text name="fillType_peanutflour" 		text="땅콩 가루" />
+		<text name="fillType_peanutOil" 		text="땅콩유" />
+		<text name="fillType_peanutButter" 		text="땅콩 버터" />
+		<text name="fillType_mayo" 			text="마요네즈" />
+		<text name="fillType_ketchup" 			text="케첩" />
+		<text name="fillType_hotSauce" 			text="핫소스" />
+		<text name="fillType_soySauce" 			text="간장" />
+		<text name="fillType_garlicSauce" 		text="마늘 소스" />
+		<text name="fillType_mustardSauce" 		text="머스터드 소스" />
+		<text name="fillType_pickledCucumber" 		text="오이 피클" />
+		<text name="fillType_pickledCabbage" 		text="양배추 절임" />
+		<text name="fillType_pickledCauliflower" 	text="콜리플라워 피클" />
+		<text name="fillType_beansSoup" 		text="콩 스프" />
+		<text name="fillType_peanutBags" 		text="땅콩 자루" />
+		<text name="fillType_beansBags" 		text="콩 자루" />
+		<text name="fillType_cannedBeans" 		text="콩 통조림" />
+		<text name="fillType_tofu" 			text="두부 치즈" />
+		<text name="fillType_chocomilk" 		text="초코 우유" />
+		<text name="fillType_oatmilk" 			text="귀리 우유" />
+		<text name="fillType_mushroomSoup" 		text="버섯 스프" />
+		<text name="fillType_beer" 			text="맥주" />
+		<text name="fillType_wine" 			text="와인" />
+		<text name="fillType_icecream" 			text="아이스크림" />
+		<text name="fillType_sourcream" 		text="사워크림" />
+		<text name="fillType_yoghurt" 			text="요거트" />
+		<text name="fillType_sunflowerBags" 		text="해바라기씨 자루" />
+		<text name="fillType_pumpkinSeeds" 		text="호박씨 자루" />
+		<text name="fillType_pumpkinPuree" 		text="호박 퓨레" />
+		<text name="fillType_eggplantPuree" 		text="가지 퓨레" />
+		<text name="fillType_popcorn" 			text="팝콘" />
+		<text name="fillType_cheesePuffs" 		text="치즈 퍼프" />
+		<text name="fillType_peanutPuffs" 		text="땅콩 퍼프" />
+		<text name="fillType_tortilla" 			text="또띠아 칩" />
+		<text name="fillType_garlicBread" 		text="마늘 빵" />
+		<text name="fillType_onionRings" 		text="어니언 링" />
+		<text name="fillType_pie" 			text="과일 파이" />
+		<text name="fillType_cocoaPowder" 		text="코코아 가루" />
+		<text name="fillType_cookingSalt" 		text="식염" />
+		<text name="fillType_yeast" 		 	text="효모" />
+		<text name="fillType_roulade"                   text="룰라드" />
+		<text name="fillType_strudel"                   text="슈트루델" />
+		<text name="fillType_milkBread"                 text="우유 식빵" />
+		<text name="fillType_potatoBread"               text="감자 빵" />
+		<text name="fillType_sweetBread"                text="단빵" />
+		<text name="fillType_bagel"                     text="베이글" />
+		<text name="fillType_baguette" 			text="바게트"/>
+		<text name="fillType_hops" 			text="홉"/>
+		<text name="fillType_cowFood" 			text="소 사료 펠릿"/>
+		<text name="fillType_hayPellets" 		text="건초 펠릿"/>
+		<text name="fillType_strawPellets" 		text="짚 펠릿"/>
+		<text name="fillType_woodChipsPellets" 		text="우드칩 펠릿"/>
+		<text name="fillType_chocoCake" 		text="초콜릿 케이크"/>
+		<text name="fillType_sesame" 			text="참깨"/>
+		<text name="fillType_sesameOil" 		text="참기름"/>
+		<text name="fillType_sesameBags" 		text="포장된 참깨"/>
+		<text name="fillType_chickpeasBags" 		text="포장된 병아리콩"/>
+		<text name="fillType_lentilsBags" 		text="포장된 렌틸콩"/>
+		<text name="fillType_sesameRolls" 		text="허니 참깨 스낵"/>
+		<text name="fillType_hummus" 			text="후무스"/>
+
+	<text name="pigProcessing"        			text="돼지 가공" />
+		<text name="poultryProcessing"        			text="닭 가공" />
+		<text name="cattleProcessing"        			text="소 가공" />
+		<text name="sheepProcessing"        			text="양 및 염소 가공" />
+		<text name="message_unloadAnimalSuccess" 		text="동물을 성공적으로 %s(으)로 이동했습니다!" />
+        	<text name="message_unloadAnimalConfirmation" 		text="%d 마리의 동물(%s)을 %s(으)로 이동하시겠습니까?" />
+        	<text name="button_moveAnimal" 				text="%s(으)로 이동" />
+		<text name="message_animalTooYoung" 			text="이 동물은 너무 어립니다." />
+		<text name="message_animalTooOld" 			text="이 동물은 너무 늙었습니다." />
+        	<text name="configuration_grapeB" 			text="청포도"/>
+        	<text name="configuration_hops" 			text="홉"/>
+		<text name="function_fermentingTower" 			text="이 시설에서는 풀, 왕겨, 알파파 또는 클로버를 발효시킬 수 있습니다." />
+		<text name="function_grainDryer" 			text="이 시설에서는 옥수수를 건조시킬 수 있습니다." />
+		<text name="function_hopsVine" 			        text="홉을 재배하기 위한 덩굴입니다. 홉을 수확하려면 멀티프루트 포도 수확기가 필요합니다." />
+		<text name="function_buyingPoint" 			text="이 스테이션에서 거의 모든 물품을 대량으로 구매할 수 있습니다." />
+
+
+	<text name="shopItem_appleOrchard" 		text="작은 사과 과수원" />	
+		<text name="shopItem_apricotOrchard" 		text="작은 살구 과수원" />	
+		<text name="shopItem_appleTree" 		text="사과나무" />	
+		<text name="shopItem_apricotTree" 		text="살구나무" />
+		<text name="shopItem_cherryOrchard" 		text="작은 체리 과수원" />	
+		<text name="shopItem_pearOrchard" 		text="작은 배 과수원" />	
+		<text name="shopItem_cherryTree" 		text="체리나무" />	
+		<text name="shopItem_pearTree" 			text="배나무" />	
+		<text name="shopItem_peachOrchard" 		text="작은 복숭아 과수원" />	
+		<text name="shopItem_peachTree" 		text="복숭아나무" />		
+		<text name="shopItem_plumOrchard" 		text="작은 자두 과수원" />	
+		<text name="shopItem_plumTree" 			text="자두나무" />		
+		<text name="shopItem_quinceOrchard" 		text="작은 모과 과수원" />	
+		<text name="shopItem_quinceTree" 		text="모과나무" />	
+		<text name="shopItem_grainCrusher" 		text="곡물 분쇄기" />	
+		<text name="shopItem_juiceFactory" 		text="주스 공장" />
+		<text name="shopItem_slaughterHouse" 		text="도축장" />
+		<text name="shopItem_tobaccoProd" 		text="담배 공장" />
+		<text name="shopItem_lavenderProd" 		text="라벤더 가공 공장" />
+		<text name="shopItem_openGarden" 		text="오픈 가든" />
+		<text name="shopItem_distillery" 		text="증류소" />
+		<text name="shopItem_preservedFood" 		text="보존 식품 공장" />
+		<text name="shopItem_foodProd" 			text="스낵 생산" />
+		<text name="shopItem_fermentingTower" 		text="발효 타워" />
+		<text name="shopItem_wineCellar" 		text="맥주 및 와인 저장고" />
+		<text name="shopItem_grainDryer" 		text="옥수수 건조기" />
+		<text name="shopItem_openGardenFieldCrops" 	text="노지 작물용 오픈 가든" />
+		<text name="shopItem_industrialGreenhouse" 	text="산업용 온실" />
+		<text name="shopItem_vegetarianProd" 		text="비건 식품 생산" />
+		<text name="shopItem_pelletizer" 		text="펠릿기" />
+		<text name="shopItem_buyingPoint1" 		text="멀티프루트 구매 스테이션" />
+		<text name="shopItem_buyingPoint2" 		text="멀티프루트 구매 스테이션 (할인)" />
+
+
+		<text name="shopItem_jamProd" 				text="잼 공장" />
+		<text name="fillType_edamame" 				text="에다마메 (풋콩)"/>
+		<text name="fillType_taro" 				text="타로"/>
+		<text name="fillType_okra" 				text="오크라"/>
+		<text name="fillType_mint" 				text="민트"/>
+		<text name="fillType_greenRye" 				text="풋호밀" />
+		<text name="fillType_taroCut" 				text="다진 타로" />
+		<text name="fillType_taroFlour" 			text="타로 가루" />
+		<text name="fillType_taroSoup" 				text="타로 스프" />
+		<text name="fillType_taroChips" 			text="타로 칩" />
+		<text name="fillType_muffin" 				text="머핀" />
+		<text name="fillType_donut" 				text="도넛" />
+		<text name="fillType_ccm" 				text="발효 옥수수 속 혼합물(CCM)" />
+		<text name="fillType_ccmraw" 				text="옥수수 속 혼합물(CCM)" />
+		<text name="fillType_cropWindrow" 			text="전작물 왕겨" />
+		<text name="fillType_cropSilage" 			text="전작물 사일리지" />
+		<text name="fillType_grassSilage" 			text="풀 사일리지" />
+		<text name="fillType_safflower" 			text="홍화" />
+		<text name="fillType_appleJam"        			text="사과 잼" />
+		<text name="fillType_apricotJam"        		text="살구 잼" />
+		<text name="fillType_cherryJam"        			text="체리 잼" />
+		<text name="fillType_grapeJam"        			text="포도 잼" />
+		<text name="fillType_melonJam"        			text="멜론 잼" />
+		<text name="fillType_peachJam"        			text="복숭아 잼" />
+		<text name="fillType_pearJam"        			text="배 잼" />
+		<text name="fillType_plumJam"        			text="자두 잼" />
+		<text name="fillType_strawberryJam"        		text="딸기 잼" />
+		<text name="fillType_quinceJam"        			text="모과 잼" />
+		<text name="fillType_safflowerOil" 			text="홍화유" />
+		<text name="fillType_mintOil" 				text="민트 에센셜 오일"/>
+		<text name="fillType_mintBarrel" 			text="민트 리큐어"/>
+		<text name="fillType_jarredOkra"        		text="오크라 병조림" />
+		<text name="fillType_jarredEdamame"        		text="에다마메 병조림" />
+
+<text name="fillType_duckEgg"                 text="오리알"/>
+        <text name="shopItem_duckGooseBarn"             text="오리와 거위 축사"/>
+        <text name="shopItem_duckGoosePasture"             text="오리와 거위 방목지"/>
+        <text name="shopItem_rabbitHutch"             text="토끼장"/>
+        <text name="function_animalPenDuck"             text="이곳에서 오리와 거위를 키울 수 있습니다. 먹이를 주고 짚을 깔아주면 오리알과 거름을 얻을 수 있습니다."/>
+        <text name="function_animalPenRabbit"             text="이곳에서 토끼를 키울 수 있습니다. 먹이와 짚을 제공하세요. 토끼가 성장하면 판매하여 수익을 올릴 수 있습니다."/>
+        <text name="fillTypeGroup_clover"                text="신선한 클로버" />
+        <text name="fillTypeGroup_fruitVegetables"             text="과일 및 채소" />
+
+    <text name="fillType_goose"                            text="거위" />
+        <text name="animal_group_goose"                        text="거위와 오리" />
+        <text name="shopItem_animalGooseGrowthStage0"           text="어린 거위" />
+        <text name="shopItem_animalGooseGrowthStage1"           text="거위" />
+        <text name="animal_descriptionGooseProfitGrowthStage0" text="어린 거위를 살찌워 판매하면 수익을 얻을 수 있습니다." />
+        <text name="animal_descriptionGooseProfitGrowthStage1" text="거위를 번식시켜 판매하면 수익을 얻을 수 있습니다." />
+        <text name="animal_descriptionGooseFeed"               text="닭과 동일한 방식으로 먹이를 주십시오. 물은 축사 유형에 따라 자동으로 공급됩니다." />
+        <text name="animal_descriptionGooseReproduction"       text="거위는 생후 10개월에 성적으로 성숙하며, 번식기는 한 달 동안 지속됩니다." />
+
+    <text name="fillType_duck"                             text="오리" />
+        <text name="shopItem_animalDuckGrowthStage0"           text="새끼 오리" />
+        <text name="animal_duckGrowthStage0Description"        text="새끼 오리는 아직 알을 낳지 못합니다. 번식용으로 기르거나 판매하기에 적합합니다." />    
+        <text name="shopItem_animalDuckGrowthStage1"           text="오리" />    
+        <text name="animal_duckGrowthStage1Description"        text="오리는 알을 생산합니다. 알은 판매소에 팔거나 생산 시설에서 가공할 수 있습니다." />    
+        <text name="animal_poultryFoodDescription"             text="가금류는 생산을 위해 곡물과 물이 필요합니다. 참고: 일부 축사에는 자동 급수 시설이 갖춰져 있어 물을 따로 줄 필요가 없습니다." />
+        
+         <text name="fillType_rabbit"                            text="암토끼" />
+            <text name="fillType_rabbitMale"                        text="수토끼" />
+            <text name="animal_group_rabbits"                       text="토끼" />
+            <text name="shopItem_animalRabbitGrowthStage0"          text="토끼 (새끼)" />
+            <text name="shopItem_animalRabbitGrowthStage1"          text="토끼 (성장기)" />
+            <text name="shopItem_animalRabbitGrowthStage2"          text="토끼 (암컷)" />
+            <text name="shopItem_animalRabbitGrowthStage3"          text="토끼 (수컷)" />
+            <text name="animal_rabbitGrowthStage0Description"       text="갓 태어난 새끼 토끼는 가장 어린 개체입니다. 개별 구매는 불가능하며 어미 토끼로부터 태어납니다." />
+            <text name="animal_rabbitGrowthStage1Description"       text="성장기 토끼는 번식에 사용할 수 있습니다." />
+            <text name="animal_rabbitGrowthStage2Description"       text="암토끼는 새끼를 낳거나 판매할 수 있습니다. 새끼는 성장기 토끼보다 작고 어립니다." />
+            <text name="animal_rabbitGrowthStage3Description"       text="수토끼입니다." />
+            <text name="animal_rabbitBeddingDescription"            text="수토끼는 구매와 판매만 가능합니다." />
+            <text name="animal_rabbitFoodDescription"               text="토끼가 쾌적하게 지내려면 짚이 필요합니다." />
+
+        <text name="geeseProcessing"                     text="거위 및 오리 가공" />
+        <text name="rabbitProcessing"                     text="토끼 가공" />
+        <text name="fillType_leather"              text="천연 가죽"/>
+        <text name="fillType_leatherJacket"          text="가죽 자켓"/>
+        <text name="fillType_pillow"              text="베개"/>
+        <text name="fillType_furCoat"              text="모피 코트"/>
+        <text name="fillType_feathers"              text="깃털" />
+        <text name="fillType_rabbitMeat"          text="토끼 고기" />
+        <text name="fillType_rabbitFur"          text="토끼 털" />
+        <text name="fillType_poultry2"              text="가금류 (거위 및 오리)" />
+        <text name="fillType_hare"              text="토끼" />
+        <text name="fillType_poultry"              text="가금류 (닭)" />
+
+<text name="fillType_anhydrous"          text="무수 암모니아 (NH3)" />
+        <text name="fillType_propane"           text="프로판 가스" />
+<text name="shopItem_bakeryFactory"     text="몬태나 베이커리" />    
+        <text name="shopItem_beerFactory"       text="잉링 맥주 양조장" />        
+        <text name="shopItem_ethanolFactory"    text="로키 마운틴 에탄올 공장" />    
+        <text name="shopItem_whiskeyFactory"    text="잭 다니엘 위스키 증류소" />    
+        <text name="shopItem_dairyFactory"      text="컨트리 뷰 유제품 공장" />    
+        <text name="shopItem_wineFactory"       text="덕혼 와이너리" />    
+        <text name="shopItem_pizzaFactory"      text="아메리칸 피자 컴퍼니" />    
+        <text name="shopItem_grainFlourFactory" text="제분소" />    
+        <text name="shopItem_oilFactory"        text="착유 공장" />    
+    <text name="station_grainSiloTrainC1"     text="그레이트 플레인스 곡물 회사" />    
+        <text name="station_grainSiloTrainC2"     text="몬태나 프레이리 곡물 사일로" />    
+        <text name="station_grainSiloTrainC3"     text="옐로스톤 곡물 터미널" />    
+        <text name="station_balesStorageC1"       text="몬태나 건초 회사" />
+        <text name="station_grainSiloStoreC2"     text="몬태나 프레이리 농업 공급소" />    
+        <text name="station_grainSiloStoreC3"     text="플랫헤드 사료 및 곡물" />    
+        <text name="station_grainSiloStoreC4"     text="아이언 리지 곡물 사일로" />    
+        <text name="station_grainSiloStoreC5"     text="론 파인 곡물 공사" />    
+        <text name="station_grainSiloStoreC6"     text="애그리코어 몬태나" />
+        <text name="station_productStoreC1"       text="레스토랑" />    
+        <text name="station_productStoreC2"       text="홉슨 스트립 몰" />    
+        <text name="station_productStoreC3"       text="홉슨 잡화점" />    
+        <text name="station_productStoreC4"       text="달러 제너럴 매장" />    
+        <text name="station_productStoreC5"       text="BP 주유소" />    
+        <text name="station_productStoreC6"       text="케이스 주유소" />    
+        <text name="station_productStoreC7"       text="애플비 레스토랑" />    
+        <text name="station_productStoreC8"       text="코디악 맥주 양조장" />    
+        <text name="station_productStoreC9"       text="모카신 스트립 몰" />    
+        <text name="station_productStoreC10"      text="모카신 잡화점" />    
+        <text name="station_productStoreC11"      text="서브웨이 매장" />
+	
+	</texts>
+</l10n>

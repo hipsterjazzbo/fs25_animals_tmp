@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<motionPathEffects xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/mapMotionPathEffects.xsd">
+    <motionPathEffect effectClass="TypedMotionPathEffect" effectType="GREENBEAN_BELT_FRUITS_LEAVES" filename="$data/effects/greenbean/greenbean_beltFruitsLeaves.i3d">
+        <effectGeneration rootNode="0|0" minRot="-5 0 -5" maxRot="5 360 5" minScale="0.95 0.95 0.95" maxScale="1.05 1.05 1.05"/>
+        <typeDefinition fillTypes="OKRA" speedScale="0.1"/>
+
+        <effectMeshes>
+            <effectMesh node="0|0|0" numRows="14" rowLength="8"  boundingBoxCenter="0 0 0" boundingBox="6 8 8" />
+            <effectMesh node="0|0|1" numRows="14" rowLength="12" boundingBoxCenter="0 0 0" boundingBox="6 8 8" />
+            <effectMesh node="0|0|2" numRows="14" rowLength="14" boundingBoxCenter="0 0 0" boundingBox="6 8 8" />
+        </effectMeshes>
+
+        <customShaderDefaults>
+            <customShaderMap       name="shapeArray" filename="$data/effects/greenbean/arrays/fruitArray.dds"/>
+            <customShaderVariation name="alphaMap"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+
+    <motionPathEffect effectClass="TypedMotionPathEffect" effectType="GREENBEAN_BELT_FRUITS_CLEAN" filename="$data/effects/greenbean/greenbean_beltFruitsClean.i3d">
+        <effectGeneration rootNode="0|1" minRot="-5 0 -5" maxRot="5 360 5" minScale="0.95 0.95 0.95" maxScale="1.05 1.05 1.05"/>
+        <typeDefinition fillTypes="OKRA" speedScale="0.1"/>
+
+        <effectMeshes>
+            <effectMesh node="0|0|0" numRows="14" rowLength="10" boundingBoxCenter="0 0 0" boundingBox="6 8 8" />
+        </effectMeshes>
+
+        <customShaderDefaults>
+            <customShaderMap       name="shapeArray" filename="$data/effects/greenbean/arrays/fruitArray.dds"/>
+            <customShaderVariation name="alphaMap"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+
+    <motionPathEffect effectClass="TypedMotionPathEffect" effectType="GREENBEAN_BELT_LEAVES" filename="$data/effects/greenbean/greenbean_beltLeaves.i3d">
+        <effectGeneration rootNode="0|2" minRot="-5 0 -5" maxRot="5 360 5" minScale="0.95 0.95 0.95" maxScale="1.05 1.05 1.05"/>
+        <typeDefinition fillTypes="OKRA" speedScale="0.1"/>
+
+        <effectMeshes>
+            <effectMesh node="0|0|0" numRows="14" rowLength="12" boundingBoxCenter="0 0 0" boundingBox="6 8 8" />
+        </effectMeshes>
+
+        <customShaderDefaults>
+            <customShaderMap       name="shapeArray" filename="$data/effects/greenbean/arrays/fruitArray.dds"/>
+            <customShaderVariation name="alphaMap"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+
+    <motionPathEffect effectClass="TypedMotionPathEffect" effectType="GREENBEAN_THRESHING" filename="$data/effects/greenbean/greenbean_threshing.i3d">
+        <effectGeneration rootNode="0|3" minRot="0 0 0" maxRot="360 360 360" minScale="0.95 0.95 0.95" maxScale="1.05 1.05 1.05"/>
+        <typeDefinition fillTypes="OKRA" speedScale="0.85"/>
+
+        <effectMeshes>
+            <effectMesh node="0|0|0" numRows="28" rowLength="12" skipPositions="4" numVariations="1" boundingBoxCenter="0 0 0" boundingBox="8 8 8" />
+            <effectMesh node="0|0|1" numRows="48" rowLength="12" skipPositions="4" numVariations="2" boundingBoxCenter="0 0 0" boundingBox="8 8 8" />
+        </effectMeshes>
+
+        <customShaderDefaults>
+            <customShaderMap       name="shapeArray" filename="$data/effects/greenbean/arrays/threshingArray.dds"/>
+            <customShaderVariation name="rotateByLife_alphaMap"/>
+            <customShaderParameter name="rotateSpeed"   value="15.0 0 0 0"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+
+    <motionPathEffect effectClass="TypedMotionPathEffect" effectType="GREENBEAN_THRESHING_BELT" filename="$data/effects/greenbean/greenbean_threshingBelt.i3d">
+        <effectGeneration rootNode="0|3" minRot="0 0 0" maxRot="0 360 0" minScale="0.95 0.95 0.95" maxScale="1.05 1.05 1.05"/>
+        <typeDefinition fillTypes="OKRA" speedScale="0.85"/>
+
+        <effectMeshes>
+            <effectMesh node="0|0|0" numRows="8" rowLength="40" skipPositions="4" boundingBoxCenter="0 0 0" boundingBox="8 8 8" />
+        </effectMeshes>
+
+        <customShaderDefaults>
+            <customShaderMap       name="shapeArray" filename="$data/effects/greenbean/arrays/threshingBeltArray.dds"/>
+            <customShaderVariation name="alphaMap"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+</motionPathEffects>

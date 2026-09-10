@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<foliageType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/foliageType.xsd">
+    <fruitType name="clover2" shownOnMap="true" useForFieldJob="true">
+        <mapColors default="0.5500 0.7000 0.3000 1" colorBlind="0.4000 0.5000 0.2000 1"/>
+        <harvest litersPerSqm="3.5" groundType="GRASS_CUT" beeYieldBonusPercentage="0.10"/>
+        <windrow fillType="clover_windrow" />
+        <growth resetsSpray="true" growthRequiresLime="false"/>
+        <soil lowDensityRequired="false" increasesDensity="false" consumesLime="false" startSprayLevel="1"/>
+        <seeding directionSnapAngle="0" litersPerSqm="0.022" isAvailable="true" plantsWeed="false"/>
+        <cultivation isAllowed="true"/>
+    </fruitType>
+    
+    <!-- clover
+
+    0 1 2 3
+
+    1 0 0 0 - invisible
+    0 1 0 0 - green small
+    1 1 0 0 - green middle
+    0 0 1 0 - harvest ready
+    1 0 1 0 - cut
+    0 1 1 0 - cut 2
+
+    -->
+
+    <foliageLayer cellSize="8" objectMask="16711935" decalLayer="0" densityMapChannelOffset="0" numDensityMapChannels="4" numBlocksPerUnit="4" shapeSource="clover2/clover.i3d">
+        <foliageStateDefaults distanceMapLayer="1" width="1.4" height="1" widthVariance="0.9" heightVariance="0.9" horizontalPositionVariance="0.7" />
+       
+ <!-- default LOD distances etc -->
+        <foliageLodDefaults lod="0" viewDistance="20" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
+        <foliageLodDefaults lod="1" viewDistance="80" blendOutDistance="5" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
+        
+<!-- 1 0 0 0 - invisible -->
+        <foliageState name="1 invisible" isGrowing="true"/>
+        
+<!-- 0 1 0 0 - green small -->
+        <foliageState name="2 small" distanceMap="distances/foliage_grass_distance2_diffuse.dds" numBlocksPerUnit="5" width="1" height="1" isGrowing="true" regrowthStart="true" groundType="GRASS" groundTypeMask="GRASS GRASS_CUT SOWN DIRECT_SOWN ROLLER_LINES" isDestructibleByDisaster="true" >
+             <foliageShape>
+                <foliageLod blockShape="0>0|0" />
+                <foliageLod blockShape="0>1|0" />
+            </foliageShape>
+        </foliageState>
+        
+<!-- 1 1 0 0 - green middle -->
+        <foliageState name="3 big" distanceMap="distances/foliage_grass_distance3_diffuse.dds" numBlocksPerUnit="4" width="1.5" height="1" isGrowing="true" isHarvestReady="true" yieldScale="0.75" isDestructibleByWheel="false" isDestructibleByDisaster="true" fieldCourseLineHeight="0.85">
+          <foliageShape>
+                <foliageLod blockShape="0>0|1" />
+                <foliageLod blockShape="0>1|1" />
+            </foliageShape>
+        </foliageState>
+       
+<!-- 0 0 1 0 - harvest ready -->
+        <foliageState name="4 ready" distanceMap="distances/foliage_grass_distance4_diffuse.dds" numBlocksPerUnit="4" width="2" height="1.5" isGrowing="true" isDestructibleByWheel="false" isDestructibleByDisaster="true" isHarvestReady="true" fieldCourseLineHeight="1">
+            <foliageShape>
+                <foliageLod blockShape="0>0|2" />
+                <foliageLod blockShape="0>1|2" />
+            </foliageShape>
+        </foliageState>
+   
+<!-- 1 0 1 0 - cut -->
+        <foliageState name="5 cut" distanceMap="distances/foliage_grass_distance5_diffuse.dds" numBlocksPerUnit="4" height="0.4" isCut="true" isDestructibleByWheel="true" isDestructibleByDisaster="true" isMulched="true">
+            <foliageShape>
+                <foliageLod blockShape="0>0|3" />
+                <foliageLod blockShape="0>1|3" />
+            </foliageShape>
+        </foliageState>
+
+<!-- 0 1 1 0 - cut rolled -->
+        <foliageState name="6 rolled" distanceMap="distances/foliage_grass_distance5_diffuse.dds" numBlocksPerUnit="2.5" height="0.2" isRolledCut="true">
+            <foliageShape>
+		<foliageLod blockShape="0>0|3" />
+                <foliageLod blockShape="0>1|3" />
+            </foliageShape>
+        </foliageState>
+
+<!-- 0 1 1 0 - tire tracks -->
+        <foliageState name="7 tire" distanceMap="distances/foliage_grass_distance5_diffuse.dds" numBlocksPerUnit="1" height="0.1" isDestructibleByWheel="false" isDestructedByWheel="true" isDestructedByDisaster="true">
+            <foliageShape>
+		<foliageLod blockShape="0>0|3" />
+                <foliageLod blockShape="0>1|3" />
+            </foliageShape>
+        </foliageState>
+        
+</foliageLayer>
+
+    
+<!-- Small Green small Green big Harvest ready -->
+
+ 	<growth>
+        <seasonal initialState="4 ready">
+            <period name="EARLY_SPRING" plantingAllowed="false"> <!-- March -->
+                <update startState="2 small" endState="3 big" />
+                <update startState="5 cut" endState="2 small" />
+                <update startState="6 rolled" endState="2 small" />
+                <update startState="7 tire" endState="2 small" />
+            </period>
+            <period name="MID_SPRING" plantingAllowed="true"> <!-- April -->
+		<update startState="1 invisible" endState="2 small" />
+		<update startState="2 small" endState="3 big" />
+		<update startState="3 big" endState="4 ready" />
+		<update startState="5 cut" endState="2 small" />
+		<update startState="6 rolled" endState="2 small" />
+                <update startState="7 tire" endState="2 small" />
+            </period>
+            <period name="LATE_SPRING" plantingAllowed="true"> <!-- May -->
+                <update startState="1 invisible" endState="2 small" />
+                <update startState="2 small" endState="3 big" />
+                <update startState="3 big" endState="4 ready" />
+                <update startState="5 cut" endState="2 small" />
+                <update startState="6 rolled" endState="2 small" />
+                <update startState="7 tire" endState="2 small" />
+            </period>
+            <period name="EARLY_SUMMER" plantingAllowed="true"> <!-- June -->
+                <update startState="1 invisible" endState="2 small" />
+                <update startState="2 small" endState="3 big" />
+                <update startState="3 big" endState="4 ready" />
+                <update startState="5 cut" endState="2 small" />
+                <update startState="6 rolled" endState="2 small" />
+                <update startState="7 tire" endState="2 small" />
+            </period>
+            <period name="MID_SUMMER" plantingAllowed="false"> <!-- July -->
+                <update startState="2 small" endState="3 big" />
+                <update startState="3 big" endState="4 ready" />
+                <update startState="5 cut" endState="2 small" />
+                <update startState="6 rolled" endState="2 small" />
+                <update startState="7 tire" endState="2 small" />
+            </period>
+            <period name="LATE_SUMMER" plantingAllowed="false"> <!-- August -->
+                <update startState="2 small" endState="3 big" />
+                <update startState="3 big" endState="4 ready" />
+                <update startState="5 cut" endState="2 small" />
+                <update startState="6 rolled" endState="2 small" />
+                <update startState="7 tire" endState="2 small" />
+            </period>
+            <period name="EARLY_AUTUMN" plantingAllowed="true"> <!-- September -->
+				<update startState="1 invisible" endState="2 small" />
+                <update startState="2 small" endState="3 big" />
+                <update startState="3 big" endState="4 ready" />				
+                <update startState="4 ready" endState="2 small" />
+                <update startState="5 cut" endState="2 small" />
+                <update startState="6 rolled" endState="2 small" />
+                <update startState="7 tire" endState="2 small" />
+            </period>
+            <period name="MID_AUTUMN" plantingAllowed="false"> <!-- October -->
+                <update startState="3 big" endState="2 small" />
+                <update startState="5 cut" endState="2 small" />
+                <update startState="6 rolled" endState="2 small" />
+                <update startState="7 tire" endState="2 small" />
+            </period>
+            <period name="LATE_AUTUMN" plantingAllowed="false"> <!-- November -->
+                <!-- Completely knocked back for winter -->
+            </period>
+            <period name="EARLY_WINTER" plantingAllowed="false"> <!-- December -->
+			   <!-- Dormant, no growth -->
+            </period>
+            <period name="MID_WINTER" plantingAllowed="false"> <!-- January -->
+                <!-- Dormant, no growth -->
+            </period>
+            <period name="LATE_WINTER" plantingAllowed="false"> <!-- February -->
+                <!-- Dormant, no growth -->
+            </period>
+        </seasonal>
+
+        <nonSeasonal>
+            <update startState="1 invisible"        	endState="2 small" />
+            <update startState="2 small"      		endState="3 big" />
+            <update startState="3 big"  		endState="4 ready" />
+            <update startState="5 cut"     		endState="2 small" />
+            <update startState="6 rolled" 		endState="2 small" />
+                <update startState="7 tire" endState="2 small" />
+        </nonSeasonal>
+
+    </growth>
+</foliageType>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<markerIcons>
+    <filename>shared/assets/marker/markerIcons.i3d</filename>
+    <variations>
+		<!-- CUSTOMS -->
+        <variation node="0|0" id="ANIMAL_COW" />
+        <variation node="0|1" id="ANIMAL_PIG" />
+        <variation node="0|2" id="ANIMAL_SHEEP" />
+        <variation node="0|3" id="ANIMAL_CHICKEN" />
+        <variation node="0|4" id="ANIMAL_HORSE" />
+        <variation node="0|5" id="ANIMAL_RABBIT" />
+        <variation node="0|6" id="ANIMAL_GOAT" />
+        <variation node="0|7" id="AMIMAL_DUCK" />
+        <variation node="0|8" id="REPAIR" />
+        <variation node="0|9" id="ANIMAL_SHEEPGOAT" />
+        <variation node="0|10" id="ANIMAL_CHICKENDUCK" />
+        <variation node="0|11" id="PRODUCTION_POINT" />
+        <variation node="0|12" id="NPC_SPEECH" />
+        <variation node="0|13" id="PIPE_ATTACH" />
+        <variation node="0|14" id="ROUNDBALESTORAGE" />
+        <variation node="0|15" id="SQUAREBALESTORAGE" />
+        <variation node="0|16" id="WATER_POINT" />
+        <variation node="0|17" id="DELIVER_POINT" />
+        <variation node="0|18" id="ANIMAL_CALF" />
+        <variation node="0|19" id="STORAGE1" />
+        <variation node="0|20" id="ANIMAL_BULL" />
+        <variation node="0|21" id="STORAGE2" />
+        <variation node="0|22" id="PALLETSTACK" />
+        <variation node="0|23" id="GARDEN_MANAGEMENT" />
+        <variation node="0|24" id="ELECTRIC_SWITCH1" />
+        <variation node="0|25" id="OBJECTSTORAGE_MANAGEMENT" />
+        <variation node="0|26" id="PRODUCTIONS_MANAGEMENT" />
+        <variation node="0|27" id="SLEEP" />
+        <variation node="0|28" id="WARDROBE" />
+        <variation node="0|29" id="CONSTRUCTION" />
+        <variation node="0|30" id="FISHINGPLACE" />
+        <variation node="0|31" id="UNDEF" />
+        <variation node="0|32" id="SALESSPACE" />
+        <variation node="0|33" id="ANIMAL_DEER" />
+        <variation node="0|34" id="VENTILATION_CONTROL" />
+        <variation node="0|35" id="SERVICE" />
+        <variation node="0|36" id="UNLOAD_SACKS" />
+
+		<!-- ORIGINAL -->
+		<variation node="1|0" id="UNLOAD" />
+        <variation node="1|1" id="WRENCH" />
+        <variation node="1|2" id="WATER" />
+        <variation node="1|3" id="ANIMALS" />
+        <variation node="1|4" id="EXCLAMATION_MARK" />
+        <variation node="1|5" id="BASKET" />
+        <variation node="1|6" id="LOAD" />
+        <variation node="1|7" id="QUESTION_MARK" />
+    </variations>
+</markerIcons>

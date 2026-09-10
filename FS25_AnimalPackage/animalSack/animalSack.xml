@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="livestockTrailer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <storeData>
+        <name>$l10n_shopItem_animalSack</name>
+        <functions>
+            <function>$l10n_function_animalSack</function>
+        </functions>
+		<specs>
+            <weight ignore="true"/>
+        </specs>
+		<image>animalSack/store_animalSack.png</image>
+		<allowLeasing>false</allowLeasing>
+        <price>2</price>
+        <rotation>0</rotation>
+		<category>misc</category>
+        <brand>LIZARD</brand>
+        <showInStore>true</showInStore>
+        <canBeSold>true</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+    </storeData>
+	
+    <base>
+		<typeDesc>$l10n_shopItem_animalSack</typeDesc>
+        <filename>animalSack/animalSack.i3d</filename>
+        <size width="0.6" length="0.25" height="0.52" />
+        <canBeReset>true</canBeReset>
+		<supportsPickUp>true</supportsPickUp>
+        <components>
+            <component centerOfMass="0 0 0" solverIterationCount="10" mass="2"/>
+        </components>
+		<showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+    </base>
+	
+	<livestockTrailer>
+        <animal type="chicken" 	node="animalSlots" numSlots="3" />
+        <animal type="rabbit" 	node="animalSlots" numSlots="3" />
+        <loadTrigger node="loadTrigger" />
+    </livestockTrailer>	
+		
+    <tensionBeltObject>
+        <meshNodes>
+            <meshNode node="animalSack"/>
+        </meshNodes>
+    </tensionBeltObject>
+
+	<ai>
+		<agentAttachment/>
+	</ai>
+
+    <i3dMappings>
+        <i3dMapping id="animalSack_main_component1" node="0>" />
+        <i3dMapping id="animalSack" node="0>0" />
+        <i3dMapping id="animalSlots" node="0>1|0" />
+        <i3dMapping id="loadTrigger" node="0>1|1" />
+    </i3dMappings>
+</vehicle>

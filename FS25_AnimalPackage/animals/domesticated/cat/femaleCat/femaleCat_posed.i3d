@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/tileAndMirrorShader.xml"/>
+    <File fileId="5" filename="../cat_meow01.ogg"/>
+    <File fileId="1" filename="cat_diffuse.dds"/>
+    <File fileId="2" filename="cat_normal.dds"/>
+    <File fileId="3" filename="cat_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="femaleCat_mat" materialId="4" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="mirrorScaleAndOffsetUV" value="1 1 0 0"/>
+      <CustomParameter name="atlasInvSizeAndOffsetUV" value="0.25 0.5 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="femaleCat_posed.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="femaleCat_posed1" nodeId="7" materialIds="4" castsShadows="true" receiveShadows="true">
+        <AudioSource name="cat_meow02" nodeId="8" fileIds="5" range="10" innerRange="5" volume="0.3" loops="0" randomPlayback="true" probabilities="1" retriggerDelay="10 20"/>
+      </Shape>
+  </Scene>
+
+</i3D>

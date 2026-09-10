@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='utf-8'?>
+<i3D xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="miningShaftTower" version="1.6" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="5" filename="$data/maps/textures/shared/mapDirtAlpine_diffuse.png" />
+    <File fileId="7" filename="$data/maps/textures/shared/mapRust_diffuse.png" />
+    <File fileId="25" filename="$data/maps/textures/shared/snow_diffuse.png" />
+    <File fileId="26" filename="$data/maps/textures/shared/snow_normal.png" />
+    <File fileId="27" filename="$data/maps/textures/shared/snow_specular.png" />
+    <File fileId="4" filename="$data/shaders/buildingShader.xml" />
+    <File fileId="12" filename="$data/shaders/decalShader.xml" />
+    <File fileId="42" filename="$data/shaders/placeableShader.xml" />
+    <File fileId="28" filename="$data/shaders/snowHeapShader.xml" />
+    <File fileId="36" filename="$data/shaders/uvScrollShader.xml" />
+    <File fileId="38" filename="$data/shared/default_normal.png" />
+    <File fileId="29" filename="$data/shared/sparkles_normal.png" />
+    <File fileId="37" filename="textures/miningShaftTowerDecal_diffuse.png" />
+    <File fileId="30" filename="textures/miningShaftTowerFenceNet_diffuse.png" />
+    <File fileId="31" filename="textures/miningShaftTowerFenceNet_normal.png" />
+    <File fileId="32" filename="textures/miningShaftTowerFenceNet_specular.png" />
+    <File fileId="9" filename="textures/miningShaftTowerFence_diffuse.png" />
+    <File fileId="10" filename="textures/miningShaftTowerFence_normal.png" />
+    <File fileId="11" filename="textures/miningShaftTowerFence_specular.png" />
+    <File fileId="1" filename="textures/miningShaftTower_diffuse.png" />
+    <File fileId="8" filename="textures/miningShaftTower_height.png" />
+    <File fileId="6" filename="textures/miningShaftTower_mask.png" />
+    <File fileId="2" filename="textures/miningShaftTower_normal.png" />
+    <File fileId="3" filename="textures/miningShaftTower_specular.png" />
+    <File fileId="22" filename="textures/threadPlate_diffuse.png" />
+    <File fileId="23" filename="textures/threadPlate_normal.png" />
+    <File fileId="24" filename="textures/threadPlate_specular.png" />
+    <File fileId="33" filename="textures/conveyorBelt_diffuse.png" />
+    <File fileId="34" filename="textures/conveyorBelt_normal.png" />
+    <File fileId="35" filename="textures/conveyorBelt_specular.png" />
+    <File fileId="16" filename="textures/electricalEngine_diffuse.png" />
+    <File fileId="17" filename="textures/electricalEngine_normal.png" />
+    <File fileId="18" filename="textures/electricalEngine_specular.png" />
+    <File fileId="39" filename="$data/maps/textures/shared/pierBuildingGutters_diffuse.png" />
+    <File fileId="40" filename="$data/maps/textures/shared/pierBuildingGutters_normal.png" />
+    <File fileId="41" filename="textures/pierBuildingGutters_specular.png" />
+    <File fileId="13" filename="textures/substationConcrete_diffuse.png" />
+    <File fileId="14" filename="textures/substationConcrete_normal.png" />
+    <File fileId="15" filename="textures/substationConcrete_specular.png" />
+    <File fileId="19" filename="$data/maps/textures/shared/windowsIndustrial_diffuse.png" />
+    <File fileId="20" filename="$data/maps/textures/shared/windowsIndustrial_normal.png" />
+    <File fileId="21" filename="$data/maps/textures/shared/windowsIndustrial_specular.png" />
+  </Files>
+
+  <Materials>
+    <Material name="lambert1" materialId="2" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+    <Material name="miningShaftTower_mat" materialId="3" customShaderId="4" customShaderVariation="customParallax">
+      <CustomParameter name="dirtMossMix" value="1.0 1.0" />
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.12" />
+      <Custommap name="mDirtDiffuse" fileId="5" />
+      <Custommap name="mMaskMap" fileId="6" />
+      <Custommap name="mMossDiffuse" fileId="7" />
+      <Custommap name="mParallaxMap" fileId="8" />
+      <Texture fileId="1" />
+      <Normalmap fileId="2" />
+      <Glossmap fileId="3" />
+    </Material>
+    <Material name="miningShaftTowerFence_mat" materialId="5" customShaderId="12">
+      <Texture fileId="9" />
+      <Normalmap fileId="10" />
+      <Glossmap fileId="11" />
+    </Material>
+    <Material name="substationConcrete_mat" materialId="7">
+      <Texture fileId="13" />
+      <Normalmap fileId="14" bumpDepth="0.3" />
+      <Glossmap fileId="15" />
+    </Material>
+    <Material name="electricalEngine_mat" materialId="8">
+      <Texture fileId="16" />
+      <Normalmap fileId="17" bumpDepth="0.3" />
+      <Glossmap fileId="18" />
+    </Material>
+    <Material name="windowsIndustrial_mat" materialId="6" alphaBlending="true">
+      <Texture fileId="19" />
+      <Normalmap fileId="20" />
+      <Glossmap fileId="21" />
+    </Material>
+    <Material name="threadPlate_mat" materialId="9" customShaderId="4">
+      <CustomParameter name="dirtMossMix" value="1.0 1.0" />
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.12" />
+      <Custommap name="mDirtDiffuse" fileId="5" />
+      <Custommap name="mMaskMap" fileId="6" />
+      <Custommap name="mMossDiffuse" fileId="7" />
+      <Texture fileId="22" />
+      <Normalmap fileId="23" />
+      <Glossmap fileId="24" />
+    </Material>
+    <Material name="snow_mat" materialId="12" customShaderId="28">
+      <Custommap name="mSparklesNormal" fileId="29" />
+      <Texture fileId="25" />
+      <Normalmap fileId="26" bumpDepth="0.5" />
+      <Glossmap fileId="27" />
+    </Material>
+    <Material name="miningShaftTowerFenceNet_mat" materialId="10">
+      <Texture fileId="30" />
+      <Normalmap fileId="31" />
+      <Glossmap fileId="32" />
+    </Material>
+    <Material name="conveyorBelt_mat" materialId="11" customShaderId="36">
+      <CustomParameter name="offsetUV" value="0.0 0.0 0.0 0.0" />
+      <Texture fileId="33" />
+      <Normalmap fileId="34" />
+      <Glossmap fileId="35" />
+    </Material>
+    <Material name="miningShaftTowerDecal_mat" materialId="13" specularColor="0 0 0" customShaderId="12">
+      <Texture fileId="37" />
+      <Normalmap fileId="38" />
+    </Material>
+    <Material name="pierBuildingGutters_mat" materialId="4" customShaderId="42">
+      <Texture fileId="39" />
+      <Normalmap fileId="40" />
+      <Glossmap fileId="41" />
+    </Material>
+    <Material name="effect_mat" materialId="1" diffuseColor="0.5 0.5 0.5 1">
+      <Normalmap fileId="38" />
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="miningShaftTower.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="miningShaftTower" collision="false" density="0" nodeId="1">
+      <TransformGroup name="clearAreas" nodeId="2">
+        <TransformGroup name="clearAreaStart01" translation="-21 0 -13" nodeId="3">
+          <TransformGroup name="clearAreaWidth01" translation="0 0 24" nodeId="4" />
+          <TransformGroup name="clearAreaHeight01" translation="40 0 0" nodeId="5" />
+        </TransformGroup>
+        <TransformGroup name="clearAreaStart02" translation="6 0 -13" nodeId="6">
+          <TransformGroup name="clearAreaWidth02" translation="0 0 39" nodeId="7" />
+          <TransformGroup name="clearAreaHeight02" translation="12.5 0 0" nodeId="8" />
+        </TransformGroup>
+        <TransformGroup name="clearAreaStart03" translation="17 0 -2" nodeId="9">
+          <TransformGroup name="clearAreaWidth03" translation="0 0 4" nodeId="10" />
+          <TransformGroup name="clearAreaHeight03" translation="13 0 0" nodeId="11" />
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="indoorAreas" nodeId="12">
+        <TransformGroup name="indoorAreaStart01" translation="-20 0 -3.5" nodeId="13">
+          <TransformGroup name="indoorAreaWidth01" translation="0 0 7" nodeId="14" />
+          <TransformGroup name="indoorAreaHeight01" translation="9 0 0" nodeId="15" />
+        </TransformGroup>
+        <TransformGroup name="indoorAreaStart02" translation="6 0 16" nodeId="16">
+          <TransformGroup name="indoorAreaWidth02" translation="0 0 11" nodeId="17" />
+          <TransformGroup name="indoorAreaHeight02" translation="12 0 0" nodeId="18" />
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="testAreas" nodeId="19">
+        <TransformGroup name="testAreaStart01" translation="-20 0 -6" nodeId="20">
+          <TransformGroup name="testAreaEnd01" translation="17 46 12" nodeId="21" />
+        </TransformGroup>
+        <TransformGroup name="testAreaStart02" translation="-4.5 0 -11.5" nodeId="22">
+          <TransformGroup name="testAreaEnd02" translation="12 46 18" nodeId="23" />
+        </TransformGroup>
+        <TransformGroup name="testAreaStart03" translation="8.5 0 -12.5" nodeId="24">
+          <TransformGroup name="testAreaEnd03" translation="21 46 38" nodeId="25" />
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tipOcclusionUpdateAreas" nodeId="26">
+        <TransformGroup name="tipOcclusionUpdateAreaStart01" translation="-20 0 -12" nodeId="27">
+          <TransformGroup name="tipOcclusionUpdateAreaEnd01" translation="49 0 41" nodeId="28" />
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="heapSpawner" nodeId="29">
+        <TransformGroup name="effects" translation="12.529927 3.757179 17.050344" rotation="0 180 0" nodeId="30">
+          <Shape name="effectSmoke" translation="0 -0.315787 -4.263238" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="100" nodeId="31" />
+          <Shape name="effectParticle" translation="0.031238 1.437123 -2.911402" shapeId="2" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="2" clipDistance="300" nodeId="32" />
+        </TransformGroup>
+        <TransformGroup name="spawnArea" translation="8 0 17" nodeId="33">
+          <TransformGroup name="spawnAreaStart01" nodeId="34" />
+          <TransformGroup name="spawnAreaWidth01" translation="9 0 0" nodeId="35" />
+          <TransformGroup name="spawnAreaHeight01" translation="0 0 9" nodeId="36" />
+        </TransformGroup>
+        <Shape name="loadingTrigger" translation="12.5 2.5 22.5" shapeId="3" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="2" nodeId="37" />
+      </TransformGroup>
+      <TransformGroup name="hotspot" translation="0 0 6.719589" nodeId="38" />
+      <TransformGroup name="sounds" nodeId="39">
+        <TransformGroup name="machineRoom" translation="-15 0 0" nodeId="40" />
+        <TransformGroup name="tower" translation="12.769905 0 1.670045" nodeId="41" />
+        <TransformGroup name="dropping" translation="12.569632 1.299333 21.664768" nodeId="42" />
+      </TransformGroup>
+      <TransformGroup name="visuals" nodeId="43">
+        <TransformGroup name="visualsLOD" lodDistance="0 130" static="true" nodeId="44">
+          <TransformGroup name="miningShaftTower_lod0" collision="false" density="0" nodeId="45">
+            <Shape name="visuals_miningShaftTower_vis" translation="12.499999 4.25479 14.603162" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" skinBindNodeIds="46 47" clipDistance="300" nodeId="46">
+              <TransformGroup name="parts1" translation="-12.499999 -4.25479 -14.603162" collision="false" clipDistance="300" nodeId="47" />
+              <Shape name="parts" translation="-12.499999 -4.25479 -14.603162" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="300" nodeId="48" />
+              <Shape name="fence" translation="-12.499999 -4.25479 -14.603162" shapeId="6" castsShadows="true" receiveShadows="true" materialIds="5" clipDistance="300" nodeId="49" />
+              <Shape name="industrialGlass" translation="-12.499999 -4.25479 -14.603162" shapeId="7" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="300" nodeId="50" />
+              <Shape name="electricalEngineFloor" translation="-31.787186 -4.247796 -17.83387" shapeId="8" castsShadows="true" receiveShadows="true" materialIds="7" clipDistance="300" nodeId="51">
+                <Shape name="electricalEngine" translation="4.197401 0.478236 4.146631" shapeId="9" castsShadows="true" receiveShadows="true" materialIds="8" clipDistance="300" nodeId="52" />
+              </Shape>
+              <Shape name="threadPlate" translation="-12.499999 -4.25479 -14.603162" shapeId="10" castsShadows="true" receiveShadows="true" materialIds="9" clipDistance="300" nodeId="53" />
+              <Shape name="net" translation="-12.499999 -4.25479 -14.603162" shapeId="11" castsShadows="true" receiveShadows="true" materialIds="10" clipDistance="300" nodeId="54" />
+              <Shape name="belt" translation="0 -1.191925 -1.126853" shapeId="12" castsShadows="true" receiveShadows="true" materialIds="11" clipDistance="100" nodeId="55" />
+            </Shape>
+            <TransformGroup name="seasons" nodeId="56">
+              <TransformGroup name="winter" nodeId="57">
+                <Shape name="snow" shapeId="13" castsShadows="true" receiveShadows="true" materialIds="12" clipDistance="175" nodeId="58" weatherRequiredMask="0x400" />
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="propsLinkNode" nodeId="59" />
+          </TransformGroup>
+          <TransformGroup name="miningShaftTower_lod1" nodeId="60">
+            <Shape name="miningShaftTower_vis" shapeId="14" castsShadows="true" receiveShadows="true" materialIds="3" skinBindNodeIds="61 62" clipDistance="600" nodeId="61" />
+            <TransformGroup name="parts" translation="7.266471 0.621744 -5.80082" collision="false" clipDistance="600" nodeId="62" />
+            <Shape name="threadPlate" shapeId="15" castsShadows="true" receiveShadows="true" materialIds="9" clipDistance="350" nodeId="63" />
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="decals" nodeId="64">
+          <Shape name="decalsBig" translation="7.606776 13.182683 -3.984074" shapeId="16" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="13" clipDistance="200" nodeId="65" />
+          <Shape name="decalsSmall" translation="9.939502 1.856806 -4.871218" shapeId="17" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="13" clipDistance="65" nodeId="66" />
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" nodeId="67">
+        <Shape name="collision" shapeId="18" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="2" nodeId="68" />
+        <Shape name="tipCollision" translation="4.958804 0 1.566663" shapeId="19" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="2" nodeId="69" />
+      </TransformGroup>
+      <Shape name="occluder" translation="13.710423 0 -7.473304" shapeId="20" castsShadows="true" receiveShadows="true" nonRenderable="true" occluder="true" materialIds="2" clipDistance="900" nodeId="70" />
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

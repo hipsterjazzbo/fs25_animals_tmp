@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="foliage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_hopsVine</name>
+        <functions>
+            <function>$l10n_function_hopsVine</function>
+        </functions>
+        <image>multifruit/objects/hops/store_hops.dds</image>
+        <price>25</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>JINKOU</brand>
+        <species>PLACEABLE</species>
+        <category>fences</category>
+		<canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+		<vertexBufferMemoryUsage>124928</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>18688</indexBufferMemoryUsage>
+        <textureMemoryUsage>458752</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+		
+        <brush>
+            <type>fence</type>
+            <category>production</category>
+            <tab>cultivation</tab>
+            <parameters>
+                <parameter isFilename="true">multifruit/objects/hops/hopsSingleton.xml</parameter>
+                <parameter>false</parameter> <!-- is gate -->
+            </parameters>
+        </brush>
+
+        <storeIconRendering>
+            <settings cameraXRot="-15" cameraYRot="20" advancedBoundingBox="true" lightIntensity="2.5"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>$data/placeables/orchards/grape/source/grape.i3d</filename>
+		<!-- <boughtWithFarmland>true</boughtWithFarmland> -->
+    </base>
+
+</placeable>

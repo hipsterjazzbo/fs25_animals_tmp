@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="105">
+    <author>DJ Modding</author>
+    <version>3.2.0.0</version>
+
+===============================================================    
+				<contributors>
+
+	<contributor>Jinkou89</contributor><!-- converting foliages to FS25 and making new ones (fs25 Millet, Beans, Miscanthus, Sesame, Safflower, Okra, Edamame, Taro; fs22 Tobacco, Hemp, Silphie, Rye), remaking of all growth calendar, all the huds, remade all fillplanes for FS25 and made new ones, added stubble destruction on all crops and grass rolling to grass, alfalfa and clover (although it doesn't work for alfalfa and clover, because of how GE is set), majority of the ideas and most of the work regarding fillTypes and crops; animal food, swathing added to multifruit crops, with their windrows, bales, etc... PLEASE DO NOT USE WITHOUT ALL CREDITS IN THE MODDESC, including the ones below if used -->
+
+		<!-- crops foliage, fillPlanes -->
+
+	<contributor>MrLackofSkill</contributor><!-- fs25 lavender, FS25 grass and meadow -->
+	<contributor>Hemerson Dentinho</contributor><!-- fs22 Peanut -->
+	<contributor>bohdan_538</contributor><!-- fs22 Linseed, fs22 hops vines-->
+	<contributor>Antler22</contributor><!-- fs25 Mint, Alfalfa and American Soybean-->
+        <contributor>LAD3F Modding</contributor><!-- fs22 white clover -->
+	<contributor>South Sask Modding and BcBuhler Farms</contributor><!-- fs22 Lentils and Flax, flax Fiber and old fs22 swath fillPlanes for wheat, barley and flax -->
+	<contributor>StevieFS Mods</contributor><!-- fs22 Poppy -->
+	<contributor>Ser-hi-i, dynamofan</contributor><!-- fs22 red Clover, Mustard, Fodder Peas -->
+	<contributor>erShaba</contributor><!-- fs22 Chickpeas -->
+	<contributor>BioStil</contributor><!-- fs22 Buckwheat -->
+
+		<!-- scripts -->
+		
+	<contributor>The-Alien-Paul and Modelleicher</contributor><!-- bunker silo converter script -->
+	<contributor>GtX-Andy</contributor><!-- FillTypes Limit Increaser script-->
+	<contributor>Ifko[nator]</contributor><!-- fs19 corn stalks script -->
+
+		<!-- other -->
+
+	<contributor>wingi</contributor><!-- fs25 Rabbits,Geese and ducks - the animals can not be used without his permission -->
+	<contributor>omaTana</contributor><!-- apple Orchard and apple Tree as base for other orchards and trees -->
+	<contributor>Piersi</contributor><!-- pasta pallet -->
+	<contributor>Superfly1842</contributor><!-- Grain Dryer -->
+	<contributor>Barbicha</contributor><!-- Fermenting Tower -->
+	<contributor>K3rd0</contributor><!-- fs22 Big greenhouse and fs22 Bakery pallets conversion from my FS22 production pack, french translation, productions maths and balance -->
+	<contributor>celobuki</contributor><!-- fs22 pie i3d -->
+	<contributor>DS Power</contributor><!-- Pelletizer i3d -->
+	<contributor>OLLI Modding</contributor><!-- Rabbit Hutch, Goose Barn jam pallets i3d -->
+	<contributor>VX mapping</contributor><!-- fs25 muffin, donut i3d -->
+
+	<!-- include all above this in your modDesc if you are using the foliage or anything else for your map, ask original owners for modHub release to avoid future claims  -->
+
+    		</contributors>
+===============================================================
+
+    <title>
+        <en>Judith Plains, Montana 4X</en>
+        <de>Judith Plains, Montana 4X</de>
+        <ro>Câmpiile Judith River, Montana SUA 4X</ro>
+    </title>
+    <description>
+        <en><![CDATA[Welcome to Judith Plains, Montana 4X
+
+This fictional 4x map is inspired by central Montana, emphasizing agriculture and expansive landscapes.
+It features multiple towns, a vast train system connecting two of them, and a route that begins in the highlands, winds through dense forests, and descends into the valley, covering a significant portion of the map.
+Scattered bridges, two creeks, and a river cutting across the terrain add to the immersive experience.
+
+Key Features:
+New Crops: Alfalfa and Clover, mowable like grass, wrapable for silage and baled for animal feed.
+Custom Harvestore Silo: Produces silage from grass, alfalfa, clover, and chaff (requires land ownership).
+Inbuilt Corn Dryer: Converts Corn into DryCorn (requires land ownership).
+New Straw Types: Corn and soybeans now produce cornstalks and bean straw, which can be baled to be sold or used as animal bedding.
+Custom Productions: Whiskey, Beer, Wine, Ethanol, Soymilk, Pasta, Pizza, Cornoil, Cornflour.
+Enhanced Crop Features:
+Custom corn textures with stubble destruction.
+Crop destruction effects added for all major crops.
+Grass planted will now have seasonal color change effects.
+Custom geo based on the Northern United States, featuring spring planting of wheat, barley, and canola, with extended harvest periods for corn, soybeans, sorghum, and sunflowers.
+Expanded Terrain Options: Additional ground textures added for paint mode.
+Custom Lighting: Orange sunrise/sunset and darker nights.
+Land & Farming:
+122 arable fields, ranging from medium to large, with a few meadows.
+A Custom soil map included to support Precision Farming DLC.
+All of the map can be purchasable. 
+Custom Built Farms:
+6 custom built farm areas scattered across map
+7 empty land areas for players to build their own farms
+Each farm have color themed barns, animal pens and silos
+Custom buildings: 10 dairy barns, 6 sheep pastures, 2 pigsties,and 4 hen pens (requires land ownership).
+Each farm have Custom Grain bin silos (requires land ownership).
+Each farm have a separate Corn Dryer & Harvestor (requires land ownership).
+Sell Points & Economy:
+12 sell points with varying product acceptance.
+3 Train silos and Train sell point included.
+Bulk feed shop for seeds, lime, herbicide, fertilizer, anhydrous, and propane.
+Added Realism:
+Custom Montana license plates.
+Anhydrous ammonia as a new fertilizer type.(Should work with any anhydrous applicator mods out there)
+Propane added as a resource for productions.(Map includes modded tankers for transport)
+Animal dealer have live animals at display.
+Animated airplane flying over farms and the city. 
+Two fire stations with animated doors and interiors.
+Gas stations, Vehicle dealer with interiors.
+Immersive Details:
+John Deere dealership with demo equipment for players to borrow.
+Custom environmental sounds and building smoke effects.
+Multi-Terrain Angle (32 angles) for better field realism.
+Performance: 
+Completely error-free, with only minor, harmless warnings.
+Enjoy farming in the Judith Plains, Montana!
+
+Version 1.0.0.1:
+Fixed issue where loading map in dedicated server gets struck at 100% compiling shaders. Updated the property type of store vehicles now so map works with Courseplay on Multiplayer]]></en>
+        <de><![CDATA[Welcome to Judith Plains, Montana 4X
+
+This fictional 4x map is inspired by central Montana, emphasizing agriculture and expansive landscapes.
+It features multiple towns, a vast train system connecting two of them, and a route that begins in the highlands, winds through dense forests, and descends into the valley, covering a significant portion of the map.
+Scattered bridges, two creeks, and a river cutting across the terrain add to the immersive experience.
+
+Key Features:
+New Crops: Alfalfa and Clover, mowable like grass, wrapable for silage and baled for animal feed.
+Custom Harvestore Silo: Produces silage from grass, alfalfa, clover, and chaff (requires land ownership).
+Inbuilt Corn Dryer: Converts Corn into DryCorn (requires land ownership).
+New Straw Types: Corn and soybeans now produce cornstalks and bean straw, which can be baled to be sold or used as animal bedding.
+Custom Productions: Whiskey, Beer, Wine, Ethanol, Soymilk, Pasta, Pizza, Cornoil, Cornflour.
+Enhanced Crop Features:
+Custom corn textures with stubble destruction.
+Crop destruction effects added for all major crops.
+Grass planted will now have seasonal color change effects.
+Custom geo based on the Northern United States, featuring spring planting of wheat, barley, and canola, with extended harvest periods for corn, soybeans, sorghum, and sunflowers.
+Expanded Terrain Options: Additional ground textures added for paint mode.
+Custom Lighting: Orange sunrise/sunset and darker nights.
+Land & Farming:
+122 arable fields, ranging from medium to large, with a few meadows.
+A Custom soil map included to support Precision Farming DLC.
+All of the map can be purchasable. 
+Custom Built Farms:
+6 custom built farm areas scattered across map
+7 empty land areas for players to build their own farms
+Each farm have color themed barns, animal pens and silos
+Custom buildings: 10 dairy barns, 6 sheep pastures, 2 pigsties,and 4 hen pens (requires land ownership).
+Each farm have Custom Grain bin silos (requires land ownership).
+Each farm have a separate Corn Dryer & Harvestor (requires land ownership).
+Sell Points & Economy:
+12 sell points with varying product acceptance.
+3 Train silos and Train sell point included.
+Bulk feed shop for seeds, lime, herbicide, fertilizer, anhydrous, and propane.
+Added Realism:
+Custom Montana license plates.
+Anhydrous ammonia as a new fertilizer type.(Should work with any anhydrous applicator mods out there)
+Propane added as a resource for productions.(Map includes modded tankers for transport)
+Animal dealer have live animals at display.
+Animated airplane flying over farms and the city. 
+Two fire stations with animated doors and interiors.
+Gas stations, Vehicle dealer with interiors.
+Immersive Details:
+John Deere dealership with demo equipment for players to borrow.
+Custom environmental sounds and building smoke effects.
+Multi-Terrain Angle (32 angles) for better field realism.
+Performance: 
+Completely error-free, with only minor, harmless warnings.
+Enjoy farming in the Judith Plains, Montana!
+Version 1.0.0.1:
+Fixed issue where loading map in dedicated server gets struck at 100% compiling shaders. Updated the property type of store vehicles now so map works with Courseplay on Multiplayer]]></de>
+    </description>
+    
+<iconFilename>icon_montana.png</iconFilename>
+    
+<multiplayer supported="true"/>
+    
+<maps>
+        <map id="MapMontana" className="Mission00" filename="$dataS/scripts/mission00.lua" configFilename="mapUS/mapUS.xml" defaultVehiclesXMLFilename="mapUS/config/vehicles.xml" defaultHandToolsXMLFilename="$data/maps/mapUS/config/handTools.xml" defaultPlaceablesXMLFilename="mapUS/config/placeables.xml" defaultItemsXMLFilename="mapUS/config/items.xml">
+            <title>
+                <en>Montana Map, Multifruit 4x</en>
+                <de>Montana Map, Multifruit 4x</de>
+                <ro>Câmpiile Judith River, Montana SUA 4X</ro>
+            </title>
+            <description>
+                <en>Welcome to Judith Plains, Montana. This is a fictional 4x map based on the northeast region of Montana. Multifruit by Jinkou89. </en>
+                <de>Welcome to Judith Plains, Montana. This is a fictional 4x map based on the northeast region of Montana. Multifruit by Jinkou89. </de>
+                <ro>Bine ați vent în Câmpiile Judith River, Montana, Statele Unite ale Americii. O hartă ficțională 4x, inspirată de peisajele din nord-estul statului Montana. Multi-culturi de Jinkou89. </ro>
+            </description>
+            <iconFilename>mapUS/textures/ui/preview.png</iconFilename>
+        </map>
+
+===============================================================	   	
+
+    </maps>
+	
+<storeItems>
+	
+<!-- Train -->
+	<storeItem xmlFilename="placeables/trainSystem/trainSystem.xml"  />
+	<storeItem xmlFilename="placeables/trainSystem/ac4400bnsf.xml"  />
+	<storeItem xmlFilename="placeables/trainSystem/ac4400bnsf2.xml"  />
+	<storeItem xmlFilename="placeables/trainSystem/grainhopperbnsf.xml"  />
+<!-- Train track placing/storage -->
+	<storeItem xmlFilename="placeables/grainElevatorTriggers1.xml"  />	
+	<storeItem xmlFilename="placeables/grainElevatorTriggers2.xml"  />	
+	<storeItem xmlFilename="placeables/grainElevatorTriggers3.xml"  />	
+<!-- Train special selling-->
+	<storeItem xmlFilename="placeables/sellingStationTrain.xml"  />
+<!-- Vehicle -->
+	<storeItem xmlFilename="placeables/sellingStationVehicles.xml"  />
+<!-- Grain Silo -->	
+	<storeItem xmlFilename="placeables/grainSiloStorageF1.xml"  />
+	<storeItem xmlFilename="placeables/grainSiloStorageF2.xml"  />
+
+<!-- Flat Bottom Bins -->
+
+<!-- HarvestoreSiloSystem -->
+	<storeItem xmlFilename="placeables/fermentingSiloLarge.xml"  />
+	<storeItem xmlFilename="placeables/fermentingSiloSmall.xml"  />
+	
+<!-- Grain Dryer Complex -->
+	<storeItem xmlFilename="placeables/grainDryerComplexF1.xml"  />
+	
+<!-- gas -->
+	<storeItem xmlFilename="placeables/gasStation01.xml"  />
+	<storeItem xmlFilename="placeables/gasStationSmall.xml"  />
+<!-- water -->
+	<storeItem xmlFilename="placeables/buyWater.xml"  />
+<!-- Buy Stations -->
+	<storeItem xmlFilename="placeables/buyMulti.xml"  />
+	<storeItem xmlFilename="placeables/buyPropane.xml"  />
+	<storeItem xmlFilename="placeables/buyAnhydrous.xml"  />
+	<storeItem xmlFilename="placeables/buyLiqFert.xml"  />
+	<storeItem xmlFilename="placeables/buyLiqHerb.xml"  />
+	
+<!-- Productions -->
+	<storeItem xmlFilename="$data/placeables/mapEU/sawmill/sawmill.xml"  />
+	<storeItem xmlFilename="placeables/productionPoints/dairyUS.xml"  />
+	<storeItem xmlFilename="placeables/productionPoints/wineCellar.xml"  />
+	<storeItem xmlFilename="placeables/productionPoints/whiskeyPlantUS.xml"  />
+	<storeItem xmlFilename="placeables/productionPoints/oilPlantUS.xml"  />
+	<storeItem xmlFilename="placeables/productionPoints/BeerPlantUS.xml"  />
+	<storeItem xmlFilename="placeables/productionPoints/spinnery.xml"  />
+	<storeItem xmlFilename="placeables/productionPoints/grainFlourMillUS.xml"  />
+	<storeItem xmlFilename="placeables/productionPoints/EthanolPlantUS.xml"  />
+	<storeItem xmlFilename="placeables/productionPoints/bakeryUS.xml"  />
+	<storeItem xmlFilename="placeables/productionPoints/PizzaPlaceUS.xml"  />
+	
+<!-- SellingStation -->
+	<storeItem xmlFilename="placeables/sellPointGrain2.xml"  />	
+	<storeItem xmlFilename="placeables/sellPointGrain3.xml"  />	
+	<storeItem xmlFilename="placeables/sellPointGrain4.xml"  />	
+	<storeItem xmlFilename="placeables/sellPointGrain5.xml"  />	
+	<storeItem xmlFilename="placeables/sellPointGrain6.xml"  />	
+	<storeItem xmlFilename="placeables/sellingStationBales1.xml"  />	
+	<storeItem xmlFilename="placeables/sellingStationProduct1.xml"  />	
+	<storeItem xmlFilename="placeables/sellingStationProduct2.xml"  />	
+	<storeItem xmlFilename="placeables/sellingStationProduct3.xml"  />	
+	<storeItem xmlFilename="placeables/sellingStationProduct4.xml"  />	
+	<storeItem xmlFilename="placeables/sellingStationProduct5.xml"  />	
+	<storeItem xmlFilename="placeables/sellingStationProduct6.xml"  />	
+	<storeItem xmlFilename="placeables/sellingStationProduct7.xml"  />	
+	<storeItem xmlFilename="placeables/sellingStationProduct8.xml"  />	
+	<storeItem xmlFilename="placeables/sellingStationProduct9.xml"  />	
+	<storeItem xmlFilename="placeables/sellingStationProduct10.xml"  />	
+	<storeItem xmlFilename="placeables/sellingStationProduct11.xml"  />	
+		
+<!-- Animals -->
+	<storeItem xmlFilename="placeables/animals/cowBarnF1A1.xml"  />
+	<storeItem xmlFilename="placeables/animals/cowBarnF1A2.xml"  />
+	<storeItem xmlFilename="placeables/animals/pigBarnF1A1.xml"  />
+	<storeItem xmlFilename="placeables/animals/sheepBarnF1A1.xml"  />
+	<storeItem xmlFilename="placeables/animals/chickenCoopF1A1.xml"  />
+	
+	<storeItem xmlFilename="placeables/animals/cowBarnF2A1.xml"  />
+	<storeItem xmlFilename="placeables/animals/cowBarnF2A2.xml"  />
+	<storeItem xmlFilename="placeables/animals/cowBarnF3A1.xml"  />
+	<storeItem xmlFilename="placeables/animals/cowBarnF4A1.xml"  />
+	<storeItem xmlFilename="placeables/animals/cowBarnF5A1.xml"  />
+	<storeItem xmlFilename="placeables/animals/cowBarnF5A2.xml"  />
+	<storeItem xmlFilename="placeables/animals/cowBarnF6A1.xml"  />
+	<storeItem xmlFilename="placeables/animals/cowBarnF6A2.xml"  />
+	
+	<storeItem xmlFilename="placeables/animals/sheepBarnF2A1.xml"  />
+	<storeItem xmlFilename="placeables/animals/sheepBarnF3A1.xml"  />
+	<storeItem xmlFilename="placeables/animals/sheepBarnF4A1.xml"  />
+	<storeItem xmlFilename="placeables/animals/sheepBarnF5A1.xml"  />
+	<storeItem xmlFilename="placeables/animals/sheepBarnF6A1.xml"  />
+	
+	<storeItem xmlFilename="placeables/animals/pigBarnF4A1.xml"  />
+	
+	<storeItem xmlFilename="placeables/animals/chickenCoopF2A1.xml"  />
+	<storeItem xmlFilename="placeables/animals/chickenCoopF4A1.xml"  />
+	<storeItem xmlFilename="placeables/animals/chickenCoopF5A1.xml"  />
+	
+<!-- Construction -->
+	<storeItem xmlFilename="placeables/buildableFarmHouse01.xml"  />
+	<storeItem xmlFilename="placeables/weighingStation.xml"  />
+
+<!-- Pallets -->
+	<storeItem xmlFilename="objects/pallets/anhydrousTank.xml"  />
+	<storeItem xmlFilename="objects/pallets/propaneTank.xml"  />
+
+<!-- ORCHARDS -->
+		<storeItem xmlFilename="multifruit/objects/hops/hops.xml"/>
+		<storeItem xmlFilename="multifruit/objects/hops/hopsSingleton.xml"/>
+	<!-- Vehicles -->
+        	<storeItem xmlFilename="multifruit/vehicles/cp690_multifruit.xml" />
+		<storeItem xmlFilename="multifruit/vehicles/bp2140e_multifruit.xml" />
+		<storeItem xmlFilename="multifruit/vehicles/mkb4TR_multifruit.xml" />
+		<storeItem xmlFilename="multifruit/vehicles/grapeliner7000.xml" />
+		<storeItem xmlFilename="multifruit/vehicles/braud9070L.xml" />
+		<storeItem xmlFilename="multifruit/vehicles/tiger6S_multifruit.xml" />
+		<storeItem xmlFilename="multifruit/vehicles/rrXL9_multifruit.xml" />
+		<storeItem xmlFilename="multifruit/vehicles/lightOptitraxx_multifruit.xml" />
+		<storeItem xmlFilename="multifruit/vehicles/grinder/grinder.xml" />
+		<storeItem xmlFilename="multifruit/vehicles/ra142.xml" />
+		<storeItem xmlFilename="multifruit/vehicles/gl86.xml" />
+		<storeItem xmlFilename="multifruit/vehicles/mp122OceaHops.xml" />
+		<storeItem xmlFilename="multifruit/vehicles/gl420.xml" />
+		<storeItem xmlFilename="multifruit/vehicles/gl860.xml" />
+		<storeItem xmlFilename="multifruit/vehicles/prios440.xml" />
+		<storeItem xmlFilename="multifruit/vehicles/abi550.xml" />
+		<storeItem xmlFilename="multifruit/vehicles/abi1600.xml" />
+		<storeItem xmlFilename="multifruit/vehicles/mks8.xml" />
+		<storeItem xmlFilename="multifruit/vehicles/mks32.xml" />
+		<storeItem xmlFilename="multifruit/vehicles/silverstar/silverstar.xml" />
+		<storeItem xmlFilename="multifruit/vehicles/noahTTW140/noahTTW140.xml" />
+	<!-- Productions -->
+		<storeItem xmlFilename="multifruit/placeables/orchards/apple/appleOrchard.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/orchards/apple/appleTree.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/orchards/apricot/apricotOrchard.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/orchards/apricot/apricotTree.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/orchards/cherry/cherryOrchard.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/orchards/cherry/cherryTree.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/orchards/pear/pearOrchard.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/orchards/pear/pearTree.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/orchards/peach/peachOrchard.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/orchards/peach/peachTree.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/orchards/plum/plumOrchard.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/orchards/plum/plumTree.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/orchards/quince/quinceOrchard.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/orchards/quince/quinceTree.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/greenhouses/greenHouseGlass.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/greenhouses/greenHouseTarp.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/greenhouses/greenHouseSaplings.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/greenhouses/greenHouseMushroom.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/greenhouses/openGarden.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/greenhouses/openGardenFieldCrops.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/greenhouses/industrialGreenhouse.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/bga/bga99kw.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/bga/bga250kw.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/bga/bga500kw.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/productionPoints/grainCrusher/grainCrusher.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/productionPoints/slaughterHouse/slaughterHouse.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/productionPoints/tobaccoProd/tobaccoProd.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/productionPoints/lavenderProd/lavenderProd.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/productionPoints/distillery/distillery.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/productionPoints/preservedFood/preservedFood.xml" />
+		<storeItem xmlFilename="multifruit/placeables/productionPoints/paperFactory/paperFactory.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/productionPoints/juiceFactory/juiceFactory.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/productionPoints/sugarMill.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/productionPoints/bakery.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/productionPoints/grainMill.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/productionPoints/sugarMill.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/productionPoints/dairy/dairy.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/productionPoints/spinnery/spinnery.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/productionPoints/oilMill.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/productionPoints/foodProd.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/productionPoints/fermentingTower/fermentingTower.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/productionPoints/wineCellar/wineCellar.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/productionPoints/grainDryer/grainDryer.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/productionPoints/miningShaft/miningShaft.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/productionPoints/ironFurnace/ironFurnace.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/productionPoints/vegetarianProd/vegetarianProd.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/productionPoints/pelletizer/pelletizer.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/productionPoints/biomassHeatingPlant.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/buyingPoint/buyingPoint1.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/buyingPoint/buyingPoint2.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/billboard/billboard1.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/billboard/billboard2.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/productionPoints/jamProd/jamProd.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/productionPoints/tailorShop.xml"  />
+
+		<storeItem xmlFilename="multifruit/placeables/husbandry/rabbitHutch/rabbitHutch.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/husbandry/duckGoosePasture.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/husbandry/duckGooseBarn.xml"  />
+		<storeItem xmlFilename="multifruit/placeables/husbandry/duckGooseBarn2/duckGooseBarn2.xml"  />
+
+
+<!-- Buyable Pallets -->
+	<storeItem xmlFilename="multifruit/objects/pallets/buyable/cocoaPowder.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/buyable/multiPurchase_cocoaPowder.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/buyable/cookingSalt.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/buyable/multiPurchase_cookingSalt.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/buyable/yeast.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/buyable/multiPurchase_yeast.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/buyable/palletMiscanthus.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/buyable/multiPurchasePallet_palletMiscanthus.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/buyable/multiPurchase_molasses.xml"  />
+
+<!-- Pallets -->	
+	<storeItem xmlFilename="multifruit/objects/pallets/mill/cornFlourPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/mill/buckwheatFlourPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/mill/gramFlourPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/mill/milletFlourPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/mill/ryeFlourPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/mill/peanutFlourPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/mill/sorghumFlourPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/mill/taroFlourPallet.xml"  />	
+	<storeItem xmlFilename="multifruit/objects/pallets/oil/cornOilPallet.xml"  />	
+	<storeItem xmlFilename="multifruit/objects/pallets/oil/peanutOilPallet.xml"  />	
+	<storeItem xmlFilename="multifruit/objects/pallets/oil/mustardOilPallet.xml"  />		
+	<storeItem xmlFilename="multifruit/objects/pallets/oil/poppyOilPallet.xml"  />		
+	<storeItem xmlFilename="multifruit/objects/pallets/oil/sesameOilPallet.xml"  />	
+	<storeItem xmlFilename="multifruit/objects/pallets/oil/linseedOilPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/oil/safflowerOilPallet.xml"  />		
+	<storeItem xmlFilename="multifruit/objects/pallets/alcohol/ethanolTank.xml"  />		
+	<storeItem xmlFilename="multifruit/objects/pallets/sugar/molassesTank.xml"  />	
+	<storeItem xmlFilename="multifruit/objects/pallets/food/pastaPallet.xml"  />	
+	<storeItem xmlFilename="multifruit/objects/pallets/food/popcornPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/food/garlicBreadPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/food/chipsPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/food/tortillaPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/food/cheesePuffsPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/food/peanutPuffsPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/food/sesameRolls.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/food/taroChipsPallet.xml"  />	
+	<storeItem xmlFilename="multifruit/objects/pallets/dairy/soymilkPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/dairy/oatmilkPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/dairy/chocomilkPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/dairy/tofu.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/dairy/icecream.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/dairy/sourcream.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/dairy/yoghurt.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/dairy/hummus.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/orchard/apricotPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/orchard/applePallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/orchard/cherryPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/orchard/pearPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/orchard/peachPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/orchard/plumPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/orchard/quincePallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/greenhouse/cabbagePallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/greenhouse/redCabbagePallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/greenhouse/cauliflowerPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/greenhouse/melonPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/greenhouse/pumpkinPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/greenhouse/watermelonPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/greenhouse/cucumberPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/greenhouse/pepperPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/greenhouse/eggplantPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/juice/appleJuice/appleJuice.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/juice/apricotJuice/apricotJuice.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/juice/beetrootJuice/beetrootJuice.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/juice/carrotJuice/carrotJuice.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/juice/cherryJuice/cherryJuice.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/juice/melonJuice/melonJuice.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/juice/peachJuice/peachJuice.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/juice/pearJuice/pearJuice.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/juice/plumJuice/plumJuice.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/juice/quinceJuice/quinceJuice.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/juice/multifruitJuice/multifruitJuice.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/juice/strawberryJuice/strawberryJuice.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/juice/tomatoJuice/tomatoJuice.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/juice/watermelonJuice/watermelonJuice.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/meat/beefPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/meat/lambPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/meat/porkPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/meat/poultryMeatPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/meat/animalFatPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/meat/rabbitMeatBox.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/meat/leather/leather.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/tobacco/cigar.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/tobacco/cigarette.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/lavender/perfume.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/lavender/soap.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/lavender/lavenderOil.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/lavender/mintOil.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/alcohol/beerPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/alcohol/bourbonBarrelPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/alcohol/brandyBarrelPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/alcohol/ciderBarrelPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/alcohol/meadBarrelPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/alcohol/liqueurBarrelPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/alcohol/mintBarrelPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/alcohol/rumBarrelPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/alcohol/vodkaBarrelPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/alcohol/whiskeyBarrelPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/alcohol/wineBarrelPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/preserved/cannedBeans.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/preserved/beansBags.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/preserved/beansSoup.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/preserved/mushroomSoup.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/preserved/pickledCucumber.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/preserved/pickledCabbage.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/preserved/pickledCauliflower.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/preserved/soySauce.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/preserved/garlicSauce.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/preserved/hotSauce.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/preserved/mustardSauce.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/preserved/ketchup.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/preserved/mayo.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/preserved/eggplantPuree.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/preserved/peanutBags.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/preserved/pumpkinSeedsBags.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/preserved/sunflowerBags.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/preserved/pumpkinPuree.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/preserved/peanutButter.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/preserved/chickpeasBags.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/preserved/lentilsBags.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/preserved/sesameBags.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/preserved/taroSoup.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/preserved/jarredOkra.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/preserved/jarredEdamame.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/metalPallet/metalPallet.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/bakery/potatoBread.xml" />
+	<storeItem xmlFilename="multifruit/objects/pallets/bakery/milkBread.xml" />
+	<storeItem xmlFilename="multifruit/objects/pallets/bakery/sweetBread.xml" />
+	<storeItem xmlFilename="multifruit/objects/pallets/bakery/baguette.xml" />
+	<storeItem xmlFilename="multifruit/objects/pallets/bakery/bagel.xml" />
+	<storeItem xmlFilename="multifruit/objects/pallets/bakery/roulade.xml" />
+	<storeItem xmlFilename="multifruit/objects/pallets/bakery/strudel.xml" />
+	<storeItem xmlFilename="multifruit/objects/pallets/bakery/pizza.xml" />
+	<storeItem xmlFilename="multifruit/objects/pallets/bakery/chocoCake.xml" />
+	<storeItem xmlFilename="multifruit/objects/pallets/bakery/cakePallet.xml" />
+	<storeItem xmlFilename="multifruit/objects/pallets/bakery/pie.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/bakery/muffin.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/bakery/donut.xml"  />
+	<storeItem xmlFilename="multifruit/objects/pallets/jam/appleJam.xml" />
+	<storeItem xmlFilename="multifruit/objects/pallets/tailor/pillow/pillow.xml" />
+	<storeItem xmlFilename="multifruit/objects/pallets/tailor/leatherJacket/leatherJacket.xml" />
+	<storeItem xmlFilename="multifruit/objects/pallets/tailor/furCoat/furCoat.xml" />
+	<storeItem xmlFilename="multifruit/objects/pallets/husbandry/duckEgg/duckEgg.xml" />
+	<storeItem xmlFilename="multifruit/objects/pallets/husbandry/feathers/feathers.xml" />
+	<storeItem xmlFilename="multifruit/objects/pallets/husbandry/rabbitFur/rabbitFur.xml" />
+
+   </storeItems>
+
+===============================================================	
+
+<placeableTypes>
+        <!-- Required: Register the placeable type -->
+        <type name="extendedProductionPoint" parent="simplePlaceable" className="Placeable" filename="$dataS/scripts/placeables/Placeable.lua" >
+            <specialization name="extendedProductionPoint"/>
+            <specialization name="infoTrigger" />
+        </type>
+		<type name="mapRabbitHusbandry" parent="placeable" filename="$dataS/scripts/placeables/Placeable.lua">
+            <specialization name="placement" />
+            <specialization name="animatedObjects" />
+            <specialization name="dynamicallyLoadedParts"/>
+            <specialization name="lights"/>
+            <specialization name="hotspots" />
+            <specialization name="triggerMarkers" />
+            <specialization name="husbandry" />
+            <specialization name="husbandryAnimals" />
+            <specialization name="husbandryFood" />
+            <specialization name="husbandryWater" />
+            <specialization name="husbandryStraw" />
+            <specialization name="infoTrigger" />
+            <specialization name="hotspotsExtension" />
+        </type>
+		
+		<type name="mapGooseHusbandry" parent="baseHusbandry" filename="$dataS/scripts/placeables/Placeable.lua">
+			<specialization name="hotspotsExtension" />
+			<specialization name="husbandryStraw" />
+			<specialization name="husbandryPallets" />
+			<specialization name="manureHeap" />
+			<specialization name="husbandryMeadow"/>
+		</type>
+   	 </placeableTypes>
+	
+	<placeableSpecializations>
+        <!-- Required: Add specialization -->
+        <specialization name="extendedProductionPoint" className="PlaceableExtendedProductionPoint" filename="multifruit/scripts/PlaceableExtendedProductionPoint.lua"/>
+     	<specialization name="hotspotsExtension" 		className="PlaceableHotspotsExtension" 		 filename="multifruit/scripts/PlaceableHotspotsExtension.lua"/>
+    </placeableSpecializations>	
+
+===============================================================	
+
+	<extraSourceFiles>      		 
+	  	<sourceFile filename="multifruit/scripts/FillTypeLimitIncrease.lua"/>
+		<sourceFile filename="multifruit/scripts/bunkerSiloChanges.lua"/> 
+		<sourceFile filename="multifruit/scripts/maizeStraw.lua" />
+		<sourceFile filename="multifruit/scripts/PlaceableExtendedProductionPoint.lua" />
+		<sourceFile filename="multifruit/scripts/LivestockTrailerFix.lua" />
+		<sourceFile filename="multifruit/scripts/disableFieldMissions.lua" />
+   	</extraSourceFiles>
+
+<dependencies>
+        	<dependency>FS25_maxDensityHeightTypesByMap</dependency>
+    	</dependencies>
+===============================================================
+
+  <brands>
+    <brand name="GEHL" title="Gehl" image="multifruit/brands/gehl.dds"/>
+    <brand name="JINKOU" title="Jinkou89 Modding" image="multifruit/brands/jinkou.dds"/>
+  </brands>
+===============================================================
+<l10n filenamePrefix="multifruit/language/l10n" />
+===============================================================
+
+  <disableFieldMissions>
+		<disabledCrop>ALFALFA</disabledCrop>
+		<disabledCrop>CLOVER</disabledCrop>
+		<disabledCrop>CLOVER2</disabledCrop>
+		<disabledCrop>HEMP</disabledCrop>
+		<disabledCrop>HOPS</disabledCrop>
+		<disabledCrop>GREENRYE</disabledCrop>
+		<disabledCrop>TOBACCO</disabledCrop>
+		<disabledCrop>FLAX</disabledCrop>
+		<disabledCrop>MISCANTHUS</disabledCrop>
+		<disabledCrop>LAVENDER</disabledCrop>
+		<disabledCrop>GRAPE</disabledCrop>
+		<disabledCrop>OLIVE</disabledCrop>
+		<disabledCrop>PEANUT</disabledCrop>
+		<disabledCrop>MINT</disabledCrop>
+		<disabledCrop>OKRA</disabledCrop>
+		<disabledCrop>EDAMAME</disabledCrop>
+		<disabledCrop>TARO</disabledCrop>
+	</disableFieldMissions>
+===============================================================
+</modDesc>

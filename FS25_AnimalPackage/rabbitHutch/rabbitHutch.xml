@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="mapRabbitHusbandry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_animal_rabbitHutch1</name>
+		<image>hud/icon.dds</image>
+        <price>1500</price>
+        <showInStore>true</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+		<species>placeable</species>
+        <category>animalpens</category>
+        <brush>
+            <type>husbandry</type>
+            <category>animals</category>
+            <tab>others</tab>
+        </brush>
+    </storeData>
+
+    <base>
+        <filename>rabbitHutch/rabbitHutch.i3d</filename>
+		<canBeRenamed>true</canBeRenamed>
+		<canBeSold>true</canBeSold>
+    </base>
+
+    <hotspots>
+		<hotspot linkNode="0>0|0" teleportNode="0>0" >
+			<customType name="RABBITS" filename="hud/fillTypes/hud_fill_rabbit.dds" imageUVs="868 219 100 100" imageResolution="1024 512" category="UNLOADING"/>
+        </hotspot>
+    </hotspots>
+	
+	<triggerMarkers>
+        <triggerMarker node="0>4|0"    filename="$data/shared/assets/marker/markerIconFood.i3d" />
+        <triggerMarker node="0>4|1"    filename="marker/markerIconRabbit.i3d" adjustToGround="false" />
+		<triggerMarker node="0>19"     filename="$data/shared/assets/marker/markerIconWater.i3d" />
+    </triggerMarkers>
+	
+	
+    <infoTrigger triggerNode="0>5" />
+
+    <husbandry saveId="Animals_RABBIT" hasStatistics="false">
+		<storage node="0>8" fillTypes="STRAW WATER MANURE" isExtension="false">
+            <capacity fillType="STRAW" capacity="500" />
+			<capacity fillType="WATER" capacity="500" />
+			<capacity fillType="MANURE" capacity="0" />
+        </storage>
+				
+		<animals type="RABBIT" maxNumAnimals="50" maxNumVisualAnimals="50">
+            <navigation rootNode="0>3" filename="rabbitHutch/navigationMesh.i3d" />
+            <loadingTrigger node="0>6" />
+        </animals>
+
+		<unloadingStation supportsExtension="true" storageRadius="25" hideFromPricesMenu="true">
+			<unloadTrigger exactFillRootNode="0>2|2" fillTypes="STRAW" >
+				<baleTrigger triggerNode="0>2|1" fillTypes="STRAW" deleteLitersPerSecond="200"/>
+			</unloadTrigger>
+			<unloadTrigger fillTypes="MANURE" />
+			<unloadTrigger exactFillRootNode="0>10|0" fillTypes="WATER" />
+        </unloadingStation>
+
+		<loadingStation supportsExtension="true" storageRadius="5" fillTypes="STRAW WATER"/>
+
+		<water automaticWaterSupply="false" >
+            <waterPlane node="0>10|1" minY="0.157" maxY="0.292" changeVisibility="true"/>
+        </water>
+		
+		<straw>
+			<manure factor="0.8" active="true"/>
+            <strawPlane node="0>2|0" minY="0.5497" maxY="0.623" colorChange="false" />
+        </straw>
+		
+		<food capacity="500" >
+		    <foodPlaces>
+                <foodPlace node="0>1|3|0" />
+                <foodPlace node="0>1|3|1" />
+                <foodPlace node="0>1|3|2" />
+                <foodPlace node="0>1|3|3" />
+                <foodPlace node="0>1|3|4" />
+            </foodPlaces>
+            <dynamicFoodPlane node="0>1|4" defaultFillType="DRYGRASS_WINDROW" />
+            <feedingTrough exactFillRootNode="0>1|0">
+                <baleTrigger triggerNode="0>1|1" deleteLitersPerSecond="50"/>
+            </feedingTrough>
+            <unloadTrigger exactFillRootNode="0>1|0" fillTypes="DRYGRASS_WINDROW GRASS_WINDROW CARROT OAT BARLEY" />
+        </food>
+		
+    </husbandry>
+	
+	<manureHeap node="0>11|0" capacity="600" isExtension="true" >
+        <area startNode="0>11|0|1|0" widthNode="0>11|0|1|0|0" heightNode="0>11|0|1|0|1" activationTriggerNode="0>11|0|2" />
+		<clearArea startNode="0>11|0|3" widthNode="0>11|0|3|0" heightNode="0>11|0|3|1" />
+        
+        <loadingStation storageRadius="1" supportsExtension="false">
+            <loadTrigger triggerNode="0>11|0|0" fillTypes="MANURE" fillLitersPerSecond="30" />
+        </loadingStation>
+    </manureHeap>
+	<animatedObjects>
+		<animatedObject saveId="gateA">
+			<controls posAction="ACTIVATE_HANDTOOL" autoopen="false" triggerNode="0>18|13|2" posText="action_openGate" negText="action_closeGate" />
+			<animation initialTime="0" duration="3">
+				<part node="0>18|13|0"> 
+					<keyFrame time="0" rotation="0 0 0" /> 
+					<keyFrame time="1.00" rotation="0 110 0" />
+				</part>
+				<part node="0>18|13|1"> 
+					<keyFrame time="0" rotation="0 0 0" /> 
+					<keyFrame time="1.00" rotation="0 -110 0" />
+				</part>
+			</animation>
+			<sounds>
+				<moving file="rabbitHutch/gate_loop.ogg" linkNode="0>18|13|2" volume="1.0" radius="25" innerRadius="3" />
+			</sounds>
+		</animatedObject>
+	</animatedObjects>
+	
+	<tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="0>12|0" endNode="0>12|0|0" />
+    </tipOcclusionUpdateAreas>
+	
+	<clearAreas>
+        <clearArea startNode="0>13|0" widthNode="0>13|0|0" heightNode="0>13|0|1"/>
+        <clearArea startNode="0>13|1" widthNode="0>13|1|0" heightNode="0>13|1|1"/>
+        <clearArea startNode="0>13|2" widthNode="0>13|2|0" heightNode="0>13|2|1"/>
+    </clearAreas>
+	
+	<leveling requireLeveling="true" maxSmoothDistance="1" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="0>14|0" widthNode="0>14|0|0" heightNode="0>14|0|1" groundType="grass"/>
+        </levelAreas>
+		<paintAreas> 
+             <paintArea startNode="0>17|2" widthNode="0>17|2|0" heightNode="0>17|2|1" groundType="dirt" /> 
+             <paintArea startNode="0>13|3" widthNode="0>13|3|0" heightNode="0>13|3|1" groundType="dirt" /> 
+             <paintArea startNode="0>17|3" widthNode="0>17|3|0" heightNode="0>17|3|1" groundType="mud" /> 
+		</paintAreas>
+    </leveling>
+	
+	<indoorAreas>
+        <indoorArea startNode="0>17|0" widthNode="0>17|0|0" heightNode="0>17|0|1" />
+        <indoorArea startNode="0>17|1" widthNode="0>17|1|0" heightNode="0>17|1|1" />
+    </indoorAreas>
+	
+	<ai>
+        <updateAreas>
+            <updateArea startNode="0>16|0" endNode="0>16|0|0" />
+        </updateAreas>
+    </ai>
+	
+</placeable>

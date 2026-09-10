@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="fowlYoungAnimations.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+  </Materials>
+
+
+  <Shapes>
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="Goose" rotation="-90 -0 0" clipDistance="200" nodeId="6">
+      <TransformGroup name="Root" rotation="-180 9e-06 0" clipDistance="200" nodeId="7">
+        <TransformGroup name="Base" translation="0 -0.170767 -0.198622" rotation="-91.4251 9e-06 8.14222e-13" nodeId="8">
+          <TransformGroup name="Spine" translation="0 -0.0002312 0.0002544" rotation="91.8941 -0 0" nodeId="9">
+            <TransformGroup name="Spine_1" translation="0 0.0874416 0" rotation="-12.1296 -2.7e-05 6e-06" nodeId="10">
+              <TransformGroup name="Spine_2" translation="0 0.102493 0" rotation="-43.7015 3.7e-05 -9e-06" nodeId="11">
+                <TransformGroup name="Neck_1" translation="0 0.120651 0" rotation="-30.0985 -2e-06 -7e-06" nodeId="12">
+                  <TransformGroup name="Neck_2" translation="0 0.0986264 0" rotation="7.39396 -2.7e-05 -2e-06" nodeId="13">
+                    <TransformGroup name="Neck_3" translation="0 0.084412 0" rotation="14.472 4e-05 7e-06" nodeId="14">
+                      <TransformGroup name="Head" translation="0 0.074172 0" rotation="67.5357 -8.5e-05 -0.000139" nodeId="15">
+                        <TransformGroup name="Beak" translation="0 0.0309656 0.0109688" rotation="23.7674 0.000275 5.5e-05" nodeId="16">
+                          <TransformGroup name="Tongue_1" translation="0 0.0291136 -0.0070072" rotation="-15.3402 -5e-06 -3.6e-05" nodeId="17">
+                            <TransformGroup name="Tongue_2" translation="0 0.0197872 0" rotation="9.57677 -2e-06 2.3e-05" nodeId="18"/>
+                          </TransformGroup>
+                        </TransformGroup>
+                        <TransformGroup name="EyeFBXASC046L" translation="0.01406 0.0257336 -0.0193264" rotation="151.028 42.0432 80.3655" nodeId="19"/>
+                        <TransformGroup name="EyeFBXASC046R" translation="-0.01406 0.0257336 -0.0193264" rotation="151.027 -42.0431 -80.3653" nodeId="20"/>
+                      </TransformGroup>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+                <TransformGroup name="Wing_1FBXASC046L" translation="0.0720032 0.056708 0.000632" rotation="-157.363 -37.223 70.9644" nodeId="21">
+                  <TransformGroup name="Wing_2FBXASC046L" translation="0 0.0851736 0" rotation="-25.2209 -29.5351 -29.9396" nodeId="22">
+                    <TransformGroup name="Wing_3FBXASC046L" translation="0 0.0883432 0" rotation="47.0124 7.22746 62.4966" nodeId="23">
+                      <TransformGroup name="Feathers_3FBXASC046L" translation="-0.0381928 0.128334 0.0284824" rotation="6.14842 -1.24035 31.3854" nodeId="24"/>
+                    </TransformGroup>
+                    <TransformGroup name="Feathers_2FBXASC046L" translation="-0.0343392 0.0344856 0.0672464" rotation="99.4378 37.552 -127.971" nodeId="25"/>
+                  </TransformGroup>
+                  <TransformGroup name="Feathers_1FBXASC046L" translation="-0.0404024 0.0652032 0.0482496" rotation="27.1586 -17.3064 69.1389" nodeId="26"/>
+                </TransformGroup>
+                <TransformGroup name="Wing_1FBXASC046R" translation="-0.0720032 0.056708 0.000632" rotation="-157.363 37.2229 -70.9644" nodeId="27">
+                  <TransformGroup name="Wing_2FBXASC046R" translation="0 0.0851736 0" rotation="-25.2209 29.5351 29.9396" nodeId="28">
+                    <TransformGroup name="Wing_3FBXASC046R" translation="0 0.0883432 0" rotation="47.0124 -7.22746 -62.4966" nodeId="29">
+                      <TransformGroup name="Feathers_3FBXASC046R" translation="0.0381928 0.128334 0.0284824" rotation="6.14841 1.24035 -31.3854" nodeId="30"/>
+                    </TransformGroup>
+                    <TransformGroup name="Feathers_2FBXASC046R" translation="0.0343392 0.0344856 0.0672456" rotation="99.4377 -37.5521 127.971" nodeId="31"/>
+                  </TransformGroup>
+                  <TransformGroup name="Feathers_1FBXASC046R" translation="0.0404024 0.0652032 0.0482496" rotation="27.1587 17.3065 -69.1389" nodeId="32"/>
+                </TransformGroup>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="Tail" rotation="-155.017 -1.2e-05 -6e-06" nodeId="33">
+              <TransformGroup name="Tail_2" translation="0 0.053732 0" rotation="-26.5762 -1e-06 -6e-06" nodeId="34"/>
+            </TransformGroup>
+            <TransformGroup name="Leg_1FBXASC046L" translation="0.01918 0.0643 -0.0059816" rotation="151.005 54.577 130.98" nodeId="35">
+              <TransformGroup name="Leg_2FBXASC046L" translation="0 0.109438 0" rotation="-76.2833 -55.4016 148.068" nodeId="36">
+                <TransformGroup name="Leg_3FBXASC046L" translation="0 0.105774 0" rotation="-18.4957 3.24828 0.499907" nodeId="37">
+                  <TransformGroup name="Leg_4FBXASC046L" translation="0 0.050952 0" rotation="-47.4002 6.35801 -4.75187" nodeId="38">
+                    <TransformGroup name="Fin_2_1FBXASC046L" translation="0 0.0250176 0" rotation="-29.5001 -0.744411 3.19" nodeId="39">
+                      <TransformGroup name="Fin_2_2FBXASC046L" translation="0 0.0248816 0" rotation="7.50634 -0.753824 1.99133" nodeId="40"/>
+                    </TransformGroup>
+                    <TransformGroup name="Fin_1_1FBXASC046L" translation="0.0157856 0.0181528 0.0042144" rotation="-22.9099 -19.8467 -34.0715" nodeId="41">
+                      <TransformGroup name="Fin_1_2FBXASC046L" translation="0 0.0275128 0" rotation="6.55485 2.64946 23.5216" nodeId="42"/>
+                    </TransformGroup>
+                    <TransformGroup name="Fin_3_1FBXASC046L" translation="-0.0185768 0.0146712 0.0044808" rotation="-25.0249 17.5595 37.5711" nodeId="43">
+                      <TransformGroup name="Fin_3_2FBXASC046L" translation="0 0.0242128 0" rotation="7.10724 -3.13456 -18.1959" nodeId="44"/>
+                    </TransformGroup>
+                    <TransformGroup name="Fin_4_1FBXASC046L" translation="-0.0019336 -0.0128144 0.0008712" rotation="123.815 -13.3022 -21.9579" nodeId="45">
+                      <TransformGroup name="Fin_4_2FBXASC046L" translation="0 0.0147336 0" rotation="-32.0947 1.70223 0.686216" nodeId="46"/>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="Leg_1FBXASC046R" translation="-0.01918 0.0643 -0.0059816" rotation="151.005 -54.577 -130.98" nodeId="47">
+              <TransformGroup name="Leg_2FBXASC046R" translation="0 0.109438 0" rotation="-76.2832 55.4016 -148.068" nodeId="48">
+                <TransformGroup name="Leg_3FBXASC046R" translation="0 0.105774 0" rotation="-18.4957 -3.24828 -0.499907" nodeId="49">
+                  <TransformGroup name="Leg_4FBXASC046R" translation="0 0.050952 0" rotation="-47.4002 -6.35801 4.75187" nodeId="50">
+                    <TransformGroup name="Fin_2_1FBXASC046R" translation="0 0.0250176 0" rotation="-29.5001 0.744411 -3.19" nodeId="51">
+                      <TransformGroup name="Fin_2_2FBXASC046R" translation="0 0.0248816 0" rotation="7.50634 0.753824 -1.99133" nodeId="52"/>
+                    </TransformGroup>
+                    <TransformGroup name="Fin_1_1FBXASC046R" translation="-0.0157856 0.0181528 0.0042144" rotation="-22.9099 19.8467 34.0715" nodeId="53">
+                      <TransformGroup name="Fin_1_2FBXASC046R" translation="0 0.0275128 0" rotation="6.55485 -2.64946 -23.5216" nodeId="54"/>
+                    </TransformGroup>
+                    <TransformGroup name="Fin_3_1FBXASC046R" translation="0.0185768 0.0146712 0.0044808" rotation="-25.0249 -17.5595 -37.5711" nodeId="55">
+                      <TransformGroup name="Fin_3_2FBXASC046R" translation="0 0.0242128 0" rotation="7.10724 3.13456 18.1959" nodeId="56"/>
+                    </TransformGroup>
+                    <TransformGroup name="Fin_4_1FBXASC046R" translation="0.0019336 -0.0128144 0.0008712" rotation="123.815 13.3022 21.9579" nodeId="57">
+                      <TransformGroup name="Fin_4_2FBXASC046R" translation="0 0.0147336 0" rotation="-32.0947 -1.70223 -0.686216" nodeId="58"/>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="Leg_IKFBXASC046L" translation="0.0537936 -0.0017912 -0.018" rotation="27.1301 2.25007 0.542955" nodeId="59"/>
+        <TransformGroup name="Leg_IKFBXASC046R" translation="-0.0537936 -0.0017912 -0.018" rotation="27.1301 -2.25006 -0.542948" nodeId="60"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="geo_mesh" clipDistance="200" nodeId="61">
+      <TransformGroup name="LOD0" clipDistance="200" nodeId="62">
+        <TransformGroup name="Goose_Mesh_LOD0" clipDistance="50" nodeId="63"/>
+      </TransformGroup>
+      <TransformGroup name="LOD1" clipDistance="200" nodeId="64">
+        <TransformGroup name="Goose_Mesh_LOD1" clipDistance="100" nodeId="65"/>
+      </TransformGroup>
+      <TransformGroup name="LOD2" clipDistance="200" nodeId="66">
+        <TransformGroup name="Goose_Mesh_LOD2" clipDistance="150" nodeId="67"/>
+      </TransformGroup>
+      <TransformGroup name="LOD3" clipDistance="200" nodeId="68">
+        <TransformGroup name="Goose_Mesh_LOD3" translation="-1.36e-05 0 -9.12e-05" clipDistance="200" nodeId="69"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+
+  <Animation externalAnimFile="fowlYoungAnimations.i3d.anim" />
+</i3D>

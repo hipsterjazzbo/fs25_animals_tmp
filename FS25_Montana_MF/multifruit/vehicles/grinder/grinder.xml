@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="mixerWagon" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/vehicle.xsd">
+  <storeData>
+    <name>125 Pigfood Mix All Grinder</name>
+    <functions>
+      <function>This forage mixer blends various grains and optional root crops together to a mixture that can be fed to pigs on Ray Co.</function>
+    </functions>
+    <image>multifruit/vehicles/grinder/storeGEHL.dds</image>
+    <price>19500</price>
+    <lifetime>600</lifetime>
+    <rotation>0</rotation>
+    <brand>GEHL</brand>
+    <category>forageMixers</category>
+    <shopDynamicTitle>true</shopDynamicTitle>
+    <shopTranslationOffset>0 -0.003 0</shopTranslationOffset>
+    <shopRotationOffset>0.509 0 0</shopRotationOffset>
+    <shopIgnoreLastComponentPositions>true</shopIgnoreLastComponentPositions>
+    <vertexBufferMemoryUsage>1371272</vertexBufferMemoryUsage>
+    <indexBufferMemoryUsage>212388</indexBufferMemoryUsage>
+    <textureMemoryUsage>10486152</textureMemoryUsage>
+    <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+    <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    <audioMemoryUsage>0</audioMemoryUsage>
+  </storeData>
+  <base>
+    <typeDesc>$l10n_typeDesc_mixerWagon</typeDesc>
+    <filename>multifruit/vehicles/grinder/mixall.i3d</filename>
+    <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT"/>
+    <size width="3" length="8"/>
+    <sounds volumeFactor="2.0"/>
+    <components>
+      <component centerOfMass="0 0 0.25" solverIterationCount="10" mass="1000"/>
+    </components>
+  </base>
+  <wheels>
+    <wheelConfigurations>
+      <wheelConfiguration name="Gehl" price="0">
+        <wheels>
+          <wheel filename="multifruit/vehicles/grinder/wheels/10x15.xml" isLeft="true" hasTireTracks="true" hasParticles="true" configId="G">
+            <physics tipOcclusionAreaGroupId="1" restLoad="0.9" repr="0>0|0|0" useReprDirection="true" forcePointRatio="0.5" frictionScale="2" initialCompression="10" suspTravel="0.1" spring="105" damper="30"/>
+          </wheel>
+          <wheel filename="multifruit/vehicles/grinder/wheels/10x15.xml" isLeft="false" hasTireTracks="true" hasParticles="true" configId="G">
+            <physics tipOcclusionAreaGroupId="1" restLoad="0.9" repr="0>0|0|1" useReprDirection="true" forcePointRatio="0.5" frictionScale="2" initialCompression="10" suspTravel="0.1" spring="105" damper="30"/>
+          </wheel>
+        </wheels>
+      </wheelConfiguration>
+      <wheelConfiguration name="New Holland" price="0">
+        <wheels>
+          <wheel filename="multifruit/vehicles/grinder/wheels/10x15.xml" isLeft="true" hasTireTracks="true" hasParticles="true" configId="NH">
+            <physics tipOcclusionAreaGroupId="1" restLoad="0.9" repr="0>0|0|0" useReprDirection="true" forcePointRatio="0.5" frictionScale="2" initialCompression="10" suspTravel="0.1" spring="105" damper="30"/>
+          </wheel>
+          <wheel filename="multifruit/vehicles/grinder/wheels/10x15.xml" isLeft="false" hasTireTracks="true" hasParticles="true" configId="NH">
+            <physics tipOcclusionAreaGroupId="1" restLoad="0.9" repr="0>0|0|1" useReprDirection="true" forcePointRatio="0.5" frictionScale="2" initialCompression="10" suspTravel="0.1" spring="105" damper="30"/>
+          </wheel>
+        </wheels>
+      </wheelConfiguration>
+      <wheelConfiguration name="John Deere" price="0">
+        <wheels>
+          <wheel filename="multifruit/vehicles/grinder/wheels/10x15.xml" isLeft="true" hasTireTracks="true" hasParticles="true" configId="JD">
+            <physics tipOcclusionAreaGroupId="1" restLoad="0.9" repr="0>0|0|0" useReprDirection="true" forcePointRatio="0.5" frictionScale="2" initialCompression="10" suspTravel="0.1" spring="105" damper="30"/>
+          </wheel>
+          <wheel filename="multifruit/vehicles/grinder/wheels/10x15.xml" isLeft="false" hasTireTracks="true" hasParticles="true" configId="JD">
+            <physics tipOcclusionAreaGroupId="1" restLoad="0.9" repr="0>0|0|1" useReprDirection="true" forcePointRatio="0.5" frictionScale="2" initialCompression="10" suspTravel="0.1" spring="105" damper="30"/>
+          </wheel>
+        </wheels>
+      </wheelConfiguration>
+      <wheelConfiguration name="International" price="0">
+        <wheels>
+          <wheel filename="multifruit/vehicles/grinder/wheels/10x15.xml" isLeft="true" hasTireTracks="true" hasParticles="true" configId="IH">
+            <physics tipOcclusionAreaGroupId="1" restLoad="0.9" repr="0>0|0|0" useReprDirection="true" forcePointRatio="0.5" frictionScale="2" initialCompression="10" suspTravel="0.1" spring="105" damper="30"/>
+          </wheel>
+          <wheel filename="multifruit/vehicles/grinder/wheels/10x15.xml" isLeft="false" hasTireTracks="true" hasParticles="true" configId="IH">
+            <physics tipOcclusionAreaGroupId="1" restLoad="0.9" repr="0>0|0|1" useReprDirection="true" forcePointRatio="0.5" frictionScale="2" initialCompression="10" suspTravel="0.1" spring="105" damper="30"/>
+          </wheel>
+        </wheels>
+      </wheelConfiguration>
+    </wheelConfigurations>
+  </wheels>
+  <attachable>
+    <inputAttacherJoints>
+      <inputAttacherJoint node="0>0|1" jointType="trailerLow"/>
+    </inputAttacherJoints>
+    <brakeForce force="0" maxForce="0" maxForceMass="4500"/>
+    <support animationName="moveSupport"/>
+  </attachable>
+  <powerConsumer ptoRpm="350" neededMaxPtoPower="20"/>
+  <powerTakeOffs>
+    <input inputNode="0>0|2" detachNode="0>0|4" inputAttacherJointIndices="1" aboveAttacher="true" materialTemplateName="SHARED_BLACK1" decalMaterialTemplateName="WALTERSCHEID_YELLOW1"/>
+  </powerTakeOffs>
+  <cylindered>
+    <movingTools>
+      <movingTool node="0>1|1">
+        <controls axis="AXIS_FRONTLOADER_TOOL" invertAxis="true"/>
+        <rotation rotSpeed="20" rotAcceleration="170" rotMax="90" rotMin="0" rotationAxis="2"/>
+        <dependentPart node="0>1|2"/>
+        <dependentPart node="0>1|2|2|0"/>
+      </movingTool>
+      <movingTool node="0>1|1|0">
+        <controls axis="AXIS_FRONTLOADER_ARM" invertAxis="false"/>
+        <rotation rotSpeed="20" rotAcceleration="170" rotMax="0" rotMin="-30" rotationAxis="1"/>
+        <dependentPart node="0>1|2"/>
+        <dependentPart node="0>1|2|2|0"/>
+		<dependentMovingTool requiresMovement="true" speedScale="10" node="0>1|1|0|2|2|0" axis="1"/>
+      </movingTool>
+      <movingTool node="0>1|1|0|2|2|0">
+        <rotation rotSpeed="200" rotationAxis="1"/>
+      </movingTool>
+    </movingTools>
+    <movingParts>
+      <movingPart node="0>1|2" referencePoint="0>1|1|0|0" referenceFrame="0>1|1|0|0" playSound="true">
+        <translatingPart node="0>1|2|0"/>
+      </movingPart>
+      <movingPart node="0>1|2|2|0" referencePoint="0>1|1|0|2|1" referenceFrame="0>1|1|0|2|1" playSound="false" scaleZ="true"/>
+    </movingParts>
+    <sounds>
+      <actionSound template="hydraulicClose01" pitchScale="1.1" volumeScale="0.8" linkNode="1|1" actionNames="TOOL_MOVE_POS TOOL_MOVE_NEG" nodes="0>1|1" fadeIn="0.1" fadeOut="0.05"/>
+      <actionSound template="clackVar6" pitchScale="0.7" volumeScale="1.3" linkNode="1|1" actionNames="TOOL_MOVE_END_NEG_LIMIT" nodes="0>1|1"/>
+      <actionSound template="thudVar2" pitchScale="1" volumeScale="1.3" linkNode="1|1" actionNames="TOOL_MOVE_END_NEG_LIMIT" nodes="1|1"/>
+      <actionSound template="cylinderPunch" pitchScale="1.6" volumeScale="0.4" linkNode="1|1" actionNames="TOOL_MOVE_END_NEG_LIMIT" nodes="0>1|1"/>
+      <actionSound template="clackVar6" pitchScale="0.8" volumeScale="1.3" linkNode="1|1" actionNames="TOOL_MOVE_END_POS_LIMIT" nodes="0>1|1"/>
+      <actionSound template="sheetImp02" pitchScale="0.6" volumeScale="2" linkNode="0>1|1" actionNames="TOOL_MOVE_END_POS_LIMIT" nodes="0>1|1"/>
+      <actionSound template="cylinderPunch" pitchScale="1.6" volumeScale="0.4" linkNode="1|1" actionNames="TOOL_MOVE_END_POS_LIMIT" nodes="1|1"/>
+    </sounds>
+  </cylindered>
+  <fillUnit>
+    <fillUnitConfigurations>
+      <fillUnitConfiguration>
+        <fillUnits>
+          <fillUnit shopDisplayUnit="CUBICMETER" fillTypes="FORAGE FORAGE_MIXING MAIZE MAIZE2 SORGHUM POTATO WHEAT SOYBEAN MINERAL_FEED" capacity="3539.6">
+            <exactFillRootNode node="0>1|3|5"/>
+			<dashboard  displayType="TEXT" valueType="fillLevel" node="0>1|7|0" textColor="0.91 0.082 0.0 1" textSize="0.03" textMask="00000" font="DIGIT" emissiveScale="1" textAlignment="RIGHT"/>
+      <fillEffect>
+        <effectNode effectClass="PipeEffect" effectNode="0>0|5|0" materialType="pipe" useFruitColor="true" maxBending="0" delay="0.5" fadeInTime="0.5" fadeOutTime="0.5"/>
+                        <effectNode  effectClass="ParticleEffect" effectNode="0>0|5|1"  particleType="smoke" materialType="smokeParticle" useFruitColor="true" emitCountScale="0.25"/>
+      </fillEffect>
+    <sounds>
+		<fill template="grainTankMediumFill" volumeScale="0.8" linkNode="0>1|3|1"/>
+    </sounds>
+          </fillUnit>
+		  <fillTrigger litersPerSecond="50"/>
+        </fillUnits>
+      </fillUnitConfiguration>
+    </fillUnitConfigurations>
+  </fillUnit>
+  <fillVolume>
+    <fillVolumeConfigurations>
+      <fillVolumeConfiguration>
+        <volumes>
+          <volume node="0>0|3|0" maxDelta="0" fillUnitIndex="1" maxAllowedHeapAngle="10" maxSurfaceDistanceError="0.001"/>
+        </volumes>
+      </fillVolumeConfiguration>
+    </fillVolumeConfigurations>
+    <unloadInfos>
+      <unloadInfo fillVolumeIndex="1">
+        <node node="0>0|3|1" width="2.5" length="2.5"/>
+      </unloadInfo>
+    </unloadInfos>
+  </fillVolume>
+  <dischargeable>
+    <dischargeNode node="0>1|1|0|1|2" emptySpeed="33.32" fillUnitIndex="1" unloadInfoIndex="1" maxDistance="8">
+      <info width="1.0" length="1"/>
+      <effects>
+        <effectNode effectClass="PipeEffect" effectNode="0>1|1|0|1|1" materialType="pipe" positionUpdateNodes="0>1|1|0|1|3" delay="0.5" maxBending="0.8" fadeInTime="0.5" fadeOutTime="0.5"/>
+                        <effectNode  effectNode="0>1|1|0|1|3" materialType="unloadingSmoke" delay="0.1" alignToWorldY="true"/>
+      </effects>
+        <animationNodes>
+          <animationNode node="0>1|1|0|2|0|0"   rotSpeed="1000" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1" />
+        </animationNodes>
+    </dischargeNode>
+  </dischargeable>
+
+    <mixerWagon fillUnitIndex="1" recipe="PIGFOOD">
+        <mixAnimationNodes>
+            <animationNode node="0>1|3|1|0"   rotSpeed="-500" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1" />
+            <animationNode node="0>1|5|0|1"   rotSpeed="1000" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1" />
+        </mixAnimationNodes>
+    </mixerWagon>
+			
+    <dashboard>
+        <groups>
+            <group name="ATTACHMENT" isAttached="true"/>
+        </groups>
+        <default>
+            <dashboard displayType="VISIBILITY" node="0>1|7|0" groups="ATTACHMENT" />
+        </default>
+    </dashboard>
+	
+    <hudInfoTrigger triggerNode="0>0|5|3"/>
+	
+  <turnOnVehicle requiresTurnOn="true">
+    <sounds>
+      <work template="silageMixLoop01" linkNode="0>" volumeScale="1"/>
+      <start template="silageMixStart01" linkNode="0>" volumeScale="1"/>
+      <stop template="silageMixStop01" linkNode="0>" volumeScale="1"/>
+    </sounds>
+  </turnOnVehicle>
+  <foliageBending>
+    <bendingNode minX="-1.103" maxX="1.103" minZ="-2.097" maxZ="2.174" yOffset="0.3"/>
+  </foliageBending>
+  <washable dirtDuration="120" washDuration="1" workMultiplier="4"/>
+  <animations>
+    <animation name="augerAnimation">
+      <part node="0>1|3|1|0" startTime="0" endTime="5" startRot="0 0 0" endRot="-30 40 0"/>
+    </animation>
+    <animation name="toggleCover">
+      <part node="0>1|3" startTime="0" endTime="3" startRot="0 0 0" endRot="-10 65 0"/>
+      <part node="0>1|4|1" startTime="0" endTime="0.02" visibility="false"/>
+      <part node="0>1|4|1" startTime="0.02" endTime="0.05" visibility="true"/>
+      <part node="0>1|4|0" startTime="0.02" endTime="0.05" visibility="false"/>
+      <part node="0>1|4|0" startTime="0" endTime="0.05" visibility="true"/>
+    </animation>
+    <animation name="moveSupport">
+      <part node="0>1|0|0" startTime="0" endTime="0.3" startTrans="0 -0.27 0" endTrans="0 -0.41 0"/>
+      <part node="0>1|0|1" startTime="0" endTime="0.3" startRot="0 0 0" endRot="0 720 0"/>
+    </animation>
+  </animations>
+  <pipe unloadInfoIndex="1">
+    <states num="1" unloading="1"/>
+    <!--<animation name="pipeAnimation" speedScale="1" />-->
+    <unloadingTriggers>
+      <unloadingTrigger node="0>1|1|0|3"/>
+    </unloadingTriggers>
+  </pipe>
+  <cover>
+    <coverConfigurations>
+      <coverConfiguration openCoverWhileTipping="False">
+        <cover openAnimation="toggleCover" fillUnitIndices="1"/>
+      </coverConfiguration>
+    </coverConfigurations>
+  </cover>
+ <configurationSets title="$l10n_ui_brands">
+  <configurationSet name="Gehl 125 Mix-All Grinder Mixer">
+   <configuration name="wheel" index="1" />
+   <configuration name="design" index="1" />
+  </configurationSet>
+  <configurationSet name="New Holland 353 Grinder">
+   <configuration name="wheel" index="2" />
+   <configuration name="design" index="2" />
+  </configurationSet>  
+  <configurationSet name="John Deere 400 Grinder">
+   <configuration name="wheel" index="3" />
+   <configuration name="design" index="3" />
+  </configurationSet>  
+  <configurationSet name="International 1150 Grinder">
+   <configuration name="wheel" index="4" />
+   <configuration name="design" index="4" />
+  </configurationSet>
+ </configurationSets>
+ 
+  <designConfigurations>
+    <designConfiguration name="Gehl 125 Mix-All Grinder Mixer" price="0" vehicleBrand="GEHL" vehicleName="125 Mix-All Grinder Mixer" vehicleIcon="multifruit/vehicles/grinder/storeGEHL.dds">
+      <objectChange node="0>1|5|5" visibilityActive="true" visibilityInactive="false"/>
+      <objectChange node="0>1|5|6" visibilityActive="false" visibilityInactive="true"/>
+      <objectChange node="0>1|5|7" visibilityActive="false" visibilityInactive="true"/>
+      <objectChange node="0>1|5|8" visibilityActive="false" visibilityInactive="true"/>
+      <material materialSlotName="Body" materialTemplateName="JOHNDEERE_GREEN1" materialTemplateUseColorOnly="true">
+	  <colorScale value="0.47 0.02 0.02"/>
+	  </material>
+      <material materialSlotName="Auger" materialTemplateName="JOHNDEERE_GREEN1" materialTemplateUseColorOnly="true">
+	  <colorScale value="0.47 0.02 0.02"/>
+	  </material>
+    </designConfiguration>
+    <designConfiguration name="New Holland 353 Grinder" price="0" vehicleBrand="NEWHOLLAND" vehicleName="353 Grinder Mixer" vehicleIcon="multifruit/vehicles/grinder/storeNH.dds">
+      <objectChange node="0>1|5|5" visibilityActive="false" visibilityInactive="true"/>
+      <objectChange node="0>1|5|6" visibilityActive="true" visibilityInactive="false"/>
+      <objectChange node="0>1|5|7" visibilityActive="false" visibilityInactive="true"/>
+      <objectChange node="0>1|5|8" visibilityActive="false" visibilityInactive="true"/>
+      <material materialSlotName="Body" materialTemplateName="NEWHOLLAND_RED1" materialTemplateUseColorOnly="true">
+	  </material>
+      <material materialSlotName="Auger" materialTemplateName="NEWHOLLAND_YELLOW1" materialTemplateUseColorOnly="true">
+	  </material>
+    </designConfiguration>
+    <designConfiguration name="John Deere 400 Grinder" price="0" vehicleBrand="JOHNDEERE" vehicleName="400 Grinder Mixer" vehicleIcon="multifruit/vehicles/grinder/storeJD.dds">
+      <objectChange node="0>1|5|5" visibilityActive="false" visibilityInactive="true"/>
+      <objectChange node="0>1|5|6" visibilityActive="false" visibilityInactive="true"/>
+      <objectChange node="0>1|5|7" visibilityActive="true" visibilityInactive="false"/>
+      <objectChange node="0>1|5|8" visibilityActive="false" visibilityInactive="true"/>
+      <material materialSlotName="Body" materialTemplateName="JOHNDEERE_GREEN1" materialTemplateUseColorOnly="true">
+	  </material>
+      <material materialSlotName="Auger" materialTemplateName="JOHNDEERE_GREEN1" materialTemplateUseColorOnly="true">
+	  </material>
+    </designConfiguration>
+    <designConfiguration name="International 1150 Grinder" price="0" vehicleBrand="INTERNATIONAL" vehicleName="1150 Grinder Mixer" vehicleIcon="multifruit/vehicles/grinder/storeIH.dds">
+      <objectChange node="0>1|5|5" visibilityActive="false" visibilityInactive="true"/>
+      <objectChange node="0>1|5|6" visibilityActive="false" visibilityInactive="true"/>
+      <objectChange node="0>1|5|7" visibilityActive="false" visibilityInactive="true"/>
+      <objectChange node="0>1|5|8" visibilityActive="true" visibilityInactive="false"/>
+      <material materialSlotName="Body" materialTemplateName="JOHNDEERE_GREEN1" materialTemplateUseColorOnly="true">
+	  <colorScale value="0.565 0.008 0.008"/>
+	  </material>
+      <material materialSlotName="Auger" materialTemplateName="JOHNDEERE_GREEN1" materialTemplateUseColorOnly="true">
+	  <colorScale value="1 1 0.65"/>
+	  </material>
+    </designConfiguration>
+  </designConfigurations>
+	
+	<design2Configurations title="Slow Moving Vehicle Sign">  
+		<design2Configuration name="$l10n_configuration_valueNo" price="0">
+		</design2Configuration>
+		<design2Configuration name="$l10n_configuration_valueYes" price="25">
+			<objectChange node="0>1|5|9" visibilityActive="true" visibilityInactive="false"/>
+		</design2Configuration>
+	</design2Configurations>
+  <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+  <ai>
+    <agentAttachment width="4.2" height="2.5" length="2.6" lengthOffset="0"/>
+  </ai>
+</vehicle>

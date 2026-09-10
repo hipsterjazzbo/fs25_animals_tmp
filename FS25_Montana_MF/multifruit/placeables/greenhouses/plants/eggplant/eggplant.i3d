@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="eggplant.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="pineTrunkDead_diffuse.dds"/>
+    <File fileId="7" filename="pineTrunkDead_normal.dds"/>
+    <File fileId="12" filename="cucumberPlantLeaves2Dead_diffuse.dds"/>
+    <File fileId="1" filename="cucumberPlantLeaves2_diffuse.dds"/>
+    <File fileId="2" filename="cucumberPlantLeaves2_normal.png"/>
+    <File fileId="3" filename="cucumberPlantLeaves2_specular.png"/>
+    <File fileId="13" filename="cucumberPlantLeavesDead_diffuse.dds"/>
+    <File fileId="4" filename="cucumberPlantLeaves_diffuse.png"/>
+    <File fileId="5" filename="cucumberPlantLeaves_specular.png"/>
+    <File fileId="9" filename="eggplant_diffuse.png"/>
+    <File fileId="10" filename="eggplant_normal.png"/>
+    <File fileId="11" filename="eggplant_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="cucumber_mat" materialId="5">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+    </Material>
+    <Material name="cucumberLeafs2_mat" materialId="6">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="cucumberLeafs2Dead_mat" materialId="7">
+      <Texture fileId="12"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="cucumberLeafs_mat" materialId="8">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="cucumberLeafsDead_mat" materialId="9">
+      <Texture fileId="13"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="plantSupport_mat" materialId="10" specularColor="0.494118 1 0.494118">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="eggplant.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="lod0" clipDistance="150" nodeId="32">
+      <Shape name="greenSmall" translation="0 -0.0593689 0" shapeId="1" clipDistance="150" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="6">
+        <Shape name="stem" shapeId="2" nodeId="37" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="plantSupport" translation="0 -0.183462 0.0570268" scale="0.5 0.8 0.5" shapeId="3" clipDistance="150" nodeId="38" castsShadows="true" receiveShadows="true" materialIds="10"/>
+      </Shape>
+      <Shape name="greenBig" translation="0 -0.00643932 0" shapeId="4" clipDistance="150" nodeId="39" castsShadows="true" receiveShadows="true" materialIds="6">
+        <Shape name="stem" shapeId="5" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <TransformGroup name="cucumberFruits" nodeId="41">
+          <Shape name="cucumber1" translation="-0.0572316 0.366515 0.118913" rotation="-12.5278 -0 0" shapeId="6" clipDistance="35" nodeId="42" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="cucumber1" translation="0.0619187 0.301213 0.167343" rotation="167.472 -83.8436 -180" shapeId="7" clipDistance="35" nodeId="43" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="cucumber1" translation="-0.0572316 0.387735 0.0126833" rotation="167.472 87.2948 -180" shapeId="8" clipDistance="35" nodeId="44" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="cucumber1" translation="0.120596 0.336357 -0.0433096" rotation="-12.5278 85.7106 -5.8485e-06" shapeId="9" clipDistance="35" nodeId="45" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="cucumber1" translation="0.0849727 0.232842 0.101593" rotation="-12.5278 -49.2554 -6.70181e-07" shapeId="10" clipDistance="35" nodeId="46" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="cucumber1" translation="0.0679183 0.316893 0.103965" rotation="167.472 -19.4442 -180" shapeId="11" clipDistance="35" nodeId="47" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="cucumber1" translation="0.0160318 0.359137 -0.0876766" rotation="167.472 -19.4442 -180" shapeId="12" clipDistance="35" nodeId="48" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="cucumber1" translation="-0.065466 0.0970235 0.131414" rotation="162.326 65.7999 158.642" shapeId="13" clipDistance="35" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="cucumber1" translation="-0.125339 0.141873 0.0670785" rotation="-9.52029 37.6938 0.557993" shapeId="14" clipDistance="35" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="cucumber1" translation="-0.169024 0.119068 -0.0571503" rotation="169.72 43.4366 179.392" shapeId="15" clipDistance="35" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="cucumber1" translation="-0.101197 0.143297 -0.133801" rotation="-10.0827 -26.5814 0.493926" shapeId="16" clipDistance="35" nodeId="52" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="cucumber1" translation="-0.000175603 0.14157 -0.095181" rotation="170.346 -25.2017 179.512" shapeId="17" clipDistance="35" nodeId="53" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          <Shape name="cucumber1" translation="-0.101117 0.332067 0.133635" rotation="172.591 -4.01708 178.798" shapeId="18" clipDistance="35" nodeId="54" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        </TransformGroup>
+        <Shape name="plantSupport" translation="0 -0.237292 0.0727883" scale="0.5 0.8 0.5" shapeId="3" clipDistance="150" nodeId="55" castsShadows="true" receiveShadows="true" materialIds="10"/>
+      </Shape>
+      <Shape name="dead" translation="0 -0.059 0" shapeId="19" clipDistance="150" nodeId="56" castsShadows="true" receiveShadows="true" materialIds="7">
+        <Shape name="stem" shapeId="20" nodeId="57" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        <Shape name="plantSupport" translation="0 -0.183519 0.0376627" scale="0.5 0.8 0.5" shapeId="3" clipDistance="150" nodeId="58" castsShadows="true" receiveShadows="true" materialIds="10"/>
+      </Shape>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

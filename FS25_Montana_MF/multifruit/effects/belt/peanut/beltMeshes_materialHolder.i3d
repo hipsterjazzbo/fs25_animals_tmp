@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="beltMeshes_materialHolder.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="16" filename="$data/effects/belt/beetroot/beetrootClean_diffuse.png"/>
+    <File fileId="17" filename="$data/effects/belt/beetroot/beetrootClean_normal.png"/>
+    <File fileId="18" filename="$data/effects/belt/beetroot/beetrootClean_specular.png"/>
+    <File fileId="13" filename="$data/effects/belt/beetroot/beetrootDirt_diffuse.png"/>
+    <File fileId="14" filename="$data/effects/belt/beetroot/beetroot_normal.png"/>
+    <File fileId="15" filename="$data/effects/belt/beetroot/beetroot_specular.png"/>
+    <File fileId="7" filename="$data/effects/belt/potato/potatoesDirt_specular.png"/>
+    <File fileId="11" filename="$data/effects/belt/sugarBeet/sugarBeetsDirt_specular.png"/>
+    <File fileId="4" filename="$data/shaders/grainUnloadingBeltShader.xml"/>
+    <File fileId="1" filename="$data/shared/defaultArray_diffuse.png"/>
+    <File fileId="2" filename="$data/shared/defaultArray_normal.png"/>
+    <File fileId="3" filename="$data/shared/defaultArray_specular.png"/>
+    <File fileId="8" filename="peanutClean_diffuse.png"/>
+    <File fileId="5" filename="peanutDirt_diffuse.png"/>
+    <File fileId="6" filename="peanutDirt_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="beetrootClean_mat" materialId="10" customShaderId="4">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17"/>
+      <Glossmap fileId="18"/>
+    </Material>
+    <Material name="beetrootDirt_mat" materialId="11" customShaderId="4">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+    </Material>
+    <Material name="beltArray_mat" materialId="5" customShaderId="4" customShaderVariation="fillPlanesArray">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="potatoesClean_mat" materialId="7" customShaderId="4">
+      <Texture fileId="8"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="potatoesDirt_mat" materialId="6" customShaderId="4">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="sugarBeetsClean_mat" materialId="9" customShaderId="4">
+      <Texture fileId="12"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+    </Material>
+    <Material name="sugarBeetsDirt_mat" materialId="8" customShaderId="4">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="beltMeshes_materialHolder.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="beltArray_materialHolder" shapeId="1" clipDistance="300" nodeId="20" castsShadows="true" receiveShadows="true" materialHolder="true" materialIds="5"/>
+    <Shape name="beltPotatoDirt_materialHolder" translation="1 0 0" shapeId="1" clipDistance="300" nodeId="21" castsShadows="true" receiveShadows="true" materialHolder="true" materialIds="6"/>
+    <Shape name="beltPotatoClean_materialHolder" translation="2 0 0" shapeId="1" clipDistance="300" nodeId="22" castsShadows="true" receiveShadows="true" materialHolder="true" materialIds="7"/>
+    <Shape name="beltSugarBeetDirt_materialHolder" translation="3 0 0" shapeId="1" clipDistance="300" nodeId="23" castsShadows="true" receiveShadows="true" materialHolder="true" materialIds="8"/>
+    <Shape name="beltSugarBeetClean_materialHolder" translation="4 0 0" shapeId="1" clipDistance="300" nodeId="24" castsShadows="true" receiveShadows="true" materialHolder="true" materialIds="9"/>
+    <Shape name="beltBeetrootDirt_materialHolder" translation="5 0 0" shapeId="1" clipDistance="300" nodeId="25" castsShadows="true" receiveShadows="true" materialHolder="true" materialIds="11"/>
+    <Shape name="beltBeetrootClean_materialHolder" translation="6 0 0" shapeId="1" clipDistance="300" nodeId="26" castsShadows="true" receiveShadows="true" materialHolder="true" materialIds="10"/>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="20">
+      <Attribute name="materialName" type="string" value="belt"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateBaseMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="21">
+      <Attribute name="fillType" type="string" value="peanut"/>
+      <Attribute name="materialType" type="string" value="belt_cropDirt"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="22">
+      <Attribute name="fillType" type="string" value="peanut"/>
+      <Attribute name="materialType" type="string" value="belt_cropClean"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="25">
+      <Attribute name="fillType" type="string" value="beetroot"/>
+      <Attribute name="materialType" type="string" value="belt_cropDirt"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="26">
+      <Attribute name="fillType" type="string" value="beetroot"/>
+      <Attribute name="materialType" type="string" value="belt_cropClean"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

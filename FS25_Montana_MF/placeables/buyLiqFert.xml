@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="buyingStationManure" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Liquid Fertilizer</name>
+        <image>placeables/icons/feedStore.dds</image>
+        <price>0</price>
+		<canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <dailyUpkeep>0</dailyUpkeep>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>placeableMisc</category>
+        <vertexBufferMemoryUsage>53760</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>10752</indexBufferMemoryUsage>
+        <textureMemoryUsage>655360</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/buyLiquid.i3d</filename>
+    </base>
+
+    <placement/>
+
+    <clearAreas></clearAreas>
+
+    <leveling></leveling>
+
+    <indoorAreas></indoorAreas>
+
+    <ai>
+        <updateAreas/>
+    </ai>
+
+    <hotspots>
+        <hotspot type="LOADING" linkNode="mapPosition" teleportNode="teleportNode"/>
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="markerLoadingLiquid" filename="$data/shared/assets/marker/markerIconLoad.i3d" />
+    </triggerMarkers>
+
+    <buyingStation node="buyingStation" supportsExtension="false">
+        <loadTrigger triggerNode="loadingTrigger" fillTypes="LIQUIDFERTILIZER" fillLitersPerSecond="1000" infiniteCapacity="true" startFillText="Start Filling" stopFillText="Stop Filling" aiNode="aiLoadingNodeLiquid"/>
+        <fillType name="LIQUIDFERTILIZER" priceScale="0.40"/>
+    </buyingStation>
+
+    <i3dMappings>
+        <i3dMapping id="buyingStation" node="0>1" />
+        <i3dMapping id="loadingTrigger" node="0>1|0" />
+        <i3dMapping id="aiLoadingNodeLiquid" node="0>1|1" />
+        <i3dMapping id="markerLoadingLiquid" node="0>2" />
+        <i3dMapping id="mapPosition" node="0>3" />
+        <i3dMapping id="teleportNode" node="0>4" />
+    </i3dMappings>
+</placeable>

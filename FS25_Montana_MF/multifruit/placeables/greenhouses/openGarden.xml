@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="greenhouse" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_openGarden</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>multifruit/placeables/greenhouses/textures/store_openGarden.png</image>
+        <price>2000</price>
+        <dailyUpkeep>20</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>JINKOU</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>greenhouses</tab>
+        </brush>
+        <canBeSold>true</canBeSold>
+        <storeIconRendering>
+            <settings cameraXRot="-20" cameraYRot="30" advancedBoundingBox="true"/>
+        </storeIconRendering>
+        <vertexBufferMemoryUsage>154368</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>46848</indexBufferMemoryUsage>
+        <textureMemoryUsage>3538944</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>multifruit/placeables/greenhouses/openGarden.i3d</filename>
+	<boughtWithFarmland>true</boughtWithFarmland>
+	<canBeDeleted>true</canBeDeleted>
+	<canBeRenamed>true</canBeRenamed>	
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="1" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="unloadTriggerMarker" teleportNode="teleportNode" />
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="warningStripes" />
+        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIconWrench.i3d" id="WRENCH" adjustToGround="true" />
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIconWater.i3d" id="WATER"  adjustToGround="true" />
+        <triggerMarker node="unloadTriggerMarker2" filename="$data/shared/assets/marker/markerIconUnload.i3d" id="UNLOAD" adjustToGround="true" />			
+    </triggerMarkers>
+
+    <greenhouse>
+        <plants>
+            <plant fillType="LETTUCE"      	xmlFilename="$data/placeables/brandless/greenhouses/vegetables/lettuce/lettuce.xml" />
+            <plant fillType="STRAWBERRY"   	xmlFilename="$data/placeables/brandless/greenhouses/vegetables/strawberry/strawberry.xml" />
+            <plant fillType="TOMATO"       	xmlFilename="$data/placeables/brandless/greenhouses/vegetables/tomatoes/tomatoes.xml" />
+            <plant fillType="SPRING_ONION" 	xmlFilename="$data/placeables/brandless/greenhouses/vegetables/springOnion/springOnion.xml" />
+            <plant fillType="NAPACABBAGE"  	xmlFilename="$data/placeables/brandless/greenhouses/vegetables/napaCabbage/napaCabbage.xml" />
+            <plant fillType="CHILLI"       	xmlFilename="$data/placeables/brandless/greenhouses/vegetables/chilli/chilli.xml" />
+            <plant fillType="GARLIC"       	xmlFilename="$data/placeables/brandless/greenhouses/vegetables/garlic/garlic.xml" />
+            <plant fillType="CABBAGE"       	xmlFilename="multifruit/placeables/greenhouses/plants/cabbage/cabbage.xml" />
+            <plant fillType="REDCABBAGE"       	xmlFilename="multifruit/placeables/greenhouses/plants/redCabbage/redCabbage.xml" />
+            <plant fillType="MELON"       	xmlFilename="multifruit/placeables/greenhouses/plants/melon/melon.xml" />
+            <plant fillType="PUMPKIN"       	xmlFilename="multifruit/placeables/greenhouses/plants/pumpkin/pumpkin.xml" />
+            <plant fillType="WATERMELON"       	xmlFilename="multifruit/placeables/greenhouses/plants/watermelon/watermelon.xml" />
+            <plant fillType="CUCUMBER"       	xmlFilename="multifruit/placeables/greenhouses/plants/cucumber/cucumber.xml" />
+            <plant fillType="PEPPER"       	xmlFilename="multifruit/placeables/greenhouses/plants/pepper/pepper.xml" />
+            <plant fillType="EGGPLANT"       	xmlFilename="multifruit/placeables/greenhouses/plants/eggplant/eggplant.xml" />
+            <plant fillType="CAULIFLOWER"       xmlFilename="multifruit/placeables/greenhouses/plants/cauliflower/cauliflower.xml" />
+        </plants>
+
+        <plantSpaces>
+            <spacesParent node="plantNodes" useRandomYRot="true" />
+        </plantSpaces>
+
+        <sounds>
+        </sounds>
+
+        <!--<effectNodes>-->
+            <!--<effectNode effectNode="0>4|1" materialType="smoke" materialTypeId="1" fadeTime="0.5" />-->
+        <!--</effectNodes>-->
+    </greenhouse>
+
+        <productionPoint>
+        <productions>
+            
+
+<!--TOMATO-->            
+<!--Productions with seeds-->
+	<production id="tomatoS" name="%s + %s" params="$l10n_fillType_tomato|$l10n_fillType_seeds" cyclesPerHour="7" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="5" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="TOMATO" amount="5" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and fertilizer-->
+            <production id="tomatoSF" name="%s + %s + %s" params="$l10n_fillType_tomato|$l10n_fillType_seeds|$l10n_fillType_fertilizer" cyclesPerHour="20" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="4" />
+                    <input fillType="FERTILIZER" amount="1" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="TOMATO" amount="10" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and manure-->
+            <production id="tomatoSM" name="%s + %s + %s" params="$l10n_fillType_tomato|$l10n_fillType_seeds|$l10n_fillType_manure" cyclesPerHour="20" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="4" />
+                    <input fillType="MANURE" amount="5" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="TOMATO" amount="14" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+
+<!-- LETTUCE -->
+<!--Productions with seeds-->
+	<production id="lettuceS" name="%s + %s" params="$l10n_fillType_lettuce|$l10n_fillType_seeds" cyclesPerHour="6" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="8" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="LETTUCE" amount="4" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and fertilizer-->
+            <production id="lettuceSF" name="%s + %s + %s" params="$l10n_fillType_lettuce|$l10n_fillType_seeds|$l10n_fillType_fertilizer" cyclesPerHour="20" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="8" />
+                    <input fillType="FERTILIZER" amount="1" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="LETTUCE" amount="8" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and manure-->
+            <production id="lettuceSM" name="%s + %s + %s" params="$l10n_fillType_lettuce|$l10n_fillType_seeds|$l10n_fillType_manure" cyclesPerHour="20" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="8" />
+                    <input fillType="MANURE" amount="8" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="LETTUCE" amount="14" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+
+<!-- STRAWBERRY -->
+<!--Productions with seeds-->
+	<production id="strawberryS" name="%s + %s" params="$l10n_fillType_strawberry|$l10n_fillType_seeds" cyclesPerHour="3" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="4" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="STRAWBERRY" amount="8" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and fertilizer-->
+            <production id="strawberrySF" name="%s + %s + %s" params="$l10n_fillType_strawberry|$l10n_fillType_seeds|$l10n_fillType_fertilizer" cyclesPerHour="10" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="4" />
+                    <input fillType="FERTILIZER" amount="1" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="STRAWBERRY" amount="16" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and manure-->
+            <production id="strawberrySM" name="%s + %s + %s" params="$l10n_fillType_strawberry|$l10n_fillType_seeds|$l10n_fillType_manure" cyclesPerHour="10" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="4" />
+                    <input fillType="MANURE" amount="6" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="STRAWBERRY" amount="24" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+
+<!-- SPRING_ONION -->
+<!--Productions with seeds-->
+	<production id="springOnionS" name="%s + %s" params="$l10n_fillType_springOnion|$l10n_fillType_seeds" cyclesPerHour="1" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="6" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="SPRING_ONION" amount="12" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and fertilizer-->
+            <production id="springOnionSF" name="%s + %s + %s" params="$l10n_fillType_springOnion|$l10n_fillType_seeds|$l10n_fillType_fertilizer" cyclesPerHour="5" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="6" />
+                    <input fillType="FERTILIZER" amount="2" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="SPRING_ONION" amount="18" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and manure-->
+            <production id="springOnionSM" name="%s + %s + %s" params="$l10n_fillType_springOnion|$l10n_fillType_seeds|$l10n_fillType_manure" cyclesPerHour="5" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="6" />
+                    <input fillType="MANURE" amount="9" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="SPRING_ONION" amount="21" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+
+<!-- NAPACABBAGE -->
+<!--Productions with seeds-->
+	<production id="napaCabbageS" name="%s + %s" params="$l10n_fillType_napaCabbage|$l10n_fillType_seeds" cyclesPerHour="7" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="8" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="NAPACABBAGE" amount="6" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and fertilizer-->
+            <production id="napaCabbageSF" name="%s + %s + %s" params="$l10n_fillType_napaCabbage|$l10n_fillType_seeds|$l10n_fillType_fertilizer" cyclesPerHour="10" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="8" />
+                    <input fillType="FERTILIZER" amount="2" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="NAPACABBAGE" amount="10" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and manure-->
+            <production id="napaCabbageSM" name="%s + %s + %s" params="$l10n_fillType_napaCabbage|$l10n_fillType_seeds|$l10n_fillType_manure" cyclesPerHour="10" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="8" />
+                    <input fillType="MANURE" amount="20" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="NAPACABBAGE" amount="15" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+
+<!-- CAULIFLOWER -->
+<!--Productions with seeds-->
+	<production id="cauliflowerS" name="%s + %s" params="$l10n_fillType_cauliflower|$l10n_fillType_seeds" cyclesPerHour="7" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="8" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="CAULIFLOWER" amount="6" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and fertilizer-->
+            <production id="cauliflowerSF" name="%s + %s + %s" params="$l10n_fillType_cauliflower|$l10n_fillType_seeds|$l10n_fillType_fertilizer" cyclesPerHour="10" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="8" />
+                    <input fillType="FERTILIZER" amount="2" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="CAULIFLOWER" amount="10" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and manure-->
+            <production id="cauliflowerSM" name="%s + %s + %s" params="$l10n_fillType_cauliflower|$l10n_fillType_seeds|$l10n_fillType_manure" cyclesPerHour="10" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="8" />
+                    <input fillType="MANURE" amount="20" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="CAULIFLOWER" amount="15" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+
+<!-- CHILLI -->
+<!--Productions with seeds-->
+	<production id="chilliS" name="%s + %s" params="$l10n_fillType_chilli|$l10n_fillType_seeds" cyclesPerHour="3" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="12" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="CHILLI" amount="8" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and fertilizer-->
+            <production id="chilliSF" name="%s + %s + %s" params="$l10n_fillType_chilli|$l10n_fillType_seeds|$l10n_fillType_fertilizer" cyclesPerHour="6" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="12" />
+                    <input fillType="FERTILIZER" amount="3" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="CHILLI" amount="12" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and manure-->
+            <production id="chilliSM" name="%s + %s + %s" params="$l10n_fillType_chilli|$l10n_fillType_seeds|$l10n_fillType_manure" cyclesPerHour="6" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="12" />
+                    <input fillType="MANURE" amount="15" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="CHILLI" amount="17" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+
+<!-- GARLIC -->
+<!--Productions with seeds-->
+	<production id="garlicS" name="%s + %s" params="$l10n_fillType_garlic|$l10n_fillType_seeds" cyclesPerHour="6" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="12" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="GARLIC" amount="6" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and fertilizer-->
+            <production id="garlicSF" name="%s + %s + %s" params="$l10n_fillType_garlic|$l10n_fillType_seeds|$l10n_fillType_fertilizer" cyclesPerHour="10" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="12" />
+                    <input fillType="FERTILIZER" amount="2" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="GARLIC" amount="10" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and manure-->
+            <production id="garlicSM" name="%s + %s + %s" params="$l10n_fillType_garlic|$l10n_fillType_seeds|$l10n_fillType_manure" cyclesPerHour="10" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="12" />
+                    <input fillType="MANURE" amount="12" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="GARLIC" amount="18" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+
+<!-- CABBAGE -->
+<!--Productions with seeds-->
+	<production id="cabbageS" name="%s + %s" params="$l10n_fillType_cabbage|$l10n_fillType_seeds" cyclesPerHour="7" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="8" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="CABBAGE" amount="6" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and fertilizer-->
+            <production id="cabbageSF" name="%s + %s + %s" params="$l10n_fillType_cabbage|$l10n_fillType_seeds|$l10n_fillType_fertilizer" cyclesPerHour="15" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="8" />
+                    <input fillType="FERTILIZER" amount="2" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="CABBAGE" amount="10" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and manure-->
+            <production id="cabbageSM" name="%s + %s + %s" params="$l10n_fillType_cabbage|$l10n_fillType_seeds|$l10n_fillType_manure" cyclesPerHour="15" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="8" />
+                    <input fillType="MANURE" amount="20" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="CABBAGE" amount="15" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+
+<!-- REDCABBAGE -->
+<!--Productions with seeds-->
+	<production id="redCabbageS" name="%s + %s" params="$l10n_fillType_redCabbage|$l10n_fillType_seeds" cyclesPerHour="7" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="8" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="REDCABBAGE" amount="6" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and fertilizer-->
+            <production id="redCabbageSF" name="%s + %s + %s" params="$l10n_fillType_redCabbage|$l10n_fillType_seeds|$l10n_fillType_fertilizer" cyclesPerHour="15" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="8" />
+                    <input fillType="FERTILIZER" amount="2" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="REDCABBAGE" amount="10" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and manure-->
+            <production id="redCabbageSM" name="%s + %s + %s" params="$l10n_fillType_redCabbage|$l10n_fillType_seeds|$l10n_fillType_manure" cyclesPerHour="15" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="8" />
+                    <input fillType="MANURE" amount="20" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="REDCABBAGE" amount="15" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+
+<!-- MELON -->
+<!--Productions with seeds-->
+	<production id="melonS" name="%s + %s" params="$l10n_fillType_melon|$l10n_fillType_seeds" cyclesPerHour="3" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="6" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="MELON" amount="8" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and fertilizer-->
+            <production id="melonSF" name="%s + %s + %s" params="$l10n_fillType_melon|$l10n_fillType_seeds|$l10n_fillType_fertilizer" cyclesPerHour="7" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="6" />
+                    <input fillType="FERTILIZER" amount="1" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="MELON" amount="16" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and manure-->
+            <production id="melonSM" name="%s + %s + %s" params="$l10n_fillType_melon|$l10n_fillType_seeds|$l10n_fillType_manure" cyclesPerHour="7" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="6" />
+                    <input fillType="MANURE" amount="6" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="MELON" amount="24" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+
+<!-- PUMPKIN -->
+<!--Productions with seeds-->
+	<production id="pumpkinS" name="%s + %s" params="$l10n_fillType_pumpkin|$l10n_fillType_seeds" cyclesPerHour="3" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="4" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="PUMPKIN" amount="6" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and fertilizer-->
+            <production id="pumpkinSF" name="%s + %s + %s" params="$l10n_fillType_pumpkin|$l10n_fillType_seeds|$l10n_fillType_fertilizer" cyclesPerHour="7" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="4" />
+                    <input fillType="FERTILIZER" amount="1" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="PUMPKIN" amount="12" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and manure-->
+            <production id="pumpkinSM" name="%s + %s + %s" params="$l10n_fillType_pumpkin|$l10n_fillType_seeds|$l10n_fillType_manure" cyclesPerHour="7" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="4" />
+                    <input fillType="MANURE" amount="6" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="PUMPKIN" amount="20" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+
+<!-- WATERMELON -->
+<!--Productions with seeds-->
+	<production id="watermelonS" name="%s + %s" params="$l10n_fillType_watermelon|$l10n_fillType_seeds" cyclesPerHour="4" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="4" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="WATERMELON" amount="18" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and fertilizer-->
+            <production id="watermelonSF" name="%s + %s + %s" params="$l10n_fillType_watermelon|$l10n_fillType_seeds|$l10n_fillType_fertilizer" cyclesPerHour="10" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="4" />
+                    <input fillType="FERTILIZER" amount="1" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="WATERMELON" amount="26" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and manure-->
+            <production id="watermelonSM" name="%s + %s + %s" params="$l10n_fillType_watermelon|$l10n_fillType_seeds|$l10n_fillType_manure" cyclesPerHour="10" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="4" />
+                    <input fillType="MANURE" amount="6" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="WATERMELON" amount="34" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+
+<!--CUCUMBER-->            
+<!--Productions with seeds-->
+	<production id="cucumberS" name="%s + %s" params="$l10n_fillType_cucumber|$l10n_fillType_seeds" cyclesPerHour="10" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="8" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="CUCUMBER" amount="5" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and fertilizer-->
+            <production id="cucumberSF" name="%s + %s + %s" params="$l10n_fillType_cucumber|$l10n_fillType_seeds|$l10n_fillType_fertilizer" cyclesPerHour="30" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="7" />
+                    <input fillType="FERTILIZER" amount="1" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="CUCUMBER" amount="10" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and manure-->
+            <production id="cucumberSM" name="%s + %s + %s" params="$l10n_fillType_cucumber|$l10n_fillType_seeds|$l10n_fillType_manure" cyclesPerHour="30" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="7" />
+                    <input fillType="MANURE" amount="5" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="CUCUMBER" amount="14" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+
+<!-- PEPPER -->
+<!--Productions with seeds-->
+	<production id="pepperS" name="%s + %s" params="$l10n_fillType_pepper|$l10n_fillType_seeds" cyclesPerHour="9" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="12" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="PEPPER" amount="8" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and fertilizer-->
+            <production id="pepperSF" name="%s + %s + %s" params="$l10n_fillType_pepper|$l10n_fillType_seeds|$l10n_fillType_fertilizer" cyclesPerHour="12" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="12" />
+                    <input fillType="FERTILIZER" amount="3" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="PEPPER" amount="12" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and manure-->
+            <production id="pepperSM" name="%s + %s + %s" params="$l10n_fillType_pepper|$l10n_fillType_seeds|$l10n_fillType_manure" cyclesPerHour="12" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="12" />
+                    <input fillType="MANURE" amount="15" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="PEPPER" amount="17" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+
+<!-- EGGPLANT -->
+<!--Productions with seeds-->
+	<production id="eggplantS" name="%s + %s" params="$l10n_fillType_eggplant|$l10n_fillType_seeds" cyclesPerHour="4" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="12" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="EGGPLANT" amount="8" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and fertilizer-->
+            <production id="eggplantSF" name="%s + %s + %s" params="$l10n_fillType_eggplant|$l10n_fillType_seeds|$l10n_fillType_fertilizer" cyclesPerHour="7" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="12" />
+                    <input fillType="FERTILIZER" amount="2" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="EGGPLANT" amount="12" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+        
+<!--Productions with seeds and manure-->
+            <production id="eggplantSM" name="%s + %s + %s" params="$l10n_fillType_eggplant|$l10n_fillType_seeds|$l10n_fillType_manure" cyclesPerHour="7" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="12" />
+                    <input fillType="MANURE" amount="12" />
+                    <input fillType="SEEDS" amount="1" />
+                </inputs>
+                <outputs>
+                    <output fillType="EGGPLANT" amount="22" />
+                    <output fillType="ORGANICWASTE" amount="1" />
+                </outputs>
+            </production>
+
+        </productions>
+		
+        <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="true">
+            <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypes="WATER LIQUIDMANURE LIQUIDFERTILIZER DIGESTATE MANURE COMPOST FERTILIZER SEEDS" aiNode="unloadTriggerAINode">
+			<fillTypeConversion ratio="1.1" incomingFillType="LIQUIDFERTILIZER" 	outgoingFillType="FERTILIZER" />
+			<fillTypeConversion ratio="0.8" incomingFillType="LIQUIDMANURE" 	outgoingFillType="MANURE" />
+			<fillTypeConversion ratio="0.6" incomingFillType="DIGESTATE" 		outgoingFillType="MANURE" />
+			<fillTypeConversion ratio="0.8" incomingFillType="COMPOST" 		outgoingFillType="MANURE" />
+			</unloadTrigger>
+        </sellingStation>
+
+        <loadingStation fillTypes="WATER MANURE FERTILIZER SEEDS" supportsExtension="true" />
+
+        <palletSpawner node="palletSpawner">
+            <spawnPlaces>
+                <spawnPlace startNode="spawnPlace1Start" />
+                <spawnPlace startNode="spawnPlace2Start" />	
+                <spawnPlace startNode="spawnPlace3Start" />	
+                <spawnPlace startNode="spawnPlace4Start" />
+                <spawnPlace startNode="spawnPlace5Start" />	
+                <spawnPlace startNode="spawnPlace6Start" />					
+            </spawnPlaces>
+        </palletSpawner>
+
+        <storage node="storage" isExtension="false" fillTypes="WATER MANURE FERTILIZER SEEDS" fillLevelSyncThreshold="20" >
+            <capacity fillType="WATER"          	capacity="20000" />
+            <capacity fillType="MANURE"         	capacity="10000" />
+            <capacity fillType="FERTILIZER"     	capacity="10000" />
+            <capacity fillType="SEEDS"          	capacity="5000" />
+            <capacity fillType="LETTUCE"        	capacity="10000" />
+            <capacity fillType="TOMATO"         	capacity="10000" />
+            <capacity fillType="STRAWBERRY"     	capacity="10000" />
+            <capacity fillType="SPRING_ONION"   	capacity="10000" />
+            <capacity fillType="CABBAGE"    		capacity="10000" />
+            <capacity fillType="REDCABBAGE"    		capacity="10000" />
+            <capacity fillType="NAPACABBAGE"    	capacity="10000" />
+            <capacity fillType="CHILLI"         	capacity="10000" />
+            <capacity fillType="GARLIC"         	capacity="10000" />
+            <capacity fillType="MELON"         		capacity="10000" />
+            <capacity fillType="PUMPKIN"         	capacity="10000" />
+            <capacity fillType="WATERMELON"         	capacity="10000" />
+            <capacity fillType="CUCUMBER"         	capacity="10000" />
+            <capacity fillType="PEPPER"         	capacity="10000" />
+            <capacity fillType="EGGPLANT"         	capacity="10000" />
+            <capacity fillType="CAULIFLOWER"     	capacity="10000" />
+            <capacity fillType="ORGANICWASTE"     	capacity="10000" />		
+			
+			<fillPlane fillType="MANURE" node="fillType01" minY="-0.003" maxY="0" />	
+        </storage>
+
+        <playerTrigger node="playerTrigger" />
+    </productionPoint>
+
+    <animatedObjects>
+        <animatedObject saveId="door1" >
+            <animation duration="0.02">
+                <part node="Serre01">
+                    <keyFrame time="0.1" scale="0 0 0"/>
+                    <keyFrame time="1.0" scale="1 1 1"/>
+                </part>
+                <part node="Serre02">
+                    <keyFrame time="0.1" scale="0 0 0"/>
+                    <keyFrame time="1.0" scale="1 1 1"/>
+                </part>
+                <part node="Serre03">
+                    <keyFrame time="0.1" scale="0 0 0"/>
+                    <keyFrame time="1.0" scale="1 1 1"/>
+                </part>				
+            </animation>
+            <controls triggerNode="door1Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openTunnel" negText="action_closeTunnel" />
+            <sounds>
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="door2" >
+            <animation duration="0.02">
+                <part node="Serre04">
+                    <keyFrame time="0.1" scale="0 0 0"/>
+                    <keyFrame time="1.0" scale="1 1 1"/>
+                </part>
+                <part node="Serre05">
+                    <keyFrame time="0.1" scale="0 0 0"/>
+                    <keyFrame time="1.0" scale="1 1 1"/>
+                </part>
+                <part node="Serre06">
+                    <keyFrame time="0.1" scale="0 0 0"/>
+                    <keyFrame time="1.0" scale="1 1 1"/>
+                </part>				
+            </animation>
+            <controls triggerNode="door2Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openTunnel" negText="action_closeTunnel" />
+            <sounds>
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="door3" >
+            <animation duration="0.02">
+                <part node="Serre07">
+                    <keyFrame time="0.1" scale="0 0 0"/>
+                    <keyFrame time="1.0" scale="1 1 1"/>
+                </part>
+                <part node="Serre08">
+                    <keyFrame time="0.1" scale="0 0 0"/>
+                    <keyFrame time="1.0" scale="1 1 1"/>
+                </part>
+                <part node="Serre09">
+                    <keyFrame time="0.1" scale="0 0 0"/>
+                    <keyFrame time="1.0" scale="1 1 1"/>
+                </part>				
+            </animation>
+            <controls triggerNode="door3Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openTunnel" negText="action_closeTunnel" />
+            <sounds>
+            </sounds>
+        </animatedObject>		
+    </animatedObjects>
+
+    <i3dMappings>
+	
+        <i3dMapping id="plantNodes" node="0>0|1" />
+        <i3dMapping id="sellingStation" node="0>0|3" />
+		<i3dMapping id="exactFillRootNode" node="0>0|3|0" />
+        <i3dMapping id="unloadTriggerMarker" node="0>0|3|1" />
+		<i3dMapping id="unloadTriggerMarker2" node="0>0|3|2" />
+        <i3dMapping id="unloadTriggerAINode" node="0>0|3|3" />
+        <i3dMapping id="storage" node="0>0|4" />
+        <i3dMapping id="playerTrigger" node="0>0|5" />
+        <i3dMapping id="playerTriggerMarker" node="0>0|6" />
+        <i3dMapping id="palletSpawner" node="0>0|7" />
+        <i3dMapping id="spawnPlace1Start" node="0>0|7|0" />
+        <i3dMapping id="spawnPlace1End" node="0>0|7|0|0" />
+        <i3dMapping id="spawnPlace2Start" node="0>0|7|1" />
+        <i3dMapping id="spawnPlace2End" node="0>0|7|1|0" />
+        <i3dMapping id="spawnPlace3Start" node="0>0|7|2" />
+        <i3dMapping id="spawnPlace3End" node="0>0|7|2|0" />	
+        <i3dMapping id="spawnPlace4Start" node="0>0|7|3" />
+        <i3dMapping id="spawnPlace4End" node="0>0|7|3|0" />
+        <i3dMapping id="spawnPlace5Start" node="0>0|7|4" />
+        <i3dMapping id="spawnPlace5End" node="0>0|7|4|0" />
+        <i3dMapping id="spawnPlace6Start" node="0>0|7|5" />
+        <i3dMapping id="spawnPlace6End" node="0>0|7|5|0" />			
+		<i3dMapping id="fillType01" node="0>0|8" />		
+        <i3dMapping id="door1" node="0>1|0" />
+        <i3dMapping id="Serre01" node="0>1|0|1" />
+        <i3dMapping id="Serre02" node="0>1|0|2" />
+        <i3dMapping id="Serre03" node="0>1|0|3" />		
+        <i3dMapping id="door1Trigger" node="0>1|0|0" />
+        <i3dMapping id="door2" node="0>1|1" />
+        <i3dMapping id="Serre04" node="0>1|1|1" />
+        <i3dMapping id="Serre05" node="0>1|1|2" />
+        <i3dMapping id="Serre06" node="0>1|1|3" />		
+        <i3dMapping id="door2Trigger" node="0>1|1|0" />		
+        <i3dMapping id="door3" node="0>1|2" />
+        <i3dMapping id="Serre07" node="0>1|2|1" />
+        <i3dMapping id="Serre08" node="0>1|2|2" />
+        <i3dMapping id="Serre09" node="0>1|2|3" />		
+        <i3dMapping id="door3Trigger" node="0>1|2|0" />			
+        <i3dMapping id="clearArea1Start" node="0>2|0" />
+        <i3dMapping id="clearArea1Width" node="0>2|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>2|0|1" />
+        <i3dMapping id="levelArea1Start" node="0>3|0" />
+        <i3dMapping id="levelArea1Width" node="0>3|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>3|0|1" />
+        <i3dMapping id="indoorArea1Start" node="0>4|0" />
+        <i3dMapping id="indoorArea1Width" node="0>4|0|0" />
+        <i3dMapping id="indoorArea1Height" node="0>4|0|1" />
+        <i3dMapping id="testArea1Start" node="0>5|0" />
+        <i3dMapping id="testArea1End" node="0>5|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>6|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>6|0|0" />
+        <i3dMapping id="infoTrigger" node="0>7" />
+        <i3dMapping id="warningStripes" node="0>8" />
+        <i3dMapping id="teleportNode" node="0>11" />
+
+    </i3dMappings>
+</placeable>

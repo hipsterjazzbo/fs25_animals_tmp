@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors>Jinkou89</translationContributors>
+    <languageVersion>1.0.0.0</languageVersion>
+	
+	<texts>
+	  
+	<text name="fillType_rye" 				text="Rozs" />
+	<text name="fillType_soybeanUS"        			text="Amerikai szójabab" />
+	<text name="fillType_covercropmix"        		text="Takarónövény keverék" />
+	<text name="fillType_roundBaleLavender"        		text="Levendula bála" />
+	<text name="fillType_clover1"        			text="Vörös here" />
+	<text name="fillType_clover2"        			text="Fehér here" />
+	<text name="fillType_clover_windrow"        		text="Here" />
+    	<text name="fillType_alfalfa"       			text="Lucerna" />
+	<text name="fillType_cloverSilage"        		text="Erjesztett here" />
+   	<text name="fillType_alfalfaSilage"       		text="Erjesztett lucerna" />
+   	<text name="fillType_cloverHay"     			text="Hereszéna" />
+    	<text name="fillType_alfalfaHay"    			text="Lucernaszéna" />
+    	<text name="fillType_beanstraw" 			text="Hüvelyes szalma" />
+    	<text name="fillType_cornStalks"    			text="Kukoricaszár" />
+	<text name="fillType_flaxFiber"        			text="Lenrost" />
+	<text name="fillType_flax"        			text="Len" />
+	<text name="fillType_linseed"        			text="Lenmag" />
+	<text name="fillType_millet"        			text="Köles" />
+	<text name="fillType_poppy"        			text="Mák" />
+	<text name="fillType_drypeas"        			text="Szárazborsó" />
+	<text name="fillType_beans"        			text="Tarka bab" />
+	<text name="fillType_mustard"        			text="Mustár" />
+	<text name="fillType_lentils"        			text="Lencse" />
+	<text name="fillType_silphie"        			text="Szilfium" />
+	<text name="fillType_spelt"        			text="Tönkölybúza" />
+	<text name="fillType_triticale"        			text="Tritikálé" />
+	<text name="fillType_soybean2"        			text="Amerikai szójabab" />
+	<text name="fillType_tobacco"        			text="Dohány" />
+	<text name="fillType_tobaccoo"        			text="Dohánylevél" />      
+	<text name="fillType_compost" 				text="Komposzt" />
+	<text name="fillType_organicWaste" 			text="Szerves hulladék" />
+	<text name="fillType_grapeA" 				text="Vörös szőlő" />
+	<text name="fillType_grapeB" 				text="Fehér szőlő" />
+	<text name="fillType_chickpeas" 			text="Csicseriborsó" />
+	<text name="fillType_buckwheat" 			text="Hajdina" />
+	<text name="shopItem_grapeb_vine" 			text="Fehér szőlő tőke" />
+	<text name="shopItem_hopsVine" 				text="Komlóültetvény" />
+	<text name="fillType_hemp" 				text="Kender" />
+	<text name="fillType_hempFiber" 			text="Kenderrost" />
+	<text name="fillType_lavender" 				text="Levendula" />
+	<text name="fillType_potatoCut"        			text="Vágott burgonya" />
+	<text name="fillType_beetrootCut"        		text="Vágott cékla" />
+	<text name="fillType_carrotCut"        			text="Vágott sárgarépa" />
+	<text name="fillType_parsnipCut"        		text="Vágott paszternák" />  
+	<text name="fillTypeGroup_TMR"        			text="TMR, Erjesztett lucerna/here" />	  
+	<text name="fillTypeGroup_hays"        			text="Széna, Lucerna/hereszéna" />
+	<text name="fillTypeGroup_grassa"        		text="Fű, Friss lucerna/here" />
+	<text name="fillTypeGroup_moisture"        		text="Nedvesség: Aprított gumósok" />
+	<text name="fillTypeGroup_grassHay"        		text="Friss/Széna Fű/Lucerna/Here" />
+	<text name="fillType_mineralFeed1"        		text="Ásványi takarmány / Szárazborsó" />
+	<text name="fillTypeGroup_pigForage"        		text="Sertés takarmánykeverék" />
+	<text name="fillType_peanut" 				text="Földimogyoró" />
+	<text name="fillType_miscanthus" 			text="Elefántfű" />
+	<text name="fillType_miscanthusCut" 			text="Szecskázott elefántfű" />
+
+
+		<text name="fillType_maize2" 			text="Szárított kukorica" />
+		<text name="fillType_soymilk" 			text="Szójatej" />
+		<text name="fillType_pasta" 			text="Tészta" />
+		<text name="fillType_chips" 			text="Chips" />
+		<text name="fillType_ethanol" 			text="Etanol" />
+		<text name="fillType_cornflour"			text="Kukoricaliszt" />
+		<text name="fillType_cornOil"			text="Kukoricaolaj" />
+		<text name="fillType_linseedOil"		text="Lenolaj" />
+		<text name="fillType_mustardOil"		text="Mustárolaj" />
+		<text name="fillType_poppyOil"			text="Mákolaj" />
+		<text name="fillType_pizza"			text="Pizza" />
+		<text name="fillType_buckwheatflour"        	text="Hajdinaliszt" />
+		<text name="fillType_gramflour"        		text="Csicseriborsóliszt" />
+		<text name="fillType_milletflour"        	text="Kölesliszt" />
+		<text name="fillType_ryeflour"        		text="Rozsliszt" />
+		<text name="fillType_sorghumflour"        	text="Cirokliszt" />
+		<text name="fillType_crackedCorn"        	text="Darált kukorica" />
+		<text name="fillType_apple"        		text="Alma" />
+		<text name="fillType_apricot"        		text="Sárgabarack" />
+		<text name="fillType_cherry"        		text="Cseresznye" />
+		<text name="fillType_pear"        		text="Körte" />
+		<text name="fillType_peach"        		text="Őszibarack" />
+		<text name="fillType_plum"        		text="Szilva" />
+		<text name="fillType_quince"        		text="Birs" />
+		<text name="fillType_cabbage"        		text="Fejes káposzta" />
+		<text name="fillType_redCabbage"        	text="Vörös káposzta" />
+		<text name="fillType_melon"        		text="Sárgadinnye" />
+		<text name="fillType_pumpkin"        		text="Tök" />
+		<text name="fillType_watermelon"        	text="Görögdinnye" />
+		<text name="fillType_cucumber"        		text="Uborka" />
+		<text name="fillType_eggplant"        		text="Padlizsán" />
+		<text name="fillType_pepper"        		text="Paprika" />
+		<text name="fillType_cauliflower" 		text="Karfiol" />
+		<text name="fillType_bran"        		text="Korpa" />
+		<text name="fillType_molasses"        		text="Melasz" />
+		<text name="fillType_appleJuice"        	text="Almalé" />
+		<text name="fillType_apricotJuice"        	text="Sárgabaracklé" />
+		<text name="fillType_beetrootJuice"        	text="Céklalé" />
+		<text name="fillType_carrotJuice"        	text="Sárgarépalé" />
+		<text name="fillType_cherryJuice"        	text="Cseresznyelé" />
+		<text name="fillType_melonJuice"        	text="Dinnyelé" />
+		<text name="fillType_multifruitJuice"        	text="Multivitamin lé" />
+		<text name="fillType_peachJuice"        	text="Őszibaracklé" />
+		<text name="fillType_pearJuice"        		text="Körtelé" />
+		<text name="fillType_plumJuice"        		text="Szilvalé" />
+		<text name="fillType_quinceJuice"        	text="Birslé" />
+		<text name="fillType_strawberryJuice"        	text="Eperlé" />
+		<text name="fillType_tomatoJuice"        	text="Paradicsomlé" />
+		<text name="fillType_watermelonJuice"        	text="Görögdinnyelé" />
+ 		<text name="fillType_cattle" 			text="Szarvasmarha" />
+		<text name="fillType_pigs" 			text="Sertés" />
+		<text name="fillType_sheepGoat" 		text="Juh/Kecske" />
+ 		<text name="fillType_beef" 			text="Marhahús" />
+		<text name="fillType_pork" 			text="Sertéshús" />
+		<text name="fillType_poultryMeat" 		text="Baromfihús" />
+		<text name="fillType_lamb" 			text="Bárányhús" />
+		<text name="fillType_cigar" 			text="Szivar" />
+		<text name="fillType_cigarette" 		text="Cigaretta" />
+		<text name="fillType_animalFat" 		text="Állati zsiradék" />
+		<text name="fillType_perfume" 			text="Parfüm" />
+		<text name="fillType_soap" 			text="Szappan" />
+		<text name="fillType_lavenderOil" 		text="Levendulaolaj" />
+		<text name="fillType_bourbonBarrel" 		text="Bourbon" />
+		<text name="fillType_brandyBarrel" 		text="Brandy" />
+		<text name="fillType_ciderBarrel" 		text="Cider" />
+		<text name="fillType_meadBarrel" 		text="Mézsör" />
+		<text name="fillType_liqueurBarrel" 		text="Gyümölcslikőr" />
+		<text name="fillType_vodkaBarrel" 		text="Vodka" />
+		<text name="fillType_whiskeyBarrel" 		text="Whisky" />
+		<text name="fillType_rumBarrel" 		text="Rum" />
+		<text name="fillType_peanutflour" 		text="Földimogyoróliszt" />
+		<text name="fillType_peanutOil" 		text="Földimogyoróolaj" />
+		<text name="fillType_peanutButter" 		text="Mogyoróvaj" />
+		<text name="fillType_mayo" 			text="Majonéz" />
+		<text name="fillType_ketchup" 			text="Ketchup" />
+		<text name="fillType_hotSauce" 			text="Csípős szósz" />
+		<text name="fillType_soySauce" 			text="Szójaszósz" />
+		<text name="fillType_garlicSauce" 		text="Fokhagymaszósz" />
+		<text name="fillType_mustardSauce" 		text="Mustárszósz" />
+		<text name="fillType_pickledCucumber" 		text="Savanyított uborka" />
+		<text name="fillType_pickledCabbage" 		text="Savanyított káposzta" />
+		<text name="fillType_pickledCauliflower" 	text="Savanyított karfiol" />
+		<text name="fillType_beansSoup" 		text="Bableves" />
+		<text name="fillType_peanutBags" 		text="Zsákos mogyoró" />
+		<text name="fillType_beansBags" 		text="Zsákos bab" />
+		<text name="fillType_cannedBeans" 		text="Babkonzerv" />
+		<text name="fillType_tofu" 			text="Tofu" />
+		<text name="fillType_chocomilk" 		text="Kakaó" />
+		<text name="fillType_oatmilk" 			text="Zabtej" />
+		<text name="fillType_mushroomSoup" 		text="Gombaleves" />
+		<text name="fillType_beer" 			text="Sör" />
+		<text name="fillType_wine" 			text="Bor" />
+		<text name="fillType_icecream" 			text="Fagylalt" />
+		<text name="fillType_sourcream" 		text="Tejföl" />
+		<text name="fillType_yoghurt" 			text="Joghurt" />
+		<text name="fillType_sunflowerBags" 		text="Zsákos napraforgómag" />
+		<text name="fillType_pumpkinSeeds" 		text="Zsákos tökmag" />
+		<text name="fillType_pumpkinPuree" 		text="Tökpüré" />
+		<text name="fillType_eggplantPuree" 		text="Padlizsánpüré" />
+		<text name="fillType_popcorn" 			text="Pattogatott kukorica" />
+		<text name="fillType_cheesePuffs" 		text="Sajtos puffancs" />
+		<text name="fillType_peanutPuffs" 		text="Mogyorós puffancs" />
+		<text name="fillType_tortilla" 			text="Tortilla chips" />
+		<text name="fillType_garlicBread" 		text="Fokhagymás kenyér" />
+		<text name="fillType_onionRings" 		text="Hagymakarika" />
+		<text name="fillType_pie" 			text="Gyümölcsös pite" />
+		<text name="fillType_cocoaPowder" 		text="Kakaópor" />
+		<text name="fillType_cookingSalt" 		text="Konyhasó" />
+		<text name="fillType_yeast" 		 	text="Élesztő" />
+		<text name="fillType_roulade"                   text="Piskótatekercs" />
+		<text name="fillType_strudel"                   text="Rétes" />
+		<text name="fillType_milkBread"                 text="Tejes kenyér" />
+		<text name="fillType_potatoBread"               text="Burgonyás kenyér" />
+		<text name="fillType_sweetBread"                text="Kalács" />
+		<text name="fillType_bagel"                     text="Bagel" />
+		<text name="fillType_baguette" 			text="Bagett"/>
+		<text name="fillType_hops" 			text="Komló"/>
+		<text name="fillType_cowFood" 			text="Marha táp-pellet"/>
+		<text name="fillType_hayPellets" 		text="Szénapellet"/>
+		<text name="fillType_strawPellets" 		text="Szalmapellet"/>
+		<text name="fillType_woodChipsPellets" 		text="Fapellet"/>
+		<text name="fillType_chocoCake" 		text="Csokoládétorta"/>
+		<text name="fillType_sesame" 			text="Szezámmag"/>
+		<text name="fillType_sesameOil" 		text="Szezeámolaj"/>
+		<text name="fillType_sesameBags" 		text="Zsákos szezámmag"/>
+		<text name="fillType_chickpeasBags" 		text="Zsákos csicseriborsó"/>
+		<text name="fillType_lentilsBags" 		text="Zsákos lencse"/>
+		<text name="fillType_sesameRolls" 		text="Szezámos kifli"/>
+		<text name="fillType_hummus" 			text="Hummusz"/>
+
+	<text name="pigProcessing"        			text="Sertés feldolgozás" />
+		<text name="poultryProcessing"        			text="Baromfi feldolgozás" />
+		<text name="cattleProcessing"        			text="Marha feldolgozás" />
+		<text name="sheepProcessing"        			text="Juh feldolgozás" />
+		<text name="message_unloadAnimalSuccess" 		text="Az állatok sikeresen átkerültek ide: %s!" />
+        	<text name="message_unloadAnimalConfirmation" 		text="Szeretne átmozgatni %d állatot (%s) ide: %s?" />
+        	<text name="button_moveAnimal" 				text="Áthelyezés ide: %s" />
+		<text name="message_animalTooYoung" 			text="Ez az állat túl fiatal." />
+		<text name="message_animalTooOld" 			text="Ez az állat túl öreg." />
+        	<text name="configuration_grapeB" 			text="Fehér szőlő"/>
+        	<text name="configuration_hops" 			text="Komló"/>
+		<text name="function_fermentingTower" 			text="Ebben a létesítményben fűt, szecskát, lucernát vagy herét fermentálhat." />
+		<text name="function_grainDryer" 			text="Ebben a létesítményben száríthatja ki a kukoricát." />
+		<text name="function_hopsVine" 			        text="Komló tőkék. A betakarításhoz többfunkciós szőlőkombájn szükséges." />
+		<text name="function_buyingPoint" 			text="Ezen az állomáson szinte bármit megvásárolhat ömlesztve." />
+
+
+	<text name="shopItem_appleOrchard" 		text="Kis almáskert" />	
+		<text name="shopItem_apricotOrchard" 		text="Kis sárgabarackos" />	
+		<text name="shopItem_appleTree" 		text="Almafa" />	
+		<text name="shopItem_apricotTree" 		text="Sárgabarackfa" />
+		<text name="shopItem_cherryOrchard" 		text="Kis cseresznyéskert" />	
+		<text name="shopItem_pearOrchard" 		text="Kis körteültetvény" />	
+		<text name="shopItem_cherryTree" 		text="Cseresznyefa" />	
+		<text name="shopItem_pearTree" 			text="Körtefa" />	
+		<text name="shopItem_peachOrchard" 		text="Kis őszibarackos" />	
+		<text name="shopItem_peachTree" 		text="Őszibarackfa" />		
+		<text name="shopItem_plumOrchard" 		text="Kis szilváskert" />	
+		<text name="shopItem_plumTree" 			text="Szilvafa" />		
+		<text name="shopItem_quinceOrchard" 		text="Kis birsalmás" />	
+		<text name="shopItem_quinceTree" 		text="Birsalmafa" />	
+		<text name="shopItem_grainCrusher" 		text="Szemtermés daráló" />	
+		<text name="shopItem_juiceFactory" 		text="Gyümölcslé gyár" />
+		<text name="shopItem_slaughterHouse" 		text="Vágóhíd" />
+		<text name="shopItem_tobaccoProd" 		text="Dohánygyár" />
+		<text name="shopItem_lavenderProd" 		text="Levendula feldolgozó" />
+		<text name="shopItem_openGarden" 		text="Nyitott konyhakert" />
+		<text name="shopItem_distillery" 		text="Szeszfőzde" />
+		<text name="shopItem_preservedFood" 		text="Konzervgyár" />
+		<text name="shopItem_foodProd" 			text="Rágcsálnivaló üzem" />
+		<text name="shopItem_fermentingTower" 		text="Fermentáló torony" />
+		<text name="shopItem_wineCellar" 		text="Sör- és borospince" />
+		<text name="shopItem_grainDryer" 		text="Gabonaszárító" />
+		<text name="shopItem_openGardenFieldCrops" 	text="Szántóföldi konyhakert" />
+		<text name="shopItem_industrialGreenhouse" 	text="Ipari üvegház" />
+		<text name="shopItem_vegetarianProd" 		text="Vegán élelmiszer üzem" />
+		<text name="shopItem_pelletizer" 		text="Pelletáló gép" />
+		<text name="shopItem_buyingPoint1" 		text="Többfunkciós vásárlási pont" />
+		<text name="shopItem_buyingPoint2" 		text="Többfunkciós vásárlási pont (akciós)" />
+
+
+		<text name="shopItem_jamProd" 				text="Lekvárgyár" />
+		<text name="fillType_edamame" 				text="Edamame (zöld szójabab)"/>
+		<text name="fillType_taro" 				text="Taró"/>
+		<text name="fillType_okra" 				text="Okra"/>
+		<text name="fillType_mint" 				text="Menta"/>
+		<text name="fillType_greenRye" 				text="Zöldrozs" />
+		<text name="fillType_taroCut" 				text="Vágott taró" />
+		<text name="fillType_taroFlour" 			text="Taróliszt" />
+		<text name="fillType_taroSoup" 				text="Taróleves" />
+		<text name="fillType_taroChips" 			text="Taró chips" />
+		<text name="fillType_muffin" 				text="Muffin" />
+		<text name="fillType_donut" 				text="Fánk" />
+		<text name="fillType_ccm" 				text="CCM fermentált (Darált cső-keverék)" />
+		<text name="fillType_ccmraw" 				text="CCM (Darált cső-keverék)" />
+		<text name="fillType_cropWindrow" 			text="Teljes növényi szecska" />
+		<text name="fillType_cropSilage" 			text="Teljes növényi szilázs" />
+		<text name="fillType_grassSilage" 			text="Fűszilázs" />
+		<text name="fillType_safflower" 			text="Sáfrányos szeklice" />
+		<text name="fillType_appleJam"        			text="Almalekvár" />
+		<text name="fillType_apricotJam"        		text="Sárgabaracklekvár" />
+		<text name="fillType_cherryJam"        			text="Cseresznyelekvár" />
+		<text name="fillType_grapeJam"        			text="Szőlőlekvár" />
+		<text name="fillType_melonJam"        			text="Dinnyelekvár" />
+		<text name="fillType_peachJam"        			text="Őszibaracklekvár" />
+		<text name="fillType_pearJam"        			text="Körtelekvár" />
+		<text name="fillType_plumJam"        			text="Szilvalekvár" />
+		<text name="fillType_strawberryJam"        		text="Eperlekvár" />
+		<text name="fillType_quinceJam"        			text="Birsalma lekvár" />
+		<text name="fillType_safflowerOil" 			text="Szekliceolaj" />
+		<text name="fillType_mintOil" 				text="Mentaolaj"/>
+		<text name="fillType_mintBarrel" 			text="Mentalikőr"/>
+		<text name="fillType_jarredOkra"        		text="Üveges okra" />
+		<text name="fillType_jarredEdamame"        		text="Üveges edamame" />
+
+<text name="fillType_duckEgg"                 text="Kacsatojás"/>
+        <text name="shopItem_duckGooseBarn"             text="Kacsa- és lúdól"/>
+        <text name="shopItem_duckGoosePasture"             text="Kacsa- és lúdlegelő"/>
+        <text name="shopItem_rabbitHutch"             text="Nyúlketrec"/>
+        <text name="function_animalPenDuck"             text="Itt kacsákat és ludakat tenyészthet. Etetése és szalmázása után kacsatojást és trágyát termelnek."/>
+        <text name="function_animalPenRabbit"             text="Itt nyulakat tenyészthet. Etetése és szalmázása után, ha felnőnek, haszonnal értékesítheti őket."/>
+        <text name="fillTypeGroup_clover"                text="Friss lóhere" />
+        <text name="fillTypeGroup_fruitVegetables"             text="Gyümölcsök és zöldségek" />
+
+    <text name="fillType_goose"                            text="Lúd" />
+        <text name="animal_group_goose"                        text="Ludak és kacsák" />
+        <text name="shopItem_animalGooseGrowthStage0"           text="Kislibák" />
+        <text name="shopItem_animalGooseGrowthStage1"           text="Lúd" />
+        <text name="animal_descriptionGooseProfitGrowthStage0" text="A kislibák felhizlalhatók, majd haszonnal értékesíthetők." />
+        <text name="animal_descriptionGooseProfitGrowthStage1" text="A ludak tenyészthetők, majd haszonnal értékesíthetők." />
+        <text name="animal_descriptionGooseFeed"               text="Etesse őket úgy, mint a tyúkokat. A vízellátás automatikus az ól típusától függően." />
+        <text name="animal_descriptionGooseReproduction"       text="A ludak 10 hónapos korukra érik el az ivarérettséget. A tenyészidőszak egy hónapig tart." />
+
+    <text name="fillType_duck"                             text="Kacsa" />
+        <text name="shopItem_animalDuckGrowthStage0"           text="Kacsafiókák" />
+        <text name="animal_duckGrowthStage0Description"        text="A kacsafiókák még nem tojnak. Alkalmasak továbbtenyésztésre vagy értékesítésre." />    
+        <text name="shopItem_animalDuckGrowthStage1"           text="Kacsa" />    
+        <text name="animal_duckGrowthStage1Description"        text="A kacsák tojást termelnek, amelyet eladhat egy átvevőhelyen, vagy tovább feldolgozhat az üzemeiben." />    
+        <text name="animal_poultryFoodDescription"             text="A baromfinak gabonára és vízre van szüksége a termeléshez. Megjegyzés: Egyes ólak automata vízellátással rendelkeznek, ebben az esetben nem kell vizet tölteni." />
+        
+         <text name="fillType_rabbit"                            text="Anya-nyúl" />
+            <text name="fillType_rabbitMale"                        text="Baknyúl" />
+            <text name="animal_group_rabbits"                       text="Nyulak" />
+            <text name="shopItem_animalRabbitGrowthStage0"          text="Nyulak (szopósok)" />
+            <text name="shopItem_animalRabbitGrowthStage1"          text="Nyulak (növendékek)" />
+            <text name="shopItem_animalRabbitGrowthStage2"          text="Nyúl (nőstény)" />
+            <text name="shopItem_animalRabbitGrowthStage3"          text="Nyúl (hím)" />
+            <text name="animal_rabbitGrowthStage0Description"       text="A kisnyulak a legfiatalabbak a fajból. Külön nem vásárolhatók meg, az anyaállattól születnek." />
+            <text name="animal_rabbitGrowthStage1Description"       text="A növendék nyúl tenyésztésre használható." />
+            <text name="animal_rabbitGrowthStage2Description"       text="A nőstény nyulak utódokat hozhatnak világra vagy eladhatók. Az utódok fiatalabbak és kisebbek a növendék nyulaknál." />
+            <text name="animal_rabbitGrowthStage3Description"       text="Hím nyulak." />
+            <text name="animal_rabbitBeddingDescription"            text="A hím nyulak csak vásárolhatók és eladhatók." />
+            <text name="animal_rabbitFoodDescription"               text="A nyulaknak szalmára van szükségük a kényelmükhöz." />
+
+        <text name="geeseProcessing"                     text="Lúd- és kacsafeldolgozás" />
+        <text name="rabbitProcessing"                     text="Nyúlfeldolgozás" />
+        <text name="fillType_leather"              text="Valódi bőr"/>
+        <text name="fillType_leatherJacket"          text="Bőrdzsekik"/>
+        <text name="fillType_pillow"              text="Párnák"/>
+        <text name="fillType_furCoat"              text="Bundák"/>
+        <text name="fillType_feathers"              text="Tollak" />
+        <text name="fillType_rabbitMeat"          text="Nyúlhús" />
+        <text name="fillType_rabbitFur"          text="Nyúlszőrme" />
+        <text name="fillType_poultry2"              text="Baromfi (Lúd és kacsa)" />
+        <text name="fillType_hare"              text="Nyulak" />
+        <text name="fillType_poultry"              text="Baromfi (Tyúk)" />
+
+<text name="fillType_anhydrous"          text="Vízmentes ammónia (NH3)" />
+        <text name="fillType_propane"           text="Propángáz" />
+<text name="shopItem_bakeryFactory"     text="Montana Pékség" />    
+        <text name="shopItem_beerFactory"       text="Yuengling Sörfőzde" />        
+        <text name="shopItem_ethanolFactory"    text="Rocky Mountain Etanolüzem" />    
+        <text name="shopItem_whiskeyFactory"    text="Jack Daniels Whiskey-lepárló" />    
+        <text name="shopItem_dairyFactory"      text="Country View Tejüzem" />    
+        <text name="shopItem_wineFactory"       text="Duckhorn Borászat" />    
+        <text name="shopItem_pizzaFactory"      text="American Pizza Company" />    
+        <text name="shopItem_grainFlourFactory" text="Lisztmalom" />    
+        <text name="shopItem_oilFactory"        text="Olajütő" />    
+    <text name="station_grainSiloTrainC1"     text="Great Plains Gabonakereskedés" />    
+        <text name="station_grainSiloTrainC2"     text="Montana Prairie Gabonatárolók" />    
+        <text name="station_grainSiloTrainC3"     text="Yellowstone Gabonaterminál" />    
+        <text name="station_balesStorageC1"       text="Montana Szénakereskedés" />
+        <text name="station_grainSiloStoreC2"     text="Montana Prairie Mezőgazdasági Bolt" />    
+        <text name="station_grainSiloStoreC3"     text="Flathead Takarmány és Gabona" />    
+        <text name="station_grainSiloStoreC4"     text="Iron Ridge Gabonasiló" />    
+        <text name="station_grainSiloStoreC5"     text="Lone Pine Gabonatársaság" />    
+        <text name="station_grainSiloStoreC6"     text="AgriCore Montana" />
+        <text name="station_productStoreC1"       text="Étterem" />    
+        <text name="station_productStoreC2"       text="Hobson Üzletsor" />    
+        <text name="station_productStoreC3"       text="Hobson Vegyesbolt" />    
+        <text name="station_productStoreC4"       text="Dollar General Áruház" />    
+        <text name="station_productStoreC5"       text="BP Benzinkút" />    
+        <text name="station_productStoreC6"       text="Casey's Benzinkút" />    
+        <text name="station_productStoreC7"       text="Applebee's Étterem" />    
+        <text name="station_productStoreC8"       text="Kodiac Sörfőzde" />    
+        <text name="station_productStoreC9"       text="Moccasin Üzletsor" />    
+        <text name="station_productStoreC10"      text="Moccasin Vegyesbolt" />    
+        <text name="station_productStoreC11"      text="Subway Étterem" />
+	
+	</texts>
+</l10n>

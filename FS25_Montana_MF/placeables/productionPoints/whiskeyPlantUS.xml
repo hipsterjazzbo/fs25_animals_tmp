@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_whiskeyFactory</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>$data/store/store_empty.png</image>
+        <price>240000</price>
+        <showInStore>false</showInStore>
+        <canBeSold>true</canBeSold>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+        <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>0</indexBufferMemoryUsage>
+        <textureMemoryUsage>0</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/productionPoints/whiskeyPlantUS.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <canBeDeleted>false</canBeDeleted>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" />
+
+    <clearAreas></clearAreas>
+
+    <leveling></leveling>
+
+    <indoorAreas>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+        </updateAreas>
+        <splines>
+        </splines>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+    <triggerMarkers>
+        <triggerMarker node="warningStripes01"/>
+        <triggerMarker node="unloadTriggerMarker" adjustToGround="true" filename="$data/shared/assets/marker/markerIconUnload.i3d"/>
+        <triggerMarker node="playerTriggerMarker"                       filename="$data/shared/assets/marker/markerIconWrench.i3d"/>
+    </triggerMarkers>
+
+    <dynamicallyLoadedParts>
+    </dynamicallyLoadedParts>
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="unloadTriggerMarker" teleportNode="playerTriggerMarker" />
+    </hotspots>
+
+    <productionPoint>
+        <productions>
+            <production id="whiskey" name="$l10n_fillType_whiskeyBarrel" cyclesPerHour="20" costsPerActiveHour="15">
+                <inputs>
+                    <input fillType="MAIZE" amount="12" />
+                    <input fillType="MAIZE2" amount="6" />
+                    <input fillType="BARLEY" amount="3" />
+                    <input fillType="WATER" amount="12" />
+                </inputs>
+                <outputs>
+                    <output fillType="WHISKEY_BARREL" amount="8" />
+                </outputs>
+            </production>  
+        </productions>
+
+        <storage isExtension="false" fillLevelSyncThreshold="50">
+            <capacity fillType="WATER"     	capacity="600000" />
+            <capacity fillType="MAIZE"      capacity="960000" />
+            <capacity fillType="MAIZE2"     capacity="960000" />
+            <capacity fillType="BARLEY" 	capacity="960000" />
+            <capacity fillType="WHISKEY_BARREL"    capacity="90000" />
+        </storage>
+
+        <sellingStation node="sellingStation" supportsExtension="false">
+            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="MAIZE MAIZE2 BARLEY WATER"/>
+        </sellingStation>
+
+        <palletSpawner>
+            <spawnPlaces>
+                <spawnPlace startNode="palletAreaStart01" endNode="palletAreaEnd01"/>
+                <spawnPlace startNode="palletAreaStart02" endNode="palletAreaEnd02"/>
+            </spawnPlaces>
+        </palletSpawner>
+
+        <playerTrigger node="playerTrigger" />
+        <sounds>
+            <idle template="cerealFactoryIdle" linkNode="0>" />
+            <active template="cerealFactoryWork" linkNode="0>" />
+        </sounds>		
+    </productionPoint>
+
+    <i3dMappings>
+        
+        
+        <i3dMapping id="infoTrigger" node="0>3" />
+        <i3dMapping id="sellingStation" node="0>4" />
+        <i3dMapping id="unloadTrigger" node="0>4|0" />
+        <i3dMapping id="unloadTriggerMarker" node="0>4|1" />
+        <i3dMapping id="unloadTriggerAINode" node="0>4|2" />
+        <i3dMapping id="playerTrigger" node="0>5|0" />
+        <i3dMapping id="playerTriggerMarker" node="0>5|1" />
+        <i3dMapping id="warningStripes01" node="0>6|0" />
+        <i3dMapping id="palletSpawner" node="0>7" />
+        <i3dMapping id="palletAreaStart01" node="0>7|0" />
+        <i3dMapping id="palletAreaEnd01" node="0>7|0|0" />
+        <i3dMapping id="palletAreaStart02" node="0>7|1" />
+        <i3dMapping id="palletAreaEnd02" node="0>7|1|0" />
+    </i3dMappings>
+</placeable>

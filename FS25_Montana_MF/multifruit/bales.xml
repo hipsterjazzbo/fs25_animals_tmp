@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../shared/xml/schema/mapBales.xsd">
+    <bales>
+        <bale filename="multifruit/objects/bales/roundbale125.xml"/>
+        <bale filename="multifruit/objects/bales/roundbale150.xml"/>
+        <bale filename="multifruit/objects/bales/roundbale180.xml"/>
+
+        <bale filename="multifruit/objects/bales/squarebale240.xml"/>
+        <bale filename="multifruit/objects/bales/squarebale220.xml"/>
+        <bale filename="multifruit/objects/bales/squarebale180.xml"/>
+
+        <bale filename="multifruit/objects/bales/squarebale120.xml"/>
+        <bale filename="multifruit/objects/bales/packedSquareBale120.xml" isAvailable="false"/>
+
+
+        <bale filename="$data/objects/bales/roundbales/roundbale125/roundbale125.xml"/>
+        <bale filename="$data/objects/bales/roundbales/roundbale150/roundbale150.xml"/>
+        <bale filename="$data/objects/bales/roundbales/roundbale180/roundbale180.xml"/>
+
+	<bale filename="multifruit/objects/bales/lavender/lavenderBale238.xml"/>
+        <bale filename="$data/objects/bales/roundbales/cotton/cottonBale238.xml"/>
+        <bale filename="$data/objects/bales/roundbales/biomass/biomassBale125.xml"/>
+
+        <bale filename="$data/objects/bales/squarebales/squarebale240/squarebale240.xml"/>
+        <bale filename="$data/objects/bales/squarebales/squarebale220/squarebale220.xml"/>
+        <bale filename="$data/objects/bales/squarebales/squarebale180/squarebale180.xml"/>
+
+        <bale filename="$data/objects/bales/squarebales/squarebale120/squarebale120.xml"/>
+        <bale filename="$data/objects/bales/squarebales/squarebale120/packedSquareBale120.xml" isAvailable="false"/>
+
+        <bale filename="$data/objects/bales/squarebales/cotton/cottonSquarebale488.xml"/>
+    </bales>
+</map>

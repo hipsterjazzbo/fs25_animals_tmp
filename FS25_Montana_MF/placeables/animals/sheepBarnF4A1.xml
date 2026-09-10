@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="sheepHusbandry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Copper Creek Sheep Barn</name>
+        <image>$data/placeables/rudolfHormann/sheepBarnBig/store_sheepBarnBig.png</image>
+        <price>97000</price>
+		<canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <functions>
+            <function>$l10n_function_animalPenSheep</function>
+            <function>$l10n_function_adjustableMeadow</function>
+        </functions>
+        <lifetime>1000</lifetime>
+        <dailyUpkeep>150</dailyUpkeep>
+        <rotation>0</rotation>
+        <brand>RUDOLFHOERMANN</brand>
+        <species>PLACEABLE</species>
+        <category>animalpens</category>
+        <brush>
+            <type>husbandry</type>
+            <category>animals</category>
+            <tab>sheeps</tab>
+        </brush>
+        <vertexBufferMemoryUsage>868608</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>162560</indexBufferMemoryUsage>
+        <textureMemoryUsage>2293760</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/animals/sheepBarnF4A1.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+		<boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement>
+    </placement>
+
+    <clearAreas>
+    </clearAreas>
+
+    <leveling>
+    </leveling>
+
+    <indoorAreas>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+        </updateAreas>
+    </ai>
+
+    <triggerMarkers>
+        <triggerMarker node="markerFood"    filename="$data/shared/assets/marker/markerIconFood.i3d" />
+        <triggerMarker node="markerAnimals" filename="$data/shared/assets/marker/markerIconAnimals.i3d" />
+        <triggerMarker node="warningStripes01"/>
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="SHEEP" teleportNode="teleportNode" />
+    </hotspots>
+
+    <dynamicallyLoadedParts>
+    </dynamicallyLoadedParts>
+
+    <lights>
+        
+        <realLights>
+            <low>
+                <light node="realLightsLow" groupIndex="1"/>
+            </low>
+            <high>
+                <light node="realLightsHigh" groupIndex="1"/>
+            </high>
+        </realLights>
+
+        <group name="$l10n_action_placeableLightShed" activateTime="17:30" deactivateTime="8:00"/>
+    </lights>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+    <husbandry saveId="Animals_SHEEP" hasStatistics="false">
+        <animals type="SHEEP" maxNumAnimals="500">
+			<navigation rootNode="navigationRootNode" filename="placeables/animals/navMeshSheepF4A1.i3d"/>
+            <loadingTrigger node="loadingTrigger" />
+        </animals>
+
+        <food capacity="120000" >
+            <foodPlane node="foodPlane" minY="0.1" maxY="0.17" changeVisibility="true" defaultFillType="DRYGRASS_WINDROW" />
+            <unloadTrigger exactFillRootNode="exactFillRootNodeFood" />
+            <baleTrigger triggerNode="baleTrigger"/>
+        </food>
+
+        <water automaticWaterSupply="true" />
+
+        <pallets>
+            <palletSpawner fillTypes="WOOL GOATMILK" maxNumPallets="12">
+                <palletTrigger node="palletTrigger" />
+                <spawnPlaces>
+                    <spawnPlace startNode="palletAreaStart01" endNode="palletAreaEnd01" />
+                    <spawnPlace startNode="palletAreaStart02" endNode="palletAreaEnd02" />
+                </spawnPlaces>
+            </palletSpawner>
+        </pallets>
+
+        <meadow>
+            <fruitType name="GRASS" eatableStartGrowthState="greenMiddle" eatableEndGrowthState="harvestReady" eatenGrowthState="greenSmall" />
+            <fruitType name="MEADOW" eatableStartGrowthState="greenMiddle" eatableEndGrowthState="harvestReady" eatenGrowthState="greenSmall" />
+
+            <createTask weedState="0">
+                <fruit type="MEADOW" growthState="greenSmall" />
+                <ground type="NONE" />
+                <terrainGroundType name="grass" />
+            </createTask>
+        </meadow>
+    </husbandry>
+
+    <i3dMappings>
+        <i3dMapping id="palletTrigger" node="0>5|0" />
+        <i3dMapping id="palletAreaStart01" node="0>5|1" />
+        <i3dMapping id="palletAreaEnd01" node="0>5|1|0" />
+        <i3dMapping id="palletAreaStart02" node="0>5|2" />
+        <i3dMapping id="palletAreaEnd02" node="0>5|2|0" />
+        <i3dMapping id="baleTrigger" node="0>6|0" />
+        <i3dMapping id="exactFillRootNodeFood" node="0>6|1" />
+        <i3dMapping id="foodPlane" node="0>6|2" />
+        <i3dMapping id="navigationRootNode" node="0>8" />
+        <i3dMapping id="markerFood" node="0>10|0" />
+        <i3dMapping id="markerAnimals" node="0>10|1" />
+        <i3dMapping id="warningStripes01" node="0>10|2|0" />
+        <i3dMapping id="realLightsLow" node="0>12|0|0" />
+        <i3dMapping id="realLightsHigh" node="0>12|0|1" />
+        <i3dMapping id="teleportNode" node="0>13" />
+        <i3dMapping id="loadingTrigger" node="0>14" />
+        <i3dMapping id="infoTrigger" node="0>15" />
+        <i3dMapping id="controlBox" node="0>16" />
+    </i3dMappings>
+</placeable>

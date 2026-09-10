@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="safflower.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/fruitGrowthFoliageShader.xml"/>
+    <File fileId="26" filename="safflowerStage01LOD1_alpha.png"/>
+    <File fileId="23" filename="safflowerStage01LOD1_diffuse.png"/>
+    <File fileId="24" filename="safflowerStage01LOD1_normal.png"/>
+    <File fileId="25" filename="safflowerStage01LOD1_specular.png"/>
+    <File fileId="6" filename="safflowerStage01_alpha.png"/>
+    <File fileId="1" filename="safflowerStage01_diffuse.png"/>
+    <File fileId="2" filename="safflowerStage01_normal.png"/>
+    <File fileId="3" filename="safflowerStage01_specular.png"/>
+    <File fileId="30" filename="safflowerStage02LOD1_alpha.png"/>
+    <File fileId="27" filename="safflowerStage02LOD1_diffuse.png"/>
+    <File fileId="28" filename="safflowerStage02LOD1_normal.png"/>
+    <File fileId="29" filename="safflowerStage02LOD1_specular.png"/>
+    <File fileId="10" filename="safflowerStage02_alpha.png"/>
+    <File fileId="7" filename="safflowerStage02_diffuse.png"/>
+    <File fileId="8" filename="safflowerStage02_normal.png"/>
+    <File fileId="9" filename="safflowerStage02_specular.png"/>
+    <File fileId="34" filename="safflowerStage03LOD1_alpha.png"/>
+    <File fileId="31" filename="safflowerStage03LOD1_diffuse.png"/>
+    <File fileId="32" filename="safflowerStage03LOD1_normal.png"/>
+    <File fileId="33" filename="safflowerStage03LOD1_specular.png"/>
+    <File fileId="14" filename="safflowerStage03_alpha.png"/>
+    <File fileId="11" filename="safflowerStage03_diffuse.png"/>
+    <File fileId="12" filename="safflowerStage03_normal.png"/>
+    <File fileId="13" filename="safflowerStage03_specular.png"/>
+    <File fileId="38" filename="safflowerStage04LOD1_alpha.png"/>
+    <File fileId="35" filename="safflowerStage04LOD1_diffuse.png"/>
+    <File fileId="36" filename="safflowerStage04LOD1_normal.png"/>
+    <File fileId="37" filename="safflowerStage04LOD1_specular.png"/>
+    <File fileId="18" filename="safflowerStage04_alpha.png"/>
+    <File fileId="15" filename="safflowerStage04_diffuse.png"/>
+    <File fileId="16" filename="safflowerStage04_normal.png"/>
+    <File fileId="17" filename="safflowerStage04_specular.png"/>
+    <File fileId="42" filename="safflowerStage05LOD1_alpha.png"/>
+    <File fileId="39" filename="safflowerStage05LOD1_diffuse.png"/>
+    <File fileId="40" filename="safflowerStage05LOD1_normal.png"/>
+    <File fileId="41" filename="safflowerStage05LOD1_specular.png"/>
+    <File fileId="22" filename="safflowerStage05_alpha.png"/>
+    <File fileId="19" filename="safflowerStage05_diffuse.png"/>
+    <File fileId="20" filename="safflowerStage05_normal.png"/>
+    <File fileId="21" filename="safflowerStage05_specular.png"/>
+    <File fileId="46" filename="safflowerStage06LOD1_alpha.png"/>
+    <File fileId="43" filename="safflowerStage06LOD1_diffuse.png"/>
+    <File fileId="44" filename="safflowerStage06LOD1_normal.png"/>
+    <File fileId="45" filename="safflowerStage06LOD1_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="safflowerStage01_mat" materialId="5" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="alphaMap" fileId="6"/>
+      <CustomParameter name="snowScale" value="0.36"/>
+    </Material>
+    <Material name="safflowerStage01LOD1_mat" materialId="10" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="23"/>
+      <Normalmap fileId="24"/>
+      <Glossmap fileId="25"/>
+      <Custommap name="alphaMap" fileId="26"/>
+      <CustomParameter name="snowScale" value="0.36"/>
+    </Material>
+    <Material name="safflowerStage02_mat" materialId="6" customShaderId="4">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+      <Custommap name="alphaMap" fileId="10"/>
+      <CustomParameter name="snowScale" value="0.36"/>
+    </Material>
+    <Material name="safflowerStage02LOD1_mat" materialId="11" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="27"/>
+      <Normalmap fileId="28"/>
+      <Glossmap fileId="29"/>
+      <Custommap name="alphaMap" fileId="30"/>
+      <CustomParameter name="snowScale" value="0.36"/>
+    </Material>
+    <Material name="safflowerStage03_mat" materialId="7" customShaderId="4">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+      <Custommap name="alphaMap" fileId="14"/>
+      <CustomParameter name="snowScale" value="0.36"/>
+    </Material>
+    <Material name="safflowerStage03LOD1_mat" materialId="12" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="31"/>
+      <Normalmap fileId="32"/>
+      <Glossmap fileId="33"/>
+      <Custommap name="alphaMap" fileId="34"/>
+      <CustomParameter name="snowScale" value="0.36"/>
+    </Material>
+    <Material name="safflowerStage04_mat" materialId="8" customShaderId="4">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+      <Custommap name="alphaMap" fileId="18"/>
+      <CustomParameter name="snowScale" value="0.36"/>
+    </Material>
+    <Material name="safflowerStage04LOD1_mat" materialId="13" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="35"/>
+      <Normalmap fileId="36"/>
+      <Glossmap fileId="37"/>
+      <Custommap name="alphaMap" fileId="38"/>
+      <CustomParameter name="snowScale" value="0.36"/>
+    </Material>
+    <Material name="safflowerStage05_mat" materialId="9" customShaderId="4">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+      <Custommap name="alphaMap" fileId="22"/>
+      <CustomParameter name="snowScale" value="0.36"/>
+    </Material>
+    <Material name="safflowerStage05LOD1_mat" materialId="14" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="39"/>
+      <Normalmap fileId="40"/>
+      <Glossmap fileId="41"/>
+      <Custommap name="alphaMap" fileId="42"/>
+      <CustomParameter name="snowScale" value="0.36"/>
+    </Material>
+    <Material name="safflowerStage06LOD1_mat" materialId="15" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="43"/>
+      <Normalmap fileId="44"/>
+      <Glossmap fileId="45"/>
+      <Custommap name="alphaMap" fileId="46"/>
+      <CustomParameter name="snowScale" value="0.36"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="safflower.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="safflower" static="true" density="0.0001" nodeId="29">
+      <TransformGroup name="LOD0" nodeId="30">
+        <Shape name="greenSmallLOD0" shapeId="1" clipDistance="500" nodeId="31" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="5"/>
+        <Shape name="greenMiddleLOD0" shapeId="2" clipDistance="500" nodeId="32" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="6"/>
+        <Shape name="greenBigLOD0" shapeId="3" clipDistance="500" nodeId="33" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="7"/>
+        <Shape name="harvestReadyLOD0" shapeId="4" clipDistance="500" nodeId="34" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="8"/>
+        <Shape name="deadLOD0" shapeId="5" clipDistance="500" nodeId="35" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="9"/>
+        <Shape name="cutLOD0" shapeId="6" clipDistance="500" nodeId="36" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="8"/>
+      </TransformGroup>
+      <TransformGroup name="LOD1" nodeId="37">
+        <Shape name="greenSmallLOD1" shapeId="7" clipDistance="500" nodeId="38" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="greenMiddleLOD1" shapeId="8" clipDistance="500" nodeId="39" castsShadows="true" receiveShadows="true" materialIds="11"/>
+        <Shape name="greenBigLOD1" shapeId="9" clipDistance="500" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="12"/>
+        <Shape name="harvestReadyLOD1" shapeId="10" clipDistance="500" nodeId="41" castsShadows="true" receiveShadows="true" materialIds="13"/>
+        <Shape name="deadLOD1" shapeId="11" clipDistance="500" nodeId="42" castsShadows="true" receiveShadows="true" materialIds="14"/>
+        <Shape name="cutLOD1" shapeId="12" clipDistance="500" nodeId="43" castsShadows="true" receiveShadows="true" materialIds="15"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

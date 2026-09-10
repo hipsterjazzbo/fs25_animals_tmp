@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<l10n>
+	<translationContributors>BavarianRedneck, MACtheFSSA</translationContributors>
+	<texts>
+		<!--CATTLE-->
+		<text name="animal_cattleF_GS01" text="Это телка. Однажды она станет продуктивной коровой ."/>
+        <text name="animal_cattleF_GS02" text="Это отлученная телка. Отлученные телята уже едят твердую пищу."/>
+        <text name="animal_cattleF_GS03" text="Это телка."/>
+        <text name="animal_cattleF_GS04" text="Это взрослая корова."/>
+		<text name="animal_cattleM_GS01" text="Это теленок-самец. Однажды он станет продуктивным быком ."/>
+        <text name="animal_cattleM_GS02" text="Это отлученный от матери теленок-самец. Отлученные от матери телята уже едят твердую пищу."/>
+		<text name="animal_cattleM_GS03" text="Это молодой бык."/>
+        <text name="animal_cattleM_GS04" text="Этот бык полностью вырос. Его можно продать с прибылью."/>
+        <text name="fillType_cowHolsteinBRC" text="Корова голштинской породы"/>
+		<text name="fillType_bullHolsteinBRC" text="Бык голштинской породы"/>
+        <text name="fillType_cowBrownSwissBRC" text="Корова швейцарской коричневой породы"/>
+        <text name="fillType_bullBrownSwissBRC" text="Бык швейцарской коричневой породы"/>
+		<text name="fillType_cowLimousinBRC" text="Корова лимузин"/>
+        <text name="fillType_bullLimousinBRC" text="Бык лимузин"/>
+        <text name="fillType_cowAngusBRC" text="Корова ангус"/>
+		<text name="fillType_bullAngusBRC" text="Бык породы Ангус"/>
+        <text name="fillType_cowWaterbuffaloBRC" text="Корова породы Водяной буйвол"/>
+        <text name="fillType_bullWaterbuffaloBRC" text="Бык породы Водяной буйвол"/>
+		<text name="shopItem_animalHolstein_F_GS01" text="Телка голштинской породы"/>
+        <text name="shopItem_animalHolstein_F_GS02" text="Отлученная от матери корова голштинской породы"/>
+        <text name="shopItem_animalHolstein_F_GS03" text="Телка голштинской породы"/>
+		<text name="shopItem_animalHolstein_F_GS04" text="Корова голштинской породы"/>
+        <text name="shopItem_animalHolstein_M_GS01" text="Теленок голштинской породы"/>
+        <text name="shopItem_animalHolstein_M_GS02" text="Отлученный от матери бычок голштинской породы"/>
+		<text name="shopItem_animalHolstein_M_GS03" text="Молодой бык голштинской породы"/>
+        <text name="shopItem_animalHolstein_M_GS04" text="Бык голштинской породы"/>
+		<text name="shopItem_animalBrownSwiss_F_GS01" text="Телка породы Браун Швиц"/>
+        <text name="shopItem_animalBrownSwiss_F_GS02" text="Отлученная корова породы Браун Швиц"/>
+        <text name="shopItem_animalBrownSwiss_F_GS03" text="Телка породы Браун Швиц"/>
+		<text name="shopItem_animalBrownSwiss_F_GS04" text="Корова породы Браун Швейцарская"/>
+        <text name="shopItem_animalBrownSwiss_M_GS01" text="Теленок породы Браун Швейцарская"/>
+        <text name="shopItem_animalBrownSwiss_M_GS02" text="Отлученный бычок породы Браун Швейцарская"/>
+		<text name="shopItem_animalBrownSwiss_M_GS03" text="Молодой бык породы Браун Швейцарская"/>
+        <text name="shopItem_animalBrownSwiss_M_GS04" text="Бык породы Браун Швейцарская"/>
+		<text name="shopItem_animalLimousin_F_GS01" text="Телка породы лимузин"/>
+        <text name="shopItem_animalLimousin_F_GS02" text="Отлученная от матери корова породы лимузин"/>
+		<text name="shopItem_animalLimousin_F_GS03" text="Телка лимузинской породы"/>
+        <text name="shopItem_animalLimousin_F_GS04" text="Корова лимузинской породы"/>
+        <text name="shopItem_animalLimousin_M_GS01" text="Теленок лимузинской породы"/>
+		<text name="shopItem_animalLimousin_M_GS02" text="Лимузинский отлученный бычок"/>
+        <text name="shopItem_animalLimousin_M_GS03" text="Лимузинский молодой бык"/>
+        <text name="shopItem_animalLimousin_M_GS04" text="Лимузинский бык"/>
+		<text name="shopItem_animalAngus_F_GS01" text="Телка породы ангус"/>
+        <text name="shopItem_animalAngus_F_GS02" text="Отлученная корова породы ангус"/>
+        <text name="shopItem_animalAngus_F_GS03" text="Телка породы ангус"/>
+		<text name="shopItem_animalAngus_F_GS04" text="Корова ангус"/>
+        <text name="shopItem_animalAngus_M_GS01" text="Теленок ангус"/>
+        <text name="shopItem_animalAngus_M_GS02" text="Самец ангус"/>
+		<text name="shopItem_animalAngus_M_GS03" text="Молодой бык породы Ангус"/>
+        <text name="shopItem_animalAngus_M_GS04" text="Бык породы Ангус"/>
+		<text name="shopItem_animalWaterbuffalo_F_GS01" text="Телка водяной буйвол"/>
+        <text name="shopItem_animalWaterbuffalo_F_GS02" text="Отлученная от матери самка водяного буйвола"/>
+        <text name="shopItem_animalWaterbuffalo_F_GS03" text="Телка водяной буйвол"/>
+		<text name="shopItem_animalWaterbuffalo_F_GS04" text="Корова буйвол"/>
+        <text name="shopItem_animalWaterbuffalo_M_GS01" text="Теленок буйвол"/>
+        <text name="shopItem_animalWaterbuffalo_M_GS02" text="Отлученный от матери бычок буйвол"/>
+		<text name="shopItem_animalWaterbuffalo_M_GS03" text="Молодой бык буйвол"/>
+        <text name="shopItem_animalWaterbuffalo_M_GS04" text="Бык буйвол"/>
+		<!--CHICKEN-->
+		<text name="animal_ChickensF_GS01Description" text="This is a female chick. It will one day grow into a productive laying hen."/>
+		<text name="animal_ChickensF_GS02Description" text="This is a female chick. It will one day grow into a productive laying hen."/>
+		<text name="animal_ChickensF_GS03Description" text="This is a young hen. It will soon start laying eggs."/>
+		<text name="animal_ChickensF_GS04Description" text="This is a fully grown hen."/>
+		<text name="animal_ChickensM_GS01Description" text="This is a male chick. It will one day grow into a productive laying hen."/>
+		<text name="animal_ChickensM_GS02Description" text="This is a male chick. It will one day grow into a productive laying hen."/>
+		<text name="animal_ChickensM_GS03Description" text="This is a young rooster."/>
+		<text name="animal_ChickensM_GS04Description" text="This is a fully grown rooster."/>
+		<text name="fillType_henLohmannBRC" text="Lohmann Hen"/>
+		<text name="fillType_roosterLohmannBRC" text="Lohmann Rooster"/>
+		<text name="fillType_henLeghornBRC" text="Leghorn Hen"/>
+		<text name="fillType_roosterLeghornBRC" text="Leghorn Rooster"/>
+		<text name="fillType_henPlymouthrockBRC" text="Plymouthrock Hen"/>
+		<text name="fillType_roosterPlymouthrockBRC" text="Plymouthrock Rooster"/>
+		<text name="fillType_henBohusdalBRC" text="Bohusdal Hen"/>
+		<text name="fillType_roosterBohusdalBRC" text="Bohusdal Rooster"/>
+		<text name="shopItem_animalLohmann_F_GS01" text="Lohmann Female Chick"/>
+		<text name="shopItem_animalLohmann_F_GS02" text="Lohmann Female Chick"/>
+		<text name="shopItem_animalLohmann_F_GS03" text="Lohmann Young Hen"/>
+		<text name="shopItem_animalLohmann_F_GS04" text="Lohmann Hen"/>
+		<text name="shopItem_animalLohmann_M_GS01" text="Lohmann Male Chick"/>
+		<text name="shopItem_animalLohmann_M_GS02" text="Lohmann Male Chick"/>
+		<text name="shopItem_animalLohmann_M_GS03" text="Lohmann Young Rooster"/>
+		<text name="shopItem_animalLohmann_M_GS04" text="Lohmann Rooster"/>
+		<text name="shopItem_animalLeghorn_F_GS01" text="Leghorn Female Chick"/>
+		<text name="shopItem_animalLeghorn_F_GS02" text="Leghorn Female Chick"/>
+		<text name="shopItem_animalLeghorn_F_GS03" text="Leghorn Young Hen"/>
+		<text name="shopItem_animalLeghorn_F_GS04" text="Leghorn Hen"/>
+		<text name="shopItem_animalLeghorn_M_GS01" text="Leghorn Male Chick"/>
+		<text name="shopItem_animalLeghorn_M_GS02" text="Leghorn Male Chick"/>
+		<text name="shopItem_animalLeghorn_M_GS03" text="Leghorn Young Rooster"/>
+		<text name="shopItem_animalLeghorn_M_GS04" text="Leghorn Rooster"/>
+		<text name="shopItem_animalPlymouthrock_F_GS01" text="Plymouthrock Female Chick"/>
+		<text name="shopItem_animalPlymouthrock_F_GS02" text="Plymouthrock Female Chick"/>
+		<text name="shopItem_animalPlymouthrock_F_GS03" text="Plymouthrock Young Hen"/>
+		<text name="shopItem_animalPlymouthrock_F_GS04" text="Plymouthrock Hen"/>
+		<text name="shopItem_animalPlymouthrock_M_GS01" text="Plymouthrock Male Chick"/>
+		<text name="shopItem_animalPlymouthrock_M_GS02" text="Plymouthrock Male Chick"/>
+		<text name="shopItem_animalPlymouthrock_M_GS03" text="Plymouthrock Young Rooster"/>
+		<text name="shopItem_animalPlymouthrock_M_GS04" text="Plymouthrock Rooster"/>
+		<text name="shopItem_animalBohusdal_F_GS01" text="Bohusdal Female Chick"/>
+		<text name="shopItem_animalBohusdal_F_GS02" text="Bohusdal Female Chick"/>
+		<text name="shopItem_animalBohusdal_F_GS03" text="Bohusdal Young Hen"/>
+		<text name="shopItem_animalBohusdal_F_GS04" text="Bohusdal Hen"/>
+		<text name="shopItem_animalBohusdal_M_GS01" text="Bohusdal Male Chick"/>
+		<text name="shopItem_animalBohusdal_M_GS02" text="Bohusdal Male Chick"/>
+		<text name="shopItem_animalBohusdal_M_GS03" text="Bohusdal Young Rooster"/>
+		<text name="shopItem_animalBohusdal_M_GS04" text="Bohusdal Rooster"/>
+		<!--GOATS-->
+		<text name="animal_GoatsF_GS01Description" text="Это молодая коза."/>
+		<text name="animal_GoatsF_GS02Description" text="Это молодая коза."/>
+        <text name="animal_GoatsF_GS03Description" text="Это молодая коза."/>
+        <text name="animal_GoatsF_GS04Description" text="Это взрослая коза."/>
+		<text name="animal_GoatsM_GS01Description" text="Это молодой козел."/>
+        <text name="animal_GoatsM_GS02Description" text="Это молодой козел."/>
+		<text name="animal_GoatsM_GS03Description" text="Это молодой козел."/>
+        <text name="animal_GoatsM_GS04Description" text="Это взрослый козел."/>
+		<text name="fillType_doeThuringiangoatBRC" text="Коза тюрингской лесной породы"/>
+        <text name="fillType_buckThuringiangoatBRC" text="Козел тюрингской лесной породы"/>
+		<text name="shopItem_animalThuringiangoat_F_GS01" text="Коза-козлёнок из Тюрингии"/>
+        <text name="shopItem_animalThuringiangoat_F_GS02" text="Коза-козлёнок из Тюрингии"/>
+		<text name="shopItem_animalThuringiangoat_F_GS03" text="Молодая коза тюрингской лесной породы"/>
+        <text name="shopItem_animalThuringiangoat_F_GS04" text="Коза тюрингской лесной породы"/>
+		<text name="shopItem_animalThuringiangoat_M_GS01" text="Тюрингский лесной козел, козленок"/>
+        <text name="shopItem_animalThuringiangoat_M_GS02" text="Тюрингский лесной козел, козленок"/>
+		<text name="shopItem_animalThuringiangoat_M_GS03" text="Молодой козел тюрингской лесной породы"/>
+        <text name="shopItem_animalThuringiangoat_M_GS04" text="Козел тюрингской лесной породы"/>
+		<!--SHEEP-->
+		<text name="animal_SheepF_GS01Description" text="Это молодая овца."/>
+        <text name="animal_SheepF_GS02Description" text="Это молодая овца."/>
+        <text name="animal_SheepF_GS03Description" text="Это молодая овца."/>
+		<text name="animal_SheepF_GS04Description" text="Это взрослая овца."/>
+        <text name="animal_SheepM_GS01Description" text="Это молодой баран."/>
+        <text name="animal_SheepM_GS02Description" text="Это молодой баран."/>
+		<text name="animal_SheepM_GS03Description" text="Это молодой баран."/>
+        <text name="animal_SheepM_GS04Description" text="Это взрослый баран."/>
+        <text name="fillType_eweMerinoBRC" text="Овца породы мерино"/>
+		<text name="fillType_ramMerinoBRC" text="Баран породы мерино"/>
+        <text name="fillType_eweSuffolkBRC" text="Овца породы суффолк"/>
+        <text name="fillType_ramSuffolkBRC" text="Баран породы суффолк"/>
+		<text name="fillType_eweMountainsheepBRC" text="Овца горная"/>
+        <text name="fillType_ramMountainsheepBRC" text="Баран горный"/>
+        <text name="shopItem_animalMerino_F_GS01" text="Ягня мериносовая женского пола"/>
+		<text name="shopItem_animalMerino_F_GS02" text="Овечка мериноса"/>
+        <text name="shopItem_animalMerino_F_GS03" text="Молодая овечка мериноса"/>
+        <text name="shopItem_animalMerino_F_GS04" text="Овечка мериноса"/>
+		<text name="shopItem_animalMerino_M_GS01" text="Мерно, ягненок, самец"/>
+        <text name="shopItem_animalMerino_M_GS02" text="Мерно, ягненок, самец"/>
+        <text name="shopItem_animalMerino_M_GS03" text="Мерно, молодой баран"/>
+		<text name="shopItem_animalMerino_M_GS04" text="Баран мериносовой породы"/>
+        <text name="shopItem_animalSuffolk_F_GS01" text="Ягненка суффолкской породы"/>
+        <text name="shopItem_animalSuffolk_F_GS02" text="Ягненка суффолкской породы"/>
+		<text name="shopItem_animalSuffolk_F_GS03" text="Молодая овца породы суффолк"/>
+        <text name="shopItem_animalSuffolk_F_GS04" text="Овца породы суффолк"/>
+        <text name="shopItem_animalSuffolk_M_GS01" text="Ягненок породы суффолк"/>
+		<text name="shopItem_animalSuffolk_M_GS02" text="Самец ягненка породы Саффолк"/>
+        <text name="shopItem_animalSuffolk_M_GS03" text="Молодой баран породы Саффолк"/>
+        <text name="shopItem_animalSuffolk_M_GS04" text="Баран породы Саффолк"/>
+		<text name="shopItem_animalMountainsheep_F_GS01" text="Самка горной овцы"/>
+        <text name="shopItem_animalMountainsheep_F_GS02" text="Самка горной овцы"/>
+		<text name="shopItem_animalMountainsheep_F_GS03" text="Молодая овца горная"/>
+        <text name="shopItem_animalMountainsheep_F_GS04" text="Овца горная"/>
+		<text name="shopItem_animalMountainsheep_M_GS01" text="Самец ягненка горной овцы"/>
+        <text name="shopItem_animalMountainsheep_M_GS02" text="Самец ягненка горной овцы"/>
+		<text name="shopItem_animalMountainsheep_M_GS03" text="Молодой баран горной овцы"/>
+        <text name="shopItem_animalMountainsheep_M_GS04" text="Баран горной овцы"/>
+		<!--PIGS-->
+		<text name="animal_PigsF_GS01Description" text="Это молодая свиноматка."/>
+        <text name="animal_PigsF_GS02Description" text="Это молодая свиноматка."/>
+        <text name="animal_PigsF_GS03Description" text="Это молодая свиноматка. Скоро она впервые окотится."/>
+        <text name="animal_PigsF_GS04Description" text="Это взрослая свиноматка."/>
+        <text name="animal_PigsM_GS01Description" text="Это молодой хряк."/>
+		<text name="animal_PigsM_GS02Description" text="Это молодой поросенок. Его можно продать с прибылью после откорма."/>
+        <text name="animal_PigsM_GS03Description" text="Это молодой хряк. Его можно продать с прибылью."/>
+		<text name="animal_PigsM_GS04Description" text="Это взрослый хряк."/>
+        <text name="fillType_sowLandraceBRC" text="Свиноматка немецкой породы Ландрас"/>
+        <text name="fillType_boarLandraceBRC" text="Хряк немецкой породы Ландрас"/>
+		<text name="fillType_sowPietrainBRC" text="Свиноматка породы Pietrain"/>
+        <text name="fillType_boarPietrainBRC" text="Крыль породы Pietrain"/>
+		<text name="fillType_sowBerkshireBRC" text="Свиноматка породы Беркшир"/>
+        <text name="fillType_boarBerkshireBRC" text="Кнур породы Беркшир"/>
+		<text name="shopItem_animalLandrace_F_GS01" text="Свинка породы Ландрас"/>
+        <text name="shopItem_animalLandrace_F_GS02" text="Свинка породы Ландрас"/>
+		<text name="shopItem_animalLandrace_F_GS03" text="Молодая свиноматка породы Ландрас"/>
+        <text name="shopItem_animalLandrace_F_GS04" text="Свиноматка породы Ландрас"/>
+        <text name="shopItem_animalLandrace_M_GS01" text="Поросенок породы Ландрас"/>
+		<text name="shopItem_animalLandrace_M_GS02" text="Свинозаводчик породы Ландрас"/>
+        <text name="shopItem_animalLandrace_M_GS03" text="Молодой кабан породы Ландрас"/>
+        <text name="shopItem_animalLandrace_M_GS04" text="Кабан породы Ландрас"/>
+		<text name="shopItem_animalPietrain_F_GS01" text="Свинка породы Pietrain"/>
+        <text name="shopItem_animalPietrain_F_GS02" text="Свинка породы Pietrain"/>
+		<text name="shopItem_animalPietrain_F_GS03" text="Молодая свиноматка породы Pietrain"/>
+        <text name="shopItem_animalPietrain_F_GS04" text="Свиноматка породы Pietrain"/>
+        <text name="shopItem_animalPietrain_M_GS01" text="Мальчик поросенок породы Pietrain"/>
+		<text name="shopItem_animalPietrain_M_GS02" text="Свинозаводчик породы Pietrain"/>
+        <text name="shopItem_animalPietrain_M_GS03" text="Молодой кабан породы Pietrain"/>
+        <text name="shopItem_animalPietrain_M_GS04" text="Кабан породы Pietrain"/>
+		<text name="shopItem_animalBerkshire_F_GS01" text="Свинка породы Беркшир"/>
+        <text name="shopItem_animalBerkshire_F_GS02" text="Свинка породы Беркшир"/>
+		<text name="shopItem_animalBerkshire_F_GS03" text="Молодая свиноматка породы Беркшир"/>
+        <text name="shopItem_animalBerkshire_F_GS04" text="Свиноматка породы Беркшир"/>
+        <text name="shopItem_animalBerkshire_M_GS01" text="Поросенок породы Беркшир"/>
+		<text name="shopItem_animalBerkshire_M_GS02" text="Свинозаводчик породы Беркшир"/>
+        <text name="shopItem_animalBerkshire_M_GS03" text="Молодой кабан породы Беркшир"/>
+        <text name="shopItem_animalBerkshire_M_GS04" text="Кабан породы Беркшир"/>
+	</texts>
+</l10n>

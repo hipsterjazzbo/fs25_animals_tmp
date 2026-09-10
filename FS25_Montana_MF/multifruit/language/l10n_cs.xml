@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors>Jinkou89</translationContributors>
+    <languageVersion>1.0.0.0</languageVersion>
+	
+	<texts>
+	  
+	<text name="fillType_rye" 				text="黑麦" />
+	<text name="fillType_soybeanUS"        			text="美洲大豆" />
+	<text name="fillType_covercropmix"        		text="覆盖作物混合物" />
+	<text name="fillType_roundBaleLavender"        		text="薰衣草草垛" />
+	<text name="fillType_clover1"        			text="红三叶草" />
+	<text name="fillType_clover2"        			text="白三叶草" />
+	<text name="fillType_clover_windrow"        		text="三叶草" />
+    	<text name="fillType_alfalfa"       			text="紫苜蓿" />
+	<text name="fillType_cloverSilage"        		text="发酵三叶草" />
+   	<text name="fillType_alfalfaSilage"       		text="发酵紫苜蓿" />
+   	<text name="fillType_cloverHay"     			text="三叶草干草" />
+    	<text name="fillType_alfalfaHay"    			text="紫苜蓿干草" />
+    	<text name="fillType_beanstraw" 			text="豆类秸秆" />
+    	<text name="fillType_cornStalks"    			text="玉米秸秆" />
+	<text name="fillType_flaxFiber"        			text="亚麻纤维" />
+	<text name="fillType_flax"        			text="亚麻" />
+	<text name="fillType_linseed"        			text="亚麻籽" />
+	<text name="fillType_millet"        			text="小米" />
+	<text name="fillType_poppy"        			text="罂粟" />
+	<text name="fillType_drypeas"        			text="干豌豆" />
+	<text name="fillType_beans"        			text="斑豆" />
+	<text name="fillType_mustard"        			text="芥末" />
+	<text name="fillType_lentils"        			text="小扁豆" />
+	<text name="fillType_silphie"        			text="串叶松香草" />
+	<text name="fillType_spelt"        			text="斯佩耳特小麦" />
+	<text name="fillType_triticale"        			text="小黑麦" />
+	<text name="fillType_soybean2"        			text="美洲大豆" />
+	<text name="fillType_tobacco"        			text="烟草" />
+	<text name="fillType_tobaccoo"        			text="烟叶" />      
+	<text name="fillType_compost" 				text="堆肥" />
+	<text name="fillType_organicWaste" 			text="有机废物" />
+	<text name="fillType_grapeA" 				text="红葡萄" />
+	<text name="fillType_grapeB" 				text="白葡萄" />
+	<text name="fillType_chickpeas" 			text="鹰嘴豆" />
+	<text name="fillType_buckwheat" 			text="荞麦" />
+	<text name="shopItem_grapeb_vine" 			text="白葡萄藤" />
+	<text name="shopItem_hopsVine" 				text="啤酒花藤" />
+	<text name="fillType_hemp" 				text="大麻" />
+	<text name="fillType_hempFiber" 			text="大麻纤维" />
+	<text name="fillType_lavender" 				text="薰衣草" />
+	<text name="fillType_potatoCut"        			text="切碎的土豆" />
+	<text name="fillType_beetrootCut"        		text="切碎的甜菜根" />
+	<text name="fillType_carrotCut"        			text="切碎的胡萝卜" />
+	<text name="fillType_parsnipCut"        		text="切碎的防风草" />  
+	<text name="fillTypeGroup_TMR"        			text="全混合日粮，发酵紫苜蓿/三叶草" />	  
+	<text name="fillTypeGroup_hays"        			text="干草，紫苜蓿/三叶草干草" />
+	<text name="fillTypeGroup_grassa"        		text="草，新鲜紫苜蓿/三叶草" />
+	<text name="fillTypeGroup_moisture"        		text="水分：切碎的块茎作物" />
+	<text name="fillTypeGroup_grassHay"        		text="新鲜/干草 牧草/紫苜蓿/三叶草" />
+	<text name="fillType_mineralFeed1"        		text="矿物质饲料/干豌豆" />
+	<text name="fillTypeGroup_pigForage"        		text="猪用混合饲料/猪食" />
+	<text name="fillType_peanut" 				text="花生" />
+	<text name="fillType_miscanthus" 			text="芒属植物" />
+	<text name="fillType_miscanthusCut" 			text="芒属植物" />
+
+
+		<text name="fillType_maize2" 			text="干玉米" />
+		<text name="fillType_soymilk" 			text="豆奶" />
+		<text name="fillType_pasta" 			text="面食" />
+		<text name="fillType_chips" 			text="薯片" />
+		<text name="fillType_ethanol" 			text="乙醇" />
+		<text name="fillType_cornflour"			text="玉米粉" />
+		<text name="fillType_cornOil"			text="玉米油" />
+		<text name="fillType_linseedOil"		text="亚麻籽油" />
+		<text name="fillType_mustardOil"		text="芥末油" />
+		<text name="fillType_poppyOil"			text="罂粟油" />
+		<text name="fillType_pizza"			text="比萨" />
+		<text name="fillType_buckwheatflour"        	text="荞麦粉" />
+		<text name="fillType_gramflour"        		text="鹰嘴豆粉" />
+		<text name="fillType_milletflour"        	text="小米粉" />
+		<text name="fillType_ryeflour"        		text="黑麦粉" />
+		<text name="fillType_sorghumflour"        	text="高粱粉" />
+		<text name="fillType_crackedCorn"        	text="破碎玉米" />
+		<text name="fillType_apple"        		text="苹果" />
+		<text name="fillType_apricot"        		text="杏" />
+		<text name="fillType_cherry"        		text="樱桃" />
+		<text name="fillType_pear"        		text="梨" />
+		<text name="fillType_peach"        		text="桃" />
+		<text name="fillType_plum"        		text="李子" />
+		<text name="fillType_quince"        		text="木瓜" />
+		<text name="fillType_cabbage"        		text="卷心菜" />
+		<text name="fillType_redCabbage"        	text="紫甘蓝" />
+		<text name="fillType_melon"        		text="甜瓜" />
+		<text name="fillType_pumpkin"        		text="南瓜" />
+		<text name="fillType_watermelon"        	text="西瓜" />
+		<text name="fillType_cucumber"        		text="黄瓜" />
+		<text name="fillType_eggplant"        		text="茄子" />
+		<text name="fillType_pepper"        		text="辣椒" />
+		<text name="fillType_cauliflower" 		text="花椰菜" />
+		<text name="fillType_bran"        		text="麸皮" />
+		<text name="fillType_molasses"        		text="糖蜜" />
+		<text name="fillType_appleJuice"        	text="苹果汁" />
+		<text name="fillType_apricotJuice"        	text="杏汁" />
+		<text name="fillType_beetrootJuice"        	text="甜菜根汁" />
+		<text name="fillType_carrotJuice"        	text="胡萝卜汁" />
+		<text name="fillType_cherryJuice"        	text="樱桃汁" />
+		<text name="fillType_melonJuice"        	text="甜瓜汁" />
+		<text name="fillType_multifruitJuice"        	text="多果汁" />
+		<text name="fillType_peachJuice"        	text="桃汁" />
+		<text name="fillType_pearJuice"        		text="梨汁" />
+		<text name="fillType_plumJuice"        		text="李子汁" />
+		<text name="fillType_quinceJuice"        	text="木瓜汁" />
+		<text name="fillType_strawberryJuice"        	text="草莓汁" />
+		<text name="fillType_tomatoJuice"        	text="番茄汁" />
+		<text name="fillType_watermelonJuice"        	text="西瓜汁" />
+ 		<text name="fillType_cattle" 			text="牛" />
+		<text name="fillType_pigs" 			text="猪" />
+		<text name="fillType_sheepGoat" 		text="绵羊/山羊" />
+ 		<text name="fillType_beef" 			text="牛肉" />
+		<text name="fillType_pork" 			text="猪肉" />
+		<text name="fillType_poultryMeat" 		text="禽肉" />
+		<text name="fillType_lamb" 			text="羔羊肉" />
+		<text name="fillType_cigar" 			text="雪茄" />
+		<text name="fillType_cigarette" 		text="香烟" />
+		<text name="fillType_animalFat" 		text="动物脂肪" />
+		<text name="fillType_perfume" 			text="香水" />
+		<text name="fillType_soap" 			text="肥皂" />
+		<text name="fillType_lavenderOil" 		text="薰衣草精油" />
+		<text name="fillType_bourbonBarrel" 		text="波本威士忌" />
+		<text name="fillType_brandyBarrel" 		text="白兰地" />
+		<text name="fillType_ciderBarrel" 		text="苹果酒" />
+		<text name="fillType_meadBarrel" 		text="蜂蜜酒" />
+		<text name="fillType_liqueurBarrel" 		text="水果利口酒" />
+		<text name="fillType_vodkaBarrel" 		text="伏特加" />
+		<text name="fillType_whiskeyBarrel" 		text="威士忌" />
+		<text name="fillType_rumBarrel" 		text="朗姆酒" />
+		<text name="fillType_peanutflour" 		text="花生粉" />
+		<text name="fillType_peanutOil" 		text="花生油" />
+		<text name="fillType_peanutButter" 		text="花生酱" />
+		<text name="fillType_mayo" 			text="蛋黄酱" />
+		<text name="fillType_ketchup" 			text="番茄酱" />
+		<text name="fillType_hotSauce" 			text="辣酱" />
+		<text name="fillType_soySauce" 			text="酱油" />
+		<text name="fillType_garlicSauce" 		text="蒜蓉酱" />
+		<text name="fillType_mustardSauce" 		text="芥末酱" />
+		<text name="fillType_pickledCucumber" 		text="腌黄瓜" />
+		<text name="fillType_pickledCabbage" 		text="腌卷心菜" />
+		<text name="fillType_pickledCauliflower" 	text="腌花椰菜" />
+		<text name="fillType_beansSoup" 		text="豆子汤" />
+		<text name="fillType_peanutBags" 		text="袋装花生" />
+		<text name="fillType_beansBags" 		text="袋装豆子" />
+		<text name="fillType_cannedBeans" 		text="罐装豆子" />
+		<text name="fillType_tofu" 			text="豆腐" />
+		<text name="fillType_chocomilk" 		text="巧克力奶" />
+		<text name="fillType_oatmilk" 			text="燕麦奶" />
+		<text name="fillType_mushroomSoup" 		text="蘑菇汤" />
+		<text name="fillType_beer" 			text="啤酒" />
+		<text name="fillType_wine" 			text="葡萄酒" />
+		<text name="fillType_icecream" 			text="冰淇淋" />
+		<text name="fillType_sourcream" 		text="酸奶油" />
+		<text name="fillType_yoghurt" 			text="酸奶" />
+		<text name="fillType_sunflowerBags" 		text="袋装葵花籽" />
+		<text name="fillType_pumpkinSeeds" 		text="袋装南瓜籽" />
+		<text name="fillType_pumpkinPuree" 		text="南瓜泥" />
+		<text name="fillType_eggplantPuree" 		text="茄子泥" />
+		<text name="fillType_popcorn" 			text="爆米花" />
+		<text name="fillType_cheesePuffs" 		text="芝士球" />
+		<text name="fillType_peanutPuffs" 		text="花生泡芙" />
+		<text name="fillType_tortilla" 			text="玉米片" />
+		<text name="fillType_garlicBread" 		text="大蒜面包" />
+		<text name="fillType_onionRings" 		text="洋葱圈" />
+		<text name="fillType_pie" 			text="水果派" />
+		<text name="fillType_cocoaPowder" 		text="可可粉" />
+		<text name="fillType_cookingSalt" 		text="食用盐" />
+		<text name="fillType_yeast" 		 	text="酵母" />
+		<text name="fillType_roulade"                   text="肉卷" />
+		<text name="fillType_strudel"                   text="果馅卷" />
+		<text name="fillType_milkBread"                 text="牛奶面包" />
+		<text name="fillType_potatoBread"               text="土豆面包" />
+		<text name="fillType_sweetBread"                text="甜面包" />
+		<text name="fillType_bagel"                     text="贝果" />
+		<text name="fillType_baguette" 			text="法棍"/>
+		<text name="fillType_hops" 			text="啤酒花"/>
+		<text name="fillType_cowFood" 			text="牛饲料颗粒"/>
+		<text name="fillType_hayPellets" 		text="干草颗粒"/>
+		<text name="fillType_strawPellets" 		text="秸秆颗粒"/>
+		<text name="fillType_woodChipsPellets" 		text="木屑颗粒"/>
+		<text name="fillType_chocoCake" 		text="巧克力蛋糕"/>
+		<text name="fillType_sesame" 			text="芝麻"/>
+		<text name="fillType_sesameOil" 		text="芝麻油"/>
+		<text name="fillType_sesameBags" 		text="袋装芝麻籽"/>
+		<text name="fillType_chickpeasBags" 		text="袋装鹰嘴豆"/>
+		<text name="fillType_lentilsBags" 		text="袋装小扁豆"/>
+		<text name="fillType_sesameRolls" 		text="蜂蜜芝麻条"/>
+		<text name="fillType_hummus" 			text="鹰嘴豆泥"/>
+
+	<text name="pigProcessing"        			text="猪肉加工" />
+		<text name="poultryProcessing"        			text="鸡肉加工" />
+		<text name="cattleProcessing"        			text="牛肉加工" />
+		<text name="sheepProcessing"        			text="羊肉加工" />
+		<text name="message_unloadAnimalSuccess" 		text="动物成功移动到 %s！" />
+        	<text name="message_unloadAnimalConfirmation" 		text="你想移动 %d 个动物 (%s) 到 %s 吗？" />
+        	<text name="button_moveAnimal" 				text="移动到 %s" />
+		<text name="message_animalTooYoung" 			text="该动物太小了。" />
+		<text name="message_animalTooOld" 			text="该动物太老了。" />
+        	<text name="configuration_grapeB" 			text="白葡萄"/>
+        	<text name="configuration_hops" 			text="啤酒花"/>
+		<text name="function_fermentingTower" 			text="在此设施中，你可以发酵牧草、糠、紫苜蓿或三叶草。" />
+		<text name="function_grainDryer" 			text="在此设施中，你可以烘干玉米。" />
+		<text name="function_hopsVine" 			        text="生长啤酒花的藤蔓。你需要多功能葡萄收割机来收割啤酒花。" />
+		<text name="function_buyingPoint" 			text="你可以从该站批量购买几乎所有东西。" />
+
+
+	<text name="shopItem_appleOrchard" 		text="小型苹果园" />	
+		<text name="shopItem_apricotOrchard" 		text="小型杏园" />	
+		<text name="shopItem_appleTree" 		text="苹果树" />	
+		<text name="shopItem_apricotTree" 		text="杏树" />
+		<text name="shopItem_cherryOrchard" 		text="小型樱桃园" />	
+		<text name="shopItem_pearOrchard" 		text="小型梨园" />	
+		<text name="shopItem_cherryTree" 		text="樱桃树" />	
+		<text name="shopItem_pearTree" 			text="梨树" />	
+		<text name="shopItem_peachOrchard" 		text="小型桃园" />	
+		<text name="shopItem_peachTree" 		text="桃树" />		
+		<text name="shopItem_plumOrchard" 		text="小型李子园" />	
+		<text name="shopItem_plumTree" 			text="李子树" />		
+		<text name="shopItem_quinceOrchard" 		text="小型木瓜园" />	
+		<text name="shopItem_quinceTree" 		text="木瓜树" />	
+		<text name="shopItem_grainCrusher" 		text="谷物破碎机" />	
+		<text name="shopItem_juiceFactory" 		text="果汁厂" />
+		<text name="shopItem_slaughterHouse" 		text="屠宰场" />
+		<text name="shopItem_tobaccoProd" 		text="烟草厂" />
+		<text name="shopItem_lavenderProd" 		text="薰衣草加工厂" />
+		<text name="shopItem_openGarden" 		text="露天花园" />
+		<text name="shopItem_distillery" 		text="蒸馏厂" />
+		<text name="shopItem_preservedFood" 		text="食品罐头厂" />
+		<text name="shopItem_foodProd" 			text="小吃生产厂" />
+		<text name="shopItem_fermentingTower" 		text="发酵塔" />
+		<text name="shopItem_wineCellar" 		text="啤酒和葡萄酒窖" />
+		<text name="shopItem_grainDryer" 		text="玉米烘干机" />
+		<text name="shopItem_openGardenFieldCrops" 	text="露天田间作物花园" />
+		<text name="shopItem_industrialGreenhouse" 	text="工业温室" />
+		<text name="shopItem_vegetarianProd" 		text="素食生产厂" />
+		<text name="shopItem_pelletizer" 		text="颗粒制造机" />
+		<text name="shopItem_buyingPoint1" 		text="多功能购买站" />
+		<text name="shopItem_buyingPoint2" 		text="多功能购买站（折扣）" />
+
+
+		<text name="shopItem_jamProd" 				text="果酱厂" />
+		<text name="fillType_edamame" 				text="毛豆（青大豆）"/>
+		<text name="fillType_taro" 				text="芋头"/>
+		<text name="fillType_okra" 				text="秋葵"/>
+		<text name="fillType_mint" 				text="薄荷"/>
+		<text name="fillType_greenRye" 				text="绿黑麦" />
+		<text name="fillType_taroCut" 				text="切碎的芋头" />
+		<text name="fillType_taroFlour" 			text="芋头粉" />
+		<text name="fillType_taroSoup" 				text="芋头汤" />
+		<text name="fillType_taroChips" 			text="芋头片" />
+		<text name="fillType_muffin" 				text="玛芬" />
+		<text name="fillType_donut" 				text="甜甜圈" />
+		<text name="fillType_ccm" 				text="发酵玉米碎混合物" />
+		<text name="fillType_ccmraw" 				text="玉米碎混合物" />
+		<text name="fillType_cropWindrow" 			text="全作物糠" />
+		<text name="fillType_cropSilage" 			text="全作物青贮" />
+		<text name="fillType_grassSilage" 			text="牧草青贮" />
+		<text name="fillType_safflower" 			text="红花" />
+		<text name="fillType_appleJam"        			text="苹果酱" />
+		<text name="fillType_apricotJam"        		text="杏酱" />
+		<text name="fillType_cherryJam"        			text="樱桃酱" />
+		<text name="fillType_grapeJam"        			text="葡萄酱" />
+		<text name="fillType_melonJam"        			text="甜瓜酱" />
+		<text name="fillType_peachJam"        			text="桃酱" />
+		<text name="fillType_pearJam"        			text="梨酱" />
+		<text name="fillType_plumJam"        			text="李子酱" />
+		<text name="fillType_strawberryJam"        		text="草莓酱" />
+		<text name="fillType_quinceJam"        			text="木瓜酱" />
+		<text name="fillType_safflowerOil" 			text="红花油" />
+		<text name="fillType_mintOil" 				text="薄荷精油"/>
+		<text name="fillType_mintBarrel" 			text="薄荷利口酒"/>
+		<text name="fillType_jarredOkra"        		text="瓶装秋葵" />
+		<text name="fillType_jarredEdamame"        		text="瓶装毛豆" />
+<text name="fillType_duckEgg"                 text="鸭蛋"/>
+        <text name="shopItem_duckGooseBarn"             text="鸭鹅舍"/>
+        <text name="shopItem_duckGoosePasture"             text="鸭鹅牧场"/>
+        <text name="shopItem_rabbitHutch"             text="兔笼"/>
+        <text name="function_animalPenDuck"             text="这里可以饲养鸭子和鹅。给它们喂食并铺上稻草垫料，即可获得鸭蛋和厩肥。"/>
+        <text name="function_animalPenRabbit"             text="这里可以饲养兔子。给它们喂食并铺上稻草垫料。待其长大后，你可以卖掉它们获利。"/>
+        <text name="fillTypeGroup_clover"                text="新鲜三叶草" />
+        <text name="fillTypeGroup_fruitVegetables"             text="水果和蔬菜" />
+
+    <text name="fillType_goose"                            text="鹅" />
+        <text name="animal_group_goose"                        text="鹅与鸭" />
+        <text name="shopItem_animalGooseGrowthStage0"           text="幼鹅" />
+        <text name="shopItem_animalGooseGrowthStage1"           text="鹅" />
+        <text name="animal_descriptionGooseProfitGrowthStage0" text="幼鹅可以育肥，然后出售获利。" />
+        <text name="animal_descriptionGooseProfitGrowthStage1" text="鹅可以进行繁育，然后出售获利。" />
+        <text name="animal_descriptionGooseFeed"               text="像喂鸡一样喂养它们。根据住房类型的不同，水分将自动供应。" />
+        <text name="animal_descriptionGooseReproduction"       text="鹅在 10 个月大时达到性成熟。繁殖季节持续一个月。" />
+
+    <text name="fillType_duck"                             text="鸭" />
+        <text name="shopItem_animalDuckGrowthStage0"           text="小鸭" />
+        <text name="animal_duckGrowthStage0Description"        text="小鸭还不会产蛋。它们适合用于繁育或直接出售。" />    
+        <text name="shopItem_animalDuckGrowthStage1"           text="鸭" />    
+        <text name="animal_duckGrowthStage1Description"        text="鸭子产下的蛋可以在销售点出售，或者在你的生产设施中进行进一步加工。" />    
+        <text name="animal_poultryFoodDescription"             text="家禽需要谷物和水才能生产。注意：部分禽舍配备了自动供水系统，这种情况下无需手动加水。" />
+        
+         <text name="fillType_rabbit"                            text="母兔" />
+            <text name="fillType_rabbitMale"                        text="公兔" />
+            <text name="animal_group_rabbits"                       text="兔子" />
+            <text name="shopItem_animalRabbitGrowthStage0"          text="幼兔（幼崽）" />
+            <text name="shopItem_animalRabbitGrowthStage1"          text="幼兔（青年）" />
+            <text name="shopItem_animalRabbitGrowthStage2"          text="母兔" />
+            <text name="shopItem_animalRabbitGrowthStage3"          text="公兔" />
+            <text name="animal_rabbitGrowthStage0Description"       text="兔宝宝是该物种中年龄最小的。它们不能单独购买，由母畜生产。" />
+            <text name="animal_rabbitGrowthStage1Description"       text="青年兔可用于繁育。" />
+            <text name="animal_rabbitGrowthStage2Description"       text="母兔可以产崽或出售。后代的体型比青年兔更小、年龄更小。" />
+            <text name="animal_rabbitGrowthStage3Description"       text="公兔。" />
+            <text name="animal_rabbitBeddingDescription"            text="公兔仅能通过买卖获得。" />
+            <text name="animal_rabbitFoodDescription"               text="兔子需要稻草来保持舒适感。" />
+
+        <text name="geeseProcessing"                     text="鹅鸭加工" />
+        <text name="rabbitProcessing"                     text="兔子加工" />
+        <text name="fillType_leather"              text="真皮"/>
+        <text name="fillType_leatherJacket"          text="皮夹克"/>
+        <text name="fillType_pillow"              text="枕头"/>
+        <text name="fillType_furCoat"              text="皮草大衣"/>
+        <text name="fillType_feathers"              text="羽毛" />
+        <text name="fillType_rabbitMeat"          text="兔肉" />
+        <text name="fillType_rabbitFur"          text="兔皮" />
+        <text name="fillType_poultry2"              text="家禽（鹅与鸭）" />
+        <text name="fillType_hare"              text="兔子" />
+        <text name="fillType_poultry"              text="家禽（鸡）" />
+
+<text name="fillType_anhydrous"          text="无水氨 (NH3)" />
+        <text name="fillType_propane"           text="丙烷气" />
+<text name="shopItem_bakeryFactory"     text="蒙大拿烘焙坊" />    
+        <text name="shopItem_beerFactory"       text="云岭啤酒厂" />        
+        <text name="shopItem_ethanolFactory"    text="落基山乙醇工厂" />    
+        <text name="shopItem_whiskeyFactory"    text="杰克丹尼威士忌酒厂" />    
+        <text name="shopItem_dairyFactory"      text="乡景乳制品厂" />    
+        <text name="shopItem_wineFactory"       text="德克霍恩酒庄" />    
+        <text name="shopItem_pizzaFactory"      text="全美披萨公司" />    
+        <text name="shopItem_grainFlourFactory" text="面粉厂" />    
+        <text name="shopItem_oilFactory"        text="榨油厂" />    
+    <text name="station_grainSiloTrainC1"     text="大平原粮食公司" />    
+        <text name="station_grainSiloTrainC2"     text="蒙大拿草原粮仓" />    
+        <text name="station_grainSiloTrainC3"     text="黄石粮食终点站" />    
+        <text name="station_balesStorageC1"       text="蒙大拿干草公司" />
+        <text name="station_grainSiloStoreC2"     text="蒙大拿草原农业供应站" />    
+        <text name="station_grainSiloStoreC3"     text="夫拉特海德饲料粮食店" />    
+        <text name="station_grainSiloStoreC4"     text="铁岭粮仓" />    
+        <text name="station_grainSiloStoreC5"     text="孤松粮食公司" />    
+        <text name="station_grainSiloStoreC6"     text="蒙大拿 AgriCore" />
+        <text name="station_productStoreC1"       text="餐厅" />    
+        <text name="station_productStoreC2"       text="霍布森购物街" />    
+        <text name="station_productStoreC3"       text="霍布森杂货铺" />    
+        <text name="station_productStoreC4"       text="达乐公司 (Dollar General)" />    
+        <text name="station_productStoreC5"       text="英国石油 (BP) 加油站" />    
+        <text name="station_productStoreC6"       text="凯西 (Casey's) 加油站" />    
+        <text name="station_productStoreC7"       text="苹果蜂 (Applebee's) 餐厅" />    
+        <text name="station_productStoreC8"       text="科迪亚克啤酒厂" />    
+        <text name="station_productStoreC9"       text="莫卡辛购物街" />    
+        <text name="station_productStoreC10"      text="莫卡辛杂货铺" />    
+        <text name="station_productStoreC11"      text="赛百味 (Subway) 分店" />
+	
+	</texts>
+</l10n>

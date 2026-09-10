@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="grapeEffects" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="5" filename="$data/effects/grape/arrays/fruitArray4x12.png" />
+    <File fileId="1" filename="hops_diffuse.png" />
+    <File fileId="3" filename="$data/placeables/orchards/grape/grape_fmask.png" />
+    <File fileId="2" filename="$data/placeables/orchards/grape/grape_normal.png" />
+    <File fileId="4" filename="$data/shaders/motionPathShader.xml" />
+  </Files>
+
+  <Materials>
+    <Material name="grape_mat1" materialId="1" customShaderId="4">
+      <Custommap name="shapeArray" fileId="5"/>
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="grape_fruitsClean.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="grapeEffects_fruitsClean" nodeId="1">
+      <TransformGroup name="grapeEffects_fruitsClean_meshes" nodeId="2">
+        <TransformGroup name="grapeEffects_fruitsClean_nr2_rl16_root" nodeId="3">
+          <Shape name="grapeEffects_fruitsClean_nr2_rl16_v1" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" nodeId="4"/>
+          <Shape name="grapeEffects_fruitsClean_nr2_rl16_v2" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="1" nodeId="5"/>
+        </TransformGroup>
+        <TransformGroup name="grapeEffects_fruitsClean_nr4_rl12_root" nodeId="6">
+          <Shape name="grapeEffects_fruitsClean_nr4_rl12_v1" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="1" nodeId="7"/>
+          <Shape name="grapeEffects_fruitsClean_nr4_rl12_v2" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="1" nodeId="8"/>
+        </TransformGroup>
+        <TransformGroup name="grapeEffects_fruitsClean_nr8_rl12_root" nodeId="9">
+          <Shape name="grapeEffects_fruitsClean_nr8_rl12_v1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="1" nodeId="10"/>
+          <Shape name="grapeEffects_fruitsClean_nr8_rl12_v2" shapeId="6" castsShadows="true" receiveShadows="true" materialIds="1" nodeId="11"/>
+        </TransformGroup>
+        <TransformGroup name="grapeEffects_fruitsClean_nr4_rl24_root" nodeId="12">
+          <Shape name="grapeEffects_fruitsClean_nr4_rl24_v1" shapeId="7" castsShadows="true" receiveShadows="true" materialIds="1" nodeId="13"/>
+          <Shape name="grapeEffects_fruitsClean_nr4_rl24_v2" shapeId="8" castsShadows="true" receiveShadows="true" materialIds="1" nodeId="14"/>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

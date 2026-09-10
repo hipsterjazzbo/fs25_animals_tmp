@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="grapeEffects" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="5" filename="$data/effects/grape/arrays/threshingArray10x36.png" />
+    <File fileId="1" filename="hops_diffuse.png" />
+    <File fileId="3" filename="$data/placeables/orchards/grape/grape_fmask.png" />
+    <File fileId="2" filename="$data/placeables/orchards/grape/grape_normal.png" />
+    <File fileId="4" filename="$data/shaders/motionPathShader.xml" />
+  </Files>
+
+  <Materials>
+    <Material name="grape_mat3" materialId="1" customShaderId="4" customShaderVariation="rotateByLife_cosOffsetY">
+      <CustomParameter name="rotateSpeed" value="15.0 0 0 0"/>
+      <Custommap name="shapeArray" fileId="5"/>
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="grape_threshing.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="grapeEffects_threshing" nodeId="1">
+      <TransformGroup name="grapeEffects_threshing_meshes" nodeId="2">
+        <TransformGroup name="grapeEffects_threshing_nr10_rl36_root" nodeId="3">
+          <Shape name="grapeEffects_threshing_nr10_rl36_v1" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" nodeId="4"/>
+          <Shape name="grapeEffects_threshing_nr10_rl36_v2" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="1" nodeId="5"/>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

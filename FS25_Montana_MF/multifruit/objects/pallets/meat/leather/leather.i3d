@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="leather" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="leather_diffuse.dds"/>
+    <File fileId="3" filename="leather_normal.dds"/>
+    <File fileId="4" filename="$data/objects/pallets/fabricsPallet/fabrics_specular.png"/>
+    <File fileId="5" filename="$data/shaders/colorShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="fabrics_mat" materialId="5" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="color" value="0 0 0"/>
+    </Material>
+    <Material name="fabrics_mat" materialId="6" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="color" value="0 0 1"/>
+    </Material>
+    <Material name="fabrics_mat" materialId="7" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="color" value="0 0.35 0"/>
+    </Material>
+    <Material name="fabrics_mat" materialId="8" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="color" value="0.2 0 1"/>
+    </Material>
+    <Material name="fabrics_mat" materialId="9" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="color" value="0.471604 0 0"/>
+    </Material>
+    <Material name="fabrics_mat" materialId="10" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="color" value="0.472 0 0"/>
+    </Material>
+    <Material name="fabrics_mat" materialId="11" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="color" value="0.472 0.2 0"/>
+    </Material>
+    <Material name="fabrics_mat" materialId="12" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="fabrics_mat" materialId="13" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="color" value="0.8 0.4 0"/>
+    </Material>
+    <Material name="fabrics_mat" materialId="14" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="color" value="1 1 1"/>
+    </Material>
+    <Material name="lambert1" materialId="15" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="leather.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="grapeleatherettePallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="21" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="15">
+      <Shape name="dynamicMountTrigger" translation="0 0.0904753 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x8000000" collisionFilterMask="0x8000000" nodeId="183" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="15"/>
+      <TransformGroup name="content" nodeId="22">
+        <Shape name="fabrics01" translation="0.445787 0.144671 0" shapeId="3" clipDistance="100" nodeId="23" castsShadows="true" receiveShadows="true" materialIds="7">
+          <Shape name="fabrics01Tension" shapeId="4" visibility="false" nodeId="24" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="15"/>
+        </Shape>
+        <Shape name="fabrics02" translation="0.144161 0.144671 0" shapeId="3" clipDistance="100" nodeId="25" castsShadows="true" receiveShadows="true" materialIds="14">
+          <Shape name="fabrics02Tension" shapeId="4" visibility="false" nodeId="26" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="15"/>
+        </Shape>
+        <Shape name="fabrics03" translation="-0.155526 0.144671 0" shapeId="3" clipDistance="100" nodeId="27" castsShadows="true" receiveShadows="true" materialIds="6">
+          <Shape name="fabrics03Tension" shapeId="4" visibility="false" nodeId="28" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="15"/>
+        </Shape>
+        <Shape name="fabrics04" translation="-0.453613 0.144671 0" shapeId="3" clipDistance="100" nodeId="29" castsShadows="true" receiveShadows="true" materialIds="12">
+          <Shape name="fabrics04Tension" shapeId="4" visibility="false" nodeId="30" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="15"/>
+        </Shape>
+        <Shape name="fabrics05" translation="0.445787 0.244671 0" shapeId="3" clipDistance="100" nodeId="31" castsShadows="true" receiveShadows="true" materialIds="5">
+          <Shape name="fabrics05Tension" shapeId="4" visibility="false" nodeId="32" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="15"/>
+        </Shape>
+        <Shape name="fabrics06" translation="0.144161 0.244671 0" shapeId="3" clipDistance="100" nodeId="33" castsShadows="true" receiveShadows="true" materialIds="10">
+          <Shape name="fabrics06Tension" shapeId="4" visibility="false" nodeId="34" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="15"/>
+        </Shape>
+        <Shape name="fabrics07" translation="-0.155526 0.244671 0" shapeId="3" clipDistance="100" nodeId="35" castsShadows="true" receiveShadows="true" materialIds="5">
+          <Shape name="fabrics07Tension" shapeId="4" visibility="false" nodeId="36" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="15"/>
+        </Shape>
+        <Shape name="fabrics08" translation="-0.453613 0.244671 0" shapeId="3" clipDistance="100" nodeId="37" castsShadows="true" receiveShadows="true" materialIds="14">
+          <Shape name="fabrics08Tension" shapeId="4" visibility="false" nodeId="38" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="15"/>
+        </Shape>
+        <Shape name="fabrics09" translation="0.445787 0.344671 0" shapeId="3" clipDistance="100" nodeId="39" castsShadows="true" receiveShadows="true" materialIds="5">
+          <Shape name="fabrics09Tension" shapeId="4" visibility="false" nodeId="40" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="15"/>
+        </Shape>
+        <Shape name="fabrics10" translation="0.144161 0.344671 0" shapeId="3" clipDistance="100" nodeId="41" castsShadows="true" receiveShadows="true" materialIds="12">
+          <Shape name="fabrics10Tension" shapeId="4" visibility="false" nodeId="42" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="15"/>
+        </Shape>
+        <Shape name="fabrics11" translation="-0.155526 0.344671 0" shapeId="3" clipDistance="100" nodeId="43" castsShadows="true" receiveShadows="true" materialIds="8">
+          <Shape name="fabrics11Tension" shapeId="4" visibility="false" nodeId="44" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="15"/>
+        </Shape>
+        <Shape name="fabrics12" translation="-0.453613 0.344671 0" shapeId="3" clipDistance="100" nodeId="45" castsShadows="true" receiveShadows="true" materialIds="13">
+          <Shape name="fabrics12Tension" shapeId="4" visibility="false" nodeId="46" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="15"/>
+        </Shape>
+        <Shape name="fabrics13" translation="0.445787 0.444671 0" shapeId="3" clipDistance="100" nodeId="47" castsShadows="true" receiveShadows="true" materialIds="9">
+          <Shape name="fabrics13Tension" shapeId="4" visibility="false" nodeId="48" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="15"/>
+        </Shape>
+        <Shape name="fabrics14" translation="0.144161 0.444671 0" shapeId="3" clipDistance="100" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="14">
+          <Shape name="fabrics14Tension" shapeId="4" visibility="false" nodeId="50" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="15"/>
+        </Shape>
+        <Shape name="fabrics15" translation="-0.155526 0.444671 0" shapeId="3" clipDistance="100" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="11">
+          <Shape name="fabrics15Tension" shapeId="4" visibility="false" nodeId="52" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="15"/>
+        </Shape>
+        <Shape name="fabrics16" translation="-0.453613 0.444671 0" shapeId="3" clipDistance="100" nodeId="53" castsShadows="true" receiveShadows="true" materialIds="10">
+          <Shape name="fabrics16Tension" shapeId="4" visibility="false" nodeId="54" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="15"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="55">
+        <Shape name="floorCollision01" translation="0.3 0 0" shapeId="5" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="56" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="15"/>
+        <Shape name="floorCollision02" translation="-0.3 0 0" shapeId="5" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="57" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="15"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+</i3D>

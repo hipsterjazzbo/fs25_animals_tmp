@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="lavender.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.5"/>
+  </Asset>
+
+  <Files>
+    <File fileId="8" filename="lavenderGreenBig_alpha.png"/>
+    <File fileId="7" filename="lavenderGreenBig_diffuse.png"/>
+    <File fileId="6" filename="lavenderGreenMiddle_alpha.png"/>
+    <File fileId="5" filename="lavenderGreenMiddle_diffuse.png"/>
+    <File fileId="13" filename="lavenderGreenSMBLOD_alpha.dds"/>
+    <File fileId="12" filename="lavenderGreenSMBLOD_diffuse.dds"/>
+    <File fileId="4" filename="lavenderGreenSmall_alpha.png"/>
+    <File fileId="1" filename="lavenderGreenSmall_diffuse.png"/>
+    <File fileId="15" filename="lavenderHarvestReadyLOD_alpha.png"/>
+    <File fileId="14" filename="lavenderHarvestReadyLOD_diffuse.png"/>
+    <File fileId="11" filename="lavenderHarvestReady_alphaNEW.png"/>
+    <File fileId="9" filename="lavenderHarvestReady_diffuseNEW.png"/>
+    <File fileId="10" filename="lavenderHarvestReady_specular.png"/>
+    <File fileId="2" filename="$data/shaders/fruitGrowthFoliageShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="carrotGreenBigLOD_mat" materialId="5" customShaderId="2" customShaderVariation="PLANT_ROWS">
+      <Texture fileId="12"/>
+      <Custommap name="alphaMap" fileId="13"/>
+    </Material>
+    <Material name="carrotHarvestReady_mat" materialId="6" customShaderId="2" customShaderVariation="PLANT_ROWS">
+      <Texture fileId="7"/>
+      <Custommap name="alphaMap" fileId="8"/>
+    </Material>
+    <Material name="carrotHarvestReady_mat" materialId="7" customShaderId="2" customShaderVariation="PLANT_ROWS">
+      <Texture fileId="5"/>
+      <Custommap name="alphaMap" fileId="6"/>
+    </Material>
+    <Material name="carrotHarvestReady_mat" materialId="8" customShaderId="2" customShaderVariation="PLANT_ROWS">
+      <Texture fileId="1"/>
+      <Custommap name="alphaMap" fileId="4"/>
+    </Material>
+    <Material name="carrotHarvestReady_mat" materialId="9" customShaderId="2" customShaderVariation="PLANT_ROWS">
+      <Texture fileId="9"/>
+      <Glossmap fileId="10"/>
+      <Custommap name="alphaMap" fileId="11"/>
+    </Material>
+    <Material name="carrotHarvestReadyLOD_mat" materialId="10" customShaderId="2" customShaderVariation="PLANT_ROWS">
+      <Texture fileId="14"/>
+      <Custommap name="alphaMap" fileId="15"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="lavender.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="lavender" clipDistance="500" nodeId="36">
+      <TransformGroup name="greenSmall" nodeId="37">
+        <Shape name="gs1" shapeId="1" clipDistance="500" nodeId="38" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="gs2" shapeId="2" clipDistance="500" nodeId="39" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="gs3" shapeId="3" clipDistance="500" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="gs1_x_inv" shapeId="4" clipDistance="500" nodeId="41" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="gs2_x_inv" shapeId="5" clipDistance="500" nodeId="42" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="gs3_x_inv" shapeId="6" clipDistance="500" nodeId="43" castsShadows="true" receiveShadows="true" materialIds="8"/>
+      </TransformGroup>
+      <TransformGroup name="greenMiddle" nodeId="44">
+        <Shape name="gm1" shapeId="1" clipDistance="500" nodeId="45" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        <Shape name="gm2" shapeId="2" clipDistance="500" nodeId="46" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        <Shape name="gm3" shapeId="3" clipDistance="500" nodeId="47" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        <Shape name="gm1_x_inv" shapeId="4" clipDistance="500" nodeId="48" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        <Shape name="gm2_x_inv" shapeId="5" clipDistance="500" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        <Shape name="gm3_x_inv" shapeId="6" clipDistance="500" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="7"/>
+      </TransformGroup>
+      <TransformGroup name="greenBig" nodeId="51">
+        <Shape name="gb1" shapeId="1" clipDistance="500" nodeId="52" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="gb2" shapeId="2" clipDistance="500" nodeId="53" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="gb3" shapeId="3" clipDistance="500" nodeId="54" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="gb1_x_inv" shapeId="4" clipDistance="500" nodeId="55" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="gb2_x_inv" shapeId="5" clipDistance="500" nodeId="56" castsShadows="true" receiveShadows="true" materialIds="6"/>
+        <Shape name="gb3_x_inv" shapeId="6" clipDistance="500" nodeId="57" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      </TransformGroup>
+      <TransformGroup name="harvestReady" nodeId="58">
+        <Shape name="hr1" shapeId="1" clipDistance="500" nodeId="59" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        <Shape name="hr2" shapeId="2" clipDistance="500" nodeId="60" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        <Shape name="hr3" shapeId="3" clipDistance="500" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        <Shape name="hr1_x_inv" shapeId="4" clipDistance="500" nodeId="62" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        <Shape name="hr2_x_inv" shapeId="5" clipDistance="500" nodeId="63" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        <Shape name="hr3_x_inv" shapeId="6" clipDistance="500" nodeId="64" castsShadows="true" receiveShadows="true" materialIds="9"/>
+      </TransformGroup>
+      <TransformGroup name="dead" nodeId="65">
+        <Shape name="hr1" shapeId="1" clipDistance="500" nodeId="66" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        <Shape name="hr2" shapeId="2" clipDistance="500" nodeId="67" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        <Shape name="hr3" shapeId="3" clipDistance="500" nodeId="68" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        <Shape name="hr1_x_inv" shapeId="4" clipDistance="500" nodeId="69" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        <Shape name="hr2_x_inv" shapeId="5" clipDistance="500" nodeId="70" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        <Shape name="hr3_x_inv" shapeId="6" clipDistance="500" nodeId="71" castsShadows="true" receiveShadows="true" materialIds="9"/>
+      </TransformGroup>
+      <TransformGroup name="cut" nodeId="72">
+        <Shape name="c1" shapeId="1" clipDistance="500" nodeId="73" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        <Shape name="c2" shapeId="2" clipDistance="500" nodeId="74" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        <Shape name="c3" shapeId="3" clipDistance="500" nodeId="75" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        <Shape name="c1_x_inv" shapeId="4" clipDistance="500" nodeId="76" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        <Shape name="c2_x_inv" shapeId="5" clipDistance="500" nodeId="77" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        <Shape name="c3_x_inv" shapeId="6" clipDistance="500" nodeId="78" castsShadows="true" receiveShadows="true" materialIds="7"/>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="lavenderLOD" nodeId="79">
+      <TransformGroup name="greenSmall" nodeId="80">
+        <Shape name="gm1" shapeId="7" clipDistance="500" nodeId="81" castsShadows="false" receiveShadows="true" materialIds="5"/>
+        <Shape name="gm2" shapeId="8" clipDistance="500" nodeId="82" castsShadows="false" receiveShadows="true" materialIds="5"/>
+        <Shape name="gm3" shapeId="9" clipDistance="500" nodeId="83" castsShadows="false" receiveShadows="true" materialIds="5"/>
+        <Shape name="gm1_x_inv" shapeId="10" clipDistance="500" nodeId="84" castsShadows="false" receiveShadows="true" materialIds="5"/>
+        <Shape name="gm2_x_inv" shapeId="11" clipDistance="500" nodeId="85" castsShadows="false" receiveShadows="true" materialIds="5"/>
+        <Shape name="gm3_x_inv" shapeId="12" clipDistance="500" nodeId="86" castsShadows="false" receiveShadows="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="greenMiddle" nodeId="87">
+        <Shape name="gb1" shapeId="13" clipDistance="500" nodeId="88" castsShadows="false" receiveShadows="true" materialIds="5"/>
+        <Shape name="gb2" shapeId="14" clipDistance="500" nodeId="89" castsShadows="false" receiveShadows="true" materialIds="5"/>
+        <Shape name="gb3" shapeId="15" clipDistance="500" nodeId="90" castsShadows="false" receiveShadows="true" materialIds="5"/>
+        <Shape name="gb1_x_inv" shapeId="16" clipDistance="500" nodeId="91" castsShadows="false" receiveShadows="true" materialIds="5"/>
+        <Shape name="gb2_x_inv" shapeId="17" clipDistance="500" nodeId="92" castsShadows="false" receiveShadows="true" materialIds="5"/>
+        <Shape name="gb3_x_inv" shapeId="18" clipDistance="500" nodeId="93" castsShadows="false" receiveShadows="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="greenBig" nodeId="94">
+        <Shape name="gb1" shapeId="13" clipDistance="500" nodeId="95" castsShadows="false" receiveShadows="true" materialIds="5"/>
+        <Shape name="gb2" shapeId="14" clipDistance="500" nodeId="96" castsShadows="false" receiveShadows="true" materialIds="5"/>
+        <Shape name="gb3" shapeId="15" clipDistance="500" nodeId="97" castsShadows="false" receiveShadows="true" materialIds="5"/>
+        <Shape name="gb1_x_inv" shapeId="16" clipDistance="500" nodeId="98" castsShadows="false" receiveShadows="true" materialIds="5"/>
+        <Shape name="gb2_x_inv" shapeId="17" clipDistance="500" nodeId="99" castsShadows="false" receiveShadows="true" materialIds="5"/>
+        <Shape name="gb3_x_inv" shapeId="18" clipDistance="500" nodeId="100" castsShadows="false" receiveShadows="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="harvestReady" nodeId="101">
+        <Shape name="hr1" shapeId="19" clipDistance="500" nodeId="102" castsShadows="false" receiveShadows="true" materialIds="10"/>
+        <Shape name="hr2" shapeId="20" clipDistance="500" nodeId="103" castsShadows="false" receiveShadows="true" materialIds="10"/>
+        <Shape name="hr3" shapeId="21" clipDistance="500" nodeId="104" castsShadows="false" receiveShadows="true" materialIds="10"/>
+        <Shape name="hr1_x_inv" shapeId="22" clipDistance="500" nodeId="105" castsShadows="false" receiveShadows="true" materialIds="10"/>
+        <Shape name="hr2_x_inv" shapeId="23" clipDistance="500" nodeId="106" castsShadows="false" receiveShadows="true" materialIds="10"/>
+        <Shape name="hr3_x_inv" shapeId="24" clipDistance="500" nodeId="107" castsShadows="false" receiveShadows="true" materialIds="10"/>
+      </TransformGroup>
+      <TransformGroup name="dead" nodeId="108">
+        <Shape name="hr1" shapeId="19" clipDistance="500" nodeId="109" castsShadows="false" receiveShadows="true" materialIds="10"/>
+        <Shape name="hr2" shapeId="20" clipDistance="500" nodeId="110" castsShadows="false" receiveShadows="true" materialIds="10"/>
+        <Shape name="hr3" shapeId="21" clipDistance="500" nodeId="111" castsShadows="false" receiveShadows="true" materialIds="10"/>
+        <Shape name="hr1_x_inv" shapeId="22" clipDistance="500" nodeId="112" castsShadows="false" receiveShadows="true" materialIds="10"/>
+        <Shape name="hr2_x_inv" shapeId="23" clipDistance="500" nodeId="113" castsShadows="false" receiveShadows="true" materialIds="10"/>
+        <Shape name="hr3_x_inv" shapeId="24" clipDistance="500" nodeId="114" castsShadows="false" receiveShadows="true" materialIds="10"/>
+      </TransformGroup>
+      <TransformGroup name="cut" nodeId="115">
+        <Shape name="gb1" shapeId="13" clipDistance="500" nodeId="116" castsShadows="false" receiveShadows="true" materialIds="5"/>
+        <Shape name="gb2" shapeId="14" clipDistance="500" nodeId="117" castsShadows="false" receiveShadows="true" materialIds="5"/>
+        <Shape name="gb3" shapeId="15" clipDistance="500" nodeId="118" castsShadows="false" receiveShadows="true" materialIds="5"/>
+        <Shape name="gb1_x_inv" shapeId="16" clipDistance="500" nodeId="119" castsShadows="false" receiveShadows="true" materialIds="5"/>
+        <Shape name="gb2_x_inv" shapeId="17" clipDistance="500" nodeId="120" castsShadows="false" receiveShadows="true" materialIds="5"/>
+        <Shape name="gb3_x_inv" shapeId="18" clipDistance="500" nodeId="121" castsShadows="false" receiveShadows="true" materialIds="5"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

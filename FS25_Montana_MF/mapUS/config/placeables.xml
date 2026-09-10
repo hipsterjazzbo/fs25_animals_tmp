@@ -1,0 +1,937 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeables version="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/savegame_placeables.xsd">
+<!-- trainStation -->
+    <placeable filename="$mapdir$/placeables/trainSystem/trainSystem.xml" uniqueId="trainSystem" position="0 0 0" rotation="0 0 0">
+        <customImage filename="data/maps/mapUS/textures/buildings/trainStation/mapIcon_trainStation.png"/>
+    </placeable>
+<!-- trainStation Sell Point -->
+    <placeable filename="$mapdir$/placeables/sellingStationTrain.xml" uniqueId="sellingStationTrain01" position="0 0 0" rotation="0 0 0">
+        <customImage filename="$mapdir$/placeables/trainSystem/mapIcon_trainSale.png"/>
+    </placeable>
+<!-- Train track placing/storage -->
+    <placeable filename="$mapdir$/placeables/grainElevatorTriggers1.xml" position="-233.25701904 158.1519928 -989.44445801" rotation="0 0 0">
+        <customImage filename="$mapdir$/placeables/icons/grainelv1.png"/>
+    </placeable>
+    <placeable filename="$mapdir$/placeables/grainElevatorTriggers2.xml" position="-1193.50634766 177.50193787 -1196.29504395" rotation="0 0 0">
+        <customImage filename="$mapdir$/placeables/icons/grainelv2.png"/>
+    </placeable>
+    <placeable filename="$mapdir$/placeables/grainElevatorTriggers3.xml" position="-302.84869385 130.83657837 1651.49316406" rotation="0 0 0">
+        <customImage filename="$mapdir$/placeables/icons/grainelv3.png"/>
+    </placeable>
+<!-- bga -->
+    <placeable isPreplaced="true" uniqueId="preplaced_bga1mw_af2de644a023e731de69c3ac7c699c08">
+        <customImage filename="data/placeables/planET/bga1mw/mapIcon_bga1mwUS.png"/>
+    </placeable>
+<!-- bga buys farmland -->
+    <placeable isPreplaced="true" uniqueId="preplaced_bgaBunkerSilo_c326dccc76a9432e734bcbbb98930707" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_bgaBunkerSilo_065f88d51b2e3bd716f86f9402d97255" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_weighingStationLarge_59a9fb3cb78e8031c219bed8c490ca64" boughtWithFarmlandOverwrite="true"/>
+<!-- Vehicle Sell Station -->
+	<placeable filename="$mapdir$/placeables/sellingStationVehicles.xml" uniqueId="sellingStationVehicles" position="-1255 178.30964661 -1101" rotation="0 0 0">
+        <customImage filename="$mapdir$/placeables/icons/jddealer.png"/>
+    </placeable>
+
+<!-- buyingSellingPoints -->
+    <placeable isPreplaced="true" uniqueId="preplaced_buyingStationLiquidManure_7a4a6779b0a1fd4777acbe046e303e78">
+        <customImage filename="data/placeables/shared/buyingStations/buyingStationLiquidManure/mapIcon_buyingStationLiquidManure.png"/>
+    </placeable>
+    <placeable isPreplaced="true" uniqueId="preplaced_buyingStationManure_26e11bad657c21bcc0983a0d3f8f941e">
+        <customImage filename="data/placeables/shared/buyingStations/buyingStationManure/mapIcon_buyingStationManure.png"/>
+    </placeable>
+    <placeable isPreplaced="true" uniqueId="preplaced_sellingStationProducts_d4837e2423a2042b2945f18aa901b230">
+        <customImage filename="$mapdir$/placeables/icons/animaldealer.png"/>
+    </placeable>
+	<placeable filename="$mapdir$/placeables/buyMulti.xml" 		uniqueId="buyMulti" 	position="-1403.00292969 180.32044983 -971.36260986" rotation="0 0 0"/>
+	<placeable filename="$mapdir$/placeables/buyPropane.xml" 	uniqueId="buyPropane" 	position="-1408.98486328 179.43190002 -999.87884521" rotation="0 0 0"/>
+	<placeable filename="$mapdir$/placeables/buyAnhydrous.xml" 	uniqueId="buyAnhydrous" 	position="-1432.17004395 180.16807556 -967.62860107" rotation="0 0 0"/>
+	<placeable filename="$mapdir$/placeables/buyLiqFert.xml" 	uniqueId="buyLiqFert" 	position="-1370.73181152 179.42800903 -967.35791016" rotation="0 0 0"/>
+	<placeable filename="$mapdir$/placeables/buyLiqHerb.xml" 	uniqueId="buyLiqHerb" 	position="-1386.32653809 179.43190002 -967.81860352" rotation="0 0 0"/>
+
+<!-- farmersMarket -->
+    <placeable isPreplaced="true" uniqueId="preplaced_farmersMarketUS_d93675aaa380fcfbf6b424d87ab69221">
+        <animatedObjects>
+            <animatedObject time="1.000000" direction="0"/>
+            <animatedObject time="1.000000" direction="0"/>
+            <animatedObject time="1.000000" direction="0"/>
+            <animatedObject time="1.000000" direction="0"/>
+        </animatedObjects>
+    </placeable>
+<!-- WeighingStation -->
+    <placeable filename="$mapdir$/placeables/weighingStation.xml" uniqueId="bgaWeighingStation" position="-181.04600525 126.3809967 1672.92004395" rotation="0 90 0"/>
+    <placeable filename="$mapdir$/placeables/weighingStation.xml" uniqueId="bgaWeighingStation3" position="-232.67999268 158.47764587 -948.20001221" rotation="0 90 0"/>
+    <placeable filename="$mapdir$/placeables/weighingStation.xml" uniqueId="bgaWeighingStation2" position="86.15000153 128.32781982 1761.06994629" rotation="0 0 0"/>
+    <placeable filename="$mapdir$/placeables/weighingStation.xml" uniqueId="bgaWeighingStation4" position="-279.11404419 131.2734375 1716.71008301" rotation="0 -54 0"/>
+    <placeable filename="$mapdir$/placeables/weighingStation.xml" uniqueId="bgaWeighingStation5" position="239.42803955 122.40564728 1682.0802002" rotation="0 0 0"/>
+    <placeable filename="$mapdir$/placeables/weighingStation.xml" uniqueId="bgaWeighingStation6" position="-701.30108643 167.14883423 -129.09532166" rotation="0 90 0"/>
+    <placeable filename="$mapdir$/placeables/weighingStation.xml" uniqueId="bgaWeighingStation7" position="-629.5869751 165.32394409 -128.3999939" rotation="0 90 0"/>
+<!-- gasStations -->
+    <placeable filename="$mapdir$/placeables/gasStation01.xml" position="-1079.62524414 173.89105225 -1097.83532715" rotation="0 -18 0">
+        <customImage filename="data/maps/mapUS/textures/buildings/gasStation/mapIcon_gasStation.png"/>
+    </placeable>
+	<placeable filename="$mapdir$/placeables/gasStation01.xml" position="-262.12124634 128.07392883 1628.27648926" rotation="0 0 0">
+        <customImage filename="data/maps/mapUS/textures/buildings/gasStation/mapIcon_gasStation.png"/>
+    </placeable>	
+	<placeable filename="$mapdir$/placeables/gasStation01.xml" position="985.18963623 102.59143829 132.57865906" rotation="0 0 0">
+        <customImage filename="data/maps/mapUS/textures/buildings/gasStation/mapIcon_gasStation.png"/>
+    </placeable>	
+	<placeable filename="$mapdir$/placeables/gasStation01.xml" position="0.48736209 131.57460022 1910.33496094" rotation="0 0 0">
+        <customImage filename="data/maps/mapUS/textures/buildings/gasStation02/mapIcon_gasStation02.png"/>
+    </placeable>
+	<placeable filename="$mapdir$/placeables/gasStationSmall.xml" position="-498.47470093 161.84436035 -146.92938232" rotation="0 31.69510269 0">
+        <customImage filename="data/maps/mapUS/textures/buildings/gasStation02/mapIcon_gasStation02.png"/>
+    </placeable>
+	<placeable filename="$mapdir$/placeables/gasStationSmall.xml" position="-1338.78088379 177.52799988 -1000.52752686" rotation="0 0 0">
+        <customImage filename="data/maps/mapUS/textures/buildings/gasStation02/mapIcon_gasStation02.png"/>
+    </placeable>
+<!-- Farms -->	
+	<placeable filename="$mapdir$/placeables/gasStationSmall.xml" position="107.15579224 149.87431335 -1200.73352051" rotation="0 0 0">
+        <customImage filename="data/maps/mapUS/textures/buildings/gasStation02/mapIcon_gasStation02.png"/>
+    </placeable>
+	<placeable filename="$mapdir$/placeables/gasStationSmall.xml" position="-805.83502197 167.79200745 304.07614136" rotation="0 0 0">
+        <customImage filename="data/maps/mapUS/textures/buildings/gasStation02/mapIcon_gasStation02.png"/>
+    </placeable>
+	<placeable filename="$mapdir$/placeables/gasStationSmall.xml" position="1452.26574707 122.04004669 -1193.9107666" rotation="0 0 0">
+        <customImage filename="data/maps/mapUS/textures/buildings/gasStation02/mapIcon_gasStation02.png"/>
+    </placeable>
+	<placeable filename="$mapdir$/placeables/gasStationSmall.xml" position="1143.06994629 91.57730103 417.83731079" rotation="0 0 0">
+        <customImage filename="data/maps/mapUS/textures/buildings/gasStation02/mapIcon_gasStation02.png"/>
+    </placeable>
+	<placeable filename="$mapdir$/placeables/gasStationSmall.xml" position="-249.5344696 123.12000275 879.89245605" rotation="0 0 0">
+        <customImage filename="data/maps/mapUS/textures/buildings/gasStation02/mapIcon_gasStation02.png"/>
+    </placeable>
+	<placeable filename="$mapdir$/placeables/gasStationSmall.xml" position="-1114.59362793 140.74299622 1213.9831543" rotation="0 0 0">
+        <customImage filename="data/maps/mapUS/textures/buildings/gasStation02/mapIcon_gasStation02.png"/>
+    </placeable>	
+<!-- limeStation -->
+    <placeable isPreplaced="true" uniqueId="preplaced_limeStation_2fe33c4a3bbb2b754265e0586bdf654b" nameL10nKey="$l10n_shopItem_limeStation1"/>
+<!-- separatSellingPoints -->
+    <placeable filename="$mapdir$/placeables/sellPointGrain2.xml" position="-1188.593 177.953 -1198.375" rotation="0 0 0">
+        <customImage filename="$mapdir$/placeables/icons/grainelv2.png"/>
+    </placeable>
+    <placeable filename="$mapdir$/placeables/sellPointGrain3.xml" position="-1387.465 182.641 -1212.953" rotation="0 0 0">
+        <customImage filename="$mapdir$/placeables/icons/flatheadfeed.png"/>
+    </placeable>
+    <placeable filename="$mapdir$/placeables/sellPointGrain4.xml" position="-3.38972569 149.19000244 227.31225586" rotation="0 0 0">
+        <customImage filename="$mapdir$/placeables/icons/ironridge.png"/>
+    </placeable>
+    <placeable filename="$mapdir$/placeables/sellPointGrain5.xml" position="248.81570435 127.03691864 1840.83679199" rotation="0 0 0">
+        <customImage filename="$mapdir$/placeables/icons/sell5.png"/>
+    </placeable>
+    <placeable filename="$mapdir$/placeables/sellPointGrain6.xml" position="275.63153076 122.18701172 1680.76733398" rotation="0 0 0">
+        <customImage filename="$mapdir$/placeables/icons/sell6.png"/>
+    </placeable>
+    <placeable filename="$mapdir$/placeables/sellingStationBales1.xml" position="231.66127014 104.67314911 1529.89208984" rotation="0 0 0">
+        <customImage filename="$mapdir$/placeables/icons/balesell.png"/>
+    </placeable>
+    <placeable filename="$mapdir$/placeables/sellingStationProduct1.xml" position="974.82098389 87.0428009 1227.95996094" rotation="0 0 0">
+        <customImage filename="data/maps/mapUS/textures/buildings/riverRestaurant/mapIcon_riverRestaurant.png"/>
+    </placeable>
+    <placeable filename="$mapdir$/placeables/sellingStationProduct2.xml" position="190.44487 122.59143829 1760.95739746" rotation="0 45 0">
+        <customImage filename="$mapdir$/placeables/icons/mall2.png"/>
+    </placeable>
+    <placeable filename="$mapdir$/placeables/sellingStationProduct3.xml" position="-60.76676941 132.84825134 1896.37390137" rotation="0 90 0">
+        <customImage filename="$mapdir$/placeables/icons/genStore2.png"/>
+    </placeable>
+    <placeable filename="$mapdir$/placeables/sellingStationProduct4.xml" position="298.40414429 128.71206665 1969.07653809" rotation="0 0 0">
+        <customImage filename="$mapdir$/placeables/icons/dollar.png"/>
+    </placeable>
+    <placeable filename="$mapdir$/placeables/sellingStationProduct5.xml" position="-260.62133789 128.07003784 1597.50402832" rotation="0 0 0">
+        <customImage filename="$mapdir$/placeables/icons/bpgas.png"/>
+    </placeable>
+    <placeable filename="$mapdir$/placeables/sellingStationProduct6.xml" position="-1065.19018555 173.88716125 -1114.97680664" rotation="0 -17 0">
+        <customImage filename="$mapdir$/placeables/icons/caseys.png"/>
+    </placeable>
+    <placeable filename="$mapdir$/placeables/sellingStationProduct7.xml" position="-1321.67541504 178.29824829 -1050.04248047" rotation="0 0 0">
+        <customImage filename="$mapdir$/placeables/icons/applebees.png"/>
+    </placeable>
+    <placeable filename="$mapdir$/placeables/sellingStationProduct8.xml" position="-1412.78479004 180.92996216 -1043.38208008" rotation="0 0 0">
+        <customImage filename="$mapdir$/placeables/icons/beerStore.png"/>
+    </placeable>
+    <placeable filename="$mapdir$/placeables/sellingStationProduct9.xml" position="-1533.02685547 182.443573 -1126.8572998" rotation="0 90 0">
+        <customImage filename="$mapdir$/placeables/icons/mall1.png"/>
+    </placeable>
+    <placeable filename="$mapdir$/placeables/sellingStationProduct10.xml" position="-1410.88330078 180.22224426 -1188.99731445" rotation="0 90 0">
+        <customImage filename="$mapdir$/placeables/icons/genStore.png"/>
+    </placeable>
+    <placeable filename="$mapdir$/placeables/sellingStationProduct11.xml" position="151.83888245 125.76654053 1799.9395752" rotation="0 90 0">
+        <customImage filename="$mapdir$/placeables/icons/subway.png"/>
+    </placeable>	
+<!-- warehouseLogisticUS -->
+    <placeable isPreplaced="true" uniqueId="preplaced_warehouseLogisticUS_50e6adca71b9959d380c07a433a37572">
+        <customImage filename="data/placeables/mapUS/warehouseLogisticUS/mapIcon_warehouseLogisticUS.png"/>
+    </placeable>
+<!-- waterTower01 northWest -->
+	<placeable filename="$mapdir$/placeables/buyWater.xml" 		uniqueId="buyWater1" 	position="-1157.62158203 176.10929871 -1144.17150879" rotation="0 64 0"/>
+<!-- waterTower02 southEast -->
+	<placeable filename="$mapdir$/placeables/buyWater.xml" 		uniqueId="buyWater2" 	position="-162.26721191 136.65608215 1916.02502441" rotation="0 0 0"/>
+<!-- waterTower03 midTown -->
+	<placeable filename="$mapdir$/placeables/buyWater.xml" 		uniqueId="buyWater3" 	position="-451.90359497 162.262146 -56.8521347" rotation="0 0 0"/>
+<!-- productionPoints -->
+    <placeable isPreplaced="true" uniqueId="preplaced_sawmill_dc261eb67cfc308b5f3a2954601aacbe">
+        <customImage filename="data/placeables/mapUS/sawmillUS/mapIcon_sawmillUS.png"/>
+    </placeable>
+    <placeable isPreplaced="true" uniqueId="preplaced_tailorUS_ba37f9ad172186dab2dd5eea9f0c6dae">
+        <customImage filename="data/placeables/mapUS/tailorUS/mapIcon_tailorUS.png"/>
+    </placeable>
+    <placeable isPreplaced="true" uniqueId="preplaced_carpenterUS_7ed62cb62f3c73fb7eb4232094fd0b02">
+        <customImage filename="data/placeables/mapUS/carpenterUS/mapIcon_carpenterUS.png"/>
+    </placeable>
+    <placeable isPreplaced="true" uniqueId="preplaced_dredgingBoat_d57108aa7ea2a114454cb10d18f58079">
+        <customImage filename="data/placeables/mapUS/dredgingBoat/mapIcon_dredgingBoat.png"/>
+    </placeable>
+    <placeable isPreplaced="true" uniqueId="preplaced_cementFactoryUS_3ee76b3d743178576ab66e879a95c08f">
+        <customImage filename="data/placeables/mapUS/cementFactoryUS/mapIcon_cementFactoryUS.png"/>
+    </placeable>
+    <placeable isPreplaced="true" uniqueId="preplaced_cannedPackagedFactoryUS_012df9a4dbb00fc2a24b17849008dd3c">
+        <customImage filename="data/placeables/mapUS/cannedPackagedFactoryUS/mapIcon_cannedPackagedFactoryUS.png"/>
+    </placeable>
+    <placeable canBeDeletedOverwrite="false" uniqueId="montanaDairy" filename="$mapdir$/placeables/productionPoints/dairyUS.xml" position="-1507.99487305 181.99221802 -1051.48095703" rotation="0 0 0">
+        <customImage filename="$mapdir$/placeables/icons/dairy.png"/>
+    </placeable>
+    <placeable canBeDeletedOverwrite="false" uniqueId="wineCellar" filename="$mapdir$/placeables/productionPoints/wineCellar.xml" position="-270 136.87937927 1862" rotation="0 0 0">
+        <customImage filename="$mapdir$/placeables/icons/wine.png"/>
+    </placeable>
+    <placeable canBeDeletedOverwrite="false" uniqueId="whiskeyPlantUS" filename="$mapdir$/placeables/productionPoints/whiskeyPlantUS.xml" position="-684.54998779 166.71200562 -90.82900238" rotation="0 0 0">
+        <customImage filename="$mapdir$/placeables/icons/whiskey.png"/>
+    </placeable>
+    <placeable canBeDeletedOverwrite="false" uniqueId="oilPlantUS_ae66" filename="$mapdir$/placeables/productionPoints/oilPlantUS.xml" position="192.54100037 130.69999695 1940.91003418" rotation="0 0 0">
+        <customImage filename="data/placeables/mapUS/oilPlantUS/mapIcon_oilPlantUS.png"/>
+    </placeable>
+    <placeable canBeDeletedOverwrite="false" uniqueId="BeerPlantUS" filename="$mapdir$/placeables/productionPoints/BeerPlantUS.xml" position="-609.46008301 164.89494324 -91.68979645" rotation="0 0 0">
+        <customImage filename="$mapdir$/placeables/icons/beer.png"/>
+    </placeable>
+    <placeable canBeDeletedOverwrite="false" uniqueId="spinnery" filename="$mapdir$/placeables/productionPoints/spinnery.xml" position="359.49520874 123.40467072 1759.74487305" rotation="0 0 0">
+        <customImage filename="$mapdir$/placeables/icons/wool.png"/>
+    </placeable>
+    <placeable canBeDeletedOverwrite="false" uniqueId="grainFlourMillUS" filename="$mapdir$/placeables/productionPoints/grainFlourMillUS.xml" position="-185.49699402 136.3500061 1880.84997559" rotation="0 90 0">
+        <customImage filename="data/placeables/mapUS/grainFlourMillUS/mapIcon_grainFlourMillUS.png"/>
+    </placeable>
+    <placeable canBeDeletedOverwrite="false" uniqueId="EthanolPlantUS" filename="$mapdir$/placeables/productionPoints/EthanolPlantUS.xml" position="14.30800533 127.90272522 1745.00708008" rotation="0 0 0">
+        <customImage filename="$mapdir$/placeables/icons/ethanol.png"/>
+    </placeable>
+    <placeable canBeDeletedOverwrite="false" uniqueId="bakeryUS" filename="$mapdir$/placeables/productionPoints/bakeryUS.xml" position="-1478.90002441 180.55299377 -1191" rotation="0 90 0">
+        <customImage filename="$mapdir$/placeables/icons/mapIcon_bakeryUS.png"/>
+    </placeable>
+    <placeable canBeDeletedOverwrite="false" uniqueId="PizzaPlaceUS" filename="$mapdir$/placeables/productionPoints/PizzaPlaceUS.xml" position="-1151.67346191 175.70039368 -1102.79504395" rotation="0 0 0">
+        <customImage filename="$mapdir$/placeables/icons/pizza.png"/>
+    </placeable>
+<!-- AnimalHusbandry -->
+    <!-- <placeable filename="$mapdir$/placeables/animals/cowBarnF1A1.xml" uniqueId="cowBarnF1A1" position="504.22802734 141.91999817 -1360.27661133" rotation="0 0 0" boughtWithFarmlandOverwrite="true" farmId="1" defaultFarmProperty="true"/> 
+    <placeable filename="$mapdir$/placeables/animals/cowBarnF1A2.xml" uniqueId="cowBarnF1A2" position="102.11000061 147.93774414 -1369.20336914" rotation="0 0 0" boughtWithFarmlandOverwrite="true" farmId="1" defaultFarmProperty="true"/>
+    <placeable filename="$mapdir$/placeables/animals/pigBarnF1A1.xml" uniqueId="pigBarnF1A1" position="15.2813015 151.80155945 -1226.36621094" rotation="0 0 0" boughtWithFarmlandOverwrite="true" farmId="1" defaultFarmProperty="true"/>
+    <placeable filename="$mapdir$/placeables/animals/sheepBarnF1A1.xml" uniqueId="sheepBarnF1A1" position="49.7140007 146.22599792 -1465.65002441" rotation="0 0 0" boughtWithFarmlandOverwrite="true" farmId="1" defaultFarmProperty="true"/>
+    <placeable filename="$mapdir$/placeables/animals/chickenCoopF1A1.xml" uniqueId="chickenCoopF1A1" position="94.25499725 150.63035583 -1305.98925781" rotation="0 0 0" boughtWithFarmlandOverwrite="true" farmId="1" defaultFarmProperty="true"/> -->
+	
+	<placeable isPreplaced="true" filename="$mapdir$/placeables/animals/cowBarnF1A1.xml" id="4" position="504.22802734 141.91999817 -1360.27661133" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable isPreplaced="true" filename="$mapdir$/placeables/animals/cowBarnF1A2.xml" id="5" position="102.11000061 147.93774414 -1369.20336914" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable isPreplaced="true" filename="$mapdir$/placeables/animals/cowBarnF2A1.xml" id="9" position="-789.71899414 168.46000671 407.13800049" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable isPreplaced="true" filename="$mapdir$/placeables/animals/cowBarnF2A2.xml" id="10" position="-658.4619751 166.33500671 295.49798584" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable isPreplaced="true" filename="$mapdir$/placeables/animals/cowBarnF3A1.xml" id="11" position="1678.03210449 117.20517731 -1118.56640625" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable isPreplaced="true" filename="$mapdir$/placeables/animals/cowBarnF4A1.xml" id="12" position="1056.71411133 89.74732208 540.22265625" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable isPreplaced="true" filename="$mapdir$/placeables/animals/cowBarnF5A1.xml" id="13" position="-332.18499756 124.61799622 814.4887085" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable isPreplaced="true" filename="$mapdir$/placeables/animals/cowBarnF5A2.xml" id="14" position="-552.16717529 127.24740601 875.70959473" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable isPreplaced="true" filename="$mapdir$/placeables/animals/cowBarnF6A1.xml" id="15" position="-1353.69616699 147.2424469 1452.62792969" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable isPreplaced="true" filename="$mapdir$/placeables/animals/cowBarnF6A2.xml" id="16" position="-1476.22509766 147.6789856 1380.3248291" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+
+	<placeable isPreplaced="true" filename="$mapdir$/placeables/animals/sheepBarnF1A1.xml" id="7" position="49.7140007 146.22599792 -1465.65002441" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable isPreplaced="true" filename="$mapdir$/placeables/animals/sheepBarnF2A1.xml" id="17" position="-789.01599121 167.14399719 205" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable isPreplaced="true" filename="$mapdir$/placeables/animals/sheepBarnF3A1.xml" id="18" position="1492.97924805 119.27237701 -1293.59118652" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable isPreplaced="true" filename="$mapdir$/placeables/animals/sheepBarnF4A1.xml" id="19" position="1046.67687988 91.77432251 348.96841431" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable isPreplaced="true" filename="$mapdir$/placeables/animals/sheepBarnF5A1.xml" id="20" position="-159.21372986 120.91909027 879.1361084" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable isPreplaced="true" filename="$mapdir$/placeables/animals/sheepBarnF6A1.xml" id="21" position="-1346.96899414 146.41244507 1381.4666748" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+	
+	<placeable isPreplaced="true" filename="$mapdir$/placeables/animals/pigBarnF1A1.xml" id="6" position="15.2813015 151.80155945 -1226.36621094" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable isPreplaced="true" filename="$mapdir$/placeables/animals/pigBarnF4A1.xml" id="22" position="1150.00097656 85.83268738 483.6953125" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+    
+	<placeable isPreplaced="true" filename="$mapdir$/placeables/animals/chickenCoopF1A1.xml" id="8" position="94.25499725 150.63035583 -1305.98925781" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable isPreplaced="true" filename="$mapdir$/placeables/animals/chickenCoopF2A1.xml" id="23" position="-714.51501465 167.39299011 271.16207886" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable isPreplaced="true" filename="$mapdir$/placeables/animals/chickenCoopF4A1.xml" id="24" position="1120.70703125 91.78424072 394.78833008" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+	<placeable isPreplaced="true" filename="$mapdir$/placeables/animals/chickenCoopF5A1.xml" id="25" position="-326.31515503 124.8210144 885.4041748" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+	
+<!-- Grain Dryer Complex -->
+    <placeable isPreplaced="true" filename="$mapdir$/placeables/grainDryerComplexF1.xml" id="26" position="74.30000305 150.79649353 -1209.92382812" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" filename="$mapdir$/placeables/grainDryerComplexF1.xml" id="27" position="-737.5401001 167.87709045 282.37664795" rotation="0 90 0" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" filename="$mapdir$/placeables/grainDryerComplexF1.xml" id="28" position="1548.51611328 120.38937378 -1219.37939453" rotation="0 90 0" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" filename="$mapdir$/placeables/grainDryerComplexF1.xml" id="29" position="1165.90100098 92.02888489 301.73590088" rotation="180 -66 180" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" filename="$mapdir$/placeables/grainDryerComplexF1.xml" id="30" position="-301.5015564 123.8297348 829.71630859" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" filename="$mapdir$/placeables/grainDryerComplexF1.xml" id="31" position="-1168.62658691 142.06570435 1236.46643066" rotation="0 90 0" boughtWithFarmlandOverwrite="true"/>
+<!-- GrainSilo -->
+    <placeable isPreplaced="true" filename="$mapdir$/placeables/grainSiloStorageF1.xml" id="32" position="74.07083893 150.74906921 -1218.09265137" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" filename="$mapdir$/placeables/grainSiloStorageF2.xml" id="33" position="-750.01501465 167.85214233 283.33065796" rotation="0 -90 0" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" filename="$mapdir$/placeables/grainSiloStorageF2.xml" id="34" position="1533.38842773 120.28404999 -1219.81433105" rotation="0 -90 0" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" filename="$mapdir$/placeables/grainSiloStorageF2.xml" id="35" position="1179.68212891 91.97665405 307.96847534" rotation="0 66 0" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" filename="$mapdir$/placeables/grainSiloStorageF2.xml" id="36" position="-301.02999878 123.83676147 814.57897949" rotation="0 180 0" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" filename="$mapdir$/placeables/grainSiloStorageF2.xml" id="37" position="-1183.81066895 142.14395142 1236.00537109" rotation="0 -90 0" boughtWithFarmlandOverwrite="true"/>
+<!-- HarvestoreSiloSystem -->
+    <placeable isPreplaced="true" filename="$mapdir$/placeables/fermentingSiloLarge.xml" id="38" position="545.35101318 141.40748596 -1346.31738281" rotation="0 0 0" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" filename="$mapdir$/placeables/fermentingSiloSmall.xml" id="39" position="-801.75756836 166.29182434 345.57815552" rotation="0 90 0" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" filename="$mapdir$/placeables/fermentingSiloSmall.xml" id="40" position="1598.43701172 118.97665405 -1186.88696289" rotation="0 180 0" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" filename="$mapdir$/placeables/fermentingSiloLarge.xml" id="41" position="1148.93212891 91.8249054 435.18713379" rotation="0 90 0" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" filename="$mapdir$/placeables/fermentingSiloLarge.xml" id="42" position="-224.60908508 122.01808167 839.56378174" rotation="0 180 0" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" filename="$mapdir$/placeables/fermentingSiloLarge.xml" id="43" position="-1291.04968262 145.10116577 1263.49731445" rotation="180 -49.5 -180" boughtWithFarmlandOverwrite="true"/>
+<!-- Flat Bottom Bins -->
+<!-- Farm1 -->
+<!-- Constructible -->
+    <placeable filename="$mapdir$/placeables/buildableFarmHouse01.xml" uniqueId="buildableFarmHouse01" position="123 149.78199768 -1282" rotation="0 0 0" boughtWithFarmlandOverwrite="true">
+        <constructible>
+            <state name="DONE"/>
+        </constructible>
+    </placeable>
+    <placeable isPreplaced="true" uniqueId="preplaced_greenHousesTarpLarge_71bc3d0674b8d6fcd7f2e22faaf517c6" boughtWithFarmlandOverwrite="true">
+        <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+        </animatedObjects>
+    </placeable>
+<!-- Farm Houses -->
+    <placeable isPreplaced="true" uniqueId="preplaced_farmHouse01_8d0c0776fbe8544cd42a8781416caf20">
+        <farmhouse isFreeForAll="true"/>
+        <farmhouse isFreeForAll="true"/>
+        <wardrobe isFreeForAll="true"/>
+    </placeable>
+    <placeable isPreplaced="true" uniqueId="preplaced_farmHouse02_bd209fe1a76982e6de6416e6105dd613" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_farmHouse04_6a91cb6aa76b526fdb6f6fa2b332fbf4" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_farmHouse05_1bb400d92fdce5b050d00c9bb9b0182f" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_farmHouse05_1f4a96b211e13eede2bdc8a59c476f4d" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_farmHouse05_306e852a51d90726d144af50a865cbf0" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_farmerKioskSmall_b6e9a0fd8925f17a166b9b84160e7d22" boughtWithFarmlandOverwrite="true"/>
+<!-- Others -->
+    <placeable isPreplaced="true" uniqueId="preplaced_barnStable_4b057cb4268b40ee2e0b57b734a19bc3"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_windWheelMedium_9b83fdf65b02c5fbf318a7339503ef47"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_beehiveGeneric01_741d31abed6fb6c749223632f060f8bb"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_beehiveGeneric01_68cbdb0898ac70cd82bbe5b0a369e592"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_beehivePalletSpawner_86c4d0f9efcf8fceee1d7aa2b999d2c0"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_quonsetHut_77fa2205aec38d843e3890141e391c6d"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_beehiveGeneric01_f9231bc1176283b5f4d901ef535b35e7"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_beehiveGeneric02_170a7dc828609bf30174115a1874b2d5"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_farmShedSmallOld_d2e5707eee7706a43baf3d1f4b92cd40"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_beehiveGeneric01_d4ed9806f03cf001c2a52f0b851e2112"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_stable03_020b4be8bfcfe434529749dfdd138d7e"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_beehive02_d9c6ac7b4cf96282a730ea64ab665a58"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_beehiveGeneric01_818a3a1c0414c851e3ce4bad8b36320e"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_beehive02_8f0a5897b1c0d9bdfc542c474a66e05f"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_beehiveGeneric01_804d326a0a202fe24968bfb09deeb00e"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_beehive02_9e465a7910d49d790c19d0a0d13f5e2e"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_beehive02_8f61a342a1108f983e949a2648d299fb"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_beehive02_2c3238ef80886550771b5f195a1c297c"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_beehiveGeneric01_c15d5add961a1eef02341c40584d399c"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_beehive02_7014aa348cc5f399e714ba1327671025"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_beehive02_41d071ad01f755fd8b0f399e44098a4e"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_beehive02_a2a6a4499d753ffbc8f63524e1ce8727"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_beehive02_5e8b544f7aeca304611926ce9e02e42c"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_beehive02_4f339a714efb2ac81941baa7b0b7cf39"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_oldSmallBarn07_e28bfe05a25b40576b538fab806a1368" boughtWithFarmlandOverwrite="true"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_beehive02_ffa6922d1c068baf7dcc30309f395a2c"/>
+    <placeable isPreplaced="true" uniqueId="preplaced_beehiveGeneric01_d85ce214d3d294c9825af4ebc6fd7774"/>
+<!-- Fences -->
+    <placeable filename="data/placeables/brandless/fences/husbandries/cowFence/cowFence.xml" uniqueId="placeablea96ad4e536bb6751ad8a588622352ff7" position="0.000 -151.000 0.000" rotation="0.00 -0.00 0.00" age="0.000000" price="100.000000" farmId="1">
+        <newFence>
+            <segment start="475.559 142.389 -1352.060" end="473.466 142.420 -1352.060" id="SEGMENT"/>
+            <segment start="473.466 142.420 -1352.060" end="473.318 142.082 -1369.776" id="SEGMENT"/>
+            <segment start="473.318 142.082 -1369.776" end="472.914 141.306 -1392.381" id="SEGMENT"/>
+            <segment start="472.914 141.306 -1392.381" end="472.863 141.158 -1394.822" id="SEGMENT"/>
+            <segment start="472.863 141.158 -1394.822" end="425.712 141.915 -1394.881" id="SEGMENT"/>
+            <segment start="425.712 141.915 -1394.881" end="384.939 140.807 -1394.725" id="SEGMENT"/>
+            <segment start="384.939 140.807 -1394.725" end="353.335 142.104 -1394.558" id="SEGMENT"/>
+            <segment start="353.335 142.104 -1394.558" end="332.580 142.590 -1394.475" id="SEGMENT"/>
+            <segment start="332.580 142.590 -1394.475" end="299.257 143.425 -1394.443" id="SEGMENT"/>
+            <segment start="299.257 143.425 -1394.443" end="275.499 142.460 -1394.384" id="SEGMENT"/>
+            <segment start="275.499 142.460 -1394.384" end="256.784 141.632 -1394.182" id="SEGMENT"/>
+            <segment start="256.784 141.632 -1394.182" end="258.736 137.675 -1414.655" id="SEGMENT"/>
+            <segment start="258.736 137.675 -1414.655" end="269.186 136.418 -1425.723" id="SEGMENT"/>
+            <segment start="269.186 136.418 -1425.723" end="282.356 135.580 -1435.286" id="SEGMENT"/>
+            <segment start="282.356 135.580 -1435.286" end="291.163 134.346 -1442.845" id="SEGMENT"/>
+            <segment start="291.163 134.346 -1442.845" end="311.712 133.422 -1450.350" id="SEGMENT"/>
+            <segment start="311.712 133.422 -1450.350" end="333.634 133.069 -1451.219" id="SEGMENT"/>
+            <segment start="333.634 133.069 -1451.219" end="351.753 132.608 -1451.539" id="SEGMENT"/>
+            <segment start="351.753 132.608 -1451.539" end="368.317 132.200 -1451.691" id="SEGMENT"/>
+            <segment start="368.317 132.201 -1451.691" end="382.942 131.547 -1451.617" id="SEGMENT"/>
+            <segment start="382.942 131.547 -1451.617" end="398.284 131.361 -1449.845" id="SEGMENT"/>
+            <segment start="398.284 131.361 -1449.845" end="419.453 132.848 -1444.678" id="SEGMENT"/>
+            <segment start="419.453 132.848 -1444.678" end="429.993 133.770 -1442.624" id="SEGMENT"/>
+            <segment start="429.993 133.770 -1442.624" end="450.336 134.024 -1442.739" id="SEGMENT"/>
+            <segment start="450.336 134.024 -1442.739" end="477.410 133.370 -1443.531" id="SEGMENT"/>
+            <segment start="477.410 133.370 -1443.531" end="519.172 131.465 -1445.292" id="SEGMENT"/>
+            <segment start="519.172 131.465 -1445.292" end="526.930 131.280 -1445.118" id="SEGMENT"/>
+            <segment start="526.930 131.280 -1445.118" end="537.552 132.733 -1437.473" id="SEGMENT"/>
+            <segment start="537.552 132.733 -1437.473" end="548.428 134.274 -1426.868" id="SEGMENT"/>
+            <segment start="548.428 134.274 -1426.868" end="549.050 137.341 -1408.041" id="SEGMENT"/>
+            <segment start="549.013 139.140 -1390.381" end="549.609 139.602 -1384.743" id="SEGMENT"/>
+            <segment start="549.609 139.602 -1384.743" end="566.359 138.687 -1384.701" id="SEGMENT"/>
+            <segment start="566.359 138.687 -1384.701" end="568.638 138.571 -1384.590" id="SEGMENT"/>
+            <segment start="568.638 138.571 -1384.590" end="569.116 139.957 -1368.290" id="SEGMENT"/>
+            <segment start="569.116 139.957 -1368.290" end="569.101 140.648 -1351.979" id="SEGMENT"/>
+            <segment start="569.101 140.648 -1351.979" end="557.137 141.125 -1351.878" id="SEGMENT"/>
+            <segment start="557.137 141.125 -1351.878" end="541.733 141.141 -1351.923" id="SEGMENT"/>
+            <segment start="541.733 141.141 -1351.923" end="537.058 141.315 -1351.993" id="SEGMENT"/>
+            <segment start="130.267 147.883 -1366.779" end="130.952 147.900 -1365.236" id="SEGMENT"/>
+            <segment start="130.952 147.900 -1365.236" end="131.356 147.979 -1358.745" id="SEGMENT"/>
+            <segment start="131.356 147.979 -1358.745" end="131.527 148.393 -1346.607" id="SEGMENT"/>
+            <segment start="131.527 148.392 -1346.607" end="131.133 148.858 -1340.615" id="SEGMENT"/>
+            <segment start="131.133 148.858 -1340.615" end="129.635 148.945 -1338.830" id="SEGMENT"/>
+            <segment start="129.635 148.945 -1338.830" end="112.380 149.244 -1339.179" id="SEGMENT"/>
+            <segment start="130.154 147.397 -1381.159" end="129.690 146.312 -1385.586" id="SEGMENT"/>
+            <segment start="129.690 146.312 -1385.586" end="114.733 147.330 -1385.400" id="SEGMENT"/>
+            <segment start="114.733 147.331 -1385.400" end="84.538 147.371 -1385.514" id="SEGMENT"/>
+            <segment start="84.538 147.371 -1385.514" end="61.516 147.477 -1385.012" id="SEGMENT"/>
+            <segment start="61.516 147.477 -1385.012" end="44.755 147.042 -1384.468" id="SEGMENT"/>
+            <segment start="44.755 147.042 -1384.468" end="28.482 145.483 -1378.012" id="SEGMENT"/>
+            <segment start="28.482 145.483 -1378.012" end="16.428 144.150 -1376.757" id="SEGMENT"/>
+            <segment start="16.428 144.150 -1376.757" end="-4.399 143.649 -1374.828" id="SEGMENT"/>
+            <segment start="-4.399 143.649 -1374.828" end="-28.430 142.884 -1375.304" id="SEGMENT"/>
+            <segment start="-28.430 142.885 -1375.304" end="-52.640 142.784 -1375.160" id="SEGMENT"/>
+            <segment start="-52.640 142.784 -1375.160" end="-62.673 142.890 -1374.533" id="SEGMENT"/>
+            <segment start="-62.673 142.890 -1374.533" end="-69.440 143.302 -1371.614" id="SEGMENT"/>
+            <segment start="-69.440 143.302 -1371.614" end="-78.041 143.663 -1368.602" id="SEGMENT"/>
+            <segment start="-78.041 143.663 -1368.602" end="-87.721 143.686 -1366.801" id="SEGMENT"/>
+            <segment start="-87.721 143.686 -1366.801" end="-100.420 143.810 -1362.989" id="SEGMENT"/>
+            <segment start="-100.420 143.810 -1362.989" end="-116.324 143.095 -1363.425" id="SEGMENT"/>
+            <segment start="-116.324 143.095 -1363.425" end="-146.573 143.126 -1363.416" id="SEGMENT"/>
+            <segment start="-146.573 143.126 -1363.416" end="-168.151 145.579 -1363.446" id="SEGMENT"/>
+            <segment start="-168.151 145.579 -1363.446" end="-187.095 148.400 -1363.646" id="SEGMENT"/>
+            <segment start="-187.095 148.400 -1363.646" end="-189.768 148.759 -1360.564" id="SEGMENT"/>
+            <segment start="-189.768 148.759 -1360.564" end="-191.228 148.819 -1357.351" id="SEGMENT"/>
+            <segment start="-191.228 148.819 -1357.351" end="-189.619 148.062 -1351.136" id="SEGMENT"/>
+            <segment start="-189.619 148.062 -1351.136" end="-188.079 147.132 -1342.121" id="SEGMENT"/>
+            <segment start="-188.079 147.132 -1342.121" end="-185.025 146.796 -1332.794" id="SEGMENT"/>
+            <segment start="-185.025 146.796 -1332.794" end="-181.080 146.746 -1327.968" id="SEGMENT"/>
+            <segment start="-181.080 146.746 -1327.968" end="-175.916 146.991 -1320.523" id="SEGMENT"/>
+            <segment start="-175.916 146.991 -1320.523" end="-169.918 146.844 -1316.301" id="SEGMENT"/>
+            <segment start="-169.918 146.844 -1316.301" end="-154.545 147.170 -1313.603" id="SEGMENT"/>
+            <segment start="-154.545 147.170 -1313.603" end="-139.856 148.666 -1314.813" id="SEGMENT"/>
+            <segment start="-139.856 148.666 -1314.813" end="-127.562 149.516 -1317.998" id="SEGMENT"/>
+            <segment start="-127.562 149.516 -1317.998" end="-114.642 149.975 -1323.071" id="SEGMENT"/>
+            <segment start="-114.642 149.975 -1323.071" end="-98.628 150.340 -1327.612" id="SEGMENT"/>
+            <segment start="-98.628 150.340 -1327.612" end="-82.542 150.403 -1332.480" id="SEGMENT"/>
+            <segment start="-82.542 150.403 -1332.480" end="-65.253 150.613 -1337.281" id="SEGMENT"/>
+            <segment start="-65.253 150.613 -1337.281" end="-46.381 150.560 -1343.156" id="SEGMENT"/>
+            <segment start="-46.381 150.560 -1343.156" end="-40.143 150.567 -1344.332" id="SEGMENT"/>
+            <segment start="-40.143 150.567 -1344.332" end="-15.716 150.924 -1344.044" id="SEGMENT"/>
+            <segment start="-15.716 150.924 -1344.044" end="6.061 150.963 -1343.887" id="SEGMENT"/>
+            <segment start="6.061 150.963 -1343.887" end="34.484 151.385 -1344.067" id="SEGMENT"/>
+            <segment start="34.484 151.385 -1344.067" end="59.162 151.004 -1343.798" id="SEGMENT"/>
+            <segment start="59.162 151.004 -1343.798" end="66.832 150.737 -1343.878" id="SEGMENT"/>
+            <segment start="66.832 150.737 -1343.878" end="73.604 150.781 -1337.715" id="SEGMENT"/>
+        </newFence>
+    </placeable>
+    <placeable filename="data/placeables/brandless/fences/EU/fence01/fence01.xml" uniqueId="placeableae473242f4b98f65314edee71025f68f" position="0.000 -151.000 0.000" rotation="0.00 -0.00 0.00" age="0.000000" price="70.000000" farmId="1">
+        <newFence>
+            <segment start="37.794 151.798 -1198.013" end="29.622 151.846 -1198.066" id="SEGMENT"/>
+            <segment start="29.622 151.846 -1198.066" end="21.022 152.235 -1198.077" id="SEGMENT"/>
+            <segment start="21.022 152.235 -1198.077" end="18.626 152.341 -1198.623" id="SEGMENT"/>
+            <segment start="18.626 152.341 -1198.623" end="13.303 152.463 -1204.528" id="SEGMENT"/>
+            <segment start="13.303 152.463 -1204.528" end="6.392 152.744 -1208.519" id="SEGMENT"/>
+            <segment start="6.392 152.744 -1208.519" end="1.145 152.880 -1212.522" id="SEGMENT"/>
+            <segment start="1.145 152.880 -1212.522" end="-7.387 153.101 -1218.211" id="SEGMENT"/>
+            <segment start="-7.387 153.101 -1218.211" end="-15.789 153.268 -1222.609" id="SEGMENT"/>
+            <segment start="-15.789 153.268 -1222.609" end="-23.572 153.417 -1226.267" id="SEGMENT"/>
+            <segment start="-23.572 153.417 -1226.267" end="-27.366 153.431 -1228.868" id="SEGMENT"/>
+            <segment start="-27.366 153.431 -1228.868" end="-27.782 153.339 -1236.951" id="SEGMENT"/>
+            <segment start="-27.782 153.339 -1236.951" end="-28.011 153.272 -1243.547" id="SEGMENT"/>
+            <segment start="-28.011 153.272 -1243.547" end="-17.537 153.078 -1243.788" id="SEGMENT"/>
+            <segment start="-17.537 153.078 -1243.788" end="-7.202 152.880 -1243.973" id="SEGMENT"/>
+            <segment start="-7.202 152.880 -1243.973" end="0.863 152.451 -1243.961" id="SEGMENT"/>
+            <segment start="0.863 152.451 -1243.961" end="13.449 152.109 -1243.883" id="SEGMENT"/>
+            <segment start="13.449 152.109 -1243.883" end="19.201 152.006 -1243.929" id="SEGMENT"/>
+            <segment start="19.201 152.006 -1243.929" end="25.640 151.891 -1244.482" id="SEGMENT"/>
+            <segment start="1127.135 87.279 515.556" end="1127.083 87.118 530.156" id="SEGMENT"/>
+            <segment start="1127.083 87.118 530.156" end="1129.965 86.941 532.876" id="SEGMENT"/>
+            <segment start="1129.965 86.941 532.876" end="1137.479 86.586 531.756" id="SEGMENT"/>
+            <segment start="1137.479 86.586 531.756" end="1139.129 86.494 531.059" id="SEGMENT"/>
+            <segment start="1139.129 86.494 531.059" end="1145.177 86.121 524.944" id="SEGMENT"/>
+            <segment start="1145.177 86.121 524.944" end="1151.361 85.878 518.968" id="SEGMENT"/>
+            <segment start="1151.361 85.878 518.968" end="1157.080 85.854 512.977" id="SEGMENT"/>
+            <segment start="1157.080 85.854 512.977" end="1159.443 85.892 509.645" id="SEGMENT"/>
+            <segment start="1159.443 85.892 509.645" end="1167.232 85.966 506.000" id="SEGMENT"/>
+            <segment start="1167.232 85.966 506.000" end="1173.533 85.856 504.035" id="SEGMENT"/>
+            <segment start="1173.533 85.856 504.035" end="1180.799 85.656 500.908" id="SEGMENT"/>
+            <segment start="1180.799 85.656 500.908" end="1186.185 85.344 499.997" id="SEGMENT"/>
+            <segment start="1186.185 85.344 499.997" end="1190.596 84.988 498.692" id="SEGMENT"/>
+            <segment start="1190.596 84.988 498.692" end="1192.542 84.835 496.968" id="SEGMENT"/>
+            <segment start="1192.542 84.835 496.968" end="1197.400 84.533 494.227" id="SEGMENT"/>
+            <segment start="1197.400 84.533 494.227" end="1202.830 84.331 490.475" id="SEGMENT"/>
+            <segment start="1202.830 84.331 490.475" end="1209.730 84.189 486.676" id="SEGMENT"/>
+            <segment start="1209.730 84.189 486.676" end="1213.661 84.098 485.857" id="SEGMENT"/>
+            <segment start="1213.661 84.098 485.857" end="1218.728 84.161 481.628" id="SEGMENT"/>
+            <segment start="1218.728 84.161 481.628" end="1218.932 84.514 475.722" id="SEGMENT"/>
+            <segment start="1218.932 84.514 475.722" end="1219.029 84.812 471.123" id="SEGMENT"/>
+            <segment start="1219.029 84.812 471.123" end="1217.377 85.006 469.114" id="SEGMENT"/>
+            <segment start="1217.377 85.006 469.114" end="1215.933 85.141 468.026" id="SEGMENT"/>
+            <segment start="1215.933 85.141 468.026" end="1198.102 85.812 468.247" id="SEGMENT"/>
+            <segment start="1198.102 85.812 468.247" end="1184.654 86.212 468.302" id="SEGMENT"/>
+            <segment start="1184.654 86.212 468.302" end="1172.055 86.090 468.460" id="SEGMENT"/>
+            <segment start="1172.055 86.090 468.460" end="1162.138 85.833 469.111" id="SEGMENT"/>
+        </newFence>
+    </placeable>
+    <placeable filename="data/placeables/brandless/fences/husbandries/level05/fencesFarmLevel05.xml" uniqueId="placeable3fde733fe443eb25ea2501d55142a4fa" position="0.000 -151.000 0.000" rotation="0.00 -0.00 0.00" age="0.000000" price="125.000000" farmId="1">
+        <newFence>
+            <segment start="70.835 146.271 -1479.111" end="70.499 146.257 -1485.507" id="SEGMENT"/>
+            <segment start="70.499 146.256 -1485.507" end="58.949 146.188 -1485.170" id="SEGMENT"/>
+            <segment start="58.949 146.188 -1485.170" end="41.203 146.273 -1483.011" id="SEGMENT"/>
+            <segment start="41.203 146.273 -1483.011" end="28.007 146.666 -1481.024" id="SEGMENT"/>
+            <segment start="28.007 146.665 -1481.024" end="17.277 147.199 -1477.382" id="SEGMENT"/>
+            <segment start="17.277 147.199 -1477.382" end="-12.191 150.057 -1473.101" id="SEGMENT"/>
+            <segment start="-12.191 150.057 -1473.101" end="-32.996 151.023 -1470.640" id="SEGMENT"/>
+            <segment start="-32.996 151.023 -1470.640" end="-50.250 151.383 -1468.157" id="SEGMENT"/>
+            <segment start="-50.250 151.383 -1468.157" end="-61.861 151.556 -1466.881" id="SEGMENT"/>
+            <segment start="-61.861 151.556 -1466.881" end="-66.634 151.514 -1460.697" id="SEGMENT"/>
+            <segment start="-66.634 151.514 -1460.697" end="-66.321 150.064 -1427.943" id="SEGMENT"/>
+            <segment start="-66.321 150.064 -1427.943" end="-65.971 143.771 -1398.630" id="SEGMENT"/>
+            <segment start="-65.971 143.771 -1398.630" end="-56.763 142.819 -1396.517" id="SEGMENT"/>
+            <segment start="-56.763 142.819 -1396.517" end="-42.828 142.307 -1396.736" id="SEGMENT"/>
+            <segment start="-42.828 142.307 -1396.736" end="-27.584 142.373 -1400.734" id="SEGMENT"/>
+            <segment start="-27.584 142.373 -1400.734" end="-14.862 142.211 -1404.085" id="SEGMENT"/>
+            <segment start="-14.862 142.211 -1404.085" end="-1.112 141.855 -1407.767" id="SEGMENT"/>
+            <segment start="-1.112 141.855 -1407.767" end="14.337 141.518 -1412.080" id="SEGMENT"/>
+            <segment start="14.337 141.518 -1412.080" end="22.567 141.270 -1413.686" id="SEGMENT"/>
+            <segment start="22.567 141.270 -1413.686" end="32.416 141.029 -1416.817" id="SEGMENT"/>
+            <segment start="32.416 141.029 -1416.817" end="60.192 139.501 -1415.922" id="SEGMENT"/>
+            <segment start="60.192 139.501 -1415.922" end="60.518 143.969 -1432.104" id="SEGMENT"/>
+            <segment start="60.518 143.969 -1432.104" end="60.628 146.035 -1442.438" id="SEGMENT"/>
+            <segment start="60.628 146.035 -1442.438" end="85.482 144.641 -1442.039" id="SEGMENT"/>
+            <segment start="85.482 144.641 -1442.039" end="85.327 146.423 -1455.548" id="SEGMENT"/>
+            <segment start="-1228.065 174.835 -1400.897" end="-1198.230 174.274 -1400.910" id="SEGMENT"/>
+            <segment start="-1198.230 174.274 -1400.910" end="-1198.032 174.838 -1349.625" id="SEGMENT"/>
+            <segment start="-1198.032 174.838 -1349.625" end="-1198.129 175.646 -1298.340" id="SEGMENT"/>
+            <segment start="-1198.129 175.646 -1298.340" end="-1199.806 175.658 -1290.270" id="SEGMENT"/>
+            <segment start="-1199.806 175.658 -1290.270" end="-1207.430 175.726 -1290.031" id="SEGMENT"/>
+            <segment start="-1207.430 175.726 -1290.031" end="-1213.424 175.831 -1289.765" id="GATE6m">
+                <animatedObject id="door01" time="0.000000" direction="0"/>
+            </segment>
+            <segment start="-1228.732 175.777 -1313.325" end="-1228.494 175.409 -1338.148" id="SEGMENT"/>
+            <segment start="-1228.494 175.409 -1338.148" end="-1228.639 175.123 -1363.817" id="SEGMENT"/>
+            <segment start="-1228.639 175.123 -1363.817" end="-1228.065 174.835 -1400.897" id="SEGMENT"/>
+            <segment start="-1218.793 175.947 -1289.375" end="-1213.425 175.831 -1289.765" id="SEGMENT"/>
+            <segment start="-1218.793 175.947 -1289.375" end="-1224.444 176.185 -1289.036" id="SEGMENT"/>
+            <segment start="-1224.444 176.185 -1289.036" end="-1228.452 176.396 -1288.917" id="SEGMENT"/>
+            <segment start="-1228.452 176.396 -1288.917" end="-1228.684 175.889 -1306.207" id="SEGMENT"/>
+            <segment start="-1228.684 175.889 -1306.207" end="-1228.733 175.836 -1309.620" id="SEGMENT"/>
+            <segment start="-1228.733 175.836 -1309.620" end="-1228.732 175.777 -1313.325" id="SEGMENT"/>
+            <segment start="1512.898 119.242 -1280.871" end="1512.487 118.702 -1302.903" id="SEGMENT"/>
+            <segment start="1512.487 118.702 -1302.903" end="1512.091 117.093 -1342.486" id="SEGMENT"/>
+            <segment start="1512.091 117.093 -1342.486" end="1512.471 116.549 -1349.779" id="SEGMENT"/>
+            <segment start="1512.471 116.549 -1349.779" end="1511.702 113.953 -1365.917" id="SEGMENT"/>
+            <segment start="1511.702 113.953 -1365.917" end="1504.123 114.079 -1366.193" id="SEGMENT"/>
+            <segment start="1504.123 114.079 -1366.193" end="1494.673 113.872 -1366.396" id="SEGMENT"/>
+            <segment start="1494.673 113.872 -1366.396" end="1473.724 111.840 -1366.168" id="SEGMENT"/>
+            <segment start="1473.724 111.840 -1366.168" end="1460.606 111.863 -1366.251" id="SEGMENT"/>
+            <segment start="1460.606 111.863 -1366.251" end="1458.257 112.277 -1365.298" id="SEGMENT"/>
+            <segment start="1458.257 112.277 -1365.298" end="1456.844 113.285 -1361.042" id="SEGMENT"/>
+            <segment start="1456.844 113.285 -1361.042" end="1456.378 115.221 -1349.470" id="SEGMENT"/>
+            <segment start="1456.378 115.221 -1349.470" end="1456.576 117.063 -1333.531" id="SEGMENT"/>
+            <segment start="1456.576 117.063 -1333.531" end="1455.702 118.081 -1323.233" id="SEGMENT"/>
+            <segment start="1455.702 118.081 -1323.233" end="1454.640 118.895 -1315.442" id="SEGMENT"/>
+            <segment start="1454.640 118.895 -1315.442" end="1455.250 119.122 -1312.089" id="SEGMENT"/>
+            <segment start="1455.250 119.122 -1312.089" end="1458.062 119.244 -1308.594" id="SEGMENT"/>
+            <segment start="1458.062 119.244 -1308.594" end="1464.239 119.172 -1306.792" id="SEGMENT"/>
+            <segment start="1464.239 119.172 -1306.792" end="1473.648 119.238 -1304.853" id="SEGMENT"/>
+            <segment start="1473.648 119.238 -1304.853" end="1473.896 119.917 -1294.562" id="SEGMENT"/>
+            <segment start="1473.896 119.917 -1294.562" end="1474.229 119.771 -1275.474" id="SEGMENT"/>
+            <segment start="1474.229 119.771 -1275.474" end="1478.710 119.408 -1275.675" id="SEGMENT"/>
+            <segment start="-815.236 168.895 195.612" end="-814.996 168.883 180.045" id="SEGMENT"/>
+            <segment start="-814.996 168.883 180.045" end="-813.940 168.920 169.839" id="SEGMENT"/>
+            <segment start="-813.940 168.920 169.839" end="-810.429 168.642 168.354" id="SEGMENT"/>
+            <segment start="-810.429 168.642 168.354" end="-799.068 167.470 169.086" id="SEGMENT"/>
+            <segment start="-799.068 167.470 169.086" end="-790.702 166.832 169.643" id="SEGMENT"/>
+            <segment start="-790.702 166.832 169.643" end="-766.718 166.603 169.449" id="SEGMENT"/>
+            <segment start="-766.718 166.603 169.449" end="-734.934 166.950 169.792" id="SEGMENT"/>
+            <segment start="-734.934 166.950 169.792" end="-710.949 167.079 169.732" id="SEGMENT"/>
+            <segment start="-710.949 167.079 169.732" end="-687.013 167.018 169.351" id="SEGMENT"/>
+            <segment start="-687.013 167.018 169.351" end="-657.179 166.649 169.408" id="SEGMENT"/>
+            <segment start="-657.179 166.649 169.408" end="-635.144 166.217 169.394" id="SEGMENT"/>
+            <segment start="-635.144 166.217 169.394" end="-601.585 165.485 169.589" id="SEGMENT"/>
+            <segment start="-601.585 165.485 169.589" end="-596.151 165.339 169.560" id="SEGMENT"/>
+            <segment start="-596.151 165.339 169.560" end="-596.239 165.265 183.241" id="SEGMENT"/>
+            <segment start="-596.239 165.265 183.241" end="-596.742 164.005 202.784" id="SEGMENT"/>
+            <segment start="-596.742 164.005 202.784" end="-597.980 163.545 206.000" id="SEGMENT"/>
+            <segment start="-597.980 163.545 206.000" end="-614.128 164.113 205.840" id="SEGMENT"/>
+            <segment start="-614.128 164.113 205.840" end="-631.618 165.460 205.049" id="SEGMENT"/>
+            <segment start="-631.618 165.460 205.049" end="-648.916 165.823 205.212" id="SEGMENT"/>
+            <segment start="-648.916 165.823 205.212" end="-672.465 165.931 205.173" id="SEGMENT"/>
+            <segment start="-672.465 165.931 205.173" end="-692.298 165.964 202.817" id="SEGMENT"/>
+            <segment start="-692.298 165.964 202.817" end="-704.923 166.371 196.239" id="SEGMENT"/>
+            <segment start="-704.923 166.371 196.239" end="-723.268 166.513 188.714" id="SEGMENT"/>
+            <segment start="-723.268 166.513 188.714" end="-735.082 166.316 185.346" id="SEGMENT"/>
+            <segment start="-735.082 166.316 185.346" end="-743.372 166.149 184.083" id="SEGMENT"/>
+            <segment start="-743.372 166.149 184.083" end="-753.926 165.646 190.257" id="SEGMENT"/>
+            <segment start="-753.926 165.646 190.257" end="-757.210 165.341 200.902" id="SEGMENT"/>
+            <segment start="-757.210 165.341 200.902" end="-757.670 165.803 213.134" id="SEGMENT"/>
+            <segment start="1028.298 92.117 366.597" end="1025.766 92.362 366.713" id="SEGMENT"/>
+            <segment start="1025.766 92.362 366.713" end="1025.707 92.091 352.891" id="SEGMENT"/>
+            <segment start="1025.707 92.091 352.891" end="1025.929 91.916 340.859" id="SEGMENT"/>
+            <segment start="1025.929 91.916 340.859" end="1024.056 91.914 336.920" id="SEGMENT"/>
+            <segment start="1024.056 91.914 336.920" end="1016.092 92.087 330.542" id="SEGMENT"/>
+            <segment start="1016.092 92.087 330.542" end="1010.356 91.977 328.859" id="SEGMENT"/>
+            <segment start="1010.356 91.977 328.859" end="1003.198 91.790 327.349" id="SEGMENT"/>
+            <segment start="1003.198 91.790 327.349" end="999.503 91.838 324.808" id="SEGMENT"/>
+            <segment start="999.503 91.838 324.808" end="995.054 92.014 320.941" id="SEGMENT"/>
+            <segment start="995.054 92.014 320.941" end="991.007 92.345 320.020" id="SEGMENT"/>
+            <segment start="991.007 92.345 320.020" end="982.625 93.164 319.769" id="SEGMENT"/>
+            <segment start="982.625 93.164 319.769" end="974.878 93.756 317.873" id="SEGMENT"/>
+            <segment start="974.878 93.756 317.873" end="967.329 94.138 317.642" id="SEGMENT"/>
+            <segment start="967.329 94.138 317.642" end="955.132 94.718 316.176" id="SEGMENT"/>
+            <segment start="955.132 94.718 316.176" end="943.423 95.109 312.456" id="SEGMENT"/>
+            <segment start="943.423 95.109 312.456" end="931.877 95.359 308.261" id="SEGMENT"/>
+            <segment start="931.877 95.359 308.261" end="926.441 95.508 302.305" id="SEGMENT"/>
+            <segment start="926.441 95.508 302.305" end="925.446 95.512 293.979" id="SEGMENT"/>
+            <segment start="925.446 95.512 293.979" end="925.280 97.060 272.988" id="SEGMENT"/>
+            <segment start="925.280 97.060 272.988" end="925.134 99.549 263.381" id="SEGMENT"/>
+            <segment start="925.134 99.549 263.381" end="927.027 99.820 262.194" id="SEGMENT"/>
+            <segment start="927.027 99.820 262.194" end="950.813 99.898 262.102" id="SEGMENT"/>
+            <segment start="950.813 99.898 262.102" end="991.275 98.388 261.716" id="SEGMENT"/>
+            <segment start="991.275 98.388 261.716" end="991.017 96.242 290.535" id="SEGMENT"/>
+            <segment start="991.017 96.242 290.535" end="991.670 94.501 305.983" id="SEGMENT"/>
+            <segment start="991.670 94.501 305.983" end="991.902 93.194 310.462" id="SEGMENT"/>
+            <segment start="991.902 93.194 310.462" end="992.785 92.492 312.839" id="SEGMENT"/>
+            <segment start="992.785 92.492 312.839" end="1002.048 91.899 317.421" id="SEGMENT"/>
+            <segment start="1002.048 91.899 317.421" end="1009.183 91.865 318.833" id="SEGMENT"/>
+            <segment start="1009.183 91.865 318.833" end="1013.568 91.863 319.776" id="SEGMENT"/>
+            <segment start="1013.568 91.863 319.776" end="1019.752 92.114 317.996" id="SEGMENT"/>
+            <segment start="1019.752 92.114 317.996" end="1023.983 92.897 313.148" id="SEGMENT"/>
+            <segment start="1023.983 92.897 313.148" end="1025.466 93.584 308.915" id="SEGMENT"/>
+            <segment start="1025.466 93.584 308.915" end="1028.838 94.271 303.434" id="SEGMENT"/>
+            <segment start="1028.838 94.271 303.434" end="1036.878 94.306 302.732" id="SEGMENT"/>
+            <segment start="1036.878 94.306 302.732" end="1049.015 94.567 303.848" id="SEGMENT"/>
+            <segment start="1049.015 94.567 303.848" end="1070.381 95.016 309.237" id="SEGMENT"/>
+            <segment start="1070.381 95.016 309.237" end="1081.972 94.428 313.308" id="SEGMENT"/>
+            <segment start="1081.972 94.428 313.308" end="1095.965 93.152 323.751" id="SEGMENT"/>
+            <segment start="1095.965 93.152 323.751" end="1112.104 93.407 322.531" id="SEGMENT"/>
+            <segment start="1112.104 93.407 322.531" end="1118.440 93.240 323.658" id="SEGMENT"/>
+            <segment start="1118.440 93.240 323.658" end="1138.020 92.242 331.448" id="SEGMENT"/>
+            <segment start="1138.020 92.242 331.448" end="1154.149 92.048 337.304" id="SEGMENT"/>
+            <segment start="1154.149 92.048 337.304" end="1172.074 91.528 343.385" id="SEGMENT"/>
+            <segment start="1172.074 91.528 343.385" end="1179.626 91.056 353.074" id="SEGMENT"/>
+            <segment start="1179.626 91.056 353.074" end="1180.138 88.766 377.984" id="SEGMENT"/>
+            <segment start="1180.138 88.766 377.984" end="1179.942 87.518 393.659" id="SEGMENT"/>
+            <segment start="1179.942 87.518 393.659" end="1172.358 88.243 398.944" id="SEGMENT"/>
+            <segment start="1172.358 88.243 398.944" end="1156.223 89.679 399.419" id="SEGMENT"/>
+            <segment start="1156.223 89.679 399.419" end="1146.603 90.231 395.641" id="SEGMENT"/>
+            <segment start="1146.603 90.231 395.641" end="1134.742 90.504 388.483" id="SEGMENT"/>
+            <segment start="1134.742 90.504 388.483" end="1124.152 90.528 378.971" id="SEGMENT"/>
+            <segment start="1124.152 90.528 378.971" end="1112.483 90.176 365.088" id="SEGMENT"/>
+            <segment start="1112.483 90.176 365.088" end="1087.501 91.132 365.682" id="SEGMENT"/>
+            <segment start="1087.501 91.132 365.682" end="1076.329 91.392 365.718" id="SEGMENT"/>
+            <segment start="-140.093 120.719 888.219" end="-129.920 119.672 888.412" id="SEGMENT"/>
+            <segment start="-129.920 119.672 888.412" end="-129.874 119.662 872.874" id="SEGMENT"/>
+            <segment start="-129.874 119.662 872.874" end="-129.996 119.657 850.944" id="SEGMENT"/>
+            <segment start="-129.996 119.657 850.944" end="-130.154 119.638 829.820" id="SEGMENT"/>
+            <segment start="-130.154 119.638 829.820" end="-130.067 119.584 819.485" id="SEGMENT"/>
+            <segment start="-130.067 119.584 819.485" end="-155.607 120.360 818.984" id="SEGMENT"/>
+            <segment start="-155.607 120.360 818.984" end="-184.464 121.048 818.975" id="SEGMENT"/>
+            <segment start="-184.464 121.048 818.975" end="-205.718 121.427 819.214" id="SEGMENT"/>
+            <segment start="-205.718 121.427 819.214" end="-206.333 121.642 834.782" id="SEGMENT"/>
+            <segment start="-206.506 121.748 852.398" end="-206.752 121.864 870.302" id="SEGMENT"/>
+            <segment start="-206.752 121.864 870.302" end="-194.833 121.524 870.243" id="SEGMENT"/>
+            <segment start="-194.833 121.524 870.243" end="-194.804 121.254 888.320" id="SEGMENT"/>
+            <segment start="-194.804 121.254 888.320" end="-189.472 120.798 888.311" id="SEGMENT"/>
+            <segment start="-1329.298 146.625 1407.047" end="-1329.440 146.720 1411.162" id="SEGMENT"/>
+            <segment start="-1329.440 146.720 1411.162" end="-1346.929 146.789 1411.401" id="SEGMENT"/>
+            <segment start="-1346.929 146.789 1411.401" end="-1399.286 147.329 1410.507" id="SEGMENT"/>
+            <segment start="-1399.286 147.329 1410.507" end="-1399.039 147.285 1406.677" id="SEGMENT"/>
+            <segment start="-1399.039 147.285 1406.677" end="-1397.933 147.221 1402.331" id="SEGMENT"/>
+            <segment start="-1397.933 147.221 1402.331" end="-1384.724 146.714 1375.580" id="SEGMENT"/>
+            <segment start="-1384.724 146.714 1375.580" end="-1378.590 146.491 1362.992" id="SEGMENT"/>
+            <segment start="-1378.590 146.491 1362.992" end="-1352.655 146.411 1362.846" id="SEGMENT"/>
+            <segment start="-1352.655 146.411 1362.846" end="-1338.470 146.411 1362.875" id="SEGMENT"/>
+            <segment start="-1338.470 146.411 1362.875" end="-1338.548 146.412 1367.155" id="SEGMENT"/>
+        </newFence>
+    </placeable>
+	<placeable filename="data/placeables/brandless/fences/AS/fence03/fence03.xml" uniqueId="placeable0f81b0ae3a729b59037489ef52b3d908" position="0.000 -151.000 0.000" rotation="0.00 -0.00 0.00" age="0.000000" price="100.000000" farmId="1"/>
+    <placeable filename="data/placeables/brandless/fences/US/fence13/fence13.xml" uniqueId="placeablea03d3e209579183d4ac4d5e38e14bd07" position="0.000 -151.000 0.000" rotation="0.00 -0.00 0.00" age="0.000000" price="150.000000" farmId="1">
+        <newFence>
+            <segment start="-1317.208 178.708 -1121.792" end="-1322.770 178.809 -1121.952" id="SEGMENT"/>
+            <segment start="-1322.770 178.809 -1121.952" end="-1325.237 178.868 -1124.574" id="SEGMENT"/>
+            <segment start="-1325.237 178.868 -1124.574" end="-1325.464 178.950 -1134.171" id="SEGMENT"/>
+            <segment start="-1325.464 178.950 -1134.171" end="-1325.133 179.319 -1167.769" id="SEGMENT"/>
+            <segment start="-1325.133 179.319 -1167.769" end="-1321.906 179.251 -1168.994" id="SEGMENT"/>
+            <segment start="-1321.906 179.251 -1168.994" end="-1315.505 179.071 -1167.386" id="SEGMENT"/>
+            <segment start="-1315.505 179.071 -1167.386" end="-1306.578 178.819 -1164.698" id="SEGMENT"/>
+            <segment start="-1306.578 178.819 -1164.698" end="-1286.051 178.266 -1157.976" id="SEGMENT"/>
+            <segment start="-1286.051 178.266 -1157.976" end="-1265.533 177.783 -1151.227" id="SEGMENT"/>
+            <segment start="-1265.533 177.783 -1151.227" end="-1247.792 177.419 -1145.641" id="SEGMENT"/>
+            <segment start="-1247.791 177.419 -1145.641" end="-1227.219 177.035 -1139.058" id="SEGMENT"/>
+            <segment start="-1227.219 177.035 -1139.058" end="-1203.874 176.632 -1131.300" id="SEGMENT"/>
+            <segment start="-1203.874 176.632 -1131.300" end="-1186.216 176.340 -1125.457" id="SEGMENT"/>
+            <segment start="-1186.216 176.340 -1125.457" end="-1172.739 176.125 -1119.596" id="SEGMENT"/>
+            <segment start="-1172.739 176.125 -1119.596" end="-1172.466 175.932 -1094.998" id="SEGMENT"/>
+            <segment start="-1172.466 175.932 -1094.998" end="-1172.262 176.022 -1085.400" id="SEGMENT"/>
+            <segment start="-1324.370 178.529 -1075.083" end="-1324.381 178.659 -1096.683" id="SEGMENT"/>
+            <segment start="-1324.381 178.659 -1096.683" end="-1321.839 178.629 -1099.231" id="SEGMENT"/>
+            <segment start="-1321.839 178.629 -1099.231" end="-1319.436 178.591 -1099.202" id="SEGMENT"/>
+            <segment start="-1324.370 178.529 -1075.083" end="-1275.772 178.147 -1075.494" id="SEGMENT"/>
+            <segment start="-1319.436 178.591 -1099.202" end="-1317.239 178.546 -1097.316" id="SEGMENT"/>
+            <segment start="-1317.239 178.546 -1097.316" end="-1317.553 178.442 -1081.719" id="SEGMENT"/>
+        </newFence>
+    </placeable>
+    <placeable filename="data/placeables/brandless/fences/husbandries/level04/fencesFarmLevel04.xml" uniqueId="placeable75206fc85baa5d916c549f8d6e234634" position="0.000 -151.000 0.000" rotation="0.00 -0.00 0.00" age="0.000000" price="100.000000" farmId="1">
+        <newFence>
+            <segment start="232.648 122.340 1767.663" end="224.227 122.073 1759.156" id="SEGMENT"/>
+            <segment start="224.227 122.073 1759.156" end="215.992 122.074 1750.994" id="SEGMENT"/>
+            <segment start="215.992 122.074 1750.994" end="206.210 122.121 1741.160" id="SEGMENT"/>
+            <segment start="206.210 122.121 1741.160" end="196.213 122.144 1730.430" id="SEGMENT"/>
+            <segment start="196.213 122.144 1730.430" end="184.294 122.294 1718.459" id="SEGMENT"/>
+            <segment start="184.294 122.294 1718.459" end="175.384 122.276 1709.060" id="SEGMENT"/>
+            <segment start="192.635 121.236 1712.854" end="196.969 121.058 1712.523" id="SEGMENT"/>
+            <segment start="196.969 121.058 1712.523" end="201.090 120.854 1711.827" id="SEGMENT"/>
+            <segment start="201.090 120.854 1711.827" end="204.466 120.778 1712.485" id="SEGMENT"/>
+            <segment start="204.466 120.778 1712.485" end="206.641 120.774 1713.656" id="SEGMENT"/>
+            <segment start="206.641 120.774 1713.656" end="212.024 120.807 1719.478" id="SEGMENT"/>
+            <segment start="212.024 120.807 1719.478" end="223.601 120.922 1732.827" id="SEGMENT"/>
+            <segment start="223.601 120.922 1732.827" end="235.195 121.238 1746.161" id="SEGMENT"/>
+            <segment start="235.195 121.238 1746.161" end="239.640 121.437 1751.732" id="SEGMENT"/>
+            <segment start="239.640 121.437 1751.732" end="240.200 121.570 1757.608" id="SEGMENT"/>
+            <segment start="240.200 121.570 1757.608" end="238.927 121.791 1761.667" id="SEGMENT"/>
+            <segment start="238.927 121.791 1761.667" end="233.018 122.302 1767.309" id="SEGMENT"/>
+            <segment start="179.372 120.200 1681.784" end="184.773 120.329 1687.914" id="SEGMENT"/>
+            <segment start="184.773 120.329 1687.915" end="189.771 120.488 1693.950" id="SEGMENT"/>
+            <segment start="189.771 120.488 1693.950" end="192.367 120.572 1697.464" id="SEGMENT"/>
+            <segment start="183.508 121.054 1694.617" end="177.238 121.425 1694.618" id="SEGMENT"/>
+            <segment start="177.238 121.425 1694.618" end="168.228 122.055 1698.081" id="SEGMENT"/>
+            <segment start="168.228 122.055 1698.081" end="161.549 122.510 1702.786" id="SEGMENT"/>
+            <segment start="161.549 122.510 1702.786" end="156.286 122.678 1711.371" id="SEGMENT"/>
+            <segment start="156.286 122.679 1711.371" end="149.161 122.816 1718.488" id="SEGMENT"/>
+            <segment start="149.161 122.816 1718.488" end="145.737 122.769 1725.450" id="SEGMENT"/>
+            <segment start="145.737 122.769 1725.450" end="146.354 122.853 1732.665" id="SEGMENT"/>
+            <segment start="146.354 122.853 1732.665" end="154.665 122.634 1738.277" id="SEGMENT"/>
+            <segment start="154.665 122.634 1738.277" end="173.145 122.611 1752.229" id="SEGMENT"/>
+            <segment start="173.145 122.611 1752.229" end="191.757 122.603 1770.682" id="SEGMENT"/>
+            <segment start="191.757 122.603 1770.682" end="202.989 123.370 1781.751" id="SEGMENT"/>
+            <segment start="202.989 123.370 1781.751" end="210.604 124.774 1790.944" id="SEGMENT"/>
+            <segment start="210.604 124.774 1790.944" end="212.380 124.980 1793.698" id="SEGMENT"/>
+            <segment start="212.380 124.980 1793.698" end="209.577 125.243 1798.623" id="SEGMENT"/>
+            <segment start="192.635 121.236 1712.854" end="187.741 121.355 1710.219" id="SEGMENT"/>
+            <segment start="187.741 121.355 1710.219" end="183.388 121.475 1706.870" id="SEGMENT"/>
+            <segment start="183.388 121.475 1706.870" end="180.191 121.551 1703.891" id="SEGMENT"/>
+            <segment start="180.191 121.551 1703.891" end="175.384 122.276 1709.060" id="SEGMENT"/>
+            <segment start="192.367 120.572 1697.464" end="189.482 120.930 1700.054" id="SEGMENT"/>
+            <segment start="189.482 120.930 1700.054" end="187.589 121.000 1698.956" id="SEGMENT"/>
+            <segment start="187.589 121.000 1698.956" end="183.508 121.054 1694.617" id="SEGMENT"/>
+        </newFence>
+    </placeable>
+    <placeable filename="data/placeables/brandless/fences/husbandries/level03/fencesFarmLevel03.xml" uniqueId="placeable2c85cddd60d53f655273708f4509dc1c" position="0.000 -151.000 0.000" rotation="0.00 -0.00 0.00" age="0.000000" price="100.000000" farmId="1">
+        <newFence>
+            <segment start="1679.916 117.549 -1165.203" end="1679.781 117.581 -1183.722" id="SEGMENT"/>
+            <segment start="1679.781 117.581 -1183.722" end="1680.590 117.279 -1215.687" id="SEGMENT"/>
+            <segment start="1680.590 117.279 -1215.687" end="1681.364 116.959 -1236.464" id="SEGMENT"/>
+            <segment start="1681.364 116.959 -1236.464" end="1688.924 116.698 -1244.233" id="SEGMENT"/>
+            <segment start="1688.924 116.698 -1244.233" end="1713.703 116.328 -1243.023" id="SEGMENT"/>
+            <segment start="1713.703 116.328 -1243.023" end="1738.711 115.575 -1242.637" id="SEGMENT"/>
+            <segment start="1738.711 115.575 -1242.637" end="1777.698 113.937 -1241.480" id="SEGMENT"/>
+            <segment start="1777.698 113.937 -1241.480" end="1794.990 113.058 -1241.332" id="SEGMENT"/>
+            <segment start="1794.990 113.058 -1241.332" end="1815.657 112.794 -1233.563" id="SEGMENT"/>
+            <segment start="1815.657 112.794 -1233.563" end="1821.429 112.708 -1232.197" id="SEGMENT"/>
+            <segment start="1821.429 112.708 -1232.197" end="1842.641 111.938 -1232.164" id="SEGMENT"/>
+            <segment start="1842.641 111.938 -1232.164" end="1866.191 111.015 -1232.089" id="SEGMENT"/>
+            <segment start="1866.191 111.015 -1232.089" end="1883.362 110.863 -1229.615" id="SEGMENT"/>
+            <segment start="1883.362 110.863 -1229.615" end="1899.355 110.711 -1226.968" id="SEGMENT"/>
+            <segment start="1899.355 110.711 -1226.968" end="1906.366 110.693 -1220.905" id="SEGMENT"/>
+            <segment start="1906.366 110.693 -1220.905" end="1909.430 110.724 -1210.303" id="SEGMENT"/>
+            <segment start="1909.430 110.724 -1210.303" end="1915.989 110.591 -1193.245" id="SEGMENT"/>
+            <segment start="1915.989 110.591 -1193.245" end="1922.798 110.382 -1179.597" id="SEGMENT"/>
+            <segment start="1922.798 110.382 -1179.597" end="1923.980 109.890 -1164.364" id="SEGMENT"/>
+            <segment start="1923.980 109.890 -1164.364" end="1924.377 108.413 -1150.460" id="SEGMENT"/>
+            <segment start="1924.377 108.413 -1150.460" end="1919.948 107.774 -1143.071" id="SEGMENT"/>
+            <segment start="1919.948 107.774 -1143.071" end="1910.066 107.819 -1136.526" id="SEGMENT"/>
+            <segment start="1910.066 107.819 -1136.526" end="1894.943 107.516 -1127.050" id="SEGMENT"/>
+            <segment start="1894.943 107.516 -1127.050" end="1879.178 108.076 -1118.220" id="SEGMENT"/>
+            <segment start="1879.178 108.076 -1118.220" end="1862.977 108.845 -1109.709" id="SEGMENT"/>
+            <segment start="1862.977 108.845 -1109.709" end="1848.956 109.249 -1101.429" id="SEGMENT"/>
+            <segment start="1848.956 109.249 -1101.429" end="1835.375 108.366 -1093.851" id="SEGMENT"/>
+            <segment start="1835.375 108.366 -1093.851" end="1823.128 108.820 -1090.019" id="SEGMENT"/>
+            <segment start="1823.128 108.820 -1090.019" end="1806.471 109.834 -1085.546" id="SEGMENT"/>
+            <segment start="1806.471 109.834 -1085.546" end="1789.742 109.473 -1080.835" id="SEGMENT"/>
+            <segment start="1789.742 109.473 -1080.835" end="1770.406 111.265 -1079.350" id="SEGMENT"/>
+            <segment start="1770.406 111.265 -1079.350" end="1750.161 111.222 -1071.668" id="SEGMENT"/>
+            <segment start="1750.161 111.222 -1071.668" end="1733.715 110.582 -1065.666" id="SEGMENT"/>
+            <segment start="1733.715 110.582 -1065.666" end="1719.090 109.965 -1056.439" id="SEGMENT"/>
+            <segment start="1719.090 109.965 -1056.439" end="1714.509 110.171 -1054.429" id="SEGMENT"/>
+            <segment start="1714.509 110.171 -1054.429" end="1705.287 110.474 -1049.623" id="SEGMENT"/>
+            <segment start="1705.287 110.474 -1049.623" end="1699.961 110.802 -1048.061" id="SEGMENT"/>
+            <segment start="1699.961 110.802 -1048.061" end="1690.116 111.922 -1048.265" id="SEGMENT"/>
+            <segment start="1690.116 111.922 -1048.265" end="1682.930 112.786 -1048.139" id="SEGMENT"/>
+            <segment start="1682.930 112.786 -1048.139" end="1680.728 113.223 -1048.986" id="SEGMENT"/>
+            <segment start="1680.728 113.223 -1048.986" end="1679.574 114.717 -1056.980" id="SEGMENT"/>
+            <segment start="1679.574 114.717 -1056.980" end="1679.737 116.011 -1068.405" id="SEGMENT"/>
+            <segment start="-809.694 168.690 374.592" end="-809.850 168.382 363.847" id="SEGMENT"/>
+            <segment start="-809.850 168.382 363.847" end="-794.031 167.160 363.368" id="SEGMENT"/>
+            <segment start="-794.031 167.160 363.368" end="-790.236 167.059 361.831" id="SEGMENT"/>
+            <segment start="-790.236 167.059 361.831" end="-785.384 166.561 357.138" id="SEGMENT"/>
+            <segment start="-785.384 166.561 357.138" end="-779.887 166.118 350.338" id="SEGMENT"/>
+            <segment start="-762.281 165.582 349.919" end="-761.919 165.265 359.508" id="SEGMENT"/>
+            <segment start="-761.919 165.265 359.508" end="-760.526 166.247 369.726" id="SEGMENT"/>
+            <segment start="-760.526 166.247 369.726" end="-758.295 167.047 378.458" id="SEGMENT"/>
+            <segment start="-758.295 167.047 378.458" end="-750.594 166.703 379.716" id="SEGMENT"/>
+            <segment start="-750.594 166.703 379.716" end="-730.709 166.821 382.418" id="SEGMENT"/>
+            <segment start="-730.709 166.821 382.418" end="-708.567 167.519 385.652" id="SEGMENT"/>
+            <segment start="-708.567 167.519 385.652" end="-694.143 167.869 388.088" id="SEGMENT"/>
+            <segment start="-694.143 167.869 388.088" end="-674.336 167.367 387.554" id="SEGMENT"/>
+            <segment start="-674.336 167.367 387.554" end="-654.005 165.396 386.441" id="SEGMENT"/>
+            <segment start="-654.005 165.396 386.441" end="-632.980 164.021 382.462" id="SEGMENT"/>
+            <segment start="-632.980 164.021 382.462" end="-618.289 163.721 380.306" id="SEGMENT"/>
+            <segment start="-618.289 163.721 380.306" end="-604.593 163.516 377.227" id="SEGMENT"/>
+            <segment start="-604.593 163.516 377.227" end="-590.500 163.597 375.730" id="SEGMENT"/>
+            <segment start="-590.500 163.597 375.730" end="-575.637 163.679 374.291" id="SEGMENT"/>
+            <segment start="-575.637 163.679 374.291" end="-563.810 163.891 374.192" id="SEGMENT"/>
+            <segment start="-563.810 163.891 374.192" end="-554.425 163.824 371.781" id="SEGMENT"/>
+            <segment start="-554.425 163.824 371.781" end="-541.724 163.770 368.728" id="SEGMENT"/>
+            <segment start="-541.724 163.770 368.728" end="-528.495 163.646 366.393" id="SEGMENT"/>
+            <segment start="-528.495 163.646 366.393" end="-516.453 163.221 365.273" id="SEGMENT"/>
+            <segment start="-516.453 163.221 365.273" end="-506.107 162.747 366.361" id="SEGMENT"/>
+            <segment start="-506.107 162.747 366.361" end="-500.768 162.413 369.199" id="SEGMENT"/>
+            <segment start="-500.768 162.413 369.199" end="-497.434 161.972 377.462" id="SEGMENT"/>
+            <segment start="-497.434 161.972 377.462" end="-495.982 161.036 385.902" id="SEGMENT"/>
+            <segment start="-495.982 161.036 385.902" end="-497.806 160.922 387.738" id="SEGMENT"/>
+            <segment start="-497.806 160.922 387.738" end="-510.525 161.823 388.142" id="SEGMENT"/>
+            <segment start="-510.525 161.823 388.142" end="-524.304 161.865 390.197" id="SEGMENT"/>
+            <segment start="-524.304 161.866 390.197" end="-536.778 161.281 394.811" id="SEGMENT"/>
+            <segment start="-536.778 161.281 394.811" end="-554.494 161.972 396.804" id="SEGMENT"/>
+            <segment start="-554.494 161.972 396.804" end="-577.112 162.589 402.114" id="SEGMENT"/>
+            <segment start="-577.112 162.589 402.114" end="-600.311 163.066 404.673" id="SEGMENT"/>
+            <segment start="-600.311 163.066 404.673" end="-621.088 163.118 408.457" id="SEGMENT"/>
+            <segment start="-621.088 163.118 408.457" end="-644.313 164.710 410.281" id="SEGMENT"/>
+            <segment start="-644.313 164.710 410.281" end="-660.562 166.599 415.468" id="SEGMENT"/>
+            <segment start="-660.562 166.599 415.468" end="-670.115 167.111 419.311" id="SEGMENT"/>
+            <segment start="-670.115 167.111 419.311" end="-680.393 167.603 421.310" id="SEGMENT"/>
+            <segment start="-680.393 167.603 421.310" end="-694.391 167.173 421.765" id="SEGMENT"/>
+            <segment start="-694.391 167.173 421.765" end="-705.877 166.716 425.228" id="SEGMENT"/>
+            <segment start="-705.877 166.716 425.228" end="-719.470 166.865 427.565" id="SEGMENT"/>
+            <segment start="-719.470 166.865 427.565" end="-729.543 165.922 433.098" id="SEGMENT"/>
+            <segment start="-729.543 165.922 433.098" end="-743.069 165.563 437.915" id="SEGMENT"/>
+            <segment start="-743.069 165.563 437.915" end="-755.079 165.296 444.796" id="SEGMENT"/>
+            <segment start="-755.079 165.296 444.796" end="-765.102 165.380 446.304" id="SEGMENT"/>
+            <segment start="-765.102 165.380 446.304" end="-776.659 165.265 446.748" id="SEGMENT"/>
+            <segment start="-776.659 165.265 446.748" end="-795.983 165.753 446.517" id="SEGMENT"/>
+            <segment start="-795.983 165.753 446.517" end="-798.976 166.463 442.576" id="SEGMENT"/>
+            <segment start="-798.976 166.463 442.576" end="-798.842 168.440 428.343" id="SEGMENT"/>
+            <segment start="-665.945 165.716 309.990" end="-667.322 165.149 315.050" id="SEGMENT"/>
+            <segment start="-667.322 165.149 315.050" end="-671.524 165.341 317.135" id="SEGMENT"/>
+            <segment start="-671.524 165.341 317.135" end="-676.973 165.722 320.019" id="SEGMENT"/>
+            <segment start="-676.973 165.722 320.019" end="-676.850 163.935 333.630" id="SEGMENT"/>
+            <segment start="-676.850 163.935 333.630" end="-660.135 161.711 333.239" id="SEGMENT"/>
+            <segment start="-660.135 161.711 333.239" end="-647.001 161.814 328.737" id="SEGMENT"/>
+            <segment start="-647.001 161.814 328.737" end="-635.137 161.728 324.537" id="SEGMENT"/>
+            <segment start="-635.137 161.728 324.537" end="-623.789 161.479 321.131" id="SEGMENT"/>
+            <segment start="-623.789 161.480 321.131" end="-609.942 160.389 320.626" id="SEGMENT"/>
+            <segment start="-609.942 160.389 320.626" end="-596.954 158.738 320.416" id="SEGMENT"/>
+            <segment start="-596.954 158.738 320.416" end="-591.004 159.994 313.153" id="SEGMENT"/>
+            <segment start="-591.004 159.994 313.153" end="-586.628 161.105 305.950" id="SEGMENT"/>
+            <segment start="-586.628 161.105 305.950" end="-587.612 161.770 298.315" id="SEGMENT"/>
+            <segment start="-587.612 161.770 298.315" end="-592.215 161.790 292.107" id="SEGMENT"/>
+            <segment start="-592.215 161.790 292.107" end="-600.849 161.849 283.177" id="SEGMENT"/>
+            <segment start="-600.849 161.849 283.177" end="-612.129 162.736 270.282" id="SEGMENT"/>
+            <segment start="-612.129 162.736 270.282" end="-623.716 163.197 263.767" id="SEGMENT"/>
+            <segment start="-623.716 163.197 263.767" end="-642.386 163.617 261.890" id="SEGMENT"/>
+            <segment start="-642.386 163.617 261.890" end="-664.120 165.790 262.376" id="SEGMENT"/>
+            <segment start="-664.120 165.790 262.376" end="-670.576 166.345 260.803" id="SEGMENT"/>
+            <segment start="-670.576 166.345 260.803" end="-676.669 166.429 256.905" id="SEGMENT"/>
+            <segment start="-676.669 166.428 256.905" end="-684.128 166.808 257.240" id="SEGMENT"/>
+            <segment start="-684.128 166.808 257.240" end="-687.371 167.204 261.768" id="SEGMENT"/>
+            <segment start="-687.371 167.204 261.768" end="-688.028 167.249 282.796" id="SEGMENT"/>
+            <segment start="-688.028 167.249 282.796" end="-685.053 167.067 283.765" id="SEGMENT"/>
+            <segment start="-685.053 167.067 283.765" end="-678.884 166.448 283.474" id="SEGMENT"/>
+            <segment start="1100.703 88.497 551.043" end="1100.766 87.680 556.289" id="SEGMENT"/>
+            <segment start="1100.766 87.680 556.289" end="1090.748 88.184 555.396" id="SEGMENT"/>
+            <segment start="1090.748 88.184 555.396" end="1082.014 88.545 556.185" id="SEGMENT"/>
+            <segment start="1082.014 88.545 556.185" end="1064.336 89.315 556.644" id="SEGMENT"/>
+            <segment start="1064.336 89.315 556.644" end="1035.539 89.701 568.299" id="SEGMENT"/>
+            <segment start="1035.539 89.701 568.299" end="1023.088 90.040 579.654" id="SEGMENT"/>
+            <segment start="1023.088 90.040 579.654" end="1016.353 90.199 582.486" id="SEGMENT"/>
+            <segment start="1016.353 90.199 582.486" end="1002.888 90.574 591.308" id="SEGMENT"/>
+            <segment start="1002.888 90.574 591.308" end="993.370 90.691 595.756" id="SEGMENT"/>
+            <segment start="993.370 90.691 595.756" end="985.112 90.789 597.987" id="SEGMENT"/>
+            <segment start="985.112 90.789 597.987" end="974.479 90.852 599.038" id="SEGMENT"/>
+            <segment start="974.479 90.852 599.038" end="963.822 90.851 596.381" id="SEGMENT"/>
+            <segment start="963.822 90.851 596.381" end="951.537 90.984 587.037" id="SEGMENT"/>
+            <segment start="951.537 90.984 587.037" end="941.101 91.356 575.260" id="SEGMENT"/>
+            <segment start="941.101 91.356 575.260" end="931.231 91.822 569.782" id="SEGMENT"/>
+            <segment start="931.231 91.822 569.782" end="916.723 92.488 565.681" id="SEGMENT"/>
+            <segment start="916.723 92.488 565.681" end="900.327 93.300 559.190" id="SEGMENT"/>
+            <segment start="900.327 93.300 559.190" end="885.761 94.110 554.936" id="SEGMENT"/>
+            <segment start="885.761 94.110 554.936" end="872.340 95.201 551.486" id="SEGMENT"/>
+            <segment start="872.340 95.201 551.486" end="870.588 95.805 541.682" id="SEGMENT"/>
+            <segment start="870.588 95.805 541.682" end="874.744 95.251 529.169" id="SEGMENT"/>
+            <segment start="874.744 95.251 529.169" end="889.431 95.254 520.872" id="SEGMENT"/>
+            <segment start="889.431 95.254 520.872" end="914.422 95.841 508.090" id="SEGMENT"/>
+            <segment start="914.422 95.841 508.090" end="931.479 95.711 501.596" id="SEGMENT"/>
+            <segment start="931.479 95.711 501.596" end="954.012 95.313 496.746" id="SEGMENT"/>
+            <segment start="954.012 95.313 496.746" end="970.743 96.076 496.715" id="SEGMENT"/>
+            <segment start="970.743 96.076 496.715" end="970.514 92.938 515.541" id="SEGMENT"/>
+            <segment start="970.514 92.938 515.541" end="976.014 90.633 531.319" id="SEGMENT"/>
+            <segment start="976.014 90.633 531.319" end="987.373 90.733 548.440" id="SEGMENT"/>
+            <segment start="987.373 90.733 548.440" end="994.010 90.566 555.502" id="SEGMENT"/>
+            <segment start="994.010 90.566 555.502" end="1003.263 90.371 560.252" id="SEGMENT"/>
+            <segment start="1003.263 90.371 560.252" end="1013.277 90.310 560.835" id="SEGMENT"/>
+            <segment start="1013.277 90.310 560.835" end="1017.154 90.299 558.818" id="SEGMENT"/>
+            <segment start="1017.154 90.299 558.818" end="1020.545 90.281 553.619" id="SEGMENT"/>
+            <segment start="1020.545 90.281 553.619" end="1026.739 90.199 548.553" id="SEGMENT"/>
+            <segment start="1026.739 90.199 548.553" end="1026.481 90.746 543.385" id="SEGMENT"/>
+            <segment start="1026.481 90.746 543.385" end="1026.081 91.257 537.762" id="SEGMENT"/>
+            <segment start="-309.531 124.212 804.444" end="-299.767 123.777 799.434" id="SEGMENT"/>
+            <segment start="-311.555 124.058 779.491" end="-311.468 124.240 782.412" id="SEGMENT"/>
+            <segment start="-311.468 124.240 782.412" end="-299.440 123.563 781.935" id="SEGMENT"/>
+            <segment start="-355.683 124.628 804.344" end="-361.082 125.118 803.379" id="SEGMENT"/>
+            <segment start="-361.082 125.118 803.379" end="-363.083 125.380 796.425" id="SEGMENT"/>
+            <segment start="-363.083 125.380 796.425" end="-363.190 125.295 774.493" id="SEGMENT"/>
+            <segment start="-363.190 125.295 774.493" end="-363.075 125.155 741.062" id="SEGMENT"/>
+            <segment start="-363.075 125.155 741.062" end="-363.053 125.093 727.383" id="SEGMENT"/>
+            <segment start="-363.053 125.093 727.383" end="-345.881 124.557 727.037" id="SEGMENT"/>
+            <segment start="-345.881 124.557 727.037" end="-316.635 123.654 726.630" id="SEGMENT"/>
+            <segment start="-316.635 123.654 726.630" end="-311.863 123.472 726.751" id="SEGMENT"/>
+            <segment start="-311.863 123.472 726.751" end="-311.837 123.766 765.153" id="SEGMENT"/>
+            <segment start="-311.837 123.766 765.153" end="-311.555 124.058 779.491" id="SEGMENT"/>
+            <segment start="-563.626 127.164 847.568" end="-563.710 126.767 829.001" id="SEGMENT"/>
+            <segment start="-563.710 126.767 829.001" end="-563.543 126.176 779.268" id="SEGMENT"/>
+            <segment start="-563.543 126.176 779.268" end="-563.675 126.459 744.399" id="SEGMENT"/>
+            <segment start="-563.675 126.459 744.399" end="-563.865 126.538 707.395" id="SEGMENT"/>
+            <segment start="-563.865 126.538 707.395" end="-538.880 126.064 707.129" id="SEGMENT"/>
+            <segment start="-538.880 126.064 707.129" end="-538.898 126.080 732.949" id="SEGMENT"/>
+            <segment start="-538.898 126.080 732.949" end="-538.946 125.917 767.286" id="SEGMENT"/>
+            <segment start="-538.946 125.917 767.286" end="-538.841 125.878 802.686" id="SEGMENT"/>
+            <segment start="-538.841 125.878 802.686" end="-538.950 126.689 834.542" id="SEGMENT"/>
+            <segment start="-538.950 126.689 834.542" end="-538.561 127.104 849.376" id="SEGMENT"/>
+            <segment start="-1504.445 148.100 1388.995" end="-1505.504 148.213 1389.821" id="SEGMENT"/>
+            <segment start="-1505.504 148.213 1389.821" end="-1517.091 148.430 1390.069" id="SEGMENT"/>
+            <segment start="-1517.091 148.430 1390.069" end="-1598.871 150.630 1389.977" id="SEGMENT"/>
+            <segment start="-1598.871 150.630 1389.977" end="-1660.269 150.150 1390.032" id="SEGMENT"/>
+            <segment start="-1660.269 150.150 1390.032" end="-1736.897 150.974 1389.869" id="SEGMENT"/>
+            <segment start="-1736.897 150.974 1389.869" end="-1736.264 151.462 1345.069" id="SEGMENT"/>
+            <segment start="-1736.264 151.462 1345.069" end="-1710.099 151.250 1344.938" id="SEGMENT"/>
+            <segment start="-1710.099 151.250 1344.938" end="-1621.930 149.742 1344.967" id="SEGMENT"/>
+            <segment start="-1621.930 149.742 1344.967" end="-1561.791 148.597 1344.520" id="SEGMENT"/>
+            <segment start="-1561.791 148.597 1344.520" end="-1519.845 147.991 1344.623" id="SEGMENT"/>
+            <segment start="-1519.845 147.991 1344.623" end="-1469.746 147.473 1344.871" id="SEGMENT"/>
+            <segment start="-1469.746 147.473 1344.871" end="-1460.876 147.427 1345.374" id="SEGMENT"/>
+            <segment start="-1333.836 147.202 1473.732" end="-1333.427 147.213 1480.851" id="SEGMENT"/>
+            <segment start="-1333.427 147.213 1480.851" end="-1349.403 147.338 1480.999" id="SEGMENT"/>
+            <segment start="-1349.403 147.338 1480.999" end="-1412.797 148.244 1480.727" id="SEGMENT"/>
+            <segment start="-1412.797 148.244 1480.727" end="-1427.963 148.476 1479.716" id="SEGMENT"/>
+            <segment start="-1427.963 148.476 1479.716" end="-1429.820 148.497 1478.473" id="SEGMENT"/>
+            <segment start="-1429.820 148.497 1478.473" end="-1428.772 148.406 1469.453" id="SEGMENT"/>
+            <segment start="-1428.772 148.406 1469.453" end="-1422.112 148.203 1459.596" id="SEGMENT"/>
+            <segment start="-1422.112 148.203 1459.596" end="-1414.720 147.919 1444.098" id="SEGMENT"/>
+            <segment start="-1414.720 147.919 1444.098" end="-1406.711 147.575 1422.671" id="SEGMENT"/>
+            <segment start="-1406.711 147.575 1422.671" end="-1401.698 147.408 1414.042" id="SEGMENT"/>
+            <segment start="-1401.698 147.408 1414.042" end="-1375.316 147.059 1414.080" id="SEGMENT"/>
+            <segment start="-1375.316 147.059 1414.080" end="-1359.051 146.890 1414.286" id="SEGMENT"/>
+            <segment start="-1359.051 146.890 1414.286" end="-1358.973 146.962 1419.024" id="SEGMENT"/>
+            <segment start="-271.224 125.942 1216.036" end="-271.289 125.854 1212.076" id="SEGMENT"/>
+            <segment start="-271.289 125.854 1212.076" end="-289.529 125.980 1212.424" id="SEGMENT"/>
+            <segment start="-289.529 125.980 1212.424" end="-326.446 126.312 1212.946" id="SEGMENT"/>
+            <segment start="-326.446 126.312 1212.946" end="-323.869 126.401 1230.287" id="SEGMENT"/>
+            <segment start="-323.869 126.401 1230.287" end="-322.447 126.412 1249.090" id="SEGMENT"/>
+            <segment start="-322.447 126.412 1249.090" end="-320.904 126.174 1273.292" id="SEGMENT"/>
+            <segment start="-320.904 126.174 1273.292" end="-318.351 125.534 1300.940" id="SEGMENT"/>
+            <segment start="-318.351 125.534 1300.940" end="-318.613 125.002 1326.467" id="SEGMENT"/>
+            <segment start="-318.613 125.002 1326.467" end="-317.869 124.739 1340.540" id="SEGMENT"/>
+            <segment start="-317.869 124.739 1340.540" end="-312.686 124.054 1346.370" id="SEGMENT"/>
+            <segment start="-312.686 124.054 1346.370" end="-304.162 123.101 1349.872" id="SEGMENT"/>
+            <segment start="-304.162 123.101 1349.872" end="-277.738 121.828 1349.541" id="SEGMENT"/>
+            <segment start="-277.738 121.828 1349.541" end="-277.812 123.286 1325.219" id="SEGMENT"/>
+            <segment start="-277.812 123.286 1325.219" end="-278.697 125.843 1290.212" id="SEGMENT"/>
+            <segment start="-278.697 125.843 1290.212" end="-279.828 126.111 1258.691" id="SEGMENT"/>
+            <segment start="-279.828 126.111 1258.691" end="-279.817 126.117 1244.666" id="SEGMENT"/>
+            <segment start="-279.817 126.117 1244.666" end="-273.497 126.037 1244.856" id="SEGMENT"/>
+            <segment start="-273.497 126.037 1244.856" end="-272.859 125.946 1238.792" id="SEGMENT"/>
+        </newFence>
+    </placeable>
+</placeables>

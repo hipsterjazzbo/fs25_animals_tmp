@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="s_w_modding_und_lsfm" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+  </Materials>
+
+
+  <Shapes>
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="rabbit_male_skeleton" rotation="-8e-06 -0 0" nodeId="6">
+        <TransformGroup name="Spine_base" translation="0 0.165434 0.002431" nodeId="7">
+          <TransformGroup name="Spine_04" rotation="84.0299 5.2e-05 -179.999" nodeId="8">
+            <TransformGroup name="Spine_05" translation="0 0.0470349 0" rotation="3.52397 0.002413 0.000179" nodeId="9">
+              <TransformGroup name="Neck" translation="0 0.0491359 0" rotation="31.6991 -0.0029 1.20001e-05" nodeId="10">
+                <TransformGroup name="Head" translation="0 0.0306438 0" rotation="-28.3409 0.001911 -0.001043" nodeId="11">
+                  <TransformGroup name="Mouth" translation="0 0.0112442 -0.000869" rotation="-29.6384 -0.00086 -0.000761" nodeId="12"/>
+                  <TransformGroup name="Ear_1FBXASC046L" translation="-0.0235158 0.0076813 0.0555929" rotation="96.2037 -13.2585 -1.4717" nodeId="13">
+                    <TransformGroup name="Ear_2FBXASC046L" translation="0 0.0338393 0" rotation="-178.706 -0.778438 179.034" nodeId="14"/>
+                  </TransformGroup>
+                  <TransformGroup name="EyeFBXASC046L" translation="-0.019283 0.0389268 0.0301631" rotation="80.1139 -41.9841 -11.8558" nodeId="15"/>
+                  <TransformGroup name="Ear_1FBXASC046R" translation="0.0235114 0.0076813 0.0555951" rotation="96.2036 13.2541 1.47167" nodeId="16">
+                    <TransformGroup name="Ear_2FBXASC046R" translation="0 0.0338393 0" rotation="-178.706 0.778432 -179.034" nodeId="17"/>
+                  </TransformGroup>
+                  <TransformGroup name="EyeFBXASC046R" translation="0.0192808 0.0389268 0.0301653" rotation="80.1127 41.9798 11.855" nodeId="18"/>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="Hip_fFBXASC046L" translation="-0.0268994 0.0120549 0.0217151" rotation="-60.5272 5.29665 3.59426" nodeId="19">
+                <TransformGroup name="Though_fFBXASC046L" translation="0 0.0689172 0" rotation="-110.643 -2.28008 174.526" nodeId="20">
+                  <TransformGroup name="Leg_1_fFBXASC046L" translation="0 0.0474771 0" rotation="-120.931 -5.58633 -174.615" nodeId="21">
+                    <TransformGroup name="Leg_2_fFBXASC046L" translation="0 0.0547646 0" rotation="12.3725 0.193291 6.3532" nodeId="22">
+                      <TransformGroup name="Feet_fFBXASC046L" translation="0 0.021901 0" rotation="35.9625 -6.2e-05 -6.2e-05" nodeId="23">
+                        <TransformGroup name="Claws_fFBXASC046L" translation="0 0.0174977 0" rotation="24.9176 0.000104 3.25689e-12" nodeId="24"/>
+                      </TransformGroup>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="Hip_fFBXASC046R" translation="0.0268972 0.0120549 0.0217173" rotation="-60.5268 -5.30247 -3.5943" nodeId="25">
+                <TransformGroup name="Though_fFBXASC046R" translation="0 0.0689172 0" rotation="-110.643 2.28006 -174.526" nodeId="26">
+                  <TransformGroup name="Leg_1_fFBXASC046R" translation="0 0.0474771 0" rotation="-120.931 5.58632 174.615" scale="1 0.999999 1" nodeId="27">
+                    <TransformGroup name="Leg_2_fFBXASC046R" translation="0 0.0547646 0" rotation="12.3725 -0.193293 -6.35319" nodeId="28">
+                      <TransformGroup name="Feet_fFBXASC046R" translation="0 0.021901 0" rotation="35.9625 6.2e-05 6.1e-05" nodeId="29">
+                        <TransformGroup name="Claws_fFBXASC046R" translation="0 0.0174977 0" rotation="24.9177 -0.000104 0" nodeId="30"/>
+                      </TransformGroup>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="Spine_03" rotation="-79.6071 0 0" nodeId="31">
+            <TransformGroup name="Spine_02" translation="0 0.0567534 0" rotation="-19.0544 0 0" nodeId="32">
+              <TransformGroup name="Though_bFBXASC046L" translation="0.0442882 0.0541904 0.0027005" rotation="-123.204 -4.27972 2.53197" nodeId="33">
+                <TransformGroup name="Leg_1_bFBXASC046L" translation="0 0.0773531 0" rotation="99.2797 5.29009 -172.478" nodeId="34">
+                  <TransformGroup name="Feet_bFBXASC046L" translation="0 0.102747 0" rotation="103.348 -5.78607 4.58574" nodeId="35">
+                    <TransformGroup name="Claws_bFBXASC046L" translation="0 0.0566676 0" rotation="26.2685 -3.68682 2.9854" nodeId="36"/>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="Though_bFBXASC046R" translation="-0.0442882 0.0541904 0.0027005" rotation="-123.204 4.27972 -2.53197" nodeId="37">
+                <TransformGroup name="Leg_1_bFBXASC046R" translation="0 0.0773531 0" rotation="99.2797 -5.29009 172.478" nodeId="38">
+                  <TransformGroup name="Feet_bFBXASC046R" translation="0 0.102747 0" rotation="103.348 5.78607 -4.58574" nodeId="39">
+                    <TransformGroup name="Claws_bFBXASC046R" translation="0 0.0566676 0" rotation="26.2685 3.68682 -2.9854" nodeId="40"/>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+              <TransformGroup name="Spine_01" translation="0 0.0561 0" rotation="-44.8823 1e-05 -1e-05" nodeId="41">
+                <TransformGroup name="Tail" translation="0 0.0625801 0" rotation="25.5661 -2.6e-05 -6e-06" nodeId="42"/>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="geo_Mesh" clipDistance="300" nodeId="43"/>
+  </Scene>
+
+
+  <Animation externalAnimFile="maleAdultAnimations.i3d.anim" />
+</i3D>

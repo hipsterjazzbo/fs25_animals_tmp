@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="buyMulti.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/shared/default_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="effect_mat" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="lambert1" materialId="6" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="buyMulti.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="buyMultiStation" nodeId="11">
+      <TransformGroup name="clearAreas" nodeId="12"/>
+      <TransformGroup name="levelAreas" nodeId="13"/>
+      <TransformGroup name="testAreas" nodeId="14"/>
+      <TransformGroup name="tipOcclusionUpdateAreas" nodeId="15"/>
+      <TransformGroup name="buyingStation" nodeId="16">
+        <TransformGroup name="teleportNode" translation="6.54504 -0.88855 2.3385" rotation="0 -73.9381 0" nodeId="17"/>
+        <TransformGroup name="markerLoading" translation="0.0906982 -0.569817 3.62982" nodeId="18"/>
+        <TransformGroup name="mapPosition" translation="-0.0888672 -0.631256 3.66028" nodeId="19"/>
+        <TransformGroup name="loadingStation" nodeId="20">
+          <Shape name="loadingTrigger" translation="0 1.25809 3.5" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="21" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+          <TransformGroup name="dischargeNode" translation="0 3.4728 3.5712" nodeId="22"/>
+          <TransformGroup name="aiNodeLoading" translation="-0.0800781 -0.782059 3.66785" rotation="0 -90 0" nodeId="23"/>
+          <TransformGroup name="dischargeEffect1" translation="-0.01187 3.46474 3.56998" nodeId="24">
+            <Shape name="pipeEffect" rotation="90 0 0" shapeId="2" clipDistance="300" nodeId="25" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="pipeEffectSmoke" translation="0 -3.5 0" shapeId="3" clipDistance="100" nodeId="26" castsShadows="true" receiveShadows="true" materialIds="5"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="visuals" nodeId="27"/>
+      <TransformGroup name="collisions" nodeId="28"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

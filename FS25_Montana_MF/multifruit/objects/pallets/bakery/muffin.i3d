@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="muffin" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.9"/>
+  </Asset>
+
+  <Files>
+    <File fileId="11" filename="textures/bakeryGoodsFood_diffuse.png"/>
+    <File fileId="12" filename="textures/bakeryGoodsFood_normal.png"/>
+    <File fileId="13" filename="textures/bakeryGoodsFood_specular.png"/>
+    <File fileId="8" filename="$data/placeables/brandless/productionPointsSmall/bakery/bakeryTransparent_diffuse.png"/>
+    <File fileId="9" filename="$data/placeables/brandless/productionPointsSmall/bakery/bakeryTransparent_normal.png"/>
+    <File fileId="10" filename="$data/placeables/brandless/productionPointsSmall/bakery/bakeryTransparent_specular.png"/>
+    <File fileId="2" filename="$data/placeables/brandless/productionPointsSmall/bakery/bakery_diffuse.png"/>
+    <File fileId="3" filename="$data/placeables/brandless/productionPointsSmall/bakery/bakery_normal.png"/>
+    <File fileId="4" filename="$data/placeables/brandless/productionPointsSmall/bakery/bakery_specular.png"/>
+    <File fileId="5" filename="$data/shaders/placeableShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="bakery_mat" materialId="5" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="bakeryGoodsFood_mat" materialId="6">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+    </Material>
+    <Material name="bakeryTransparent_mat" materialId="7">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="lambert1" materialId="8" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="muffin.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="bakeryBoxPallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="54" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8">
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="55" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+      <TransformGroup name="content" nodeId="56">
+        <TransformGroup name="bakeryBox01" translation="0 -0.179 0" nodeId="57">
+          <TransformGroup name="crate" lockedgroup="true" translation="0.292138 0.315409 -8.06515e-08" rotation="0 90 0" lodDistance="0 25" lodBlending="false" clipDistance="65" nodeId="58">
+            <Shape name="LOD0" rotation="-90 0 0" shapeId="3" nodeId="59" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="alpha" translation="0.000599 0.005514 0.011391" rotation="90 0 0" shapeId="4" nodeId="60" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+            <Shape name="LOD1" rotation="-90 0 0" shapeId="5" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="muffin02" translation="-9.83116e-08 0 0" shapeId="6" clipDistance="50" nodeId="63" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="muffin02" shapeId="7" clipDistance="50" nodeId="64" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="8" clipDistance="50" nodeId="65" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="9" clipDistance="50" nodeId="66" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="10" clipDistance="50" nodeId="67" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="11" clipDistance="50" nodeId="68" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin01" shapeId="12" clipDistance="50" nodeId="69" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin01" shapeId="13" clipDistance="50" nodeId="70" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="14" clipDistance="50" nodeId="71" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="15" clipDistance="50" nodeId="72" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="16" clipDistance="50" nodeId="73" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="17" clipDistance="50" nodeId="74" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin02" shapeId="18" clipDistance="50" nodeId="75" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin02" shapeId="19" clipDistance="50" nodeId="76" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="20" clipDistance="50" nodeId="77" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="21" clipDistance="50" nodeId="78" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="22" clipDistance="50" nodeId="79" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="23" clipDistance="50" nodeId="80" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin01" shapeId="24" clipDistance="50" nodeId="81" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin01" shapeId="25" clipDistance="50" nodeId="82" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="26" clipDistance="50" nodeId="83" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="27" clipDistance="50" nodeId="84" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="28" clipDistance="50" nodeId="85" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="29" clipDistance="50" nodeId="86" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin02" shapeId="30" clipDistance="50" nodeId="87" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin02" shapeId="31" clipDistance="50" nodeId="88" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="32" clipDistance="50" nodeId="89" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="33" clipDistance="50" nodeId="90" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="34" clipDistance="50" nodeId="91" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="35" clipDistance="50" nodeId="92" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin01" shapeId="36" clipDistance="50" nodeId="93" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin01" shapeId="37" clipDistance="50" nodeId="94" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="38" clipDistance="50" nodeId="95" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="39" clipDistance="50" nodeId="96" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="40" clipDistance="50" nodeId="97" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="41" clipDistance="50" nodeId="98" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+            </Shape>
+          </TransformGroup>
+          <Shape name="bakeryBox01Tension" translation="0.288287 0.388382 0" rotation="180 -5.00896e-06 180" shapeId="42" nodeId="99" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+        </TransformGroup>
+        <TransformGroup name="bakeryBox02" translation="0 -0.179 0" nodeId="100">
+          <TransformGroup name="crate" lockedgroup="true" translation="-0.295684 0.315409 1.10885e-07" rotation="-0 90 0" lodDistance="0 25" lodBlending="false" clipDistance="65" nodeId="101">
+            <Shape name="LOD0" rotation="-90 0 0" shapeId="3" nodeId="102" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="alpha" translation="0.000599 0.005514 0.011391" rotation="90 0 0" shapeId="4" nodeId="103" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+            <Shape name="LOD1" rotation="-90 0 0" shapeId="5" nodeId="104" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="muffin02" translation="-9.83116e-08 0 0" shapeId="6" clipDistance="50" nodeId="106" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="muffin02" shapeId="7" clipDistance="50" nodeId="107" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="8" clipDistance="50" nodeId="108" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="9" clipDistance="50" nodeId="109" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="10" clipDistance="50" nodeId="110" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="11" clipDistance="50" nodeId="111" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin01" shapeId="12" clipDistance="50" nodeId="112" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin01" shapeId="13" clipDistance="50" nodeId="113" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="14" clipDistance="50" nodeId="114" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="15" clipDistance="50" nodeId="115" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="16" clipDistance="50" nodeId="116" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="17" clipDistance="50" nodeId="117" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin02" shapeId="18" clipDistance="50" nodeId="118" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin02" shapeId="19" clipDistance="50" nodeId="119" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="20" clipDistance="50" nodeId="120" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="21" clipDistance="50" nodeId="121" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="22" clipDistance="50" nodeId="122" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="23" clipDistance="50" nodeId="123" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin01" shapeId="24" clipDistance="50" nodeId="124" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin01" shapeId="25" clipDistance="50" nodeId="125" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="26" clipDistance="50" nodeId="126" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="27" clipDistance="50" nodeId="127" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="28" clipDistance="50" nodeId="128" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="29" clipDistance="50" nodeId="129" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin02" shapeId="30" clipDistance="50" nodeId="130" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin02" shapeId="31" clipDistance="50" nodeId="131" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="32" clipDistance="50" nodeId="132" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="33" clipDistance="50" nodeId="133" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="34" clipDistance="50" nodeId="134" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="35" clipDistance="50" nodeId="135" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin01" shapeId="36" clipDistance="50" nodeId="136" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin01" shapeId="37" clipDistance="50" nodeId="137" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="38" clipDistance="50" nodeId="138" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="39" clipDistance="50" nodeId="139" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="40" clipDistance="50" nodeId="140" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="41" clipDistance="50" nodeId="141" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+            </Shape>
+          </TransformGroup>
+          <Shape name="bakeryBox02Tension" translation="-0.296154 0.388382 0" shapeId="42" nodeId="142" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+        </TransformGroup>
+        <TransformGroup name="bakeryBox03" translation="0 -0.179 0" nodeId="143">
+          <TransformGroup name="crate" lockedgroup="true" translation="0.292138 0.49528 -8.06515e-08" rotation="-0 90 0" lodDistance="0 25" lodBlending="false" clipDistance="65" nodeId="144">
+            <Shape name="LOD0" rotation="-90 0 0" shapeId="3" nodeId="145" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="alpha" translation="0.000599 0.005514 0.011391" rotation="90 0 0" shapeId="4" nodeId="146" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+            <Shape name="LOD1" rotation="-90 0 0" shapeId="5" nodeId="147" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="muffin02" translation="-9.83116e-08 0 0" shapeId="6" clipDistance="50" nodeId="149" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="muffin02" shapeId="7" clipDistance="50" nodeId="150" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="8" clipDistance="50" nodeId="151" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="9" clipDistance="50" nodeId="152" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="10" clipDistance="50" nodeId="153" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="11" clipDistance="50" nodeId="154" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin01" shapeId="12" clipDistance="50" nodeId="155" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin01" shapeId="13" clipDistance="50" nodeId="156" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="14" clipDistance="50" nodeId="157" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="15" clipDistance="50" nodeId="158" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="16" clipDistance="50" nodeId="159" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="17" clipDistance="50" nodeId="160" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin02" shapeId="18" clipDistance="50" nodeId="161" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin02" shapeId="19" clipDistance="50" nodeId="162" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="20" clipDistance="50" nodeId="163" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="21" clipDistance="50" nodeId="164" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="22" clipDistance="50" nodeId="165" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="23" clipDistance="50" nodeId="166" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin01" shapeId="24" clipDistance="50" nodeId="167" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin01" shapeId="25" clipDistance="50" nodeId="168" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="26" clipDistance="50" nodeId="169" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="27" clipDistance="50" nodeId="170" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="28" clipDistance="50" nodeId="171" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="29" clipDistance="50" nodeId="172" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin02" shapeId="30" clipDistance="50" nodeId="173" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin02" shapeId="31" clipDistance="50" nodeId="174" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="32" clipDistance="50" nodeId="175" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="33" clipDistance="50" nodeId="176" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="34" clipDistance="50" nodeId="177" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="35" clipDistance="50" nodeId="178" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin01" shapeId="36" clipDistance="50" nodeId="179" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin01" shapeId="37" clipDistance="50" nodeId="180" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="38" clipDistance="50" nodeId="181" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="39" clipDistance="50" nodeId="182" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="40" clipDistance="50" nodeId="183" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="41" clipDistance="50" nodeId="184" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+            </Shape>
+          </TransformGroup>
+          <Shape name="bakeryBox03Tension" translation="-0.296154 0.568382 0" shapeId="42" nodeId="185" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+        </TransformGroup>
+        <TransformGroup name="bakeryBox04" translation="0 -0.179 0" nodeId="186">
+          <TransformGroup name="crate" lockedgroup="true" translation="-0.295684 0.49528 1.10885e-07" rotation="-0 90 0" lodDistance="0 25" lodBlending="false" clipDistance="65" nodeId="187">
+            <Shape name="LOD0" rotation="-90 0 0" shapeId="3" nodeId="188" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="alpha" translation="0.000599 0.005514 0.011391" rotation="90 0 0" shapeId="4" nodeId="189" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+            <Shape name="LOD1" rotation="-90 0 0" shapeId="5" nodeId="190" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="muffin02" translation="-9.83116e-08 0 0" shapeId="6" clipDistance="50" nodeId="192" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="muffin02" shapeId="7" clipDistance="50" nodeId="193" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="8" clipDistance="50" nodeId="194" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="9" clipDistance="50" nodeId="195" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="10" clipDistance="50" nodeId="196" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="11" clipDistance="50" nodeId="197" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin01" shapeId="12" clipDistance="50" nodeId="198" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin01" shapeId="13" clipDistance="50" nodeId="199" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="14" clipDistance="50" nodeId="200" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="15" clipDistance="50" nodeId="201" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="16" clipDistance="50" nodeId="202" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="17" clipDistance="50" nodeId="203" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin02" shapeId="18" clipDistance="50" nodeId="204" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin02" shapeId="19" clipDistance="50" nodeId="205" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="20" clipDistance="50" nodeId="206" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="21" clipDistance="50" nodeId="207" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="22" clipDistance="50" nodeId="208" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="23" clipDistance="50" nodeId="209" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin01" shapeId="24" clipDistance="50" nodeId="210" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin01" shapeId="25" clipDistance="50" nodeId="211" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="26" clipDistance="50" nodeId="212" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="27" clipDistance="50" nodeId="213" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="28" clipDistance="50" nodeId="214" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="29" clipDistance="50" nodeId="215" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin02" shapeId="30" clipDistance="50" nodeId="216" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin02" shapeId="31" clipDistance="50" nodeId="217" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="32" clipDistance="50" nodeId="218" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="33" clipDistance="50" nodeId="219" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="34" clipDistance="50" nodeId="220" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="35" clipDistance="50" nodeId="221" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin01" shapeId="36" clipDistance="50" nodeId="222" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin01" shapeId="37" clipDistance="50" nodeId="223" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="38" clipDistance="50" nodeId="224" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="39" clipDistance="50" nodeId="225" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="40" clipDistance="50" nodeId="226" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="41" clipDistance="50" nodeId="227" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+            </Shape>
+          </TransformGroup>
+          <Shape name="bakeryBox04Tension" translation="0.288287 0.568382 0" shapeId="42" nodeId="228" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+        </TransformGroup>
+        <TransformGroup name="bakeryBox05" translation="0 -0.179 0" nodeId="229">
+          <TransformGroup name="crate" lockedgroup="true" translation="0.292138 0.677136 -8.06515e-08" rotation="-0 90 0" lodDistance="0 25" lodBlending="false" clipDistance="65" nodeId="230">
+            <Shape name="LOD0" rotation="-90 0 0" shapeId="3" nodeId="231" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="alpha" translation="0.000599 0.005514 0.011391" rotation="90 0 0" shapeId="4" nodeId="232" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+            <Shape name="LOD1" rotation="-90 0 0" shapeId="5" nodeId="233" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="muffin02" translation="-9.83116e-08 0 0" shapeId="6" clipDistance="50" nodeId="235" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="muffin02" shapeId="7" clipDistance="50" nodeId="236" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="8" clipDistance="50" nodeId="237" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="9" clipDistance="50" nodeId="238" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="10" clipDistance="50" nodeId="239" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="11" clipDistance="50" nodeId="240" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin01" shapeId="12" clipDistance="50" nodeId="241" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin01" shapeId="13" clipDistance="50" nodeId="242" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="14" clipDistance="50" nodeId="243" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="15" clipDistance="50" nodeId="244" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="16" clipDistance="50" nodeId="245" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="17" clipDistance="50" nodeId="246" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin02" shapeId="18" clipDistance="50" nodeId="247" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin02" shapeId="19" clipDistance="50" nodeId="248" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="20" clipDistance="50" nodeId="249" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="21" clipDistance="50" nodeId="250" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="22" clipDistance="50" nodeId="251" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="23" clipDistance="50" nodeId="252" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin01" shapeId="24" clipDistance="50" nodeId="253" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin01" shapeId="25" clipDistance="50" nodeId="254" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="26" clipDistance="50" nodeId="255" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="27" clipDistance="50" nodeId="256" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="28" clipDistance="50" nodeId="257" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="29" clipDistance="50" nodeId="258" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin02" shapeId="30" clipDistance="50" nodeId="259" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin02" shapeId="31" clipDistance="50" nodeId="260" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="32" clipDistance="50" nodeId="261" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="33" clipDistance="50" nodeId="262" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="34" clipDistance="50" nodeId="263" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="35" clipDistance="50" nodeId="264" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin01" shapeId="36" clipDistance="50" nodeId="265" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin01" shapeId="37" clipDistance="50" nodeId="266" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="38" clipDistance="50" nodeId="267" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="39" clipDistance="50" nodeId="268" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="40" clipDistance="50" nodeId="269" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="41" clipDistance="50" nodeId="270" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+            </Shape>
+          </TransformGroup>
+          <Shape name="bakeryBox05Tension" translation="0.288287 0.748382 0" shapeId="42" nodeId="271" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+        </TransformGroup>
+        <TransformGroup name="bakeryBox06" translation="0 -0.179 0" nodeId="272">
+          <TransformGroup name="crate" lockedgroup="true" translation="-0.295684 0.677136 1.10885e-07" rotation="-0 90 0" lodDistance="0 25" lodBlending="false" clipDistance="65" nodeId="273">
+            <Shape name="LOD0" rotation="-90 0 0" shapeId="3" nodeId="274" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="alpha" translation="0.000599 0.005514 0.011391" rotation="90 0 0" shapeId="4" nodeId="275" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+            <Shape name="LOD1" rotation="-90 0 0" shapeId="5" nodeId="276" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="muffin02" translation="-9.83116e-08 0 0" shapeId="6" clipDistance="50" nodeId="278" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="muffin02" shapeId="7" clipDistance="50" nodeId="279" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="8" clipDistance="50" nodeId="280" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="9" clipDistance="50" nodeId="281" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="10" clipDistance="50" nodeId="282" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="11" clipDistance="50" nodeId="283" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin01" shapeId="12" clipDistance="50" nodeId="284" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin01" shapeId="13" clipDistance="50" nodeId="285" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="14" clipDistance="50" nodeId="286" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="15" clipDistance="50" nodeId="287" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="16" clipDistance="50" nodeId="288" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="17" clipDistance="50" nodeId="289" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin02" shapeId="18" clipDistance="50" nodeId="290" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin02" shapeId="19" clipDistance="50" nodeId="291" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="20" clipDistance="50" nodeId="292" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="21" clipDistance="50" nodeId="293" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="22" clipDistance="50" nodeId="294" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="23" clipDistance="50" nodeId="295" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin01" shapeId="24" clipDistance="50" nodeId="296" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin01" shapeId="25" clipDistance="50" nodeId="297" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="26" clipDistance="50" nodeId="298" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="27" clipDistance="50" nodeId="299" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="28" clipDistance="50" nodeId="300" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="29" clipDistance="50" nodeId="301" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin02" shapeId="30" clipDistance="50" nodeId="302" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin02" shapeId="31" clipDistance="50" nodeId="303" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="32" clipDistance="50" nodeId="304" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="33" clipDistance="50" nodeId="305" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="34" clipDistance="50" nodeId="306" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="35" clipDistance="50" nodeId="307" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin01" shapeId="36" clipDistance="50" nodeId="308" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin01" shapeId="37" clipDistance="50" nodeId="309" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="38" clipDistance="50" nodeId="310" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="39" clipDistance="50" nodeId="311" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="40" clipDistance="50" nodeId="312" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="41" clipDistance="50" nodeId="313" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+            </Shape>
+          </TransformGroup>
+          <Shape name="bakeryBox06Tension" translation="-0.296154 0.748382 0" rotation="180 -5.00896e-06 180" shapeId="42" nodeId="314" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+        </TransformGroup>
+        <TransformGroup name="bakeryBox07" translation="0 -0.179 0" nodeId="315">
+          <TransformGroup name="crate" lockedgroup="true" translation="0.292138 0.858455 -8.06515e-08" rotation="-0 90 0" lodDistance="0 25" lodBlending="false" clipDistance="65" nodeId="316">
+            <Shape name="LOD0" rotation="-90 0 0" shapeId="3" nodeId="317" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="alpha" translation="0.000599 0.005514 0.011391" rotation="90 0 0" shapeId="4" nodeId="318" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+            <Shape name="LOD1" rotation="-90 0 0" shapeId="5" nodeId="319" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="muffin02" translation="-9.83116e-08 0 0" shapeId="6" clipDistance="50" nodeId="321" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="muffin02" shapeId="7" clipDistance="50" nodeId="322" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="8" clipDistance="50" nodeId="323" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="9" clipDistance="50" nodeId="324" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="10" clipDistance="50" nodeId="325" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="11" clipDistance="50" nodeId="326" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin01" shapeId="12" clipDistance="50" nodeId="327" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin01" shapeId="13" clipDistance="50" nodeId="328" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="14" clipDistance="50" nodeId="329" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="15" clipDistance="50" nodeId="330" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="16" clipDistance="50" nodeId="331" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="17" clipDistance="50" nodeId="332" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin02" shapeId="18" clipDistance="50" nodeId="333" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin02" shapeId="19" clipDistance="50" nodeId="334" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="20" clipDistance="50" nodeId="335" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="21" clipDistance="50" nodeId="336" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="22" clipDistance="50" nodeId="337" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="23" clipDistance="50" nodeId="338" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin01" shapeId="24" clipDistance="50" nodeId="339" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin01" shapeId="25" clipDistance="50" nodeId="340" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="26" clipDistance="50" nodeId="341" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="27" clipDistance="50" nodeId="342" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="28" clipDistance="50" nodeId="343" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="29" clipDistance="50" nodeId="344" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin02" shapeId="30" clipDistance="50" nodeId="345" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin02" shapeId="31" clipDistance="50" nodeId="346" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="32" clipDistance="50" nodeId="347" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="33" clipDistance="50" nodeId="348" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="34" clipDistance="50" nodeId="349" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="35" clipDistance="50" nodeId="350" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin01" shapeId="36" clipDistance="50" nodeId="351" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin01" shapeId="37" clipDistance="50" nodeId="352" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="38" clipDistance="50" nodeId="353" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="39" clipDistance="50" nodeId="354" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="40" clipDistance="50" nodeId="355" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="41" clipDistance="50" nodeId="356" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+            </Shape>
+          </TransformGroup>
+          <Shape name="bakeryBox07Tension" translation="-0.296154 0.928205 0" shapeId="42" nodeId="357" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+        </TransformGroup>
+        <TransformGroup name="bakeryBox08" translation="0 -0.179 0" nodeId="358">
+          <TransformGroup name="crate" lockedgroup="true" translation="-0.295684 0.858455 1.10885e-07" rotation="-0 90 0" lodDistance="0 25" lodBlending="false" clipDistance="65" nodeId="359">
+            <Shape name="LOD0" rotation="-90 0 0" shapeId="3" nodeId="360" castsShadows="true" receiveShadows="true" materialIds="5">
+              <Shape name="alpha" translation="0.000599 0.005514 0.011391" rotation="90 0 0" shapeId="4" nodeId="361" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+            <Shape name="LOD1" rotation="-90 0 0" shapeId="5" nodeId="362" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            <Shape name="muffin02" translation="-9.83116e-08 0 0" shapeId="6" clipDistance="50" nodeId="364" castsShadows="true" receiveShadows="true" materialIds="6">
+              <Shape name="muffin02" shapeId="7" clipDistance="50" nodeId="365" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="8" clipDistance="50" nodeId="366" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="9" clipDistance="50" nodeId="367" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="10" clipDistance="50" nodeId="368" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin02" shapeId="11" clipDistance="50" nodeId="369" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              <Shape name="muffin01" shapeId="12" clipDistance="50" nodeId="370" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin01" shapeId="13" clipDistance="50" nodeId="371" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="14" clipDistance="50" nodeId="372" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="15" clipDistance="50" nodeId="373" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="16" clipDistance="50" nodeId="374" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="17" clipDistance="50" nodeId="375" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin02" shapeId="18" clipDistance="50" nodeId="376" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin02" shapeId="19" clipDistance="50" nodeId="377" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="20" clipDistance="50" nodeId="378" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="21" clipDistance="50" nodeId="379" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="22" clipDistance="50" nodeId="380" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="23" clipDistance="50" nodeId="381" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin01" shapeId="24" clipDistance="50" nodeId="382" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin01" shapeId="25" clipDistance="50" nodeId="383" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="26" clipDistance="50" nodeId="384" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="27" clipDistance="50" nodeId="385" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="28" clipDistance="50" nodeId="386" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="29" clipDistance="50" nodeId="387" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin02" shapeId="30" clipDistance="50" nodeId="388" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin02" shapeId="31" clipDistance="50" nodeId="389" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="32" clipDistance="50" nodeId="390" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="33" clipDistance="50" nodeId="391" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="34" clipDistance="50" nodeId="392" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin02" shapeId="35" clipDistance="50" nodeId="393" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+              <Shape name="muffin01" shapeId="36" clipDistance="50" nodeId="394" castsShadows="true" receiveShadows="true" materialIds="6">
+                <Shape name="muffin01" shapeId="37" clipDistance="50" nodeId="395" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="38" clipDistance="50" nodeId="396" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="39" clipDistance="50" nodeId="397" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="40" clipDistance="50" nodeId="398" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                <Shape name="muffin01" shapeId="41" clipDistance="50" nodeId="399" castsShadows="true" receiveShadows="true" materialIds="6"/>
+              </Shape>
+            </Shape>
+          </TransformGroup>
+          <Shape name="bakeryBox08Tension" translation="0.288287 0.928205 0" rotation="180 -5.00896e-06 180" shapeId="42" nodeId="400" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="401">
+        <Shape name="floorCollision01" translation="-0.299024 0.073241 0" shapeId="43" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="402" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+        <Shape name="floorCollision02" translation="0.299024 0.073241 0" shapeId="43" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="403" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="8"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+</i3D>

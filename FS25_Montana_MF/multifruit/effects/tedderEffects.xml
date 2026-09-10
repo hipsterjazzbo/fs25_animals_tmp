@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<motionPathEffects xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/mapMotionPathEffects.xsd">
+    <motionPathEffect effectClass="TypedMotionPathEffect" effectType="TEDDER" filename="$data/effects/tedder/tedder.i3d">
+        <effectGeneration rootNode="0|0"/>
+        <typeDefinition fillTypes="DRYALFALFA_WINDROW DRYCLOVER_WINDROW BEANSTRAW CORN_STALKS HEMP_FIBER FLAX_FIBER" speedScale="0.65"/>
+
+        <effectMeshes>
+            <effectMesh node="0|0|0" rowLength="28" numRows="4" skipPositions="0" boundingBox="5 2 12" numVariations="16"/>
+        </effectMeshes>
+
+        <effectMaterials rootNode="0|1">
+            <effectMaterial node="0|1|0" fillTypes="DRYALFALFA_WINDROW DRYCLOVER_WINDROW HEMP_FIBER" />
+            <effectMaterial node="0|1|1" fillTypes="BEANSTRAW CORN_STALKS FLAX_FIBER" />
+        </effectMaterials>
+
+        <customShaderDefaults>
+            <customShaderVariation name="subUV_alphaMap"/>
+            <customShaderParameter name="sizeScale" value="0.75 3.5 0.0 0.0"/>
+            <customShaderParameter name="subUVelements" value="8.0 4.0 1.0 1.0"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+</motionPathEffects>

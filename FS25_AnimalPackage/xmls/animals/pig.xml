@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<animals>
+	<animal type="PIG" groupTitle="$l10n_animal_group_pigs" statsBreeding="breedPigsCount" clusterClass="AnimalCluster">
+		<configFilename>animals/domesticated/pig/husbandryAnimalsPig.xml</configFilename>
+		<navMeshAgent height="1" radius="0.6" maxClimbMeters="0.8" maxSlope="15"/>
+		<pasture sqmPerAnimal="15" />
+		<subType subType="SOW_LANDRACE" fillTypeName="BRC_SOW_LANDRACE">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="1" image="animals/domesticated/pig/store/store_FM_GS01_Landrace.png" canBeBought="true">
+					<description>$l10n_animal_descriptionPigProfit</description>
+					<description>$l10n_animal_descriptionPigFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionPigYoung</description>
+					<description>$l10n_animal_descriptionPigReproduction</description>
+					<textureIndexes>
+                        <value>1</value>
+						<value>2</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="3" visualAnimalIndex="2" image="animals/domesticated/pig/store/store_FM_GS02_Landrace.png" canBeBought="true">
+					<description>$l10n_animal_descriptionPigProfit</description>
+					<description>$l10n_animal_descriptionPigFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionPigYoung</description>
+					<description>$l10n_animal_descriptionPigReproduction</description>
+					<textureIndexes>
+                        <value>1</value>
+						<value>2</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="6" visualAnimalIndex="3" image="animals/domesticated/pig/store/store_F_GS03_Landrace.png" canBeBought="true">
+					<description>$l10n_animal_descriptionPigProfit</description>
+					<description>$l10n_animal_descriptionPigFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionPigReproduction</description>
+					<textureIndexes>
+                        <value>1</value>
+						<value>2</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="12" visualAnimalIndex="4" image="animals/domesticated/pig/store/store_F_GS04_Landrace.png" canBeBought="true">
+					<description>$l10n_animal_descriptionPigProfit</description>
+					<description>$l10n_animal_descriptionPigFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionPigReproduction</description>
+					<textureIndexes>
+                        <value>1</value>
+						<value>2</value>
+                    </textureIndexes>
+				</visual>
+			</visuals>
+			<reproduction minAgeMonth="7" durationMonth="4" minHealthFactor="0.75"/>
+			<buyPrice>
+				<key ageMonth="0" value="200"/>
+				<key ageMonth="12" value="1500"/>
+			</buyPrice>
+			<sellPrice>
+				<key ageMonth="0" value="100" />
+				<key ageMonth="6" value="500" />
+				<key ageMonth="12" value="2500" />
+				<key ageMonth="18" value="2000" />
+        		<key ageMonth="36" value="500" />
+			</sellPrice>
+			<transportPrice>
+				<key ageMonth="0" value="5"/>
+				<key ageMonth="3" value="10"/>
+				<key ageMonth="6" value="20"/>
+			</transportPrice>
+			<input>
+				<straw>
+					<key ageMonth="0" value="10"/>
+					<key ageMonth="6" value="40"/>
+				</straw>
+				<water>
+					<key ageMonth="0" value="4"/>
+					<key ageMonth="6" value="30"/>
+				</water>
+				<food>
+					<key ageMonth="0" value="10"/>
+					<key ageMonth="6" value="120"/>
+				</food>
+			</input>
+			<output>
+				<manure>
+					<key ageMonth="0" value="20"/>
+					<key ageMonth="6" value="70"/>
+					<key ageMonth="12" value="150"/>
+				</manure>
+				<liquidManure>
+					<key ageMonth="0" value="60"/>
+					<key ageMonth="6" value="130"/>
+				</liquidManure>
+			</output>
+		</subType>
+		<subType subType="BOAR_LANDRACE" fillTypeName="BRC_BOAR_LANDRACE">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="5" image="animals/domesticated/pig/store/store_FM_GS01_Landrace.png" canBeBought="true">
+					<description>$l10n_animal_descriptionPigProfit</description>
+					<description>$l10n_animal_descriptionPigFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionPigYoung</description>
+					<description>$l10n_animal_descriptionPigReproduction</description>
+					<textureIndexes>
+                        <value>1</value>
+						<value>2</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="3" visualAnimalIndex="6" image="animals/domesticated/pig/store/store_FM_GS02_Landrace.png" canBeBought="true">
+					<description>$l10n_animal_descriptionPigProfit</description>
+					<description>$l10n_animal_descriptionPigFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionPigYoung</description>
+					<description>$l10n_animal_descriptionPigReproduction</description>
+					<textureIndexes>
+                        <value>1</value>
+						<value>2</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="6" visualAnimalIndex="7" image="animals/domesticated/pig/store/store_M_GS03_Landrace.png" canBeBought="true">
+					<description>$l10n_animal_descriptionPigProfit</description>
+					<description>$l10n_animal_descriptionPigFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionPigReproduction</description>
+					<textureIndexes>
+                        <value>1</value>
+						<value>2</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="12" visualAnimalIndex="8" image="animals/domesticated/pig/store/store_M_GS04_Landrace.png" canBeBought="true">
+					<description>$l10n_animal_descriptionPigProfit</description>
+					<description>$l10n_animal_descriptionPigFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionPigReproduction</description>
+					<textureIndexes>
+                        <value>1</value>
+						<value>2</value>
+                    </textureIndexes>
+				</visual>
+			</visuals>
+			<reproduction supported="false" minAgeMonth="7"/>
+			<buyPrice>
+				<key ageMonth="0" value="200"/>
+				<key ageMonth="12" value="1500"/>
+			</buyPrice>
+			<sellPrice>
+				<key ageMonth="0" value="100" />
+				<key ageMonth="6" value="500" />
+				<key ageMonth="12" value="2500" />
+				<key ageMonth="18" value="2000" />
+        		<key ageMonth="36" value="500" />
+			</sellPrice>
+			<transportPrice>
+				<key ageMonth="0" value="5"/>
+				<key ageMonth="3" value="10"/>
+				<key ageMonth="6" value="20"/>
+			</transportPrice>
+			<input>
+				<straw>
+					<key ageMonth="0" value="10"/>
+					<key ageMonth="6" value="40"/>
+				</straw>
+				<water>
+					<key ageMonth="0" value="4"/>
+					<key ageMonth="6" value="30"/>
+				</water>
+				<food>
+					<key ageMonth="0" value="10"/>
+					<key ageMonth="6" value="120"/>
+				</food>
+			</input>
+			<output>
+				<manure>
+					<key ageMonth="0" value="20"/>
+					<key ageMonth="6" value="70"/>
+					<key ageMonth="12" value="150"/>
+				</manure>
+				<liquidManure>
+					<key ageMonth="0" value="60"/>
+					<key ageMonth="6" value="130"/>
+				</liquidManure>
+			</output>
+		</subType>
+		<subType subType="SOW_PIETRAIN" fillTypeName="BRC_SOW_PIETRAIN">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="1" image="animals/domesticated/pig/store/store_F_GS01_Pietrain.png" canBeBought="true">
+					<description>$l10n_animal_descriptionPigProfit</description>
+					<description>$l10n_animal_descriptionPigFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionPigYoung</description>
+					<description>$l10n_animal_descriptionPigReproduction</description>
+					<textureIndexes>
+                        <value>3</value>
+						<value>4</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="3" visualAnimalIndex="2" image="animals/domesticated/pig/store/store_F_GS02_Pietrain.png" canBeBought="true">
+					<description>$l10n_animal_descriptionPigProfit</description>
+					<description>$l10n_animal_descriptionPigFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionPigYoung</description>
+					<description>$l10n_animal_descriptionPigReproduction</description>
+					<textureIndexes>
+                        <value>3</value>
+						<value>4</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="6" visualAnimalIndex="3" image="animals/domesticated/pig/store/store_F_GS03_Pietrain.png" canBeBought="true">
+					<description>$l10n_animal_descriptionPigProfit</description>
+					<description>$l10n_animal_descriptionPigFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionPigReproduction</description>
+					<textureIndexes>
+                        <value>3</value>
+						<value>4</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="12" visualAnimalIndex="4" image="animals/domesticated/pig/store/store_F_GS04_Pietrain.png" canBeBought="true">
+					<description>$l10n_animal_descriptionPigProfit</description>
+					<description>$l10n_animal_descriptionPigFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionPigReproduction</description>
+					<textureIndexes>
+                        <value>3</value>
+						<value>4</value>
+                    </textureIndexes>
+				</visual>
+			</visuals>
+			<reproduction minAgeMonth="7" durationMonth="4" minHealthFactor="0.75"/>
+			<buyPrice>
+				<key ageMonth="0" value="200"/>
+				<key ageMonth="12" value="1500"/>
+			</buyPrice>
+			<sellPrice>
+				<key ageMonth="0" value="100" />
+				<key ageMonth="6" value="500" />
+				<key ageMonth="12" value="2500" />
+				<key ageMonth="18" value="2000" />
+        		<key ageMonth="36" value="500" />
+			</sellPrice>
+			<transportPrice>
+				<key ageMonth="0" value="5"/>
+				<key ageMonth="3" value="10"/>
+				<key ageMonth="6" value="20"/>
+			</transportPrice>
+			<input>
+				<straw>
+					<key ageMonth="0" value="10"/>
+					<key ageMonth="6" value="40"/>
+				</straw>
+				<water>
+					<key ageMonth="0" value="4"/>
+					<key ageMonth="6" value="30"/>
+				</water>
+				<food>
+					<key ageMonth="0" value="10"/>
+					<key ageMonth="6" value="120"/>
+				</food>
+			</input>
+			<output>
+				<manure>
+					<key ageMonth="0" value="20"/>
+					<key ageMonth="6" value="70"/>
+					<key ageMonth="12" value="150"/>
+				</manure>
+				<liquidManure>
+					<key ageMonth="0" value="60"/>
+					<key ageMonth="6" value="130"/>
+				</liquidManure>
+			</output>
+		</subType>
+		<subType subType="BOAR_PIETRAIN" fillTypeName="BRC_BOAR_PIETRAIN">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="5" image="animals/domesticated/pig/store/store_M_GS01_Pietrain.png" canBeBought="true">
+					<description>$l10n_animal_descriptionPigProfit</description>
+					<description>$l10n_animal_descriptionPigFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionPigYoung</description>
+					<description>$l10n_animal_descriptionPigReproduction</description>
+					<textureIndexes>
+                        <value>3</value>
+						<value>4</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="3" visualAnimalIndex="6" image="animals/domesticated/pig/store/store_M_GS02_Pietrain.png" canBeBought="true">
+					<description>$l10n_animal_descriptionPigProfit</description>
+					<description>$l10n_animal_descriptionPigFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionPigYoung</description>
+					<description>$l10n_animal_descriptionPigReproduction</description>
+					<textureIndexes>
+                        <value>3</value>
+						<value>4</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="6" visualAnimalIndex="7" image="animals/domesticated/pig/store/store_M_GS03_Pietrain.png" canBeBought="true">
+					<description>$l10n_animal_descriptionPigProfit</description>
+					<description>$l10n_animal_descriptionPigFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionPigReproduction</description>
+					<textureIndexes>
+                        <value>3</value>
+						<value>4</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="12" visualAnimalIndex="8" image="animals/domesticated/pig/store/store_M_GS04_Pietrain.png" canBeBought="true">
+					<description>$l10n_animal_descriptionPigProfit</description>
+					<description>$l10n_animal_descriptionPigFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionPigReproduction</description>
+					<textureIndexes>
+                        <value>3</value>
+						<value>4</value>
+                    </textureIndexes>
+				</visual>
+			</visuals>
+			<reproduction supported="false" minAgeMonth="7"/>
+			<buyPrice>
+				<key ageMonth="0" value="200"/>
+				<key ageMonth="12" value="1500"/>
+			</buyPrice>
+			<sellPrice>
+				<key ageMonth="0" value="100" />
+				<key ageMonth="6" value="500" />
+				<key ageMonth="12" value="2500" />
+				<key ageMonth="18" value="2000" />
+        		<key ageMonth="36" value="500" />
+			</sellPrice>
+			<transportPrice>
+				<key ageMonth="0" value="5"/>
+				<key ageMonth="3" value="10"/>
+				<key ageMonth="6" value="20"/>
+			</transportPrice>
+			<input>
+				<straw>
+					<key ageMonth="0" value="10"/>
+					<key ageMonth="6" value="40"/>
+				</straw>
+				<water>
+					<key ageMonth="0" value="4"/>
+					<key ageMonth="6" value="30"/>
+				</water>
+				<food>
+					<key ageMonth="0" value="10"/>
+					<key ageMonth="6" value="120"/>
+				</food>
+			</input>
+			<output>
+				<manure>
+					<key ageMonth="0" value="20"/>
+					<key ageMonth="6" value="70"/>
+					<key ageMonth="12" value="150"/>
+				</manure>
+				<liquidManure>
+					<key ageMonth="0" value="60"/>
+					<key ageMonth="6" value="130"/>
+				</liquidManure>
+			</output>
+		</subType>
+		<subType subType="SOW_BERKSHIRE" fillTypeName="BRC_SOW_BERKSHIRE">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="1" image="animals/domesticated/pig/store/store_FM_GS01_Berkshire.png" canBeBought="true">
+					<description>$l10n_animal_descriptionPigProfit</description>
+					<description>$l10n_animal_descriptionPigFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionPigYoung</description>
+					<description>$l10n_animal_descriptionPigReproduction</description>
+					<textureIndexes>
+                        <value>5</value>
+						<value>6</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="3" visualAnimalIndex="2" image="animals/domesticated/pig/store/store_FM_GS02_Berkshire.png" canBeBought="true">
+					<description>$l10n_animal_descriptionPigProfit</description>
+					<description>$l10n_animal_descriptionPigFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionPigYoung</description>
+					<description>$l10n_animal_descriptionPigReproduction</description>
+					<textureIndexes>
+                        <value>5</value>
+						<value>6</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="6" visualAnimalIndex="3" image="animals/domesticated/pig/store/store_F_GS03_Berkshire.png" canBeBought="true">
+					<description>$l10n_animal_descriptionPigProfit</description>
+					<description>$l10n_animal_descriptionPigFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionPigReproduction</description>
+					<textureIndexes>
+                        <value>5</value>
+						<value>6</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="12" visualAnimalIndex="4" image="animals/domesticated/pig/store/store_F_GS04_Berkshire.png" canBeBought="true">
+					<description>$l10n_animal_descriptionPigProfit</description>
+					<description>$l10n_animal_descriptionPigFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionPigReproduction</description>
+					<textureIndexes>
+                        <value>5</value>
+						<value>6</value>
+                    </textureIndexes>
+				</visual>
+			</visuals>
+			<reproduction minAgeMonth="7" durationMonth="4" minHealthFactor="0.75"/>
+			<buyPrice>
+				<key ageMonth="0" value="200"/>
+				<key ageMonth="12" value="1500"/>
+			</buyPrice>
+			<sellPrice>
+				<key ageMonth="0" value="100" />
+				<key ageMonth="6" value="500" />
+				<key ageMonth="12" value="2500" />
+				<key ageMonth="18" value="2000" />
+        		<key ageMonth="36" value="500" />
+			</sellPrice>
+			<transportPrice>
+				<key ageMonth="0" value="5"/>
+				<key ageMonth="3" value="10"/>
+				<key ageMonth="6" value="20"/>
+			</transportPrice>
+			<input>
+				<straw>
+					<key ageMonth="0" value="10"/>
+					<key ageMonth="6" value="40"/>
+				</straw>
+				<water>
+					<key ageMonth="0" value="4"/>
+					<key ageMonth="6" value="30"/>
+				</water>
+				<food>
+					<key ageMonth="0" value="10"/>
+					<key ageMonth="6" value="120"/>
+				</food>
+			</input>
+			<output>
+				<manure>
+					<key ageMonth="0" value="20"/>
+					<key ageMonth="6" value="70"/>
+					<key ageMonth="12" value="150"/>
+				</manure>
+				<liquidManure>
+					<key ageMonth="0" value="60"/>
+					<key ageMonth="6" value="130"/>
+				</liquidManure>
+			</output>
+		</subType>
+		<subType subType="BOAR_BERKSHIRE" fillTypeName="BRC_BOAR_BERKSHIRE">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="5" image="animals/domesticated/pig/store/store_FM_GS01_Berkshire.png" canBeBought="true">
+					<description>$l10n_animal_descriptionPigProfit</description>
+					<description>$l10n_animal_descriptionPigFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionPigYoung</description>
+					<description>$l10n_animal_descriptionPigReproduction</description>
+					<textureIndexes>
+                        <value>5</value>
+						<value>6</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="3" visualAnimalIndex="6" image="animals/domesticated/pig/store/store_FM_GS02_Berkshire.png" canBeBought="true">
+					<description>$l10n_animal_descriptionPigProfit</description>
+					<description>$l10n_animal_descriptionPigFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionPigYoung</description>
+					<description>$l10n_animal_descriptionPigReproduction</description>
+					<textureIndexes>
+                        <value>5</value>
+						<value>6</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="6" visualAnimalIndex="7" image="animals/domesticated/pig/store/store_M_GS03_Berkshire.png" canBeBought="true">
+					<description>$l10n_animal_descriptionPigProfit</description>
+					<description>$l10n_animal_descriptionPigFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionPigReproduction</description>
+					<textureIndexes>
+                        <value>5</value>
+						<value>6</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="12" visualAnimalIndex="8" image="animals/domesticated/pig/store/store_M_GS04_Berkshire.png" canBeBought="true">
+					<description>$l10n_animal_descriptionPigProfit</description>
+					<description>$l10n_animal_descriptionPigFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionPigReproduction</description>
+					<textureIndexes>
+                        <value>5</value>
+						<value>6</value>
+                    </textureIndexes>
+				</visual>
+			</visuals>
+			<reproduction supported="false" minAgeMonth="7"/>
+			<buyPrice>
+				<key ageMonth="0" value="200"/>
+				<key ageMonth="12" value="1500"/>
+			</buyPrice>
+			<sellPrice>
+				<key ageMonth="0" value="100" />
+				<key ageMonth="6" value="500" />
+				<key ageMonth="12" value="2500" />
+				<key ageMonth="18" value="2000" />
+        		<key ageMonth="36" value="500" />
+			</sellPrice>
+			<transportPrice>
+				<key ageMonth="0" value="5"/>
+				<key ageMonth="3" value="10"/>
+				<key ageMonth="6" value="20"/>
+			</transportPrice>
+			<input>
+				<straw>
+					<key ageMonth="0" value="10"/>
+					<key ageMonth="6" value="40"/>
+				</straw>
+				<water>
+					<key ageMonth="0" value="4"/>
+					<key ageMonth="6" value="30"/>
+				</water>
+				<food>
+					<key ageMonth="0" value="10"/>
+					<key ageMonth="6" value="120"/>
+				</food>
+			</input>
+			<output>
+				<manure>
+					<key ageMonth="0" value="20"/>
+					<key ageMonth="6" value="70"/>
+					<key ageMonth="12" value="150"/>
+				</manure>
+				<liquidManure>
+					<key ageMonth="0" value="60"/>
+					<key ageMonth="6" value="130"/>
+				</liquidManure>
+			</output>
+		</subType>
+	</animal>
+</animals>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="Goose_Body_Diff.dds"/>
+    <File fileId="3" filename="fekete.dds"/>
+    <File fileId="1" filename="goose_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="MaterialFBXASC046023" materialId="4" specularColor="0.2 1 0.2">
+      <Texture fileId="1"/>
+    </Material>
+    <Material name="MaterialFBXASC046024" materialId="5" specularColor="0.2 1 0.2">
+      <Texture fileId="4"/>
+    </Material>
+    <Material name="szemeFBXASC046011" materialId="6">
+      <Texture fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="lud.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="Armature" rotation="-90 0 0" nodeId="9">
+        <TransformGroup name="Bone" translation="5.87828e-17 0.0668962 0.316019" rotation="144.027 -1.3417e-14 4.35599e-15" nodeId="10">
+          <TransformGroup name="BoneFBXASC046001" translation="-2.3845e-17 0.313642 -2.52402e-08" rotation="-68.376 5.03403e-06 -1.2699e-05" nodeId="11">
+            <TransformGroup name="BoneFBXASC046002" translation="-8.79558e-15 0.173324 4.54318e-08" rotation="-2.75339 -1.57776e-08 -6.56211e-07" nodeId="12">
+              <TransformGroup name="BoneFBXASC046003" translation="1.82495e-09 0.159342 -1.93987e-08" rotation="47.1713 -4.35817e-06 9.36218e-06" nodeId="13">
+                <TransformGroup name="BoneFBXASC046004" translation="-3.51449e-15 0.085733 1.13958e-08" rotation="44.5093 -3.91866e-06 9.57626e-06" nodeId="14">
+                  <TransformGroup name="BoneFBXASC046005" translation="6.30673e-16 0.058738 6.39014e-08" rotation="-51.3793 -5.13408e-06 -1.06728e-05" nodeId="15">
+                    <TransformGroup name="BoneFBXASC046006" translation="2.74583e-15 0.0297399 -4.20397e-08" rotation="74.3919 1.20672e-05 9.20952e-05" nodeId="16">
+                      <TransformGroup name="BoneFBXASC046006_end" translation="0 0.105945 0" nodeId="17"/>
+                    </TransformGroup>
+                  </TransformGroup>
+                  <TransformGroup name="BoneFBXASC046007" translation="6.30673e-16 0.058738 6.39014e-08" rotation="34.4973 8.8561e-06 1.54736e-05" nodeId="18">
+                    <TransformGroup name="BoneFBXASC046008" translation="-4.65385e-15 0.0277441 1.91117e-08" rotation="-12.9234 9.25103e-05 -2.74964e-05" nodeId="19">
+                      <TransformGroup name="BoneFBXASC046008_end" translation="0 0.0715496 0" nodeId="20"/>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="BoneFBXASC046024" translation="-2.3845e-17 0.313642 -2.52402e-08" rotation="-150.317 1.18679e-05 6.76455e-06" nodeId="21">
+            <TransformGroup name="BoneFBXASC046025" translation="-2.35162e-14 0.249472 -7.34311e-08" rotation="-25.1735 1.2974e-06 5.81057e-06" nodeId="22">
+              <TransformGroup name="BoneFBXASC046025_end" translation="0 0.153369 0" nodeId="23"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="BoneFBXASC046009" translation="5.87828e-17 0.0668962 0.316019" rotation="-18.3498 6.46898e-16 4.00518e-15" nodeId="24">
+          <TransformGroup name="BoneFBXASC046010" translation="-1.68099e-17 0.240473 -2.23739e-08" rotation="-4.48384 -6.07961e-16 4.99978e-15" nodeId="25">
+            <TransformGroup name="BoneFBXASC046010_end" translation="0 0.11647 0" nodeId="26"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="BoneFBXASC046012" translation="-0.0825336 0.0533371 0.185851" rotation="-83.3675 9.99247e-07 -180" nodeId="27">
+          <TransformGroup name="BoneFBXASC046013" translation="-1.01684e-09 0.0586971 -4.89876e-09" rotation="4.27793 -0.0763114 1.01988" nodeId="28">
+            <TransformGroup name="BoneFBXASC046014" translation="-1.44926e-10 0.114631 -3.60144e-09" rotation="73.9046 10.3275 -3.9842" nodeId="29">
+              <TransformGroup name="BoneFBXASC046014_end" translation="0 0.128822 0" nodeId="30"/>
+            </TransformGroup>
+            <TransformGroup name="BoneFBXASC046015" translation="-1.44926e-10 0.114631 -3.60144e-09" rotation="69.1943 39.379 -13.4659" nodeId="31">
+              <TransformGroup name="BoneFBXASC046015_end" translation="0 0.138474 0" nodeId="32"/>
+            </TransformGroup>
+            <TransformGroup name="BoneFBXASC046016" translation="-1.44926e-10 0.114631 -3.60144e-09" rotation="72.1528 -22.7547 6.80869" nodeId="33">
+              <TransformGroup name="BoneFBXASC046016_end" translation="0 0.114744 0" nodeId="34"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="BoneFBXASC046018" translation="0.0881344 0.0533371 0.187207" rotation="-92.5075 -6.19045 -89.6994" nodeId="35">
+          <TransformGroup name="BoneFBXASC046019" translation="-9.8112e-10 0.062798 9.96571e-09" rotation="-2.34834 -0.379418 -4.79682" nodeId="36">
+            <TransformGroup name="BoneFBXASC046020" translation="2.97037e-09 0.113679 -3.07072e-10" rotation="13.1037 0.429167 -75.7526" nodeId="37">
+              <TransformGroup name="BoneFBXASC046020_end" translation="0 0.131036 0" nodeId="38"/>
+            </TransformGroup>
+            <TransformGroup name="BoneFBXASC046021" translation="2.97037e-09 0.113679 -3.07072e-10" rotation="80.2601 46.8329 -1.21057" nodeId="39">
+              <TransformGroup name="BoneFBXASC046021_end" translation="0 0.140873 0" nodeId="40"/>
+            </TransformGroup>
+            <TransformGroup name="BoneFBXASC046022" translation="2.97037e-09 0.113679 -3.07072e-10" rotation="-44.8389 -66.9456 -29.5406" nodeId="41">
+              <TransformGroup name="BoneFBXASC046022_end" translation="0 0.125871 0" nodeId="42"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <Shape shapeId="1" name="goooseFBXASC046001" translation="0 0 -1.11759e-08" nodeId="43" materialIds="4,6,5" castsShadows="true" receiveShadows="true" skinBindNodeIds="10 11 12 13 14 15 16 18 19 21 22 24 25 27 28 29 31 33 35 36 37 39 41"/>
+  </Scene>
+
+
+  <Animation externalAnimFile="lud.i3d.anim" />
+</i3D>

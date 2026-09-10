@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="mapRabbitHusbandry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_rabbitHutch</name>
+	<image>multifruit/placeables/husbandry/rabbitHutch/icon_animalRabbit.dds</image>
+        <showInStore>true</showInStore>
+        <price>34999</price>
+        <functions>
+            <function>$l10n_function_animalPenRabbit</function>
+        </functions>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>animalpens</category>
+        <brush>
+            <type>husbandry</type>
+            <category>animals</category>
+            <tab>others</tab>
+        </brush>
+    </storeData>
+
+    <base>
+        <filename>multifruit/placeables/husbandry/rabbitHutch/rabbitHutch.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+	
+    </base>
+	
+	 <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testAreaStart01" endNode="testAreaEnd01" />
+        </testAreas>
+        <sounds>
+            <place        template="medImp" />
+            <placeLayered template="chickenLayer" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelAreaStart01" widthNode="levelAreaWidth01" heightNode="levelAreaHeight01" groundType="dirt"/>
+        </levelAreas>
+
+        <paintAreas>
+            <paintArea startNode="paintAreaStart01" widthNode="paintAreaWidth01" heightNode="paintAreaHeight01" groundType="dirt" />
+        </paintAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart01" widthNode="indoorAreaWidth01" heightNode="indoorAreaHeight01" />
+    </indoorAreas>
+  
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+        </updateAreas>
+    </ai>
+	
+    <triggerMarkers>
+       <triggerMarker node="markerFood"    filename="$data/shared/assets/marker/markerIconFood.i3d"  adjustToGround="true"/>
+       <triggerMarker node="markerAnimals" filename="$data/shared/assets/marker/markerIconAnimals.i3d" adjustToGround="true"/>
+	</triggerMarkers>
+
+    <hotspots>
+        <hotspot linkNode="rabbitHusbandry" teleportNode="markerAnimals" >
+            <customType name="RABBITS" filename="multifruit/placeables/husbandry/mapHotspots1.dds" imageUVs="125 235 100 100" imageResolution="1024 1024" category="ANIMAL"/>
+        </hotspot>
+    </hotspots>
+
+    <infoTrigger triggerNode="infoTrigger" />
+	
+ <animatedObjects>
+    <animatedObject saveId="doors" >
+            <animation duration="3.5">
+                <part node="doorRightRot">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 -90 0"/>
+                </part>
+                <part node="doorLeftRot">
+                    <keyFrame time="0.2" rotation="0 0 0"/>
+                    <keyFrame time="1.2" rotation="0 90 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="doorTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="doorTrigger" template="woodDoorSqueaksMedium" />
+                <posEnd linkNode="doorTrigger" template="woodDoorOpen" />
+                <negEnd linkNode="doorTrigger" template="woodDoorClose" />
+            </sounds>
+        </animatedObject>
+ </animatedObjects>
+    <husbandry saveId="Animals_RABBIT" hasStatistics="false">
+		<storage node="storage" fillTypes="STRAW" isExtension="false">
+            <capacity fillType="STRAW" capacity="2500" />
+        </storage>
+
+        <animals type="RABBIT" maxNumAnimals="150" maxNumVisualAnimals="60">
+            <navigation rootNode="navigationRootNode" filename="multifruit/placeables/husbandry/rabbitHutch/navigationMesh.i3d" />
+            <loadingTrigger node="loadingTrigger" />
+        </animals>
+
+		<unloadingStation supportsExtension="true" storageRadius="25" hideFromPricesMenu="true">
+			<unloadTrigger exactFillRootNode="exactFillRootNodeStraw" fillTypes="STRAW" />
+			<baleTrigger triggerNode="baleTrigger" deleteLitersPerSecond="200" fillTypes="STRAW"/>
+        </unloadingStation>
+
+		<loadingStation supportsExtension="true" storageRadius="25" fillTypes="STRAW"/>
+
+        <food capacity="2500" >
+            <foodPlane node="foodPlane" minY="-0.129" maxY="-0.074" changeVisibility="true" defaultFillType="CLOVER_WINDROW"/>
+            <unloadTrigger exactFillRootNode="exactFillRootNodeFood"/>
+			<baleTrigger triggerNode="baleTriggerFood" deleteLitersPerSecond="200" fillTypes="CLOVER_WINDROW HAY_PELLETS"/>
+			<palletTrigger triggerNode="palletTrigger" fillTypes="LETTUCE CARROT APPLE CABBAGE REDCABBAGE PARSNIP"/>
+        </food>
+
+		<water automaticWaterSupply="true" />
+
+		<straw>
+            <manure factor="0.8" active="true"/>
+            <strawPlane node="strawPlanes" minY="-0.007" maxY="0.069" colorChange="false" />
+        </straw>
+    </husbandry>
+
+    <i3dMappings>
+		<i3dMapping id="rabbitHusbandry" node="0>" />
+		<i3dMapping id="infoTrigger" node="0>0" />
+		<i3dMapping id="navigationRootNode" node="0>1" />
+		<i3dMapping id="food" node="0>2" />
+		<i3dMapping id="exactFillRootNodeFood" node="0>2|0" />
+		<i3dMapping id="baleTriggerFood" node="0>2|1" />
+		<i3dMapping id="palletTrigger" node="0>2|2" />
+		<i3dMapping id="strawPlanes" node="0>3|0" />
+		<i3dMapping id="exactFillRootNodeStraw" node="0>3|1" />
+		<i3dMapping id="baleTrigger" node="0>3|2" />
+		<i3dMapping id="loadingTriggerNodes" node="0>4" />
+		<i3dMapping id="markerAnimals" node="0>4|0" />
+		<i3dMapping id="loadingTrigger" node="0>4|1" />
+		<i3dMapping id="markerFood" node="0>4|2" />
+		<i3dMapping id="storage" node="0>6" />
+		<i3dMapping id="foodPlane" node="0>2|3" />
+		
+		<i3dMapping id="doorLeftRot" node="0>13|0" />
+        <i3dMapping id="doorRightRot" node="0>13|1" />
+        <i3dMapping id="doorTrigger" node="0>13|2" />
+
+		<i3dMapping id="clearAreaStart01" node="0>7|0" />
+        <i3dMapping id="clearAreaWidth01" node="0>7|0|0" />
+        <i3dMapping id="clearAreaHeight01" node="0>7|0|1" />
+      
+        <i3dMapping id="levelAreaStart01" node="0>8|0" />
+        <i3dMapping id="levelAreaWidth01" node="0>8|0|0" />
+        <i3dMapping id="levelAreaHeight01" node="0>8|0|1" />
+        
+        <i3dMapping id="paintAreaStart01" node="0>9|0" />
+        <i3dMapping id="paintAreaWidth01" node="0>9|0|0" />
+        <i3dMapping id="paintAreaHeight01" node="0>9|0|1" />
+        
+        <i3dMapping id="indoorAreaStart01" node="0>10|0" />
+        <i3dMapping id="indoorAreaWidth01" node="0>10|0|0" />
+        <i3dMapping id="indoorAreaHeight01" node="0>10|0|1" />
+       
+        <i3dMapping id="testAreaStart01" node="0>11|0" />
+        <i3dMapping id="testAreaEnd01" node="0>11|0|0" />
+        
+        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>12|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>12|0|0" />
+	</i3dMappings>
+</placeable>

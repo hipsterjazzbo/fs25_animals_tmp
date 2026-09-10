@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="distillery.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="35" filename="distillery.dds"/>
+    <File fileId="12" filename="$data/maps/mapEU/textures/dirtDark_diffuse.png"/>
+    <File fileId="13" filename="$data/maps/mapEU/textures/dirtGreen_diffuse.png"/>
+    <File fileId="20" filename="$data/maps/mapEU/textures/windowsIndustrial04_diffuse.png"/>
+    <File fileId="21" filename="$data/maps/mapEU/textures/windowsIndustrial04_normal.png"/>
+    <File fileId="22" filename="$data/maps/mapEU/textures/windowsIndustrial04_specular.png"/>
+    <File fileId="25" filename="$data/maps/textures/shared/props/icicles_diffuse.png"/>
+    <File fileId="26" filename="$data/maps/textures/shared/props/icicles_normal.png"/>
+    <File fileId="27" filename="$data/maps/textures/shared/props/icicles_specular.png"/>
+    <File fileId="30" filename="$data/maps/textures/shared/snow_diffuse.png"/>
+    <File fileId="31" filename="$data/maps/textures/shared/snow_normal.png"/>
+    <File fileId="14" filename="$data/maps/textures/shared/snow_specular.png"/>
+    <File fileId="7" filename="$data/placeables/mapEU/spinnery/spinnery_diffuse.png"/>
+    <File fileId="16" filename="$data/placeables/mapEU/spinnery/spinnery_height.png"/>
+    <File fileId="11" filename="$data/placeables/mapEU/spinnery/spinnery_mask.png"/>
+    <File fileId="8" filename="$data/placeables/mapEU/spinnery/spinnery_normal.png"/>
+    <File fileId="9" filename="$data/placeables/mapEU/spinnery/spinnery_specular.png"/>
+    <File fileId="10" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="23" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="28" filename="$data/shaders/snowHeapShader.xml"/>
+    <File fileId="36" filename="$data/shared/default_normal.dds"/>
+    <File fileId="37" filename="$data/shared/default_specular.dds"/>
+    <File fileId="2" filename="$data/shared/warningStripes_diffuse.dds"/>
+    <File fileId="3" filename="$data/shared/warningStripes_normal.dds"/>
+    <File fileId="4" filename="$data/shared/warningStripes_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="icicles_mat" materialId="5" alphaBlending="true" customShaderId="28" customShaderVariation="icicle">
+      <Texture fileId="25"/>
+      <Normalmap fileId="26"/>
+      <Glossmap fileId="27"/>
+    </Material>
+    <Material name="lambert1" materialId="6" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert1" materialId="7" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="Material.001" materialId="8" specularColor="0.494118 1 0">
+    </Material>
+    <Material name="snow_mat" materialId="9" customShaderId="28">
+      <Texture fileId="30"/>
+      <Normalmap fileId="31" bumpDepth="0.5"/>
+      <Glossmap fileId="14"/>
+    </Material>
+    <Material name="spinnery_mat" materialId="10" customShaderId="10" customShaderVariation="customParallax">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+      <Custommap name="mMaskMap" fileId="11"/>
+      <Custommap name="mDirtDiffuse" fileId="12"/>
+      <Custommap name="mMossDiffuse" fileId="13"/>
+      <Custommap name="mParallaxMap" fileId="16"/>
+    </Material>
+    <Material name="spinnery_mat1" materialId="11" customShaderId="10">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+    </Material>
+    <Material name="TWDesserts" materialId="12">
+      <Texture fileId="35"/>
+      <Normalmap fileId="36"/>
+      <Glossmap fileId="37"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="13" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="warningStripes_mat" materialId="14">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="windowsIndustrial04_mat" materialId="15" alphaBlending="true">
+      <Texture fileId="20"/>
+      <Normalmap fileId="21"/>
+      <Glossmap fileId="22"/>
+    </Material>
+    <Material name="windowsIndustrial04_mat1" materialId="16" alphaBlending="true" customShaderId="23" customShaderVariation="alphaMap">
+      <Texture fileId="20"/>
+      <Normalmap fileId="21"/>
+      <Glossmap fileId="22"/>
+    </Material>
+    <Material name="windowsMate_mat" materialId="17" diffuseColor="0.309804 0.309804 0.309804 1" specularColor="0.901961 1 0.6">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="distillery.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="distillery" nodeId="36">
+      <TransformGroup name="FillPlanes" nodeId="37"/>
+      <TransformGroup name="tipOcclusionUpdateAreas" nodeId="38">
+        <TransformGroup name="tipOcclusionUpdateArea1Start" translation="10.2366 0 11.4118" nodeId="39">
+          <TransformGroup name="tipOcclusionUpdateArea1End" translation="-23.2849 0 -24.2329" nodeId="40"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="clearAreas" rotation="0 180 0" nodeId="41">
+        <TransformGroup name="clearArea1Start" translation="11.7835 0 10.1633" nodeId="42">
+          <TransformGroup name="clearArea1Width" translation="-22.8375 0 0" nodeId="43"/>
+          <TransformGroup name="clearArea1Height" translation="0 0 -20.8092" rotation="0 -0 6.1572e-14" nodeId="44"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="levelAreas" rotation="0 180 0" nodeId="45">
+        <TransformGroup name="levelArea1Start" translation="11.5508 0 10.3826" nodeId="46">
+          <TransformGroup name="levelArea1Width" translation="-22.6373 0 0" nodeId="47"/>
+          <TransformGroup name="levelArea1Height" translation="0 0 -21.6317" nodeId="48"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="indoorAreas" rotation="0 180 0" nodeId="49">
+        <TransformGroup name="indoorArea1Start" translation="6.6261 0 10.383" scale="0.785669 0.785669 0.785669" nodeId="50">
+          <TransformGroup name="indoorArea1Width" translation="-17.1579 0 0" scale="1.66196 1.66196 1.66196" nodeId="51"/>
+          <TransformGroup name="indoorArea1Height" translation="0 0 -26.2738" nodeId="52"/>
+        </TransformGroup>
+      </TransformGroup>
+      <Shape name="infoTrigger" translation="0 3.53844 0" scale="30 10 40" shapeId="1" visibility="false" static="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="53" castsShadows="false" receiveShadows="false" nonRenderable="true" distanceBlending="false" materialIds="13"/>
+      <TransformGroup name="warningStripes" nodeId="54">
+        <Shape name="warningStripes_palletUnloadArea" translation="-9.26234 -0.188854 -1.578" rotation="0 90 0" scale="1.89 1 1.423" shapeId="2" clipDistance="300" nodeId="55" castsShadows="true" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="14"/>
+        <Shape name="warningStripes_palletSpawnArea" translation="8.53553 -0.408383 2.61953" rotation="0 90 0" scale="1.4 1 1.1" shapeId="2" clipDistance="300" nodeId="56" castsShadows="true" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="14"/>
+      </TransformGroup>
+      <TransformGroup name="productionPoint" translation="-0.0284185 0 10.655" nodeId="57">
+        <Shape name="playerTrigger" translation="0 0.5 0" shapeId="3" visibility="false" static="true" trigger="true" collisionFilterGroup="0x100000" collisionFilterMask="0x100000" nodeId="58" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6"/>
+        <TransformGroup name="playerTriggerMarker" translation="0 0.5 0" nodeId="59"/>
+      </TransformGroup>
+      <TransformGroup name="sellingStation" translation="-9.39525 0 0" scale="1.1 1 1.2" nodeId="60">
+        <Shape name="palletTrigger" translation="-0.0869627 2.15 -0.191708" scale="0.909091 1 0.833333" shapeId="4" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x10000" nodeId="61" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+        <Shape name="unloadTrigger" translation="-0.0869627 0.03 -0.191708" rotation="0 90 0" scale="0.909091 1 0.833333" shapeId="5" kinematic="true" compound="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="62" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+        <TransformGroup name="unloadTriggerMarker" translation="0 0.5 0" nodeId="63"/>
+        <TransformGroup name="unloadTriggerAINode" nodeId="64"/>
+      </TransformGroup>
+      <TransformGroup name="palletSpawner" translation="8.10678 0 -1.8811" nodeId="65">
+        <TransformGroup name="palletSpawnerArea4Start" translation="1.6 0 0" nodeId="66">
+          <TransformGroup name="palletSpawnerArea5End" translation="-1.19674e-15 0 11.462" nodeId="67"/>
+        </TransformGroup>
+        <TransformGroup name="palletSpawnerArea3Start" nodeId="68">
+          <TransformGroup name="palletSpawnerArea3End" translation="5.19997e-18 0 11.462" nodeId="69"/>
+        </TransformGroup>
+        <TransformGroup name="spawnTriggerMarker" translation="1.30873 0.5 7.47312" nodeId="70"/>
+      </TransformGroup>
+      <TransformGroup name="testAreas" nodeId="71">
+        <TransformGroup name="testArea1Start" translation="-15.4917 0 -15.6478" nodeId="72">
+          <TransformGroup name="testArea1End" translation="30.7611 7 31.3354" nodeId="73"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="visuals" static="true" clipDistance="500" nodeId="74">
+        <TransformGroup name="spinnery_lod" lodDistance="0 80" static="true" nodeId="75">
+          <Shape name="spinnery_lod0" translation="0 0.01 0" shapeId="6" clipDistance="300" nodeId="76" castsShadows="true" receiveShadows="true" skinBindNodeIds="76 81" materialIds="10">
+            <Shape name="bricks" shapeId="7" clipDistance="150" nodeId="77" castsShadows="true" receiveShadows="true" skinBindNodeIds="77 78" materialIds="11">
+              <TransformGroup name="bricksMargins" translation="0 -0.01 0" clipDistance="150" nodeId="78"/>
+            </Shape>
+            <Shape name="spinneryGlassOpaque" shapeId="8" clipDistance="300" nodeId="79" castsShadows="true" receiveShadows="true" materialIds="16"/>
+            <Shape name="spinneryGlassTransparent" shapeId="9" clipDistance="300" nodeId="80" castsShadows="true" receiveShadows="true" materialIds="15"/>
+            <TransformGroup name="spinneryInterior" clipDistance="300" nodeId="81"/>
+            <TransformGroup name="seasons" clipDistance="300" nodeId="82">
+              <TransformGroup name="winter" nodeId="83" weatherRequiredMask="0x400">
+                <Shape name="icicles" shapeId="10" nodeId="84" castsShadows="true" receiveShadows="true" materialIds="5"/>
+                <Shape name="snow" shapeId="11" nodeId="85" castsShadows="true" receiveShadows="true" materialIds="9"/>
+              </TransformGroup>
+            </TransformGroup>
+          </Shape>
+          <Shape name="spinnery_lod1" translation="0 0.01 0" shapeId="12" clipDistance="500" nodeId="86" castsShadows="true" receiveShadows="true" materialIds="10">
+            <Shape name="spinneryGlassOpaque1" shapeId="13" clipDistance="300" nodeId="87" castsShadows="true" receiveShadows="true" materialIds="17"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="decals" nodeId="88">
+          <TransformGroup name="Billboard" translation="0.17108 10.448 -10.0169" rotation="-90 -1.86693e-05 -180" nodeId="89">
+            <Shape name="Cube" rotation="-8.73373e-05 -0 0" scale="2.00816 0.0256947 0.503905" shapeId="14" nodeId="90" castsShadows="false" receiveShadows="false" materialIds="8"/>
+            <Shape name="TWDesserts" rotation="-6.83019e-06 -0 0" shapeId="15" nodeId="91" castsShadows="false" receiveShadows="false" materialIds="12"/>
+          </TransformGroup>
+          <TransformGroup name="Billboard" translation="0.17108 10.448 10.01" rotation="90 -1.86693e-05 0" nodeId="92">
+            <Shape name="Cube" rotation="-8.73373e-05 -0 0" scale="2.00816 0.0256947 0.503905" shapeId="14" nodeId="93" castsShadows="false" receiveShadows="false" materialIds="8"/>
+            <Shape name="TWDesserts" rotation="-6.83019e-06 -0 0" shapeId="15" nodeId="94" castsShadows="false" receiveShadows="false" materialIds="12"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" nodeId="95">
+        <Shape name="collision" translation="0 0.01 0" shapeId="16" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="96" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+        <Shape name="tipCollision1" translation="0 0.01 0" shapeId="17" static="true" collisionFilterGroup="0x18" collisionFilterMask="0x1" nodeId="97" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="7"/>
+      </TransformGroup>
+      <TransformGroup name="dynamicliLoadedParts" nodeId="98">
+        <TransformGroup name="smokeBigTower01" translation="8 19.3069 -4" nodeId="99"/>
+        <TransformGroup name="smokeSmall01" translation="-6.13271 10.6998 -6.8491" nodeId="100"/>
+        <TransformGroup name="smokeSmall02" translation="-6.13271 10.6998 -5.89218" nodeId="101"/>
+        <TransformGroup name="smokeSmall03" translation="-6.13271 10.6998 -4.87933" nodeId="102"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,1343 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="5" debug="false" shaderType="TERRAIN">
+  <Parameters>
+    <Parameter name="terrainLodBlendInfos"                target="terrainLodBlendInfos"                type="float4" group="base" />
+    <Parameter name="terrainLodBlendInfos2"               target="terrainLodBlendInfos2"               type="float4" group="base" />
+    <Parameter name="terrainSizeInvSizeScaleXZScaleY"     target="terrainSizeInvSizeScaleXZScaleY"     type="float4" group="base" />
+    <Parameter name="terrainPatchOffset"                  target="terrainPatchOffset"                  type="float4" group="base" />
+    <!-- X = Z value for base terrain (below world), Y = Z value for terrain detail (fields) (above world), Z = Z value for terrain fill (above world), W = unused -->
+    <Parameter name="terrainDepthValues"                  target="terrainDepthValues"                  type="float4" group="base" />
+    <!-- X = (uint) layer offset for ground detail, (uint) Y = layer offset for spray, (uint) Z = layer param offset for custom, W = layer param offset for fill -->
+    <Parameter name="terrainLayerOffsets"                 target="terrainLayerOffsets"                 type="float4" group="base" />
+    <!-- the info texel offset is either (0,0) for an area-based infomap or (0.5,0.5) for a vertex-based infomap; ZW is unused -->
+    <Parameter name="terrainInfoTexelOffset"              target="terrainInfoTexelOffset"              type="float4" group="base" defaultValue="0 0 0 0"/>
+    <!-- X = virtual size (e.g. 4096), Y = fill virtual size, Z = unused, W = unused -->
+    <Parameter name="terrainDetailMapVirtualSize"         target="terrainDetailMapVirtualSize"         type="float4" group="base" />
+    <!-- X = virtual size of displacement map (e.g. 16384), Y = yScale ratio for normal computation, Z = scaling factor for displacement units (relative to rawHeightScale), W = unused -->
+    <Parameter name="terrainDisplacementMapVirtualSize"   target="terrainDisplacementMapVirtualSize"   type="float4" group="base" />
+    <!-- X,Y = virtual offset of displacement map, Z = displacement normal enable flag (0 = disable; 1 = enable), W = unused (do not use; this data is set per frame by the multires texture updater) -->
+    <Parameter name="terrainDisplacementMapVirtualOffset" target="terrainDisplacementMapVirtualOffset" type="float4" group="base" />
+    <!-- each value is a uint with number of bits in low byte and bitmask in high byte e.g. 0x0F04 for a 4-bit field; there are up to 4 fields -->
+    <Parameter name="terrainDetailShifts"                 target="terrainDetailShifts"                 type="float4" group="base" />
+  </Parameters>
+  <UvUsages>
+    <UvUsage textureName="baseMap"          uvType="custom"/>
+    <UvUsage textureName="normalMap"        uvType="custom"/>
+    <UvUsage textureName="glossMap"         uvType="custom"/>
+    <UvUsage textureName="heightMap"        uvType="custom"/>
+    <UvUsage textureName="lodDiffuseMap"    uvType="custom"/>
+    <UvUsage textureName="lodTypeMap"       uvType="worldspace"/>
+    <UvUsage textureName="lodNormalMap"     uvType="worldspace"/>
+    <UvUsage textureName="infoLayerMap"     uvType="worldspace"/>
+    <UvUsage textureName="layerParameters"  uvType="custom"/>
+    <UvUsage textureName="terrainDetailMap" uvType="worldspace"/>
+    <UvUsage textureName="terrainFillMap"   uvType="worldspace"/>
+    <UvUsage textureName="noiseMap" uvType="custom"/>
+  </UvUsages>
+  <Textures>
+    <Texture name="lodDiffuseMap" type="2dArray" defaultColorProfile="sRGB" isBindless="false" />
+    <Texture name="lodTypeMap" defaultColorProfile="linearRGB" isBindless="false" />
+    <Texture name="lodNormalMap" defaultColorProfile="linearRGB" isBindless="false" />
+    <Texture name="infoLayerMap" defaultColorProfile="linearRGB" isOptional="true" isBindless="false" />
+    <Texture name="layerParameters" type="buffer" defaultColorProfile="linearRGB" isBindless="false" />
+    <Texture name="baseMap" type="2dArray" isBindless="false" />
+    <Texture name="normalMap" type="2dArray" isOptional="true" isBindless="false" />
+    <Texture name="heightMap" type="2dArray" isOptional="true" isBindless="false" />
+    <Texture name="terrainDetailMap" defaultColorProfile="linearRGB" isOptional="true" isBindless="false" />
+    <Texture name="terrainFillMap" defaultColorProfile="linearRGB" isOptional="true" isBindless="false" />
+    <Texture name="noiseMap" defaultColorProfile="linearRGB" defaultFilename="$data/maps/textures/terrain/terrainNoise.png" isBindless="false" />
+  </Textures>
+  <VertexAttributes>
+      <IgnoredVertexAttribute name="tangent"/>
+      <IgnoredVertexAttribute name="uv0"/>
+      <IgnoredVertexAttribute name="normal"/>
+  </VertexAttributes>
+  <Variations/>
+  <LodLevel startDistance="0" alphaForceMode="ignore">
+    <CodeInjections>
+      <CodeInjection position="SHARED_START">
+        <![CDATA[
+// TERRAIN_QUALITY:
+// 0: No normal mapping, linear blending
+// 1: Normal mapping
+// 2: Parallax mapping
+// 3: Parallax occlusion mapping (exact quality is defined by shader quality)
+#if !defined(TERRAIN_QUALITY)
+#define TERRAIN_QUALITY 0
+#endif
+
+#define INTEGER_POSITION
+
+
+#if defined(NORMAL_MAP) && TERRAIN_QUALITY > 0
+#define TERRAIN_NORMAL_MAPPING
+#endif
+
+// We are going to define our own albedo and normal map handling, and use separate heightmap
+#define USE_SEPARATE_HEIGHTMAP
+
+#if !defined(USE_VIRTUAL_TEXTURE)
+#define ALBEDO_MAP_TYPE 2DArray
+#define NORMAL_MAP_TYPE 2DArray
+#if defined(USE_SEPARATE_HEIGHTMAP)
+#define HEIGHT_MAP_TEXTURE heightMap
+#define HEIGHT_MAP_CHANNEL x
+#else
+#define HEIGHT_MAP_TEXTURE normalMap
+#define HEIGHT_MAP_CHANNEL w
+#endif
+
+#define ALBEDO_MAP_LAYER   globals.parallax.index
+#define NORMAL_MAP_LAYER   globals.parallax.index
+#define HEIGHT_MAP_LAYER   globals.parallax.index
+
+#define USE_TEXCOORDS_GRADIENTS
+#define ALBEDO_MAP_TEXCOORDS_DDX   globals.texcoords.ddx_uv
+#define ALBEDO_MAP_TEXCOORDS_DDY   globals.texcoords.ddy_uv
+#define NORMAL_MAP_TEXCOORDS_DDX   globals.texcoords.ddx_uv
+#define NORMAL_MAP_TEXCOORDS_DDY   globals.texcoords.ddy_uv
+#define HEIGHT_MAP_TEXCOORDS_DDX   globals.texcoords.ddx_uv
+#define HEIGHT_MAP_TEXCOORDS_DDY   globals.texcoords.ddy_uv
+#endif
+]]>
+      </CodeInjection>
+      <CodeInjection position="CONFIG_DEFINES">
+<![CDATA[
+
+#if TERRAIN_QUALITY < 2
+    #undef PARALLAX_MAP
+    #undef PARALLAX_MAPPING
+    #undef PARALLAX_OCCLUSION_MAPPING
+#elif TERRAIN_QUALITY == 2
+    #if defined(NORMAL_MAP)
+        #define PARALLAX_MAP
+        #define PARALLAX_MAPPING
+    #endif
+    #undef PARALLAX_OCCLUSION_MAPPING
+#else
+    #if defined(NORMAL_MAP)
+        #define PARALLAX_MAP
+        #define PARALLAX_MAPPING
+        #define PARALLAX_OCCLUSION_MAPPING
+    #endif
+#endif
+#if GPU_PROFILE >= GPU_PROFILE_VERY_HIGH
+    // Smaller bias and more iterations on very high than on high
+    #define PARALLAX_OCCLUSION_MAPPING_OFFSET_LIMIT_BIAS 0.1
+    #define PARALLAX_OCCLUSION_MAPPING_MAX_NUM_ITERATIONS 32
+    #define PARALLAX_OCCLUSION_MAPPING_MIN_NUM_ITERATIONS 8
+#endif
+
+// Hardcoded parallax value
+#if defined(PARALLAX_OCCLUSION_MAPPING)
+    #define PARALLAX_MAPPING_HEIGHT_TO_UV 0.1
+    // force high-quality parallax which isn't dependent on the viewing angle
+#if VT_SAMPLING_QUALITY >= VT_SAMPLING_QUALITY_HIGH
+    #define PARALLAX_OCCLUSION_MAPPING_MAX_NUM_ITERATIONS 32
+    #define PARALLAX_OCCLUSION_MAPPING_MIN_NUM_ITERATIONS 32
+#elif VT_SAMPLING_QUALITY >= VT_SAMPLING_QUALITY_MEDIUM
+    #define PARALLAX_OCCLUSION_MAPPING_MAX_NUM_ITERATIONS 24
+    #define PARALLAX_OCCLUSION_MAPPING_MIN_NUM_ITERATIONS 24
+#endif
+#else
+    #define PARALLAX_MAPPING_HEIGHT_TO_UV 0.07
+#endif
+
+#define VT_PARALLAX_MIN_REPEAT      192.0     // gives scaling for heightmap UVs
+
+#if defined(MOBILE_VERSION)
+#define NUM_ROTATION_ANGLES 2
+#else
+#define NUM_ROTATION_ANGLES 8
+#endif
+
+#define ENABLE_DISTANCE_LOD
+#if !defined(DO_NOT_MERGE_TERRAIN_FILL)
+#define ENABLE_TERRAIN_FILL
+#endif
+#define ENABLE_TERRAIN_DETAIL
+#define ENABLE_TERRAIN_BASE
+#if !defined(NO_TERRAIN_DISPLACEMENT)
+#define ENABLE_TERRAIN_DISPLACEMENT
+#endif
+
+#if defined(RENDER_TO_TILE)
+#define RENDER_TO_TILE_DEPTH
+#endif
+]]>
+      </CodeInjection>
+      <CodeInjection position="OBJECT_PARAMETERS">
+        <![CDATA[
+            float4 terrainInstanceData;
+            float4 terrainLodBlendInfos;
+            float4 terrainLodBlendInfos2;
+            float4 terrainLodBlendInfos3;
+            float4 terrainSizeInvSizeScaleXZScaleY;
+            float4 terrainPatchOffset;
+            float4 terrainDepthValues;
+            float4 terrainLayerOffsets;
+            float4 terrainInfoTexelOffset;
+            float4 terrainDetailMapVirtualSize;
+            float4 terrainDisplacementMapVirtualSize;
+            float4 terrainDisplacementMapVirtualOffset;
+            float4 terrainDetailShifts;                  // each is an int, packing the bit count and bit mask for each channel as (MASK << 8) | CNT; MASK = (1 << CNT) - 1
+]]>
+      </CodeInjection>
+      <CodeInjection position="VS_OUTPUT">
+        <![CDATA[
+            float2 normalMapTexCoords : TEXCOORDn;
+
+            float terrainLodMapWeight0 : TEXCOORDn;
+            float terrainLodMapWeight1 : TEXCOORDn;
+            float terrainDistanceWeight : TEXCOORDn;
+            float terrainParallaxWeight : TEXCOORDn;
+]]>
+      </CodeInjection>
+      <CodeInjection position="LIB_FUNCTION_VS">
+<![CDATA[
+float2 getPatchCoords(VS_INPUT In, ObjectParameters& object)
+{
+    float4 instanceData = object.terrainInstanceData;
+    float2 pos = In.position.xy;
+    uint deltaRaw = floatBitsToUint(instanceData.z);
+    uint4 deltas = unpackUint4x8(deltaRaw);
+    if (pos.x == 0) {
+        uint levelDelta = deltas.x;
+        pos.y = float(((int)pos.y >> levelDelta) << levelDelta);
+    } else if (pos.x >= object.terrainPatchOffset.x) {
+        uint levelDelta = deltas.y;
+        pos.y = float(((int)pos.y >> levelDelta) << levelDelta);
+    } else if (pos.y == 0) {
+        uint levelDelta = deltas.z;
+        pos.x = float(((int)pos.x >> levelDelta) << levelDelta);
+    } else if (pos.y >= object.terrainPatchOffset.x) {
+        uint levelDelta = deltas.w;
+        pos.x = float(((int)pos.x >> levelDelta) << levelDelta);
+    }
+    pos *= instanceData.w;
+    return pos + instanceData.xy;
+}
+]]>
+      </CodeInjection>
+      <CodeInjection position="POST_SET_TEXCOORDS_VS">
+        <![CDATA[
+            float2 patchCoords = getPatchCoords(In, object);
+            float2 terrainTexCoords = patchCoords * object.terrainSizeInvSizeScaleXZScaleY.y;
+            Out.defaultTexCoords = terrainTexCoords.xy;
+            Out.normalMapTexCoords = terrainTexCoords.xy + 0.5 * object.terrainSizeInvSizeScaleXZScaleY.y;
+]]>
+      </CodeInjection>
+      <CodeInjection position="GET_POSITION_VS">
+        <![CDATA[
+            float2 patchCoords = getPatchCoords(In, object);
+            float3 pos;
+            pos.xz = (patchCoords - 0.5 * object.terrainSizeInvSizeScaleXZScaleY.x) * object.terrainSizeInvSizeScaleXZScaleY.z;
+            pos.y = 0;
+            float3 worldPosition = mul(instance.modelMatrix, float4(pos, 1));
+#if defined(DEPTH_VIS)
+            float displacementLodScale = getTerrainDisplacementBlendFactor(length(lodViewpoint.xz - worldPosition.xz));
+#else
+            float displacementLodScale = getTerrainDisplacementBlendFactor(length(worldPosition.xz));
+#endif
+            uint2 coords = uint2(min(patchCoords, object.terrainPatchOffset.zz));
+#if defined(ENABLE_TERRAIN_DISPLACEMENT)
+            uint2 dispCoords = coords & (tex2DSize(terrainDisplacementMap, 0) - 1);
+            float height = sampleCompressedHeightmapAndDisplacementMap(terrainHeightMap, float2(coords) * object.terrainPatchOffset.y, terrainDisplacementMap, dispCoords, object.terrainDisplacementMapVirtualSize.z * displacementLodScale);
+#else
+            float height = sampleCompressedHeightmap(terrainHeightMap, float2(coords) * object.terrainPatchOffset.y);
+#endif
+
+            pos.y = height * object.terrainSizeInvSizeScaleXZScaleY.w;
+            return pos;
+]]>
+      </CodeInjection>
+      <CodeInjection position="GET_NORMAL_VS">
+      <![CDATA[
+      return float3(0,1,0);
+      ]]>
+      </CodeInjection>
+      <CodeInjection position="GET_TANGENT_VS">
+      <![CDATA[
+      return float3(1,0,0);
+      ]]>
+      </CodeInjection>
+      <CodeInjection position="GET_BITANGENT_VS">
+      <![CDATA[
+      return float3(0,0,1);
+      ]]>
+      </CodeInjection>
+      <CodeInjection position="GET_BITANGENT_SIDE_VS">
+      <![CDATA[
+      return -1.0;
+      ]]>
+      </CodeInjection>
+      <CodeInjection position="VS_END">
+      <![CDATA[
+            float viewDistance = length(viewDir);
+            Out.terrainLodMapWeight0 = (viewDistance-object.terrainLodBlendInfos.x)*object.terrainLodBlendInfos.y;
+            Out.terrainLodMapWeight1 = (viewDistance-object.terrainLodBlendInfos.z)*object.terrainLodBlendInfos.w;
+            Out.terrainDistanceWeight = (viewDistance-object.terrainLodBlendInfos2.x)*object.terrainLodBlendInfos2.y;
+            Out.terrainParallaxWeight = 1 - (viewDistance-object.terrainLodBlendInfos2.z)*object.terrainLodBlendInfos2.w;
+]]>
+      </CodeInjection>
+      <CodeInjection position="TILESHADER_VS">
+      <![CDATA[
+            Out.terrainLodMapWeight0 = 0;
+            Out.terrainLodMapWeight1 = 0;
+            Out.terrainDistanceWeight = 0;
+            Out.terrainParallaxWeight = 0;
+]]>
+      </CodeInjection>
+      <CodeInjection position="FS_STRUCTS">
+         <![CDATA[
+assimilated struct MaterialInfo
+{
+    float3 color;
+    float2 normal;
+    float roughness;
+    float height;
+    float porosity;
+};
+
+assimilated struct ParallaxInfo
+{
+    uint index;
+    uint rot;
+    uint spray;
+    float weight;
+};
+
+assimilated struct TexcoordInfo
+{
+    float2  uv;
+    float2  ddx_uv;
+    float2  ddy_uv;
+    float   scale;
+};
+]]>
+      </CodeInjection>
+      <CodeInjection position="SAMPLERS">
+        <![CDATA[
+
+#if defined(USE_SEPARATE_HEIGHTMAP)
+        texture2DArray<float4> heightMap;   // height in red
+#endif
+
+        texture2DArray<float4> lodDiffuseMap;
+        texture2D<uint2> lodTypeMap;
+        texture2D<uint> terrainDetailMap;
+        texture2D<uint> terrainFillMap;
+        texture2D<float> noiseMap;
+
+#if defined(SHOW_TERRAIN_INFO_LAYER) || defined(SHOW_TERRAIN_PROCEDURAL_LAYER)
+        texture2D<float3> infoLayerMap;
+#endif
+        texture2D<float2> lodNormalMap;
+        textureBuffer<float4> layerParameters;
+]]>
+      </CodeInjection>
+     <CodeInjection position="FS_GLOBALS">
+<![CDATA[
+#if !defined(USE_VIRTUAL_TEXTURE)
+    MaterialInfo    material;
+    ParallaxInfo    parallax;
+    TexcoordInfo    texcoords;
+    float           dirtValue;
+    float           fillDepthValue;
+#else
+    VirtualTextureIndex vti;
+    VirtualTextureAccessor vta;
+    VirtualTexturePixel vtpix;
+#endif
+    float2 infoUV;
+]]>
+      </CodeInjection>
+      <CodeInjection position="LIB_FUNCTION_FS">
+        <![CDATA[
+float3 sampleCompressedHeightmapNormalUV(texture2D<uint4> heightmap, float2 uvCoords, float yScale);
+float3 sampleDisplacementMapNormalUV(texture2D<uint> dispMap, float2 uvCoords, float2 dmVirtualSize, float2 dmVirtualOffset, int2 dmCoordMask, float yScale);
+float3 normalCombinationRot(float3 n1, float3 n2);
+float3 normalCombinationShear(float3 n1, float3 n2);
+float3 computeBarycentricWeights(float2 uvFrac, bool flip);
+uint3 getVertexValues(float2 uvFrac, bool flip, uint i0, uint i1, uint i2, uint i3);
+void getBlendWeights(float3 linearWeights, float3 alpha, float3 contrast, out float3 weights);
+void getDetailAndLodIndex(texture2D<uint2> typeMap, uint2 uv, out uint detailIndex, out uint lodIndex);
+float3 getWorldPosition(FS_INPUT In);
+float3 computeTerrainGeometryTangent(float3 n);
+
+float3 getTerrainNormal(FS_INPUT In, ObjectParameters& object)
+{
+#if 0
+    float3 worldNormal;
+    worldNormal.xz = tex2DSample(lodNormalMap, samplerBilinearClamp, In.vs.normalMapTexCoords)*2-1; // RG8 stores X,Z
+    worldNormal.y = sqrt(max(0.0, 1 - dot(worldNormal.xz, worldNormal.xz)));
+    return worldNormal;
+#elif defined(USE_VIRTUAL_TEXTURE) && !defined(DEBUG_INFO_TERRAIN_SLOPES)
+    return getFacetNormal(getWorldPosition(In), In.vs.screenPosW);
+#else
+    // yScale is to scale texel units up to heightmap units
+    //  = unitsPerPixel / rawHeightmapScale (texel units -> world units -> heightmap units)
+    float yScale = object.terrainSizeInvSizeScaleXZScaleY.z / object.terrainSizeInvSizeScaleXZScaleY.w;
+    float3 n1 = sampleCompressedHeightmapNormalUV(terrainHeightMap, In.vs.defaultTexCoords, yScale);
+#if defined(ENABLE_TERRAIN_DISPLACEMENT)
+    int2 imask = tex2DSize(terrainDisplacementMap, 0) - 1;
+    if (any((imask & (imask + 1)) != 0)) {
+        imask = -1; // not power of two so can't mask
+    }
+    if (object.terrainDisplacementMapVirtualOffset.z > 0) {
+        float3 n2 = sampleDisplacementMapNormalUV(terrainDisplacementMap, In.vs.defaultTexCoords, object.terrainDisplacementMapVirtualSize.x, object.terrainDisplacementMapVirtualOffset.xy, imask, yScale * object.terrainDisplacementMapVirtualSize.y);
+        n1 = normalCombinationShear(n1, n2);
+    }
+#endif
+    return n1;
+#endif
+}
+
+uint getLayerOffsetGroundDetail(ObjectParameters& object)
+{
+    return floatBitsToUint(object.terrainLayerOffsets.x);
+}
+uint getLayerOffsetSpray(ObjectParameters& object)
+{
+    return floatBitsToUint(object.terrainLayerOffsets.y);
+}
+uint getLayerOffsetFill(ObjectParameters& object)
+{
+    return floatBitsToUint(object.terrainLayerOffsets.z);
+}
+
+void getIndicesAndWeights(FS_INPUT In, ObjectParameters& object, out float3 weights, out uint3 indices, out uint3 lodIndices)
+{
+    getIndicesAndWeights(lodTypeMap, samplerPointClamp, In.vs.defaultTexCoords, object.terrainPatchOffset.ww, weights, indices, lodIndices);
+}
+
+void getDetailIndex(FS_INPUT In, ObjectParameters& object, out uint index, out uint rotation, out uint spray, out uint wetness)
+{
+    getDetailIndex(terrainDetailMap, In.vs.defaultTexCoords, object.terrainDetailMapVirtualSize.xx, floatBitsToUint(object.terrainDetailShifts), getLayerOffsetGroundDetail(object), index, rotation, spray, wetness);
+}
+
+void getDetailIndicesAndWeights(FS_INPUT In, ObjectParameters& object, out float3 weights, out uint3 indices, out uint3 rotations, out uint3 sprays, out uint3 wetnesses)
+{
+    getDetailIndicesAndWeights(terrainDetailMap, samplerPointClamp, In.vs.defaultTexCoords, object.terrainDetailMapVirtualSize.xx, true, floatBitsToUint(object.terrainDetailShifts), getLayerOffsetGroundDetail(object), weights, indices, rotations, sprays, wetnesses);
+}
+
+void getFillIndicesAndWeights(FS_INPUT In, ObjectParameters& object, out float3 weights, out uint3 indices)
+{
+    getFillIndicesAndWeights(terrainFillMap, samplerPointClamp, In.vs.defaultTexCoords, object.terrainDetailMapVirtualSize.yy, true, getLayerOffsetFill(object), weights, indices);
+}
+
+uint quantizeRotation(uint angle)
+{
+    return ((angle >= 3) && (angle <= 5)) ? 4 : 0;
+}
+
+float2 applyRot(float2 uv, int i_angle)
+{
+	float angle = float(i_angle)/32*3.14159;
+    float s,c;
+    sincos(angle, s, c);
+    return float2(uv.x * c - uv.y * s, uv.x * s + uv.y * c);
+}
+
+float2 applyNrmRot(float2 uv, int i_angle)
+{
+    return applyRot(uv * 2 - 1, -i_angle);
+}
+
+float processHeightmapPixel(float px, float scale)
+{
+    return (px * 2 - 1) * scale;
+}
+
+MaterialInfo defaultMaterialInfo()
+{
+    MaterialInfo mat;
+    mat.color = 0;
+    mat.normal = 0;
+    mat.roughness = 1;
+    mat.height = 0;
+    mat.porosity = 1;
+    return mat;
+}
+
+MaterialInfo zeroMaterialInfo()
+{
+    MaterialInfo mat;
+    mat.color = 0;
+    mat.normal = 0;
+    mat.roughness = 0;
+    mat.height = 0;
+    mat.porosity = 0;
+    return mat;
+}
+
+void blendMaterialLayerWithWeight(inout MaterialInfo acc, MaterialInfo mat, float weight)
+{
+    acc.color += mat.color * weight;
+    acc.normal += mat.normal * weight;
+    acc.roughness += mat.roughness * weight;
+    acc.height += mat.height * weight;
+    acc.porosity += mat.porosity * weight;
+}
+
+void blendMaterialLayerWithAlpha(inout MaterialInfo acc, MaterialInfo mat, float alpha)
+{
+    acc.color = lerp(acc.color, mat.color, alpha);
+    acc.normal = lerp(acc.normal, mat.normal, alpha);
+    acc.roughness = lerp(acc.roughness, mat.roughness, alpha);
+    acc.height = lerp(acc.height, mat.height, alpha);
+    acc.porosity = lerp(acc.porosity, mat.porosity, alpha);
+}
+
+TexcoordInfo newTexcoordInfo()
+{
+    TexcoordInfo tc;
+    tc.uv = 0;
+    tc.ddx_uv = 0;
+    tc.ddy_uv = 0;
+    tc.scale = 1;
+    return tc;
+}
+
+TexcoordInfo scaleOffsetTexcoords(TexcoordInfo tc, float scale, float2 offset)
+{
+    TexcoordInfo tcout;
+    tcout.uv = tc.uv * scale + offset;
+    tcout.ddx_uv = tc.ddx_uv * scale;
+    tcout.ddy_uv = tc.ddy_uv * scale;
+    tcout.scale = tc.scale * scale;
+    return tcout;
+}
+
+TexcoordInfo applyRot(TexcoordInfo tc, int i_angle)
+{
+    TexcoordInfo tcout;
+    tcout.uv = applyRot(tc.uv, i_angle);
+    tcout.ddx_uv = applyRot(tc.ddx_uv, i_angle);
+    tcout.ddy_uv = applyRot(tc.ddy_uv, i_angle);
+    tcout.scale = tc.scale;
+    return tcout;
+}
+
+float getManureLerpFactor(float alpha, float height)
+{
+    // Height is in centered around 0, -1,1 range
+    float factor = saturate(1 - pow(max(0.0, height * 1.375 - 0.375), 1));
+    return lerp(factor, alpha, 1 - factor);
+}
+
+void processSpray(inout MaterialInfo mat, FS_INPUT In, FS_GLOBALS globals, PerInstanceParameters& instance, ObjectParameters& object, uint sprayType, TexcoordInfo texcoords, float height)
+{
+    if (sprayType > 0) {
+        uint index = sprayType - 1 + getLayerOffsetSpray(object);
+
+        float4 params = bufferFetch(layerParameters, index * 2);
+
+        TexcoordInfo tc = scaleOffsetTexcoords(texcoords, params.x, 0.0);
+
+        float4 sprayTexel = tex2DSampleGrad(baseMap, ALBEDO_MAP_SAMPLER, tc.uv, index, tc.ddx_uv, tc.ddy_uv);
+        float lerpFactor = sprayTexel.w;
+
+        // Apply special behavior for liquid manure (sprayType 3) (not needed on mobile since we only have fertilizer (sprayType 1)
+        #if !defined(MOBILE_VERSION)
+            lerpFactor = (sprayType != 3) ? lerpFactor : getManureLerpFactor(lerpFactor, height);
+            mat.roughness = (sprayType != 3) ? mat.roughness : lerp(0.5, 1, 1 - lerpFactor);
+        #endif
+        mat.color = lerp(mat.color, sprayTexel.rgb, lerpFactor);
+    }
+}
+
+void processFieldWetness(inout MaterialInfo mat, FS_INPUT In, FS_GLOBALS globals, PerInstanceParameters& instance, ObjectParameters& object, uint wetness)
+{
+    if (wetness == 1) {
+        mat.color = getAdjustedWetDiffuseColor(In, globals, instance, object, mat.color, 0.0, mat.porosity, 1.0);
+        mat.roughness = getAdjustedWetRoughness(In, globals, instance, object, mat.roughness, 0.0, mat.porosity, 1.0);
+        mat.porosity = 0;   // we have applied wetness already so we don't want to allow wetness from rain; porosity = 0 does this (mostly; diffuse adjustment is disabled but roughness adjustment happens twice)
+    }
+}
+
+bool sprayIsFlat(uint sprayType)
+{
+#if defined(MOBILE_VERSION)
+    // The mobile version only has fertilizer (sprayType 1)
+    return true;
+#else
+    return (sprayType == 5) || (sprayType == 6);
+#endif
+}
+
+#if !defined(USE_VIRTUAL_TEXTURE)
+void readMaterialLayerColor(FS_INPUT In, ObjectParameters& object, TexcoordInfo texcoords, uint index, inout MaterialInfo mat, out TexcoordInfo tc, out float contrast, out float texAlpha)
+{
+    float4 params = bufferFetch(layerParameters, index * 2);
+    contrast = params.y;
+
+    tc = scaleOffsetTexcoords(texcoords, params.x, 0.0);
+
+#if defined(ALBEDO_MAP)
+    if (In.vs.terrainDistanceWeight < 1) {
+        float4 colMap = tex2DSampleGrad(baseMap, ALBEDO_MAP_SAMPLER, tc.uv, index, tc.ddx_uv, tc.ddy_uv);
+        mat.color = colMap.rgb;
+        texAlpha = colMap.a;
+    } else {
+        texAlpha = 1;
+    }
+    if (In.vs.terrainDistanceWeight > 0) {
+        float scale = 0.1;
+        float4 colMap = tex2DSampleGrad(baseMap, ALBEDO_MAP_SAMPLER, texcoords.uv * params.x * scale, index, tc.ddx_uv * scale, tc.ddy_uv * scale);
+        mat.color = lerp(mat.color, colMap.rgb, saturate(In.vs.terrainDistanceWeight));
+        texAlpha = lerp(texAlpha, colMap.a, saturate(In.vs.terrainDistanceWeight));
+    }
+#endif
+}
+
+void readMaterialLayerRest(FS_INPUT In, ObjectParameters& object, uint index, inout MaterialInfo mat, TexcoordInfo tc)
+{
+#if defined(TERRAIN_NORMAL_MAPPING)
+    float3 nrmMap = tex2DSampleGrad(normalMap, NORMAL_MAP_SAMPLER, tc.uv, index, tc.ddx_uv, tc.ddy_uv).xyz;
+    mat.normal = nrmMap.xy * 2 - 1;
+    mat.roughness = 1 - nrmMap.z;
+
+#if TERRAIN_QUALITY > 1 && defined(PARALLAX_MAP)
+    float htMap = tex2DSampleGrad(HEIGHT_MAP_TEXTURE, HEIGHT_MAP_SAMPLER, tc.uv, index, tc.ddx_uv, tc.ddy_uv).HEIGHT_MAP_CHANNEL;
+
+    // heights must be scaled down if the repeat is larger than the min repeat, as the UVs are now smaller while the height/UV ratio is fixed
+    mat.height = processHeightmapPixel(htMap, VT_PARALLAX_MIN_REPEAT / tc.scale);
+#endif
+#endif
+
+    float4 params = bufferFetch(layerParameters, index * 2 + 1);
+    mat.porosity = params.z + mat.roughness * params.w;
+}
+
+void readMaterialDetailLayerColor(FS_INPUT In, ObjectParameters& object, TexcoordInfo texcoords, uint index, uint rot, uint spray, inout MaterialInfo mat, out TexcoordInfo tc, out float contrast, out float texAlpha, out float noiseScale, out float noiseSharp, out uint customLayerPlusOne)
+{
+    if (index != 0) {
+        float4 params0 = bufferFetch(layerParameters, (index - 1) * 2);
+        contrast = params0.y;
+        noiseScale = params0.z;
+        noiseSharp = 0.5;//params0.w;
+        customLayerPlusOne = uint(params0.w);
+        if (customLayerPlusOne != 0) {
+            customLayerPlusOne += getLayerOffsetGroundDetail(object);
+        }
+
+        tc = applyRot(scaleOffsetTexcoords(texcoords, params0.x, 0.5), int(rot));
+
+#if defined(ALBEDO_MAP)
+        float4 colMap = tex2DSampleGrad(baseMap, ALBEDO_MAP_SAMPLER, tc.uv, index - 1, tc.ddx_uv, tc.ddy_uv);
+        mat.color = colMap.rgb;
+        texAlpha = colMap.a;
+#endif
+    } else {
+        tc = texcoords;
+        texAlpha = 0.7;
+        contrast = 0.5;
+        noiseScale = 0.5;
+        noiseSharp = 0.25;
+        customLayerPlusOne = 0;
+    }
+}
+
+void readCustomLayer(FS_INPUT In, ObjectParameters& object, TexcoordInfo texcoords, uint index, uint rot, float customBlendFactor, inout MaterialInfo mat, out float blendFactor)
+{
+    if ((index != 0) && (customBlendFactor > 0)) {
+        float4 params0 = bufferFetch(layerParameters, (index - 1) * 2);
+
+        TexcoordInfo tc = applyRot(scaleOffsetTexcoords(texcoords, params0.x, 0.5), int(rot));
+
+#if defined(ALBEDO_MAP)
+        float4 colMap = tex2DSampleGrad(baseMap, ALBEDO_MAP_SAMPLER, tc.uv, index - 1, tc.ddx_uv, tc.ddy_uv);
+        mat.color = colMap.rgb;
+#endif
+
+#if defined(TERRAIN_NORMAL_MAPPING)
+        float3 nrmMap = tex2DSampleGrad(normalMap, NORMAL_MAP_SAMPLER, tc.uv, index - 1, tc.ddx_uv, tc.ddy_uv).xyz;
+        mat.normal = nrmMap.xy * 2 - 1;
+        mat.roughness = 1 - nrmMap.z;
+
+#if TERRAIN_QUALITY > 1 && defined(PARALLAX_MAP)
+        float htMap = tex2DSampleGrad(HEIGHT_MAP_TEXTURE, HEIGHT_MAP_SAMPLER, tc.uv, index - 1, tc.ddx_uv, tc.ddy_uv).HEIGHT_MAP_CHANNEL;
+        mat.height = processHeightmapPixel(htMap, VT_PARALLAX_MIN_REPEAT / tc.scale);
+#endif
+#endif
+
+        float4 params1 = bufferFetch(layerParameters, (index - 1) * 2 + 1);
+        mat.porosity = params1.z + mat.roughness * params1.w;
+
+        blendFactor = customBlendFactor;
+    } else {
+        blendFactor = 0;
+    }
+}
+
+void readMaterialDetailLayerRest(FS_INPUT In, FS_GLOBALS globals, PerInstanceParameters& instance, ObjectParameters& object, uint index, uint rot, uint spray, uint wetness, MaterialInfo customMat, float customBlendFactor, inout MaterialInfo mat, TexcoordInfo tc, TexcoordInfo texcoords)
+{
+    if (customBlendFactor > 0) {
+        mat.color = lerp(mat.color, customMat.color, customBlendFactor);
+    }
+
+#if defined(TERRAIN_NORMAL_MAPPING)
+    float3 nrmMap = tex2DSampleGrad(normalMap, NORMAL_MAP_SAMPLER, tc.uv, index - 1, tc.ddx_uv, tc.ddy_uv).xyz;
+    mat.normal = applyNrmRot(nrmMap.xy, int(rot));
+    mat.roughness = 1 - nrmMap.z;
+    if (customBlendFactor > 0) {
+        mat.normal = lerp(mat.normal, customMat.normal, customBlendFactor);
+        mat.roughness = lerp(mat.roughness, customMat.roughness, customBlendFactor);
+    }
+
+#if TERRAIN_QUALITY > 1 && defined(PARALLAX_MAP)
+    float htMap = tex2DSampleGrad(HEIGHT_MAP_TEXTURE, HEIGHT_MAP_SAMPLER, tc.uv, index - 1, tc.ddx_uv, tc.ddy_uv).HEIGHT_MAP_CHANNEL;
+    mat.height = processHeightmapPixel(htMap, VT_PARALLAX_MIN_REPEAT / tc.scale);
+    if (customBlendFactor > 0) {
+        mat.height = lerp(mat.height, customMat.height, customBlendFactor);
+    }
+
+    processSpray(mat, In, globals, instance, object, spray, texcoords, htMap);
+#endif
+#endif
+
+    processFieldWetness(mat, In, globals, instance, object, wetness);
+
+    float4 params1 = bufferFetch(layerParameters, (index - 1) * 2 + 1);
+    mat.porosity = params1.z + mat.roughness * params1.w;
+    if (customBlendFactor > 0) {
+        mat.porosity = lerp(mat.porosity, customMat.porosity, customBlendFactor);
+    }
+}
+
+void readMaterialFillLayerColor(FS_INPUT In, ObjectParameters& object, TexcoordInfo texcoords, uint index, inout MaterialInfo mat, out TexcoordInfo tc, out float contrast, out float texAlpha, out float noiseScale, out float noiseSharp)
+{
+    if (index != 0) {
+        float4 params0 = bufferFetch(layerParameters, (index - 1) * 2);
+        contrast = params0.y;
+        noiseScale = params0.z;
+        noiseSharp = 0.5f;//params0.w;
+
+        tc = scaleOffsetTexcoords(texcoords, params0.x, 0);
+
+#if defined(ALBEDO_MAP)
+        float4 colMap = tex2DSampleGrad(baseMap, ALBEDO_MAP_SAMPLER, tc.uv, index - 1, tc.ddx_uv, tc.ddy_uv);
+        mat.color = colMap.rgb;
+        texAlpha = colMap.a;
+#endif
+    } else {
+        tc = texcoords;
+        texAlpha = 1;
+        contrast = 0.5;
+        noiseScale = 0.5;
+        noiseSharp = 0.25;
+    }
+}
+
+void readMaterialFillLayerRest(FS_INPUT In, ObjectParameters& object, uint index, inout MaterialInfo mat, TexcoordInfo tc)
+{
+#if defined(TERRAIN_NORMAL_MAPPING)
+    float3 nrmMap = tex2DSampleGrad(normalMap, NORMAL_MAP_SAMPLER, tc.uv, index - 1, tc.ddx_uv, tc.ddy_uv).xyz;
+    mat.normal = nrmMap.xy * 2 - 1;
+    mat.roughness = 1 - nrmMap.z;
+
+#if TERRAIN_QUALITY > 1 && defined(PARALLAX_MAP)
+    float htMap = tex2DSampleGrad(HEIGHT_MAP_TEXTURE, HEIGHT_MAP_SAMPLER, tc.uv, index - 1, tc.ddx_uv, tc.ddy_uv).HEIGHT_MAP_CHANNEL;
+    mat.height = processHeightmapPixel(htMap, VT_PARALLAX_MIN_REPEAT / tc.scale) + 0.025;   // add a slight offset so the piles appear above ground level even when blending out
+#endif
+#endif
+
+    float4 params1 = bufferFetch(layerParameters, (index - 1) * 2 + 1);
+    mat.porosity = params1.z + mat.roughness * params1.w;
+}
+
+void getBlendedColorAndNormal(inout FS_INPUT In, FS_GLOBALS globals, PerInstanceParameters& instance, ObjectParameters& object, out MaterialInfo material, out ParallaxInfo parallax, out TexcoordInfo texcoords, out float dirtValue, out float fillDepthValue)
+{
+    material = zeroMaterialInfo();
+    float accumulatedAlpha = 0;
+
+    fillDepthValue = object.terrainDepthValues.x;
+
+    parallax.index = 0;
+    parallax.rot = 0;
+    parallax.spray = 0;
+    parallax.weight = 0;
+
+    texcoords.uv = In.vs.defaultTexCoords;
+    texcoords.ddx_uv = ddx(In.vs.defaultTexCoords);
+    texcoords.ddy_uv = ddy(In.vs.defaultTexCoords);
+    texcoords.scale = 1;
+
+    float2 dirtUV = In.vs.defaultTexCoords * 8.2;
+    dirtValue = (tex2DSample(noiseMap, samplerBilinearWrap, dirtUV).x - 0.5) * 0.5 + 1;
+
+#if defined(ENABLE_TERRAIN_DISPLACEMENT)
+    int2 imask = tex2DSize(terrainDisplacementMap, 0) - 1;
+    if (any((imask & (imask + 1)) != 0)) {
+        imask = -1; // not power of two so can't mask
+    }
+    float customBlendFactor = sampleDisplacementCustomFlagUV(terrainDisplacementMap, In.vs.defaultTexCoords, object.terrainDisplacementMapVirtualSize.x, object.terrainDisplacementMapVirtualOffset.xy, imask);
+#else
+    float customBlendFactor = 0;
+#endif
+
+    //
+    // apply distance LOD
+    //
+    float3 linearWeights;
+    uint3 indices;
+    uint3 lodIndices;
+    getIndicesAndWeights(In, object, linearWeights, indices, lodIndices);
+
+#if defined(ENABLE_DISTANCE_LOD)
+    // generate dynamic LOD weights now so we can early-out
+    float3 lodWeights = linearWeights * float3(lodIndices < 255);
+    float lodAlpha = (lodWeights.x + lodWeights.y + lodWeights.z) * saturate(In.vs.terrainLodMapWeight1);
+    if (lodAlpha > 0.0001) {
+        uint index, rotation, spray, wetness;
+        getDetailIndex(In, object, index, rotation, spray, wetness);
+        
+        TexcoordInfo dtc = scaleOffsetTexcoords(texcoords, 16, 0);
+        if (index != 0) {
+            rotation = quantizeRotation(rotation);
+            dtc = applyRot(dtc, rotation);
+        }
+    
+        float4 lodColorRoughness = tex2DSample(lodDiffuseMap, standardMaterialSampler, dtc.uv, lodIndices.x) * lodWeights.x +
+                                   tex2DSample(lodDiffuseMap, standardMaterialSampler, dtc.uv, lodIndices.y) * lodWeights.y +
+                                   tex2DSample(lodDiffuseMap, standardMaterialSampler, dtc.uv, lodIndices.z) * lodWeights.z;
+        MaterialInfo lodMaterial = defaultMaterialInfo();
+        lodMaterial.color = lodColorRoughness.rgb;
+        lodMaterial.roughness = (1 - lodColorRoughness.w);
+
+        blendMaterialLayerWithWeight(material, lodMaterial, lodAlpha);
+        accumulatedAlpha += lodAlpha;
+    }
+    if (accumulatedAlpha >= 0.9999) {
+        return;
+    }
+#endif
+
+    //
+    // apply terrain fill
+    //
+#if defined(ENABLE_TERRAIN_FILL)
+    float fillRampDown = 1 - saturate(In.vs.terrainLodMapWeight0);
+    if (fillRampDown > 0) {
+        float3 linearWeights;
+        uint3 indices;
+        getFillIndicesAndWeights(In, object, linearWeights, indices);
+
+        bool3 activeIndices = (indices != 0);
+        if (any(activeIndices)) {
+            float3 texAlpha;
+            float3 contrast;
+            float3 noiseScale;
+            float3 noiseSharp;
+            TexcoordInfo tc0;
+            TexcoordInfo tc1;
+            TexcoordInfo tc2;
+            MaterialInfo mat0 = defaultMaterialInfo();
+            MaterialInfo mat1 = defaultMaterialInfo();
+            MaterialInfo mat2 = defaultMaterialInfo();
+
+            readMaterialFillLayerColor(In, object, texcoords, indices.x, mat0, tc0, contrast.x, texAlpha.x, noiseScale.x, noiseSharp.x);
+            readMaterialFillLayerColor(In, object, texcoords, indices.y, mat1, tc1, contrast.y, texAlpha.y, noiseScale.y, noiseSharp.y);
+            readMaterialFillLayerColor(In, object, texcoords, indices.z, mat2, tc2, contrast.z, texAlpha.z, noiseScale.z, noiseSharp.z);
+
+            // compute non-linear weights, normalized to a sum of 1
+            linearWeights *= float3(activeIndices);
+            float3 weights;
+            getBlendWeights(linearWeights, texAlpha, contrast, weights);
+
+            // compute inter-layer blend factor
+            float layerWeight = dot(linearWeights, 1);
+            if (!all(activeIndices)) {
+                float noiseValue = (tex2DSample(noiseMap, samplerBilinearWrap, texcoords.uv * VT_PARALLAX_MIN_REPEAT).x - 0.5) * 2;
+                layerWeight += noiseValue * dot(noiseScale, weights);
+
+                float heightAdjust = dot(float3(mat0.height, mat1.height, mat2.height), weights);
+                layerWeight += heightAdjust * 0.5;
+
+                float sharpnessValue = max(0.01, dot(noiseSharp, weights));
+                float midpointValue = 0.5;
+
+                layerWeight = saturate((-1 + layerWeight + midpointValue*(1 + sharpnessValue))/sharpnessValue);
+            }
+
+            // apply rampdown and deweighting
+            layerWeight *= fillRampDown;
+            layerWeight *= 1 - accumulatedAlpha;
+            weights *= layerWeight;
+
+            if (weights.x > 0.0001) {
+                readMaterialFillLayerRest(In, object, indices.x, mat0, tc0);
+                blendMaterialLayerWithWeight(material, mat0, weights.x);
+            }
+            if (weights.y > 0.0001) {
+                readMaterialFillLayerRest(In, object, indices.y, mat1, tc1);
+                blendMaterialLayerWithWeight(material, mat1, weights.y);
+            }
+            if (weights.z > 0.0001) {
+                readMaterialFillLayerRest(In, object, indices.z, mat2, tc2);
+                blendMaterialLayerWithWeight(material, mat2, weights.z);
+            }
+
+            accumulatedAlpha += layerWeight;
+
+            if (layerWeight > 0.5) {
+                fillDepthValue = max(fillDepthValue, object.terrainDepthValues.z);
+            }
+        }
+    }
+#endif
+
+    //
+    // apply terrain detail
+    //
+#if defined(ENABLE_TERRAIN_DETAIL)
+    float detailRampDown = 1 - saturate(In.vs.terrainLodMapWeight0);
+    bool parallaxInDetail = false;
+    if (detailRampDown > 0) {
+        float3 linearWeights;
+        uint3 indices, rotations, sprays, wetnesses;
+        getDetailIndicesAndWeights(In, object, linearWeights, indices, rotations, sprays, wetnesses);
+
+        bool3 activeIndices = (indices != 0);
+        if (any(activeIndices)) {
+            float3 texAlpha;
+            float3 contrast;
+            float3 noiseScale;
+            float3 noiseSharp;
+            uint3 customLayerPlusOne;
+            TexcoordInfo tc0;
+            TexcoordInfo tc1;
+            TexcoordInfo tc2;
+            MaterialInfo mat0 = defaultMaterialInfo();
+            MaterialInfo mat1 = defaultMaterialInfo();
+            MaterialInfo mat2 = defaultMaterialInfo();
+
+            readMaterialDetailLayerColor(In, object, texcoords, indices.x, rotations.x, sprays.x, mat0, tc0, contrast.x, texAlpha.x, noiseScale.x, noiseSharp.x, customLayerPlusOne.x);
+            readMaterialDetailLayerColor(In, object, texcoords, indices.y, rotations.y, sprays.y, mat1, tc1, contrast.y, texAlpha.y, noiseScale.y, noiseSharp.y, customLayerPlusOne.y);
+            readMaterialDetailLayerColor(In, object, texcoords, indices.z, rotations.z, sprays.z, mat2, tc2, contrast.z, texAlpha.z, noiseScale.z, noiseSharp.z, customLayerPlusOne.z);
+
+            // compute non-linear weights, normalized to a sum of 1
+            linearWeights *= float3(activeIndices);
+            float3 weights;
+            getBlendWeights(linearWeights, texAlpha, contrast, weights);
+
+            // compute inter-layer blend factor
+            float layerWeight = dot(linearWeights, 1);
+            if (!all(activeIndices)) {
+                float noiseValue = (tex2DSample(noiseMap, samplerBilinearWrap, texcoords.uv * VT_PARALLAX_MIN_REPEAT).x - 0.5) * 2;
+                layerWeight += noiseValue * dot(noiseScale, weights);
+
+                float sharpnessValue = max(0.01, dot(noiseSharp, weights));
+                float midpointValue = 0.5;
+
+                layerWeight = saturate((-1 + layerWeight + midpointValue*(1 + sharpnessValue))/sharpnessValue);
+            }
+
+            // apply rampdown and deweighting
+            layerWeight *= detailRampDown;
+            layerWeight *= 1 - accumulatedAlpha;
+            weights *= layerWeight;
+
+            // remove parallax channel if layer weight is at least 0.5
+#if defined(TERRAIN_NORMAL_MAPPING) && TERRAIN_QUALITY > 1 && defined(PARALLAX_MAP)
+            if ((In.vs.terrainParallaxWeight > 0) && (layerWeight > 0.5)) {
+                parallaxInDetail = true;
+                float maxWeight = max(weights.x, max(weights.y, weights.z));
+
+                if (maxWeight == weights.x) {
+                    parallax.index = indices.x - 1;
+                    parallax.rot = rotations.x;
+                    parallax.spray = sprays.x;
+                    texcoords = tc0;
+                } else if (maxWeight == weights.y) {
+                    parallax.index = indices.y - 1;
+                    parallax.rot = rotations.y;
+                    parallax.spray = sprays.y;
+                    texcoords = tc1;
+                } else {
+                    parallax.index = indices.z - 1;
+                    parallax.rot = rotations.z;
+                    parallax.spray = sprays.z;
+                    texcoords = tc2;
+                }
+
+                float3 match = float3(64 * parallax.index + 8 * parallax.spray + parallax.rot == 64 * (indices - 1) + 8 * sprays + rotations);
+
+                match *= saturate(In.vs.terrainParallaxWeight);
+
+                parallax.weight = dot(weights, match);
+                weights *= (1 - match);
+            }
+#endif
+
+            float3 customBlend = 0;
+            MaterialInfo customMat0 = defaultMaterialInfo();
+            MaterialInfo customMat1 = defaultMaterialInfo();
+            MaterialInfo customMat2 = defaultMaterialInfo();
+
+            if (weights.x > 0.0001) {
+                readCustomLayer(In, object, texcoords, customLayerPlusOne.x, rotations.x, customBlendFactor, customMat0, customBlend.x);
+                readMaterialDetailLayerRest(In, globals, instance, object, indices.x, rotations.x, sprays.x, wetnesses.x, customMat0, customBlend.x, mat0, tc0, texcoords);
+                blendMaterialLayerWithWeight(material, mat0, weights.x);
+            }
+            if (weights.y > 0.0001) {
+                readCustomLayer(In, object, texcoords, customLayerPlusOne.y, rotations.y, customBlendFactor, customMat1, customBlend.y);
+                readMaterialDetailLayerRest(In, globals, instance, object, indices.y, rotations.y, sprays.y, wetnesses.y, customMat1, customBlend.y, mat1, tc1, texcoords);
+                blendMaterialLayerWithWeight(material, mat1, weights.y);
+            }
+            if (weights.z > 0.0001) {
+                readCustomLayer(In, object, texcoords, customLayerPlusOne.z, rotations.z, customBlendFactor, customMat2, customBlend.z);
+                readMaterialDetailLayerRest(In, globals, instance, object, indices.z, rotations.z, sprays.z, wetnesses.z, customMat2, customBlend.z, mat2, tc2, texcoords);
+                blendMaterialLayerWithWeight(material, mat2, weights.z);
+            }
+
+            accumulatedAlpha += layerWeight;
+
+            if (layerWeight > 0.5) {
+                fillDepthValue = max(fillDepthValue, object.terrainDepthValues.y);
+            }
+        }
+    }
+#endif
+
+    //
+    // apply base terrain
+    //
+    if (accumulatedAlpha < 0.9999) {
+#if defined(ENABLE_TERRAIN_BASE)
+        float3 texAlpha;
+        float3 contrast;
+        TexcoordInfo tc0;
+        TexcoordInfo tc1;
+        TexcoordInfo tc2;
+        MaterialInfo mat0 = defaultMaterialInfo();
+        MaterialInfo mat1 = defaultMaterialInfo();
+        MaterialInfo mat2 = defaultMaterialInfo();
+
+        readMaterialLayerColor(In, object, texcoords, indices.x, mat0, tc0, contrast.x, texAlpha.x);
+        readMaterialLayerColor(In, object, texcoords, indices.y, mat1, tc1, contrast.y, texAlpha.y);
+        readMaterialLayerColor(In, object, texcoords, indices.z, mat2, tc2, contrast.z, texAlpha.z);
+
+        // compute non-linear weights, normalized to a sum of 1
+        float3 weights;
+        getBlendWeights(linearWeights, texAlpha, contrast, weights);
+
+        weights *= (1 - accumulatedAlpha);
+
+        // remove parallax channel if not already done
+#if defined(TERRAIN_NORMAL_MAPPING) && TERRAIN_QUALITY > 1 && defined(PARALLAX_MAP)
+        if ((In.vs.terrainParallaxWeight > 0) && !parallaxInDetail) {
+            float maxWeight = max(weights.x, max(weights.y, weights.z));
+
+            if (maxWeight == weights.x) {
+                parallax.index = indices.x;
+                texcoords = tc0;
+            } else if (maxWeight == weights.y) {
+                parallax.index = indices.y;
+                texcoords = tc1;
+            } else {
+                parallax.index = indices.z;
+                texcoords = tc2;
+            }
+
+            float3 match = float3(parallax.index == indices);
+
+            match *= saturate(In.vs.terrainParallaxWeight);
+
+            parallax.weight = dot(weights, match);
+            weights *= (1 - match);
+        }
+#endif
+
+        if (weights.x > 0.0001) {
+            readMaterialLayerRest(In, object, indices.x, mat0, tc0);
+            blendMaterialLayerWithWeight(material, mat0, weights.x);
+        }
+        if (weights.y > 0.0001) {
+            readMaterialLayerRest(In, object, indices.y, mat1, tc1);
+            blendMaterialLayerWithWeight(material, mat1, weights.y);
+        }
+        if (weights.z > 0.0001) {
+            readMaterialLayerRest(In, object, indices.z, mat2, tc2);
+            blendMaterialLayerWithWeight(material, mat2, weights.z);
+        }
+#else
+        MaterialInfo greyMat = defaultMaterialInfo();
+        greyMat.color = float3(0.5, 0.5, 0.5);
+        blendMaterialLayerWithWeight(material, greyMat, 1 - accumulatedAlpha);
+#endif
+    }
+}
+#endif  // USE_VIRTUAL_TEXTURE
+
+]]>
+      </CodeInjection>
+      <CodeInjection position="START_FS">
+        <![CDATA[
+#if !defined(USE_VIRTUAL_TEXTURE)
+            getBlendedColorAndNormal(In, globals, instance, object, globals.material, globals.parallax, globals.texcoords, globals.dirtValue, globals.fillDepthValue);
+            In.vs.defaultTexCoords = globals.texcoords.uv;
+#else
+            globals.vti.indexAttributes = vtIndexAttributes;
+            globals.vti.indexTexture = vtIndex;
+            globals.vti.paletteScaleFactor = vtPaletteScaleFactor;
+            globals.vti.invPaletteSize = vtInvPaletteSize;
+            globals.vti.paletteTileSize = vtPaletteTileSize;
+#endif
+            In.vs.worldNormal = getTerrainNormal(In, object);
+#if defined(TERRAIN_NORMAL_MAPPING)
+            In.vs.worldTangent = float4(computeTerrainGeometryTangent(In.vs.worldNormal), -1);
+#endif
+
+#if !defined(USE_VIRTUAL_TEXTURE) || defined(SHOW_TERRAIN_INFO_LAYER) || defined(SHOW_TERRAIN_PROCEDURAL_LAYER)
+            globals.infoUV = In.vs.defaultTexCoords;
+#endif
+
+        ]]>
+      </CodeInjection>
+      <CodeInjection position="END_TILESHADER">
+        <![CDATA[
+            PerInstanceParameters& instance = PerInstanceParameters&(&objectParameters, (int)(In.vs.instanceParameterOffset + 0.5));
+            getBlendedColorAndNormal(In, globals, instance, object, globals.material, globals.parallax, globals.texcoords, globals.dirtValue, globals.fillDepthValue);
+
+            float3 albedo = globals.material.color * globals.dirtValue;
+            float heightData = globals.material.height;
+            float2 normal = globals.material.normal;
+            float roughness = globals.material.roughness;
+            float porosity = globals.material.porosity;
+
+            float3 n2 = normalize(float3(normal.x, sqrt(1 - dot(normal, normal)), normal.y));
+            float3 nc = normalize(normalCombinationRot(getTerrainNormal(In, object), n2));
+
+            // NB: we can only use R,G,B in these textures, for decal shaders to work, since they use SRC_ALPHA as the blend factor
+            channel1 = float4(albedo, 0);
+            channel2 = float4(encodeWorldspaceNormalToRenderFmt(nc), 0);
+            channel3 = float4((heightData + 1) * 0.5, porosity, roughness, 0);
+#if defined(RENDER_TO_TILE_DEPTH)
+            channelDepth = globals.fillDepthValue;
+#endif
+        ]]>
+      </CodeInjection>
+      <CodeInjection position="BEFORE_PARALLAX_MAPPING_FS">
+        <![CDATA[
+#if !defined(USE_VIRTUAL_TEXTURE)
+        // Note: tangent space is left-handed and we rotate by -angle
+        parallaxMappingUVDir = applyRot(parallaxMappingUVDir, int(globals.parallax.rot));
+        if (globals.parallax.weight < 0.0001) {
+            disableParallaxMappingCalculations = true;
+        }
+#endif
+      ]]>
+      </CodeInjection>
+      <CodeInjection position="GET_HEIGHT_RAY_INTERSECTION_FS">
+        <![CDATA[
+#if !defined(USE_VIRTUAL_TEXTURE)
+        if (globals.parallax.index == 0) {
+            return startUV;
+        }
+#else
+        // NOTE: we scale down the UV step to emulate the scan speed over a normal map that is 1/VT_PARALLAX_MIN_REPEAT of the world
+        // the heights are modified in the tile shader when the repeat is larger (so the normal map is smaller in the world, therefore heights are smaller too)
+        // NB: height is in VT palette 1, W channel
+        return getHeightRayIntersection(startUV, globals.vti, vtPalette, samplerTerrainDiffuse, ds / VT_PARALLAX_MIN_REPEAT, numSteps, referencePlane, saturate(In.vs.terrainParallaxWeight), terrainMaterialAnisotropy, In.vs.screenPosW, globals.vta);
+#endif
+        ]]>
+      </CodeInjection>
+      <CodeInjection position="GET_BUMP_HEIGHT_AT_WITH_GRAD_FS">
+        <![CDATA[
+#if defined(USE_VIRTUAL_TEXTURE)
+        return getBumpHeightAt(uv, globals.vti, vtPalette, samplerTerrainDiffuse, terrainMaterialAnisotropy, In.vs.screenPosW, globals.vta);
+#endif
+        ]]>
+      </CodeInjection>
+      <CodeInjection position="GET_BUMP_HEIGHT_AT_FS">
+        <![CDATA[
+#if defined(USE_VIRTUAL_TEXTURE)
+        return getBumpHeightAt(uv, globals.vti, vtPalette, samplerTerrainDiffuse, terrainMaterialAnisotropy, In.vs.screenPosW, globals.vta);
+#endif
+        ]]>
+      </CodeInjection>
+      <CodeInjection position="PARALLAX_MAPPING_FS">
+        <![CDATA[
+#if defined(USE_VIRTUAL_TEXTURE)
+#if !defined(PARALLAX_MAPPING)
+        globals.vta = createVirtualTextureAccessor(globals.vti, vtPalette, samplerTerrainDiffuse, ALBEDO_MAP_TEXCOORDS, ALBEDO_MAP_TEXCOORDS, terrainMaterialAnisotropy, In.vs.screenPosW);
+#endif
+        globals.vtpix = readTerrainVirtualTexture(globals.vti, globals.vta);
+
+#if defined(ENABLE_DISTANCE_LOD)
+        //
+        // apply distance LOD
+        //
+        float3 linearWeights;
+        uint3 indices;
+        uint3 lodIndices;
+        getIndicesAndWeights(In, object, linearWeights, indices, lodIndices);
+
+        // generate dynamic LOD weights now so we can early-out
+        float3 lodWeights = linearWeights * float3(lodIndices < 255);
+        float lodAlpha = (lodWeights.x + lodWeights.y + lodWeights.z) * saturate(In.vs.terrainLodMapWeight1);
+        if (lodAlpha > 0.0001) {
+            uint index, rotation, spray, wetness;
+            getDetailIndex(In, object, index, rotation, spray, wetness);
+            
+            TexcoordInfo texcoords;
+            texcoords.uv = In.vs.defaultTexCoords;
+            texcoords.ddx_uv = ddx(In.vs.defaultTexCoords);
+            texcoords.ddy_uv = ddy(In.vs.defaultTexCoords);
+            texcoords.scale = 1;
+
+            TexcoordInfo dtc = scaleOffsetTexcoords(texcoords, 16, 0);
+            if (index != 0) {
+                rotation = quantizeRotation(rotation);
+                dtc = applyRot(dtc, rotation);
+            }
+
+            float4 lodColorRoughness = tex2DSample(lodDiffuseMap, standardMaterialSampler, dtc.uv, lodIndices.x) * lodWeights.x +
+                                       tex2DSample(lodDiffuseMap, standardMaterialSampler, dtc.uv, lodIndices.y) * lodWeights.y +
+                                       tex2DSample(lodDiffuseMap, standardMaterialSampler, dtc.uv, lodIndices.z) * lodWeights.z;
+            float lodPorosity = 0;
+
+            globals.vtpix.diffuse = lerp(globals.vtpix.diffuse, lodColorRoughness.rgb, lodAlpha);
+            globals.vtpix.porosity = lerp(globals.vtpix.porosity, lodPorosity, lodAlpha);
+#if defined(TERRAIN_NORMAL_MAPPING)
+            globals.vtpix.roughness = lerp(globals.vtpix.roughness, 1 - lodColorRoughness.w, lodAlpha);
+#endif
+        }
+#endif
+
+#endif
+      ]]>
+      </CodeInjection>
+      <CodeInjection position="POST_DIFFUSE_COLOR_FS">
+        <![CDATA[
+#if !defined(USE_VIRTUAL_TEXTURE)
+        diffuseColor = 0.0;
+        if (globals.parallax.weight >= 0.0001) {
+            diffuseColor = tex2DSampleGrad(baseMap, ALBEDO_MAP_SAMPLER, ALBEDO_MAP_TEXCOORDS, ALBEDO_MAP_LAYER, ALBEDO_MAP_TEXCOORDS_DDX, ALBEDO_MAP_TEXCOORDS_DDY).rgb;
+        }
+#else
+        diffuseColor = globals.vtpix.diffuse;
+#endif
+        ]]>
+      </CodeInjection>
+      <CodeInjection position="POST_GLOSS_COLOR_FS">
+        <![CDATA[
+#if !defined(USE_VIRTUAL_TEXTURE)
+        if (globals.parallax.weight >= 0.0001) {
+#if defined(TERRAIN_NORMAL_MAPPING)
+            float4 nrmMap = tex2DSampleGrad(normalMap, NORMAL_MAP_SAMPLER, NORMAL_MAP_TEXCOORDS, NORMAL_MAP_LAYER, NORMAL_MAP_TEXCOORDS_DDX, NORMAL_MAP_TEXCOORDS_DDY);
+
+            #if TERRAIN_QUALITY > 1 && defined(PARALLAX_MAP)
+                float height = tex2DSampleGrad(HEIGHT_MAP_TEXTURE, HEIGHT_MAP_SAMPLER, HEIGHT_MAP_TEXCOORDS, HEIGHT_MAP_LAYER, HEIGHT_MAP_TEXCOORDS_DDX, HEIGHT_MAP_TEXCOORDS_DDY).HEIGHT_MAP_CHANNEL;
+                height = processHeightmapPixel(height, 1.0);
+            #else
+                float height = 0;
+            #endif
+            float localRoughness = 1 - nrmMap.z;
+            // NB: if spray type is 5, we remove parallax mapping from the spray UVs, to help give some depth against the parallaxed ground
+            TexcoordInfo sprayTexcoords;
+            sprayTexcoords.uv = sprayIsFlat(globals.parallax.spray) ? globals.texcoords.uv : ALBEDO_MAP_TEXCOORDS;
+            sprayTexcoords.ddx_uv = ALBEDO_MAP_TEXCOORDS_DDX;
+            sprayTexcoords.ddy_uv = ALBEDO_MAP_TEXCOORDS_DDY;
+            sprayTexcoords.scale = 1;
+            processSpray(globals.material, In, globals, instance, object, globals.parallax.spray, sprayTexcoords, height);
+#else
+            float localRoughness = 1;
+#endif
+            MaterialInfo parallaxMat = defaultMaterialInfo();
+            parallaxMat.color = diffuseColor;
+            parallaxMat.roughness = localRoughness;
+
+            blendMaterialLayerWithWeight(globals.material, parallaxMat, globals.parallax.weight);
+        }
+        diffuseColor = globals.material.color * globals.dirtValue;
+        roughness = globals.material.roughness;
+#else
+        roughness = globals.vtpix.roughness;
+#endif
+        ]]>
+      </CodeInjection>
+      <CodeInjection position="POST_WETNESS_FS">
+      <![CDATA[
+#if !defined(USE_VIRTUAL_TEXTURE)
+        porosity = globals.material.porosity;
+#else
+        porosity = globals.vtpix.porosity;
+#endif
+        if(cWetness > 0) {
+            wetness = cWetness * getRainOcclusionFactorMinHeight(getWorldPosition(In));
+        }
+      ]]>
+      </CodeInjection>
+      <CodeInjection position="GET_NORMAL_FS">
+        <![CDATA[
+        float3 terrainNormal = getTerrainNormal(In, object);
+#if !defined(USE_VIRTUAL_TEXTURE)
+#if defined(TERRAIN_NORMAL_MAPPING)
+        float2 layersNormal = globals.material.normal;
+        if (globals.parallax.weight >= 0.0001) {
+            float4 nrmMap = tex2DSampleGrad(normalMap, NORMAL_MAP_SAMPLER, NORMAL_MAP_TEXCOORDS, NORMAL_MAP_LAYER, NORMAL_MAP_TEXCOORDS_DDX, NORMAL_MAP_TEXCOORDS_DDY);
+            float2 pnrm = applyNrmRot(nrmMap.xy, int(globals.parallax.rot));
+            layersNormal += pnrm * globals.parallax.weight;
+        }
+        // Assume that the terrain is not rotated (tangent = world x)
+        return normalize(float3(terrainNormal.x + layersNormal.x, terrainNormal.y, terrainNormal.z + layersNormal.y));
+#else
+        return terrainNormal;
+#endif
+#else
+        return globals.vtpix.normal;
+#endif
+        ]]>
+      </CodeInjection>
+      <CodeInjection position="FINAL_POS_FS">
+        <![CDATA[
+#ifdef SHOW_TERRAIN_INFO_LAYER
+            float3 infoColor = tex2DSample(infoLayerMap, samplerPointClamp, globals.infoUV + object.terrainInfoTexelOffset.xy / float2(tex2DSize(infoLayerMap, 0)));
+            oColor.xyz = lerp(oColor.xyz, infoColor, 0.7);
+#endif
+#ifdef SHOW_TERRAIN_PROCEDURAL_LAYER
+            float3 proceduralColor = tex2DSample(infoLayerMap, standardMaterialSampler, globals.infoUV);
+            oColor.xyz = lerp(oColor.xyz, proceduralColor, 0.3);
+#endif
+
+#if defined(DEBUG_INFO_TERRAIN_SLOPES)
+            float3 up = float3(0,1,0);
+            float3 faceNormal = getTerrainNormal(In, object);
+
+            float theta = dot(up, faceNormal);
+            float angleRatio = acos(theta) / (3.1415926535897932384626433832795 / 4); // 0° : flat (blue) ==> 90° : abrupt slope (red)
+
+            oColor.xyz = float3(angleRatio,0,1-angleRatio);
+            oColor.w = 1;
+            {
+                float3 fullWorldPosition = getWorldPosition(In) + float3(invViewMatrix[0][3], invViewMatrix[1][3], invViewMatrix[2][3]);
+                float gradient1 = frac( fullWorldPosition.y); // every 1 meter
+                oColor.rgb += 0.05*gradient1;
+            }
+            setColorOutput(0, oColor);
+            return;
+#endif
+        ]]>
+      </CodeInjection>
+      <CodeInjection position="CALC_SHOW_MIP_LEVELS_FS">
+        <![CDATA[
+            float3 linearWeights;
+            int3 indices;
+            int3 lodIndices;
+            getIndicesAndWeights(In, object, linearWeights, indices, lodIndices);
+
+            float4 params0 = bufferFetch(layerParameters, indices.x * 2);
+
+            // Show the lod coloring for the first index in this triangle (don't do the actual mixing)
+            float2 uv0 = In.vs.defaultTexCoords * params0.x;
+            numMips = (float)tex2DGetNumMipLevels(baseMap);
+            texLod  = tex2DCalcLodUnclamped(baseMap, ALBEDO_MAP_SAMPLER, uv0*8);
+        ]]>
+      </CodeInjection>
+    </CodeInjections>
+  </LodLevel>
+</CustomShader>

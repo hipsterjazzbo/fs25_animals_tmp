@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="wineBarrelPallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="1" filename="textures/wineBarrelPallet_diffuse.png" />
+    <File fileId="2" filename="$data/objects/pallets/barrelPallet/barrelPallet_normal.png" />
+    <File fileId="3" filename="$data/objects/pallets/barrelPallet/barrelPallet_specular.png" />
+    <File fileId="4" filename="$data/objects/pallets/shared/palletStrap_diffuse.png" />
+    <File fileId="5" filename="$data/objects/pallets/shared/palletStrap_normal.png" />
+    <File fileId="6" filename="$data/objects/pallets/shared/palletStrap_specular.png" />
+  </Files>
+
+  <Materials>
+    <Material name="lambert1" materialId="1" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+    <Material name="barrelPallet_mat" materialId="2">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="palletStrap_mat" materialId="3">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="wineBarrelPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="barralPallet_main_component1" shapeId="1" dynamic="true" compound="true" staticFriction="1" dynamicFriction="1" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="1">
+      <TransformGroup name="contents" nodeId="2">
+        <Shape name="barrel01" translation="-0.32 0.162471 -0.32" rotation="0 -90 0" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="2" skinBindNodeIds="3 6 9 12" clipDistance="100" nodeId="3">
+          <Shape name="palletStrap" translation="-0.026308 0 0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="4"/>
+          <Shape name="barrel01Tension" translation="0 0.405387 0" shapeId="4" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="5"/>
+        </Shape>
+        <TransformGroup name="barrel02" translation="-0.32 0.162415 0.32" rotation="0 90 0" collision="false" collisionFilterMask="0xfe3ffb83" clipDistance="100" nodeId="6">
+          <Shape name="barrel02Tension" translation="0 0.408138 0" shapeId="5" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="7"/>
+          <Shape name="palletStrap" translation="-0.026308 0 0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="8"/>
+        </TransformGroup>
+        <TransformGroup name="barrel03" translation="0.32 0.162415 -0.32" rotation="0 -90 0" collision="false" collisionFilterMask="0xfe3ffb83" clipDistance="100" nodeId="9">
+          <Shape name="barrel03Tension" translation="0 0.408138 0" shapeId="6" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="10"/>
+          <Shape name="palletStrap" translation="-0.026308 0 0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="11"/>
+        </TransformGroup>
+        <TransformGroup name="barrel04" translation="0.32 0.162415 0.32" rotation="0 90 0" collision="false" collisionFilterMask="0xfe3ffb83" clipDistance="100" nodeId="12">
+          <Shape name="barrel04Tension" translation="0 0.408138 0" shapeId="7" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="13"/>
+          <Shape name="palletStrap" translation="-0.026308 0 0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="14"/>
+        </TransformGroup>
+      </TransformGroup>
+      <Shape name="dynamicMountTrigger" translation="0 0.092256 0" shapeId="8" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="15"/>
+      <TransformGroup name="dischargeNode" translation="0 0.822364 0" static="true" nodeId="16"/>
+      <TransformGroup name="collisions" collision="false" clipDistance="10" nodeId="17">
+        <Shape name="floorCollision01" translation="-0.405636 0.000057 0" shapeId="9" compoundChild="true" staticFriction="1" dynamicFriction="1" density="0.001" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="18"/>
+        <Shape name="floorCollision02" translation="0.40982 0.000057 0" shapeId="10" compoundChild="true" staticFriction="1" dynamicFriction="1" density="0.001" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="19"/>
+      </TransformGroup>
+      <TransformGroup name="linkNode01" translation="0.403861 0 0" rotation="0 90 0" nodeId="20"/>
+      <TransformGroup name="linkNode02" translation="-0.404 0 0" rotation="0 90 0" nodeId="21"/>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

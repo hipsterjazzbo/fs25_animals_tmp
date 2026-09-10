@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_chickBox</name>
+        <functions>
+            <function>$l10n_function_chickBox</function>
+        </functions>
+		<specs>
+            <weight ignore="true"/>
+        </specs>
+		<image>store/store_chickBox.png</image>
+		<allowLeasing>false</allowLeasing>
+        <price>10</price>
+        <rotation>0</rotation>
+		<category>misc</category>
+        <brand>NONE</brand>
+        <showInStore>true</showInStore>
+        <canBeSold>true</canBeSold>
+		<shopHeight>1.5</shopHeight>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>objects/pallets/chickBox/chickBox.i3d</filename>
+        <size width="0.66" length="0.415" height="0.316" />
+        <canBeReset>false</canBeReset>
+		<supportsPickUp>true</supportsPickUp>
+        <components>
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="5" showOnHud="false"/>
+        </components>
+		<schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+        <showInVehicleMenu>true</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits removeVehicleIfEmpty="false">
+                    <fillUnit unitTextOverride="$l10n_unit_pieces" fillTypes="CHICKS" capacity="25" ignoreFillLimit="true" showOnHud="true" updateMass="false" >
+						<exactFillRootNode node="exactFillRootNode"/>
+					</fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+	
+	<!-- <convertToAnimals fillUnitIndex="1" fillType="CHICKS" animalSubType="CHICKEN" litersPerAnimal="1" animalAge="0" requireDeliveryArea="true"	maxDistance="5" /> -->
+	
+	<pallet fillUnitIndex="1" node="chickBox">
+        <content>
+            <object node="dischargeNode" tensionBeltNode="chickBox" />
+            <object node="chick_posed01" tensionBeltNode="chickBox" />
+            <object node="chick_posed02" tensionBeltNode="chickBox" />
+            <object node="chick_posed03" tensionBeltNode="chickBox" />
+            <object node="chick_posed04" tensionBeltNode="chickBox" />
+            <object node="chick_posed05" tensionBeltNode="chickBox" />
+            <object node="chick_posed06" tensionBeltNode="chickBox" />
+            <object node="chick_posed07" tensionBeltNode="chickBox" />
+            <object node="chick_posed08" tensionBeltNode="chickBox" />
+            <object node="chick_posed09" tensionBeltNode="chickBox" />
+            <object node="chick_posed10" tensionBeltNode="chickBox" />
+            <object node="chick_posed11" tensionBeltNode="chickBox" />
+            <object node="chick_posed12" tensionBeltNode="chickBox" />
+            <object node="chick_posed13" tensionBeltNode="chickBox" />
+            <object node="chick_posed14" tensionBeltNode="chickBox" />
+            <object node="chick_posed15" tensionBeltNode="chickBox" />
+            <object node="chick_posed16" tensionBeltNode="chickBox" />
+        </content>
+
+        <sounds>
+            <unload template="palletsFillPlastic" pitchScale="0.8" />
+        </sounds>
+    </pallet>
+	
+	<dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="dischargeNode" emptySpeed="5" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
+    </dischargeable>
+	
+	<tensionBeltObject>
+        <meshNodes>
+            <meshNode node="chickBox"/>
+        </meshNodes>
+    </tensionBeltObject>
+	    
+    <i3dMappings>
+        <i3dMapping id="chickBox_main_component1" node="0>" />
+		<i3dMapping id="chickBox" node="0>0" />
+		<i3dMapping id="content" node="0>1" />
+		<i3dMapping id="chick_posed01" node="0>1|0" />
+		<i3dMapping id="chick_posed02" node="0>1|1" />
+		<i3dMapping id="chick_posed03" node="0>1|2" />
+		<i3dMapping id="chick_posed04" node="0>1|3" />
+		<i3dMapping id="chick_posed05" node="0>1|4" />
+		<i3dMapping id="chick_posed06" node="0>1|5" />
+		<i3dMapping id="chick_posed07" node="0>1|6" />
+		<i3dMapping id="chick_posed08" node="0>1|7" />
+		<i3dMapping id="chick_posed09" node="0>1|8" />
+		<i3dMapping id="chick_posed10" node="0>1|9" />
+		<i3dMapping id="chick_posed11" node="0>1|10" />
+		<i3dMapping id="chick_posed12" node="0>1|11" />
+		<i3dMapping id="chick_posed13" node="0>1|12" />
+		<i3dMapping id="chick_posed14" node="0>1|13" />
+		<i3dMapping id="chick_posed15" node="0>1|14" />
+		<i3dMapping id="chick_posed16" node="0>1|15" />
+		<i3dMapping id="exactFillRootNode" node="0>2" />
+		<i3dMapping id="dischargeNode" node="0>3" />
+		<i3dMapping id="solidColi" node="0>4" />
+		<i3dMapping id="loadTrigger" node="0>5" />
+    </i3dMappings>
+</vehicle>

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_pelletizer</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+	<image>multifruit/placeables/productionPoints/pelletizer/textures/store_pelletizer.png</image>
+        <price>350000</price>
+        <dailyUpkeep>50</dailyUpkeep>		
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>JINKOU</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+
+        <vertexBufferMemoryUsage>574208</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>115456</indexBufferMemoryUsage>
+        <textureMemoryUsage>7536640</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>multifruit/placeables/productionPoints/pelletizer/pelletizer.i3d</filename>
+	<boughtWithFarmland>true</boughtWithFarmland>
+	<canBeDeleted>true</canBeDeleted>
+	<canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+            <testArea startNode="testArea2Start" endNode="testArea2End" />
+            <testArea startNode="testArea3Start" endNode="testArea3End" />
+        </testAreas>
+
+        <sounds>
+            <place template="medImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+        <levelAreas>
+            <levelArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <triggerMarkers>
+        <triggerMarker node="unloadTriggerMixerMarker"        filename="$data/shared/assets/marker/markerIconUnload.i3d" id="UNLOAD" adjustToGround="false" />
+        <triggerMarker node="playerTriggerMarker"             filename="$data/shared/assets/marker/markerIconWrench.i3d" id="WRENCH" adjustToGround="true" />
+        <triggerMarker node="markerLoading" 				  filename="$data/shared/assets/marker/markerIconLoad.i3d" id="LOAD" 	adjustToGround="true" />		
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="mapPosition" teleportNode="teleportNode"/>
+    </hotspots>
+
+	<productionPoint>
+        <productions sharedThroughputCapacity="false">
+		
+	<production id="cowFoodTMR1" name="$l10n_fillType_cowFood" cyclesPerHour="24" costsPerActiveHour="1">
+					<inputs>
+						<input fillType="DRYGRASS_WINDROW" amount="250" />
+						<input fillType="GRASS_FERMENTED" amount="150" />
+						<input fillType="STRAW" amount="70" />
+						<input fillType="MINERAL_FEED" amount="30" />
+					</inputs>
+					<outputs>
+						<output fillType="COWFOOD" amount="500" />
+					</outputs>
+        </production>
+		
+	<production id="cowFoodTMR2" name="$l10n_fillType_cowFood" cyclesPerHour="24" costsPerActiveHour="1">
+					<inputs>
+						<input fillType="DRYGRASS_WINDROW" amount="250" />
+						<input fillType="SILAGE" amount="120" />
+						<input fillType="STRAW" amount="70" />
+						<input fillType="MINERAL_FEED" amount="30" />
+					</inputs>
+					<outputs>
+						<output fillType="COWFOOD" amount="500" />
+					</outputs>
+        </production>
+		
+	<production id="cowFoodTMR3" name="$l10n_fillType_cowFood" cyclesPerHour="24" costsPerActiveHour="1">
+					<inputs>
+						<input fillType="DRYGRASS_WINDROW" amount="250" />
+						<input fillType="CROP_FERMENTED" amount="120" />
+						<input fillType="STRAW" amount="70" />
+						<input fillType="MINERAL_FEED" amount="30" />
+					</inputs>
+					<outputs>
+						<output fillType="COWFOOD" amount="550" />
+					</outputs>
+        </production>
+		
+	<production id="cowFoodAlfalfa" name="$l10n_fillType_cowFood" cyclesPerHour="24" costsPerActiveHour="1">
+					<inputs>
+						<input fillType="ALFALFA_FERMENTED" amount="400" />
+						<input fillType="STRAW" amount="70" />
+						<input fillType="MINERAL_FEED" amount="30" />
+					</inputs>
+					<outputs>
+						<output fillType="COWFOOD" amount="500" />
+					</outputs>
+        </production>
+		
+	<production id="hayPellets" name="$l10n_fillType_hayPellets" cyclesPerHour="24" costsPerActiveHour="1">
+					<inputs>
+						<input fillType="DRYGRASS_WINDROW" amount="500" />
+						<input fillType="MOLASSES" amount="30" />
+						<input fillType="WATER" amount="70" />
+					</inputs>
+					<outputs>
+						<output fillType="HAY_PELLETS" amount="200" />
+					</outputs>
+        </production>
+		
+	<production id="strawPellets" name="$l10n_fillType_strawPellets" cyclesPerHour="24" costsPerActiveHour="1">
+					<inputs>
+						<input fillType="STRAW" amount="500" />
+						<input fillType="MOLASSES" amount="30" />
+						<input fillType="WATER" amount="70" />
+					</inputs>
+					<outputs>
+						<output fillType="STRAW_PELLETS" amount="200" />
+					</outputs>
+        </production>	
+		
+	<production id="woodChipsPellets" name="$l10n_fillType_woodChipsPellets" cyclesPerHour="24" costsPerActiveHour="1">
+					<inputs>
+						<input fillType="WOODCHIPS" amount="500" />
+						<input fillType="MOLASSES" amount="30" />
+						<input fillType="WATER" amount="70" />
+					</inputs>
+					<outputs>
+						<output fillType="WOODCHIPS_PELLETS" amount="300" />
+					</outputs>
+        </production>		
+		
+	</productions>	
+
+        <sellingStation node="sellingStation" appearsOnStats="false" supportsExtension="false" allowMissions="false" hideFromPricesMenu="true">
+
+            <unloadTrigger exactFillRootNode="unloadTriggerMixer"        fillTypes="WATER MOLASSES DRYGRASS_WINDROW DRYALFALFA_WINDROW DRYCLOVER_WINDROW SILAGE GRASS_FERMENTED CROP_FERMENTED ALFALFA_FERMENTED CLOVER_FERMENTED STRAW BEANSTRAW CORN_STALKS MISCANTHUS_CUT MINERAL_FEED WOODCHIPS" >
+			<fillTypeConversion ratio="1.2" incomingFillType="DRYALFALFA_WINDROW" 	outgoingFillType="DRYGRASS_WINDROW" />
+			<fillTypeConversion ratio="1.2" incomingFillType="DRYCLOVER_WINDROW" 	outgoingFillType="DRYGRASS_WINDROW" />
+			<fillTypeConversion ratio="1" incomingFillType="CLOVER_FERMENTED" 	outgoingFillType="ALFALFA_FERMENTED" />
+			<fillTypeConversion ratio="0.8" incomingFillType="BEANSTRAW" 		outgoingFillType="STRAW" />
+			<fillTypeConversion ratio="0.9" incomingFillType="CORN_STALKS" 		outgoingFillType="STRAW" />
+			<fillTypeConversion ratio="0.7" incomingFillType="MISCANTHUS_CUT" 	outgoingFillType="STRAW" />
+			</unloadTrigger>
+            <baleTrigger triggerNode="baleTrigger" fillTypes="DRYGRASS_WINDROW DRYALFALFA_WINDROW DRYCLOVER_WINDROW SILAGE GRASS_FERMENTED CROP_FERMENTED ALFALFA_FERMENTED CLOVER_FERMENTED STRAW BEANSTRAW CORN_STALKS MISCANTHUS_CUT WOODCHIPS">
+			<fillTypeConversion ratio="1.2" incomingFillType="DRYALFALFA_WINDROW" 	outgoingFillType="DRYGRASS_WINDROW" />
+			<fillTypeConversion ratio="1.2" incomingFillType="DRYCLOVER_WINDROW" 	outgoingFillType="DRYGRASS_WINDROW" />
+			<fillTypeConversion ratio="1" incomingFillType="CLOVER_FERMENTED" 	outgoingFillType="ALFALFA_FERMENTED" />
+			<fillTypeConversion ratio="0.8" incomingFillType="BEANSTRAW" 		outgoingFillType="STRAW" />
+			<fillTypeConversion ratio="0.9" incomingFillType="CORN_STALKS" 		outgoingFillType="STRAW" />
+			<fillTypeConversion ratio="0.7" incomingFillType="MISCANTHUS_CUT" 	outgoingFillType="STRAW" />
+			</baleTrigger>
+			<palletTrigger triggerNode="palletTrigger" fillTypes="MINERAL_FEED MOLASSES WOODCHIPS"/>
+			
+            <unloadTrigger exactFillRootNode="unloadTriggerInFront"      fillTypes="WATER MOLASSES DRYGRASS_WINDROW DRYALFALFA_WINDROW DRYCLOVER_WINDROW SILAGE GRASS_FERMENTED CROP_FERMENTED ALFALFA_FERMENTED CLOVER_FERMENTED STRAW BEANSTRAW CORN_STALKS MISCANTHUS_CUT MINERAL_FEED WOODCHIPS" aiNode="unloadTriggerInFrontAINode">
+			<fillTypeConversion ratio="1.2" incomingFillType="DRYALFALFA_WINDROW" 	outgoingFillType="DRYGRASS_WINDROW" />
+			<fillTypeConversion ratio="1.2" incomingFillType="DRYCLOVER_WINDROW" 	outgoingFillType="DRYGRASS_WINDROW" />
+			<fillTypeConversion ratio="1" incomingFillType="CLOVER_FERMENTED" 	outgoingFillType="ALFALFA_FERMENTED" />
+			<fillTypeConversion ratio="0.8" incomingFillType="BEANSTRAW" 		outgoingFillType="STRAW" />
+			<fillTypeConversion ratio="0.9" incomingFillType="CORN_STALKS" 		outgoingFillType="STRAW" />
+			<fillTypeConversion ratio="0.7" incomingFillType="MISCANTHUS_CUT" 	outgoingFillType="STRAW" />
+			</unloadTrigger>
+            <baleTrigger triggerNode="baleTriggerInFront" fillTypes="DRYGRASS_WINDROW DRYALFALFA_WINDROW DRYCLOVER_WINDROW SILAGE GRASS_FERMENTED CROP_FERMENTED ALFALFA_FERMENTED CLOVER_FERMENTED STRAW BEANSTRAW CORN_STALKS MISCANTHUS_CUT WOODCHIPS">
+			<fillTypeConversion ratio="1.2" incomingFillType="DRYALFALFA_WINDROW" 	outgoingFillType="DRYGRASS_WINDROW" />
+			<fillTypeConversion ratio="1.2" incomingFillType="DRYCLOVER_WINDROW" 	outgoingFillType="DRYGRASS_WINDROW" />
+			<fillTypeConversion ratio="1" incomingFillType="CLOVER_FERMENTED" 	outgoingFillType="ALFALFA_FERMENTED" />
+			<fillTypeConversion ratio="0.8" incomingFillType="BEANSTRAW" 		outgoingFillType="STRAW" />
+			<fillTypeConversion ratio="0.7" incomingFillType="CORN_STALKS" 		outgoingFillType="STRAW" />
+			<fillTypeConversion ratio="0.9" incomingFillType="MISCANTHUS_CUT" 	outgoingFillType="STRAW" />
+			</baleTrigger>
+			<palletTrigger triggerNode="palletTriggerFront" fillTypes="MINERAL_FEED MOLASSES WOODCHIPS"/>			
+            <animationNodes>
+                <animationNode node="mixingDrum1" type="productionPoint" rotSpeed="-250" rotAxis="1" />
+                <animationNode node="mixingDrum2" type="productionPoint" rotSpeed="-250" rotAxis="1" />				
+            </animationNodes>
+        </sellingStation>
+
+        <loadingStation>
+	    <loadTrigger triggerNode="loadingTrigger" fillLitersPerSecond="2500" dischargeNode="dischargeNode" fillTypes="COWFOOD HAY_PELLETS STRAW_PELLETS WOODCHIPS_PELLETS MINERAL_FEED" aiNode="aiLoadingNode">
+                <effectNode effectClass="PipeEffect" effectNode="pipeEffect"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0" />
+                <effectNode                          effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.5" />
+        </loadTrigger>
+       </loadingStation>
+
+        <storage isExtension="false" fillLevelSyncThreshold="100">
+			<capacity fillType="DRYGRASS_WINDROW"  		capacity="100000" />
+			<capacity fillType="STRAW"    			capacity="100000" />
+			<capacity fillType="ALFALFA_FERMENTED"  	capacity="100000" />
+			<capacity fillType="GRASS_FERMENTED"  		capacity="100000" />
+			<capacity fillType="CROP_FERMENTED"  		capacity="100000" />
+			<capacity fillType="WOODCHIPS"    		capacity="100000" />
+			<capacity fillType="SILAGE"    			capacity="100000" />	
+			<capacity fillType="MINERAL_FEED" 		capacity="50000" />	
+			<capacity fillType="MOLASSES" 			capacity="50000" />	
+			<capacity fillType="WATER" 			capacity="100000" />
+			<capacity fillType="COWFOOD"    		capacity="100000" />
+			<capacity fillType="HAY_PELLETS"    		capacity="100000" />
+			<capacity fillType="STRAW_PELLETS"    		capacity="100000" />
+			<capacity fillType="WOODCHIPS_PELLETS"    	capacity="100000" />	
+        </storage>
+
+        <playerTrigger node="playerTrigger" />
+
+        <sounds>
+            <idle template="dairyIdle" linkNode="0>" outerRadius="40"/>
+            <active template="dairyWork" linkNode="0>" outerRadius="40"/>
+        </sounds>
+    </productionPoint>
+
+    <i3dMappings>
+        <i3dMapping id="palletTrigger" node="0>9|2|4" />
+        <i3dMapping id="palletTriggerFront" node="0>9|3|3" />	
+        <i3dMapping id="loadingTrigger" node="0>10|2|1|0" />
+        <i3dMapping id="dischargeNode" node="0>10|2|1|1" />
+        <i3dMapping id="pipeEffect" node="0>10|2|1|3|0" />
+        <i3dMapping id="pipeEffectSmoke" node="0>10|2|1|3|1" />	
+        <i3dMapping id="markerLoading" node="0>10|2|2" />	
+        <i3dMapping id="aiLoadingNode" node="0>10|2|1|2" />
+        <i3dMapping id="mapPosition" node="0>10|2|0" />
+        <i3dMapping id="mixingDrum1" node="0>5|0|0|0|0" />
+        <i3dMapping id="mixingDrum2" node="0>5|0|0|0|1|0" />		
+        <i3dMapping id="clearArea1Start" node="0>0|0" />
+        <i3dMapping id="clearArea1Width" node="0>0|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>0|0|1" />
+        <i3dMapping id="clearArea2Start" node="0>0|1" />
+        <i3dMapping id="clearArea2Width" node="0>0|1|0" />
+        <i3dMapping id="clearArea2Height" node="0>0|1|1" />
+        <i3dMapping id="clearArea3Start" node="0>0|2" />
+        <i3dMapping id="clearArea3Width" node="0>0|2|0" />
+        <i3dMapping id="clearArea3Height" node="0>0|2|1" />
+        <i3dMapping id="clearArea4Start" node="0>0|3" />
+        <i3dMapping id="clearArea4Width" node="0>0|3|0" />
+        <i3dMapping id="clearArea4Height" node="0>0|3|1" />
+        <i3dMapping id="indoorArea1Start" node="0>1|0" />
+        <i3dMapping id="indoorArea1Width" node="0>1|0|0" />
+        <i3dMapping id="indoorArea1Height" node="0>1|0|1" />
+        <i3dMapping id="indoorArea2Start" node="0>1|1" />
+        <i3dMapping id="indoorArea2Width" node="0>1|1|0" />
+        <i3dMapping id="indoorArea2Height" node="0>1|1|1" />
+        <i3dMapping id="indoorArea3Start" node="0>1|2" />
+        <i3dMapping id="indoorArea3Width" node="0>1|2|0" />
+        <i3dMapping id="indoorArea3Height" node="0>1|2|1" />
+        <i3dMapping id="indoorArea4Start" node="0>1|3" />
+        <i3dMapping id="indoorArea4Width" node="0>1|3|0" />
+        <i3dMapping id="indoorArea4Height" node="0>1|3|1" />
+        <i3dMapping id="testArea1Start" node="0>2|0" />
+        <i3dMapping id="testArea1End" node="0>2|0|0" />
+        <i3dMapping id="testArea2Start" node="0>2|1" />
+        <i3dMapping id="testArea2End" node="0>2|1|0" />
+        <i3dMapping id="testArea3Start" node="0>2|2" />
+        <i3dMapping id="testArea3End" node="0>2|2|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>3|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>3|0|0" />
+        <i3dMapping id="infoTrigger" node="0>4" />	
+        <i3dMapping id="hotspotMarker" node="0>7" />
+        <i3dMapping id="teleportNode" node="0>10|1|1" />
+        <i3dMapping id="bunkerFillVolume" node="0>9|2|0" />
+        <i3dMapping id="baleTrigger" node="0>9|2|1" />
+        <i3dMapping id="unloadTriggerMixer" node="0>9|2|2" />
+        <i3dMapping id="unloadTriggerMixerMarker" node="0>9|2|3" />
+        <i3dMapping id="unloadTriggerInFront" node="0>9|3|0" />
+        <i3dMapping id="baleTriggerInFront" node="0>9|3|1" />
+        <i3dMapping id="unloadTriggerInFrontAINode" node="0>9|3|2" />
+        <i3dMapping id="playerTrigger" node="0>10|1|0" />
+        <i3dMapping id="playerTriggerMarker" node="0>10|1|0|0" />
+    </i3dMappings>
+</placeable>

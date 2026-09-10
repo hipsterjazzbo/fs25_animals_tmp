@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/tileAndMirrorShader.xml"/>
+    <File fileId="6" filename="../cat_meow04.ogg"/>
+    <File fileId="1" filename="kitten_diffuse.dds"/>
+    <File fileId="2" filename="kitten_normal.dds"/>
+    <File fileId="3" filename="kitten_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="kitten_mat" materialId="4" customShaderId="4" customShaderVariation="dirtEnabled">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="mirrorScaleAndOffsetUV" value="1 1 0 0.5"/>
+      <CustomParameter name="atlasInvSizeAndOffsetUV" value="0.5 0.5 0 0"/>
+      <CustomParameter name="RDT" value="1 1 20 20"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="kitten_posed.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="kitten_posed" nodeId="7" materialIds="4" castsShadows="true" receiveShadows="true">
+        <AudioSource name="cat_meow02" nodeId="11" fileIds="6" range="10" innerRange="5" volume="0.3" loops="0" randomPlayback="true" probabilities="1" retriggerDelay="10 20"/>
+      </Shape>
+  </Scene>
+
+</i3D>

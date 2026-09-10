@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map>
+    <densityMapHeightTypes firstChannel="0" numChannels="7">
+		
+<densityMapHeightType fillTypeName="ALFALFA_WINDROW" maxSurfaceAngle="35" fillToGroundScale="6.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+
+            <visualHeightMapping>
+                <mapping realValue="1" visualValue="2"/>
+                <mapping realValue="3" visualValue="5"/>
+                <mapping realValue="8" visualValue="8"/>
+                <mapping realValue="64" visualValue="64"/>
+            </visualHeightMapping>
+        </densityMapHeightType>
+        
+<densityMapHeightType fillTypeName="DRYALFALFA_WINDROW" maxSurfaceAngle="35" fillToGroundScale="7.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+
+            <visualHeightMapping>
+                <mapping realValue="1" visualValue="2"/>
+                <mapping realValue="3" visualValue="5"/>
+                <mapping realValue="8" visualValue="8"/>
+                <mapping realValue="64" visualValue="64"/>
+            </visualHeightMapping>
+        </densityMapHeightType>
+        
+<densityMapHeightType fillTypeName="CLOVER_WINDROW" maxSurfaceAngle="35" fillToGroundScale="6.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+
+            <visualHeightMapping>
+                <mapping realValue="1" visualValue="2"/>
+                <mapping realValue="3" visualValue="5"/>
+                <mapping realValue="8" visualValue="8"/>
+                <mapping realValue="64" visualValue="64"/>
+            </visualHeightMapping>
+        </densityMapHeightType>
+
+<densityMapHeightType fillTypeName="DRYCLOVER_WINDROW" maxSurfaceAngle="35" fillToGroundScale="7.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+
+            <visualHeightMapping>
+                <mapping realValue="1" visualValue="2"/>
+                <mapping realValue="3" visualValue="5"/>
+                <mapping realValue="8" visualValue="8"/>
+                <mapping realValue="64" visualValue="64"/>
+            </visualHeightMapping>
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="CLOVER_FERMENTED" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>		
+        
+<densityMapHeightType fillTypeName="ALFALFA_FERMENTED" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="LINSEED" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="RYE" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+        
+<densityMapHeightType fillTypeName="MILLET" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+        
+<densityMapHeightType fillTypeName="MUSTARD" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+        
+<densityMapHeightType fillTypeName="SPELT" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+        
+<densityMapHeightType fillTypeName="TRITICALE" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="BUCKWHEAT" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+	    
+<densityMapHeightType fillTypeName="LAVENDER" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+	    
+<densityMapHeightType fillTypeName="LENTILS" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>		    
+        
+<densityMapHeightType fillTypeName="POPPY" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>	    
+        
+<densityMapHeightType fillTypeName="SESAME" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+        
+<densityMapHeightType fillTypeName="BUCKWHEAT_CUT" maxSurfaceAngle="35" fillToGroundScale="6.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+        </densityMapHeightType>
+        
+<densityMapHeightType fillTypeName="RYE_CUT" maxSurfaceAngle="35" fillToGroundScale="6.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+        </densityMapHeightType>
+        
+<densityMapHeightType fillTypeName="SPELT_CUT" maxSurfaceAngle="35" fillToGroundScale="6.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+        </densityMapHeightType>
+        
+<densityMapHeightType fillTypeName="TRITICALE_CUT" maxSurfaceAngle="35" fillToGroundScale="6.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+        </densityMapHeightType>	
+		
+<densityMapHeightType fillTypeName="BEANS" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="BEANS_CUT" maxSurfaceAngle="35" fillToGroundScale="6.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="BEANSTRAW" maxSurfaceAngle="35" fillToGroundScale="6.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="CHICKPEAS" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>	
+		
+<densityMapHeightType fillTypeName="CHICKPEAS_CUT" maxSurfaceAngle="35" fillToGroundScale="6.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="FLAX_FIBER" maxSurfaceAngle="35" fillToGroundScale="6.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+            <visualHeightMapping>
+                <mapping realValue="1" visualValue="2"/>
+                <mapping realValue="3" visualValue="5"/>
+                <mapping realValue="8" visualValue="8"/>
+                <mapping realValue="64" visualValue="64"/>
+            </visualHeightMapping>
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="HEMP_FIBER" maxSurfaceAngle="35" fillToGroundScale="6.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+            <visualHeightMapping>
+                <mapping realValue="1" visualValue="2"/>
+                <mapping realValue="3" visualValue="5"/>
+                <mapping realValue="8" visualValue="8"/>
+                <mapping realValue="64" visualValue="64"/>
+            </visualHeightMapping>
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="SOYBEAN2" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="LENTILS_CUT" maxSurfaceAngle="35" fillToGroundScale="6.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+        </densityMapHeightType>
+
+<densityMapHeightType fillTypeName="DRYPEAS" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="PEAS_CUT" maxSurfaceAngle="35" fillToGroundScale="6.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+        </densityMapHeightType>	
+	
+<densityMapHeightType fillTypeName="COMPOST" maxSurfaceAngle="30" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.00" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="ORGANICWASTE" maxSurfaceAngle="40" fillToGroundScale="1.0" allowsSmoothing="true">
+            <collision scale="0.7" baseOffset="0.0" minOffset="0.20" maxOffset="0.60" />
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="ALFALFA_BUNKER" maxSurfaceAngle="40" fillToGroundScale="1.0" allowsSmoothing="true">
+            <collision scale="0.7" baseOffset="0.0" minOffset="0.20" maxOffset="0.60" />
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="CLOVER_BUNKER" maxSurfaceAngle="40" fillToGroundScale="1.0" allowsSmoothing="true">
+            <collision scale="0.7" baseOffset="0.0" minOffset="0.20" maxOffset="0.60" />
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="PARSNIP_CUT" maxSurfaceAngle="34" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="POTATO_CUT" maxSurfaceAngle="34" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="CARROT_CUT" maxSurfaceAngle="34" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="BEETROOT_CUT" maxSurfaceAngle="34" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="TOBACCO" maxSurfaceAngle="34" fillToGroundScale="1.0" allowsSmoothing="false" canBeTipped="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="CORN_STALKS" maxSurfaceAngle="35" fillToGroundScale="6.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="PEANUT" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+
+<densityMapHeightType fillTypeName="MISCANTHUS" maxSurfaceAngle="34" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="MISCANTHUS_CUT" maxSurfaceAngle="35" fillToGroundScale="6.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+            <visualHeightMapping>
+                <mapping realValue="1" visualValue="2"/>
+                <mapping realValue="3" visualValue="5"/>
+                <mapping realValue="8" visualValue="8"/>
+                <mapping realValue="64" visualValue="64"/>
+            </visualHeightMapping>
+        </densityMapHeightType>
+
+<densityMapHeightType fillTypeName="IRONORE" maxSurfaceAngle="32" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="0.80" baseOffset="0.0" minOffset="0.0" maxOffset="0.0" />
+        </densityMapHeightType>
+
+<densityMapHeightType fillTypeName="HOPS" maxSurfaceAngle="35" fillToGroundScale="1.0" allowsSmoothing="false" canBeTipped="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="BRAN" maxSurfaceAngle="34" fillToGroundScale="1.0" allowsSmoothing="false" canBeTipped="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="CRACKEDCORN" maxSurfaceAngle="34" fillToGroundScale="1.0" allowsSmoothing="false" canBeTipped="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="RICE_CUT" maxSurfaceAngle="35" fillToGroundScale="6.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+        </densityMapHeightType>	
+		
+<densityMapHeightType fillTypeName="SORGHUM_CUT" maxSurfaceAngle="35" fillToGroundScale="6.0" allowsSmoothing="false">
+            <collision scale="0.35" baseOffset="0.10" minOffset="0.10" maxOffset="1.20" />
+        </densityMapHeightType>
+
+<densityMapHeightType fillTypeName="MINT" maxSurfaceAngle="34" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>		    
+        
+<densityMapHeightType fillTypeName="SAFFLOWER" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+
+<densityMapHeightType fillTypeName="GRASS_FERMENTED" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+
+<densityMapHeightType fillTypeName="CROP_FERMENTED" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+
+<densityMapHeightType fillTypeName="CCM" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+
+<densityMapHeightType fillTypeName="CCMRAW" maxSurfaceAngle="26" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="CROP_WINDROW" maxSurfaceAngle="40" fillToGroundScale="1.0" allowsSmoothing="true">
+            <collision scale="0.7" baseOffset="0.0" minOffset="0.20" maxOffset="0.60" />
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="GRASS_BUNKER" maxSurfaceAngle="40" fillToGroundScale="1.0" allowsSmoothing="true">
+            <collision scale="0.7" baseOffset="0.0" minOffset="0.20" maxOffset="0.60" />
+        </densityMapHeightType>
+
+<densityMapHeightType fillTypeName="TARO" maxSurfaceAngle="34" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+		
+<densityMapHeightType fillTypeName="TARO_CUT" maxSurfaceAngle="34" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+
+<densityMapHeightType fillTypeName="OKRA" maxSurfaceAngle="34" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>
+
+<densityMapHeightType fillTypeName="EDAMAME" maxSurfaceAngle="34" fillToGroundScale="1.0" allowsSmoothing="false">
+            <collision scale="1.0" baseOffset="0.08" minOffset="0.0" maxOffset="0.08" />
+        </densityMapHeightType>	
+
+   </densityMapHeightTypes>
+</map>

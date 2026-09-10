@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors>Jinkou89</translationContributors>
+    <languageVersion>1.0.0.0</languageVersion>
+	
+	<texts>
+	  
+	<text name="fillType_rye" 				text="Secară" />
+	<text name="fillType_covercropmix"        		text="Amestec culturi de acoperire" />
+	<text name="fillType_roundBaleLavender"        		text="Balot de lavandă" />
+	<text name="fillType_clover1"        			text="Trifoi roșu" />
+	<text name="fillType_clover2"        			text="Trifoi alb" />
+	<text name="fillType_clover_windrow"        		text="Trifoi" />
+    	<text name="fillType_alfalfa"       			text="Lucernă" />
+	<text name="fillType_cloverSilage"        		text="Siloz de trifoi" />
+   	<text name="fillType_alfalfaSilage"       		text="Siloz de lucernă" />
+   	<text name="fillType_cloverHay"     			text="Fân de trifoi" />
+    	<text name="fillType_alfalfaHay"    			text="Fân de lucernă" />
+    	<text name="fillType_beanstraw" 			text="Paie de leguminoase" />
+    	<text name="fillType_cornStalks"    			text="Coceni de porumb" />
+	<text name="fillType_flaxFiber"        			text="Fibră de in" />
+	<text name="fillType_flax"        			text="In" />
+	<text name="fillType_linseed"        			text="Semințe de in" />
+	<text name="fillType_millet"        			text="Mei" />
+	<text name="fillType_poppy"        			text="Mac" />
+	<text name="fillType_drypeas"        			text="Mazăre furajeră" />
+	<text name="fillType_beans"        			text="Fasole" />
+	<text name="fillType_mustard"        			text="Muștar" />
+	<text name="fillType_lentils"        			text="Linte" />
+	<text name="fillType_silphie"        			text="Planta cupă (Silfium)" />
+	<text name="fillType_spelt"        			text="Grâu spelt" />
+	<text name="fillType_triticale"        			text="Triticale" />
+	<text name="fillType_soybean2"        			text="Soia americană" />
+	<text name="fillType_tobacco"        			text="Tutun" />
+	<text name="fillType_tobaccoo"        			text="Frunze de tutun" />      
+	<text name="fillType_compost" 				text="Compost" />
+	<text name="fillType_organicWaste" 			text="Deșeuri organice" />
+	<text name="fillType_grapeA" 				text="Struguri roșii" />
+	<text name="fillType_grapeB" 				text="Struguri albi" />
+	<text name="fillType_chickpeas" 			text="Năut" />
+	<text name="fillType_buckwheat" 			text="Hrișcă" />
+	<text name="shopItem_grapeb_vine" 			text="Viță de vie albă" />
+	<text name="shopItem_hopsVine" 				text="Butași de Hamei" />
+	<text name="fillType_hemp" 				text="Cânepă" />
+	<text name="fillType_hempFiber" 			text="Fibră de cânepă" />
+	<text name="fillType_lavender" 				text="Lavandă" />
+	<text name="fillType_potatoCut"        			text="Cartofi tocați" />
+	<text name="fillType_beetrootCut"        		text="Sfeclă roșie tocată" />
+	<text name="fillType_carrotCut"        			text="Morcovi tocați" />
+	<text name="fillType_parsnipCut"        		text="Păstârnac tocat" />  
+	<text name="fillTypeGroup_TMR"        			text="TMR, Siloz de Lucernă/Trifoi" />	  
+	<text name="fillTypeGroup_hays"        			text="Fân, Fân de Lucernă/Trifoi" />
+	<text name="fillTypeGroup_grassa"        		text="Iarbă, Lucernă/Trifoi verde" />
+	<text name="fillTypeGroup_moisture"        		text="Hrană umedă: Rădăcinoase tăiate" />
+	<text name="fillTypeGroup_grassHay"        		text="Iarbă verde/Fân/Lucernă/Trifoi" />
+	<text name="fillType_mineralFeed1"        		text="Hrană minerală/Mazăre furajeră" />
+	<text name="fillTypeGroup_pigForage"        		text="Hrană mixtă pentru porci" />
+	<text name="fillType_peanut" 				text="Alune de pământ" />
+	<text name="fillType_miscanthus" 			text="Iarba elefantului (Miscanthus)" />
+	<text name="fillType_miscanthusCut" 			text="Miscanthus tocat" />
+
+
+		<text name="fillType_maize2" 			text="Porumb uscat" />
+		<text name="fillType_soymilk" 			text="Lapte de soia" />
+		<text name="fillType_pasta" 			text="Paste" />
+		<text name="fillType_chips" 			text="Chipsuri" />
+		<text name="fillType_ethanol" 			text="Etanol" />
+		<text name="fillType_cornflour"			text="Făină de porumb" />
+		<text name="fillType_cornOil"			text="Ulei de porumb" />
+		<text name="fillType_linseedOil"		text="Ulei de in" />
+		<text name="fillType_mustardOil"		text="Ulei de muștar" />
+		<text name="fillType_poppyOil"			text="Ulei de mac" />
+		<text name="fillType_pizza"			text="Pizza" />
+		<text name="fillType_buckwheatflour"        	text="Făină de hrișcă" />
+		<text name="fillType_gramflour"        		text="Făină de năut" />
+		<text name="fillType_milletflour"        	text="Făină de mei" />
+		<text name="fillType_ryeflour"        		text="Făină de secară" />
+		<text name="fillType_sorghumflour"        	text="Făină de sorg" />
+		<text name="fillType_crackedCorn"        	text="Porumb urluit" />
+		<text name="fillType_apple"        		text="Mere" />
+		<text name="fillType_apricot"        		text="Caise" />
+		<text name="fillType_cherry"        		text="Cireșe" />
+		<text name="fillType_pear"        		text="Pere" />
+		<text name="fillType_peach"        		text="Presici" />
+		<text name="fillType_plum"        		text="Prune" />
+		<text name="fillType_quince"        		text="Gutui" />
+		<text name="fillType_cabbage"        		text="Varză albă" />
+		<text name="fillType_redCabbage"        	text="Varză roșie" />
+		<text name="fillType_melon"        		text="Pepene galben" />
+		<text name="fillType_pumpkin"        		text="Dovleac" />
+		<text name="fillType_watermelon"        	text="Pepene verde" />
+		<text name="fillType_cucumber"        		text="Castraveți" />
+		<text name="fillType_eggplant"        		text="Vinete" />
+		<text name="fillType_pepper"        		text="Ardei" />
+		<text name="fillType_cauliflower" 		text="Conopidă" />
+		<text name="fillType_bran"        		text="Tărâțe" />
+		<text name="fillType_molasses"        		text="Melasă" />
+		<text name="fillType_appleJuice"        	text="Suc de mere" />
+		<text name="fillType_apricotJuice"        	text="Suc de caise" />
+		<text name="fillType_beetrootJuice"        	text="Suc de sfeclă" />
+		<text name="fillType_carrotJuice"        	text="Suc de morcovi" />
+		<text name="fillType_cherryJuice"        	text="Suc de cireșe" />
+		<text name="fillType_melonJuice"        	text="Suc de pepene" />
+		<text name="fillType_multifruitJuice"        	text="Suc multifruct" />
+		<text name="fillType_peachJuice"        	text="Suc de piersici" />
+		<text name="fillType_pearJuice"        		text="Suc de pere" />
+		<text name="fillType_plumJuice"        		text="Suc de prune" />
+		<text name="fillType_quinceJuice"        	text="Suc de gutui" />
+		<text name="fillType_strawberryJuice"        	text="Suc de căpșuni" />
+		<text name="fillType_tomatoJuice"        	text="Suc de roșii" />
+		<text name="fillType_watermelonJuice"        	text="Suc de pepene verde" />
+ 		<text name="fillType_cattle" 			text="Bovine" />
+		<text name="fillType_pigs" 			text="Porci" />
+		<text name="fillType_sheepGoat" 		text="Oi/Capre" />
+ 		<text name="fillType_beef" 			text="Carne de vită" />
+		<text name="fillType_pork" 			text="Carne de porc" />
+		<text name="fillType_poultryMeat" 		text="Carne de pasăre" />
+		<text name="fillType_lamb" 			text="Carne de miel" />
+		<text name="fillType_cigar" 			text="Trabucuri" />
+		<text name="fillType_cigarette" 		text="Țigări" />
+		<text name="fillType_animalFat" 		text="Grăsime animală" />
+		<text name="fillType_perfume" 			text="Parfum" />
+		<text name="fillType_soap" 			text="Săpun" />
+		<text name="fillType_lavenderOil" 		text="Ulei esențial de lavandă" />
+		<text name="fillType_bourbonBarrel" 		text="Bourbon" />
+		<text name="fillType_brandyBarrel" 		text="Țuică" />
+		<text name="fillType_ciderBarrel" 		text="Cidru" />
+		<text name="fillType_meadBarrel" 		text="Hidromel" />
+		<text name="fillType_liqueurBarrel" 		text="Lichior de fructe" />
+		<text name="fillType_vodkaBarrel" 		text="Vodka" />
+		<text name="fillType_whiskeyBarrel" 		text="Whiskey" />
+		<text name="fillType_rumBarrel" 		text="Rom" />
+		<text name="fillType_peanutflour" 		text="Făină de alune" />
+		<text name="fillType_peanutOil" 		text="Ulei de alune" />
+		<text name="fillType_peanutButter" 		text="Unt de arahide" />
+		<text name="fillType_mayo" 			text="Maioneză" />
+		<text name="fillType_ketchup" 			text="Ketchup" />
+		<text name="fillType_hotSauce" 			text="Sos iute" />
+		<text name="fillType_soySauce" 			text="Sos de soia" />
+		<text name="fillType_garlicSauce" 		text="Mujdei" />
+		<text name="fillType_mustardSauce" 		text="Sos de muștar" />
+		<text name="fillType_pickledCucumber" 		text="Castraveți murați" />
+		<text name="fillType_pickledCabbage" 		text="Varză murată" />
+		<text name="fillType_pickledCauliflower" 	text="Conopidă murată" />
+		<text name="fillType_beansSoup" 		text="Supă de fasole" />
+		<text name="fillType_peanutBags" 		text="Pungi cu alune" />
+		<text name="fillType_beansBags" 		text="Pungi cu fasole" />
+		<text name="fillType_cannedBeans" 		text="Conserve de fasole" />
+		<text name="fillType_tofu" 			text="Brânză Tofu" />
+		<text name="fillType_chocomilk" 		text="Lapte cu ciocolată" />
+		<text name="fillType_oatmilk" 			text="Lapte de ovăz" />
+		<text name="fillType_mushroomSoup" 		text="Supă de ciuperci" />
+		<text name="fillType_beer" 			text="Bere" />
+		<text name="fillType_wine" 			text="Vin" />
+		<text name="fillType_icecream" 			text="Înghețată" />
+		<text name="fillType_sourcream" 		text="Smântână" />
+		<text name="fillType_yoghurt" 			text="Iaurt" />
+		<text name="fillType_sunflowerBags" 		text="Pungi cu semințe de floarea soarelui" />
+		<text name="fillType_pumpkinSeeds" 		text="Pungi cu semințe de dovleac" />
+		<text name="fillType_pumpkinPuree" 		text="Piure de dovleac" />
+		<text name="fillType_eggplantPuree" 		text="Piure de vinete" />
+		<text name="fillType_popcorn" 			text="Popcorn" />
+		<text name="fillType_cheesePuffs" 		text="Pufuleți cu brânză" />
+		<text name="fillType_peanutPuffs" 		text="Pufuleți cu alune" />
+		<text name="fillType_tortilla" 			text="Tortilla" />
+		<text name="fillType_garlicBread" 		text="Pâine cu usturoi" />
+		<text name="fillType_pie" 			text="Plăcinte cu fructe" />
+		<text name="fillType_cocoaPowder" 		text="Pudră de cacao" />
+		<text name="fillType_cookingSalt" 		text="Sare de bucătărie" />
+		<text name="fillType_yeast" 		 	text="Drojdie" />
+		<text name="fillType_roulade"                   text="Ruladă" />
+		<text name="fillType_strudel"                   text="Ștrudel" />
+		<text name="fillType_milkBread"                 text="Pâine cu lapte" />
+		<text name="fillType_potatoBread"               text="Pâine cu cartofi" />
+		<text name="fillType_sweetBread"                text="Cozonac" />
+		<text name="fillType_bagel"                     text="Covrig" />
+		<text name="fillType_baguette" 			text="Baghetă"/>
+		<text name="fillType_hops" 			text="Hamei"/>
+		<text name="fillType_cowFood" 			text="Peleți hrană vaci"/>
+		<text name="fillType_hayPellets" 		text="Peleți de fân"/>
+		<text name="fillType_strawPellets" 		text="Peleți de paie"/>
+		<text name="fillType_woodChipsPellets" 		text="Peleți din rumeguș"/>
+		<text name="fillType_chocoCake" 		text="Tort de ciocolată"/>
+		<text name="fillType_sesame" 			text="Susan"/>
+		<text name="fillType_sesameOil" 		text="Ulei de susan"/>
+		<text name="fillType_sesameBags" 		text="Pungi cu semințe de susan"/>
+		<text name="fillType_chickpeasBags" 		text="Pungi cu năut"/>
+		<text name="fillType_lentilsBags" 		text="Pungi cu linte"/>
+		<text name="fillType_sesameRolls" 		text="Rulouri cu susan și miere"/>
+		<text name="fillType_hummus" 			text="Hummus"/>
+
+		<text name="pigProcessing"        			text="Procesare porci" />
+		<text name="poultryProcessing"        			text="Procesare păsări" />
+		<text name="cattleProcessing"        			text="Procesare bovine" />
+		<text name="sheepProcessing"        			text="Procesare oi și capre" />
+		<text name="message_unloadAnimalSuccess" 		text="Animale mutate cu succes în %s!" />
+        	<text name="message_unloadAnimalConfirmation" 		text="Doriți să mutați %d animale (%s) în %s?" />
+        	<text name="button_moveAnimal" 				text="Mută în %s" />
+		<text name="message_animalTooYoung" 			text="Acest animal este prea tânăr." />
+		<text name="message_animalTooOld" 			text="Acest animal este prea bătrân." />
+        	<text name="configuration_grapeB" 			text="Struguri albi"/>
+        	<text name="configuration_hops" 			text="Hamei"/>
+		<text name="function_fermentingTower" 			text="Aici puteți fermenta iarbă, tocătură, lucernă sau trifoi." />
+		<text name="function_grainDryer" 			text="Aici puteți usca porumbul." />
+		<text name="function_hopsVine" 			        text="Butași pentru creșterea hameiului. Aveți nevoie de combina multifruct pentru a-l recolta." />
+		<text name="function_buyingPoint" 			text="La această stație puteți cumpăra aproape orice la vrac." />
+
+
+		<text name="shopItem_appleOrchard" 		text="Livadă mică de meri" />	
+		<text name="shopItem_apricotOrchard" 		text="Livadă mică de caiși" />	
+		<text name="shopItem_appleTree" 		text="Măr" />	
+		<text name="shopItem_apricotTree" 		text="Cais" />
+		<text name="shopItem_cherryOrchard" 		text="Livadă mică de cireși" />	
+		<text name="shopItem_pearOrchard" 		text="Livadă mică de peri" />	
+		<text name="shopItem_cherryTree" 		text="Cireș" />	
+		<text name="shopItem_pearTree" 			text="Păr" />	
+		<text name="shopItem_peachOrchard" 		text="Livadă mică de piersici" />	
+		<text name="shopItem_peachTree" 		text="Piersic" />		
+		<text name="shopItem_plumOrchard" 		text="Livadă mică de pruni" />	
+		<text name="shopItem_plumTree" 			text="Prun" />		
+		<text name="shopItem_quinceOrchard" 		text="Livadă mică de gutui" />	
+		<text name="shopItem_quinceTree" 		text="Gutui" />	
+		<text name="shopItem_grainCrusher" 		text="Moară de cereale" />	
+		<text name="shopItem_juiceFactory" 		text="Fabrică de sucuri" />
+		<text name="shopItem_slaughterHouse" 		text="Abator" />
+		<text name="shopItem_tobaccoProd" 		text="Fabrică de tutun" />
+		<text name="shopItem_lavenderProd" 		text="Procesare lavandă" />
+		<text name="shopItem_openGarden" 		text="Grădină deschisă" />
+		<text name="shopItem_distillery" 		text="Distilerie" />
+		<text name="shopItem_preservedFood" 		text="Fabrică de conserve" />
+		<text name="shopItem_foodProd" 			text="Producție gustări" />
+		<text name="shopItem_fermentingTower" 		text="Turn de fermentare" />
+		<text name="shopItem_wineCellar" 		text="Cramă de bere și vin" />
+		<text name="shopItem_grainDryer" 		text="Uscător de cereale" />
+		<text name="shopItem_openGardenFieldCrops" 	text="Grădină deschisă pentru culturi de câmp" />
+		<text name="shopItem_industrialGreenhouse" 	text="Seră industrială" />
+		<text name="shopItem_vegetarianProd" 		text="Producție alimente vegane" />
+		<text name="shopItem_pelletizer" 		text="Mașină de peletizat" />
+		<text name="shopItem_buyingPoint1" 		text="Punct de achiziție Multifruct" />
+		<text name="shopItem_buyingPoint2" 		text="Punct de achiziție Multifruct (redus)" />
+
+
+		<text name="shopItem_jamProd" 				text="Fabrică de gem" />
+		<text name="fillType_edamame" 				text="Edamame (Soia păstăi)"/>
+		<text name="fillType_taro" 				text="Taro"/>
+		<text name="fillType_okra" 				text="Bame"/>
+		<text name="fillType_mint" 				text="Mentă"/>
+		<text name="fillType_greenRye" 				text="Secară verde" />
+		<text name="fillType_taroCut" 				text="Taro tocat" />
+		<text name="fillType_taroFlour" 			text="Făină de taro" />
+		<text name="fillType_taroSoup" 				text="Supă de taro" />
+		<text name="fillType_taroChips" 			text="Chipsuri de taro" />
+		<text name="fillType_muffin" 				text="Brioșe" />
+		<text name="fillType_donut" 				text="Gogoși" />
+		<text name="fillType_ccm" 				text="CCM (Fermentat)" />
+		<text name="fillType_ccmraw" 				text="CCM (Brut)" />
+		<text name="fillType_cropWindrow" 			text="Tocătură de cereale" />
+		<text name="fillType_cropSilage" 			text="Siloz de cereale" />
+		<text name="fillType_grassSilage" 			text="Siloz de iarbă" />
+		<text name="fillType_safflower" 			text="Șofrănel" />
+		<text name="fillType_appleJam"        			text="Gem de mere" />
+		<text name="fillType_apricotJam"        		text="Gem de caise" />
+		<text name="fillType_cherryJam"        			text="Gem de cireșe" />
+		<text name="fillType_grapeJam"        			text="Gem de struguri" />
+		<text name="fillType_melonJam"        			text="Gem de pepene" />
+		<text name="fillType_peachJam"        			text="Gem de piersici" />
+		<text name="fillType_pearJam"        			text="Gem de pere" />
+		<text name="fillType_plumJam"        			text="Gem de prune" />
+		<text name="fillType_strawberryJam"        		text="Gem de căpșuni" />
+		<text name="fillType_quinceJam"        			text="Gem de gutui" />
+		<text name="fillType_safflowerOil" 			text="Ulei de șofrănel" />
+		<text name="fillType_mintOil" 				text="Ulei esențial de mentă"/>
+		<text name="fillType_mintBarrel" 			text="Lichior de mentă"/>
+		<text name="fillType_jarredOkra"        		text="Bame la borcan" />
+		<text name="fillType_jarredEdamame"        		text="Edamame la borcan" />
+
+	<text name="fillType_duckEgg"                 text="Ouă de rață"/>
+        <text name="shopItem_duckGooseBarn"             text="Adăpost pentru rațe și gâște"/>
+        <text name="shopItem_duckGoosePasture"             text="Pășune pentru rațe și gâște"/>
+        <text name="shopItem_rabbitHutch"             text="Cușcă pentru iepuri"/>
+        <text name="function_animalPenDuck"             text="Aici poți crește rațe și gâște. Hrănește-le și pune-le așternut de paie pentru a obține ouă de rață și gunoi de grajd."/>
+        <text name="function_animalPenRabbit"             text="Aici poți crește iepuri. Hrănește-i și pune-le așternut de paie. După ce cresc, îi poți vinde pentru profit."/>
+        <text name="fillTypeGroup_clover"                text="Trifoi proaspăt" />
+        <text name="fillTypeGroup_fruitVegetables"             text="Fructe și legume" />
+
+    <text name="fillType_goose"                            text="Gâscă" />
+        <text name="animal_group_goose"                        text="Gâște și rațe" />
+        <text name="shopItem_animalGooseGrowthStage0"           text="Gâște tinere" />
+        <text name="shopItem_animalGooseGrowthStage1"           text="Gâscă" />
+        <text name="animal_descriptionGooseProfitGrowthStage0" text="Gâștele tinere pot fi îngrășate și apoi vândute pentru profit." />
+        <text name="animal_descriptionGooseProfitGrowthStage1" text="Gâștele pot fi reproduse și apoi vândute pentru profit." />
+        <text name="animal_descriptionGooseFeed"               text="Hrănește-le ca pe pui. Apa este furnizată automat, în funcție de tipul adăpostului." />
+        <text name="animal_descriptionGooseReproduction"       text="Gâștele ating maturitatea sexuală la 10 luni. Sezonul de reproducere durează o lună." />
+
+    <text name="fillType_duck"                             text="Rață" />
+        <text name="shopItem_animalDuckGrowthStage0"           text="Boboci de rață" />
+        <text name="animal_duckGrowthStage0Description"        text="Bobocii de rață nu fac încă ouă. Aceștia sunt potriviți pentru reproducere sau pot fi vânduți." />    
+        <text name="shopItem_animalDuckGrowthStage1"           text="Rață" />    
+        <text name="animal_duckGrowthStage1Description"        text="Rațele îți oferă ouă, pe care le poți vinde la un punct de vânzare sau le poți procesa în facilitățile de producție." />    
+        <text name="animal_poultryFoodDescription"             text="Păsările au nevoie de cereale și apă pentru a produce ceva. Notă: Unele cotețe sunt echipate cu alimentare automată cu apă, caz în care nu este necesar să adăugați apă." />
+        
+         <text name="fillType_rabbit"                            text="Iepuroaică" />
+            <text name="fillType_rabbitMale"                        text="Iepure (Mascul)" />
+            <text name="animal_group_rabbits"                       text="Iepuri" />
+            <text name="shopItem_animalRabbitGrowthStage0"          text="Iepuri (pui)" />
+            <text name="shopItem_animalRabbitGrowthStage1"          text="Iepuri (tineret)" />
+            <text name="shopItem_animalRabbitGrowthStage2"          text="Iepure (Femelă)" />
+            <text name="shopItem_animalRabbitGrowthStage3"          text="Iepure (Mascul)" />
+            <text name="animal_rabbitGrowthStage0Description"       text="Puii de iepure sunt cei mai tineri din această specie. Nu pot fi cumpărați individual, ci sunt născuți de o mamă." />
+            <text name="animal_rabbitGrowthStage1Description"       text="Un iepure tânăr poate fi folosit pentru reproducere." />
+            <text name="animal_rabbitGrowthStage2Description"       text="Iepuroaicele (femelele) pot avea pui sau pot fi vândute. Puii sunt mai tineri și mai mici decât iepurii tineri." />
+            <text name="animal_rabbitGrowthStage3Description"       text="Iepuri masculi (voi)." />
+            <text name="animal_rabbitBeddingDescription"            text="Iepurii sunt masculii speciei. Aceștia pot fi doar cumpărați și vânduți." />
+            <text name="animal_rabbitFoodDescription"               text="Iepurii au nevoie de paie pentru confortul lor." />
+
+        <text name="geeseProcessing"                     text="Procesare gâște și rațe" />
+        <text name="rabbitProcessing"                     text="Procesare iepuri" />
+        <text name="fillType_leather"              text="Piele naturală"/>
+        <text name="fillType_leatherJacket"          text="Geci de piele"/>
+        <text name="fillType_pillow"              text="Perne"/>
+        <text name="fillType_furCoat"              text="Haine de blană"/>
+        <text name="fillType_feathers"              text="Pene" />
+        <text name="fillType_rabbitMeat"          text="Carne de iepure" />
+        <text name="fillType_rabbitFur"          text="Blană de iepure" />
+        <text name="fillType_poultry2"              text="Păsări de curte (Gâște și Rațe)" />
+        <text name="fillType_hare"              text="Iepuri" />
+        <text name="fillType_poultry"              text="Păsări de curte (Găini)" />
+
+	<text name="fillType_anhydrous"          	text="Amoniac Anhidru (NH3)" />
+        <text name="fillType_propane"           	text="Gaz Propan" />
+	<text name="shopItem_bakeryFactory"     	text="Patiseria Montana" />    
+        <text name="shopItem_beerFactory"       	text="Berăria Yuengling" />        
+        <text name="shopItem_ethanolFactory"    	text="Fabrica de Etanol Rocky Mountain" />    
+        <text name="shopItem_whiskeyFactory"    	text="Distileria Jack Daniels" />    
+        <text name="shopItem_dairyFactory"      	text="Lăptăria Country View" />    
+        <text name="shopItem_wineFactory"       	text="Crama Duckhorn" />    
+        <text name="shopItem_pizzaFactory"      	text="American Pizza Company" />    
+        <text name="shopItem_grainFlourFactory" 	text="Moară de Făină" />    
+        <text name="shopItem_oilFactory"        	text="Fabrică de Ulei" />    
+   	 <text name="station_grainSiloTrainC1"     text="Baza de Cereale Great Plains" />    
+        <text name="station_grainSiloTrainC2"     text="Silozurile Montana Prairie" />    
+        <text name="station_grainSiloTrainC3"     text="Terminalul de Cereale Yellowstone" />    
+        <text name="station_balesStorageC1"       text="Depozitul de Fân Montana" />
+        <text name="station_grainSiloStoreC2"     text="Aprovizionare Agricolă Montana Prairie" />    
+        <text name="station_grainSiloStoreC3"     text="Flathead Furaje și Cereale" />    
+        <text name="station_grainSiloStoreC4"     text="Silozul Iron Ridge" />    
+        <text name="station_grainSiloStoreC5"     text="Compania de Cereale Lone Pine" />    
+        <text name="station_grainSiloStoreC6"     text="AgriCore Montana" />
+        <text name="station_productStoreC1"       text="Restaurant" />    
+        <text name="station_productStoreC2"       text="Complex Comercial Hobson" />    
+        <text name="station_productStoreC3"       text="Magazin Sătesc Hobson" />    
+        <text name="station_productStoreC4"       text="Magazin Dollar General" />    
+        <text name="station_productStoreC5"       text="Benzinăria BP" />    
+        <text name="station_productStoreC6"       text="Benzinăria Casey's" />    
+        <text name="station_productStoreC7"       text="Restaurant Applebee's" />    
+        <text name="station_productStoreC8"       text="Berăria Kodiac" />    
+        <text name="station_productStoreC9"       text="Complex Comercial Moccasin" />    
+        <text name="station_productStoreC10"      text="Magazin Sătesc Moccasin" />    
+        <text name="station_productStoreC11"      text="Restaurant Subway" />
+	
+	</texts>
+</l10n>

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+
+<animation>
+    <states>
+        <state id="walk">
+            <animation id="walk1" clipLeft="walkSource" clipRight="walkSource" rotation="55" speed="0.27" distance="0.7" />
+            <animation id="walk2" clipLeft="walkSource" clipRight="walkSource" rotation="55"  speed="0.27" distance="0.7" />
+            <animation id="walk3" clipLeft="walkSource" clipRight="walkSource" rotation="55" speed="0.27" distance="0.7" />
+        </state>
+		
+
+        <state id="idle">
+            <animation id="idle3" clip="idle3Source" distance="0" speed="1.0" rotation="0"/>
+            <animation id="idle2" clip="idle2Source" distance="0" speed="1.0" rotation="0"/>
+			<animation id="idle1" clip="idleSource" distance="0" speed="1.0" rotation="0"/>
+        </state>
+
+        <state id="idleTransition">
+            <animation id="idleTransition" clip="idle2Source" distance="0" speed="1.0" rotation="0"/>
+        </state>
+
+        <state id="graze">
+            <animation id="graze1" clip="eatSource" distance="0"/>
+        </state>
+
+
+
+        <state id="chew">
+            <animation id="chew1" clip="eatSource" weight="1" speed="1.0" distance="0"/>
+        </state>
+
+        <state id="turnLeft">
+            <animation id="turnLeft1" clip="fordulSource" rotation="45" distance="0"/>
+            <animation id="turnLeft2" clip="fordulSource" rotation="90" distance="0"/>
+          <animation id="turnLeft3" clip="fordulSource" rotation="135" distance="0"/>
+            <animation id="turnLeft4" clip="fordulSource" rotation="180" distance="0"/>
+        </state>
+
+        <state id="turnRight">
+            <animation id="turnRight1" clip="fordulSource" rotation="45" distance="0"/>
+            <animation id="turnRight2" clip="fordulSource" rotation="90" distance="0"/>
+            <animation id="turnRight3" clip="fordulSource" rotation="135" distance="0"/>
+            <animation id="turnRight4" clip="fordulSource" rotation="180" distance="0"/>
+        </state>
+		
+
+
+    </states>
+
+    <transitions defaultBlendTime="750">
+
+        <!-- leaning down to graze and going up -->
+        <transition animationIdFrom="graze1" animationIdTo="graze1" clip="eatSource" targetTime="0" />
+        <transition animationIdFrom="graze1" animationIdTo="graze1" clip="eatSource" targetTime="0" />
+
+
+
+        <!-- starting a regular walk -->
+        <transition animationIdFrom="idle1" animationIdTo="walk1" blendTime="1000" targetTime="0" />
+        <transition animationIdFrom="walk1" animationIdTo="idle1" blendTime="1000" targetTime="0" />
+		<transition animationIdFrom="idle2" animationIdTo="walk1" blendTime="1000" targetTime="0" />
+        <transition animationIdFrom="walk1" animationIdTo="idle2" blendTime="1000" targetTime="0" />
+
+
+        <!-- starting a walk with head down -->
+        <transition animationIdFrom="idleTransition" animationIdTo="walk1" clip="walkSource" targetTime="0" />
+        <transition animationIdFrom="idle1"      animationIdTo="walk1" 	clip="walkSource" targetTime="0" />
+		<transition animationIdFrom="idleTransition" animationIdTo="walk1" clip="walkSource" targetTime="0" />
+        <transition animationIdFrom="idle2"      animationIdTo="walk1" 	clip="walkSource" targetTime="0" />
+		<transition animationIdFrom="idleTransition" animationIdTo="walk1" clip="walkSource" targetTime="0" />
+        <transition animationIdFrom="idle3"      animationIdTo="walk1" 	clip="walkSource" targetTime="0" />		
+        <transition animationIdFrom="turnLeft1"  animationIdTo="walk1"  clip="walkSource" targetTime="0" />
+        <transition animationIdFrom="turnLeft2"  animationIdTo="walk1"  clip="walkSource" targetTime="0" />
+        <transition animationIdFrom="turnLeft3"  animationIdTo="walk1"  clip="walkSource" targetTime="0" />
+        <transition animationIdFrom="turnLeft4"  animationIdTo="walk1"  clip="walkSource" targetTime="0" />
+        <transition animationIdFrom="turnRight1" animationIdTo="walk1"  clip="walkSource" targetTime="0" />
+        <transition animationIdFrom="turnRight2" animationIdTo="walk1"  clip="walkSource" targetTime="0" />
+        <transition animationIdFrom="turnRight3" animationIdTo="walk1"  clip="walkSource" targetTime="0" />
+        <transition animationIdFrom="turnRight4" animationIdTo="walk1"  clip="walkSource" targetTime="0" />
+
+        <!-- starting a trot and stopping -->
+        <transition animationIdFrom="idleTransition" animationIdTo="walk1" sourceTime="1500" blendTime="500" targetTime="0" />
+        <transition animationIdFrom="idle1" animationIdTo="walk1" sourceTime="3545" blendTime="500" targetTime="0" />
+        <transition animationIdFrom="idleTransition" animationIdTo="walk1" sourceTime="1500" blendTime="500" targetTime="0" />
+        <transition animationIdFrom="idle2" animationIdTo="walk1" sourceTime="5000" blendTime="500" targetTime="0" />
+		<transition animationIdFrom="idleTransition" animationIdTo="walk1" sourceTime="1500" blendTime="500" targetTime="0" />
+        <transition animationIdFrom="idle3" animationIdTo="walk1" sourceTime="3545" blendTime="500" targetTime="0" />
+		<transition animationIdFrom="walk3" animationIdTo="idleTransition" sourceTime="1500" blendTime="500" targetTime="0" />
+        <transition animationIdFrom="walk3" animationIdTo="idle1" sourceTime="500" blendTime="500" targetTime="0" />
+
+
+        <!-- starting a turn from idle -->
+        <transition animationIdFrom="idle1" animationIdTo="turnLeft1" blendTime="1000" targetTime="0"/>
+        <transition animationIdFrom="idle1" animationIdTo="turnLeft2" blendTime="1000" targetTime="0"/> 
+		<transition animationIdFrom="idle1" animationIdTo="turnLeft3" blendTime="1000" targetTime="0"/>
+        <transition animationIdFrom="idle1" animationIdTo="turnLeft4" blendTime="1000" targetTime="0"/>
+
+        <transition animationIdFrom="idle1" animationIdTo="turnRight1" blendTime="1000" targetTime="0"/>
+        <transition animationIdFrom="idle1" animationIdTo="turnRight2" blendTime="1000" targetTime="0"/>
+		<transition animationIdFrom="idle1" animationIdTo="turnRight3" blendTime="1000" targetTime="0"/>
+        <transition animationIdFrom="idle1" animationIdTo="turnRight4" blendTime="1000" targetTime="0"/>
+
+
+
+    </transitions>
+
+</animation>

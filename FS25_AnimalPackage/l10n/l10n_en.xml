@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<l10n>
+	<translationContributors>BavarianRedneck</translationContributors>
+	<texts>
+		<!--CATTLE-->
+		<text name="animal_cattleF_GS01" text="This is a female calf. It will become a productive cow one day ."/>
+		<text name="animal_cattleF_GS02" text="This is a female weaner. Weaners already eat solid food."/>
+		<text name="animal_cattleF_GS03" text="This is a heifer."/>
+		<text name="animal_cattleF_GS04" text="This is a fully grown cow."/>
+		<text name="animal_cattleM_GS01" text="This is a male calf. It will grow into a productive bull one day ."/>
+		<text name="animal_cattleM_GS02" text="This is a male weaner. Weaners already eat solid food."/>
+		<text name="animal_cattleM_GS03" text="This is a young bull."/>
+		<text name="animal_cattleM_GS04" text="This bull is fully grown. It can be sold for profit."/>
+		<text name="fillType_cowHolsteinBRC" text="Holstein Cow"/>
+		<text name="fillType_bullHolsteinBRC" text="Holstein Bull"/>
+		<text name="fillType_cowRedHolsteinBRC" text="Red Holstein Cow"/>
+		<text name="fillType_bullRedHolsteinBRC" text="Red Holstein Bull"/>
+		<text name="fillType_cowBrownSwissBRC" text="Brown Swiss Cow"/>
+		<text name="fillType_bullBrownSwissBRC" text="Brown Swiss Bull"/>
+		<text name="fillType_cowLimousinBRC" text="Limousin Cow"/>
+		<text name="fillType_bullLimousinBRC" text="Limousin Bull"/>
+		<text name="fillType_cowAngusBRC" text="Angus Cow"/>
+		<text name="fillType_bullAngusBRC" text="Angus Bull"/>
+		<text name="fillType_cowWaterbuffaloBRC" text="Water Buffalo Cow"/>
+		<text name="fillType_bullWaterbuffaloBRC" text="Water Buffalo Bull"/>
+		<text name="shopItem_animalHolstein_F_GS01" text="Holstein Heifer Calf"/>
+		<text name="shopItem_animalHolstein_F_GS02" text="Holstein Weaner Female"/>
+		<text name="shopItem_animalHolstein_F_GS03" text="Holstein Heifer"/>
+		<text name="shopItem_animalHolstein_F_GS04" text="Holstein Cow"/>
+		<text name="shopItem_animalHolstein_M_GS01" text="Holstein Bull Calf"/>
+		<text name="shopItem_animalHolstein_M_GS02" text="Holstein Weaner Male"/>
+		<text name="shopItem_animalHolstein_M_GS03" text="Holstein Young Bull"/>
+		<text name="shopItem_animalHolstein_M_GS04" text="Holstein Bull"/>
+		<text name="shopItem_animalRedHolstein_F_GS01" text="Red Holstein Heifer Calf"/>
+		<text name="shopItem_animalRedHolstein_F_GS02" text="Red Holstein Weaner Female"/>
+		<text name="shopItem_animalRedHolstein_F_GS03" text="Red Holstein Heifer"/>
+		<text name="shopItem_animalRedHolstein_F_GS04" text="Red Holstein Cow"/>
+		<text name="shopItem_animalRedHolstein_M_GS01" text="Red Holstein Bull Calf"/>
+		<text name="shopItem_animalRedHolstein_M_GS02" text="Red Holstein Weaner Male"/>
+		<text name="shopItem_animalRedHolstein_M_GS03" text="Red Holstein Young Bull"/>
+		<text name="shopItem_animalRedHolstein_M_GS04" text="Red Holstein Bull"/>
+		<text name="shopItem_animalBrownSwiss_F_GS01" text="Brown Swiss Heifer Calf"/>
+		<text name="shopItem_animalBrownSwiss_F_GS02" text="Brown Swiss Weaner Female"/>
+		<text name="shopItem_animalBrownSwiss_F_GS03" text="Brown Swiss Heifer"/>
+		<text name="shopItem_animalBrownSwiss_F_GS04" text="Brown Swiss Cow"/>
+		<text name="shopItem_animalBrownSwiss_M_GS01" text="Brown Swiss Bull Calf"/>
+		<text name="shopItem_animalBrownSwiss_M_GS02" text="Brown Swiss Weaner Male"/>
+		<text name="shopItem_animalBrownSwiss_M_GS03" text="Brown Swiss Young Bull"/>
+		<text name="shopItem_animalBrownSwiss_M_GS04" text="Brown Swiss Bull"/>
+		<text name="shopItem_animalLimousin_F_GS01" text="Limousin Heifer Calf"/>
+		<text name="shopItem_animalLimousin_F_GS02" text="Limousin Weaner Female"/>
+		<text name="shopItem_animalLimousin_F_GS03" text="Limousin Heifer"/>
+		<text name="shopItem_animalLimousin_F_GS04" text="Limousin Cow"/>
+		<text name="shopItem_animalLimousin_M_GS01" text="Limousin Bull Calf"/>
+		<text name="shopItem_animalLimousin_M_GS02" text="Limousin Weaner Male"/>
+		<text name="shopItem_animalLimousin_M_GS03" text="Limousin Young Bull"/>
+		<text name="shopItem_animalLimousin_M_GS04" text="Limousin Bull"/>
+		<text name="shopItem_animalAngus_F_GS01" text="Angus Heifer Calf"/>
+		<text name="shopItem_animalAngus_F_GS02" text="Angus Weaner Female"/>
+		<text name="shopItem_animalAngus_F_GS03" text="Angus Heifer"/>
+		<text name="shopItem_animalAngus_F_GS04" text="Angus Cow"/>
+		<text name="shopItem_animalAngus_M_GS01" text="Angus Bull Calf"/>
+		<text name="shopItem_animalAngus_M_GS02" text="Angus Weaner Male"/>
+		<text name="shopItem_animalAngus_M_GS03" text="Angus Young Bull"/>
+		<text name="shopItem_animalAngus_M_GS04" text="Angus Bull"/>
+		<text name="shopItem_animalWaterbuffalo_F_GS01" text="Water Buffalo Heifer Calf"/>
+		<text name="shopItem_animalWaterbuffalo_F_GS02" text="Water Buffalo Weaner Female"/>
+		<text name="shopItem_animalWaterbuffalo_F_GS03" text="Water Buffalo Heifer"/>
+		<text name="shopItem_animalWaterbuffalo_F_GS04" text="Water Buffalo Cow"/>
+		<text name="shopItem_animalWaterbuffalo_M_GS01" text="Water Buffalo Bull Calf"/>
+		<text name="shopItem_animalWaterbuffalo_M_GS02" text="Water Buffalo Weaner Male"/>
+		<text name="shopItem_animalWaterbuffalo_M_GS03" text="Water Buffalo Young Bull"/>
+		<text name="shopItem_animalWaterbuffalo_M_GS04" text="Water Buffalo Bull"/>
+		<!--CHICKEN-->
+		<text name="animal_ChickensF_GS01Description" text="This is a female chick. It will one day grow into a productive laying hen."/>
+		<text name="animal_ChickensF_GS02Description" text="This is a female chick. It will one day grow into a productive laying hen."/>
+		<text name="animal_ChickensF_GS03Description" text="This is a young hen. It will soon start laying eggs."/>
+		<text name="animal_ChickensF_GS04Description" text="This is a fully grown hen."/>
+		<text name="animal_ChickensM_GS01Description" text="This is a male chick. It will one day grow into a productive laying hen."/>
+		<text name="animal_ChickensM_GS02Description" text="This is a male chick. It will one day grow into a productive laying hen."/>
+		<text name="animal_ChickensM_GS03Description" text="This is a young rooster."/>
+		<text name="animal_ChickensM_GS04Description" text="This is a fully grown rooster."/>
+		<text name="fillType_henLohmannBRC" text="Lohmann Hen"/>
+		<text name="fillType_roosterLohmannBRC" text="Lohmann Rooster"/>
+		<text name="fillType_henLeghornBRC" text="Leghorn Hen"/>
+		<text name="fillType_roosterLeghornBRC" text="Leghorn Rooster"/>
+		<text name="fillType_henPlymouthrockBRC" text="Plymouthrock Hen"/>
+		<text name="fillType_roosterPlymouthrockBRC" text="Plymouthrock Rooster"/>
+		<text name="fillType_henBohusdalBRC" text="Bohusdal Hen"/>
+		<text name="fillType_roosterBohusdalBRC" text="Bohusdal Rooster"/>
+		<text name="shopItem_animalLohmann_F_GS01" text="Lohmann Female Chick"/>
+		<text name="shopItem_animalLohmann_F_GS02" text="Lohmann Female Chick"/>
+		<text name="shopItem_animalLohmann_F_GS03" text="Lohmann Young Hen"/>
+		<text name="shopItem_animalLohmann_F_GS04" text="Lohmann Hen"/>
+		<text name="shopItem_animalLohmann_M_GS01" text="Lohmann Male Chick"/>
+		<text name="shopItem_animalLohmann_M_GS02" text="Lohmann Male Chick"/>
+		<text name="shopItem_animalLohmann_M_GS03" text="Lohmann Young Rooster"/>
+		<text name="shopItem_animalLohmann_M_GS04" text="Lohmann Rooster"/>
+		<text name="shopItem_animalLeghorn_F_GS01" text="Leghorn Female Chick"/>
+		<text name="shopItem_animalLeghorn_F_GS02" text="Leghorn Female Chick"/>
+		<text name="shopItem_animalLeghorn_F_GS03" text="Leghorn Young Hen"/>
+		<text name="shopItem_animalLeghorn_F_GS04" text="Leghorn Hen"/>
+		<text name="shopItem_animalLeghorn_M_GS01" text="Leghorn Male Chick"/>
+		<text name="shopItem_animalLeghorn_M_GS02" text="Leghorn Male Chick"/>
+		<text name="shopItem_animalLeghorn_M_GS03" text="Leghorn Young Rooster"/>
+		<text name="shopItem_animalLeghorn_M_GS04" text="Leghorn Rooster"/>
+		<text name="shopItem_animalPlymouthrock_F_GS01" text="Plymouthrock Female Chick"/>
+		<text name="shopItem_animalPlymouthrock_F_GS02" text="Plymouthrock Female Chick"/>
+		<text name="shopItem_animalPlymouthrock_F_GS03" text="Plymouthrock Young Hen"/>
+		<text name="shopItem_animalPlymouthrock_F_GS04" text="Plymouthrock Hen"/>
+		<text name="shopItem_animalPlymouthrock_M_GS01" text="Plymouthrock Male Chick"/>
+		<text name="shopItem_animalPlymouthrock_M_GS02" text="Plymouthrock Male Chick"/>
+		<text name="shopItem_animalPlymouthrock_M_GS03" text="Plymouthrock Young Rooster"/>
+		<text name="shopItem_animalPlymouthrock_M_GS04" text="Plymouthrock Rooster"/>
+		<text name="shopItem_animalBohusdal_F_GS01" text="Bohusdal Female Chick"/>
+		<text name="shopItem_animalBohusdal_F_GS02" text="Bohusdal Female Chick"/>
+		<text name="shopItem_animalBohusdal_F_GS03" text="Bohusdal Young Hen"/>
+		<text name="shopItem_animalBohusdal_F_GS04" text="Bohusdal Hen"/>
+		<text name="shopItem_animalBohusdal_M_GS01" text="Bohusdal Male Chick"/>
+		<text name="shopItem_animalBohusdal_M_GS02" text="Bohusdal Male Chick"/>
+		<text name="shopItem_animalBohusdal_M_GS03" text="Bohusdal Young Rooster"/>
+		<text name="shopItem_animalBohusdal_M_GS04" text="Bohusdal Rooster"/>
+		<!--GOATS-->
+		<text name="animal_GoatsF_GS01Description" text="This is a young doe."/>
+		<text name="animal_GoatsF_GS02Description" text="This is a young doe."/>
+		<text name="animal_GoatsF_GS03Description" text="This is a young doe."/>
+		<text name="animal_GoatsF_GS04Description" text="This is a fully grown doe."/>
+		<text name="animal_GoatsM_GS01Description" text="This is a young buck."/>
+		<text name="animal_GoatsM_GS02Description" text="This is a young buck."/>
+		<text name="animal_GoatsM_GS03Description" text="This is a young buck."/>
+		<text name="animal_GoatsM_GS04Description" text="This is a fully grown buck."/>
+		<text name="fillType_doeThuringiangoatBRC" text="Thuringian Forest Goat Doe"/>
+		<text name="fillType_buckThuringiangoatBRC" text="Thuringian Forest Goat Buck"/>
+		<text name="shopItem_animalThuringiangoat_F_GS01" text="Thuringian Forest Goat Female Kid"/>
+		<text name="shopItem_animalThuringiangoat_F_GS02" text="Thuringian Forest Goat Female Kid"/>
+		<text name="shopItem_animalThuringiangoat_F_GS03" text="Thuringian Forest Goat Young Doe"/>
+		<text name="shopItem_animalThuringiangoat_F_GS04" text="Thuringian Forest Goat Doe"/>
+		<text name="shopItem_animalThuringiangoat_M_GS01" text="Thuringian Forest Goat Male Kid"/>
+		<text name="shopItem_animalThuringiangoat_M_GS02" text="Thuringian Forest Goat Male Kid"/>
+		<text name="shopItem_animalThuringiangoat_M_GS03" text="Thuringian Forest Goat Young Buck"/>
+		<text name="shopItem_animalThuringiangoat_M_GS04" text="Thuringian Forest Goat Buck"/>
+		<!--SHEEP-->
+		<text name="animal_SheepF_GS01Description" text="This is a young ewe."/>
+		<text name="animal_SheepF_GS02Description" text="This is a young ewe."/>
+		<text name="animal_SheepF_GS03Description" text="This is a young ewe."/>
+		<text name="animal_SheepF_GS04Description" text="This is a fully grown ewe."/>
+		<text name="animal_SheepM_GS01Description" text="This is a young ram."/>
+		<text name="animal_SheepM_GS02Description" text="This is a young ram."/>
+		<text name="animal_SheepM_GS03Description" text="This is a young ram."/>
+		<text name="animal_SheepM_GS04Description" text="This is a fully grown ram."/>
+		<text name="fillType_eweMerinoBRC" text="Merino Ewe"/>
+		<text name="fillType_ramMerinoBRC" text="Merino Ram"/>
+		<text name="fillType_eweSuffolkBRC" text="Suffolk Ewe"/>
+		<text name="fillType_ramSuffolkBRC" text="Suffolk Ram"/>
+		<text name="fillType_eweMountainsheepBRC" text="Mountain Sheep Ewe"/>
+		<text name="fillType_ramMountainsheepBRC" text="Mountain Sheep Ram"/>
+		<text name="shopItem_animalMerino_F_GS01" text="Merino Female Lamb"/>
+		<text name="shopItem_animalMerino_F_GS02" text="Merino Female Lamb"/>
+		<text name="shopItem_animalMerino_F_GS03" text="Merino Young Ewe"/>
+		<text name="shopItem_animalMerino_F_GS04" text="Merino Ewe"/>
+		<text name="shopItem_animalMerino_M_GS01" text="Merino Male Lamb"/>
+		<text name="shopItem_animalMerino_M_GS02" text="Merino Male Lamb"/>
+		<text name="shopItem_animalMerino_M_GS03" text="Merino Young Ram"/>
+		<text name="shopItem_animalMerino_M_GS04" text="Merino Ram"/>
+		<text name="shopItem_animalSuffolk_F_GS01" text="Suffolk Female Lamb"/>
+		<text name="shopItem_animalSuffolk_F_GS02" text="Suffolk Female Lamb"/>
+		<text name="shopItem_animalSuffolk_F_GS03" text="Suffolk Young Ewe"/>
+		<text name="shopItem_animalSuffolk_F_GS04" text="Suffolk Ewe"/>
+		<text name="shopItem_animalSuffolk_M_GS01" text="Suffolk Male Lamb"/>
+		<text name="shopItem_animalSuffolk_M_GS02" text="Suffolk Male Lamb"/>
+		<text name="shopItem_animalSuffolk_M_GS03" text="Suffolk Young Ram"/>
+		<text name="shopItem_animalSuffolk_M_GS04" text="Suffolk Ram"/>
+		<text name="shopItem_animalMountainsheep_F_GS01" text="Mountain Sheep Female Lamb"/>
+		<text name="shopItem_animalMountainsheep_F_GS02" text="Mountain Sheep Female Lamb"/>
+		<text name="shopItem_animalMountainsheep_F_GS03" text="Mountain Sheep Young Ewe"/>
+		<text name="shopItem_animalMountainsheep_F_GS04" text="Mountain Sheep Ewe"/>
+		<text name="shopItem_animalMountainsheep_M_GS01" text="Mountain Sheep Male Lamb"/>
+		<text name="shopItem_animalMountainsheep_M_GS02" text="Mountain Sheep Male Lamb"/>
+		<text name="shopItem_animalMountainsheep_M_GS03" text="Mountain Sheep Young Ram"/>
+		<text name="shopItem_animalMountainsheep_M_GS04" text="Mountain Sheep Ram"/>
+		<!--PIGS-->
+		<text name="animal_PigsF_GS01Description" text="This is a young sow."/>
+		<text name="animal_PigsF_GS02Description" text="This is a young sow."/>
+		<text name="animal_PigsF_GS03Description" text="This is a young sow. She will soon farrow for the first time."/>
+		<text name="animal_PigsF_GS04Description" text="This is a fully grown sow."/>
+		<text name="animal_PigsM_GS01Description" text="This is a young boar."/>
+		<text name="animal_PigsM_GS02Description" text="This is a young Porker. It can be sold for profit after fattening."/>
+		<text name="animal_PigsM_GS03Description" text="This is a young boar. It can be sold for profit."/>
+		<text name="animal_PigsM_GS04Description" text="This is a fully grown boar."/>
+		<text name="fillType_sowLandraceBRC" text="German Landrace Sow"/>
+		<text name="fillType_boarLandraceBRC" text="German Landrace Boar"/>
+		<text name="fillType_sowPietrainBRC" text="Pietrain Sow"/>
+		<text name="fillType_boarPietrainBRC" text="Pietrain Boar"/>
+		<text name="fillType_sowBerkshireBRC" text="Berkshire Sow"/>
+		<text name="fillType_boarBerkshireBRC" text="Berkshire Boar"/>
+		<text name="shopItem_animalLandrace_F_GS01" text="Landrace Female Piglet"/>
+		<text name="shopItem_animalLandrace_F_GS02" text="Landrace Female Porker"/>
+		<text name="shopItem_animalLandrace_F_GS03" text="Landrace Young Sow"/>
+		<text name="shopItem_animalLandrace_F_GS04" text="Landrace Sow"/>
+		<text name="shopItem_animalLandrace_M_GS01" text="Landrace Male Piglet"/>
+		<text name="shopItem_animalLandrace_M_GS02" text="Landrace Male Porker"/>
+		<text name="shopItem_animalLandrace_M_GS03" text="Landrace Young Boar"/>
+		<text name="shopItem_animalLandrace_M_GS04" text="Landrace Boar"/>
+		<text name="shopItem_animalPietrain_F_GS01" text="Pietrain Female Piglet"/>
+		<text name="shopItem_animalPietrain_F_GS02" text="Pietrain Female Porker"/>
+		<text name="shopItem_animalPietrain_F_GS03" text="Pietrain Young Sow"/>
+		<text name="shopItem_animalPietrain_F_GS04" text="Pietrain Sow"/>
+		<text name="shopItem_animalPietrain_M_GS01" text="Pietrain Male Piglet"/>
+		<text name="shopItem_animalPietrain_M_GS02" text="Pietrain Male Porker"/>
+		<text name="shopItem_animalPietrain_M_GS03" text="Pietrain Young Boar"/>
+		<text name="shopItem_animalPietrain_M_GS04" text="Pietrain Boar"/>
+		<text name="shopItem_animalBerkshire_F_GS01" text="Berkshire Female Piglet"/>
+		<text name="shopItem_animalBerkshire_F_GS02" text="Berkshire Female Porker"/>
+		<text name="shopItem_animalBerkshire_F_GS03" text="Berkshire Young Sow"/>
+		<text name="shopItem_animalBerkshire_F_GS04" text="Berkshire Sow"/>
+		<text name="shopItem_animalBerkshire_M_GS01" text="Berkshire Male Piglet"/>
+		<text name="shopItem_animalBerkshire_M_GS02" text="Berkshire Male Porker"/>
+		<text name="shopItem_animalBerkshire_M_GS03" text="Berkshire Young Boar"/>
+		<text name="shopItem_animalBerkshire_M_GS04" text="Berkshire Boar"/>
+		<!--RABBITS-->
+		<text name="fillType_rabbitFemaleBRC" text="Female Rabbit"/>
+		<text name="fillType_rabbitMaleBRC" text="Male Rabbit"/>
+		<text name="animal_group_rabbits" text="Rabbits"/>
+		<text name="animal_descriptionRabbitYoung" text="This is a young rabbit. It will later become an adult animal."/>
+		<text name="animal_descriptionRabbitAdult" text="This is a fully grown rabbit. It can be sold or used for breeding."/>
+<text name="animal_female_descriptionRabbitYoung" text="This is a young female rabbit. It will later become an adult animal."/>
+        <text name="animal_female_serdulo_descriptionRabbitYoung" text="This is an adolescent female rabbit. It will soon become an adult."/>
+        <text name="animal_female_descriptionRabbitAdult" text="This is a fully grown female rabbit. It can be sold or used for breeding."/>
+        <text name="animal_male_descriptionRabbitYoung" text="This is a young male rabbit. It will later become an adult animal."/>
+        <text name="animal_male_serdulo_descriptionRabbitYoung" text="This is an adolescent male rabbit. It will soon become an adult."/>
+        <text name="animal_male_descriptionRabbitAdult" text="This is a fully grown male rabbit. It can be sold or used for breeding."/>	</texts>
+</l10n>

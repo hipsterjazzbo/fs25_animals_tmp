@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<animation>
+<states>
+<state id="walk">
+<animation id="walk1" clipLeft="s_w_walkLeftSource" clipRight="s_w_walkRightSource" rotation="65" speed="0.4" distance="0.43"/>
+<animation id="walk2" clipLeft="s_w_walkLeftSource" clipRight="s_w_walkRightSource" rotation="65" speed="0.4" distance="0.43"/>
+<animation id="walk3" clipLeft="s_w_walkLeftSource" clipRight="s_w_walkRightSource" rotation="65" speed="0.4" distance="0.43"/>
+<animation id="walk4" clipLeft="s_w_walkLeftSource" clipRight="s_w_walkRightSource" rotation="65" speed="0.4" distance="0.43"/>
+</state>
+<state id="run">
+<animation id="run1" clipLeft="s_w_runLeftSource" clipRight="s_w_runRightSource" rotation="35" speed="6" distance="2"/>
+</state>
+<state id="idle">
+<animation id="idle1" clip="s_w_idleSource" distance="0" speed="1.0" rotation="0"/>
+<animation id="idle2" clip="s_w_idleLongSource" distance="0" speed="1.0" rotation="0"/>
+</state>
+<state id="idleTransition">
+<animation id="idleTransition" clip="s_w_idleSource" distance="0" speed="1.0" rotation="0"/>
+</state>
+<state id="graze">
+<animation id="graze1" clip="s_w_eatSource" distance="0"/>
+<animation id="graze2" clip="s_w_digSource" distance="0"/>
+</state>
+<state id="eat">
+<animation id="graze1" clip="s_w_eatSource" distance="0"/>
+</state>
+<state id="sleep">
+<animation id="sleep1" clip="s_w_sleepSource" speed="1.0" distance="0"/>
+<animation id="sleep2" clip="s_w_sleepSource" speed="1.0" distance="0"/>
+<animation id="sleep3" clip="s_w_sleepSource" speed="1.0" distance="0"/>
+</state>
+<state id="rest">
+<animation id="rest1" clip="s_w_rest1Source" speed="1.0" distance="0"/>
+<animation id="rest2" clip="s_w_rest2Source" speed="1.0" distance="0"/>
+<animation id="rest3" clip="s_w_rest3Source" speed="1.0" distance="0"/>
+</state>
+<state id="chew">
+<animation id="chew1" clip="s_w_digSource" weight="1" speed="1.0" distance="0"/>
+</state>
+<state id="turnLeft">
+<animation id="turnLeft1" clip="s_w_turnLeftSource" rotation="45" distance="0"/>
+<animation id="turnLeft2" clip="s_w_turnLeftSource" rotation="90" distance="0"/>
+<animation id="turnLeft3" clip="s_w_turnLeftSource" rotation="135" distance="0"/>
+<animation id="turnLeft4" clip="s_w_turnLeftSource" rotation="180" distance="0"/>
+</state>
+<state id="turnRight">
+<animation id="turnRight1" clip="s_w_turnRightSource" rotation="45" distance="0"/>
+<animation id="turnRight2" clip="s_w_turnRightSource" rotation="90" distance="0"/>
+<animation id="turnRight3" clip="s_w_turnRightSource" rotation="135" distance="0"/>
+<animation id="turnRight4" clip="s_w_turnRightSource" rotation="180" distance="0"/>
+</state>
+</states>
+<transitions defaultBlendTime="750">
+<transition animationIdFrom="idleTransition" animationIdTo="graze1" clip="s_w_idle_to_eatSource" targetTime="0"/>
+<transition animationIdFrom="graze1" animationIdTo="idleTransition" clip="s_w_eat_to_idleSource" targetTime="0"/>
+<transition animationIdFrom="idle1" animationIdTo="graze1" clip="s_w_idle_to_eatSource" targetTime="0"/>
+<transition animationIdFrom="graze1" animationIdTo="idle1" clip="s_w_eat_to_idleSource" targetTime="0"/>
+<transition animationIdFrom="chew1" animationIdTo="graze1" clip="s_w_idle_to_eatSource" targetTime="0"/>
+<transition animationIdFrom="graze1" animationIdTo="chew1" clip="s_w_eat_to_idleSource" targetTime="0"/>
+<transition animationIdFrom="idleTransition" animationIdTo="sleep1" clip="s_w_idle_to_sleepSource" targetTime="0"/>
+<transition animationIdFrom="idleTransition" animationIdTo="sleep2" clip="s_w_idle_to_sleepSource" targetTime="0"/>
+<transition animationIdFrom="idleTransition" animationIdTo="sleep3" clip="s_w_idle_to_sleepSource" targetTime="0"/>
+<transition animationIdFrom="sleep1" animationIdTo="idleTransition" clip="s_w_sleep_to_restSource" targetTime="0"/>
+<transition animationIdFrom="sleep2" animationIdTo="idleTransition" clip="s_w_sleep_to_restSource" targetTime="0"/>
+<transition animationIdFrom="sleep3" animationIdTo="idleTransition" clip="s_w_sleep_to_restSource" targetTime="0"/>
+<transition animationIdFrom="rest1" animationIdTo="idle1" clip="s_w_rest_to_idleSource" targetTime="0"/>
+<transition animationIdFrom="idle1" animationIdTo="rest1" clip="s_w_idle_to_restSource" targetTime="0"/>
+<transition animationIdFrom="rest2" animationIdTo="idle1" clip="s_w_rest_to_idleSource" targetTime="0"/>
+<transition animationIdFrom="idle1" animationIdTo="rest2" clip="s_w_idle_to_restSource" targetTime="0"/>
+<transition animationIdFrom="rest3" animationIdTo="idle1" clip="s_w_rest_to_idleSource" targetTime="0"/>
+<transition animationIdFrom="idle1" animationIdTo="rest3" clip="s_w_idle_to_restSource" targetTime="0"/>
+<transition animationIdFrom="rest1" animationIdTo="idle1" clip="s_w_rest_to_idleSource" targetTime="0"/>
+<transition animationIdFrom="idle1" animationIdTo="rest1" clip="s_w_idle_to_restSource" targetTime="0"/>
+<transition animationIdFrom="rest2" animationIdTo="idle1" clip="s_w_rest_to_idleSource" targetTime="0"/>
+<transition animationIdFrom="idle1" animationIdTo="rest2" clip="s_w_idle_to_restSource" targetTime="0"/>
+<transition animationIdFrom="rest3" animationIdTo="idle1" clip="s_w_rest_to_idleSource" targetTime="0"/>
+<transition animationIdFrom="idle1" animationIdTo="rest3" clip="s_w_idle_to_restSource" targetTime="0"/>
+<transition animationIdFrom="idle1" animationIdTo="walk1" blendTime="1000" targetTime="0"/>
+<transition animationIdFrom="walk1" animationIdTo="idle1" blendTime="1000" targetTime="0"/>
+<transition animationIdFrom="idleTransition" animationIdTo="walk2" clip="s_w_idle_to_eatSource" targetTime="0"/>
+<transition animationIdFrom="idle1" animationIdTo="walk2" clip="s_w_idle_to_eatSource" targetTime="0"/>
+<transition animationIdFrom="turnLeft1" animationIdTo="walk2" clip="s_w_idle_to_eatSource" targetTime="0"/>
+<transition animationIdFrom="turnLeft2" animationIdTo="walk2" clip="s_w_idle_to_eatSource" targetTime="0"/>
+<transition animationIdFrom="turnLeft3" animationIdTo="walk2" clip="s_w_idle_to_eatSource" targetTime="0"/>
+<transition animationIdFrom="turnLeft4" animationIdTo="walk2" clip="s_w_idle_to_eatSource" targetTime="0"/>
+<transition animationIdFrom="turnRight1" animationIdTo="walk2" clip="s_w_idle_to_eatSource" targetTime="0"/>
+<transition animationIdFrom="turnRight2" animationIdTo="walk2" clip="s_w_idle_to_eatSource" targetTime="0"/>
+<transition animationIdFrom="turnRight3" animationIdTo="walk2" clip="s_w_idle_to_eatSource" targetTime="0"/>
+<transition animationIdFrom="turnRight4" animationIdTo="walk2" clip="s_w_idle_to_eatSource" targetTime="0"/>
+<transition animationIdFrom="idleTransition" animationIdTo="walk3" sourceTime="1000" blendTime="500" targetTime="0"/>
+<transition animationIdFrom="idle1" animationIdTo="walk3" sourceTime="6666" blendTime="500" targetTime="0"/>
+<transition animationIdFrom="walk3" animationIdTo="idleTransition" sourceTime="500" blendTime="500" targetTime="0"/>
+<transition animationIdFrom="walk3" animationIdTo="idle1" sourceTime="500" blendTime="500" targetTime="0"/>
+<transition animationIdFrom="idleTransition" animationIdTo="turnLeft1" blendTime="100" targetTime="0"/>
+<transition animationIdFrom="idleTransition" animationIdTo="turnLeft2" blendTime="100" targetTime="0"/>
+<transition animationIdFrom="idleTransition" animationIdTo="turnLeft3" blendTime="100" targetTime="0"/>
+<transition animationIdFrom="idleTransition" animationIdTo="turnLeft4" blendTime="100" targetTime="0"/>
+<transition animationIdFrom="idleTransition" animationIdTo="turnRight1" blendTime="100" targetTime="0"/>
+<transition animationIdFrom="idleTransition" animationIdTo="turnRight2" blendTime="100" targetTime="0"/>
+<transition animationIdFrom="idleTransition" animationIdTo="turnRight3" blendTime="100" targetTime="0"/>
+<transition animationIdFrom="idleTransition" animationIdTo="turnRight4" blendTime="100" targetTime="0"/>
+<transition animationIdFrom="turnLeft1" animationIdTo="idleTransition" blendTime="100" targetTime="0"/>
+<transition animationIdFrom="turnLeft2" animationIdTo="idleTransition" blendTime="100" targetTime="0"/>
+<transition animationIdFrom="turnLeft3" animationIdTo="idleTransition" blendTime="100" targetTime="0"/>
+<transition animationIdFrom="turnLeft4" animationIdTo="idleTransition" blendTime="100" targetTime="0"/>
+<transition animationIdFrom="turnRight1" animationIdTo="idleTransition" blendTime="100" targetTime="0"/>
+<transition animationIdFrom="turnRight2" animationIdTo="idleTransition" blendTime="100" targetTime="0"/>
+<transition animationIdFrom="turnRight3" animationIdTo="idleTransition" blendTime="100" targetTime="0"/>
+<transition animationIdFrom="turnRight4" animationIdTo="idleTransition" blendTime="100" targetTime="0"/>
+<transition animationIdFrom="rest1" animationIdTo="idleTransition" clip="s_w_rest_to_idleSource" targetTime="0"/>
+<transition animationIdFrom="rest2" animationIdTo="idleTransition" clip="s_w_rest_to_idleSource" targetTime="0"/>
+<transition animationIdFrom="rest3" animationIdTo="idleTransition" clip="s_w_rest_to_idleSource" targetTime="0"/>
+<transition animationIdFrom="idleTransition" animationIdTo="rest1" clip="s_w_idle_to_restSource" targetTime="0"/>
+<transition animationIdFrom="idleTransition" animationIdTo="rest2" clip="s_w_idle_to_restSource" targetTime="0"/>
+<transition animationIdFrom="idleTransition" animationIdTo="rest3" clip="s_w_idle_to_restSource" targetTime="0"/>
+</transitions>
+</animation>

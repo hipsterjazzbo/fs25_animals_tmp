@@ -1,0 +1,1425 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<animatedObjects>
+    <annotation>DJ Modding</annotation>
+	<!-- Shed Doors-->
+	<animatedObject index="RollDoorGarage1">
+        <!-- <controls posKey="Open Door" negKey="Close Door" triggerNode="0" posText="input_Open Door" negText="input_Close Door" />
+		<sound file="maps/sounds/garage_door_open.wav" pitchOffset="1.00" volume="0.20" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /> -->
+        <animation duration="4">
+            <part node="1">
+                <keyFrame time="0.00" translation="0 3.729 0" rotation="0 0 0"/>
+				<keyFrame time="0.15" translation="0 4.451 0" rotation="-45 0 0"/>
+				<keyFrame time="0.30" translation="0 4.976 -0.525" rotation="-75.4 0 0"/>
+				<keyFrame time="0.45" translation="0 5.165 -1.237" rotation="-90 0 0"/>
+				<keyFrame time="0.60" translation="0 5.165 -1.976" rotation="-90 0 0"/>
+				<keyFrame time="0.75" translation="0 5.165 -2.717" rotation="-90 0 0"/>
+                <keyFrame time="0.90" translation="0 5.165 -3.460" rotation="-90 0 0"/>
+            </part>
+			      <part node="2">
+                <keyFrame time="0.00" translation="0 2.984 0" rotation="0 0 0"/>
+				<keyFrame time="0.15" translation="0 3.729 0" rotation="0 0 0"/>
+				<keyFrame time="0.30" translation="0 4.451 0" rotation="-45 0 0"/>
+				<keyFrame time="0.45" translation="0 4.976 -0.525" rotation="-75.4 0 0"/>
+				<keyFrame time="0.60" translation="0 5.165 -1.237" rotation="-90 0 0"/>
+				<keyFrame time="0.75" translation="0 5.165 -1.976" rotation="-90 0 0"/>
+				<keyFrame time="0.90" translation="0 5.165 -2.717" rotation="-90 0 0"/>
+            </part>
+			<part node="3">
+                <keyFrame time="0.00" translation="0 2.232 0" rotation="0 0 0"/>
+				<keyFrame time="0.15" translation="0 2.984 0" rotation="0 0 0"/>
+				<keyFrame time="0.30" translation="0 3.729 0" rotation="0 0 0"/>
+				<keyFrame time="0.45" translation="0 4.451 0" rotation="-45 0 0"/>
+				<keyFrame time="0.60" translation="0 4.976 -0.525" rotation="-75.4 0 0"/>
+				<keyFrame time="0.75" translation="0 5.165 -1.237" rotation="-90 0 0"/>
+				<keyFrame time="0.90" translation="0 5.165 -1.976" rotation="-90 0 0"/>
+            </part>
+			<part node="4">
+                <keyFrame time="0.00" translation="0 1.498 0" rotation="0 0 0"/>
+				<keyFrame time="0.15" translation="0 2.232 0" rotation="0 0 0"/>
+				<keyFrame time="0.30" translation="0 2.984 0" rotation="0 0 0"/>
+				<keyFrame time="0.45" translation="0 3.729 0" rotation="0 0 0"/>
+				<keyFrame time="0.60" translation="0 4.451 0" rotation="-45 0 0"/>
+				<keyFrame time="0.75" translation="0 4.976 -0.525" rotation="-75.4 0 0"/>
+				<keyFrame time="0.90" translation="0 5.165 -1.237" rotation="-90 0 0"/>
+            </part>
+			<part node="5">
+                <keyFrame time="0.00" translation="0 0.757 0" rotation="0 0 0"/>
+				<keyFrame time="0.15" translation="0 1.498 0" rotation="0 0 0"/>
+				<keyFrame time="0.30" translation="0 2.232 0" rotation="0 0 0"/>
+				<keyFrame time="0.45" translation="0 2.984 0" rotation="0 0 0"/>
+				<keyFrame time="0.60" translation="0 3.729 0" rotation="0 0 0"/>
+				<keyFrame time="0.75" translation="0 4.451 0" rotation="-45 0 0"/>
+				<keyFrame time="0.90" translation="0 4.976 -0.525" rotation="-75.4 0 0"/>
+            </part>
+			<part node="6">
+                <keyFrame time="0.00" translation="0 0.012 0" rotation="0 0 0"/>
+				<keyFrame time="0.15" translation="0 0.757 0" rotation="0 0 0"/>
+				<keyFrame time="0.30" translation="0 1.498 0" rotation="0 0 0"/>
+				<keyFrame time="0.45" translation="0 2.232 0" rotation="0 0 0"/>
+				<keyFrame time="0.60" translation="0 2.984 0" rotation="0 0 0"/>
+				<keyFrame time="0.75" translation="0 3.729 0" rotation="0 0 0"/>
+				<keyFrame time="0.90" translation="0 4.451 0" rotation="-45 0 0"/>
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="Open Door" negText="Close Door"/>
+        <sounds>
+            <moving file="mapUS/sounds/OpenElectricDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+        </sounds>
+    </animatedObject>
+	<animatedObject index="HydroLiftDoor1">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open Door" negText="Close Door" />
+					<sounds>
+						<moving file="mapUS/sounds/hydlift.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+        <animation initialTime="0" duration="7">
+            <part node="1"> <!-- DOOR -->
+				<keyFrame time="0.01" translation="0.365 4.998 -0.084" rotation="0 0 0" /> 
+				<keyFrame time="0.20" translation="0.365 4.998 -0.084" rotation="18 0 0" /> 
+				<keyFrame time="0.40" translation="0.365 4.998 -0.084" rotation="36 0 0" /> 
+				<keyFrame time="0.60" translation="0.365 4.998 -0.084" rotation="54 0 0" /> 
+				<keyFrame time="0.80" translation="0.365 4.998 -0.084" rotation="72 0 0" /> 
+				<keyFrame time="1.00" translation="0.365 4.998 -0.084" rotation="90 0 0"/>
+            </part>
+			<part node="2"> <!-- CYLINDERS -->
+				<keyFrame time="0.01" translation="0.365 4.106 0.263" rotation="0 0 0" /> 
+				<keyFrame time="0.20" translation="0.365 4.106 0.263" rotation="24.5 0 0" /> 
+				<keyFrame time="0.40" translation="0.365 4.106 0.263" rotation="46.3 0 0" /> 
+				<keyFrame time="0.60" translation="0.365 4.106 0.263" rotation="65.4 0 0" /> 
+				<keyFrame time="0.80" translation="0.365 4.106 0.263" rotation="82.6 0 0" /> 
+				<keyFrame time="1.00" translation="0.365 4.106 0.263" rotation="98.42 0 0"/>
+            </part>
+			<part node="2|0"> <!-- CYLINDER RAMS-->
+				<keyFrame time="0.01" translation="-4.466 -2.099 0.014" /> 
+				<keyFrame time="0.20" translation="-4.466 -2.275 0.005" /> 
+				<keyFrame time="0.40" translation="-4.466 -2.528 -0.008" /> 
+				<keyFrame time="0.60" translation="-4.466 -2.825 -0.022" /> 
+				<keyFrame time="0.80" translation="-4.466 -3.119 -0.034" /> 
+				<keyFrame time="1.00" translation="-4.466 -3.391 -0.047" />
+            </part>
+        </animation>
+    </animatedObject>
+
+	<!-- Shop Doors -->
+    <animatedObject index="ShopDoorSingle1">
+		<!-- <controls posKey="Open Door" triggerNode="0" posText="Open Door" negText="Close Door" />
+		<sound file="maps/sounds/OpenGateDoorSound.wav" pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /> -->
+		<animation duration="2">
+			<part node="1"> <!--index of Door node-->
+				<keyFrame time="0" rotation="0 0 0" />
+				<keyFrame time="1" rotation="0 -120 0" />
+			</part>
+			</animation>
+      <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="Open Door" negText="Close Door"/>
+      <sounds>
+          <moving file="mapUS/sounds/OpenGateDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+      </sounds>
+	</animatedObject>
+	<animatedObject index="ShopDoorSingle2">
+		<!-- <controls posKey="Open Door" triggerNode="0" posText="Open Door" negText="Close Door" />
+		<sound file="maps/sounds/OpenGateDoorSound.wav" pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /> -->
+		<animation duration="2">
+			<part node="1"> <!--index of Door node-->
+				<keyFrame time="0" rotation="0 0 0" />
+				<keyFrame time="1" rotation="0 -100 0" />
+			</part>
+			</animation>
+      <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="Open Door" negText="Close Door"/>
+      <sounds>
+          <moving file="mapUS/sounds/OpenGateDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+      </sounds>
+	</animatedObject>
+	<animatedObject index="ShopDoorDual1">
+		<!-- <controls posKey="Open Door" triggerNode="0" posText="Open Door" negText="Close Door" />
+		<sound file="maps/sounds/OpenGateDoorSound.wav" pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /> -->
+		<animation duration="2">
+			<part node="1"> <!--index of Door node-->
+				<keyFrame time="0" rotation="0 0 0" />
+				<keyFrame time="1" rotation="0 -120 0" />
+			</part>
+			<part node="2"> <!--index of Door node-->
+				<keyFrame time="0" rotation="0 0 0" />
+				<keyFrame time="1" rotation="0 120 0" />
+			</part>
+			</animation>
+      <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="Open Door" negText="Close Door"/>
+      <sounds>
+          <moving file="mapUS/sounds/OpenGateDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+      </sounds>
+	</animatedObject>
+	<animatedObject index="FarmDoorDual1">
+		<!-- <controls posKey="Open Door" triggerNode="0" posText="Open Door" negText="Close Door" />
+		<sound file="maps/sounds/OpenGateDoorSound.wav" pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /> -->
+		<animation duration="2">
+			<part node="1"> <!--index of Door node-->
+				<keyFrame time="0" rotation="0 0 0" />
+				<keyFrame time="1" rotation="0 120 0" />
+			</part>
+			<part node="2"> <!--index of Door node-->
+				<keyFrame time="0" rotation="0 0 0" />
+				<keyFrame time="1" rotation="0 -120 0" />
+			</part>
+			</animation>
+      <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="Open Door" negText="Close Door"/>
+      <sounds>
+          <moving file="mapUS/sounds/OpenGateDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+      </sounds>
+	</animatedObject>
+	<animatedObject index="FarmDoorDual2">
+		<!-- <controls posKey="Open Door" triggerNode="0" posText="Open Door" negText="Close Door" />
+		<sound file="maps/sounds/OpenGateDoorSound.wav" pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /> -->
+		<animation duration="2">
+			<part node="1"> <!--index of Door node-->
+				<keyFrame time="0" rotation="0 0 0" />
+				<keyFrame time="1" rotation="0 100 0" />
+			</part>
+			<part node="2"> <!--index of Door node-->
+				<keyFrame time="0" rotation="0 0 0" />
+				<keyFrame time="1" rotation="0 -100 0" />
+			</part>
+			</animation>
+      <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="Open Door" negText="Close Door"/>
+      <sounds>
+          <moving file="mapUS/sounds/OpenGateDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+      </sounds>
+	</animatedObject>
+	<!-- Sliding Doors -->
+	<animatedObject index="SlidingDoor1">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open Door" negText="Close Door" />
+          <sounds>
+               <moving file="mapUS/sounds/OpenDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>		
+        <animation initialTime="0" duration="4">
+            <part node="1">
+                <keyFrame time="0.00" translation="0 2 0" />
+                <keyFrame time="0.95" translation="0 2 4.5" />
+            </part>
+        </animation>
+    </animatedObject>
+	<animatedObject index="SlidingDoorLeft1">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open Door" negText="Close Door" />
+          <sounds>
+               <moving file="mapUS/sounds/OpenDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>		
+        <animation initialTime="0" duration="4">
+            <part node="1">
+                <keyFrame time="0.00" translation="0 2 0" />
+                <keyFrame time="0.95" translation="0 2 -4.5" />
+            </part>
+        </animation>
+    </animatedObject>
+	<animatedObject index="frontdoors" >
+		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open Barn Door" negText="Close Barn Door" />
+		<sounds>
+			<moving file="mapUS/sounds/OpenDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+		</sounds>
+            <animation duration="4">
+                <part node="1">
+					<keyFrame time="0" translation="0.104 0 3.6" />
+					<keyFrame time="1" translation="0.104 0 -0.12"  />
+                </part>
+				<part node="2">
+					<keyFrame time="0" translation="0.104 0 7.765" />
+					<keyFrame time="1" translation="0.104 0 11.48"  />
+                </part>
+            </animation>
+    </animatedObject>
+	<animatedObject index="singledoor" >
+            <animation duration="4">
+                <part node="0">
+                    <keyFrame time="0" translation="0 0 -2.5"/>
+                    <keyFrame time="1.0" translation="0 0 -5"/>
+                </part>
+            </animation>
+            <controls triggerNode="1" posAction="ACTIVATE_HANDTOOL" posText="Open Barn Door" negText="Close Barn Door" />
+			<sounds>
+                <moving file="mapUS/sounds/slideGate.ogg" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+            </sounds>
+	</animatedObject>
+	<animatedObject index="barndoor3slide">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open Barn Door" negText="Close Barn Door" />
+					<sound file="maps/sounds/OpenDoorSound.wav" pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" />
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of Door node-->
+							<keyFrame time="0" translation="0 0 0" />
+							<keyFrame time="1" translation="0 0 1.589" />
+						</part>
+					</animation>
+	</animatedObject>
+	<animatedObject index="CowGate1">
+		<!-- <controls posKey="Open Door" triggerNode="0" posText="Open Gates" negText="Close Gates" />
+		<sound file="maps/sounds/OpenGateDoorSound.wav" pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /> -->
+		<animation duration="2">
+			<part node="1"> <!--index of Door node-->
+				<keyFrame time="0" rotation="0 0 0" />
+				<keyFrame time="1" rotation="0 -90 0" />
+			</part>
+		</animation>
+    <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="Open Gates" negText="Close Gates"/>
+    <sounds>
+        <moving file="mapUS/sounds/OpenGateDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+    </sounds>
+	</animatedObject>
+<!--72x160Shop-->
+<!-- Doors -->
+	<animatedObject index="HydLift">		
+        <animation duration="5">
+            <part node="1"> <!-- DOOR -->
+		  <keyFrame time="0.01" translation="0 5.748 0.084" rotation="0 0 0" />
+          <keyFrame time="0.20" translation="0 5.748 0.084" rotation="-18 0 0" />
+          <keyFrame time="0.40" translation="0 5.748 0.084" rotation="-36 0 0" />
+          <keyFrame time="0.60" translation="0 5.748 0.084" rotation="-54 0 0" />
+          <keyFrame time="0.80" translation="0 5.748 0.084" rotation="-72 0 0" />
+          <keyFrame time="1.00" translation="0 5.748 0.084" rotation="-90 0 0" />
+            </part>
+			<part node="2"> <!-- CYLINDERS -->
+		  <keyFrame time="0.01" translation="-0.468 4.722 -0.263" rotation="0 0 0" />
+          <keyFrame time="0.20" translation="-0.468 4.722 -0.263" rotation="-24.5 0 0" />
+          <keyFrame time="0.40" translation="-0.468 4.722 -0.263" rotation="-46.3 0 0" />
+          <keyFrame time="0.60" translation="-0.468 4.722 -0.263" rotation="-65.8 0 0" />
+          <keyFrame time="0.80" translation="-0.468 4.722 -0.263" rotation="-83.2 0 0" />
+          <keyFrame time="1.00" translation="-0.468 4.722 -0.263" rotation="-99.3 0 0" />
+            </part>
+			<part node="2|0"> <!-- CYLINDER RAMS-->
+          <keyFrame time="0.01" translation="-4.466 -2.099 0.014" />
+          <keyFrame time="0.20" translation="-4.466 -2.28 0.021" />
+          <keyFrame time="0.40" translation="-4.466 -2.56 0.034" />
+          <keyFrame time="0.60" translation="-4.466 -2.9 0.049" />
+          <keyFrame time="0.80" translation="-4.466 -3.23 0.063" />
+          <keyFrame time="1.00" translation="-4.466 -3.55 0.076" />
+
+            </part>
+        </animation>
+		<controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="Open Door" negText="Close Door" />
+		<sounds>
+			<moving file="mapUS/sounds/hydlift.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+		</sounds>
+    </animatedObject>
+	<!-- Doors -->
+	<animatedObject index="ShopDoor">
+		<animation duration="2">
+			<part node="1"> <!--index of Door node-->
+				<keyFrame time="0" rotation="0 0 0" />
+				<keyFrame time="1" rotation="0 -120 0" />
+			</part>
+			</animation>
+      <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="Open Door" negText="Close Door"/>
+      <sounds>
+          <moving file="mapUS/sounds/OpenGateDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+      </sounds>
+	</animatedObject>
+	
+	<!-- 52x72MachineShed Red-->
+	<!-- Lights-->
+	<animatedObject index="GarageLights2">
+        <animation duration="0.01">
+			<part node="1">
+                <keyFrame time="0.00" translation="0.05 -0.006 -1.794" rotation="-90 -90 90"/><!-- light switch flick -->
+                <keyFrame time="1" translation="0.05 -0.006 -1.794" rotation="-90 90 90" />
+			</part>
+            <part node="3|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+            <part node="4|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="5|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="6|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="Turn Lights on" negText="Turn Lights Off" />
+        <sounds>
+            <moving file="mapUS/sounds/blinker.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+        </sounds>
+    </animatedObject>
+	<animatedObject index="GarageLights4">
+        <animation duration="0.01">
+			<part node="1">
+                <keyFrame time="0.00" translation="0.05 -0.006 -1.794" rotation="-90 -90 90"/><!-- light switch flick -->
+                <keyFrame time="1" translation="0.05 -0.006 -1.794" rotation="-90 90 90" />
+			</part>
+            <part node="3|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+            <part node="4|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="5|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="6|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="7|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+            <part node="8|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="9|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="10|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="Turn Lights on" negText="Turn Lights Off" />
+        <sounds>
+            <moving file="mapUS/sounds/blinker.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+        </sounds>
+    </animatedObject>
+	<animatedObject index="GarageLights5">
+        <animation duration="0.01">
+			<part node="1">
+                <keyFrame time="0.00" translation="0.05 -0.006 -1.794" rotation="-90 -90 90"/><!-- light switch flick -->
+                <keyFrame time="1" translation="0.05 -0.006 -1.794" rotation="-90 90 90" />
+			</part>
+            <part node="3|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+            <part node="4|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="5|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="6|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="7|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+            <part node="8|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="9|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="10|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="11|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="12|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="Turn Lights on" negText="Turn Lights Off" />
+        <sounds>
+            <moving file="mapUS/sounds/blinker.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+        </sounds>
+    </animatedObject>
+	<animatedObject index="GarageLights6">
+        <animation duration="0.01">
+			<part node="1">
+                <keyFrame time="0.00" translation="0.05 -0.006 -1.794" rotation="-90 -90 90"/><!-- light switch flick -->
+                <keyFrame time="1" translation="0.05 -0.006 -1.794" rotation="-90 90 90" />
+			</part>
+            <part node="3|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+            <part node="4|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="5|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="6|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="7|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+            <part node="8|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="9|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="10|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="11|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="12|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="13|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="14|0|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+        </animation>
+        <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="Turn Lights on" negText="Turn Lights Off" />
+        <sounds>
+            <moving file="mapUS/sounds/blinker.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+        </sounds>
+    </animatedObject>
+
+	
+	<!-- garage2doorWhite-->	
+	<animatedObject index="RollDoor4">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open Door" negText="Close Door" />
+					<sounds>
+						<moving file="mapUS/sounds/OpenElectricDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of segment 1-->
+							<Keyframe time="0" translation="-0.0175004 -1.8 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 -1.22008 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 -0.619618 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 -0.0201835 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.664" translation="-0.0175004 0.580276 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.832" translation="-0.0175004 1.1796 1.75" rotation="0 -0 0"/>
+							<Keyframe time="1" translation="-0.0175004 1.77975 1.75" rotation="0 -0 35"/>
+						</part>
+						<part node="2"> <!--index of segment 2-->
+							<Keyframe time="0" translation="-0.0175004 -1.2 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 -0.620078 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 -0.0196182 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 0.579816 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.664" translation="-0.018703 1.18028 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.832" translation="-0.0271212 1.7796 1.75" rotation="0 -0 35"/>
+							<Keyframe time="1" translation="-0.361646 2.27124 1.75" rotation="0 -0 65"/>
+						</part>
+						<part node="3"> <!--index of segment 3-->
+							<Keyframe time="0" translation="-0.0175004 -0.6 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 -0.0200779 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 0.580382 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 1.17982 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.664" translation="-0.0175004 1.78028 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.832" translation="-0.361646 2.27109 1.75" rotation="0 -0 65"/>
+							<Keyframe time="1" translation="-0.905431 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+						<part node="4"> <!--index of segment 4-->
+							<Keyframe time="0" translation="-0.0175004 -9.53674e-008 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 0.579922 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 1.18038 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 1.77982 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.664" translation="-0.361646 2.27177 1.75" rotation="0 -0 65"/>
+							<Keyframe time="0.832" translation="-0.905431 2.52467 1.75" rotation="0 -0 90"/>
+							<Keyframe time="1" translation="-1.50543 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+						<part node="5"> <!--index of segment 5-->
+							<Keyframe time="0" translation="-0.0175004 0.6 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 1.17992 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0271212 1.78038 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.497" translation="-0.361646 2.27131 1.75" rotation="0 -0 65"/>
+							<Keyframe time="0.664" translation="-0.905431 2.52534 1.75" rotation="0 -0 90"/>
+							<Keyframe time="0.832" translation="-1.50543 2.52467 1.75" rotation="0 -0 90"/>
+							<Keyframe time="1" translation="-2.10543 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+						<part node="6"> <!--index of segment 6-->
+							<Keyframe time="0" translation="-0.0175004 1.2 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 1.77992 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.329" translation="-0.361646 2.27187 1.75" rotation="0 -0 65"/>
+							<Keyframe time="0.497" translation="-0.905431 2.52488 1.75" rotation="0 -0 90"/>
+							<Keyframe time="0.664" translation="-1.50543 2.52534 1.75" rotation="0 -0 90"/>
+							<Keyframe time="0.832" translation="-2.10543 2.52467 1.75" rotation="0 -0 90"/>
+							<Keyframe time="1" translation="-2.70543 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+					</animation>
+	</animatedObject>
+	<animatedObject index="ShopDoor3">
+		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open Door" negText="Close Door" />
+		<sounds>
+			<moving file="mapUS/sounds/door_opening.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+			<posEnd file="maps/sounds/gate_closed.wav" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+			<negEnd file="maps/sounds/gate_closed.wav" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>		
+		</sounds>
+		<animation initialTime="0" duration="2">
+			<part node="1"> <!--index of Door node-->
+				<keyFrame time="0" rotation="-180 -90 -180" />
+				<keyFrame time="1" rotation="-180 0 -180" />
+			</part>
+		</animation>
+	</animatedObject>
+	<animatedObject index="InsideLight2">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Turn Lights on" negText="Turn Lights Off" />
+					<sounds>
+						<moving file="mapUS/sounds/switch01_1.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+        <animation initialTime="0" duration="0.01">
+			<part node="1">
+                <keyFrame time="0.00" translation="0.05 -0.39 -1.794" rotation="-90 -90 90"/><!-- light switch flick -->
+                <keyFrame time="1" translation="0.05 -0.39 -1.794" rotation="-90 90 90" />
+			</part>
+            <part node="3|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+            <part node="4|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="5|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="6|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+        </animation>
+    </animatedObject>
+<!-- garage3doorWhite-->	
+	<animatedObject index="RollDoor1">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open Door" negText="Close Door" />
+					<sounds>
+						<moving file="mapUS/sounds/OpenElectricDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of segment 1-->
+							<Keyframe time="0" translation="-0.0175004 -1.8 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 -1.22008 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 -0.619618 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 -0.0201835 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.664" translation="-0.0175004 0.580276 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.832" translation="-0.0175004 1.1796 1.75" rotation="0 -0 0"/>
+							<Keyframe time="1" translation="-0.0175004 1.77975 1.75" rotation="0 -0 35"/>
+						</part>
+						<part node="2"> <!--index of segment 2-->
+							<Keyframe time="0" translation="-0.0175004 -1.2 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 -0.620078 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 -0.0196182 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 0.579816 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.664" translation="-0.018703 1.18028 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.832" translation="-0.0271212 1.7796 1.75" rotation="0 -0 35"/>
+							<Keyframe time="1" translation="-0.361646 2.27124 1.75" rotation="0 -0 65"/>
+						</part>
+						<part node="3"> <!--index of segment 3-->
+							<Keyframe time="0" translation="-0.0175004 -0.6 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 -0.0200779 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 0.580382 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 1.17982 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.664" translation="-0.0175004 1.78028 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.832" translation="-0.361646 2.27109 1.75" rotation="0 -0 65"/>
+							<Keyframe time="1" translation="-0.905431 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+						<part node="4"> <!--index of segment 4-->
+							<Keyframe time="0" translation="-0.0175004 -9.53674e-008 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 0.579922 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 1.18038 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 1.77982 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.664" translation="-0.361646 2.27177 1.75" rotation="0 -0 65"/>
+							<Keyframe time="0.832" translation="-0.905431 2.52467 1.75" rotation="0 -0 90"/>
+							<Keyframe time="1" translation="-1.50543 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+						<part node="5"> <!--index of segment 5-->
+							<Keyframe time="0" translation="-0.0175004 0.6 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 1.17992 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0271212 1.78038 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.497" translation="-0.361646 2.27131 1.75" rotation="0 -0 65"/>
+							<Keyframe time="0.664" translation="-0.905431 2.52534 1.75" rotation="0 -0 90"/>
+							<Keyframe time="0.832" translation="-1.50543 2.52467 1.75" rotation="0 -0 90"/>
+							<Keyframe time="1" translation="-2.10543 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+						<part node="6"> <!--index of segment 6-->
+							<Keyframe time="0" translation="-0.0175004 1.2 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 1.77992 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.329" translation="-0.361646 2.27187 1.75" rotation="0 -0 65"/>
+							<Keyframe time="0.497" translation="-0.905431 2.52488 1.75" rotation="0 -0 90"/>
+							<Keyframe time="0.664" translation="-1.50543 2.52534 1.75" rotation="0 -0 90"/>
+							<Keyframe time="0.832" translation="-2.10543 2.52467 1.75" rotation="0 -0 90"/>
+							<Keyframe time="1" translation="-2.70543 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+					</animation>
+	</animatedObject>
+	<animatedObject index="RollDoor2">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open Door" negText="Close Door" />
+					<sounds>
+						<moving file="mapUS/sounds/OpenElectricDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of segment 1-->
+							<Keyframe time="0" translation="-0.0175004 -1.8 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 -1.22008 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 -0.619618 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 -0.0201835 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.664" translation="-0.0175004 0.580276 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.832" translation="-0.0175004 1.1796 1.75" rotation="0 -0 0"/>
+							<Keyframe time="1" translation="-0.0175004 1.77975 1.75" rotation="0 -0 35"/>
+						</part>
+						<part node="2"> <!--index of segment 2-->
+							<Keyframe time="0" translation="-0.0175004 -1.2 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 -0.620078 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 -0.0196182 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 0.579816 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.664" translation="-0.018703 1.18028 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.832" translation="-0.0271212 1.7796 1.75" rotation="0 -0 35"/>
+							<Keyframe time="1" translation="-0.361646 2.27124 1.75" rotation="0 -0 65"/>
+						</part>
+						<part node="3"> <!--index of segment 3-->
+							<Keyframe time="0" translation="-0.0175004 -0.6 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 -0.0200779 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 0.580382 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 1.17982 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.664" translation="-0.0175004 1.78028 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.832" translation="-0.361646 2.27109 1.75" rotation="0 -0 65"/>
+							<Keyframe time="1" translation="-0.905431 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+						<part node="4"> <!--index of segment 4-->
+							<Keyframe time="0" translation="-0.0175004 -9.53674e-008 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 0.579922 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 1.18038 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 1.77982 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.664" translation="-0.361646 2.27177 1.75" rotation="0 -0 65"/>
+							<Keyframe time="0.832" translation="-0.905431 2.52467 1.75" rotation="0 -0 90"/>
+							<Keyframe time="1" translation="-1.50543 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+						<part node="5"> <!--index of segment 5-->
+							<Keyframe time="0" translation="-0.0175004 0.6 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 1.17992 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0271212 1.78038 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.497" translation="-0.361646 2.27131 1.75" rotation="0 -0 65"/>
+							<Keyframe time="0.664" translation="-0.905431 2.52534 1.75" rotation="0 -0 90"/>
+							<Keyframe time="0.832" translation="-1.50543 2.52467 1.75" rotation="0 -0 90"/>
+							<Keyframe time="1" translation="-2.10543 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+						<part node="6"> <!--index of segment 6-->
+							<Keyframe time="0" translation="-0.0175004 1.2 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 1.77992 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.329" translation="-0.361646 2.27187 1.75" rotation="0 -0 65"/>
+							<Keyframe time="0.497" translation="-0.905431 2.52488 1.75" rotation="0 -0 90"/>
+							<Keyframe time="0.664" translation="-1.50543 2.52534 1.75" rotation="0 -0 90"/>
+							<Keyframe time="0.832" translation="-2.10543 2.52467 1.75" rotation="0 -0 90"/>
+							<Keyframe time="1" translation="-2.70543 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+					</animation>
+	</animatedObject>
+	<animatedObject index="RollDoor3">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open Door" negText="Close Door" />
+					<sounds>
+						<moving file="mapUS/sounds/OpenElectricDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of segment 1-->
+							<Keyframe time="0" translation="-0.0175004 -1.8 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 -1.22008 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 -0.619618 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 -0.0201835 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.664" translation="-0.0175004 0.580276 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.832" translation="-0.0175004 1.1796 1.75" rotation="0 -0 0"/>
+							<Keyframe time="1" translation="-0.0175004 1.77975 1.75" rotation="0 -0 35"/>
+						</part>
+						<part node="2"> <!--index of segment 2-->
+							<Keyframe time="0" translation="-0.0175004 -1.2 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 -0.620078 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 -0.0196182 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 0.579816 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.664" translation="-0.018703 1.18028 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.832" translation="-0.0271212 1.7796 1.75" rotation="0 -0 35"/>
+							<Keyframe time="1" translation="-0.361646 2.27124 1.75" rotation="0 -0 65"/>
+						</part>
+						<part node="3"> <!--index of segment 3-->
+							<Keyframe time="0" translation="-0.0175004 -0.6 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 -0.0200779 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 0.580382 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 1.17982 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.664" translation="-0.0175004 1.78028 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.832" translation="-0.361646 2.27109 1.75" rotation="0 -0 65"/>
+							<Keyframe time="1" translation="-0.905431 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+						<part node="4"> <!--index of segment 4-->
+							<Keyframe time="0" translation="-0.0175004 -9.53674e-008 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 0.579922 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 1.18038 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 1.77982 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.664" translation="-0.361646 2.27177 1.75" rotation="0 -0 65"/>
+							<Keyframe time="0.832" translation="-0.905431 2.52467 1.75" rotation="0 -0 90"/>
+							<Keyframe time="1" translation="-1.50543 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+						<part node="5"> <!--index of segment 5-->
+							<Keyframe time="0" translation="-0.0175004 0.6 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 1.17992 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0271212 1.78038 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.497" translation="-0.361646 2.27131 1.75" rotation="0 -0 65"/>
+							<Keyframe time="0.664" translation="-0.905431 2.52534 1.75" rotation="0 -0 90"/>
+							<Keyframe time="0.832" translation="-1.50543 2.52467 1.75" rotation="0 -0 90"/>
+							<Keyframe time="1" translation="-2.10543 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+						<part node="6"> <!--index of segment 6-->
+							<Keyframe time="0" translation="-0.0175004 1.2 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 1.77992 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.329" translation="-0.361646 2.27187 1.75" rotation="0 -0 65"/>
+							<Keyframe time="0.497" translation="-0.905431 2.52488 1.75" rotation="0 -0 90"/>
+							<Keyframe time="0.664" translation="-1.50543 2.52534 1.75" rotation="0 -0 90"/>
+							<Keyframe time="0.832" translation="-2.10543 2.52467 1.75" rotation="0 -0 90"/>
+							<Keyframe time="1" translation="-2.70543 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+					</animation>
+	</animatedObject>
+	<animatedObject index="InsideLight1">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Turn Lights on" negText="Turn Lights Off" />
+					<sounds>
+						<moving file="mapUS/sounds/switch01_1.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+        <animation initialTime="0" duration="0.01">
+			<part node="1">
+                <keyFrame time="0.00" translation="0.05 -0.39 -1.794" rotation="-90 -90 90"/><!-- light switch flick -->
+                <keyFrame time="1" translation="0.05 -0.39 -1.794" rotation="-90 90 90" />
+			</part>
+            <part node="2|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+            <part node="3|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="4|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="5|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="6|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+        </animation>
+    </animatedObject>
+	<animatedObject index="InsideLight4">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Turn Lights on" negText="Turn Lights Off" />
+					<sounds>
+						<moving file="mapUS/sounds/switch01_1.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+        <animation initialTime="0" duration="0.01">
+			<part node="1">
+                <keyFrame time="0.00" translation="0.05 -0.39 -1.794" rotation="-90 -90 90"/><!-- light switch flick -->
+                <keyFrame time="1" translation="0.05 -0.39 -1.794" rotation="-90 90 90" />
+			</part>
+            <part node="2|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+            <part node="3|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="4|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+			<part node="5|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+
+        </animation>
+    </animatedObject>
+	
+<!-- garageSlideBrown -->
+
+	<animatedObject index="slideDoorRight1">
+				<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open Door" negText="Close Door" />
+				<sounds>
+					<moving file="mapUS/sounds/slidedoor.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					<posEnd file="maps/sounds/closed_gate.wav" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					<negEnd file="maps/sounds/closed_gate.wav" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>		
+				</sounds>
+        <animation initialTime="0" duration="4">
+            <part node="1">
+                <keyFrame time="0.00" translation="-0.156 -0.658 -0.182" />
+                <keyFrame time="1.00" translation="-0.156 -0.658 -5.601" />
+            </part>
+		</animation>
+	</animatedObject>
+	<animatedObject index="slideDoorLeft1">
+				<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open Door" negText="Close Door" />
+				<sounds>
+					<moving file="mapUS/sounds/slidedoor.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					<posEnd file="maps/sounds/closed_gate.wav" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					<negEnd file="maps/sounds/closed_gate.wav" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>		
+				</sounds>
+        <animation initialTime="0" duration="4">
+            <part node="1">
+                <keyFrame time="0.00" translation="-0.156 -1.737 2.661" />
+                <keyFrame time="1.00" translation="-0.156 -1.737 8.011" />
+            </part>
+		</animation>
+	</animatedObject>
+	
+	<animatedObject index="RollDoor">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_openGate" negText="action_closeGate" />
+					<sounds>
+						<moving file="mapUS/sounds/OpenElectricDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+					</sounds>
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of segment 1-->
+							<Keyframe time="0" translation="-0.0175004 -1.8 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 -1.22008 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 -0.619618 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 -0.0201835 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.664" translation="-0.0175004 0.580276 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.832" translation="-0.0175004 1.1796 1.75" rotation="0 -0 0"/>
+							<Keyframe time="1" translation="-0.0175004 1.77975 1.75" rotation="0 -0 35"/>
+						</part>
+						<part node="2"> <!--index of segment 2-->
+							<Keyframe time="0" translation="-0.0175004 -1.2 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 -0.620078 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 -0.0196182 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 0.579816 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.664" translation="-0.018703 1.18028 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.832" translation="-0.0271212 1.7796 1.75" rotation="0 -0 35"/>
+							<Keyframe time="1" translation="-0.361646 2.27124 1.75" rotation="0 -0 65"/>
+						</part>
+						<part node="3"> <!--index of segment 3-->
+							<Keyframe time="0" translation="-0.0175004 -0.6 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 -0.0200779 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 0.580382 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 1.17982 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.664" translation="-0.0175004 1.78028 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.832" translation="-0.361646 2.27109 1.75" rotation="0 -0 65"/>
+							<Keyframe time="1" translation="-0.905431 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+						<part node="4"> <!--index of segment 4-->
+							<Keyframe time="0" translation="-0.0175004 -9.53674e-008 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 0.579922 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0175004 1.18038 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.497" translation="-0.0175004 1.77982 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.664" translation="-0.361646 2.27177 1.75" rotation="0 -0 65"/>
+							<Keyframe time="0.832" translation="-0.905431 2.52467 1.75" rotation="0 -0 90"/>
+							<Keyframe time="1" translation="-1.50543 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+						<part node="5"> <!--index of segment 5-->
+							<Keyframe time="0" translation="-0.0175004 0.6 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 1.17992 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.329" translation="-0.0271212 1.78038 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.497" translation="-0.361646 2.27131 1.75" rotation="0 -0 65"/>
+							<Keyframe time="0.664" translation="-0.905431 2.52534 1.75" rotation="0 -0 90"/>
+							<Keyframe time="0.832" translation="-1.50543 2.52467 1.75" rotation="0 -0 90"/>
+							<Keyframe time="1" translation="-2.10543 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+						<part node="6"> <!--index of segment 6-->
+							<Keyframe time="0" translation="-0.0175004 1.2 1.75" rotation="0 -0 0"/>
+							<Keyframe time="0.161" translation="-0.0175004 1.77992 1.75" rotation="0 -0 35"/>
+							<Keyframe time="0.329" translation="-0.361646 2.27187 1.75" rotation="0 -0 65"/>
+							<Keyframe time="0.497" translation="-0.905431 2.52488 1.75" rotation="0 -0 90"/>
+							<Keyframe time="0.664" translation="-1.50543 2.52534 1.75" rotation="0 -0 90"/>
+							<Keyframe time="0.832" translation="-2.10543 2.52467 1.75" rotation="0 -0 90"/>
+							<Keyframe time="1" translation="-2.70543 2.52481 1.75" rotation="0 -0 90"/>
+						</part>
+					</animation>
+	</animatedObject>
+<!-- DBLfieldGate -->
+
+	<animatedObject index="DBLfieldGate1">
+		<animation duration="2">
+			<part node="1"> <!--index of Door node-->
+				<keyFrame time="0" rotation="0 0 0" />
+				<keyFrame time="1" rotation="0 -120 0" />
+			</part>
+			<part node="3"> <!--index of Door node-->
+				<keyFrame time="0" rotation="-180 0 180" />
+				<keyFrame time="1" rotation="-180 -120 180" />
+			</part>
+		</animation>
+    <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="Open Gates" negText="Close Gates"/>
+    <sounds>
+        <moving file="mapUS/sounds/OpenGateDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+    </sounds>
+	</animatedObject>
+	
+<!-- DBLfieldGate571 -->
+	<animatedObject index="DBLfieldGate571">
+		<animation duration="2">
+			<part node="1"> <!--index of Door node-->
+				<keyFrame time="0" rotation="0 90 0" />
+				<keyFrame time="1" rotation="0 -20 0" />
+			</part>
+			<part node="3"> <!--index of Door node-->
+				<keyFrame time="0" rotation="0 -90 0" />
+				<keyFrame time="1" rotation="0 20 0" />
+			</part>
+		</animation>
+    <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="Open Gates" negText="Close Gates"/>
+    <sounds>
+        <moving file="mapUS/sounds/OpenGateDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+    </sounds>
+	</animatedObject>
+	
+	<!-- 1 fieldGate -->
+	<animatedObject index="fieldGate1">
+		<controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="Open Gate" negText="Close Gate" />
+          <sounds>
+                <moving file="mapUS/sounds/OpenDoorSound.wav" loops="0" volume="0.8" radius="25" innerRadius="3" fadeOu="0.25"/>
+            </sounds>		
+        <animation initialTime="0" duration="2">
+	        <part node="1">
+                <keyFrame time="0" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 110 0"  />
+            </part>
+        </animation>
+	</animatedObject>
+	
+	<animatedObject index="doorRot11">
+		<!-- <controls posKey="Open Door" triggerNode="0" posText="Open Gates" negText="Close Gates" />
+		<sound file="maps/sounds/OpenGateDoorSound.wav" pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" /> -->
+		<animation duration="2">
+			<part node="1"> <!--index of Door node-->
+				<keyFrame time="0" rotation="0 0 0" />
+				<keyFrame time="1" rotation="0 -120 0" />
+			</part>
+		</animation>
+    <controls triggerNode="0" posAction="ACTIVATE_HANDTOOL" posText="Open Gates" negText="Close Gates"/>
+    <sounds>
+        <moving file="mapUS/sounds/OpenGateDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+    </sounds>
+	</animatedObject>
+	
+	<animatedObject index="dairySlideGate">
+		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open Door" negText="Close Door" />
+		<sounds>
+			<moving file="mapUS/sounds/electricGate_02.wav" loops="0" linkNode="0" volume="0.5" radius="25" innerRadius="3" fadeOut="0.25"/>	
+		</sounds>
+        <animation initialTime="0" duration="4">
+            <part node="1">
+               <keyFrame time="0.0" translation="8 0 0"/>
+               <keyFrame time="1.0" translation="0 0 0"/>
+            </part>
+		</animation>
+	</animatedObject>
+	
+		<animatedObject index="dairySlideGateL">
+		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open Door" negText="Close Door" />
+		<sounds>
+			<moving file="mapUS/sounds/electricGate_02.wav" loops="0" linkNode="0" volume="0.5" radius="25" innerRadius="3" fadeOut="0.25"/>	
+		</sounds>
+        <animation initialTime="0" duration="4">
+            <part node="1">
+               <keyFrame time="0.0" translation="11 0 0"/>
+               <keyFrame time="1.0" translation="0 0 0"/>
+            </part>
+		</animation>
+	</animatedObject>
+	
+	<animatedObject index="F2RollDoor1">
+		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open Garage Door" negText="Close Garage Door" />
+		<sounds>
+			<moving file="mapUS/sounds/OpenElectricDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+		</sounds>
+		<animation initialTime="0" duration="4">
+			<part node="1"> <!--index of segment 1-->
+				<Keyframe time="0" translation="-0.0175004 -1.8 1.75" rotation="0 -0 0"/>
+				<Keyframe time="0.161" translation="-0.0175004 -1.22008 1.75" rotation="0 -0 0"/>
+				<Keyframe time="0.329" translation="-0.0175004 -0.619618 1.75" rotation="0 -0 0"/>
+				<Keyframe time="0.497" translation="-0.0175004 -0.0201835 1.75" rotation="0 -0 0"/>
+				<Keyframe time="0.664" translation="-0.0175004 0.580276 1.75" rotation="0 -0 0"/>
+				<Keyframe time="0.832" translation="-0.0175004 1.1796 1.75" rotation="0 -0 0"/>
+				<Keyframe time="1" translation="-0.0175004 1.77975 1.75" rotation="0 -0 35"/>
+			</part>
+			<part node="2"> <!--index of segment 2-->
+				<Keyframe time="0" translation="-0.0175004 -1.2 1.75" rotation="0 -0 0"/>
+				<Keyframe time="0.161" translation="-0.0175004 -0.620078 1.75" rotation="0 -0 0"/>
+				<Keyframe time="0.329" translation="-0.0175004 -0.0196182 1.75" rotation="0 -0 0"/>
+				<Keyframe time="0.497" translation="-0.0175004 0.579816 1.75" rotation="0 -0 0"/>
+				<Keyframe time="0.664" translation="-0.018703 1.18028 1.75" rotation="0 -0 0"/>
+				<Keyframe time="0.832" translation="-0.0271212 1.7796 1.75" rotation="0 -0 35"/>
+				<Keyframe time="1" translation="-0.361646 2.27124 1.75" rotation="0 -0 65"/>
+			</part>
+			<part node="3"> <!--index of segment 3-->
+				<Keyframe time="0" translation="-0.0175004 -0.6 1.75" rotation="0 -0 0"/>
+				<Keyframe time="0.161" translation="-0.0175004 -0.0200779 1.75" rotation="0 -0 0"/>
+				<Keyframe time="0.329" translation="-0.0175004 0.580382 1.75" rotation="0 -0 0"/>
+				<Keyframe time="0.497" translation="-0.0175004 1.17982 1.75" rotation="0 -0 0"/>
+				<Keyframe time="0.664" translation="-0.0175004 1.78028 1.75" rotation="0 -0 35"/>
+				<Keyframe time="0.832" translation="-0.361646 2.27109 1.75" rotation="0 -0 65"/>
+				<Keyframe time="1" translation="-0.905431 2.52481 1.75" rotation="0 -0 90"/>
+			</part>
+			<part node="4"> <!--index of segment 4-->
+				<Keyframe time="0" translation="-0.0175004 -9.53674e-008 1.75" rotation="0 -0 0"/>
+				<Keyframe time="0.161" translation="-0.0175004 0.579922 1.75" rotation="0 -0 0"/>
+				<Keyframe time="0.329" translation="-0.0175004 1.18038 1.75" rotation="0 -0 0"/>
+				<Keyframe time="0.497" translation="-0.0175004 1.77982 1.75" rotation="0 -0 35"/>
+				<Keyframe time="0.664" translation="-0.361646 2.27177 1.75" rotation="0 -0 65"/>
+				<Keyframe time="0.832" translation="-0.905431 2.52467 1.75" rotation="0 -0 90"/>
+				<Keyframe time="1" translation="-1.50543 2.52481 1.75" rotation="0 -0 90"/>
+			</part>
+			<part node="5"> <!--index of segment 5-->
+				<Keyframe time="0" translation="-0.0175004 0.6 1.75" rotation="0 -0 0"/>
+				<Keyframe time="0.161" translation="-0.0175004 1.17992 1.75" rotation="0 -0 0"/>
+				<Keyframe time="0.329" translation="-0.0271212 1.78038 1.75" rotation="0 -0 35"/>
+				<Keyframe time="0.497" translation="-0.361646 2.27131 1.75" rotation="0 -0 65"/>
+				<Keyframe time="0.664" translation="-0.905431 2.52534 1.75" rotation="0 -0 90"/>
+				<Keyframe time="0.832" translation="-1.50543 2.52467 1.75" rotation="0 -0 90"/>
+				<Keyframe time="1" translation="-2.10543 2.52481 1.75" rotation="0 -0 90"/>
+			</part>
+			<part node="6"> <!--index of segment 6-->
+				<Keyframe time="0" translation="-0.0175004 1.2 1.75" rotation="0 -0 0"/>
+				<Keyframe time="0.161" translation="-0.0175004 1.77992 1.75" rotation="0 -0 35"/>
+				<Keyframe time="0.329" translation="-0.361646 2.27187 1.75" rotation="0 -0 65"/>
+				<Keyframe time="0.497" translation="-0.905431 2.52488 1.75" rotation="0 -0 90"/>
+				<Keyframe time="0.664" translation="-1.50543 2.52534 1.75" rotation="0 -0 90"/>
+				<Keyframe time="0.832" translation="-2.10543 2.52467 1.75" rotation="0 -0 90"/>
+				<Keyframe time="1" translation="-2.70543 2.52481 1.75" rotation="0 -0 90"/>
+			</part>
+		</animation>
+	</animatedObject>
+	<animatedObject index="F2HydLiftDoor1">
+		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open HydroLift Door" negText="Close HydroLift Door" />
+        <sounds>
+			<moving file="mapUS/sounds/hydlift.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+		</sounds>
+        <animation initialTime="0" duration="6">
+            <part node="1"> <!-- DOOR -->
+				<keyFrame time="0.01" translation="0.365 4.998 -0.084" rotation="0 0 0" /> 
+				<keyFrame time="0.20" translation="0.365 4.998 -0.084" rotation="18 0 0" /> 
+				<keyFrame time="0.40" translation="0.365 4.998 -0.084" rotation="36 0 0" /> 
+				<keyFrame time="0.60" translation="0.365 4.998 -0.084" rotation="54 0 0" /> 
+				<keyFrame time="0.80" translation="0.365 4.998 -0.084" rotation="72 0 0" /> 
+				<keyFrame time="1.00" translation="0.365 4.998 -0.084" rotation="90 0 0"/>
+            </part>
+			<part node="2"> <!-- CYLINDERS -->
+				<keyFrame time="0.01" translation="0.365 4.106 0.263" rotation="0 0 0" /> 
+				<keyFrame time="0.20" translation="0.365 4.106 0.263" rotation="24.5 0 0" /> 
+				<keyFrame time="0.40" translation="0.365 4.106 0.263" rotation="46.3 0 0" /> 
+				<keyFrame time="0.60" translation="0.365 4.106 0.263" rotation="65.4 0 0" /> 
+				<keyFrame time="0.80" translation="0.365 4.106 0.263" rotation="82.6 0 0" /> 
+				<keyFrame time="1.00" translation="0.365 4.106 0.263" rotation="98.42 0 0"/>
+            </part>
+			<part node="2|0"> <!-- CYLINDER RAMS-->
+				<keyFrame time="0.01" translation="-4.466 -2.099 0.014" /> 
+				<keyFrame time="0.20" translation="-4.466 -2.275 0.005" /> 
+				<keyFrame time="0.40" translation="-4.466 -2.528 -0.008" /> 
+				<keyFrame time="0.60" translation="-4.466 -2.825 -0.022" /> 
+				<keyFrame time="0.80" translation="-4.466 -3.119 -0.034" /> 
+				<keyFrame time="1.00" translation="-4.466 -3.391 -0.047" />
+            </part>
+        </animation>
+    </animatedObject>
+	<animatedObject index="F2shopDoor1">
+		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open Door" negText="Close Door" />
+		 <sounds>
+			<moving file="mapUS/sounds/OpenGateDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+		</sounds>
+		<animation initialTime="0" duration="2">
+			<part node="1"> <!--index of Door node-->
+				<keyFrame time="0" rotation="0 0 0" />
+				<keyFrame time="1" rotation="0 90 0" />
+			</part>
+			</animation>
+	</animatedObject>
+	<animatedObject index="F2quonsetDoor1">
+		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open Door" negText="Close Door" />
+		<sounds>
+			<moving file="mapUS/sounds/OpenGateDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+		</sounds>
+		<animation initialTime="0" duration="2">
+			<part node="1"> <!--index of Door node-->
+				<keyFrame time="0" rotation="0 0 0" />
+				<keyFrame time="1" rotation="0 90 0" />
+			</part>
+		</animation>
+	</animatedObject>
+	<animatedObject index="F2quonsetSlide1">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open Barn Door" negText="Close Barn Door" />
+		<sounds>
+			<moving file="mapUS/sounds/OpenDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+		</sounds>
+        <animation initialTime="0" duration="8">
+            <part node="1">
+                <keyFrame time="0.00" translation="0 0 -1.727" />
+                <keyFrame time="1.00" translation="0 0 -4.512" />
+            </part>
+			
+			<part node="2">
+                <keyFrame time="0.53" translation="0 0 1.663" />
+                <keyFrame time="1.00" translation="0 0 4.544" />
+            </part>
+        </animation>
+	</animatedObject>
+	<animatedObject index="F5dbl1">
+		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open Barn Door" negText="Close Barn Door" />
+		<sounds>
+			<moving file="mapUS/sounds/slidedoor.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+		</sounds>
+		<animation initialTime="0" duration="4">
+			<part node="1"> <!--index of left Door node-->
+				<keyFrame time="0" rotation="0 0 0" />
+				<keyFrame time="0.8" rotation="0 -120 0" />
+				<keyFrame time="1" rotation="0 -120 0" />
+			</part>
+			<part node="2"> <!--index of right Door node-->
+				<keyFrame time="0" rotation="0 0 0" />
+				<keyFrame time="0.2" rotation="0 0 0" />
+				<keyFrame time="1" rotation="0 120 0" />
+			</part>
+		</animation>
+	</animatedObject>
+	<animatedObject index="F5skirts1">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open Barn Door" negText="Close Barn Door" />
+		<sounds>
+			<moving file="mapUS/sounds/OpenDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+		</sounds>
+        <animation initialTime="0" duration="8">
+            <part node="1">
+				<keyFrame time="0.00" translation="48.362 -0.406 -2.358" />
+                <keyFrame time="1.00" translation="48.362 0.944 -2.358" />
+            </part>
+			<part node="2">
+                <keyFrame time="0.53" translation="48.362 -0.418 31.257" />
+                <keyFrame time="1.00" translation="48.362 0.962 31.257" />
+            </part>
+        </animation>
+	</animatedObject>
+	<animatedObject index="F5light2">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Turn Lights on" negText="Turn Lights Off" />
+        <sounds>
+            <moving file="mapUS/sounds/blinker.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+        </sounds>
+        <animation initialTime="0" duration="0.01">
+			<part node="1">
+                <keyFrame time="0.00" translation="0.05 -0.006 -1.794" rotation="-90 -90 90"/><!-- light switch flick -->
+                <keyFrame time="1" translation="0.05 -0.006 -1.794" rotation="-90 90 90" />
+			</part>
+            <part node="2|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+            <part node="3|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+            <part node="4|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+            <part node="5|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+            <part node="6|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+            <part node="7|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+        </animation>
+    </animatedObject>
+	    <animatedObject index="F2RollDoor2">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open Garage Door" negText="Close Garage Door" />
+		<sounds>
+			<moving file="mapUS/sounds/OpenElectricDoorSound.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+		</sounds>
+        <animation initialTime="0" duration="4">
+            <part node="1">
+                <keyFrame time="0.00" translation="0 3.729 0" rotation="0 0 0"/>
+				<keyFrame time="0.15" translation="0 4.451 0" rotation="-45 0 0"/>
+				<keyFrame time="0.30" translation="0 4.976 -0.525" rotation="-75.4 0 0"/>
+				<keyFrame time="0.45" translation="0 5.165 -1.237" rotation="-90 0 0"/>
+				<keyFrame time="0.60" translation="0 5.165 -1.976" rotation="-90 0 0"/>
+				<keyFrame time="0.75" translation="0 5.165 -2.717" rotation="-90 0 0"/>
+                <keyFrame time="0.90" translation="0 5.165 -3.460" rotation="-90 0 0"/>
+            </part>
+			      <part node="2">
+                <keyFrame time="0.00" translation="0 2.984 0" rotation="0 0 0"/>
+				<keyFrame time="0.15" translation="0 3.729 0" rotation="0 0 0"/>
+				<keyFrame time="0.30" translation="0 4.451 0" rotation="-45 0 0"/>
+				<keyFrame time="0.45" translation="0 4.976 -0.525" rotation="-75.4 0 0"/>
+				<keyFrame time="0.60" translation="0 5.165 -1.237" rotation="-90 0 0"/>
+				<keyFrame time="0.75" translation="0 5.165 -1.976" rotation="-90 0 0"/>
+				<keyFrame time="0.90" translation="0 5.165 -2.717" rotation="-90 0 0"/>
+            </part>
+			<part node="3">
+                <keyFrame time="0.00" translation="0 2.232 0" rotation="0 0 0"/>
+				<keyFrame time="0.15" translation="0 2.984 0" rotation="0 0 0"/>
+				<keyFrame time="0.30" translation="0 3.729 0" rotation="0 0 0"/>
+				<keyFrame time="0.45" translation="0 4.451 0" rotation="-45 0 0"/>
+				<keyFrame time="0.60" translation="0 4.976 -0.525" rotation="-75.4 0 0"/>
+				<keyFrame time="0.75" translation="0 5.165 -1.237" rotation="-90 0 0"/>
+				<keyFrame time="0.90" translation="0 5.165 -1.976" rotation="-90 0 0"/>
+            </part>
+			<part node="4">
+                <keyFrame time="0.00" translation="0 1.498 0" rotation="0 0 0"/>
+				<keyFrame time="0.15" translation="0 2.232 0" rotation="0 0 0"/>
+				<keyFrame time="0.30" translation="0 2.984 0" rotation="0 0 0"/>
+				<keyFrame time="0.45" translation="0 3.729 0" rotation="0 0 0"/>
+				<keyFrame time="0.60" translation="0 4.451 0" rotation="-45 0 0"/>
+				<keyFrame time="0.75" translation="0 4.976 -0.525" rotation="-75.4 0 0"/>
+				<keyFrame time="0.90" translation="0 5.165 -1.237" rotation="-90 0 0"/>
+            </part>
+			<part node="5">
+                <keyFrame time="0.00" translation="0 0.757 0" rotation="0 0 0"/>
+				<keyFrame time="0.15" translation="0 1.498 0" rotation="0 0 0"/>
+				<keyFrame time="0.30" translation="0 2.232 0" rotation="0 0 0"/>
+				<keyFrame time="0.45" translation="0 2.984 0" rotation="0 0 0"/>
+				<keyFrame time="0.60" translation="0 3.729 0" rotation="0 0 0"/>
+				<keyFrame time="0.75" translation="0 4.451 0" rotation="-45 0 0"/>
+				<keyFrame time="0.90" translation="0 4.976 -0.525" rotation="-75.4 0 0"/>
+            </part>
+			<part node="6">
+                <keyFrame time="0.00" translation="0 0.012 0" rotation="0 0 0"/>
+				<keyFrame time="0.15" translation="0 0.757 0" rotation="0 0 0"/>
+				<keyFrame time="0.30" translation="0 1.498 0" rotation="0 0 0"/>
+				<keyFrame time="0.45" translation="0 2.232 0" rotation="0 0 0"/>
+				<keyFrame time="0.60" translation="0 2.984 0" rotation="0 0 0"/>
+				<keyFrame time="0.75" translation="0 3.729 0" rotation="0 0 0"/>
+				<keyFrame time="0.90" translation="0 4.451 0" rotation="-45 0 0"/>
+            </part>
+        </animation>
+    </animatedObject>
+	<animatedObject index="F5light3">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Turn Lights on" negText="Turn Lights Off" />
+        <sounds>
+            <moving file="mapUS/sounds/blinker.wav" loops="0" linkNode="0" volume="0.8" radius="25" innerRadius="3" fadeOut="0.25"/>
+        </sounds>
+        <animation initialTime="0" duration="0.01">
+			<part node="1">
+                <keyFrame time="0.00" translation="0.05 -0.006 -1.794" rotation="-90 -90 90"/><!-- light switch flick -->
+                <keyFrame time="1" translation="0.05 -0.006 -1.794" rotation="-90 90 90" />
+			</part>
+            <part node="2|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+            <part node="3|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+            <part node="4|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+            <part node="5|0"> <!--index of TG with realLights and emmisive shape-->
+                <keyFrame time="0.5" visibility="false" />
+                <keyFrame time="0.55" visibility="true" />
+            </part>
+        </animation>
+    </animatedObject>
+	<animatedObject index="manDoor">
+			<animation duration="2">
+				<part node="2">
+					<keyFrame time="0.0" rotation="0 0 0"/>
+					<keyFrame time="1.0" rotation="0 100 0"/>
+				</part>
+			</animation>
+			<controls triggerNode="1" posAction="ACTIVATE_HANDTOOL" posText="Open Door" negText="Close Door"/>
+			<sounds>
+				<moving linkNode="1" template="glassDoorLoop" />
+                <negEnd linkNode="1" template="metalDoorsClose" />
+			</sounds>
+		</animatedObject>
+		<animatedObject index="garagedoor">
+					<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open Door" negText="Close Door" />
+					<sound file="maps/sounds/OpenElectricDoorSound.wav" pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" />
+					<animation initialTime="0" duration="4">
+						<part node="1"> <!--index of segment 1-->
+							<keyFrame time="0.0" translation="0 0.012 0" rotation="0 -0 0"/>
+							<keyFrame time="0.161" translation="0 0.757 0" rotation="0 -0 0"/>
+							<keyFrame time="0.329" translation="0 1.498 0" rotation="0 -0 0"/>
+							<keyFrame time="0.497" translation="0 2.232 0" rotation="0 -0 0"/>
+							<keyFrame time="0.664" translation="0 2.984 0" rotation="0 -0 0"/>
+							<keyFrame time="0.832" translation="0 3.729 0" rotation="0 0 0"/>
+							<keyFrame time="1.0" translation="0 4.527 0" rotation="-45 -0 0"/>
+						</part>
+						<part node="2"> <!--index of segment 2-->
+							<keyFrame time="0.0" translation="0 0.757 0" rotation="0 -0 0"/>
+							<keyFrame time="0.161" translation="0 1.498 0" rotation="0 -0 0"/>
+							<keyFrame time="0.329" translation="0 2.232 0" rotation="0 -0 0"/>
+							<keyFrame time="0.497" translation="0 2.984 0" rotation="0 -0 0"/>
+							<keyFrame time="0.664" translation="0 3.729 0" rotation="0 0 0"/>
+							<keyFrame time="0.832" translation="0 4.527 0" rotation="-45 -0 0"/>
+							<keyFrame time="1.0" translation="0 5.185 -0.724" rotation="-90 -0 0"/>
+						</part>
+						<part node="3"> <!--index of segment 3-->
+							<keyFrame time="0.0" translation="0 1.498 0" rotation="0 -0 0"/>
+							<keyFrame time="0.161" translation="0 2.232 0" rotation="0 -0 0"/>
+							<keyFrame time="0.329" translation="0 2.984 0" rotation="0 -0 0"/>
+							<keyFrame time="0.497" translation="0 3.729 0" rotation="0 0 0"/>
+							<keyFrame time="0.664" translation="0 4.527 0" rotation="-45 -0 0"/>
+							<keyFrame time="0.832" translation="0 5.185 -0.724" rotation="-90 -0 0"/>
+							<keyFrame time="1.0" translation="0 5.185 -1.522" rotation="-90 -0 0"/>
+						</part>
+						<part node="4"> <!--index of segment 4-->
+							<keyFrame time="0.0" translation="0 2.232 0" rotation="0 -0 0"/>
+							<keyFrame time="0.161" translation="0 2.984 0" rotation="0 -0 0"/>
+							<keyFrame time="0.329" translation="0 3.729 0" rotation="0 0 0"/>
+							<keyFrame time="0.497" translation="0 4.527 0" rotation="-45 -0 0"/>
+							<keyFrame time="0.664" translation="0 5.185 -0.724" rotation="-90 -0 0"/>
+							<keyFrame time="0.832" translation="0 5.185 -1.522" rotation="-90 -0 0"/>
+							<keyFrame time="1.0" translation="0 5.185 -2.32" rotation="-90 -0 0"/>
+						</part>
+						<part node="5"> <!--index of segment 5-->
+							<keyFrame time="0.0" translation="0 2.984 0" rotation="0 -0 0"/>
+							<keyFrame time="0.161" translation="0 3.729 0" rotation="0 0 0"/>
+							<keyFrame time="0.329" translation="0 4.527 0" rotation="-45 -0 0"/>
+							<keyFrame time="0.497" translation="0 5.185 -0.724" rotation="-90 -0 0"/>
+							<keyFrame time="0.664" translation="0 5.185 -1.522" rotation="-90 -0 0"/>
+							<keyFrame time="0.832" translation="0 5.185 -2.32" rotation="-90 -0 0"/>
+							<keyFrame time="1.0" translation="0 5.185 -3.118" rotation="-90 -0 0"/>
+						</part>
+						<part node="6"> <!--index of segment 6-->
+							<keyFrame time="0.0" translation="0 3.729 0" rotation="0 -0 0"/>
+							<keyFrame time="0.161" translation="0 4.527 0" rotation="-45 -0 0"/>
+							<keyFrame time="0.329" translation="0 5.185 -0.724" rotation="-90 -0 0"/>
+							<keyFrame time="0.497" translation="0 5.185 -1.522" rotation="-90 -0 0"/>
+							<keyFrame time="0.664" translation="0 5.185 -2.32" rotation="-90 -0 0"/>
+							<keyFrame time="0.832" translation="0 5.185 -3.118" rotation="-90 -0 0"/>
+							<keyFrame time="1.0" translation="0 5.185 -3.916" rotation="-90 -0 0"/>
+						</part>
+					</animation>
+	</animatedObject>
+	<animatedObject index="swinggate">
+        <controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open Gate" negText="Close Gate" />
+        <animation initialTime="0" duration="3">
+			<part node="1">
+                <keyFrame time="0.15" rotation="0 0 0" />
+                <keyFrame time="1" rotation="0 -90 0"  />
+            </part>	
+        </animation>
+	</animatedObject>
+	<animatedObject index="fieldGate2">
+		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open Gate" negText="Close Gate" />
+		<sound file="maps/sounds/OpenGateDoorSound.wav" pitchOffset="1.00" volume="0.40" indoorVolumeFactor="0.55" indoorLowpassGain="0.85" pitchMax="1.15" />
+		<animation initialTime="0" duration="2">
+			<part node="1"> <!--index of Door node-->
+				<keyFrame time="0" rotation="0 0 0" />
+				<keyFrame time="1" rotation="0 -90 0" />
+			</part>
+		</animation>
+	</animatedObject>
+</animatedObjects>

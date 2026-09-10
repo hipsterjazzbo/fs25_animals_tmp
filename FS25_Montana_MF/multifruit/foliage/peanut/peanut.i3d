@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="peanut.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/shaders/fruitGrowthFoliageShader.xml"/>
+    <File fileId="8" filename="AmendoimComFlor_alpha.dds"/>
+    <File fileId="7" filename="AmendoimComFlor_diffuse.dds"/>
+    <File fileId="6" filename="AmendoimEstagio3_alpha.dds"/>
+    <File fileId="5" filename="AmendoimEstagio3_diffuse.dds"/>
+    <File fileId="4" filename="AmendoimPrimeiroEstagio_alpha.dds"/>
+    <File fileId="1" filename="AmendoimPrimeiroEstagio_diffuse.dds"/>
+    <File fileId="11" filename="AmendoinMorto_diffuse.dds"/>
+    <File fileId="10" filename="Amendoin_alpha.dds"/>
+    <File fileId="9" filename="Amendoin_diffuse.dds"/>
+    <File fileId="13" filename="foliage_peanut_distance2_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="Amendoim_mat" materialId="5" customShaderId="2">
+      <Texture fileId="9"/>
+      <Custommap name="alphaMap" fileId="10"/>
+    </Material>
+    <Material name="Amendoim_mat1" materialId="6" customShaderId="2">
+      <Texture fileId="7"/>
+      <Custommap name="alphaMap" fileId="8"/>
+    </Material>
+    <Material name="Amendoim_mat1" materialId="7" customShaderId="2">
+      <Texture fileId="5"/>
+      <Custommap name="alphaMap" fileId="6"/>
+    </Material>
+    <Material name="Amendoim_mat1" materialId="8" customShaderId="2">
+      <Texture fileId="1"/>
+      <Custommap name="alphaMap" fileId="4"/>
+    </Material>
+    <Material name="AmendoimMorto_mat" materialId="9" customShaderId="2">
+      <Texture fileId="11"/>
+      <Custommap name="alphaMap" fileId="10"/>
+    </Material>
+    <Material name="cutHaulmLOD_mat" materialId="10" customShaderId="2" customShaderVariation="PLANT_ROWS">
+      <Texture fileId="13"/>
+    </Material>
+    <Material name="parsnipHarvestReady_mat" materialId="11" customShaderId="2" customShaderVariation="PLANT_ROWS">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="peanut.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="peanut" nodeId="50">
+      <TransformGroup name="LOD0" nodeId="51">
+        <Shape name="AmendoimPrimeiroEstagio" scale="1.49628 1.49628 1.49628" shapeId="1" clipDistance="300" nodeId="52" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="8"/>
+        <Shape name="AmendoimSegundoEstagio" shapeId="2" clipDistance="300" nodeId="53" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="7"/>
+        <Shape name="AmendoimTerceiroEstagio" shapeId="3" clipDistance="300" nodeId="54" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="6"/>
+        <Shape name="AmendoimUltimoEstagio" shapeId="3" clipDistance="300" nodeId="55" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="5"/>
+        <Shape name="AmendoimMorto" shapeId="4" clipDistance="300" nodeId="56" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="9"/>
+        <Shape name="cutHaulm" shapeId="5" visibility="false" clipDistance="500" nodeId="57" castsShadows="true" receiveShadows="true" materialIds="11">
+          <Shape name="ch2" shapeId="6" clipDistance="500" nodeId="58" castsShadows="true" receiveShadows="true" materialIds="11"/>
+          <Shape name="ch3" shapeId="7" clipDistance="500" nodeId="59" castsShadows="true" receiveShadows="true" materialIds="11"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="LOD1" scale="0.532783 0.573563 0.532783" nodeId="60">
+        <Shape name="greenSmall" shapeId="8" clipDistance="500" nodeId="61" castsShadows="false" receiveShadows="true" nonRenderable="true" materialIds="10">
+          <Shape name="gs2" shapeId="9" clipDistance="500" nodeId="62" castsShadows="false" receiveShadows="true" materialIds="10"/>
+          <Shape name="gs3" shapeId="10" clipDistance="500" nodeId="63" castsShadows="false" receiveShadows="true" materialIds="10"/>
+          <Shape name="gs1_x_inv" shapeId="11" clipDistance="500" nodeId="64" castsShadows="false" receiveShadows="true" materialIds="10"/>
+          <Shape name="gs2_x_inv" shapeId="12" clipDistance="500" nodeId="65" castsShadows="false" receiveShadows="true" materialIds="10"/>
+          <Shape name="gs3_x_inv" shapeId="13" clipDistance="500" nodeId="66" castsShadows="false" receiveShadows="true" materialIds="10"/>
+        </Shape>
+        <Shape name="greenMiddle" shapeId="14" clipDistance="500" nodeId="67" castsShadows="false" receiveShadows="true" nonRenderable="true" materialIds="10">
+          <Shape name="gm2" shapeId="15" clipDistance="500" nodeId="68" castsShadows="false" receiveShadows="true" materialIds="10"/>
+          <Shape name="gm3" shapeId="16" clipDistance="500" nodeId="69" castsShadows="false" receiveShadows="true" materialIds="10"/>
+          <Shape name="gm1_x_inv" shapeId="17" clipDistance="500" nodeId="70" castsShadows="false" receiveShadows="true" materialIds="10"/>
+          <Shape name="gm2_x_inv" shapeId="18" clipDistance="500" nodeId="71" castsShadows="false" receiveShadows="true" materialIds="10"/>
+          <Shape name="gm3_x_inv" shapeId="19" clipDistance="500" nodeId="72" castsShadows="false" receiveShadows="true" materialIds="10"/>
+        </Shape>
+        <Shape name="greenBig" shapeId="20" clipDistance="500" nodeId="73" castsShadows="false" receiveShadows="true" nonRenderable="true" materialIds="10">
+          <Shape name="gb2" shapeId="21" clipDistance="500" nodeId="74" castsShadows="false" receiveShadows="true" materialIds="10"/>
+          <Shape name="gb3" shapeId="22" clipDistance="500" nodeId="75" castsShadows="false" receiveShadows="true" materialIds="10"/>
+          <Shape name="gb1_x_inv" shapeId="23" clipDistance="500" nodeId="76" castsShadows="false" receiveShadows="true" materialIds="10"/>
+          <Shape name="gb2_x_inv" shapeId="24" clipDistance="500" nodeId="77" castsShadows="false" receiveShadows="true" materialIds="10"/>
+          <Shape name="gb3_x_inv" shapeId="25" clipDistance="500" nodeId="78" castsShadows="false" receiveShadows="true" materialIds="10"/>
+        </Shape>
+        <Shape name="harvestReady" shapeId="26" clipDistance="500" nodeId="79" castsShadows="false" receiveShadows="true" nonRenderable="true" materialIds="10">
+          <Shape name="hr2" shapeId="27" clipDistance="500" nodeId="80" castsShadows="false" receiveShadows="true" materialIds="10"/>
+          <Shape name="hr3" shapeId="28" clipDistance="500" nodeId="81" castsShadows="false" receiveShadows="true" materialIds="10"/>
+          <Shape name="hr1_x_inv" shapeId="29" clipDistance="500" nodeId="82" castsShadows="false" receiveShadows="true" materialIds="10"/>
+          <Shape name="hr2_x_inv" shapeId="30" clipDistance="500" nodeId="83" castsShadows="false" receiveShadows="true" materialIds="10"/>
+          <Shape name="hr3_x_inv" shapeId="31" clipDistance="500" nodeId="84" castsShadows="false" receiveShadows="true" materialIds="10"/>
+        </Shape>
+        <Shape name="dead" shapeId="32" clipDistance="500" nodeId="85" castsShadows="false" receiveShadows="true" nonRenderable="true" materialIds="10">
+          <Shape name="dead2" shapeId="33" clipDistance="500" nodeId="86" castsShadows="false" receiveShadows="true" materialIds="10"/>
+          <Shape name="dead3" shapeId="34" clipDistance="500" nodeId="87" castsShadows="false" receiveShadows="true" materialIds="10"/>
+        </Shape>
+        <Shape name="cutHaulm" shapeId="35" clipDistance="500" nodeId="88" castsShadows="false" receiveShadows="true" nonRenderable="true" materialIds="10">
+          <Shape name="ch2" shapeId="36" clipDistance="500" nodeId="89" castsShadows="false" receiveShadows="true" materialIds="10"/>
+          <Shape name="ch3" shapeId="37" clipDistance="500" nodeId="90" castsShadows="false" receiveShadows="true" materialIds="10"/>
+        </Shape>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

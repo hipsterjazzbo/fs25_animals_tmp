@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CustomShader version="5">
+    <Groups>
+        <Group name="alphaNoise" define="ALPHA_GRADIENT"/>
+        <Group name="customParallax" define="CUSTOM_PARALLAX"/>
+    </Groups>
+    <Parameters>
+        <Parameter name="uvScale" target="uvScale" type="float4" group="base" defaultValue="0.5 0.5 0.5 0.5" description="XY - scaler multiplication on triplnar projected uv&apos;s"/>
+        <Parameter name="snowScale" target="snowScale" type="float" group="base" defaultValue="0.6" minValue="0.0" maxValue="1.0" description="X - snow scale amount"/>
+        <Parameter name="wetnessScale" target="wetnessScale" type="float" group="base" defaultValue="1.0" minValue="0.0" maxValue="1.0" description="X - wetness scale amount"/>
+        <Parameter name="porosityBySmoothness" target="porosityBySmoothness" type="float2" group="base" defaultValue="0.0 1.0" minValue="0.0 0.0" maxValue="2.0 2.0" description="X - porosityAtZeroRoughness\nY - porosityRoughnessSlope (set it to 0.0 if you don&apos;t want darkening)\nporosity = porosityAtZeroRoughness + roughness * porosityRoughnessSlope"/>
+        <Parameter name="wetShininess" target="wetShininess" type="float" group="base" defaultValue="0.2" minValue="-1.0" maxValue="1.0" description="X - how shiny a wet surface become"/>
+        <Parameter name="colorTint" target="colorTint" type="float3" group="base" defaultValue="0.0 0.0 0.0" minValue="-1.0 -1.0 -1.0" maxValue="1.0 1.0 1.0" description="saturate(diffuseColor + XYZ) - makes diffuseColor darker or brighter, XYZ - can be negative"/>
+        <Parameter name="alphaShift" target="alphaShift" type="float" group="alphaNoise" defaultValue="0.1" minValue="0.01" maxValue="0.99" description="X - offset in mBlendedAlpha.X alphaNoise texture used with smoothstep, controlled via vertexColor.A"/>
+        <Parameter name="contrastLuminiosity" target="contrastLuminiosity" type="float2" group="alphaMap" defaultValue="1.0 0.0" minValue="-1.0 -1.0" maxValue="1.0 1.0" description="used in order to tweak alphaMap\nX - contrast\nY - Luminiosity"/>
+    </Parameters>
+    <UvUsages>
+        <UvUsage textureName="baseMap" uvType="uv0" uvScale="1.0"/>
+        <UvUsage textureName="normalMap" uvType="uv0" uvScale="1.0"/>
+        <UvUsage textureName="glossMap" uvType="uv0" uvScale="1.0"/>
+        <UvUsage textureName="alphaMap" uvType="uv0" uvScale="1.0"/>
+        <UvUsage textureName="mParallaxMap" uvType="uv0" uvScale="1.0"/>
+        <UvUsage textureName="mBlendedDiffuse" uvType="worldspace"/>
+        <UvUsage textureName="mBlendedNormal" uvType="worldspace"/>
+        <UvUsage textureName="mBlendedSpecular" uvType="worldspace"/>
+        <UvUsage textureName="mBlendedAlpha" uvType="worldspace"/>
+        <UvUsage textureName="mSnowSpecular" uvType="worldspace"/>
+    </UvUsages>
+    <Textures>
+        <Texture name="mBlendedDiffuse" group="base" defaultColorProfile="sRGB" defaultFilename="default_diffuse.png"/>
+        <Texture name="mBlendedNormal" group="base" defaultColorProfile="linearRGB" defaultFilename="default_normal.png"/>
+        <Texture name="mBlendedSpecular" group="base" defaultColorProfile="linearRGB" defaultFilename="default_specular.png"/>
+        <Texture name="mBlendedAlpha" group="alphaNoise" defaultColorProfile="linearRGB" defaultFilename="blendingNoise.png"/>
+        <Texture name="mSnowSpecular" group="base" defaultColorProfile="linearRGB" defaultFilename="snow_specular.png"/>
+        <Texture name="alphaMap" group="alphaMap" defaultColorProfile="linearRGB" defaultFilename="default_alpha.png"/>
+        <Texture name="mParallaxMap" group="customParallax" defaultColorProfile="linearRGB" defaultFilename="default_height.png"/>
+    </Textures>
+    <VertexAttributes>
+        <VertexAttribute name="color" group="base"/>
+        <VertexAttribute name="uv1" group="uv1"/>
+    </VertexAttributes>
+    <Variations>
+        <Variation name="alphaMap" groups="base alphaMap"><![CDATA[
+    // alpha is loaded from alphaMap
+    #define ALPHA_MAP
+]]></Variation>
+        <Variation name="diffuse_uv2" groups="base uv1">
+            <UvUsages>
+                <UvUsage textureName="baseMap" uvType="uv1" uvScale="1.0"/>
+            </UvUsages><![CDATA[
+    #define DIFFUSE_MAP_UV1
+]]></Variation>
+        <Variation name="customParallax" groups="base customParallax"><![CDATA[
+    #define CUSTOM_PARALLAX
+    #define CUSTOM_PARALLAX_UV0
+]]></Variation>
+        <Variation name="customParallax_uv2" groups="base customParallax uv1">
+            <UvUsages>
+                <UvUsage textureName="mParallaxMap" uvType="uv1" uvScale="1.0"/>
+            </UvUsages><![CDATA[
+    #define CUSTOM_PARALLAX
+    #define CUSTOM_PARALLAX_UV1
+]]></Variation>
+        <Variation name="alphaNoise" groups="base alphaNoise"><![CDATA[
+/*
+    noise texture remapped by vertexColor.a using smoothstep
+*/
+    #define ALPHA_GRADIENT
+]]></Variation>
+        <Variation name="alphaNoise_autumn" groups="base alphaNoise"><![CDATA[
+/*
+    autumnToWinter transition code from treeBranchShader.xml
+    metalness = 0.0;
+    used glossMap.b as temporal offset - LeavesRand
+    Noise texture remapped by vertex.a using smoothstep
+*/
+    #define ALPHA_GRADIENT
+    #define ALPHA_TESTED
+    #define AUTUMN
+]]></Variation>
+        <Variation name="alphaNoise_customParallax" groups="base alphaNoise customParallax"><![CDATA[
+/*
+    noise texture remapped by vertexColor.a using smoothstep
+*/
+    #define ALPHA_GRADIENT
+    #define CUSTOM_PARALLAX
+    #define CUSTOM_PARALLAX_UV0
+]]></Variation>
+        <Variation name="alphaNoise_customParallax_alphaMap" groups="base alphaNoise customParallax alphaMap"><![CDATA[
+/*
+    noise texture remapped by vertexColor.a using smoothstep
+*/
+    #define ALPHA_MAP
+    #define ALPHA_GRADIENT
+    #define CUSTOM_PARALLAX
+    #define CUSTOM_PARALLAX_UV0
+]]></Variation>
+        <Variation name="alphaNoise_customParallax_uv2" groups="base alphaNoise customParallax uv1">
+            <UvUsages>
+                <UvUsage textureName="mParallaxMap" uvType="uv1" uvScale="1.0"/>
+            </UvUsages><![CDATA[
+/*
+    noise texture remapped by vertexColor.a using smoothstep
+*/
+    #define ALPHA_GRADIENT
+    #define CUSTOM_PARALLAX
+    #define CUSTOM_PARALLAX_UV1
+]]></Variation>
+        <Variation name="alphaNoise_alphaMap_customParallax_uv2" groups="base alphaMap alphaNoise customParallax uv1">
+            <UvUsages>
+                <UvUsage textureName="baseMap" uvType="uv1" uvScale="1.0"/>
+                <UvUsage textureName="mParallaxMap" uvType="uv1" uvScale="1.0"/>
+            </UvUsages><![CDATA[
+/*
+    noise texture remapped by vertexColor.a using smoothstep
+*/
+    #define ALPHA_MAP
+    #define ALPHA_GRADIENT
+    #define CUSTOM_PARALLAX
+    #define CUSTOM_PARALLAX_UV1
+    #define DIFFUSE_MAP_UV1
+]]></Variation>
+        <Variation name="terrainFormat" groups="base"><![CDATA[
+/*
+    for mBlended
+    mBlendedNormal.r - normal.r
+    mBlendedNormal.g - normal.g
+    mBlendedNormal.b - smoothness
+    mBlendedNormal.a - parallax height (0 = down, 0.5 = mid, 1 = up) // not used
+
+    smoothness - loaded from mBlendedNormal.r
+*/
+    #define NORMAL_TERRAIN_FORMAT
+]]></Variation>
+        <Variation name="terrainFormat_alphaMap" groups="base alphaMap"><![CDATA[
+    #define NORMAL_TERRAIN_FORMAT
+    #define ALPHA_MAP
+]]></Variation>
+        <Variation name="alphaNoise_terrainFormat" groups="base alphaNoise"><![CDATA[
+    #define NORMAL_TERRAIN_FORMAT
+    #define ALPHA_GRADIENT
+]]></Variation>
+        <Variation name="alphaNoise_terrainFormat_alphaMap" groups="base alphaNoise alphaMap"><![CDATA[
+    #define NORMAL_TERRAIN_FORMAT
+    #define ALPHA_GRADIENT
+    #define ALPHA_MAP
+]]></Variation>
+        <Variation name="alphaNoise_terrainFormat_customParallax" groups="base alphaNoise customParallax"><![CDATA[
+    #define NORMAL_TERRAIN_FORMAT
+    #define ALPHA_GRADIENT
+    #define CUSTOM_PARALLAX
+    #define CUSTOM_PARALLAX_UV0
+]]></Variation>
+        <Variation name="alphaNoise_terrainFormat_customParallax_alphaMap" groups="base alphaNoise customParallax alphaMap"><![CDATA[
+    #define NORMAL_TERRAIN_FORMAT
+    #define ALPHA_GRADIENT
+    #define CUSTOM_PARALLAX
+    #define CUSTOM_PARALLAX_UV0
+    #define ALPHA_MAP
+]]></Variation>
+    </Variations>
+    <LodLevel startDistance="0" alphaForceMode="use">
+        <CodeInjections>
+            <CodeInjection position="SHARED_START"><![CDATA[
+#if defined(CUSTOM_PARALLAX)
+    #define PARALLAX_MAP
+    #define HEIGHT_MAP_TEXTURE mParallaxMap
+    #define HEIGHT_MAP_CHANNEL x
+#endif
+#if defined(PARALLAX_MAP)
+    #if GPU_PROFILE < GPU_PROFILE_HIGH
+        #undef PARALLAX_MAPPING
+    #endif
+    // use simple version of parallax
+    #undef PARALLAX_OCCLUSION_MAPPING
+#endif
+]]></CodeInjection>
+            <CodeInjection position="CONFIG_DEFINES"><![CDATA[/*
+#if !defined(ALPHA_BLENDED)
+    #if defined(ALPHA_MAP) || defined(ALPHA_GRADIENT)
+        #define ALPHA_TESTED
+    #endif
+#endif*/
+]]></CodeInjection>
+            <CodeInjection position="OBJECT_PARAMETERS"><![CDATA[
+/*
+    uvScale.xy - scaler multiplication on triplnar projected uv's
+*/
+    float4 uvScale;
+    float3 colorTint;
+    float  snowScale;
+    float  wetnessScale;
+/*
+    porosityBySmoothness.x - porosityAtZeroRoughness
+    porosityBySmoothness.y - porosityRoughnessSlope (set it to 0.0 if you don't want darkening)
+    porosity = porosityAtZeroRoughness + roughness * porosityRoughnessSlope;
+*/
+    float2 porosityBySmoothness;
+    float wetShininess;
+#if defined( ALPHA_GRADIENT )
+/*
+    alphaShift - offset in noise texture used with smoothstep, controlled via VertexColor.a
+*/
+    float alphaShift;
+#endif
+#if defined( ALPHA_MAP )
+    // contrastLuminiosity - used in order to tweak the alphaMap
+    float2 contrastLuminiosity;
+#endif
+]]></CodeInjection>
+            <CodeInjection position="VS_OUTPUT"><![CDATA[
+#if defined(CUSTOM_PARALLAX_UV1) || defined(DIFFUSE_MAP_UV1)
+    float2 genericTexCoords2 : TEXCOORDn;
+#endif
+    float3 fullWorldPosition : TEXCOORDn;
+]]></CodeInjection>
+            <CodeInjection position="POST_SET_TEXCOORDS_VS"><![CDATA[
+#if defined(CUSTOM_PARALLAX_UV1) || defined(DIFFUSE_MAP_UV1)
+    // Pass second UVSet to the Pixel Shader
+    Out.genericTexCoords2  = convertDefaultTexCoords(In, object, In.texCoords1.xy);
+#endif
+]]></CodeInjection>
+            <CodeInjection position="VS_END"><![CDATA[
+    float3 fullWorldPosition = worldPosition + float3(invViewMatrix[0][3], invViewMatrix[1][3], invViewMatrix[2][3]);
+    Out.fullWorldPosition = fullWorldPosition;
+]]></CodeInjection>
+            <CodeInjection position="LIB_FUNCTION"><![CDATA[
+// Custom pixel/vertex functions
+#include "$data/shaders/sharedFunctions.gsl"
+// Extra functions related to the vertexPaintShader only
+]]></CodeInjection>
+            <CodeInjection position="LIB_FUNCTION_VS"><![CDATA[
+// Custom vertex functions
+#include "$data/shaders/sharedFunctions_vs.gsl"
+// Extra functions related to the vertexPaintShader only
+]]></CodeInjection>
+            <CodeInjection position="LIB_FUNCTION_FS"><![CDATA[
+// Custom pixel functions
+#include "$data/shaders/sharedFunctions_fs.gsl"
+// Extra functions related to the vertexPaintShader only
+
+// cShared4 = 0 .. 1 = snow control
+float getSnowMaskCustom(ObjectParameters& object, float3 mNormal, float mBackfaceScale, float mAlpha, float mAlphaThreshold){
+    float snowLevel = getSnowLevelClamped();
+    float mTransition = (1 - snowLevel)*(1 - snowLevel); // pow(snowLevel,2);
+    float NdotY = mNormal.y; // dot(mNormal, float3(0.0, 1.0, 0.0));
+    NdotY = max(NdotY * mBackfaceScale, NdotY * (1.0-mBackfaceScale)) + mBackfaceScale;
+    float mSnowMask = saturate(alphaGradient(mAlpha,NdotY,mAlphaThreshold)-mTransition);
+    return mSnowMask;
+}
+]]></CodeInjection>
+            <CodeInjection position="FS_GLOBALS"><![CDATA[
+    float  gSnowMask;
+    bool   gIsSnowing;
+    float3 gSnowDiffuse;
+    float3 gSnowSpecular;
+    float  gSnowMaskGradient;
+    bool   gIsWetActivated;
+    float  gWetnessMask;
+/*
+globals.gVertexColor.r - opacity  for mBlendedDiffuse [ 0 - mBlendedDiffuse  not visible, 1 - fully visible ]
+globals.gVertexColor.g - softness for mBlendedDiffuse [ 0 - sharp transition, 1 - soft transition ]
+globals.gVertexColor.b - snow visibility [ 0 - no snow, 1 - with snow ]
+globals.gVertexColor.a - gradient multiplied with noise, used in ALPHA_GRADIENT
+*/
+    float4 gVertexColor;
+    float  gBlendingMask;
+    float4 gBlendedDiffuse;
+    float4 gBlendedNormal;
+    float4 gBlendedSpecular;
+    float2 gUVs;
+#if defined( ALPHA_GRADIENT )
+    float  gBlendingAlpha;
+#endif
+#if defined( AUTUMN )
+    float gSeason;              // current season 0,1,2,3,4
+#endif
+]]></CodeInjection>
+            <CodeInjection position="START_FS"><![CDATA[
+    globals.gVertexColor = In.vs.vertexColor.rgba;
+    globals.gUVs = ALBEDO_MAP_TEXCOORDS;
+    {
+        float3 mAbsNormal = abs(In.vs.worldNormal);
+        mAbsNormal /= (mAbsNormal.x + mAbsNormal.y + mAbsNormal.z);
+        float2 texCoordsX = In.vs.fullWorldPosition.zy; // yz
+        float2 texCoordsY = In.vs.fullWorldPosition.zx; // xz
+        float2 texCoordsZ = In.vs.fullWorldPosition.xy;
+        float2 uvs = mAbsNormal.x > mAbsNormal.y ? (mAbsNormal.x > mAbsNormal.z ? texCoordsX : texCoordsZ) : (mAbsNormal.y > mAbsNormal.z ? texCoordsY : texCoordsZ);
+        // use ganarted uv's for blended diffuse/normal/specular
+        globals.gUVs = uvs;
+        // use hardcoded snow color, no texture
+        globals.gSnowDiffuse  = float3(0.7300,0.7668,0.8356);
+        // snow texture is 1024x1024 so we need to scale uv's
+        globals.gSnowSpecular = tex2DSample( mSnowSpecular, standardMaterialSampler, 0.5*uvs ).rgb;
+        globals.gSnowMaskGradient = tex2DSample( mSnowSpecular, standardMaterialSampler, 0.1*uvs ).a;
+        globals.gSnowMaskGradient = lerp(globals.gSnowMaskGradient,1.0,globals.gVertexColor.b) - (1-object.snowScale);
+        globals.gSnowMask  = 0.0;
+        globals.gIsSnowing = cShared4 > 0.001 && object.snowScale > 0.0;
+        globals.gIsWetActivated = cWetness > 0.001 && object.wetnessScale > 0.0;
+        globals.gWetnessMask = cWetness * object.wetnessScale * getRainOcclusionFactor(getWorldPosition(In));
+    }
+    globals.gUVs *= object.uvScale.xy;
+#if defined( AUTUMN )
+    globals.gSeason = cShared3; // current season
+#endif
+]]></CodeInjection>
+            <CodeInjection position="GET_BUMP_HEIGHT_AT_WITH_GRAD_FS"><![CDATA[
+#if defined(CUSTOM_PARALLAX_UV0)
+    return fixDDSCompressionHeightMap(tex2DSampleGrad(mParallaxMap, standardMaterialSampler, uv, layer, gradX, gradY).x);
+#elif defined(CUSTOM_PARALLAX_UV1)
+    return fixDDSCompressionHeightMap(tex2DSampleGrad(mParallaxMap, standardMaterialSampler, In.vs.genericTexCoords2, layer, gradX, gradY).x);
+#endif
+]]></CodeInjection>
+            <CodeInjection position="GET_BUMP_HEIGHT_AT_FS"><![CDATA[
+#if defined(CUSTOM_PARALLAX_UV0)
+    return fixDDSCompressionHeightMap(tex2DSample(mParallaxMap, standardMaterialSampler, uv, layer).x);
+#elif defined(CUSTOM_PARALLAX_UV1)
+    return fixDDSCompressionHeightMap(tex2DSample(mParallaxMap, standardMaterialSampler, In.vs.genericTexCoords2, layer).x);
+#endif
+]]></CodeInjection>
+            <CodeInjection position="GET_BUMP_HEIGHT_TEXTURE_SIZE_FS"><![CDATA[
+#if defined(CUSTOM_PARALLAX)
+    return tex2DSize(mParallaxMap, 0);
+#endif
+]]></CodeInjection>
+            <CodeInjection position="PARALLAX_MAPPING_FS"><![CDATA[
+#if defined(PARALLAX_MAPPING)
+    globals.gUVs += tangentSpaceViewDir.xy * (parallaxHeight *  object.smp.cParallaxValue*2 - object.smp.cParallaxValue);
+#endif
+{
+    // in case we have parallax enabled, we need modify the uv's
+    // before we sample the textures
+    globals.gBlendedDiffuse  = tex2DSample( mBlendedDiffuse ,  standardMaterialSampler, globals.gUVs );
+    globals.gBlendedNormal   = tex2DSample( mBlendedNormal ,   standardMaterialSampler, globals.gUVs );
+    #if !defined( NORMAL_TERRAIN_FORMAT )
+        globals.gBlendedSpecular = tex2DSample( mBlendedSpecular , standardMaterialSampler, globals.gUVs );
+    #endif
+    globals.gBlendingMask  = saturate( ( 1.01*globals.gVertexColor.r - globals.gBlendedDiffuse.a ) / ( 0.01 + globals.gVertexColor.g ) );
+    #if defined( ALPHA_GRADIENT )
+        globals.gBlendingAlpha = tex2DSample( mBlendedAlpha ,  standardMaterialSampler, globals.gUVs ).x;
+    #endif
+}
+]]></CodeInjection>
+            <CodeInjection position="GET_UNNORMALIZED_TANGENT_SPACE_NORMAL_FS"><![CDATA[
+#if defined( NORMAL_MAP ) //&& !defined(PARALLAX_MAP)
+    float3 mNormal;
+    #if defined(CUSTOM_PARALLAX_UV1)
+        mNormal = tex2DSample( normalMap, NORMAL_MAP_SAMPLER, In.vs.genericTexCoords2).xyz - 0.5;
+    #else
+        mNormal = tex2DSample( normalMap, NORMAL_MAP_SAMPLER, NORMAL_MAP_TEXCOORDS).xyz - 0.5;
+    #endif
+    float3 mBlendNormal  = globals.gBlendedNormal.rgb  - 0.5;
+    #if defined( NORMAL_TERRAIN_FORMAT )
+        mBlendNormal.xy = globals.gBlendedNormal.xy;
+        mBlendNormal.z = 1.0;
+        //mBlendNormal.z = sqrt(1.0 - dot(mBlendNormal.xy, mBlendNormal.xy));
+        mBlendNormal.xyz -= 0.5;
+    #endif
+    mNormal = lerp( mNormal.xyz, mNormal.xyz + mBlendNormal.xyz,  globals.gBlendingMask );
+    return mNormal;
+#endif
+]]></CodeInjection>
+            <CodeInjection position="GET_TANGENT_SPACE_NORMAL_FS"><![CDATA[
+#if defined( NORMAL_MAP )
+    return normalize(getUnnormalizedTangentSpaceNormal(In, globals, instance, object));
+#endif
+]]></CodeInjection>
+            <CodeInjection position="POST_DIFFUSE_COLOR_FS"><![CDATA[
+#if defined(ALBEDO_MAP)
+    #if defined(DIFFUSE_MAP_UV1)
+        diffuseColor = tex2DSample(baseMap, ALBEDO_MAP_SAMPLER, In.vs.genericTexCoords2, ALBEDO_MAP_LAYER).xyz;
+    #endif
+    diffuseColor.rgb = lerp( diffuseColor.rgb, globals.gBlendedDiffuse.rgb,  globals.gBlendingMask );
+#endif
+    diffuseColor.rgb = saturate(diffuseColor.rgb + object.colorTint.rgb);
+    { // Snow mixing code
+        if (globals.gIsSnowing){
+            // pixelShader normal computed before this point, right after PARALLAX_MAPPING_FS
+            // globals.gSnowSpecular.g - ambient occlusion used as alpha (should be less than 1.0)
+            globals.gSnowMask = getSnowMaskCustom(object,normal,0.25,globals.gSnowMaskGradient*globals.gSnowSpecular.g,0.25);
+            diffuseColor.rgb = lerp( diffuseColor.rgb, globals.gSnowDiffuse.rgb, globals.gSnowMask );
+        }
+    }
+]]></CodeInjection>
+            <CodeInjection position="POST_GLOSS_COLOR_FS"><![CDATA[
+#if defined( SPECULAR ) && defined( GLOSS_MAP )
+    #if defined(CUSTOM_PARALLAX_UV1)
+    float3 mSpecular  = tex2DSample(glossMap, GLOSS_MAP_SAMPLER, In.vs.genericTexCoords2).rgb;
+    #else
+    float3 mSpecular  = tex2DSample(glossMap, GLOSS_MAP_SAMPLER, GLOSS_MAP_TEXCOORDS).rgb;
+    #endif
+    #if defined( NORMAL_TERRAIN_FORMAT )
+        float3 mSpecularBlended = float3(globals.gBlendedNormal.b,1.0,0.0);
+        mSpecular = lerp( mSpecular.rgb, mSpecularBlended, globals.gBlendingMask );
+    #else
+        mSpecular = lerp( mSpecular.rgb, globals.gBlendedSpecular.rgb, globals.gBlendingMask );
+    #endif
+    roughness = 1.0 - mSpecular.r;
+    bakedAO   = mSpecular.g;
+    metalness = mSpecular.b;
+    #if defined( AUTUMN )
+        metalness = 0.0;
+    #endif
+#endif
+    { // Snow mixing code
+        if (globals.gIsSnowing){
+            float3 mPbrMapValues = lerp( float3(1-roughness,bakedAO,metalness), globals.gSnowSpecular, globals.gSnowMask );
+            roughness = 1-mPbrMapValues.x;
+            bakedAO   = mPbrMapValues.y;
+            metalness = mPbrMapValues.z;
+        }
+    }
+]]></CodeInjection>
+            <CodeInjection position="GET_ADJUSTED_WET_ROUGHNESS_FS"><![CDATA[
+    wetShininess = object.wetShininess;
+]]></CodeInjection>
+            <CodeInjection position="POST_WETNESS_FS"><![CDATA[
+porosityAtZeroRoughness = object.porosityBySmoothness.x;
+porosityRoughnessSlope  = object.porosityBySmoothness.y;
+// porosity = porosityAtZeroRoughness + roughness * porosityRoughnessSlope;
+if(globals.gIsWetActivated) {
+    //porosity = 1.0;
+    wetness = globals.gWetnessMask;
+    // Snow mixing code
+    // temporary wet snow fix, because wetness==1 when isSnowing
+    if (globals.gIsSnowing){
+        porosityRoughnessSlope = lerp(porosityRoughnessSlope, 0.0, globals.gSnowMask);
+    }
+}
+]]></CodeInjection>
+            <CodeInjection position="ALPHA_FS"><![CDATA[
+#if defined(ALPHA_MAP)
+    // load alpha from separate texture
+    alpha = tex2DSample(alphaMap, standardMaterialSampler, ALPHA_MAP_TEXCOORDS).x;
+    alpha = contrastLuminiosity(alpha, object.contrastLuminiosity.x, object.contrastLuminiosity.y).x;
+#endif
+#if defined( ALPHA_GRADIENT ) 
+    alpha *= saturate((-1+globals.gVertexColor.a + globals.gBlendingAlpha+object.alphaShift) / object.alphaShift);
+    #if defined( AUTUMN )
+        if (globals.gSeason >= 1.5 && globals.gSeason < 2.1){
+            float mTransition = fitRange(globals.gSeason,1.5,2.1,0.00,1.00);
+            float mLeavesRand  = tex2DSample(glossMap,GLOSS_MAP_SAMPLER, GLOSS_MAP_TEXCOORDS).b;
+            float autumnToWinter = (1.0-mTransition) < 0.95*mLeavesRand;
+            alpha *= autumnToWinter;
+        } else if (globals.gSeason > 2.1 && globals.gSeason < 2.9 ){
+            float mTransition = fitRange(globals.gSeason,2.1, 2.9, 0.00,1.00);
+            float mLeavesRand  = tex2DSample(glossMap,GLOSS_MAP_SAMPLER, GLOSS_MAP_TEXCOORDS).b;
+            float winterToSpring = mTransition < 0.95*mLeavesRand;
+            alpha *= winterToSpring;
+        } else if (globals.gSeason < 1.5 || globals.gSeason >= 2.9 ) {
+            alpha = 0.0;
+        }
+    #endif
+#endif
+#if defined(ALPHA_BLENDED)
+    reflectingLightingScale = alpha;
+#endif
+]]></CodeInjection>
+            <CodeInjection position="FINAL_POS_FS"><![CDATA[
+#if defined( DEBUG_SHOW_CUSTOM1 )
+    oColor.xyz *= 0.0001;
+    oColor.rgb += globals.gVertexColor.rgb;
+#endif
+#if defined( DEBUG_SHOW_CUSTOM2 )
+    oColor.xyz *= 0.0001;
+    #if defined( ALPHA_MAP )
+    oColor.xyz += alpha;
+    #else
+    oColor.xyz += globals.gVertexColor.a;
+    #endif
+#endif
+]]></CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>

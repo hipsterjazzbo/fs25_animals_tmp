@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Fermenting Silo</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>placeables/icons/harvestor.dds</image>
+        <price>50000</price>
+		<dailyUpkeep>120</dailyUpkeep>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+        <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>0</indexBufferMemoryUsage>
+        <textureMemoryUsage>0</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/fermentingSiloSmall.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement>
+    </placement>
+
+    <clearAreas>
+    </clearAreas>
+
+    <leveling>
+    </leveling>
+
+    <indoorAreas>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="mapPosition" teleportNode="playerTriggerMarker" />
+    </hotspots>
+
+    <dynamicallyLoadedParts>
+    </dynamicallyLoadedParts>
+
+    <triggerMarkers>
+        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIconWrench.i3d"/>
+        <triggerMarker node="markerLoading"   filename="$data/shared/assets/marker/markerIconLoad.i3d" />
+        <triggerMarker node="markerUnloading" filename="$data/shared/assets/marker/markerIconUnload.i3d" />
+    </triggerMarkers>
+
+        <productionPoint>
+		<productions sharedThroughputCapacity="false">
+	
+	<production id="siloGrass" name="$l10n_fillType_grassSilage" cyclesPerHour="30" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="GRASS_WINDROW" amount="550" />
+                </inputs>
+                <outputs>
+                    <output fillType="GRASS_FERMENTED" amount="530" />
+                </outputs>
+            </production>
+	
+	<production id="siloChaff" name="$l10n_fillType_silage" cyclesPerHour="30" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="CHAFF" amount="550" />
+                </inputs>
+                <outputs>
+                    <output fillType="SILAGE" amount="530" />
+                </outputs>
+            </production>
+	
+	<production id="siloWCS" name="$l10n_fillType_cropSilage" cyclesPerHour="30" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="CROP_WINDROW" amount="550" />
+                </inputs>
+                <outputs>
+                    <output fillType="CROP_FERMENTED" amount="530" />
+                </outputs>
+            </production>
+			
+	<production id="siloAlfalfa" name="$l10n_fillType_alfalfaSilage" cyclesPerHour="30" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="ALFALFA_WINDROW" amount="550" />
+                </inputs>
+                <outputs>
+                    <output fillType="ALFALFA_FERMENTED" amount="535" />
+                </outputs>
+            </production>
+			 
+	<production id="siloClover" name="$l10n_fillType_cloverSilage" cyclesPerHour="30" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="CLOVER_WINDROW" amount="550" />
+                </inputs>
+                <outputs>
+                    <output fillType="CLOVER_FERMENTED" amount="540" />
+                </outputs>
+            </production>
+	
+	<production id="siloCCM" name="$l10n_fillType_ccm" cyclesPerHour="30" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="CCMRAW" amount="550" />
+                </inputs>
+                <outputs>
+                    <output fillType="CCM" amount="530" />
+                </outputs>
+            </production>	
+
+	<production id="siloHay" name="$l10n_fillType_dryGrass" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="DRYGRASS_WINDROW" amount="1000" />
+                </inputs>
+                <outputs>
+                    <output fillType="DRYGRASS_WINDROW" amount="1000" />
+                </outputs>
+            </production>
+
+	<production id="siloAlfalfaHay" name="$l10n_fillType_alfalfaHay" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="DRYALFALFA_WINDROW" amount="1000" />
+                </inputs>
+                <outputs>
+                    <output fillType="DRYALFALFA_WINDROW" amount="1000" />
+                </outputs>
+            </production>
+
+	<production id="siloCloverHay" name="$l10n_fillType_cloverHay" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="DRYCLOVER_WINDROW" amount="1000" />
+                </inputs>
+                <outputs>
+                    <output fillType="DRYCLOVER_WINDROW" amount="1000" />
+                </outputs>
+            </production>
+
+	<production id="siloStraw" name="$l10n_fillType_straw" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="STRAW" amount="1000" />
+                </inputs>
+                <outputs>
+                    <output fillType="STRAW" amount="1000" />
+                </outputs>
+            </production>
+
+	<production id="siloBeanstraw" name="$l10n_fillType_beanstraw" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="BEANSTRAW" amount="1000" />
+                </inputs>
+                <outputs>
+                    <output fillType="BEANSTRAW" amount="1000" />
+                </outputs>
+            </production>
+
+	<production id="siloCornStalks" name="$l10n_fillType_cornStalks" cyclesPerHour="1000" costsPerActiveHour="0">
+                <inputs>
+                    <input fillType="CORN_STALKS" amount="1000" />
+                </inputs>
+                <outputs>
+                    <output fillType="CORN_STALKS" amount="1000" />
+                </outputs>
+            </production>
+
+        </productions>
+
+        <storage isExtension="false" fillLevelSyncThreshold="50">
+            		<capacity fillType="GRASS_WINDROW"   			capacity="700000" />
+            		<capacity fillType="CROP_WINDROW"   			capacity="700000" />
+            		<capacity fillType="CHAFF"   				capacity="700000" />
+            		<capacity fillType="CCMRAW"   				capacity="700000" />
+            		<capacity fillType="ALFALFA_WINDROW"   			capacity="700000" />
+            		<capacity fillType="ALFALFA_FERMENTED"   		capacity="700000" />
+            		<capacity fillType="CLOVER_WINDROW"   			capacity="700000" />
+            		<capacity fillType="CLOVER_FERMENTED"   		capacity="700000" />
+            		<capacity fillType="GRASS_FERMENTED"   			capacity="700000" />
+            		<capacity fillType="CROP_FERMENTED"   			capacity="700000" />
+            		<capacity fillType="CCM"   				capacity="700000" />	
+            		<capacity fillType="DRYGRASS_WINDROW" 			capacity="700000" />
+            		<capacity fillType="DRYALFALFA_WINDROW" 		capacity="700000" />
+            		<capacity fillType="DRYCLOVER_WINDROW" 			capacity="700000" />
+            		<capacity fillType="BEANSTRAW" 				capacity="700000" />
+            		<capacity fillType="CORN_STALKS" 			capacity="700000" />
+            		<capacity fillType="STRAW"  				capacity="700000" />
+            		<capacity fillType="SILAGE"  				capacity="700000" />
+        </storage>	
+        <sellingStation node="sellingStation" appearsOnStats="false" supportsExtension="false" allowMissions="false" hideFromPricesMenu="true">
+            <unloadTrigger exactFillRootNode="exactFillRootNode" aiNode="aiUnloadingNode" fillTypes="BEANSTRAW CORN_STALKS DRYGRASS_WINDROW DRYALFALFA_WINDROW DRYCLOVER_WINDROW STRAW GRASS_WINDROW ALFALFA_FERMENTED CLOVER_FERMENTED ALFALFA_WINDROW CLOVER_WINDROW CHAFF SILAGE CROP_WINDROW GRASS_FERMENTED CROP_FERMENTED CCMRAW CCM">
+			</unloadTrigger>
+			<baleTrigger triggerNode="baleTrigger" deleteLitersPerSecond="10000" fillTypes="BEANSTRAW CORN_STALKS DRYGRASS_WINDROW DRYALFALFA_WINDROW DRYCLOVER_WINDROW STRAW GRASS_WINDROW ALFALFA_FERMENTED CLOVER_FERMENTED ALFALFA_WINDROW CLOVER_WINDROW CHAFF SILAGE CROP_WINDROW GRASS_FERMENTED CROP_FERMENTED CCMRAW CCM">
+			</baleTrigger>
+		</sellingStation>
+
+		<loadingStation node="loadingTrigger" supportsExtension="true" storageRadius="50">
+            <loadTrigger triggerNode="loadingTrigger" fillLitersPerSecond="5000" dischargeNode="dischargeNode" fillTypes="BEANSTRAW CORN_STALKS DRYGRASS_WINDROW DRYALFALFA_WINDROW DRYCLOVER_WINDROW STRAW GRASS_WINDROW ALFALFA_FERMENTED CLOVER_FERMENTED ALFALFA_WINDROW CLOVER_WINDROW CHAFF SILAGE CROP_WINDROW GRASS_FERMENTED CROP_FERMENTED CCMRAW CCM" aiNode="aiLoadingNode">
+                <effectNode effectClass="PipeEffect" effectNode="pipeEffect"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0"/>
+                <effectNode                          effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.5" />
+                <sounds>
+                    <loading template="silosActive" />
+                </sounds>
+            </loadTrigger>
+        </loadingStation>
+
+        <playerTrigger node="playerTrigger" />
+        
+		<sounds>
+            <idle   template="bakeryIdle" linkNode="0>" outerRadius="50"/>
+            <active template="bakeryWork" linkNode="0>" outerRadius="50"/>
+        </sounds>
+    </productionPoint>
+
+    <i3dMappings>
+        <i3dMapping id="fermentingSiloLarge" node="0>" />
+        <i3dMapping id="loadingTrigger" node="0>0|0|0" />
+        <i3dMapping id="dischargeNode" node="0>0|0|1" />
+        <i3dMapping id="pipeEffect" node="0>0|0|2|0" />
+        <i3dMapping id="pipeEffectSmoke" node="0>0|0|2|1" />
+        <i3dMapping id="aiLoadingNode" node="0>0|0|3" />
+        <i3dMapping id="sellingStation" node="0>1" />
+        <i3dMapping id="exactFillRootNode" node="0>1|0" />
+        <i3dMapping id="aiUnloadingNode" node="0>1|1" />
+		<i3dMapping id="baleTrigger" node="0>1|2" />
+        <i3dMapping id="mapPosition" node="0>2" />        
+		<i3dMapping id="storage" node="0>3" />		
+		<i3dMapping id="infoTrigger" node="0>4" />
+        <i3dMapping id="playerTrigger" node="0>5|0" />
+        <i3dMapping id="playerTriggerMarker" node="0>5|1" />
+		<i3dMapping id="markerLoading" node="0>6|0" />
+        <i3dMapping id="markerUnloading" node="0>6|1" />
+    </i3dMappings>
+</placeable>

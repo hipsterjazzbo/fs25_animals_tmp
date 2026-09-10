@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="chickenCoopF1A1.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="15" filename="$data/maps/textures/shared/chainFence_diffuse.png"/>
+    <File fileId="16" filename="$data/maps/textures/shared/chainFence_normal.png"/>
+    <File fileId="17" filename="$data/maps/textures/shared/chainFence_specular.png"/>
+    <File fileId="18" filename="$data/maps/textures/shared/snow_diffuse.png"/>
+    <File fileId="19" filename="$data/maps/textures/shared/snow_normal.png"/>
+    <File fileId="12" filename="$data/maps/textures/shared/snow_specular.png"/>
+    <File fileId="5" filename="$data/placeables/brandless/animalHusbandries/chickenCoop03/chickenCoop03_diffuse.png"/>
+    <File fileId="14" filename="$data/placeables/brandless/animalHusbandries/chickenCoop03/chickenCoop03_height.png"/>
+    <File fileId="9" filename="$data/placeables/brandless/animalHusbandries/chickenCoop03/chickenCoop03_mask.png"/>
+    <File fileId="6" filename="$data/placeables/brandless/animalHusbandries/chickenCoop03/chickenCoop03_normal.png"/>
+    <File fileId="7" filename="$data/placeables/brandless/animalHusbandries/chickenCoop03/chickenCoop03_specular.png"/>
+    <File fileId="22" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersChicken02_diffuse.png"/>
+    <File fileId="23" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersChicken02_normal.png"/>
+    <File fileId="24" filename="$data/placeables/rudolfHormann/barnProps/animalFeedersChicken02_specular.png"/>
+    <File fileId="8" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="20" filename="$data/shaders/snowHeapShader.xml"/>
+    <File fileId="2" filename="$data/shared/warningStripes_diffuse.png"/>
+    <File fileId="3" filename="$data/shared/warningStripes_normal.png"/>
+    <File fileId="4" filename="$data/shared/warningStripes_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="animalFeedersChicken02_mat" materialId="5">
+      <Texture fileId="22"/>
+      <Normalmap fileId="23"/>
+      <Glossmap fileId="24"/>
+    </Material>
+    <Material name="chainFence_mat" materialId="6">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+    </Material>
+    <Material name="chickenCoop03_01_mat" materialId="7" customShaderId="8" customShaderVariation="customParallax">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+      <Custommap name="mMaskMap" fileId="9"/>
+      <Custommap name="mParallaxMap" fileId="14"/>
+    </Material>
+    <Material name="chickenCoop03_02_mat" materialId="8">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="lambert1" materialId="9" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="snow_mat" materialId="10" customShaderId="20">
+      <Texture fileId="18"/>
+      <Normalmap fileId="19" bumpDepth="0.5"/>
+      <Glossmap fileId="12"/>
+    </Material>
+    <Material name="warningStripes_mat" materialId="11">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="chickenCoopF1A1.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="chickenCoopF1A1" lockedgroup="true" clipDistance="500" nodeId="27">
+      <TransformGroup name="clearAreas" nodeId="28"/>
+      <TransformGroup name="tipOcclusionUpdateAreas" nodeId="29"/>
+      <TransformGroup name="testAreas" nodeId="30"/>
+      <TransformGroup name="levelAreas" nodeId="31"/>
+      <TransformGroup name="paintAreas" nodeId="32"/>
+      <TransformGroup name="indoorAreas" nodeId="33"/>
+      <TransformGroup name="palletAreas" nodeId="34">
+        <Shape name="palletTrigger" translation="4.0699 1.18189 -4.03117" shapeId="1" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x10000" nodeId="35" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+        <TransformGroup name="palletAreaStart01" translation="3.62322 0 -7.0333" nodeId="36">
+          <TransformGroup name="palletAreaEnd01" translation="0 0 6.01501" nodeId="37"/>
+        </TransformGroup>
+        <TransformGroup name="palletAreaStart02" translation="4.87832 0 -7.0333" nodeId="38">
+          <TransformGroup name="palletAreaEnd02" translation="0 0 6.015" nodeId="39"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="navigationRootNode" nodeId="40"/>
+      <TransformGroup name="food" translation="3.72046 0.0225525 3.46333" static="true" nodeId="41">
+        <TransformGroup name="markerFood" nodeId="42"/>
+        <Shape name="exactFillRootNodeFood" translation="0 0.1 0" shapeId="2" static="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="43" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+        <TransformGroup name="foodPlaces" nodeId="44">
+          <TransformGroup name="foodPlace01" translation="-1.02213 -0.0281982 4.7373" nodeId="45"/>
+          <TransformGroup name="foodPlace02" translation="-0.0398636 -0.0718079 6.82495" nodeId="46"/>
+          <TransformGroup name="foodPlace03" translation="-1.19433 -0.0370636 8.34961" nodeId="47"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="triggerNodes" nodeId="48">
+        <Shape name="infoTrigger" translation="0 0 1.34921" shapeId="3" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="49" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+        <Shape name="loadingTrigger" translation="1.37798 1.36296 8.43171" shapeId="4" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x110000" nodeId="50" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+        <TransformGroup name="teleportNode" translation="4 0 1" nodeId="51"/>
+        <TransformGroup name="markerAnimals" translation="1.37798 0 8.43171" nodeId="52"/>
+      </TransformGroup>
+      <TransformGroup name="warningStripes" nodeId="53">
+        <Shape name="warningStripes01" translation="4.11479 0.01 -4.03187" shapeId="5" clipDistance="200" nodeId="54" castsShadows="true" receiveShadows="true" nonRenderable="true" terrainDecal="true" materialIds="11"/>
+      </TransformGroup>
+      <TransformGroup name="visuals_lod" lodDistance="0 100" static="true" nodeId="55">
+        <TransformGroup name="chickenCoop03_lod0" translation="0 -0.1 0" clipDistance="100" nodeId="56">
+          <Shape name="chickenCoop03" shapeId="6" nodeId="57" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chickenCoop03Details" shapeId="7" nodeId="58" castsShadows="true" receiveShadows="true" materialIds="8"/>
+          <Shape name="chickenCoop03WiredFence" shapeId="8" nodeId="59" castsShadows="true" receiveShadows="true" materialIds="6"/>
+          <TransformGroup name="winter" translation="0 0.1 0" nodeId="60">
+            <TransformGroup name="seasons" nodeId="61">
+              <Shape name="snow" shapeId="9" nodeId="62" castsShadows="true" receiveShadows="true" materialIds="10" weatherRequiredMask="0x400"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="chickenCoop03_lod1" translation="0 -0.1 0" clipDistance="500" nodeId="63">
+          <Shape name="chickenCoop03" shapeId="10" nodeId="64" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="chickenCoop03Details" shapeId="11" nodeId="65" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        </TransformGroup>
+        <Shape name="animalFeedersChicken02" translation="2.41233 -0.0119781 11.7289" shapeId="12" clipDistance="150" nodeId="66" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        <Shape name="animalFeedersChicken02" translation="3.53744 -0.0433197 10.1125" rotation="0 87.8621 0" shapeId="12" clipDistance="150" nodeId="67" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        <Shape name="animalFeedersChicken02" translation="2.53535 -0.00308228 8.14978" rotation="0 -44.4876 0" shapeId="12" clipDistance="150" nodeId="68" castsShadows="true" receiveShadows="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="collisions" nodeId="69">
+        <Shape name="collision" shapeId="13" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="70" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+        <Shape name="tipCollision" translation="0.211792 0 0" shapeId="14" static="true" collisionFilterGroup="0x18" collisionFilterMask="0x1" nodeId="71" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="9"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <storeData>
+        <name>$l10n_fillType_pasta</name>
+        <image>$data/store/store_empty.png</image>
+        <price>0</price>
+        <category>pallets</category>
+        <brand>JINKOU</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>18688</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>3840</indexBufferMemoryUsage>
+        <textureMemoryUsage>720896</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>multifruit/objects/pallets/food/pastaPallet.i3d</filename> 
+        <size width="1.3" length="0.9" height="1.1" />
+        <canBeReset>false</canBeReset>
+		<supportsPickUp>true</supportsPickUp>
+        <components maxMass="400">
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="60"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration name="$l10n_configuration_valueDefault">
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="PASTA" capacity="1000" startFillType="PASTA" startFillLevel="0" ignoreFillLimit="true">
+						<fillRootNode node="0>" />
+					
+						<fillTypeMaterials>
+                            <material fillType="PASTA" materialSlotName="cereals_cereals_mat" diffuse="multifruit/objects/pallets/food/textures/pasta_diffuse.dds"/>
+                           
+                        </fillTypeMaterials>
+					</fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <pallet fillUnitIndex="1" linkNode="pastaPallet_component1">
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
+
+        <content>
+            <object node="pasta01" tensionBeltNode="pasta01Tension"/>
+            <object node="pasta02" tensionBeltNode="pasta02Tension"/>
+            <object node="pasta03" tensionBeltNode="pasta03Tension"/>
+            <object node="pasta04" tensionBeltNode="pasta04Tension"/>
+            <object node="pasta05" tensionBeltNode="pasta05Tension"/>
+            <object node="pasta06" tensionBeltNode="pasta06Tension"/>
+        </content>
+
+        <sounds>
+            <unload template="palletsFillCereal" pitchScale="0.8" />
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="1.05" jointTransY="0.11" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="pastaPallet_component1" node="0>" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0" />
+        <i3dMapping id="pasta01" node="0>1|0" />
+        <i3dMapping id="pasta01Tension" node="0>1|0|0" />
+        <i3dMapping id="pasta02" node="0>1|1" />
+        <i3dMapping id="pasta02Tension" node="0>1|1|0" />
+        <i3dMapping id="pasta03" node="0>1|2" />
+        <i3dMapping id="pasta03Tension" node="0>1|2|0" />
+        <i3dMapping id="pasta04" node="0>1|3" />
+        <i3dMapping id="pasta04Tension" node="0>1|3|0" />
+        <i3dMapping id="pasta05" node="0>1|4" />
+        <i3dMapping id="pasta05Tension" node="0>1|4|0" />
+        <i3dMapping id="pasta06" node="0>1|5" />
+        <i3dMapping id="pasta06Tension" node="0>1|5|0" />
+    </i3dMappings>
+</vehicle>

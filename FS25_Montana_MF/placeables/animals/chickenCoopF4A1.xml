@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="chickenHusbandry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Copper Creek Chicken</name>
+        <image>$data/placeables/brandless/animalHusbandries/chickenCoop03/store_chickenCoop03.png</image>
+        <price>4400</price>
+		<canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <functions>
+            <function>$l10n_function_animalPenChicken</function>
+        </functions>
+        <lifetime>1000</lifetime>
+        <dailyUpkeep>10</dailyUpkeep>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>animalpens</category>
+        <brush>
+            <type>husbandry</type>
+            <category>animals</category>
+            <tab>chickens</tab>
+        </brush>
+        <vertexBufferMemoryUsage>462848</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>97280</indexBufferMemoryUsage>
+        <textureMemoryUsage>917504</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings cameraXRot="-20" cameraYRot="50" advancedBoundingBox="true"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/animals/chickenCoopF4A1.i3d</filename>
+        <boughtWithFarmland>true</boughtWithFarmland>
+		<canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement>
+    </placement>
+
+    <clearAreas>
+    </clearAreas>
+
+    <leveling>
+    </leveling>
+
+    <indoorAreas>
+    </indoorAreas>
+
+    <foliageAreas>
+    </foliageAreas>
+
+    <triggerMarkers>
+        <triggerMarker node="markerFood"    adjustToGround="true" filename="$data/shared/assets/marker/markerIconFood.i3d" />
+        <triggerMarker node="markerAnimals" adjustToGround="true" filename="$data/shared/assets/marker/markerIconAnimals.i3d" />
+        <triggerMarker node="warningStripes01"/>
+    </triggerMarkers>
+
+    <tipOcclusionUpdateAreas>
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+        </updateAreas>
+    </ai>
+
+    <hotspots>
+        <hotspot type="CHICKEN" teleportNode="teleportNode" />
+    </hotspots>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+    <husbandry saveId="Animals_CHICKEN" hasStatistics="false">
+
+        <animals type="CHICKEN" maxNumAnimals="500" maxNumVisualAnimals="20" >
+            <navigation rootNode="navigationRootNode" filename="placeables/animals/navMeshChickenF4A1.i3d" />
+            <loadingTrigger node="loadingTrigger" />
+        </animals>
+
+        <food capacity="120000" >
+            <foodPlane defaultFillType="WHEAT"/>
+            <unloadTrigger exactFillRootNode="exactFillRootNodeFood" />
+            <foodPlaces>
+                <foodPlace node="foodPlace01"/>
+                <foodPlace node="foodPlace02"/>
+                <foodPlace node="foodPlace03"/>
+            </foodPlaces>
+        </food>
+
+        <pallets>
+            <palletSpawner fillTypes="EGG" maxNumPallets="6">
+                <palletTrigger node="palletTrigger" />
+                <spawnPlaces>
+                    <spawnPlace startNode="palletAreaStart01" endNode="palletAreaEnd01" />
+                    <spawnPlace startNode="palletAreaStart02" endNode="palletAreaEnd02" />
+                </spawnPlaces>
+            </palletSpawner>
+        </pallets>
+    </husbandry>
+
+    <i3dMappings>
+        <i3dMapping id="palletTrigger" node="0>6|0" />
+        <i3dMapping id="palletAreaStart01" node="0>6|1" />
+        <i3dMapping id="palletAreaEnd01" node="0>6|1|0" />
+        <i3dMapping id="palletAreaStart02" node="0>6|2" />
+        <i3dMapping id="palletAreaEnd02" node="0>6|2|0" />
+        <i3dMapping id="navigationRootNode" node="0>7" />
+        <i3dMapping id="markerFood" node="0>8|0" />
+        <i3dMapping id="exactFillRootNodeFood" node="0>8|1" />
+        <i3dMapping id="foodPlace01" node="0>8|2|0" />
+        <i3dMapping id="foodPlace02" node="0>8|2|1" />
+        <i3dMapping id="foodPlace03" node="0>8|2|2" />
+        <i3dMapping id="infoTrigger" node="0>9|0" />
+        <i3dMapping id="loadingTrigger" node="0>9|1" />
+        <i3dMapping id="teleportNode" node="0>9|2" />
+        <i3dMapping id="markerAnimals" node="0>9|3" />
+        <i3dMapping id="warningStripes01" node="0>10|0" />
+    </i3dMappings>
+</placeable>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors>Jinkou89</translationContributors>
+    <languageVersion>1.0.0.0</languageVersion>
+	
+	<texts>
+	  
+	<text name="fillType_rye" 				text="Рожь" />
+	<text name="fillType_soybeanUS"        			text="Американская соя" />
+	<text name="fillType_covercropmix"        		text="Смесь покровных культур" />
+	<text name="fillType_roundBaleLavender"        		text="Тюк лаванды" />
+	<text name="fillType_clover1"        			text="Клевер луговой" />
+	<text name="fillType_clover2"        			text="Клевер белый" />
+	<text name="fillType_clover_windrow"        		text="Клевер" />
+    	<text name="fillType_alfalfa"       			text="Люцерна" />
+	<text name="fillType_cloverSilage"        		text="Ферментированный клевер" />
+   	<text name="fillType_alfalfaSilage"       		text="Ферментированная люцерна" />
+   	<text name="fillType_cloverHay"     			text="Сено клевера" />
+    	<text name="fillType_alfalfaHay"    			text="Сено люцерны" />
+    	<text name="fillType_beanstraw" 			text="Солома бобовых" />
+    	<text name="fillType_cornStalks"    			text="Стебли кукурузы" />
+	<text name="fillType_flaxFiber"        			text="Льняное волокно" />
+	<text name="fillType_flax"        			text="Лен" />
+	<text name="fillType_linseed"        			text="Семена льна" />
+	<text name="fillType_millet"        			text="Просо" />
+	<text name="fillType_poppy"        			text="Мак" />
+	<text name="fillType_drypeas"        			text="Сушеный горох" />
+	<text name="fillType_beans"        			text="Фасоль пинто" />
+	<text name="fillType_mustard"        			text="Горчица" />
+	<text name="fillType_links"        			text="Чечевица" />
+	<text name="fillType_silphie"        			text="Сильфия" />
+	<text name="fillType_spelt"        			text="Спельта" />
+	<text name="fillType_triticale"        			text="Тритикале" />
+	<text name="fillType_soybean2"        			text="Американская соя" />
+	<text name="fillType_tobacco"        			text="Табак" />
+	<text name="fillType_tobaccoo"        			text="Листья табака" />      
+	<text name="fillType_compost" 				text="Компост" />
+	<text name="fillType_organicWaste" 			text="Органические отходы" />
+	<text name="fillType_grapeA" 				text="Красный виноград" />
+	<text name="fillType_grapeB" 				text="Белый виноград" />
+	<text name="fillType_chickpeas" 			text="Нут" />
+	<text name="fillType_buckwheat" 			text="Гречиха" />
+	<text name="shopItem_grapeb_vine" 			text="Лоза белого винограда" />
+	<text name="shopItem_hopsVine" 				text="Хмель" />
+	<text name="fillType_hemp" 				text="Конопля" />
+	<text name="fillType_hempFiber" 			text="Пеньковое волокно" />
+	<text name="fillType_lavender" 				text="Лаванда" />
+	<text name="fillType_potatoCut"        			text="Нарезанный картофель" />
+	<text name="fillType_beetrootCut"        		text="Нарезанная свекла" />
+	<text name="fillType_carrotCut"        			text="Нарезанная морковь" />
+	<text name="fillType_parsnipCut"        		text="Нарезанный пастернак" />  
+	<text name="fillTypeGroup_TMR"        			text="ОСР, Ферментированная люцерна/клевер" />	  
+	<text name="fillTypeGroup_hays"        			text="Сено, Люцерновое/Клеверное сено" />
+	<text name="fillTypeGroup_grassa"        		text="Трава, Свежая люцерна/клевер" />
+	<text name="fillTypeGroup_moisture"        		text="Влага: Нарезанные корнеплоды" />
+	<text name="fillTypeGroup_grassHay"        		text="Свежая трава/сено/люцерна/клевер" />
+	<text name="fillType_mineralFeed1"        		text="Минеральный корм/Сушеный горох" />
+	<text name="fillTypeGroup_pigForage"        		text="Смешанный корм для свиней" />
+	<text name="fillType_peanut" 				text="Арахис" />
+	<text name="fillType_miscanthus" 			text="Мискантус" />
+	<text name="fillType_miscanthusCut" 			text="Измельченный мискантус" />
+
+
+		<text name="fillType_maize2" 			text="Сухая кукуруза" />
+		<text name="fillType_soymilk" 			text="Соевое молоко" />
+		<text name="fillType_pasta" 			text="Макаронные изделия" />
+		<text name="fillType_chips" 			text="Чипсы" />
+		<text name="fillType_ethanol" 			text="Этанол" />
+		<text name="fillType_cornflour"			text="Кукурузная мука" />
+		<text name="fillType_cornOil"			text="Кукурузное масло" />
+		<text name="fillType_linseedOil"		text="Льняное масло" />
+		<text name="fillType_mustardOil"		text="Горчичное масло" />
+		<text name="fillType_poppyOil"			text="Маковое масло" />
+		<text name="fillType_pizza"			text="Пицца" />
+		<text name="fillType_buckwheatflour"        	text="Гречневая мука" />
+		<text name="fillType_gramflour"        		text="Нутовая мука" />
+		<text name="fillType_milletflour"        	text="Пшенная мука" />
+		<text name="fillType_ryeflour"        		text="Ржаная мука" />
+		<text name="fillType_sorghumflour"        	text="Сорговая мука" />
+		<text name="fillType_crackedCorn"        	text="Дробленая кукуруза" />
+		<text name="fillType_apple"        		text="Яблоки" />
+		<text name="fillType_apricot"        		text="Абрикосы" />
+		<text name="fillType_cherry"        		text="Вишня" />
+		<text name="fillType_pear"        		text="Груши" />
+		<text name="fillType_peach"        		text="Персики" />
+		<text name="fillType_plum"        		text="Сливы" />
+		<text name="fillType_quince"        		text="Айва" />
+		<text name="fillType_cabbage"        		text="Белокочанная капуста" />
+		<text name="fillType_redCabbage"        	text="Краснокочанная капуста" />
+		<text name="fillType_melon"        		text="Дыня" />
+		<text name="fillType_pumpkin"        		text="Тыква" />
+		<text name="fillType_watermelon"        	text="Арбуз" />
+		<text name="fillType_cucumber"        		text="Огурец" />
+		<text name="fillType_eggplant"        		text="Баклажан" />
+		<text name="fillType_pepper"        		text="Перец" />
+		<text name="fillType_cauliflower" 		text="Цветная капуста" />
+		<text name="fillType_bran"        		text="Отруби" />
+		<text name="fillType_molasses"        		text="Меласса" />
+		<text name="fillType_appleJuice"        	text="Яблочный сок" />
+		<text name="fillType_apricotJuice"        	text="Абрикосовый сок" />
+		<text name="fillType_beetrootJuice"        	text="Свекольный сок" />
+		<text name="fillType_carrotJuice"        	text="Морковный сок" />
+		<text name="fillType_cherryJuice"        	text="Вишневый сок" />
+		<text name="fillType_melonJuice"        	text="Дынный сок" />
+		<text name="fillType_multifruitJuice"        	text="Мультифруктовый сок" />
+		<text name="fillType_peachJuice"        	text="Персиковый сок" />
+		<text name="fillType_pearJuice"        		text="Грушевый сок" />
+		<text name="fillType_plumJuice"        		text="Сливовый сок" />
+		<text name="fillType_quinceJuice"        	text="Айвовый сок" />
+		<text name="fillType_strawberryJuice"        	text="Клубничный сок" />
+		<text name="fillType_tomatoJuice"        	text="Томатный сок" />
+		<text name="fillType_watermelonJuice"        	text="Арбузный сок" />
+ 		<text name="fillType_cattle" 			text="Крупный рогатый скот" />
+		<text name="fillType_pigs" 			text="Свиньи" />
+		<text name="fillType_sheepGoat" 		text="Овцы/Козы" />
+ 		<text name="fillType_beef" 			text="Говядина" />
+		<text name="fillType_pork" 			text="Свинина" />
+		<text name="fillType_poultryMeat" 		text="Мясо птицы" />
+		<text name="fillType_lamb" 			text="Ягнятина" />
+		<text name="fillType_cigar" 			text="Сигара" />
+		<text name="fillType_cigarette" 		text="Сигарета" />
+		<text name="fillType_animalFat" 		text="Животный жир" />
+		<text name="fillType_perfume" 			text="Парфюм" />
+		<text name="fillType_soap" 			text="Мыло" />
+		<text name="fillType_lavenderOil" 		text="Эфирное масло лаванды" />
+		<text name="fillType_bourbonBarrel" 		text="Бурбон" />
+		<text name="fillType_brandyBarrel" 		text="Бренди" />
+		<text name="fillType_ciderBarrel" 		text="Сидр" />
+		<text name="fillType_meadBarrel" 		text="Медовуха" />
+		<text name="fillType_liqueurBarrel" 		text="Фруктовый ликер" />
+		<text name="fillType_vodkaBarrel" 		text="Водка" />
+		<text name="fillType_whiskeyBarrel" 		text="Виски" />
+		<text name="fillType_rumBarrel" 		text="Ром" />
+		<text name="fillType_peanutflour" 		text="Арахисовая мука" />
+		<text name="fillType_peanutOil" 		text="Арахисовое масло" />
+		<text name="fillType_peanutButter" 		text="Арахисовая паста" />
+		<text name="fillType_mayo" 			text="Майонез" />
+		<text name="fillType_ketchup" 			text="Кетчуп" />
+		<text name="fillType_hotSauce" 			text="Острый соус" />
+		<text name="fillType_soySauce" 			text="Соевый соус" />
+		<text name="fillType_garlicSauce" 		text="Чесночный соус" />
+		<text name="fillType_mustardSauce" 		text="Горчичный соус" />
+		<text name="fillType_pickledCucumber" 		text="Маринованные огурцы" />
+		<text name="fillType_pickledCabbage" 		text="Квашеная капуста" />
+		<text name="fillType_pickledCauliflower" 	text="Маринованная цветная капуста" />
+		<text name="fillType_beansSoup" 		text="Фасолевый суп" />
+		<text name="fillType_peanutBags" 		text="Мешки с арахисом" />
+		<text name="fillType_beansBags" 		text="Мешки с фасолью" />
+		<text name="fillType_cannedBeans" 		text="Консервированная фасоль" />
+		<text name="fillType_tofu" 			text="Тофу" />
+		<text name="fillType_chocomilk" 		text="Шоколадное молоко" />
+		<text name="fillType_oatmilk" 			text="Овсяное молоко" />
+		<text name="fillType_mushroomSoup" 		text="Грибной суп" />
+		<text name="fillType_beer" 			text="Пиво" />
+		<text name="fillType_wine" 			text="Вино" />
+		<text name="fillType_icecream" 			text="Мороженое" />
+		<text name="fillType_sourcream" 		text="Сметана" />
+		<text name="fillType_yoghurt" 			text="Йогурт" />
+		<text name="fillType_sunflowerBags" 		text="Мешки семян подсолнечника" />
+		<text name="fillType_pumpkinSeeds" 		text="Мешки семян тыквы" />
+		<text name="fillType_pumpkinPuree" 		text="Тыквенное пюре" />
+		<text name="fillType_eggplantPuree" 		text="Пюре из баклажанов" />
+		<text name="fillType_popcorn" 			text="Попкорн" />
+		<text name="fillType_cheesePuffs" 		text="Сырные шарики" />
+		<text name="fillType_peanutPuffs" 		text="Арахисовые палочки" />
+		<text name="fillType_tortilla" 			text="Чипсы тортилья" />
+		<text name="fillType_garlicBread" 		text="Чесночный хлеб" />
+		<text name="fillType_onionRings" 		text="Луковые кольца" />
+		<text name="fillType_pie" 			text="Фруктовый пирог" />
+		<text name="fillType_cocoaPowder" 		text="Какао-порошок" />
+		<text name="fillType_cookingSalt" 		text="Поваренная соль" />
+		<text name="fillType_yeast" 		 	text="Дрожжи" />
+		<text name="fillType_roulade"                   text="Рулет" />
+		<text name="fillType_strudel"                   text="Штрудель" />
+		<text name="fillType_milkBread"                 text="Молочный хлеб" />
+		<text name="fillType_potatoBread"               text="Картофельный хлеб" />
+		<text name="fillType_sweetBread"                text="Сладкая булка" />
+		<text name="fillType_bagel"                     text="Бейгл" />
+		<text name="fillType_baguette" 			text="Багет"/>
+		<text name="fillType_hops" 			text="Хмель"/>
+		<text name="fillType_cowFood" 			text="Гранулированный корм для коров"/>
+		<text name="fillType_hayPellets" 		text="Пеллеты из сена"/>
+		<text name="fillType_strawPellets" 		text="Пеллеты из соломы"/>
+		<text name="fillType_woodChipsPellets" 		text="Пеллеты из щепы"/>
+		<text name="fillType_chocoCake" 		text="Шоколадный торт"/>
+		<text name="fillType_sesame" 			text="Кунжут"/>
+		<text name="fillType_sesameOil" 		text="Кунжутное масло"/>
+		<text name="fillType_sesameBags" 		text="Упакованные семена кунжута"/>
+		<text name="fillType_chickpeasBags" 		text="Упакованный нут"/>
+		<text name="fillType_lentilsBags" 		text="Упакованная чечевица"/>
+		<text name="fillType_sesameRolls" 		text="Медово-кунжутный десерт"/>
+		<text name="fillType_hummus" 			text="Хумус"/>
+
+	<text name="pigProcessing"        			text="Переработка свинины" />
+		<text name="poultryProcessing"        			text="Переработка курятины" />
+		<text name="cattleProcessing"        			text="Переработка говядины" />
+		<text name="sheepProcessing"        			text="Переработка баранины и козлятины" />
+		<text name="message_unloadAnimalSuccess" 		text="Животные успешно перемещены в %s!" />
+        	<text name="message_unloadAnimalConfirmation" 		text="Вы хотите переместить %d животных (%s) в %s?" />
+        	<text name="button_moveAnimal" 				text="Переместить в %s" />
+		<text name="message_animalTooYoung" 			text="Это животное слишком молодое." />
+		<text name="message_animalTooOld" 			text="Это животное слишком старое." />
+        	<text name="configuration_grapeB" 			text="Белый виноград"/>
+        	<text name="configuration_hops" 			text="Хмель"/>
+		<text name="function_fermentingTower" 			text="Здесь вы можете ферментировать траву, сечку, люцерну или клевер." />
+		<text name="function_grainDryer" 			text="Здесь вы можете сушить свою кукурузу." />
+		<text name="function_hopsVine" 			        text="Лозы для выращивания хмеля. Для сбора хмеля необходим многофункциональный комбайн." />
+		<text name="function_buyingPoint" 			text="На этой станции вы можете купить почти все оптом." />
+
+
+	<text name="shopItem_appleOrchard" 		text="Малый яблоневый сад" />	
+		<text name="shopItem_apricotOrchard" 		text="Малый абрикосовый сад" />	
+		<text name="shopItem_appleTree" 		text="Яблоня" />	
+		<text name="shopItem_apricotTree" 		text="Абрикосовое дерево" />
+		<text name="shopItem_cherryOrchard" 		text="Малый вишневый сад" />	
+		<text name="shopItem_pearOrchard" 		text="Малый грушевый сад" />	
+		<text name="shopItem_cherryTree" 		text="Вишня" />	
+		<text name="shopItem_pearTree" 			text="Груша" />	
+		<text name="shopItem_peachOrchard" 		text="Малый персиковый сад" />	
+		<text name="shopItem_peachTree" 		text="Персиковое дерево" />		
+		<text name="shopItem_plumOrchard" 		text="Малый сливовый сад" />	
+		<text name="shopItem_plumTree" 			text="Слива" />		
+		<text name="shopItem_quinceOrchard" 		text="Малый айвовый сад" />	
+		<text name="shopItem_quinceTree" 		text="Айвовое дерево" />	
+		<text name="shopItem_grainCrusher" 		text="Зернодробилка" />	
+		<text name="shopItem_juiceFactory" 		text="Завод соков" />
+		<text name="shopItem_slaughterHouse" 		text="Бойня" />
+		<text name="shopItem_tobaccoProd" 		text="Табачная фабрика" />
+		<text name="shopItem_lavenderProd" 		text="Завод по переработке лаванды" />
+		<text name="shopItem_openGarden" 		text="Открытый огород" />
+		<text name="shopItem_distillery" 		text="Ликеро-водочный завод" />
+		<text name="shopItem_preservedFood" 		text="Консервный завод" />
+		<text name="shopItem_foodProd" 			text="Производство снеков" />
+		<text name="shopItem_fermentingTower" 		text="Ферментационная башня" />
+		<text name="shopItem_wineCellar" 		text="Пивной и винный погреб" />
+		<text name="shopItem_grainDryer" 		text="Сушилка для кукурузы" />
+		<text name="shopItem_openGardenFieldCrops" 	text="Открытый огород для полевых культур" />
+		<text name="shopItem_industrialGreenhouse" 	text="Промышленная теплица" />
+		<text name="shopItem_vegetarianProd" 		text="Производство веганской еды" />
+		<text name="shopItem_pelletizer" 		text="Пеллетайзер" />
+		<text name="shopItem_buyingPoint1" 		text="Закупочная станция Мультифрукт" />
+		<text name="shopItem_buyingPoint2" 		text="Закупочная станция Мультифрукт со скидкой" />
+
+
+		<text name="shopItem_jamProd" 				text="Завод джемов" />
+		<text name="fillType_edamame" 				text="Эдамамэ (Зеленая соя)"/>
+		<text name="fillType_taro" 				text="Таро"/>
+		<text name="fillType_okra" 				text="Окра (Бамия)"/>
+		<text name="fillType_mint" 				text="Мята"/>
+		<text name="fillType_greenRye" 				text="Озимая рожь (зеленая)" />
+		<text name="fillType_taroCut" 				text="Нарезанный таро" />
+		<text name="fillType_taroFlour" 			text="Мука из таро" />
+		<text name="fillType_taroSoup" 				text="Суп из таро" />
+		<text name="fillType_taroChips" 			text="Чипсы из таро" />
+		<text name="fillType_muffin" 				text="Маффины" />
+		<text name="fillType_donut" 				text="Пончики" />
+		<text name="fillType_ccm" 				text="Корнаж (ферментированный)" />
+		<text name="fillType_ccmraw" 				text="Корнаж" />
+		<text name="fillType_cropWindrow" 			text="Силос из цельных растений" />
+		<text name="fillType_cropSilage" 			text="Сенаж из цельных растений" />
+		<text name="fillType_grassSilage" 			text="Травяной силос" />
+		<text name="fillType_safflower" 			text="Сафлор" />
+		<text name="fillType_appleJam"        			text="Яблочный джем" />
+		<text name="fillType_apricotJam"        		text="Абрикосовый джем" />
+		<text name="fillType_cherryJam"        			text="Вишневый джем" />
+		<text name="fillType_grapeJam"        			text="Виноградный джем" />
+		<text name="fillType_melonJam"        			text="Дынный джем" />
+		<text name="fillType_peachJam"        			text="Персиковый джем" />
+		<text name="fillType_pearJam"        			text="Грушевый джем" />
+		<text name="fillType_plumJam"        			text="Сливовый джем" />
+		<text name="fillType_strawberryJam"        		text="Клубничный джем" />
+		<text name="fillType_quinceJam"        			text="Айвовый джем" />
+		<text name="fillType_safflowerOil" 			text="Сафлоровое масло" />
+		<text name="fillType_mintOil" 				text="Эфирное масло мяты"/>
+		<text name="fillType_mintBarrel" 			text="Мятный ликер"/>
+		<text name="fillType_jarredOkra"        		text="Консервированная окра" />
+		<text name="fillType_jarredEdamame"        		text="Консервированный эдамамэ" />
+
+<text name="fillType_duckEgg"                 text="Утиные яйца"/>
+        <text name="shopItem_duckGooseBarn"             text="Птичник для уток и гусей"/>
+        <text name="shopItem_duckGoosePasture"             text="Пастбище для уток и гусей"/>
+        <text name="shopItem_rabbitHutch"             text="Крольчатник"/>
+        <text name="function_animalPenDuck"             text="Здесь вы можете разводить уток и гусей. Кормите их и используйте солому в качестве подстилки, чтобы получать утиные яйца и навоз."/>
+        <text name="function_animalPenRabbit"             text="Здесь вы можете разводить кроликов. Кормите их и обеспечивайте соломой. Когда они вырастут, их можно продать с выгодой."/>
+        <text name="fillTypeGroup_clover"                text="Свежий клевер" />
+        <text name="fillTypeGroup_fruitVegetables"             text="Фрукты и овощи" />
+
+    <text name="fillType_goose"                            text="Гусь" />
+        <text name="animal_group_goose"                        text="Гуси и утки" />
+        <text name="shopItem_animalGooseGrowthStage0"           text="Гусята" />
+        <text name="shopItem_animalGooseGrowthStage1"           text="Гусь" />
+        <text name="animal_descriptionGooseProfitGrowthStage0" text="Гусят можно откармливать, а затем продавать с прибылью." />
+        <text name="animal_descriptionGooseProfitGrowthStage1" text="Гусей можно разводить, а затем продавать с прибылью." />
+        <text name="animal_descriptionGooseFeed"               text="Кормите их так же, как кур. Вода подается автоматически в зависимости от типа постройки." />
+        <text name="animal_descriptionGooseReproduction"       text="Гуси достигают половой зрелости в 10 месяцев. Период размножения длится один месяц." />
+
+    <text name="fillType_duck"                             text="Утка" />
+        <text name="shopItem_animalDuckGrowthStage0"           text="Утята" />
+        <text name="animal_duckGrowthStage0Description"        text="Утята еще не несут яйца. Они подходят для выращивания или продажи." />    
+        <text name="shopItem_animalDuckGrowthStage1"           text="Утка" />    
+        <text name="animal_duckGrowthStage1Description"        text="Утки дают яйца, которые можно продать в пункте приема или переработать на ваших производственных предприятиях." />    
+        <text name="animal_poultryFoodDescription"             text="Домашней птице для производства необходимы зерно и вода. Примечание: некоторые птичники оборудованы автопоилками, в этом случае доливать воду вручную не требуется." />
+        
+         <text name="fillType_rabbit"                            text="Крольчиха" />
+            <text name="fillType_rabbitMale"                        text="Кроль (Самец)" />
+            <text name="animal_group_rabbits"                       text="Кролики" />
+            <text name="shopItem_animalRabbitGrowthStage0"          text="Крольчата (Младенцы)" />
+            <text name="shopItem_animalRabbitGrowthStage1"          text="Кролики (Подростки)" />
+            <text name="shopItem_animalRabbitGrowthStage2"          text="Крольчиха (Самка)" />
+            <text name="shopItem_animalRabbitGrowthStage3"          text="Кроль (Самец)" />
+            <text name="animal_rabbitGrowthStage0Description"       text="Крольчата — самые молодые представители вида. Их нельзя купить по отдельности, они рождаются у крольчихи." />
+            <text name="animal_rabbitGrowthStage1Description"       text="Молодого кролика можно использовать для разведения." />
+            <text name="animal_rabbitGrowthStage2Description"       text="Самок кролика можно использовать для приплода или продать. Потомство моложе и меньше по размеру, чем молодые кролики." />
+            <text name="animal_rabbitGrowthStage3Description"       text="Самцы кролика." />
+            <text name="animal_rabbitBeddingDescription"            text="Самцов можно только покупать и продавать." />
+            <text name="animal_rabbitFoodDescription"               text="Кроликам нужна солома для комфортного содержания." />
+
+        <text name="geeseProcessing"                     text="Переработка гусей и уток" />
+        <text name="rabbitProcessing"                     text="Переработка кроликов" />
+        <text name="fillType_leather"              text="Натуральная кожа"/>
+        <text name="fillType_leatherJacket"          text="Кожаные куртки"/>
+        <text name="fillType_pillow"              text="Подушки"/>
+        <text name="fillType_furCoat"              text="Шубы"/>
+        <text name="fillType_feathers"              text="Перья" />
+        <text name="fillType_rabbitMeat"          text="Крольчатина" />
+        <text name="fillType_rabbitFur"          text="Мех кролика" />
+        <text name="fillType_poultry2"              text="Птица (Гуси и утки)" />
+        <text name="fillType_hare"              text="Кролики" />
+        <text name="fillType_poultry"              text="Птица (Куры)" />
+
+<text name="fillType_anhydrous"          text="Безводный аммиак (NH3)" />
+        <text name="fillType_propane"           text="Пропан" />
+<text name="shopItem_bakeryFactory"     text="Пекарня Монтаны" />    
+        <text name="shopItem_beerFactory"       text="Пивоварня Yuengling" />        
+        <text name="shopItem_ethanolFactory"    text="Завод этанола Rocky Mountain" />    
+        <text name="shopItem_whiskeyFactory"    text="Винокурня Jack Daniels" />    
+        <text name="shopItem_dairyFactory"      text="Молокозавод Country View" />    
+        <text name="shopItem_wineFactory"       text="Винодельня Duckhorn" />    
+        <text name="shopItem_pizzaFactory"      text="American Pizza Company" />    
+        <text name="shopItem_grainFlourFactory" text="Мукомольный завод" />    
+        <text name="shopItem_oilFactory"        text="Маслобойня" />    
+    <text name="station_grainSiloTrainC1"     text="Зерновая компания Great Plains" />    
+        <text name="station_grainSiloTrainC2"     text="Элеваторы Montana Prairie" />    
+        <text name="station_grainSiloTrainC3"     text="Зерновой терминал Yellowstone" />    
+        <text name="station_balesStorageC1"       text="Компания по заготовке сена" />
+        <text name="station_grainSiloStoreC2"     text="Сельхозтовары Montana Prairie" />    
+        <text name="station_grainSiloStoreC3"     text="Flathead: Корма и зерно" />    
+        <text name="station_grainSiloStoreC4"     text="Зерновой элеватор Iron Ridge" />    
+        <text name="station_grainSiloStoreC5"     text="Зерновая компания Lone Pine" />    
+        <text name="station_grainSiloStoreC6"     text="AgriCore Montana" />
+        <text name="station_productStoreC1"       text="Ресторан" />    
+        <text name="station_productStoreC2"       text="Торговый центр Hobson" />    
+        <text name="station_productStoreC3"       text="Сельский магазин Hobson" />    
+        <text name="station_productStoreC4"       text="Магазин Dollar General" />    
+        <text name="station_productStoreC5"       text="Заправка BP" />    
+        <text name="station_productStoreC6"       text="Заправка Casey's" />    
+        <text name="station_productStoreC7"       text="Ресторан Applebee's" />    
+        <text name="station_productStoreC8"       text="Пивоварня Kodiac" />    
+        <text name="station_productStoreC9"       text="Торговый центр Moccasin" />    
+        <text name="station_productStoreC10"      text="Сельский магазин Moccasin" />    
+        <text name="station_productStoreC11"      text="Закусочная Subway" />
+	
+	</texts>
+</l10n>

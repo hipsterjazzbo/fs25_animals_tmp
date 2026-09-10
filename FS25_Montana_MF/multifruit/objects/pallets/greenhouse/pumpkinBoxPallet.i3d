@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="pumpkinBoxPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="textures/Empty_spec.png"/>
+    <File fileId="9" filename="textures/melon02_normal.png"/>
+    <File fileId="5" filename="textures/pumpkin_diffuse.dds"/>
+    <File fileId="7" filename="textures/pumpkinstalk_diffuse.dds"/>
+    <File fileId="8" filename="textures/pumpkinPic.png"/>
+    <File fileId="2" filename="$data/objects/pallets/fillablePallet/fillablePallet_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/fillablePallet/fillablePallet_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/fillablePallet/fillablePallet_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="12 - Default" materialId="51">
+      <Texture fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="14 - Default" materialId="52">
+      <Texture fileId="7"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="fillablePallet_mat" materialId="53">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="54" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="UnnamedMaterial" materialId="55">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9" bumpDepth="0"/>
+      <Glossmap fileId="6"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="pumpkinBoxPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="pumpkinPalletBox_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" clipDistance="150" nodeId="64" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="54">
+      <Shape name="dynamicMountTrigger" translation="0 0.090475 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="65" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="54"/>
+      <TransformGroup name="content" nodeId="66">
+        <TransformGroup name="PalletBox01" nodeId="67">
+          <Shape name="PalletBox01" shapeId="3" nodeId="68" castsShadows="true" receiveShadows="true" materialIds="53">
+            <TransformGroup name="pumpkin" translation="5.17683e-15 0.394088 0" rotation="0 -0 -7.5265e-13" clipDistance="200" nodeId="69">
+              <Shape name="pumpkin" translation="0.326713 0.168529 -0.148819" scale="0.15 0.15 0.15" shapeId="4" nodeId="70" castsShadows="true" receiveShadows="true" materialIds="51">
+                <Shape name="pumpkinStalk" translation="-0.0047214 0.99816 0.0083451" shapeId="5" nodeId="71" castsShadows="true" receiveShadows="true" materialIds="52"/>
+              </Shape>
+              <Shape name="pumpkin" translation="-0.0989482 0.168529 -0.148692" rotation="0 -2.13564 -1.94261e-19" scale="0.15 0.15 0.15" shapeId="4" nodeId="72" castsShadows="true" receiveShadows="true" materialIds="51">
+                <Shape name="pumpkinStalk" translation="-0.0047214 0.99816 0.0083451" shapeId="5" nodeId="73" castsShadows="true" receiveShadows="true" materialIds="52"/>
+              </Shape>
+              <Shape name="pumpkin" translation="-0.359387 0.168529 0.172515" rotation="0 22.1001 1.5714e-19" scale="0.15 0.15 0.15" shapeId="4" nodeId="74" castsShadows="true" receiveShadows="true" materialIds="51">
+                <Shape name="pumpkinStalk" translation="-0.0047214 0.99816 0.0083451" shapeId="5" nodeId="75" castsShadows="true" receiveShadows="true" materialIds="52"/>
+              </Shape>
+              <Shape name="pumpkin" translation="0.108932 0.168529 0.190279" rotation="-180 75.8889 180" scale="0.13 0.13 0.13" shapeId="4" nodeId="76" castsShadows="true" receiveShadows="true" materialIds="51">
+                <Shape name="pumpkinStalk" translation="-0.0047214 0.99816 0.0083451" shapeId="5" nodeId="77" castsShadows="true" receiveShadows="true" materialIds="52"/>
+              </Shape>
+              <Shape name="pumpkin" translation="-0.440295 0.160262 -0.173047" rotation="-130.007 75.8889 -180" scale="0.1 0.1 0.1" shapeId="4" nodeId="128" castsShadows="true" receiveShadows="true" materialIds="51">
+                <Shape name="pumpkinStalk" translation="-0.0047214 0.99816 0.0083451" shapeId="5" nodeId="129" castsShadows="true" receiveShadows="true" materialIds="52"/>
+              </Shape>
+              <Shape name="pumpkin" translation="0.430749 0.178265 0.209872" rotation="173.471 8.38536 -156.551" scale="0.1 0.1 0.1" shapeId="4" nodeId="142" castsShadows="true" receiveShadows="true" materialIds="51">
+                <Shape name="pumpkinStalk" translation="-0.0047214 0.99816 0.0083451" shapeId="5" nodeId="143" castsShadows="true" receiveShadows="true" materialIds="52"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="pumpkin" translation="3.1713e-15 0.241416 0" rotation="0 -0 -7.5265e-13" clipDistance="200" nodeId="78">
+              <Shape name="pumpkin" translation="0.326713 0.168529 -0.148819" scale="0.15 0.15 0.15" shapeId="4" nodeId="79" castsShadows="true" receiveShadows="true" materialIds="51">
+                <Shape name="pumpkinStalk" translation="-0.0047214 0.99816 0.0083451" shapeId="5" nodeId="80" castsShadows="true" receiveShadows="true" materialIds="52"/>
+              </Shape>
+              <Shape name="pumpkin" translation="-0.338281 0.168623 -0.148692" rotation="0 -0 -0.170084" scale="0.15 0.15 0.15" shapeId="4" nodeId="81" castsShadows="true" receiveShadows="true" materialIds="51"/>
+              <Shape name="pumpkin" translation="-0.224885 0.168529 0.172515" scale="0.15 0.15 0.15" shapeId="4" nodeId="83" castsShadows="true" receiveShadows="true" materialIds="51">
+                <Shape name="pumpkinStalk" translation="-0.0047214 0.99816 0.0083451" shapeId="5" nodeId="84" castsShadows="true" receiveShadows="true" materialIds="52"/>
+              </Shape>
+              <Shape name="pumpkin" translation="0.307153 0.168529 0.162866" scale="0.15 0.15 0.15" shapeId="4" nodeId="85" castsShadows="true" receiveShadows="true" materialIds="51">
+                <Shape name="pumpkinStalk" translation="-0.0047214 0.99816 0.0083451" rotation="180 37.8519 180" shapeId="5" nodeId="86" castsShadows="true" receiveShadows="true" materialIds="52"/>
+              </Shape>
+            </TransformGroup>
+            <Shape name="fruitPic01" translation="-0.474512 0.706569 0.396257" rotation="90 -0 0" scale="0.129614 1 0.13" shapeId="6" nodeId="87" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="55"/>
+            <Shape name="fruitPic02" translation="0.472276 0.706569 -0.395672" rotation="-90 0 180" scale="0.129614 1 0.13" shapeId="6" nodeId="88" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="55"/>
+          </Shape>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="89">
+        <Shape name="floorCollision01" translation="0.3 5.7e-05 0" shapeId="7" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.001" nodeId="90" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="54"/>
+        <Shape name="floorCollision02" translation="-0.3 5.7e-05 0" shapeId="7" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.001" nodeId="91" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="54"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+</i3D>

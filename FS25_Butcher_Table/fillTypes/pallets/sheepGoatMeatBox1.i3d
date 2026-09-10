@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="sheepGoatMeatBox1.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.11"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="../../texture/filll_sheepMeat.dds"/>
+    <File fileId="7" filename="../../texture/filll_sheepMeat1.dds"/>
+    <File fileId="8" filename="../../texture/meatBoxes/meat_diffuse.dds"/>
+    <File fileId="9" filename="../../texture/meatBoxes/meat_normal.dds"/>
+    <File fileId="10" filename="../../texture/meatBoxes/meat_specular.dds"/>
+    <File fileId="3" filename="../../texture/plasticBox_diffuse.dds"/>
+    <File fileId="4" filename="../../texture/plasticBox_normal.dds"/>
+    <File fileId="5" filename="../../texture/plasticBox_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="mat1" materialId="6" specularColor="0.4 1 0.4">
+    </Material>
+    <Material name="meat_mat" materialId="7">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="plasticBox01_mat" materialId="8">
+      <Texture fileId="3"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="9">
+      <Texture fileId="6"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="10">
+      <Texture fileId="7"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="sheepGoatMeatBox1.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="sheepMeatPallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="20" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+      <Shape name="dynamicMountTrigger" translation="0 0.160827 0" shapeId="2" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x20000" nodeId="21" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      <TransformGroup name="content" translation="0 -0.0278458 0" scale="1 0.9 1" nodeId="22">
+        <Shape name="cereals01" translation="0.00485786 0.69612 0.00363407" rotation="-90 -90 4.64663e-06" scale="0.02542 0.0244321 0.0152194" shapeId="3" nodeId="23" castsShadows="true" receiveShadows="true" materialIds="6,6,6">
+          <Shape name="cereals01Tension" translation="0.0335403 -25.4293 -7.17966" scale="52.6063 164.612 71.477" shapeId="4" nodeId="24" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        </Shape>
+        <Shape name="plasticBox" lockedgroup="true" translation="0.00223846 0.0283107 -0.00283237" scale="1.33834 0.952558 0.899918" shapeId="5" clipDistance="100" nodeId="25" castsShadows="true" receiveShadows="true" materialIds="8">
+          <TransformGroup name="image" translation="-0.00167256 -0.107873 0.00314736" scale="0.747194 1.16645 1.11121" nodeId="26">
+            <Shape name="plane" translation="0.271978 0.756988 0.405791" rotation="90 -0 0" scale="0.222654 0.222654 0.222654" shapeId="6" clipDistance="300" nodeId="27" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="9"/>
+            <Shape name="plane" translation="-0.281778 0.756988 0.404358" rotation="90 -0 0" scale="0.222654 0.222654 0.222654" shapeId="6" clipDistance="300" nodeId="28" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="10"/>
+            <Shape name="plane" translation="0.271978 0.756988 -0.410849" rotation="-90 -0 180" scale="0.222654 0.222654 0.222654" shapeId="6" clipDistance="300" nodeId="29" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="10"/>
+            <Shape name="plane" translation="-0.281778 0.756988 -0.412281" rotation="-90 -0 180" scale="0.222654 0.222654 0.222654" shapeId="6" clipDistance="300" nodeId="30" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="9"/>
+          </TransformGroup>
+        </Shape>
+        <TransformGroup name="visibilityNodes" translation="-0.234339 0.787359 -0.00173912" scale="1 1 1.62137" nodeId="31">
+          <Shape name="beef05" translation="-0.265418 0.0589671 -0.055205" shapeId="7" clipDistance="40" nodeId="32" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.108653 0.0589671 -0.055205" shapeId="7" clipDistance="40" nodeId="33" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.0386048 0.059 -0.055205" rotation="0 180 0" shapeId="7" clipDistance="40" nodeId="34" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.190779 0.059 -0.055205" rotation="0 180 0" shapeId="7" clipDistance="40" nodeId="35" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.164492 0.0654132 0.178481" rotation="0 -90 0" scale="0.763525 1 1" shapeId="7" clipDistance="40" nodeId="36" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.186344 0.0654132 0.178481" rotation="0 -90 0" scale="0.763525 1 0.90323" shapeId="7" clipDistance="40" nodeId="37" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.156193 0.137756 -0.154368" rotation="0 -90 0" shapeId="7" clipDistance="40" nodeId="38" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.156193 0.137756 -0.00498044" rotation="0 90 0" shapeId="7" clipDistance="40" nodeId="39" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.156193 0.137756 0.151124" rotation="0 90 0" shapeId="7" clipDistance="40" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.302719 0.0652289 -0.0579684" rotation="0.142041 0.0662783 -90.7305" scale="0.763525 0.979118 0.98102" shapeId="7" clipDistance="40" nodeId="41" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.182549 0.150277 -0.158178" rotation="-4.24704 90 0" scale="1 1 0.935693" shapeId="7" clipDistance="40" nodeId="42" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.182549 0.150277 -0.0107592" rotation="5.03219 -90 0" scale="1 1 0.935693" shapeId="7" clipDistance="40" nodeId="43" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.180416 0.150089 0.14748" rotation="5.03219 -90 0" scale="1 1 0.925192" shapeId="7" clipDistance="40" nodeId="44" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.173453 0.201252 -0.00498044" scale="1 0.802039 1" shapeId="7" clipDistance="40" nodeId="45" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.0185185 0.196534 -0.012419" rotation="0 180 0" scale="0.999702 0.794748 0.999702" shapeId="7" clipDistance="40" nodeId="46" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.13572 0.202304 -0.012419" rotation="180 -9.67541e-07 179.934" scale="0.999702 0.777821 0.999702" shapeId="7" clipDistance="40" nodeId="47" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        </TransformGroup>
+        <TransformGroup name="visibilityNodes" translation="0.2332 0.783344 -0.00173912" scale="1 1 1.62137" nodeId="48">
+          <Shape name="beef05" translation="-0.265418 0.0589671 -0.055205" shapeId="7" clipDistance="40" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.108653 0.0589671 -0.055205" shapeId="7" clipDistance="40" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.0386048 0.059 -0.055205" rotation="0 180 0" shapeId="7" clipDistance="40" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.190779 0.059 -0.055205" rotation="0 180 0" shapeId="7" clipDistance="40" nodeId="52" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.164492 0.0654132 0.178481" rotation="0 -90 0" scale="0.763525 1 1" shapeId="7" clipDistance="40" nodeId="53" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.186344 0.0654132 0.178481" rotation="0 -90 0" scale="0.763525 1 0.90323" shapeId="7" clipDistance="40" nodeId="54" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.156193 0.137756 -0.154368" rotation="0 -90 0" shapeId="7" clipDistance="40" nodeId="55" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.156193 0.137756 -0.00498044" rotation="0 90 0" shapeId="7" clipDistance="40" nodeId="56" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.156193 0.137756 0.151124" rotation="0 90 0" shapeId="7" clipDistance="40" nodeId="57" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.302719 0.0652289 -0.0579684" rotation="0.142041 0.0662783 -90.7305" scale="0.763525 0.979118 0.98102" shapeId="7" clipDistance="40" nodeId="58" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.182549 0.150277 -0.158178" rotation="-4.24704 90 0" scale="1 1 0.935693" shapeId="7" clipDistance="40" nodeId="59" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.182549 0.150277 -0.0107592" rotation="5.03219 -90 0" scale="1 1 0.935693" shapeId="7" clipDistance="40" nodeId="60" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.180416 0.150089 0.14748" rotation="5.03219 -90 0" scale="1 1 0.925192" shapeId="7" clipDistance="40" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.173453 0.201252 -0.00498044" scale="1 0.802039 1" shapeId="7" clipDistance="40" nodeId="62" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.0185185 0.196534 -0.012419" rotation="0 180 0" scale="0.999702 0.794748 0.999702" shapeId="7" clipDistance="40" nodeId="63" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.13572 0.202304 -0.012419" rotation="180 -9.67541e-07 179.934" scale="0.999702 0.777821 0.999702" shapeId="7" clipDistance="40" nodeId="64" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        </TransformGroup>
+        <TransformGroup name="visibilityNodes" translation="0.2332 0.509246 -0.00173912" scale="1 1 1.62137" nodeId="65">
+          <Shape name="beef05" translation="-0.265418 0.0589671 -0.055205" shapeId="7" clipDistance="40" nodeId="66" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.108653 0.0589671 -0.055205" shapeId="7" clipDistance="40" nodeId="67" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.0386048 0.059 -0.055205" rotation="0 180 0" shapeId="7" clipDistance="40" nodeId="68" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.190779 0.059 -0.055205" rotation="0 180 0" shapeId="7" clipDistance="40" nodeId="69" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.164492 0.0654132 0.178481" rotation="0 -90 0" scale="0.763525 1 1" shapeId="7" clipDistance="40" nodeId="70" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.186344 0.0654132 0.178481" rotation="0 -90 0" scale="0.763525 1 0.90323" shapeId="7" clipDistance="40" nodeId="71" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.156193 0.137756 -0.154368" rotation="0 -90 0" shapeId="7" clipDistance="40" nodeId="72" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.156193 0.137756 -0.00498044" rotation="0 90 0" shapeId="7" clipDistance="40" nodeId="73" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.156193 0.137756 0.151124" rotation="0 90 0" shapeId="7" clipDistance="40" nodeId="74" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.302719 0.0652289 -0.0579684" rotation="0.142041 0.0662783 -90.7305" scale="0.763525 0.979118 0.98102" shapeId="7" clipDistance="40" nodeId="75" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.182549 0.150277 -0.158178" rotation="-4.24704 90 0" scale="1 1 0.935693" shapeId="7" clipDistance="40" nodeId="76" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.182549 0.150277 -0.0107592" rotation="5.03219 -90 0" scale="1 1 0.935693" shapeId="7" clipDistance="40" nodeId="77" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.180416 0.150089 0.14748" rotation="5.03219 -90 0" scale="1 1 0.925192" shapeId="7" clipDistance="40" nodeId="78" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.173453 0.201252 -0.00498044" scale="1 0.802039 1" shapeId="7" clipDistance="40" nodeId="79" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.0185185 0.196534 -0.012419" rotation="0 180 0" scale="0.999702 0.794748 0.999702" shapeId="7" clipDistance="40" nodeId="80" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.13572 0.202304 -0.012419" rotation="180 -9.67541e-07 179.934" scale="0.999702 0.777821 0.999702" shapeId="7" clipDistance="40" nodeId="81" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        </TransformGroup>
+        <TransformGroup name="visibilityNodes" translation="-0.234339 0.542061 -0.00173912" scale="1 1 1.62137" nodeId="82">
+          <Shape name="beef05" translation="-0.265418 0.0589671 -0.055205" shapeId="7" clipDistance="40" nodeId="83" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.108653 0.0589671 -0.055205" shapeId="7" clipDistance="40" nodeId="84" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.0386048 0.059 -0.055205" rotation="0 180 0" shapeId="7" clipDistance="40" nodeId="85" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.190779 0.059 -0.055205" rotation="0 180 0" shapeId="7" clipDistance="40" nodeId="86" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.164492 0.0654132 0.178481" rotation="0 -90 0" scale="0.763525 1 1" shapeId="7" clipDistance="40" nodeId="87" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.186344 0.0654132 0.178481" rotation="0 -90 0" scale="0.763525 1 0.90323" shapeId="7" clipDistance="40" nodeId="88" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.156193 0.137756 -0.154368" rotation="0 -90 0" shapeId="7" clipDistance="40" nodeId="89" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.156193 0.137756 -0.00498044" rotation="0 90 0" shapeId="7" clipDistance="40" nodeId="90" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.156193 0.137756 0.151124" rotation="0 90 0" shapeId="7" clipDistance="40" nodeId="91" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.302719 0.0652289 -0.0579684" rotation="0.142041 0.0662783 -90.7305" scale="0.763525 0.979118 0.98102" shapeId="7" clipDistance="40" nodeId="92" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.182549 0.150277 -0.158178" rotation="-4.24704 90 0" scale="1 1 0.935693" shapeId="7" clipDistance="40" nodeId="93" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.182549 0.150277 -0.0107592" rotation="5.03219 -90 0" scale="1 1 0.935693" shapeId="7" clipDistance="40" nodeId="94" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.180416 0.150089 0.14748" rotation="5.03219 -90 0" scale="1 1 0.925192" shapeId="7" clipDistance="40" nodeId="95" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.173453 0.201252 -0.00498044" scale="1 0.802039 1" shapeId="7" clipDistance="40" nodeId="96" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="-0.0185185 0.196534 -0.012419" rotation="0 180 0" scale="0.999702 0.794748 0.999702" shapeId="7" clipDistance="40" nodeId="97" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          <Shape name="beef05" translation="0.13572 0.202304 -0.012419" rotation="180 -9.67541e-07 179.934" scale="0.999702 0.777821 0.999702" shapeId="7" clipDistance="40" nodeId="98" castsShadows="true" receiveShadows="true" materialIds="7"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="collisions" clipDistance="10" nodeId="99">
+        <Shape name="floorCollision01" translation="0.3 0 0" shapeId="8" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="100" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+        <Shape name="floorCollision02" translation="-0.3 0 0" shapeId="8" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="101" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors>Jinkou89</translationContributors>
+    <languageVersion>1.0.0.0</languageVersion>
+	
+	<texts>
+	  
+	<text name="fillType_rye" 				text="Gandum Hitam (Rye)" />
+	<text name="fillType_soybeanUS"        			text="Kedelai Amerika" />
+	<text name="fillType_covercropmix"        		text="Campuran Tanaman Penutup" />
+	<text name="fillType_roundBaleLavender"        		text="Bale Lavender" />
+	<text name="fillType_clover1"        			text="Semanggi Merah" />
+	<text name="fillType_clover2"        			text="Semanggi Putih" />
+	<text name="fillType_clover_windrow"        		text="Semanggi" />
+    	<text name="fillType_alfalfa"       			text="Alfalfa" />
+	<text name="fillType_cloverSilage"        		text="Silase Semanggi" />
+   	<text name="fillType_alfalfaSilage"       		text="Silase Alfalfa" />
+   	<text name="fillType_cloverHay"     			text="Jerami Semanggi" />
+    	<text name="fillType_alfalfaHay"    			text="Jerami Alfalfa" />
+    	<text name="fillType_beanstraw" 			text="Jerami Kacang-kacangan" />
+    	<text name="fillType_cornStalks"    			text="Batang Jagung" />
+	<text name="fillType_flaxFiber"        			text="Serat Rami" />
+	<text name="fillType_flax"        			text="Rami (Flax)" />
+	<text name="fillType_linseed"        			text="Biji Rami" />
+	<text name="fillType_millet"        			text="Milet" />
+	<text name="fillType_poppy"        			text="Bunga Poppy" />
+	<text name="fillType_drypeas"        			text="Kacang Polong Kering" />
+	<text name="fillType_beans"        			text="Kacang Pinto" />
+	<text name="fillType_mustard"        			text="Sawi" />
+	<text name="fillType_lentils"        			text="Lentil" />
+	<text name="fillType_silphie"        			text="Silphium" />
+	<text name="fillType_spelt"        			text="Gandum Spelt" />
+	<text name="fillType_triticale"        			text="Triticale" />
+	<text name="fillType_soybean2"        			text="Kedelai Amerika" />
+	<text name="fillType_tobacco"        			text="Tembakau" />
+	<text name="fillType_tobaccoo"        			text="Daun Tembakau" />      
+	<text name="fillType_compost" 				text="Kompos" />
+	<text name="fillType_organicWaste" 			text="Limbah Organik" />
+	<text name="fillType_grapeA" 				text="Anggur Merah" />
+	<text name="fillType_grapeB" 				text="Anggur Putih" />
+	<text name="fillType_chickpeas" 			text="Kacang Arab" />
+	<text name="fillType_buckwheat" 			text="Gandum Kuda (Buckwheat)" />
+	<text name="shopItem_grapeb_vine" 			text="Kebun Anggur Putih" />
+	<text name="shopItem_hopsVine" 				text="Kebun Hop" />
+	<text name="fillType_hemp" 				text="Ganja Industri (Hemp)" />
+	<text name="fillType_hempFiber" 			text="Serat Hemp" />
+	<text name="fillType_lavender" 				text="Lavender" />
+	<text name="fillType_potatoCut"        			text="Potongan Kentang" />
+	<text name="fillType_beetrootCut"        		text="Potongan Bit Merah" />
+	<text name="fillType_carrotCut"        			text="Potongan Wortel" />
+	<text name="fillType_parsnipCut"        		text="Potongan Parsnip" />  
+	<text name="fillTypeGroup_TMR"        			text="TMR, Fermentasi Alfalfa/Semanggi" />	  
+	<text name="fillTypeGroup_hays"        			text="Jerami, Jerami Alfalfa/Semanggi" />
+	<text name="fillTypeGroup_grassa"        		text="Rumput, Alfalfa/Semanggi Segar" />
+	<text name="fillTypeGroup_moisture"        		text="Kelembapan: Potongan Umbi-umbian" />
+	<text name="fillTypeGroup_grassHay"        		text="Rumput/Alfalfa/Semanggi Segar atau Kering" />
+	<text name="fillType_mineralFeed1"        		text="Pakan Mineral/Kacang Polong Kering" />
+	<text name="fillTypeGroup_pigForage"        		text="Pakan Campuran Babi" />
+	<text name="fillType_peanut" 				text="Kacang Tanah" />
+	<text name="fillType_miscanthus" 			text="Rumput Gajah (Miscanthus)" />
+	<text name="fillType_miscanthusCut" 			text="Cacahan Miscanthus" />
+
+
+		<text name="fillType_maize2" 			text="Jagung Kering" />
+		<text name="fillType_soymilk" 			text="Susu Kedelai" />
+		<text name="fillType_pasta" 			text="Pasta" />
+		<text name="fillType_chips" 			text="Keripik" />
+		<text name="fillType_ethanol" 			text="Etanol" />
+		<text name="fillType_cornflour"			text="Tepung Jagung" />
+		<text name="fillType_cornOil"			text="Minyak Jagung" />
+		<text name="fillType_linseedOil"		text="Minyak Biji Rami" />
+		<text name="fillType_mustardOil"		text="Minyak Sawi" />
+		<text name="fillType_poppyOil"			text="Minyak Poppy" />
+		<text name="fillType_pizza"			text="Pitsa" />
+		<text name="fillType_buckwheatflour"        	text="Tepung Buckwheat" />
+		<text name="fillType_gramflour"        		text="Tepung Kacang Arab" />
+		<text name="fillType_milletflour"        	text="Tepung Milet" />
+		<text name="fillType_ryeflour"        		text="Tepung Rye" />
+		<text name="fillType_sorghumflour"        	text="Tepung Sorgum" />
+		<text name="fillType_crackedCorn"        	text="Jagung Giling" />
+		<text name="fillType_apple"        		text="Apel" />
+		<text name="fillType_apricot"        		text="Aprikot" />
+		<text name="fillType_cherry"        		text="Ceri" />
+		<text name="fillType_pear"        		text="Pir" />
+		<text name="fillType_peach"        		text="Persik" />
+		<text name="fillType_plum"        		text="Plum" />
+		<text name="fillType_quince"        		text="Quince" />
+		<text name="fillType_cabbage"        		text="Kubis Putih" />
+		<text name="fillType_redCabbage"        	text="Kubis Merah" />
+		<text name="fillType_melon"        		text="Melon" />
+		<text name="fillType_pumpkin"        		text="Labu" />
+		<text name="fillType_watermelon"        	text="Semangka" />
+		<text name="fillType_cucumber"        		text="Timun" />
+		<text name="fillType_eggplant"        		text="Terong" />
+		<text name="fillType_pepper"        		text="Paprika" />
+		<text name="fillType_cauliflower" 		text="Kembang Kol" />
+		<text name="fillType_bran"        		text="Dedak" />
+		<text name="fillType_molasses"        		text="Molase" />
+		<text name="fillType_appleJuice"        	text="Jus Apel" />
+		<text name="fillType_apricotJuice"        	text="Jus Aprikot" />
+		<text name="fillType_beetrootJuice"        	text="Jus Bit Merah" />
+		<text name="fillType_carrotJuice"        	text="Jus Wortel" />
+		<text name="fillType_cherryJuice"        	text="Jus Ceri" />
+		<text name="fillType_melonJuice"        	text="Jus Melon" />
+		<text name="fillType_multifruitJuice"        	text="Jus Aneka Buah" />
+		<text name="fillType_peachJuice"        	text="Jus Persik" />
+		<text name="fillType_pearJuice"        		text="Jus Pir" />
+		<text name="fillType_plumJuice"        		text="Jus Plum" />
+		<text name="fillType_quinceJuice"        	text="Jus Quince" />
+		<text name="fillType_strawberryJuice"        	text="Jus Stroberi" />
+		<text name="fillType_tomatoJuice"        	text="Jus Tomat" />
+		<text name="fillType_watermelonJuice"        	text="Jus Semangka" />
+ 		<text name="fillType_cattle" 			text="Sapi" />
+		<text name="fillType_pigs" 			text="Babi" />
+		<text name="fillType_sheepGoat" 		text="Domba/Kambing" />
+ 		<text name="fillType_beef" 			text="Daging Sapi" />
+		<text name="fillType_pork" 			text="Daging Babi" />
+		<text name="fillType_poultryMeat" 		text="Daging Unggas" />
+		<text name="fillType_lamb" 			text="Daging Domba" />
+		<text name="fillType_cigar" 			text="Cerutu" />
+		<text name="fillType_cigarette" 		text="Rokok" />
+		<text name="fillType_animalFat" 		text="Lemak Hewani" />
+		<text name="fillType_perfume" 			text="Parfum" />
+		<text name="fillType_soap" 			text="Sabun" />
+		<text name="fillType_lavenderOil" 		text="Minyak Atsiri Lavender" />
+		<text name="fillType_bourbonBarrel" 		text="Bourbon" />
+		<text name="fillType_brandyBarrel" 		text="Brandy" />
+		<text name="fillType_ciderBarrel" 		text="Sari Buah Apel (Cider)" />
+		<text name="fillType_meadBarrel" 		text="Minuman Madu (Mead)" />
+		<text name="fillType_liqueurBarrel" 		text="Likuer Buah" />
+		<text name="fillType_vodkaBarrel" 		text="Vodka" />
+		<text name="fillType_whiskeyBarrel" 		text="Wiski" />
+		<text name="fillType_rumBarrel" 		text="Rum" />
+		<text name="fillType_peanutflour" 		text="Tepung Kacang Tanah" />
+		<text name="fillType_peanutOil" 		text="Minyak Kacang Tanah" />
+		<text name="fillType_peanutButter" 		text="Selai Kacang" />
+		<text name="fillType_mayo" 			text="Mayones" />
+		<text name="fillType_ketchup" 			text="Saus Tomat" />
+		<text name="fillType_hotSauce" 			text="Saus Sambal" />
+		<text name="fillType_soySauce" 			text="Kecap Asin/Kedelai" />
+		<text name="fillType_garlicSauce" 		text="Saus Bawang Putih" />
+		<text name="fillType_mustardSauce" 		text="Saus Mustard" />
+		<text name="fillType_pickledCucumber" 		text="Acar Timun" />
+		<text name="fillType_pickledCabbage" 		text="Acar Kubis" />
+		<text name="fillType_pickledCauliflower" 	text="Acar Kembang Kol" />
+		<text name="fillType_beansSoup" 		text="Sup Kacang" />
+		<text name="fillType_peanutBags" 		text="Kantung Kacang Tanah" />
+		<text name="fillType_beansBags" 		text="Kantung Kacang" />
+		<text name="fillType_cannedBeans" 		text="Kacang Kalengan" />
+		<text name="fillType_tofu" 			text="Tahu" />
+		<text name="fillType_chocomilk" 		text="Susu Cokelat" />
+		<text name="fillType_oatmilk" 			text="Susu Oat" />
+		<text name="fillType_mushroomSoup" 		text="Sup Jamur" />
+		<text name="fillType_beer" 			text="Bir" />
+		<text name="fillType_wine" 			text="Anggur (Wine)" />
+		<text name="fillType_icecream" 			text="Es Krim" />
+		<text name="fillType_sourcream" 		text="Krim Asam" />
+		<text name="fillType_yoghurt" 			text="Yoghurt" />
+		<text name="fillType_sunflowerBags" 		text="Kantung Biji Bunga Matahari" />
+		<text name="fillType_pumpkinSeeds" 		text="Kantung Biji Labu" />
+		<text name="fillType_pumpkinPuree" 		text="Pure Labu" />
+		<text name="fillType_eggplantPuree" 		text="Pure Terong" />
+		<text name="fillType_popcorn" 			text="Popcorn" />
+		<text name="fillType_cheesePuffs" 		text="Snack Keju" />
+		<text name="fillType_peanutPuffs" 		text="Snack Kacang" />
+		<text name="fillType_tortilla" 			text="Keripik Tortilla" />
+		<text name="fillType_garlicBread" 		text="Roti Bawang Putih" />
+		<text name="fillType_onionRings" 		text="Bawang Bombai Goreng" />
+		<text name="fillType_pie" 			text="Pai Buah" />
+		<text name="fillType_cocoaPowder" 		text="Bubuk Kakao" />
+		<text name="fillType_cookingSalt" 		text="Garam Dapur" />
+		<text name="fillType_yeast" 		 	text="Ragi" />
+		<text name="fillType_roulade"                   text="Bolu Gulung" />
+		<text name="fillType_strudel"                   text="Strudel" />
+		<text name="fillType_milkBread"                 text="Roti Susu" />
+		<text name="fillType_potatoBread"               text="Roti Kentang" />
+		<text name="fillType_sweetBread"                text="Roti Manis" />
+		<text name="fillType_bagel"                     text="Bagel" />
+		<text name="fillType_baguette" 			text="Baget"/>
+		<text name="fillType_hops" 			text="Hop"/>
+		<text name="fillType_cowFood" 			text="Pelet Pakan Sapi"/>
+		<text name="fillType_hayPellets" 		text="Pelet Jerami"/>
+		<text name="fillType_strawPellets" 		text="Pelet Sekam"/>
+		<text name="fillType_woodChipsPellets" 		text="Pelet Serpihan Kayu"/>
+		<text name="fillType_chocoCake" 		text="Kue Cokelat"/>
+		<text name="fillType_sesame" 			text="Wijen"/>
+		<text name="fillType_sesameOil" 		text="Minyak Wijen"/>
+		<text name="fillType_sesameBags" 		text="Biji Wijen Kemasan"/>
+		<text name="fillType_chickpeasBags" 		text="Kacang Arab Kemasan"/>
+		<text name="fillType_lentilsBags" 		text="Lentil Kemasan"/>
+		<text name="fillType_sesameRolls" 		text="Camilan Wijen Madu"/>
+		<text name="fillType_hummus" 			text="Hummus"/>
+
+	<text name="pigProcessing"        			text="Pengolahan Babi" />
+		<text name="poultryProcessing"        			text="Pengolahan Ayam" />
+		<text name="cattleProcessing"        			text="Pengolahan Sapi" />
+		<text name="sheepProcessing"        			text="Pengolahan Domba dan Kambing" />
+		<text name="message_unloadAnimalSuccess" 		text="Hewan berhasil dipindahkan ke %s!" />
+        	<text name="message_unloadAnimalConfirmation" 		text="Apakah Anda ingin memindahkan %d hewan (%s) ke %s?" />
+        	<text name="button_moveAnimal" 				text="Pindah ke %s" />
+		<text name="message_animalTooYoung" 			text="Hewan ini terlalu muda." />
+		<text name="message_animalTooOld" 			text="Hewan ini terlalu tua." />
+        	<text name="configuration_grapeB" 			text="Anggur Putih"/>
+        	<text name="configuration_hops" 			text="Hop"/>
+		<text name="function_fermentingTower" 			text="Di fasilitas ini Anda dapat memfermentasi rumput, cacahan batang, alfalfa, atau semanggi." />
+		<text name="function_grainDryer" 			text="Di fasilitas ini Anda dapat mengeringkan jagung Anda." />
+		<text name="function_hopsVine" 			        text="Lahan untuk menanam hop. Anda memerlukan pemanen anggur multifungsi untuk memanen hop." />
+		<text name="function_buyingPoint" 			text="Dari stasiun ini Anda dapat membeli hampir semua barang dalam jumlah besar." />
+
+
+	<text name="shopItem_appleOrchard" 		text="Perkebunan Apel Kecil" />	
+		<text name="shopItem_apricotOrchard" 		text="Perkebunan Aprikot Kecil" />	
+		<text name="shopItem_appleTree" 		text="Pohon Apel" />	
+		<text name="shopItem_apricotTree" 		text="Pohon Aprikot" />
+		<text name="shopItem_cherryOrchard" 		text="Perkebunan Ceri Kecil" />	
+		<text name="shopItem_pearOrchard" 		text="Perkebunan Pir Kecil" />	
+		<text name="shopItem_cherryTree" 		text="Pohon Ceri" />	
+		<text name="shopItem_pearTree" 			text="Pohon Pir" />	
+		<text name="shopItem_peachOrchard" 		text="Perkebunan Persik Kecil" />	
+		<text name="shopItem_peachTree" 		text="Pohon Persik" />		
+		<text name="shopItem_plumOrchard" 		text="Perkebunan Plum Kecil" />	
+		<text name="shopItem_plumTree" 			text="Pohon Plum" />		
+		<text name="shopItem_quinceOrchard" 		text="Perkebunan Quince Kecil" />	
+		<text name="shopItem_quinceTree" 		text="Pohon Quince" />	
+		<text name="shopItem_grainCrusher" 		text="Penggiling Biji-bijian" />	
+		<text name="shopItem_juiceFactory" 		text="Pabrik Jus" />
+		<text name="shopItem_slaughterHouse" 		text="Rumah Potong Hewan" />
+		<text name="shopItem_tobaccoProd" 		text="Pabrik Tembakau" />
+		<text name="shopItem_lavenderProd" 		text="Pabrik Pengolahan Lavender" />
+		<text name="shopItem_openGarden" 		text="Kebun Terbuka" />
+		<text name="shopItem_distillery" 		text="Pabrik Penyulingan" />
+		<text name="shopItem_preservedFood" 		text="Pabrik Makanan Awetan" />
+		<text name="shopItem_foodProd" 			text="Produksi Camilan" />
+		<text name="shopItem_fermentingTower" 		text="Menara Fermentasi" />
+		<text name="shopItem_wineCellar" 		text="Gudang Bir dan Anggur" />
+		<text name="shopItem_grainDryer" 		text="Pengering Jagung" />
+		<text name="shopItem_openGardenFieldCrops" 	text="Kebun Terbuka untuk tanaman ladang" />
+		<text name="shopItem_industrialGreenhouse" 	text="Rumah Kaca Industri" />
+		<text name="shopItem_vegetarianProd" 		text="Produksi Makanan Vegan" />
+		<text name="shopItem_pelletizer" 		text="Mesin Pelet" />
+		<text name="shopItem_buyingPoint1" 		text="Stasiun Pembelian Aneka Barang" />
+		<text name="shopItem_buyingPoint2" 		text="Stasiun Pembelian Aneka Barang (Diskon)" />
+
+
+		<text name="shopItem_jamProd" 				text="Pabrik Selai" />
+		<text name="fillType_edamame" 				text="Edamame (Kedelai Hijau)"/>
+		<text name="fillType_taro" 				text="Talas"/>
+		<text name="fillType_okra" 				text="Okra"/>
+		<text name="fillType_mint" 				text="Mint"/>
+		<text name="fillType_greenRye" 				text="Rye Hijau" />
+		<text name="fillType_taroCut" 				text="Talas Potong" />
+		<text name="fillType_taroFlour" 			text="Tepung Talas" />
+		<text name="fillType_taroSoup" 				text="Sup Talas" />
+		<text name="fillType_taroChips" 			text="Keripik Talas" />
+		<text name="fillType_muffin" 				text="Muffin" />
+		<text name="fillType_donut" 				text="Donat" />
+		<text name="fillType_ccm" 				text="Campuran Tongkol Jagung Fermentasi" />
+		<text name="fillType_ccmraw" 				text="Campuran Tongkol Jagung" />
+		<text name="fillType_cropWindrow" 			text="Cacahan Seluruh Tanaman" />
+		<text name="fillType_cropSilage" 			text="Silase Seluruh Tanaman" />
+		<text name="fillType_grassSilage" 			text="Silase Rumput" />
+		<text name="fillType_safflower" 			text="Kesumba (Safflower)" />
+		<text name="fillType_appleJam"        			text="Selai Apel" />
+		<text name="fillType_apricotJam"        		text="Selai Aprikot" />
+		<text name="fillType_cherryJam"        			text="Selai Ceri" />
+		<text name="fillType_grapeJam"        			text="Selai Anggur" />
+		<text name="fillType_melonJam"        			text="Selai Melon" />
+		<text name="fillType_peachJam"        			text="Selai Persik" />
+		<text name="fillType_pearJam"        			text="Selai Pir" />
+		<text name="fillType_plumJam"        			text="Selai Plum" />
+		<text name="fillType_strawberryJam"        		text="Selai Stroberi" />
+		<text name="fillType_quinceJam"        			text="Selai Quince" />
+		<text name="fillType_safflowerOil" 			text="Minyak Safflower" />
+		<text name="fillType_mintOil" 				text="Minyak Atsiri Mint"/>
+		<text name="fillType_mintBarrel" 			text="Likuer Mint"/>
+		<text name="fillType_jarredOkra"        		text="Okra dalam Stoples" />
+		<text name="fillType_jarredEdamame"        		text="Edamame dalam Stoples" />
+
+
+<text name="fillType_duckEgg"                 text="Telur Bebek"/>
+        <text name="shopItem_duckGooseBarn"             text="Kandang Bebek dan Angsa"/>
+        <text name="shopItem_duckGoosePasture"             text="Padang Rumput Bebek dan Angsa"/>
+        <text name="shopItem_rabbitHutch"             text="Kandang Kelinci"/>
+        <text name="function_animalPenDuck"             text="Di sini Anda bisa beternak bebek dan angsa. Beri mereka makan dan beri alas jerami untuk mendapatkan telur bebek dan pupuk kandang."/>
+        <text name="function_animalPenRabbit"             text="Di sini Anda bisa beternak kelinci. Beri mereka makan dan beri alas jerami. Setelah mereka tumbuh besar, Anda bisa menjualnya untuk mendapatkan keuntungan."/>
+        <text name="fillTypeGroup_clover"                text="Semanggi Segar" />
+        <text name="fillTypeGroup_fruitVegetables"             text="Buah dan Sayuran" />
+
+    <text name="fillType_goose"                            text="Angsa" />
+        <text name="animal_group_goose"                        text="Angsa dan Bebek" />
+        <text name="shopItem_animalGooseGrowthStage0"           text="Anak Angsa" />
+        <text name="shopItem_animalGooseGrowthStage1"           text="Angsa" />
+        <text name="animal_descriptionGooseProfitGrowthStage0" text="Anak angsa bisa digemukkan lalu dijual untuk mendapatkan keuntungan." />
+        <text name="animal_descriptionGooseProfitGrowthStage1" text="Angsa bisa dikembangbiakkan lalu dijual untuk mendapatkan keuntungan." />
+        <text name="animal_descriptionGooseFeed"               text="Beri mereka makan seperti ayam. Air disuplai secara otomatis tergantung pada jenis kandangnya." />
+        <text name="animal_descriptionGooseReproduction"       text="Angsa mencapai kematangan seksual pada usia 10 bulan. Musim kawin berlangsung selama satu bulan." />
+
+    <text name="fillType_duck"                             text="Bebek" />
+        <text name="shopItem_animalDuckGrowthStage0"           text="Anak Bebek" />
+        <text name="animal_duckGrowthStage0Description"        text="Anak bebek belum bisa bertelur. Mereka cocok untuk dikembangbiakkan atau bisa dijual." />    
+        <text name="shopItem_animalDuckGrowthStage1"           text="Bebek" />    
+        <text name="animal_duckGrowthStage1Description"        text="Bebek menghasilkan telur yang bisa Anda jual di titik penjualan atau diproses lebih lanjut di fasilitas produksi Anda." />    
+        <text name="animal_poultryFoodDescription"             text="Unggas membutuhkan biji-bijian dan air untuk berproduksi. Catatan: Beberapa kandang dilengkapi dengan suplai air otomatis, sehingga tidak perlu menambah air secara manual." />
+        
+         <text name="fillType_rabbit"                            text="Kelinci Betina" />
+            <text name="fillType_rabbitMale"                        text="Kelinci Jantan" />
+            <text name="animal_group_rabbits"                       text="Kelinci" />
+            <text name="shopItem_animalRabbitGrowthStage0"          text="Kelinci (Bayi)" />
+            <text name="shopItem_animalRabbitGrowthStage1"          text="Kelinci (Muda)" />
+            <text name="shopItem_animalRabbitGrowthStage2"          text="Kelinci (Betina)" />
+            <text name="shopItem_animalRabbitGrowthStage3"          text="Kelinci (Jantan)" />
+            <text name="animal_rabbitGrowthStage0Description"       text="Bayi kelinci adalah yang termuda dari spesies ini. Mereka tidak dapat dibeli secara individu dan lahir dari induknya." />
+            <text name="animal_rabbitGrowthStage1Description"       text="Kelinci muda dapat digunakan untuk pengembangbiakan." />
+            <text name="animal_rabbitGrowthStage2Description"       text="Kelinci betina dapat menghasilkan keturunan atau dijual. Keturunannya lebih muda dan lebih kecil dari kelinci muda." />
+            <text name="animal_rabbitGrowthStage3Description"       text="Kelinci jantan." />
+            <text name="animal_rabbitBeddingDescription"            text="Kelinci jantan hanya dapat dibeli dan dijual." />
+            <text name="animal_rabbitFoodDescription"               text="Kelinci membutuhkan jerami agar mereka merasa nyaman." />
+
+        <text name="geeseProcessing"                     text="Pengolahan Angsa dan Bebek" />
+        <text name="rabbitProcessing"                     text="Pengolahan Kelinci" />
+        <text name="fillType_leather"              text="Kulit Asli"/>
+        <text name="fillType_leatherJacket"          text="Jaket Kulit"/>
+        <text name="fillType_pillow"              text="Bantal"/>
+        <text name="fillType_furCoat"              text="Mantel Bulu"/>
+        <text name="fillType_feathers"              text="Bulu Unggas" />
+        <text name="fillType_rabbitMeat"          text="Daging Kelinci" />
+        <text name="fillType_rabbitFur"          text="Bulu Kelinci" />
+        <text name="fillType_poultry2"              text="Unggas (Angsa dan Bebek)" />
+        <text name="fillType_hare"              text="Kelinci" />
+        <text name="fillType_poultry"              text="Unggas (Ayam)" />
+
+<text name="fillType_anhydrous"          text="Ammonia Anhidrat (NH3)" />
+        <text name="fillType_propane"           text="Gas Propana" />
+<text name="shopItem_bakeryFactory"     text="Toko Roti Montana" />    
+        <text name="shopItem_beerFactory"       text="Pembuatan Bir Yuengling" />        
+        <text name="shopItem_ethanolFactory"    text="Pabrik Etanol Rocky Mountain" />    
+        <text name="shopItem_whiskeyFactory"    text="Penyulingan Wiski Jack Daniels" />    
+        <text name="shopItem_dairyFactory"      text="Produk Susu Country View" />    
+        <text name="shopItem_wineFactory"       text="Winery Duckhorn" />    
+        <text name="shopItem_pizzaFactory"      text="American Pizza Company" />    
+        <text name="shopItem_grainFlourFactory" text="Gilingan Tepung" />    
+        <text name="shopItem_oilFactory"        text="Pabrik Minyak" />    
+    <text name="station_grainSiloTrainC1"     text="Perusahaan Biji-bijian Great Plains" />    
+        <text name="station_grainSiloTrainC2"     text="Silo Biji-bijian Montana Prairie" />    
+        <text name="station_grainSiloTrainC3"     text="Terminal Biji-bijian Yellowstone" />    
+        <text name="station_balesStorageC1"       text="Perusahaan Jerami Montana" />
+        <text name="station_grainSiloStoreC2"     text="Pasokan Pertanian Montana Prairie" />    
+        <text name="station_grainSiloStoreC3"     text="Pakan dan Biji-bijian Flathead" />    
+        <text name="station_grainSiloStoreC4"     text="Silo Biji-bijian Iron Ridge" />    
+        <text name="station_grainSiloStoreC5"     text="Lone Pine Grain Co." />    
+        <text name="station_grainSiloStoreC6"     text="AgriCore Montana" />
+        <text name="station_productStoreC1"       text="Restoran" />    
+        <text name="station_productStoreC2"       text="Pusat Perbelanjaan Hobson" />    
+        <text name="station_productStoreC3"       text="Toko Serba Ada Hobson" />    
+        <text name="station_productStoreC4"       text="Toko Dollar General" />    
+        <text name="station_productStoreC5"       text="SPBU BP" />    
+        <text name="station_productStoreC6"       text="SPBU Casey's" />    
+        <text name="station_productStoreC7"       text="Restoran Applebee's" />    
+        <text name="station_productStoreC8"       text="Pembuatan Bir Kodiac" />    
+        <text name="station_productStoreC9"       text="Pusat Perbelanjaan Moccasin" />    
+        <text name="station_productStoreC10"      text="Toko Serba Ada Moccasin" />    
+        <text name="station_productStoreC11"      text="Gerai Subway" />
+	
+	</texts>
+</l10n>

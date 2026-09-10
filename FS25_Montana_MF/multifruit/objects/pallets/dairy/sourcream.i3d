@@ -1,0 +1,1582 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="sourcream.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="textures/euroPallet01_diffuse.png"/>
+    <File fileId="3" filename="textures/euroPallet01_normal.png"/>
+    <File fileId="4" filename="textures/euroPallet01_specular.png"/>
+    <File fileId="10" filename="textures/Metal_Corrogated_Shiny.png"/>
+    <File fileId="9" filename="textures/decal2.png"/>
+    <File fileId="7" filename="textures/sourcream.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="Color_000" materialId="1665" diffuseColor="1 1 1 1" specularColor="0.494118 1 0">
+    </Material>
+    <Material name="Color_M06" materialId="1666" diffuseColor="0.337255 0.337255 0.337255 1" specularColor="0.494118 1 0">
+    </Material>
+    <Material name="deckel" materialId="1667" specularColor="0.494118 1 0">
+      <Texture fileId="9"/>
+    </Material>
+    <Material name="euroPallet01_mat" materialId="1668">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="jogh_urt" materialId="1669" specularColor="0.494118 1 0">
+      <Texture fileId="7"/>
+    </Material>
+    <Material name="lambert1" materialId="1670" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="Metal_Corrogated_Shiny" materialId="1671" specularColor="0.494118 1 0">
+      <Texture fileId="10"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="sourcream.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="yogurtBoxPallet_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.0001" clipDistance="150" nodeId="1680" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1670">
+      <Shape name="pallet_vis" shapeId="2" nodeId="1681" castsShadows="true" receiveShadows="true" materialIds="1668">
+        <Shape name="dynamicMountTrigger" translation="0 0.0904753 0" shapeId="3" visibility="false" kinematic="true" trigger="true" collisionFilterGroup="0x8000000" collisionFilterMask="0x8000000" nodeId="1682" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1670"/>
+        <TransformGroup name="dischargeNode" translation="0 1.14017 0" nodeId="1683"/>
+        <TransformGroup name="collisions" clipDistance="10" nodeId="1684">
+          <Shape name="floorCollision01" translation="0.3 0 0" shapeId="4" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="1685" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1670"/>
+          <Shape name="floorCollision02" translation="-0.3 0 0" shapeId="4" compoundChild="true" collisionFilterGroup="0x10000" collisionFilterMask="0xfe3dfb83" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="1686" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1670"/>
+        </TransformGroup>
+        <TransformGroup name="yogurttray" translation="0.0096653 0.135 0.39627" scale="0.25 0.3 0.25" nodeId="1687">
+          <Shape name="tray" scale="0.1 0.2 0.1" shapeId="5" nodeId="1688" castsShadows="false" receiveShadows="false" materialIds="1666"/>
+          <TransformGroup name="content" nodeId="1689">
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1690">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1691" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1692" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="1693">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1694" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1695" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="1696">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1697" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1698" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1699">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1700" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1701" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="1702">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1703" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1704" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="1705">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1706" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1707" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1708">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1709" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1710" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.102 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1711">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1712" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.637 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1713" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.5429 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1714">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1715" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1716" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.75654" scale="1.1 1 1.1" nodeId="1717">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1718" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1719" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.10733 0.0258599 -1.749" scale="1.1 1 1.1" nodeId="1720">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1721" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1722" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -1.74756" scale="1.1 1 1.1" nodeId="1723">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1724" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1725" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="1726">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1727" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1728" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.07988 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="1729">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1730" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1731" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66516 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="1732">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1733" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1734" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="content" translation="0 0.465458 0" nodeId="1735">
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1736">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1737" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1738" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="1739">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1740" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1741" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="1742">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1743" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1744" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1745">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1746" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1747" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="1748">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1749" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1750" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="1751">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1752" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1753" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1754">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1755" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1756" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.102 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1757">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1758" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.637 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1759" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.5429 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1760">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1761" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1762" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.75654" scale="1.1 1 1.1" nodeId="1763">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1764" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1765" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.10733 0.0258599 -1.749" scale="1.1 1 1.1" nodeId="1766">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1767" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1768" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -1.74756" scale="1.1 1 1.1" nodeId="1769">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1770" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1771" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="1772">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1773" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1774" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.07988 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="1775">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1776" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1777" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66516 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="1778">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1779" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1780" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="yogurttray" translation="-0.598179 0.135 0.393797" scale="0.25 0.3 0.25" nodeId="1781">
+          <Shape name="tray" scale="0.1 0.2 0.1" shapeId="5" nodeId="1782" castsShadows="false" receiveShadows="false" materialIds="1666"/>
+          <TransformGroup name="content" nodeId="1783">
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1784">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1785" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1786" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="1787">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1788" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1789" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="1790">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1791" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1792" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1793">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1794" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1795" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="1796">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1797" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1798" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="1799">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1800" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1801" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1802">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1803" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1804" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.102 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1805">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1806" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.637 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1807" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.5429 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1808">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1809" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1810" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.75654" scale="1.1 1 1.1" nodeId="1811">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1812" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1813" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.10733 0.0258599 -1.749" scale="1.1 1 1.1" nodeId="1814">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1815" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1816" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -1.74756" scale="1.1 1 1.1" nodeId="1817">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1818" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1819" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="1820">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1821" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1822" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.07988 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="1823">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1824" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1825" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66516 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="1826">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1827" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1828" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="content" translation="0 0.465458 0" nodeId="1829">
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1830">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1831" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1832" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="1833">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1834" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1835" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="1836">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1837" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1838" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1839">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1840" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1841" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="1842">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1843" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1844" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="1845">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1846" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1847" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1848">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1849" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1850" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.102 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1851">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1852" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.637 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1853" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.5429 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1854">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1855" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1856" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.75654" scale="1.1 1 1.1" nodeId="1857">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1858" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1859" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.10733 0.0258599 -1.749" scale="1.1 1 1.1" nodeId="1860">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1861" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1862" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -1.74756" scale="1.1 1 1.1" nodeId="1863">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1864" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1865" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="1866">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1867" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1868" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.07988 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="1869">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1870" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1871" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66516 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="1872">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1873" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1874" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="yogurttray" translation="0.0096653 0.135 -0.00911013" scale="0.25 0.3 0.25" nodeId="1875">
+          <Shape name="tray" scale="0.1 0.2 0.1" shapeId="5" nodeId="1876" castsShadows="false" receiveShadows="false" materialIds="1666"/>
+          <TransformGroup name="content" nodeId="1877">
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1878">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1879" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1880" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="1881">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1882" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1883" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="1884">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1885" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1886" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1887">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1888" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1889" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="1890">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1891" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1892" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="1893">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1894" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1895" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1896">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1897" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1898" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.102 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1899">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1900" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.637 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1901" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.5429 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1902">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1903" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1904" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.75654" scale="1.1 1 1.1" nodeId="1905">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1906" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1907" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.10733 0.0258599 -1.749" scale="1.1 1 1.1" nodeId="1908">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1909" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1910" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -1.74756" scale="1.1 1 1.1" nodeId="1911">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1912" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1913" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="1914">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1915" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1916" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.07988 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="1917">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1918" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1919" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66516 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="1920">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1921" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1922" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="content" translation="0 0.465458 0" nodeId="1923">
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1924">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1925" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1926" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="1927">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1928" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1929" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="1930">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1931" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1932" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1933">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1934" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1935" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="1936">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1937" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1938" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="1939">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1940" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1941" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1942">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1943" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1944" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.102 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1945">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1946" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.637 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1947" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.5429 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1948">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1949" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1950" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.75654" scale="1.1 1 1.1" nodeId="1951">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1952" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1953" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.10733 0.0258599 -1.749" scale="1.1 1 1.1" nodeId="1954">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1955" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1956" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -1.74756" scale="1.1 1 1.1" nodeId="1957">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1958" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1959" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="1960">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1961" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1962" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.07988 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="1963">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1964" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1965" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66516 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="1966">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1967" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1968" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="yogurttray" translation="-0.598179 0.135 -0.00810484" scale="0.25 0.3 0.25" nodeId="1969">
+          <Shape name="tray" scale="0.1 0.2 0.1" shapeId="5" nodeId="1970" castsShadows="false" receiveShadows="false" materialIds="1666"/>
+          <TransformGroup name="content" nodeId="1971">
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1972">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1973" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1974" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="1975">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1976" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1977" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="1978">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1979" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1980" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1981">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1982" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1983" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="1984">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1985" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1986" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="1987">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1988" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1989" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1990">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1991" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1992" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.102 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1993">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1994" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.637 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1995" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.5429 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="1996">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="1997" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="1998" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.75654" scale="1.1 1 1.1" nodeId="1999">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2000" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2001" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.10733 0.0258599 -1.749" scale="1.1 1 1.1" nodeId="2002">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2003" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2004" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -1.74756" scale="1.1 1 1.1" nodeId="2005">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2006" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2007" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2008">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2009" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2010" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.07988 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2011">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2012" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2013" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66516 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2014">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2015" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2016" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="content" translation="0 0.465458 0" nodeId="2017">
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2018">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2019" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2020" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2021">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2022" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2023" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2024">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2025" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2026" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2027">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2028" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2029" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2030">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2031" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2032" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2033">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2034" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2035" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2036">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2037" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2038" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.102 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2039">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2040" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.637 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2041" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.5429 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2042">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2043" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2044" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.75654" scale="1.1 1 1.1" nodeId="2045">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2046" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2047" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.10733 0.0258599 -1.749" scale="1.1 1 1.1" nodeId="2048">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2049" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2050" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -1.74756" scale="1.1 1 1.1" nodeId="2051">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2052" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2053" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2054">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2055" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2056" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.07988 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2057">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2058" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2059" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66516 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2060">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2061" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2062" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="yogurttray" translation="0.0096653 0.455027 0.39627" scale="0.25 0.3 0.25" nodeId="2063">
+          <Shape name="tray" scale="0.1 0.2 0.1" shapeId="5" nodeId="2064" castsShadows="false" receiveShadows="false" materialIds="1666"/>
+          <TransformGroup name="content" nodeId="2065">
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2066">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2067" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2068" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2069">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2070" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2071" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2072">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2073" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2074" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2075">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2076" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2077" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2078">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2079" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2080" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2081">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2082" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2083" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2084">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2085" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2086" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.102 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2087">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2088" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.637 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2089" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.5429 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2090">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2091" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2092" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.75654" scale="1.1 1 1.1" nodeId="2093">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2094" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2095" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.10733 0.0258599 -1.749" scale="1.1 1 1.1" nodeId="2096">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2097" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2098" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -1.74756" scale="1.1 1 1.1" nodeId="2099">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2100" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2101" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2102">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2103" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2104" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.07988 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2105">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2106" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2107" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66516 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2108">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2109" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2110" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="content" translation="0 0.465458 0" nodeId="2111">
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2112">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2113" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2114" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2115">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2116" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2117" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2118">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2119" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2120" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2121">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2122" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2123" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2124">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2125" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2126" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2127">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2128" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2129" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2130">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2131" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2132" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.102 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2133">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2134" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.637 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2135" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.5429 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2136">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2137" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2138" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.75654" scale="1.1 1 1.1" nodeId="2139">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2140" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2141" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.10733 0.0258599 -1.749" scale="1.1 1 1.1" nodeId="2142">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2143" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2144" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -1.74756" scale="1.1 1 1.1" nodeId="2145">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2146" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2147" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2148">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2149" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2150" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.07988 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2151">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2152" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2153" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66516 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2154">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2155" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2156" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="yogurttray" translation="-0.598179 0.455 0.393797" scale="0.25 0.3 0.25" nodeId="2157">
+          <Shape name="tray" scale="0.1 0.2 0.1" shapeId="5" nodeId="2158" castsShadows="false" receiveShadows="false" materialIds="1666"/>
+          <TransformGroup name="content" nodeId="2159">
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2160">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2161" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2162" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2163">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2164" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2165" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2166">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2167" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2168" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2169">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2170" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2171" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2172">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2173" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2174" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2175">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2176" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2177" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2178">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2179" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2180" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.102 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2181">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2182" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.637 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2183" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.5429 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2184">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2185" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2186" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.75654" scale="1.1 1 1.1" nodeId="2187">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2188" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2189" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.10733 0.0258599 -1.749" scale="1.1 1 1.1" nodeId="2190">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2191" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2192" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -1.74756" scale="1.1 1 1.1" nodeId="2193">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2194" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2195" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2196">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2197" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2198" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.07988 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2199">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2200" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2201" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66516 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2202">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2203" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2204" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="content" translation="0 0.465458 0" nodeId="2205">
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2206">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2207" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2208" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2209">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2210" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2211" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2212">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2213" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2214" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2215">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2216" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2217" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2218">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2219" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2220" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2221">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2222" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2223" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2224">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2225" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2226" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.102 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2227">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2228" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.637 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2229" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.5429 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2230">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2231" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2232" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.75654" scale="1.1 1 1.1" nodeId="2233">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2234" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2235" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.10733 0.0258599 -1.749" scale="1.1 1 1.1" nodeId="2236">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2237" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2238" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -1.74756" scale="1.1 1 1.1" nodeId="2239">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2240" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2241" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2242">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2243" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2244" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.07988 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2245">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2246" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2247" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66516 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2248">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2249" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2250" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="yogurttray" translation="-0.598179 0.455 -0.00810484" scale="0.25 0.3 0.25" nodeId="2251">
+          <Shape name="tray" scale="0.1 0.2 0.1" shapeId="5" nodeId="2252" castsShadows="false" receiveShadows="false" materialIds="1666"/>
+          <TransformGroup name="content" nodeId="2253">
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2254">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2255" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2256" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2257">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2258" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2259" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2260">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2261" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2262" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2263">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2264" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2265" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2266">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2267" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2268" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2269">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2270" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2271" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2272">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2273" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2274" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.102 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2275">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2276" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.637 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2277" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.5429 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2278">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2279" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2280" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.75654" scale="1.1 1 1.1" nodeId="2281">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2282" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2283" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.10733 0.0258599 -1.749" scale="1.1 1 1.1" nodeId="2284">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2285" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2286" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -1.74756" scale="1.1 1 1.1" nodeId="2287">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2288" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2289" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2290">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2291" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2292" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.07988 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2293">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2294" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2295" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66516 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2296">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2297" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2298" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="content" translation="0 0.465458 0" nodeId="2299">
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2300">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2301" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2302" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2303">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2304" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2305" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2306">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2307" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2308" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2309">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2310" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2311" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2312">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2313" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2314" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2315">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2316" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2317" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2318">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2319" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2320" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.102 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2321">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2322" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.637 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2323" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.5429 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2324">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2325" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2326" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.75654" scale="1.1 1 1.1" nodeId="2327">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2328" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2329" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.10733 0.0258599 -1.749" scale="1.1 1 1.1" nodeId="2330">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2331" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2332" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -1.74756" scale="1.1 1 1.1" nodeId="2333">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2334" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2335" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2336">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2337" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2338" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.07988 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2339">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2340" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2341" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66516 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2342">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2343" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2344" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="yogurttray" translation="0.0096653 0.455 -0.00911013" scale="0.25 0.3 0.25" nodeId="2345">
+          <Shape name="tray" scale="0.1 0.2 0.1" shapeId="5" nodeId="2346" castsShadows="false" receiveShadows="false" materialIds="1666"/>
+          <TransformGroup name="content" nodeId="2347">
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2348">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2349" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2350" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2351">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2352" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2353" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2354">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2355" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2356" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2357">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2358" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2359" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2360">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2361" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2362" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2363">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2364" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2365" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2366">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2367" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2368" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.102 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2369">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2370" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.637 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2371" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.5429 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2372">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2373" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2374" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.75654" scale="1.1 1 1.1" nodeId="2375">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2376" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2377" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.10733 0.0258599 -1.749" scale="1.1 1 1.1" nodeId="2378">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2379" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2380" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -1.74756" scale="1.1 1 1.1" nodeId="2381">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2382" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2383" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2384">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2385" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2386" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.07988 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2387">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2388" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2389" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66516 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2390">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2391" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2392" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="content" translation="0 0.465458 0" nodeId="2393">
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2394">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2395" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2396" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2397">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2398" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2399" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2400">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2401" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2402" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2403">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2404" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2405" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2406">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2407" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2408" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2409">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2410" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2411" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2412">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2413" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2414" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.102 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2415">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2416" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.637 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2417" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.5429 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2418">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2419" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2420" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.75654" scale="1.1 1 1.1" nodeId="2421">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2422" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2423" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.10733 0.0258599 -1.749" scale="1.1 1 1.1" nodeId="2424">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2425" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2426" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -1.74756" scale="1.1 1 1.1" nodeId="2427">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2428" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2429" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2430">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2431" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2432" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.07988 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2433">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2434" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2435" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66516 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2436">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2437" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2438" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="yogurttray" translation="0.0096653 0.775 0.39627" scale="0.25 0.3 0.25" nodeId="2439">
+          <Shape name="tray" scale="0.1 0.2 0.1" shapeId="5" nodeId="2440" castsShadows="false" receiveShadows="false" materialIds="1666"/>
+          <TransformGroup name="content" nodeId="2441">
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2442">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2443" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2444" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2445">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2446" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2447" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2448">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2449" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2450" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2451">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2452" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2453" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2454">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2455" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2456" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2457">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2458" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2459" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2460">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2461" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2462" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.102 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2463">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2464" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.637 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2465" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.5429 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2466">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2467" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2468" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.75654" scale="1.1 1 1.1" nodeId="2469">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2470" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2471" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.10733 0.0258599 -1.749" scale="1.1 1 1.1" nodeId="2472">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2473" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2474" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -1.74756" scale="1.1 1 1.1" nodeId="2475">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2476" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2477" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2478">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2479" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2480" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.07988 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2481">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2482" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2483" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66516 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2484">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2485" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2486" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="content" translation="0 0.465458 0" nodeId="2487">
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2488">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2489" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2490" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2491">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2492" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2493" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2494">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2495" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2496" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2497">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2498" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2499" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2500">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2501" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2502" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2503">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2504" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2505" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2506">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2507" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2508" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.102 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2509">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2510" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.637 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2511" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.5429 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2512">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2513" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2514" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.75654" scale="1.1 1 1.1" nodeId="2515">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2516" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2517" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.10733 0.0258599 -1.749" scale="1.1 1 1.1" nodeId="2518">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2519" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2520" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -1.74756" scale="1.1 1 1.1" nodeId="2521">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2522" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2523" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2524">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2525" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2526" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.07988 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2527">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2528" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2529" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66516 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2530">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2531" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2532" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="yogurttray" translation="-0.598179 0.775 0.393797" scale="0.25 0.3 0.25" nodeId="2533">
+          <Shape name="tray" scale="0.1 0.2 0.1" shapeId="5" nodeId="2534" castsShadows="false" receiveShadows="false" materialIds="1666"/>
+          <TransformGroup name="content" nodeId="2535">
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2536">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2537" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2538" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2539">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2540" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2541" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2542">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2543" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2544" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2545">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2546" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2547" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2548">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2549" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2550" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2551">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2552" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2553" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2554">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2555" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2556" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.102 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2557">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2558" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.637 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2559" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.5429 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2560">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2561" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2562" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.75654" scale="1.1 1 1.1" nodeId="2563">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2564" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2565" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.10733 0.0258599 -1.749" scale="1.1 1 1.1" nodeId="2566">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2567" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2568" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -1.74756" scale="1.1 1 1.1" nodeId="2569">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2570" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2571" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2572">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2573" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2574" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.07988 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2575">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2576" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2577" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66516 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2578">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2579" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2580" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="content" translation="0 0.465458 0" nodeId="2581">
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2582">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2583" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2584" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2585">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2586" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2587" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2588">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2589" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2590" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2591">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2592" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2593" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2594">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2595" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2596" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2597">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2598" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2599" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2600">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2601" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2602" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.102 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2603">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2604" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.637 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2605" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.5429 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2606">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2607" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2608" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.75654" scale="1.1 1 1.1" nodeId="2609">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2610" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2611" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.10733 0.0258599 -1.749" scale="1.1 1 1.1" nodeId="2612">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2613" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2614" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -1.74756" scale="1.1 1 1.1" nodeId="2615">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2616" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2617" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2618">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2619" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2620" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.07988 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2621">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2622" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2623" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66516 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2624">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2625" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2626" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="yogurttray" translation="-0.598179 0.775 -0.00810484" scale="0.25 0.3 0.25" nodeId="2627">
+          <Shape name="tray" scale="0.1 0.2 0.1" shapeId="5" nodeId="2628" castsShadows="false" receiveShadows="false" materialIds="1666"/>
+          <TransformGroup name="content" nodeId="2629">
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2630">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2631" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2632" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2633">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2634" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2635" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2636">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2637" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2638" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2639">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2640" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2641" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2642">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2643" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2644" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2645">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2646" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2647" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2648">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2649" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2650" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.102 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2651">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2652" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.637 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2653" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.5429 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2654">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2655" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2656" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.75654" scale="1.1 1 1.1" nodeId="2657">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2658" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2659" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.10733 0.0258599 -1.749" scale="1.1 1 1.1" nodeId="2660">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2661" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2662" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -1.74756" scale="1.1 1 1.1" nodeId="2663">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2664" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2665" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2666">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2667" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2668" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.07988 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2669">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2670" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2671" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66516 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2672">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2673" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2674" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="content" translation="0 0.465458 0" nodeId="2675">
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2676">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2677" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2678" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2679">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2680" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2681" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2682">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2683" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2684" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2685">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2686" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2687" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2688">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2689" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2690" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2691">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2692" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2693" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2694">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2695" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2696" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.102 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2697">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2698" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.637 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2699" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.5429 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2700">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2701" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2702" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.75654" scale="1.1 1 1.1" nodeId="2703">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2704" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2705" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.10733 0.0258599 -1.749" scale="1.1 1 1.1" nodeId="2706">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2707" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2708" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -1.74756" scale="1.1 1 1.1" nodeId="2709">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2710" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2711" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2712">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2713" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2714" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.07988 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2715">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2716" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2717" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66516 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2718">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2719" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2720" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="yogurttray" translation="0.0096653 0.775 -0.00911013" scale="0.25 0.3 0.25" nodeId="2721">
+          <Shape name="tray" scale="0.1 0.2 0.1" shapeId="5" nodeId="2722" castsShadows="false" receiveShadows="false" materialIds="1666"/>
+          <TransformGroup name="content" nodeId="2723">
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2724">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2725" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2726" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2727">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2728" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2729" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2730">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2731" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2732" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2733">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2734" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2735" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2736">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2737" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2738" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2739">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2740" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2741" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2742">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2743" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2744" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.102 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2745">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2746" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.637 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2747" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.5429 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2748">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2749" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2750" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.75654" scale="1.1 1 1.1" nodeId="2751">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2752" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2753" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.10733 0.0258599 -1.749" scale="1.1 1 1.1" nodeId="2754">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2755" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2756" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -1.74756" scale="1.1 1 1.1" nodeId="2757">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2758" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2759" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2760">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2761" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2762" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.07988 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2763">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2764" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2765" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66516 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2766">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2767" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2768" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="content" translation="0 0.465458 0" nodeId="2769">
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2770">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2771" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2772" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2773">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2774" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2775" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="0.778059 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2776">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2777" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2778" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2779">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2780" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2781" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -1.75706" scale="1.1 1 1.1" nodeId="2782">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2783" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2784" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.225 0.0258599 -2.2617" scale="1.1 1 1.1" nodeId="2785">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2786" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2787" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2788">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2789" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2790" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.102 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2791">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2792" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.637 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2793" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.5429 0.0258599 -1.26878" scale="1.1 1 1.1" nodeId="2794">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2795" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2796" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66588 0.0258599 -1.75654" scale="1.1 1 1.1" nodeId="2797">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2798" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2799" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.10733 0.0258599 -1.749" scale="1.1 1 1.1" nodeId="2800">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2801" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2802" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -1.74756" scale="1.1 1 1.1" nodeId="2803">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2804" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2805" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.54521 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2806">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2807" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2808" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="2.07988 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2809">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2810" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2811" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+            <TransformGroup name="yogurt" translation="1.66516 0.0258599 -2.21857" scale="1.1 1 1.1" nodeId="2812">
+              <Shape name="yogurt1" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="6" nodeId="2813" castsShadows="false" receiveShadows="false" materialIds="1669,1665,1667,1671"/>
+              <Shape name="yogurt2" translation="-0.636821 0 1.09549" scale="0.1 0.1 0.1" shapeId="7" nodeId="2814" castsShadows="false" receiveShadows="false" materialIds="1667"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+      </Shape>
+    </Shape>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors>Jinkou89</translationContributors>
+    <languageVersion>1.0.0.0</languageVersion>
+	
+	<texts>
+	  
+	<text name="fillType_rye" 				text="Żyto" />
+	<text name="fillType_soybeanUS"        			text="Soja amerykańska" />
+	<text name="fillType_covercropmix"        		text="Mieszanka poplonowa" />
+	<text name="fillType_roundBaleLavender"        		text="Bela lawendy" />
+	<text name="fillType_clover1"        			text="Koniczyna czerwona" />
+	<text name="fillType_clover2"        			text="Koniczyna biała" />
+	<text name="fillType_clover_windrow"        		text="Koniczyna" />
+    	<text name="fillType_alfalfa"       			text="Lucerna" />
+	<text name="fillType_cloverSilage"        		text="Kiszonka z koniczyny" />
+   	<text name="fillType_alfalfaSilage"       		text="Kiszonka z lucerny" />
+   	<text name="fillType_cloverHay"     			text="Siano z koniczyny" />
+    	<text name="fillType_alfalfaHay"    			text="Siano z lucerny" />
+    	<text name="fillType_beanstraw" 			text="Słoma strączkowa" />
+    	<text name="fillType_cornStalks"    			text="Łodygi kukurydzy" />
+	<text name="fillType_flaxFiber"        			text="Włókno lniane" />
+	<text name="fillType_flax"        			text="Len" />
+	<text name="fillType_linseed"        			text="Siemię lniane" />
+	<text name="fillType_millet"        			text="Proso" />
+	<text name="fillType_poppy"        			text="Mak" />
+	<text name="fillType_drypeas"        			text="Groch suchy" />
+	<text name="fillType_beans"        			text="Fasola Pinto" />
+	<text name="fillType_mustard"        			text="Gorczyca" />
+	<text name="fillType_lentils"        			text="Soczewica" />
+	<text name="fillType_silphie"        			text="Rożnik przerośnięty" />
+	<text name="fillType_spelt"        			text="Orkisz" />
+	<text name="fillType_triticale"        			text="Pszenżyto" />
+	<text name="fillType_soybean2"        			text="Soja amerykańska" />
+	<text name="fillType_tobacco"        			text="Tytoń" />
+	<text name="fillType_tobaccoo"        			text="Liście tytoniu" />      
+	<text name="fillType_compost" 				text="Kompost" />
+	<text name="fillType_organicWaste" 			text="Odpady organiczne" />
+	<text name="fillType_grapeA" 				text="Czerwone winogrona" />
+	<text name="fillType_grapeB" 				text="Białe winogrona" />
+	<text name="fillType_chickpeas" 			text="Cieciorka" />
+	<text name="fillType_buckwheat" 			text="Gryka" />
+	<text name="shopItem_grapeb_vine" 			text="Winorośl biała" />
+	<text name="shopItem_hopsVine" 				text="Chmiel" />
+	<text name="fillType_hemp" 				text="Konopie" />
+	<text name="fillType_hempFiber" 			text="Włókno konopne" />
+	<text name="fillType_lavender" 				text="Lawenda" />
+	<text name="fillType_potatoCut"        			text="Pokrojone ziemniaki" />
+	<text name="fillType_beetrootCut"        		text="Pokrojone buraki" />
+	<text name="fillType_carrotCut"        			text="Pokrojona marchew" />
+	<text name="fillType_parsnipCut"        		text="Pokrojony pasternak" />  
+	<text name="fillTypeGroup_TMR"        			text="TMR, Kiszonka z lucerny/koniczyny" />	  
+	<text name="fillTypeGroup_hays"        			text="Siano, Siano z lucerny/koniczyny" />
+	<text name="fillTypeGroup_grassa"        		text="Trawa, Świeża lucerna/koniczyna" />
+	<text name="fillTypeGroup_moisture"        		text="Wilgotność: Pokrojone rośliny okopowe" />
+	<text name="fillTypeGroup_grassHay"        		text="Świeża trawa/siano/lucerna/koniczyna" />
+	<text name="fillType_mineralFeed1"        		text="Pasza mineralna/Suchy groch" />
+	<text name="fillTypeGroup_pigForage"        		text="Pasza treściwa dla świń" />
+	<text name="fillType_peanut" 				text="Orzeszki ziemne" />
+	<text name="fillType_miscanthus" 			text="Miskant" />
+	<text name="fillType_miscanthusCut" 			text="Sieczka z miskanta" />
+
+
+		<text name="fillType_maize2" 			text="Sucha kukurydza" />
+		<text name="fillType_soymilk" 			text="Mleko sojowe" />
+		<text name="fillType_pasta" 			text="Makaron" />
+		<text name="fillType_chips" 			text="Chipsy" />
+		<text name="fillType_ethanol" 			text="Etanol" />
+		<text name="fillType_cornflour"			text="Mąka kukurydziana" />
+		<text name="fillType_cornOil"			text="Olej kukurydziany" />
+		<text name="fillType_linseedOil"		text="Olej lniany" />
+		<text name="fillType_mustardOil"		text="Olej gorczycowy" />
+		<text name="fillType_poppyOil"			text="Olej makowy" />
+		<text name="fillType_pizza"			text="Pizza" />
+		<text name="fillType_buckwheatflour"        	text="Mąka gryczana" />
+		<text name="fillType_gramflour"        		text="Mąka z cieciorki" />
+		<text name="fillType_milletflour"        	text="Mąka jaglana" />
+		<text name="fillType_ryeflour"        		text="Mąka żytnia" />
+		<text name="fillType_sorghumflour"        	text="Mąka z sorgo" />
+		<text name="fillType_crackedCorn"        	text="Śruta kukurydziana" />
+		<text name="fillType_apple"        		text="Jabłka" />
+		<text name="fillType_apricot"        		text="Morele" />
+		<text name="fillType_cherry"        		text="Wiśnie" />
+		<text name="fillType_pear"        		text="Gruszki" />
+		<text name="fillType_peach"        		text="Brzoskwinie" />
+		<text name="fillType_plum"        		text="Śliwki" />
+		<text name="fillType_quince"        		text="Pigwa" />
+		<text name="fillType_cabbage"        		text="Biała kapusta" />
+		<text name="fillType_redCabbage"        	text="Czerwona kapusta" />
+		<text name="fillType_melon"        		text="Melon" />
+		<text name="fillType_pumpkin"        		text="Dynia" />
+		<text name="fillType_watermelon"        	text="Arbuz" />
+		<text name="fillType_cucumber"        		text="Ogórek" />
+		<text name="fillType_eggplant"        		text="Bakłażan" />
+		<text name="fillType_pepper"        		text="Papryka" />
+		<text name="fillType_cauliflower" 		text="Kalafior" />
+		<text name="fillType_bran"        		text="Otręby" />
+		<text name="fillType_molasses"        		text="Melasa" />
+		<text name="fillType_appleJuice"        	text="Sok jabłkowy" />
+		<text name="fillType_apricotJuice"        	text="Sok morelowy" />
+		<text name="fillType_beetrootJuice"        	text="Sok z buraka" />
+		<text name="fillType_carrotJuice"        	text="Sok marchwiowy" />
+		<text name="fillType_cherryJuice"        	text="Sok wiśniowy" />
+		<text name="fillType_melonJuice"        	text="Sok z melona" />
+		<text name="fillType_multifruitJuice"        	text="Sok wieloowocowy" />
+		<text name="fillType_peachJuice"        	text="Sok brzoskwiniowy" />
+		<text name="fillType_pearJuice"        		text="Sok gruszkowy" />
+		<text name="fillType_plumJuice"        		text="Sok śliwkowy" />
+		<text name="fillType_quinceJuice"        	text="Sok z pigwy" />
+		<text name="fillType_strawberryJuice"        	text="Sok truskawkowy" />
+		<text name="fillType_tomatoJuice"        	text="Sok pomidorowy" />
+		<text name="fillType_watermelonJuice"        	text="Sok arbuzowy" />
+ 		<text name="fillType_cattle" 			text="Bydło" />
+		<text name="fillType_pigs" 			text="Świnie" />
+		<text name="fillType_sheepGoat" 		text="Owce/Kozy" />
+ 		<text name="fillType_beef" 			text="Wołowina" />
+		<text name="fillType_pork" 			text="Wieprzowina" />
+		<text name="fillType_poultryMeat" 		text="Mięso drobiowe" />
+		<text name="fillType_lamb" 			text="Jagnięcina" />
+		<text name="fillType_cigar" 			text="Cygara" />
+		<text name="fillType_cigarette" 		text="Papierosy" />
+		<text name="fillType_animalFat" 		text="Tłuszcz zwierzęcy" />
+		<text name="fillType_perfume" 			text="Perfumy" />
+		<text name="fillType_soap" 			text="Mydło" />
+		<text name="fillType_lavenderOil" 		text="Olejek eteryczny z lawendy" />
+		<text name="fillType_bourbonBarrel" 		text="Bourbon" />
+		<text name="fillType_brandyBarrel" 		text="Brandy" />
+		<text name="fillType_ciderBarrel" 		text="Cydr" />
+		<text name="fillType_meadBarrel" 		text="Miód pitny" />
+		<text name="fillType_liqueurBarrel" 		text="Likier owocowy" />
+		<text name="fillType_vodkaBarrel" 		text="Wódka" />
+		<text name="fillType_whiskeyBarrel" 		text="Whisky" />
+		<text name="fillType_rumBarrel" 		text="Rum" />
+		<text name="fillType_peanutflour" 		text="Mąka orzechowa" />
+		<text name="fillType_peanutOil" 		text="Olej fistaszkowy" />
+		<text name="fillType_peanutButter" 		text="Masło orzechowe" />
+		<text name="fillType_mayo" 			text="Majonez" />
+		<text name="fillType_ketchup" 			text="Ketchup" />
+		<text name="fillType_hotSauce" 			text="Ostry sos" />
+		<text name="fillType_soySauce" 			text="Sos sojowy" />
+		<text name="fillType_garlicSauce" 		text="Sos czosnkowy" />
+		<text name="fillType_mustardSauce" 		text="Sos musztardowy" />
+		<text name="fillType_pickledCucumber" 		text="Ogórki kiszone" />
+		<text name="fillType_pickledCabbage" 		text="Kapusta kiszona" />
+		<text name="fillType_pickledCauliflower" 	text="Marynowany kalafior" />
+		<text name="fillType_beansSoup" 		text="Zupa fasolowa" />
+		<text name="fillType_peanutBags" 		text="Worki orzeszków" />
+		<text name="fillType_beansBags" 		text="Worki fasoli" />
+		<text name="fillType_cannedBeans" 		text="Fasola w puszce" />
+		<text name="fillType_tofu" 			text="Ser tofu" />
+		<text name="fillType_chocomilk" 		text="Mleko czekoladowe" />
+		<text name="fillType_oatmilk" 			text="Mleko owsiane" />
+		<text name="fillType_mushroomSoup" 		text="Zupa grzybowa" />
+		<text name="fillType_beer" 			text="Piwo" />
+		<text name="fillType_wine" 			text="Wino" />
+		<text name="fillType_icecream" 			text="Lody" />
+		<text name="fillType_sourcream" 		text="Śmietana" />
+		<text name="fillType_yoghurt" 			text="Jogurt" />
+		<text name="fillType_sunflowerBags" 		text="Worki nasion słonecznika" />
+		<text name="fillType_pumpkinSeeds" 		text="Worki pestek dyni" />
+		<text name="fillType_pumpkinPuree" 		text="Puree z dyni" />
+		<text name="fillType_eggplantPuree" 		text="Puree z bakłażana" />
+		<text name="fillType_popcorn" 			text="Popcorn" />
+		<text name="fillType_cheesePuffs" 		text="Chrupki serowe" />
+		<text name="fillType_peanutPuffs" 		text="Chrupki orzechowe" />
+		<text name="fillType_tortilla" 			text="Nachosy" />
+		<text name="fillType_garlicBread" 		text="Pieczywo czosnkowe" />
+		<text name="fillType_onionRings" 		text="Krążki cebulowe" />
+		<text name="fillType_pie" 			text="Ciasto owocowe" />
+		<text name="fillType_cocoaPowder" 		text="Kakao" />
+		<text name="fillType_cookingSalt" 		text="Sól kuchenna" />
+		<text name="fillType_yeast" 		 	text="Drożdże" />
+		<text name="fillType_roulade"                   text="Rolada" />
+		<text name="fillType_strudel"                   text="Strudel" />
+		<text name="fillType_milkBread"                 text="Chleb mleczny" />
+		<text name="fillType_potatoBread"               text="Chleb ziemniaczany" />
+		<text name="fillType_sweetBread"                text="Chałka" />
+		<text name="fillType_bagel"                     text="Bajgiel" />
+		<text name="fillType_baguette" 			text="Bagietka"/>
+		<text name="fillType_hops" 			text="Chmiel"/>
+		<text name="fillType_cowFood" 			text="Granulat dla krów"/>
+		<text name="fillType_hayPellets" 		text="Pellet z siana"/>
+		<text name="fillType_strawPellets" 		text="Pellet ze słomy"/>
+		<text name="fillType_woodChipsPellets" 		text="Pellet z zrębków"/>
+		<text name="fillType_chocoCake" 		text="Ciasto czekoladowe"/>
+		<text name="fillType_sesame" 			text="Sezam"/>
+		<text name="fillType_sesameOil" 		text="Olej sezamowy"/>
+		<text name="fillType_sesameBags" 		text="Nasiona sezamu pakowane"/>
+		<text name="fillType_chickpeasBags" 		text="Cieciorka pakowana"/>
+		<text name="fillType_lentilsBags" 		text="Soczewica pakowana"/>
+		<text name="fillType_sesameRolls" 		text="Przekąska miodowo-sezamowa"/>
+		<text name="fillType_hummus" 			text="Hummus"/>
+
+	<text name="pigProcessing"        			text="Przetwórstwo wieprzowiny" />
+		<text name="poultryProcessing"        			text="Przetwórstwo drobiu" />
+		<text name="cattleProcessing"        			text="Przetwórstwo wołowiny" />
+		<text name="sheepProcessing"        			text="Przetwórstwo owiec i kóz" />
+		<text name="message_unloadAnimalSuccess" 		text="Zwierzęta zostały pomyślnie przeniesione do: %s!" />
+        	<text name="message_unloadAnimalConfirmation" 		text="Czy chcesz przenieść %d zwierząt (%s) do %s?" />
+        	<text name="button_moveAnimal" 				text="Przenieś do %s" />
+		<text name="message_animalTooYoung" 			text="To zwierzę jest za młode." />
+		<text name="message_animalTooOld" 			text="To zwierzę jest za stare." />
+        	<text name="configuration_grapeB" 			text="Białe winogrona"/>
+        	<text name="configuration_hops" 			text="Chmiel"/>
+		<text name="function_fermentingTower" 			text="W tym obiekcie możesz fermentować trawę, sieczkę, lucernę lub koniczynę." />
+		<text name="function_grainDryer" 			text="W tym obiekcie możesz suszyć kukurydzę." />
+		<text name="function_hopsVine" 			        text="Pnącza do uprawy chmielu. Do zbioru potrzebujesz kombajnu do winogron." />
+		<text name="function_buyingPoint" 			text="W tej stacji możesz kupić prawie wszystko hurtowo." />
+
+
+	<text name="shopItem_appleOrchard" 		text="Mały sad jabłoniowy" />	
+		<text name="shopItem_apricotOrchard" 		text="Mały sad morelowy" />	
+		<text name="shopItem_appleTree" 		text="Jabłoń" />	
+		<text name="shopItem_apricotTree" 		text="Morela" />
+		<text name="shopItem_cherryOrchard" 		text="Mały sad wiśniowy" />	
+		<text name="shopItem_pearOrchard" 		text="Mały sad gruszowy" />	
+		<text name="shopItem_cherryTree" 		text="Wiśnia" />	
+		<text name="shopItem_pearTree" 			text="Grusza" />	
+		<text name="shopItem_peachOrchard" 		text="Mały sad brzoskwiniowy" />	
+		<text name="shopItem_peachTree" 		text="Brzoskwinia" />		
+		<text name="shopItem_plumOrchard" 		text="Mały sad śliwkowy" />	
+		<text name="shopItem_plumTree" 			text="Śliwa" />		
+		<text name="shopItem_quinceOrchard" 		text="Mały sad pigwowy" />	
+		<text name="shopItem_quinceTree" 		text="Pigwa" />	
+		<text name="shopItem_grainCrusher" 		text="Gniotownik do ziarna" />	
+		<text name="shopItem_juiceFactory" 		text="Wytwórnia soków" />
+		<text name="shopItem_slaughterHouse" 		text="Rzeźnia" />
+		<text name="shopItem_tobaccoProd" 		text="Fabryka tytoniu" />
+		<text name="shopItem_lavenderProd" 		text="Zakład przetwarzania lawendy" />
+		<text name="shopItem_openGarden" 		text="Otwarty ogród" />
+		<text name="shopItem_distillery" 		text="Gorzelnia" />
+		<text name="shopItem_preservedFood" 		text="Fabryka konserw" />
+		<text name="shopItem_foodProd" 			text="Produkcja przekąsek" />
+		<text name="shopItem_fermentingTower" 		text="Wieża fermentacyjna" />
+		<text name="shopItem_wineCellar" 		text="Piwnica piwna i winna" />
+		<text name="shopItem_grainDryer" 		text="Suszarnia kukurydzy" />
+		<text name="shopItem_openGardenFieldCrops" 	text="Otwarty ogród dla upraw polowych" />
+		<text name="shopItem_industrialGreenhouse" 	text="Szklarnia przemysłowa" />
+		<text name="shopItem_vegetarianProd" 		text="Produkcja żywności wegańskiej" />
+		<text name="shopItem_pelletizer" 		text="Pelreciarka" />
+		<text name="shopItem_buyingPoint1" 		text="Punkt skupu/sprzedaży Multifruit" />
+		<text name="shopItem_buyingPoint2" 		text="Punkt skupu/sprzedaży Multifruit (taniej)" />
+
+
+		<text name="shopItem_jamProd" 				text="Fabryka dżemów" />
+		<text name="fillType_edamame" 				text="Edamame (zielona soja)"/>
+		<text name="fillType_taro" 				text="Taro"/>
+		<text name="fillType_okra" 				text="Okra"/>
+		<text name="fillType_mint" 				text="Mięta"/>
+		<text name="fillType_greenRye" 				text="Żyto na zielonkę" />
+		<text name="fillType_taroCut" 				text="Siekane taro" />
+		<text name="fillType_taroFlour" 			text="Mąka z taro" />
+		<text name="fillType_taroSoup" 				text="Zupa z taro" />
+		<text name="fillType_taroChips" 			text="Chipsy z taro" />
+		<text name="fillType_muffin" 				text="Muffiny" />
+		<text name="fillType_donut" 				text="Pączki" />
+		<text name="fillType_ccm" 				text="CCM fermentowany" />
+		<text name="fillType_ccmraw" 				text="CCM" />
+		<text name="fillType_cropWindrow" 			text="Sieczka z całych roślin" />
+		<text name="fillType_cropSilage" 			text="Kiszonka z całych roślin" />
+		<text name="fillType_grassSilage" 			text="Kiszonka z trawy" />
+		<text name="fillType_safflower" 			text="Krokosz barwierski" />
+		<text name="fillType_appleJam"        			text="Dżem jabłkowy" />
+		<text name="fillType_apricotJam"        		text="Dżem morelowy" />
+		<text name="fillType_cherryJam"        			text="Dżem wiśniowy" />
+		<text name="fillType_grapeJam"        			text="Dżem winogronowy" />
+		<text name="fillType_melonJam"        			text="Dżem melonowy" />
+		<text name="fillType_peachJam"        			text="Dżem brzoskwiniowy" />
+		<text name="fillType_pearJam"        			text="Dżem gruszkowy" />
+		<text name="fillType_plumJam"        			text="Dżem śliwkowy" />
+		<text name="fillType_strawberryJam"        		text="Dżem truskawkowy" />
+		<text name="fillType_quinceJam"        			text="Dżem z pigwy" />
+		<text name="fillType_safflowerOil" 			text="Olej z krokosza" />
+		<text name="fillType_mintOil" 				text="Olejek miętowy"/>
+		<text name="fillType_mintBarrel" 			text="Likier miętowy"/>
+		<text name="fillType_jarredOkra"        		text="Okra w słoiku" />
+		<text name="fillType_jarredEdamame"        		text="Edamame w słoiku" />
+
+
+<text name="fillType_duckEgg"                 text="Kacze jaja"/>
+        <text name="shopItem_duckGooseBarn"             text="Obora dla kaczek i gęsi"/>
+        <text name="shopItem_duckGoosePasture"             text="Pastwisko dla kaczek i gęsi"/>
+        <text name="shopItem_rabbitHutch"             text="Klatka dla królików"/>
+        <text name="function_animalPenDuck"             text="Tutaj możesz hodować kaczki i gęsi. Karm je i wyściełaj słomą, aby uzyskać kacze jaja i nawóz naturalny."/>
+        <text name="function_animalPenRabbit"             text="Tutaj możesz hodować króliki. Karm je i wyściełaj słomą. Gdy urosną, możesz je sprzedać z zyskiem."/>
+        <text name="fillTypeGroup_clover"                text="Świeża koniczyna" />
+        <text name="fillTypeGroup_fruitVegetables"             text="Owoce i warzywa" />
+
+    <text name="fillType_goose"                            text="Gęś" />
+        <text name="animal_group_goose"                        text="Gęsi i kaczki" />
+        <text name="shopItem_animalGooseGrowthStage0"           text="Gąsięta" />
+        <text name="shopItem_animalGooseGrowthStage1"           text="Gęś" />
+        <text name="animal_descriptionGooseProfitGrowthStage0" text="Gąsięta można tuczyć, a następnie sprzedawać z zyskiem." />
+        <text name="animal_descriptionGooseProfitGrowthStage1" text="Gęsi można rozmnażać, a następnie sprzedawać z zyskiem." />
+        <text name="animal_descriptionGooseFeed"               text="Karm je tak samo jak kury. Woda jest dostarczana automatycznie w zależności od typu pomieszczenia." />
+        <text name="animal_descriptionGooseReproduction"       text="Gęsi osiągają dojrzałość płciową w wieku 10 miesięcy. Sezon lęgowy trwa jeden miesiąc." />
+
+    <text name="fillType_duck"                             text="Kaczka" />
+        <text name="shopItem_animalDuckGrowthStage0"           text="Kaczęta" />
+        <text name="animal_duckGrowthStage0Description"        text="Kaczęta nie znoszą jeszcze jaj. Nadają się do hodowli lub na sprzedaż." />    
+        <text name="shopItem_animalDuckGrowthStage1"           text="Kaczka" />    
+        <text name="animal_duckGrowthStage1Description"        text="Kaczki dostarczają jaja, które możesz sprzedać w punkcie skupu lub przetworzyć w swoich zakładach produkcyjnych." />    
+        <text name="animal_poultryFoodDescription"             text="Drób potrzebuje ziarna i wody do produkcji. Uwaga: Niektóre kurniki są wyposażone w automatyczne poidła, przez co dodawanie wody nie jest konieczne." />
+        
+         <text name="fillType_rabbit"                            text="Samica królika" />
+            <text name="fillType_rabbitMale"                        text="Samiec królika" />
+            <text name="animal_group_rabbits"                       text="Króliki" />
+            <text name="shopItem_animalRabbitGrowthStage0"          text="Króliki (noworodki)" />
+            <text name="shopItem_animalRabbitGrowthStage1"          text="Króliki (młode)" />
+            <text name="shopItem_animalRabbitGrowthStage2"          text="Królik (samica)" />
+            <text name="shopItem_animalRabbitGrowthStage3"          text="Królik (samiec)" />
+            <text name="animal_rabbitGrowthStage0Description"       text="Noworodki królików to najmłodsze osobniki gatunku. Nie można ich kupić oddzielnie, rodzą się u samicy." />
+            <text name="animal_rabbitGrowthStage1Description"       text="Młody królik może być wykorzystany do rozrodu." />
+            <text name="animal_rabbitGrowthStage2Description"       text="Samice królików mogą mieć potomstwo lub zostać sprzedane. Potomstwo jest młodsze i mniejsze niż młode króliki." />
+            <text name="animal_rabbitGrowthStage3Description"       text="Samce królika." />
+            <text name="animal_rabbitBeddingDescription"            text="Samce królika można wyłącznie kupować i sprzedawać." />
+            <text name="animal_rabbitFoodDescription"               text="Króliki potrzebują słomy dla zapewnienia im komfortu." />
+
+        <text name="geeseProcessing"                     text="Przetwórstwo gęsi i kaczek" />
+        <text name="rabbitProcessing"                     text="Przetwórstwo królików" />
+        <text name="fillType_leather"              text="Naturalna skóra"/>
+        <text name="fillType_leatherJacket"          text="Kurtki skórzane"/>
+        <text name="fillType_pillow"              text="Poduszki"/>
+        <text name="fillType_furCoat"              text="Futra"/>
+        <text name="fillType_feathers"              text="Pióra" />
+        <text name="fillType_rabbitMeat"          text="Mięso królicze" />
+        <text name="fillType_rabbitFur"          text="Futro królicze" />
+        <text name="fillType_poultry2"              text="Drób (Gęsi i kaczki)" />
+        <text name="fillType_hare"              text="Króliki" />
+        <text name="fillType_poultry"              text="Drób (Kury)" />
+
+<text name="fillType_anhydrous"          text="Bezwodny amoniak (NH3)" />
+        <text name="fillType_propane"           text="Propan" />
+<text name="shopItem_bakeryFactory"     text="Piekarnia Montana" />    
+        <text name="shopItem_beerFactory"       text="Browar Yuengling" />        
+        <text name="shopItem_ethanolFactory"    text="Zakład produkcji etanolu Rocky Mountain" />    
+        <text name="shopItem_whiskeyFactory"    text="Gorzelnia Jack Daniels" />    
+        <text name="shopItem_dairyFactory"      text="Mleczarnia Country View" />    
+        <text name="shopItem_wineFactory"       text="Winnica Duckhorn" />    
+        <text name="shopItem_pizzaFactory"      text="American Pizza Company" />    
+        <text name="shopItem_grainFlourFactory" text="Młyn" />    
+        <text name="shopItem_oilFactory"        text="Tłocznia oleju" />    
+    <text name="station_grainSiloTrainC1"     text="Skup zboża Great Plains" />    
+        <text name="station_grainSiloTrainC2"     text="Silosy Montana Prairie" />    
+        <text name="station_grainSiloTrainC3"     text="Terminal zbożowy Yellowstone" />    
+        <text name="station_balesStorageC1"       text="Skup siana Montana" />
+        <text name="station_grainSiloStoreC2"     text="Zaopatrzenie rolnicze Montana Prairie" />    
+        <text name="station_grainSiloStoreC3"     text="Pasze i zboża Flathead" />    
+        <text name="station_grainSiloStoreC4"     text="Silos zbożowy Iron Ridge" />    
+        <text name="station_grainSiloStoreC5"     text="Lone Pine Grain Co." />    
+        <text name="station_grainSiloStoreC6"     text="AgriCore Montana" />
+        <text name="station_productStoreC1"       text="Restauracja" />    
+        <text name="station_productStoreC2"       text="Centrum handlowe Hobson" />    
+        <text name="station_productStoreC3"       text="Sklep wielobranżowy Hobson" />    
+        <text name="station_productStoreC4"       text="Sklep Dollar General" />    
+        <text name="station_productStoreC5"       text="Stacja paliw BP" />    
+        <text name="station_productStoreC6"       text="Stacja paliw Casey's" />    
+        <text name="station_productStoreC7"       text="Restauracja Applebee's" />    
+        <text name="station_productStoreC8"       text="Browar Kodiac" />    
+        <text name="station_productStoreC9"       text="Centrum handlowe Moccasin" />    
+        <text name="station_productStoreC10"      text="Sklep wielobranżowy Moccasin" />    
+        <text name="station_productStoreC11"      text="Bar Subway" />
+	
+	</texts>
+</l10n>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="vinePrepruner" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>MP 122 OCEA Hops</name>
+        <specs>
+            <combination xmlFilename="$data/vehicles/landini/seriesREX4/seriesREX4.xml"/>
+            <combination xmlFilename="$data/vehicles/fendt/vario200/vario200.xml"/>
+            <combination xmlFilename="$data/vehicles/antonioCarraro/tony10900TTR/tony10900TTR.xml"/>
+            <combination xmlFilename="$data/vehicles/antonioCarraro/mach4R/mach4R.xml"/>
+        </specs>
+        <functions>
+            <function>$l10n_function_vinePreprunner</function>
+        </functions>
+        <storePacks>
+            <storePack>STARTER_GRAPE</storePack>
+        </storePacks>
+        <rotation>0</rotation>
+        <image>multifruit/vehicles/store_mp122OceaHops.png</image>
+        <price>16000</price>
+        <lifetime>600</lifetime>
+        <brand>PROVITIS</brand>
+        <category>grapeTools</category>
+        <shopHeight>2</shopHeight>
+        <shopTranslationOffset>0 -0.003 0</shopTranslationOffset>
+        <shopRotationOffset>-0.002 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>568832</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>122112</indexBufferMemoryUsage>
+        <textureMemoryUsage>589824</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_vinePrepruner</typeDesc>
+        <filename>$data/vehicles/provitis/mp122Ocea/mp122Ocea.i3d</filename>
+        <size width="1.95" length="0.9" height="1.75" widthOffset="-0.33" lengthOffset="0.28"/>
+        <components>
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="270"/>
+        </components>
+        <speedLimit value="10"/>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT"/>
+        <mapHotspot type="TOOL"/>
+    </base>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="implement" topReferenceNode="topReferenceNode" lowerRotLimitScale="0 0 0" upperRotationOffset="2" lowerRotationOffset="0" needsLowering="false">
+                <distanceToGround lower="0.3" upper="0.8"/>
+                <bottomArm categories="1 2" ballType="1"/>
+            </inputAttacherJoint>
+        </inputAttacherJoints>
+    </attachable>
+
+    <powerConsumer ptoRpm="400" neededMinPtoPower="5" neededMaxPtoPower="5"/>
+
+    <connectionHoses>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn"  node="hydraulicIn01"  length="0.9" diameter="0.01" straighteningFactor="0.2" adapterNode="hydraulicIn01_connector">
+            <objectChange node="hydraulicIn01_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicOut" node="hydraulicOut01" length="0.9" diameter="0.02" straighteningFactor="0.2" adapterNode="hydraulicOut01_connector">
+            <objectChange node="hydraulicOut01_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn"  node="hydraulicIn02"  length="0.9" diameter="0.01" straighteningFactor="0.2" adapterNode="hydraulicIn02_connector">
+            <objectChange node="hydraulicIn02_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicOut" node="hydraulicOut02" length="0.9" diameter="0.01" straighteningFactor="0.2" adapterNode="hydraulicOut02_connector">
+            <objectChange node="hydraulicOut02_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn"  node="hydraulicIn03"  length="0.9" diameter="0.01" straighteningFactor="0.2" adapterNode="hydraulicIn03_connector">
+            <objectChange node="hydraulicIn03_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+    </connectionHoses>
+
+    <foldable>
+        <foldingConfigurations>
+            <foldingConfiguration>
+                <foldingParts startMoveDirection="1" turnOnFoldMinLimit="0" turnOnFoldMaxLimit="0">
+                    <foldingPart animationName="folding" speedScale="1"/>
+                </foldingParts>
+              </foldingConfiguration>
+          </foldingConfigurations>
+    </foldable>
+
+    <animations>
+        <animation name="folding">
+            <part node="discArm01" startTime="1" endTime="2" startRot="0 10 0" endRot="0 -5 0"/>
+            <part node="arm01" startTime="2" endTime="3" startTrans="0 0.2 0" endTrans="0 0 0"/>
+            <part node="arm02" startTime="3" endTime="4" startTrans="-0.3 0 0" endTrans="0 0 0"/>
+
+            <sound template="hydraulicOpen02"       startTime="1"    endTime="2"                   volumeScale="2.6" pitchScale="1.2" fadeIn="0.1" fadeOut="0.1"/>
+            <sound template="hydraulicClose03" startTime="2"    endTime="3"                   volumeScale="2.5" pitchScale="1.6" fadeIn="0.1" fadeOut="0.1"/>
+            <sound template="hydraulicClose01" startTime="3"    endTime="3.99" direction="0" volumeScale="3.5" pitchScale="0.7" fadeIn="0.1" fadeOut="0.1"/>
+            <sound template="hydraulicOpen04" startTime="0.01" endTime="1"    direction="-1" volumeScale="1.8" pitchScale="1.6" fadeIn="0.1" fadeOut="0.1"/>
+            <sound template="sheetImp02"            startTime="3"                                  volumeScale="1.4" pitchScale="0.8" />
+            <sound template="vibratingImp"            startTime="3"                                  volumeScale="1.1" pitchScale="1.1" />
+            <sound template="clackVar6"             startTime="3"                                  volumeScale="0.8" pitchScale="0.8" />
+            <sound template="hingeSmall"            startTime="2"                                  volumeScale="0.2" pitchScale="0.3" />
+            <sound template="vibratingImp"            startTime="2"                                  volumeScale="0.8" pitchScale="0.8" />
+            <sound template="sheetImp01"            startTime="2"                   direction="1"  volumeScale="0.9" pitchScale="0.8" />
+        </animation>
+        <animation name="poleAnimation">
+            <part node="discArm01" startTime="0" endTime="1" startRot="0 10 0" endRot="0 25 0"/>
+        </animation>
+    </animations>
+
+    <cylindered>
+        <movingTools>
+            <movingTool node="discArm01" playSound="true">
+                <dependentPart node="discArm02" />
+            </movingTool>
+        </movingTools>
+
+        <movingParts>
+            <movingPart node="arm03" referenceFrame="arm03RefFrame" alignToWorldY="true" minRot="-15" maxRot="15" limitedAxis="2" isActiveDirty="true" directionThreshold="0.01" maxUpdateDistance="200" foldMaxLimit="0.01" smoothedDirectionScale="true">
+                <dependentPart node="arm03Hydraulic"/>
+            </movingPart>
+            <movingPart node="arm03Hydraulic" referencePoint="arm03HydraulicRef" referenceFrame="arm03HydraulicRef">
+                <translatingPart node="arm03HydraulicPunch" />
+            </movingPart>
+            <movingPart node="discArm02" localReferencePoint="discArm02Part" referencePoint="discArm02PartRef" referenceFrame="discArm02RefFrame">
+                <dependentPart node="discArm02Part" />
+                <dependentPart node="discArm01Hydraulic" />
+            </movingPart>
+            <movingPart node="discArm02Part" referencePoint="discArm02PartRef" referenceFrame="discArm02PartRef"/>
+            <movingPart node="discArm01Hydraulic" referencePoint="discArm01HydraulicRef" referenceFrame="discArm01HydraulicRef">
+                <translatingPart node="discArm01HydraulicPunch" />
+            </movingPart>
+        </movingParts>
+    </cylindered>
+
+    <turnOnVehicle turnOffIfNotAllowed="true">
+        <sounds>
+            <start template="strawblowerStart" />
+            <work  template="strawblowerWork" />
+            <stop  template="strawblowerStop" />
+        </sounds>
+        <animationNodes>
+            <animationNode node="disc01" rotSpeed="-1000" rotAxis="2"/>
+            <animationNode node="disc02" rotSpeed="1000" rotAxis="2"/>
+        </animationNodes>
+    </turnOnVehicle>
+
+    <vineDetector>
+        <raycast node="vineRaycast" maxDistance="1.25" />
+    </vineDetector>
+
+    <vinePrepruner fruitType="HOPS">
+        <prunerNode node="arm02" offset="0.50" axis="1" direction="-1" transMin="-0.320" transMax="0.025" transSpeed="0.5" foldMaxLimit="0.01"/>
+        <poleAnimation name="poleAnimation" speedScale="5" poleThreshold="0.2"/>
+
+        <effect>
+            <effectNode effectClass="TypedMotionPathEffect" effectType="GRAPE_PREPRUNER" linkNode="prePrunerEffectNode">
+                <motionPathEffect textureFilename="$data/effects/grape/arrays/prePrunerArray16x16.dds" numRows="16" rowLength="16"/>
+            </effectNode>
+        </effect>
+    </vinePrepruner>
+
+    <ai>
+        <agentAttachment width="2.6" height="1.75" length="0.9" lengthOffset="0.3"/>
+        <isVineyardTool value="true" betweenRows="true"/>
+    </ai>
+
+    <foliageBending>
+        <bendingNode minX="-0.5" maxX="0.5" minZ="-0.2" maxZ="0.2" yOffset="0.1"/>
+        <bendingNode minX="-1.35" maxX="-0.5" minZ="0.15" maxZ="0.75" yOffset="0.3" node="arm02"/>
+    </foliageBending>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="2" fieldMultiplier="2"/>
+
+    <i3dMappings>
+        <i3dMapping id="mp122Ocea_main_component1" node="0>" />
+        <i3dMapping id="mp122Ocea_vis" node="0>0" />
+        <i3dMapping id="attacherJoint" node="0>0|0|0" />
+        <i3dMapping id="topReferenceNode" node="0>0|0|1" />
+        <i3dMapping id="hydraulicIn01" node="0>0|0|2|0" />
+        <i3dMapping id="hydraulicIn01_detached" node="0>0|0|2|0|0" />
+        <i3dMapping id="hydraulicIn01_connector" node="0>0|0|2|0|0|0" />
+        <i3dMapping id="hydraulicOut01" node="0>0|0|2|1" />
+        <i3dMapping id="hydraulicOut01_detached" node="0>0|0|2|1|0" />
+        <i3dMapping id="hydraulicOut01_connector" node="0>0|0|2|1|0|0" />
+        <i3dMapping id="hydraulicIn02" node="0>0|0|2|2" />
+        <i3dMapping id="hydraulicIn02_detached" node="0>0|0|2|2|0" />
+        <i3dMapping id="hydraulicIn02_connector" node="0>0|0|2|2|0|0" />
+        <i3dMapping id="hydraulicOut02" node="0>0|0|2|3" />
+        <i3dMapping id="hydraulicOut02_detached" node="0>0|0|2|3|0" />
+        <i3dMapping id="hydraulicOut02_connector" node="0>0|0|2|3|0|0" />
+        <i3dMapping id="hydraulicIn03" node="0>0|0|2|4" />
+        <i3dMapping id="hydraulicIn03_detached" node="0>0|0|2|4|0" />
+        <i3dMapping id="hydraulicIn03_connector" node="0>0|0|2|4|0|0" />
+        <i3dMapping id="arm01" node="0>0|1|0" />
+        <i3dMapping id="arm02" node="0>0|1|0|0" />
+        <i3dMapping id="arm03RefFrame" node="0>0|1|0|0|0" />
+        <i3dMapping id="arm03" node="0>0|1|0|0|0|0" />
+        <i3dMapping id="discArm01" node="0>0|1|0|0|0|0|0|0" />
+        <i3dMapping id="discArm02PartRef" node="0>0|1|0|0|0|0|0|0|0" />
+        <i3dMapping id="discArm01HydraulicRef" node="0>0|1|0|0|0|0|0|0|1" />
+        <i3dMapping id="disc01" node="0>0|1|0|0|0|0|0|0|2|0" />
+        <i3dMapping id="discArm02RefFrame" node="0>0|1|0|0|0|0|1" />
+        <i3dMapping id="discArm02" node="0>0|1|0|0|0|0|1|0" />
+        <i3dMapping id="discArm02Part" node="0>0|1|0|0|0|0|1|0|0" />
+        <i3dMapping id="disc02" node="0>0|1|0|0|0|0|1|0|1|0" />
+        <i3dMapping id="discArm01Hydraulic" node="0>0|1|0|0|0|0|2" />
+        <i3dMapping id="discArm01HydraulicPunch" node="0>0|1|0|0|0|0|2|0" />
+        <i3dMapping id="arm03HydraulicRef" node="0>0|1|0|0|0|0|3" />
+        <i3dMapping id="prePrunerEffectNode" node="0>0|1|0|0|0|0|4" />
+        <i3dMapping id="arm03Hydraulic" node="0>0|1|0|0|1" />
+        <i3dMapping id="arm03HydraulicPunch" node="0>0|1|0|0|1|0" />
+        <i3dMapping id="vineRaycast" node="0>0|1|0|1|0" />
+    </i3dMappings>
+</vehicle>

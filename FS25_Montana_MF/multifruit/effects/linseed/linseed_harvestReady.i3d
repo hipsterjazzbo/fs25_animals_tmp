@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="linseed_harvestReady.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/shaders/motionPathShader.xml"/>
+    <File fileId="5" filename="linseedStage04_alpha.dds"/>
+    <File fileId="1" filename="linseedStage04_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="linseedStage04_mat" materialId="5" customShaderId="2" customShaderVariation="scaleByTexture_alphaMap">
+      <Texture fileId="1"/>
+      <Custommap name="alphaMap" fileId="5"/>
+      <CustomParameter name="verticalOffset" value="-0.15"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="linseed_harvestReady.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="cutterEffects_linseed" clipDistance="200" nodeId="12">
+      <TransformGroup name="cutterEffects_linseed_meshes" nodeId="13">
+        <Shape name="cutterEffects_linseed_nr32_rl42_v1" shapeId="1" nodeId="14" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="5"/>
+        <Shape name="cutterEffects_linseed_nr6_rl5_v1" shapeId="2" nodeId="15" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="5"/>
+        <Shape name="cutterEffects_linseed_nr6_rl20_v1" shapeId="3" nodeId="16" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="5"/>
+        <Shape name="cutterEffects_linseed_nr12_rl26_v1" shapeId="4" nodeId="17" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="5"/>
+        <Shape name="cutterEffects_linseed_nr20_rl36_v1" shapeId="5" nodeId="18" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="5"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

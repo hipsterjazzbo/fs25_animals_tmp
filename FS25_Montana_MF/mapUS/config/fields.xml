@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/fields.xsd">
+    <fields>
+		<field fieldId="50" weedState="0">
+            <fruit type="BARLEY" growthState="HARVESTREADY"/>
+            <ground type="HARVEST_READY" angle="0" />
+            <spray type="NONE" level="0" />
+        </field>
+        <field fieldId="82" weedState="0">
+            <fruit type="CANOLA" growthState="HARVESTREADY"/>
+            <ground type="HARVEST_READY" angle="0" />
+            <spray type="NONE" level="0" />
+        </field>
+        <field fieldId="91" weedState="0">
+            <fruit type="CLOVER" growthState="5 ready"/>
+            <ground type="HARVEST_READY" angle="0" />
+            <spray type="NONE" level="0" />
+        </field>
+        <field fieldId="94" weedState="0">
+            <fruit type="ALFALFA" growthState="4 ready"/>
+            <ground type="HARVEST_READY" angle="0" />
+            <spray type="NONE" level="0" />
+        </field>
+		<field fieldId="95" weedState="0">
+            <fruit type="BARLEY" growthState="HARVESTREADY"/>
+            <ground type="HARVEST_READY" angle="0" />
+            <spray type="NONE" level="0" />
+        </field>
+        <field fieldId="102" weedState="0">
+            <fruit type="WHEAT" growthState="HARVESTREADY"/>
+            <ground type="HARVEST_READY" angle="0" />
+            <spray type="NONE" level="0" />
+        </field>
+    </fields>
+</map>

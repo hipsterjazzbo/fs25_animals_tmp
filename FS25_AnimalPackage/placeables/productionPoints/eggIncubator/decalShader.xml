@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CustomShader version="5">
+    <Parameters>
+        <Parameter name = "placeableColorScale" target = "placeableColorScale" type = "float4" group="base"      defaultValue = "0.0 1.0 0.0 0.0" minValue = "0.0 0.0 0.0 0.0" maxValue = "1.0 1.0 1.0 1.0" description="W>0 - blend XYZ to diffuseColor, usually used for in-game placement color"/>
+        <Parameter name = "colorTint"           target = "colorTint"           type = "float3" group="base"      defaultValue = "0.0 0.0 0.0"     minValue = "-1.0 -1.0 -1.0"  maxValue = "1.0 1.0 1.0" description="saturate(diffuseColor + XYZ) - makes diffuseColor darker or brighter, XYZ - can be negative"/>
+        <Parameter name = "reflectorIntensity"  target = "reflectorIntensity"  type = "float"  group="reflector" defaultValue = "4.0"             minValue = "0.0001"          maxValue = "5.0" description="saturate(diffuseColor * X) - controls the final retroReflectionShading intensity"/>
+    </Parameters>
+    <UvUsages/>
+    <Variations>
+        <Variation name="reflector" groups="base reflector">
+<![CDATA[
+    #define REFLECTOR_SHADING
+]]>
+        </Variation>
+        <Variation name="VS_FAKE_Y" groups="base fakeY">
+<![CDATA[
+    // uses In.position.y + the constant decalTerrainDetailOverlayFakeY 
+    #define VS_FAKE_Y_POS
+]]>
+        </Variation>
+    </Variations>
+    <LodLevel startDistance="0">
+        <CodeInjections>
+            <CodeInjection position="CONFIG_DEFINES">
+<![CDATA[
+    #if !defined(ALLOW_PCSS)
+        #define ALLOW_PCSS
+    #endif
+]]>
+            </CodeInjection>
+            <CodeInjection position = "OBJECT_PARAMETERS">
+<![CDATA[
+    float4 placeableColorScale;
+    float3 colorTint;
+#if defined(REFLECTOR_SHADING)
+    float reflectorIntensity;
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position = "FS_GLOBALS">
+<![CDATA[
+#if defined(REFLECTOR_SHADING)
+    float  gAlpha;
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="LIB_FUNCTION">
+<![CDATA[
+// Custom pixel/vertex functions
+#include "$data/shaders/sharedFunctions.gsl"
+]]>
+            </CodeInjection>
+            <CodeInjection position="LIB_FUNCTION_VS">
+<![CDATA[
+// Custom vertex functions
+#include "$data/shaders/sharedFunctions_vs.gsl"
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_POSITION_VS">
+<![CDATA[
+    float3 mDeformed = In.position.xyz;
+#if defined(VS_FAKE_Y_POS)
+    mDeformed.y += decalTerrainDetailOverlayFakeY;
+#endif
+    return mDeformed.xyz;
+]]>
+            </CodeInjection>
+            <CodeInjection position="LIB_FUNCTION_FS">
+<![CDATA[
+// Custom vertex functions
+#include "$data/shaders/sharedFunctions_fs.gsl"
+]]>
+            </CodeInjection>
+            <CodeInjection position = "START_FS">
+<![CDATA[
+#if defined(REFLECTOR_SHADING)
+    globals.gAlpha = 1.0;
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position = "POST_GET_SPECULAR_SHADING_FS">
+<![CDATA[
+#if defined( REFLECTOR_SHADING )
+{
+    float specDistribution = saturate(shadingAngles.VdotL);
+    specDistribution *= specDistribution;
+    specDistribution *= specDistribution;
+    specDistribution *= specDistribution; // hardcoded power of 8
+
+    float3 retroReflectionShading = globals.gAlpha * specDistribution * diffuseColor * object.reflectorIntensity; // * reflectorIntensity to make it brighter compared to diffuse
+
+    specularShading += retroReflectionShading;
+}
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position = "POST_DIFFUSE_COLOR_FS">
+<![CDATA[
+    diffuseColor = saturate(diffuseColor + object.colorTint);
+    if (object.placeableColorScale.w > 0){
+        diffuseColor = lerp(diffuseColor,object.placeableColorScale.rgb,saturate(0.1+getFresnel( facing, 0.15 , 4.0 ))*object.placeableColorScale.w);
+    }
+]]>
+            </CodeInjection>
+            <CodeInjection position="ALPHA_FS">
+<![CDATA[
+#if defined(ALPHA_BLENDED)
+    reflectingLightingScale = alpha;
+    #if defined( REFLECTOR_SHADING )
+        globals.gAlpha = alpha;
+    #endif
+#endif
+]]>
+            </CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>

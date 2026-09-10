@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='utf-8'?>
+<i3D xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="props.i3d" version="1.6" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3" />
+  </Asset>
+
+  <Files>
+    <File fileId="23" filename="$data/shaders/glowShader.xml" />
+    <File fileId="8" filename="$data/shaders/placeableShader.xml" />
+    <File fileId="2" filename="barrelMetalRed_diffuse.png" />
+    <File fileId="3" filename="barrelMetalRed_normal.png" />
+    <File fileId="4" filename="barrelMetalRed_specular.png" />
+    <File fileId="27" filename="ceilingLamp03_diffuse.png" />
+    <File fileId="28" filename="ceilingLamp03_normal.png" />
+    <File fileId="29" filename="ceilingLamp03_specular.png" />
+    <File fileId="5" filename="$data/maps/textures/shared/props/electricityBox01_diffuse.png" />
+    <File fileId="6" filename="$data/maps/textures/shared/props/electricityBox01_normal.png" />
+    <File fileId="7" filename="$data/maps/textures/shared/props/electricityBox01_specular.png" />
+    <File fileId="11" filename="$data/maps/textures/shared/props/exteriorCommPanel_diffuse.png" />
+    <File fileId="12" filename="$data/maps/textures/shared/props/exteriorCommPanel_normal.png" />
+    <File fileId="13" filename="$data/maps/textures/shared/props/exteriorCommPanel_specular.png" />
+    <File fileId="17" filename="industrialACDecals_diffuse.png" />
+    <File fileId="14" filename="industrialAC_diffuse.png" />
+    <File fileId="15" filename="industrialAC_normal.png" />
+    <File fileId="16" filename="industrialAC_specular.png" />
+    <File fileId="24" filename="wallLamp02_diffuse.png" />
+    <File fileId="25" filename="wallLamp02_normal.png" />
+    <File fileId="26" filename="wallLamp02_specular.png" />
+    <File fileId="20" filename="$data/maps/textures/shared/props/wallLamp03_diffuse.png" />
+    <File fileId="21" filename="$data/maps/textures/shared/props/wallLamp03_normal.png" />
+    <File fileId="22" filename="$data/maps/textures/shared/props/wallLamp03_specular.png" />
+  </Files>
+
+
+  <Materials>
+    <Material name="barrelMetalRed_mat" materialId="5">
+      <Texture fileId="2" />
+      <Normalmap fileId="3" />
+      <Glossmap fileId="4" />
+    </Material>
+    <Material name="ceilingLamp03_mat" materialId="6">
+      <Texture fileId="27" />
+      <Normalmap fileId="28" />
+      <Glossmap fileId="29" />
+    </Material>
+    <Material name="ceilingLamp03_mat1" materialId="7" customShaderId="23">
+      <Texture fileId="27" />
+      <Normalmap fileId="28" />
+      <Glossmap fileId="29" />
+      <CustomParameter name="lightControl" value="2" />
+    </Material>
+    <Material name="electricityBox01_mat" materialId="8" customShaderId="8">
+      <Texture fileId="5" />
+      <Normalmap fileId="6" />
+      <Glossmap fileId="7" />
+    </Material>
+    <Material name="exteriorCommPanel_mat" materialId="9" customShaderId="8">
+      <Texture fileId="11" />
+      <Normalmap fileId="12" />
+      <Glossmap fileId="13" />
+    </Material>
+    <Material name="industrialAC_mat" materialId="10" customShaderId="8">
+      <Texture fileId="14" />
+      <Normalmap fileId="15" />
+      <Glossmap fileId="16" />
+    </Material>
+    <Material name="industrialACDecals_mat" materialId="11" specularColor="0.494118 1 0.494118">
+      <Texture fileId="17" />
+    </Material>
+    <Material name="lambert1" materialId="12" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert1" materialId="13" diffuseColor="0.498039 0.498039 0.498039 1">
+    </Material>
+    <Material name="wallLamp02_mat" materialId="14">
+      <Texture fileId="24" />
+      <Normalmap fileId="25" />
+      <Glossmap fileId="26" />
+    </Material>
+    <Material name="wallLamp02_mat2" materialId="15" customShaderId="23">
+      <Texture fileId="24" />
+      <Normalmap fileId="25" />
+      <Glossmap fileId="26" />
+      <CustomParameter name="lightControl" value="2" />
+    </Material>
+    <Material name="wallLamp03_mat" materialId="16">
+      <Texture fileId="20" />
+      <Normalmap fileId="21" />
+      <Glossmap fileId="22" />
+    </Material>
+    <Material name="wallLamp03_mat1" materialId="17" customShaderId="23">
+      <Texture fileId="20" />
+      <Normalmap fileId="21" />
+      <Glossmap fileId="22" />
+      <CustomParameter name="lightControl" value="2" />
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="props.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="props" nodeId="57">
+      <Shape name="barrelMetalRed" translation="1.8712 0.117714 11.0331" rotation="180 83.298 180" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="58" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="vis" shapeId="2" clipDistance="150" nodeId="59" castsShadows="true" receiveShadows="true" materialIds="5" />
+      </Shape>
+      <Shape name="barrelMetalRed" translation="1.55031 0.117714 11.679" rotation="180 50.1247 180" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="60" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="vis" shapeId="2" clipDistance="150" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="5" />
+      </Shape>
+      <Shape name="barrelMetalRed" translation="1.32897 4.1496 11.5151" rotation="180 50.1247 180" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="62" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="vis" shapeId="2" clipDistance="150" nodeId="63" castsShadows="true" receiveShadows="true" materialIds="5" />
+      </Shape>
+      <Shape name="electricityBox01" translation="2.44379 4.1496 10.206" rotation="1.73028e-05 -90 0" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="64" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="4" clipDistance="100" nodeId="65" castsShadows="true" receiveShadows="true" materialIds="8" />
+      </Shape>
+      <Shape name="exteriorCommPanel" translation="5.01043 1.78274 12.5" shapeId="5" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="66" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="6" clipDistance="120" nodeId="67" castsShadows="true" receiveShadows="true" materialIds="9" />
+      </Shape>
+      <Shape name="exteriorCommPanel" translation="12.5 1.50095 1.43715" rotation="-0 90 0" shapeId="5" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="68" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="6" clipDistance="120" nodeId="69" castsShadows="true" receiveShadows="true" materialIds="9" />
+      </Shape>
+      <Shape name="exteriorCommPanel" translation="12.5 1.50095 -12.7728" rotation="-0 90 0" shapeId="5" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="70" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="6" clipDistance="120" nodeId="71" castsShadows="true" receiveShadows="true" materialIds="9" />
+      </Shape>
+      <Shape name="exteriorCommPanel" translation="2.5 1.52916 -3.50466" rotation="1.73028e-05 -90 0" shapeId="5" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="72" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="6" clipDistance="120" nodeId="73" castsShadows="true" receiveShadows="true" materialIds="9" />
+      </Shape>
+      <Shape name="exteriorCommPanel" translation="-12.5 0.933942 10.9758" rotation="1.73028e-05 -90 0" shapeId="5" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="74" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="6" clipDistance="120" nodeId="75" castsShadows="true" receiveShadows="true" materialIds="9" />
+      </Shape>
+      <Shape name="industrialABig01" translation="4.87435 12.2926 1.03186" rotation="-0 90 0" shapeId="7" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="76" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" translation="-1.32131 7.62939e-08 -0.755708" shapeId="8" clipDistance="150" nodeId="77" castsShadows="true" receiveShadows="true" materialIds="10" />
+        <Shape name="decals" translation="-1.32131 7.62939e-08 -0.755708" shapeId="9" clipDistance="30" nodeId="78" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11" />
+      </Shape>
+      <Shape name="industrialABig02" translation="10.9715 8.9996 11.0324" shapeId="10" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="79" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="11" clipDistance="150" nodeId="80" castsShadows="true" receiveShadows="true" materialIds="10" />
+        <Shape name="decals" shapeId="12" clipDistance="30" nodeId="81" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11" />
+      </Shape>
+      <Shape name="industrialACRound01" translation="4.40429 13.5732 3.4078" shapeId="13" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="82" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="14" clipDistance="100" nodeId="83" castsShadows="true" receiveShadows="true" materialIds="10" />
+      </Shape>
+      <Shape name="industrialACRound02" translation="-5.1372 18.1496 5.19376" rotation="0 -45 0" scale="2 2 2" shapeId="15" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="84" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="13">
+        <Shape name="visual" shapeId="16" clipDistance="100" nodeId="85" castsShadows="true" receiveShadows="true" materialIds="10" />
+      </Shape>
+      <Shape name="industrialACRound03" translation="1.8153 22.2766 2.8541" rotation="0 -45 0" shapeId="17" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="86" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" rotation="0 45 0" shapeId="18" clipDistance="100" nodeId="87" castsShadows="true" receiveShadows="true" materialIds="10" />
+      </Shape>
+      <Shape name="industrialACWall02" translation="12.5 2.7111 -0.421927" rotation="-0 90 0" shapeId="19" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="88" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="20" clipDistance="150" nodeId="89" castsShadows="true" receiveShadows="true" materialIds="10" />
+        <Shape name="decals" shapeId="21" clipDistance="30" nodeId="90" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11" />
+      </Shape>
+      <Shape name="industrialACMedium01" translation="-11.6724 7.9996 2.37289" rotation="-0 90 0" scale="1.5 1.5 1.5" shapeId="22" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="91" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="23" clipDistance="150" nodeId="92" castsShadows="true" receiveShadows="true" materialIds="10" />
+        <Shape name="decals" shapeId="24" clipDistance="30" nodeId="93" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11" />
+      </Shape>
+      <Shape name="industrialACMedium02" translation="7.90963 8.9996 -11.5749" shapeId="25" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="94" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="26" clipDistance="150" nodeId="95" castsShadows="true" receiveShadows="true" materialIds="10" />
+        <Shape name="decals" shapeId="27" clipDistance="30" nodeId="96" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11" />
+      </Shape>
+      <Shape name="industrialABig02" translation="4.48961 8.9996 11.0324" shapeId="10" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="97" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="11" clipDistance="150" nodeId="98" castsShadows="true" receiveShadows="true" materialIds="10" />
+        <Shape name="decals" shapeId="12" clipDistance="30" nodeId="99" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11" />
+      </Shape>
+      <Shape name="industrialABig02" translation="11.0641 8.9996 -14.6172" shapeId="10" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="100" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="11" clipDistance="150" nodeId="101" castsShadows="true" receiveShadows="true" materialIds="10" />
+        <Shape name="decals" shapeId="12" clipDistance="30" nodeId="102" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11" />
+      </Shape>
+      <Shape name="industrialACRound02" translation="-5.95828 18.1496 5.19376" rotation="0 -45 0" scale="2 2 2" shapeId="15" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="103" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="13">
+        <Shape name="visual" shapeId="16" clipDistance="100" nodeId="104" castsShadows="true" receiveShadows="true" materialIds="10" />
+      </Shape>
+      <Shape name="industrialACRound03" translation="1.8153 22.2766 3.72294" rotation="0 -45 0" shapeId="17" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="105" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" rotation="0 45 0" shapeId="18" clipDistance="100" nodeId="106" castsShadows="true" receiveShadows="true" materialIds="10" />
+      </Shape>
+      <Shape name="industrialACWall02" translation="-4.00608 3.01912 0.5" rotation="-180 -0 180" shapeId="19" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="107" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="20" clipDistance="150" nodeId="108" castsShadows="true" receiveShadows="true" materialIds="10" />
+        <Shape name="decals" shapeId="21" clipDistance="30" nodeId="109" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11" />
+      </Shape>
+      <Shape name="industrialACWall02" translation="-12.5 2.13235 7.88404" rotation="-0 -90 0" shapeId="19" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="110" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="20" clipDistance="150" nodeId="111" castsShadows="true" receiveShadows="true" materialIds="10" />
+        <Shape name="decals" shapeId="21" clipDistance="30" nodeId="112" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11" />
+      </Shape>
+      <Shape name="industrialACMedium02" translation="7.90963 8.9996 0.137777" shapeId="25" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.0001" nodeId="113" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="26" clipDistance="150" nodeId="114" castsShadows="true" receiveShadows="true" materialIds="10" />
+        <Shape name="decals" shapeId="27" clipDistance="30" nodeId="115" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="11" />
+      </Shape>
+      <Shape name="wallLamp03" translation="8.50475 4.20828 12.5" shapeId="28" nodeId="116" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="29" clipDistance="55" nodeId="117" castsShadows="true" receiveShadows="true" materialIds="16" />
+        <Shape name="selfIllum" shapeId="30" clipDistance="30" nodeId="118" castsShadows="true" receiveShadows="true" materialIds="17" weatherRequiredMask="0x40" visibleShaderParameter="2" />
+        <Light name="spotLight" translation="4e-05 -0.127927 0.29338" rotation="-90 0 0" clipDistance="120" nodeId="119" type="spot" color="0.655172 0.655172 0.655172" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="110" dropOff="4" weatherRequiredMask="0x40" />
+      </Shape>
+      <Shape name="wallLamp03" translation="12.5 4.20264 -9.91508" rotation="-0 90 0" shapeId="28" nodeId="120" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="29" clipDistance="55" nodeId="121" castsShadows="true" receiveShadows="true" materialIds="16" />
+        <Shape name="selfIllum" shapeId="30" clipDistance="30" nodeId="122" castsShadows="true" receiveShadows="true" materialIds="17" weatherRequiredMask="0x40" visibleShaderParameter="2" />
+        <Light name="spotLight" translation="4e-05 -0.127927 0.29338" rotation="-90 0 0" clipDistance="120" nodeId="123" type="spot" color="0.655172 0.655172 0.655172" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="110" dropOff="4" weatherRequiredMask="0x40" />
+      </Shape>
+      <Shape name="wallLamp03" translation="-10.9646 4.20828 12.5" shapeId="28" nodeId="124" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="29" clipDistance="55" nodeId="125" castsShadows="true" receiveShadows="true" materialIds="16" />
+        <Shape name="selfIllum" shapeId="30" clipDistance="30" nodeId="126" castsShadows="true" receiveShadows="true" materialIds="17" weatherRequiredMask="0x40" visibleShaderParameter="2" />
+        <Light name="spotLight" translation="4e-05 -0.127927 0.29338" rotation="-90 0 0" clipDistance="120" nodeId="127" type="spot" color="0.655172 0.655172 0.655172" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="110" dropOff="4" weatherRequiredMask="0x40" />
+      </Shape>
+      <Shape name="wallLamp02" translation="2.5 3.82602 -10.3118" rotation="0 -90 0" shapeId="31" nodeId="128" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="32" clipDistance="60" nodeId="129" castsShadows="true" receiveShadows="true" materialIds="14" />
+        <Shape name="selfIllum" shapeId="33" clipDistance="50" nodeId="130" castsShadows="true" receiveShadows="true" materialIds="15" weatherRequiredMask="0x40" visibleShaderParameter="2" />
+        <Light name="spotLight" translation="0.010219 -0.184885 0.284953" rotation="-73.3946 0 0" clipDistance="120" nodeId="131" type="spot" color="0.649425 0.649425 0.649425" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="120" dropOff="4" weatherRequiredMask="0x40" />
+      </Shape>
+      <Shape name="wallLamp02" translation="2.5 3.82602 -7.6032" rotation="0 -90 0" shapeId="31" nodeId="132" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="32" clipDistance="60" nodeId="133" castsShadows="true" receiveShadows="true" materialIds="14" />
+        <Shape name="selfIllum" shapeId="33" clipDistance="50" nodeId="134" castsShadows="true" receiveShadows="true" materialIds="15" weatherRequiredMask="0x40" visibleShaderParameter="2" />
+        <Light name="spotLight" translation="0.010219 -0.184885 0.284953" rotation="-73.3946 0 0" clipDistance="120" nodeId="135" type="spot" color="0.649425 0.649425 0.649425" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="120" dropOff="4" weatherRequiredMask="0x40" />
+      </Shape>
+      <Shape name="ceilingLamp03" translation="-0.190195 17.9996 8.26206" shapeId="34" nodeId="136" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="35" clipDistance="100" nodeId="137" castsShadows="true" receiveShadows="true" materialIds="6" />
+        <Shape name="selfIllum" shapeId="36" clipDistance="60" nodeId="138" castsShadows="true" receiveShadows="true" materialIds="7" weatherRequiredMask="0x40" visibleShaderParameter="2" />
+        <Light name="spotLight" translation="0 -1.04262 0" rotation="-90 0 0" clipDistance="120" nodeId="139" type="spot" color="0.572289 0.572289 0.572289" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="120" dropOff="4" weatherRequiredMask="0x40" />
+      </Shape>
+      <Shape name="ceilingLamp03Simple" translation="13.0053 4.08064 6.34532" shapeId="37" nodeId="140" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" translation="0 0.828152 0" shapeId="38" clipDistance="100" nodeId="141" castsShadows="true" receiveShadows="true" materialIds="6" />
+        <Shape name="selfIllum" translation="0 0.828152 0" shapeId="36" clipDistance="60" nodeId="142" castsShadows="true" receiveShadows="true" materialIds="7" weatherRequiredMask="0x40" visibleShaderParameter="2" />
+        <Light name="spotLight" translation="0 -0.214472 0" rotation="-90 0 0" clipDistance="120" nodeId="143" type="spot" color="0.572289 0.572289 0.572289" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="120" dropOff="4" weatherRequiredMask="0x40" />
+      </Shape>
+      <Shape name="ceilingLamp03Simple" translation="13.0053 4.08064 10.3409" shapeId="37" nodeId="144" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" translation="0 0.828152 0" shapeId="38" clipDistance="100" nodeId="145" castsShadows="true" receiveShadows="true" materialIds="6" />
+        <Shape name="selfIllum" translation="0 0.828152 0" shapeId="36" clipDistance="60" nodeId="146" castsShadows="true" receiveShadows="true" materialIds="7" weatherRequiredMask="0x40" visibleShaderParameter="2" />
+        <Light name="spotLight" translation="0 -0.214472 0" rotation="-90 0 0" clipDistance="120" nodeId="147" type="spot" color="0.572289 0.572289 0.572289" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="120" dropOff="4" weatherRequiredMask="0x40" />
+      </Shape>
+      <Shape name="ceilingLamp03" translation="-7.90538 17.9996 8.26206" shapeId="34" nodeId="148" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="35" clipDistance="100" nodeId="149" castsShadows="true" receiveShadows="true" materialIds="6" />
+        <Shape name="selfIllum" shapeId="36" clipDistance="60" nodeId="150" castsShadows="true" receiveShadows="true" materialIds="7" weatherRequiredMask="0x40" visibleShaderParameter="2" />
+        <Light name="spotLight" translation="0 -1.04262 0" rotation="-90 0 0" clipDistance="120" nodeId="151" type="spot" color="0.572289 0.572289 0.572289" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="120" dropOff="4" weatherRequiredMask="0x40" />
+      </Shape>
+      <Shape name="ceilingLamp03" translation="-7.90538 11.9773 6.65685" shapeId="34" nodeId="152" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="35" clipDistance="100" nodeId="153" castsShadows="true" receiveShadows="true" materialIds="6" />
+        <Shape name="selfIllum" shapeId="36" clipDistance="60" nodeId="154" castsShadows="true" receiveShadows="true" materialIds="7" weatherRequiredMask="0x40" visibleShaderParameter="2" />
+        <Light name="spotLight" translation="0 -1.04262 0" rotation="-90 0 0" clipDistance="120" nodeId="155" type="spot" color="0.572289 0.572289 0.572289" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="120" dropOff="4" weatherRequiredMask="0x40" />
+      </Shape>
+      <Shape name="ceilingLamp03" translation="0.0519881 11.9773 6.65685" shapeId="34" nodeId="156" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="35" clipDistance="100" nodeId="157" castsShadows="true" receiveShadows="true" materialIds="6" />
+        <Shape name="selfIllum" shapeId="36" clipDistance="60" nodeId="158" castsShadows="true" receiveShadows="true" materialIds="7" weatherRequiredMask="0x40" visibleShaderParameter="2" />
+        <Light name="spotLight" translation="0 -1.04262 0" rotation="-90 0 0" clipDistance="120" nodeId="159" type="spot" color="0.572289 0.572289 0.572289" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="120" dropOff="4" weatherRequiredMask="0x40" />
+      </Shape>
+      <Shape name="ceilingLamp03" translation="1.07998 4.00492 6.65685" shapeId="34" nodeId="160" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="35" clipDistance="100" nodeId="161" castsShadows="true" receiveShadows="true" materialIds="6" />
+        <Shape name="selfIllum" shapeId="36" clipDistance="60" nodeId="162" castsShadows="true" receiveShadows="true" materialIds="7" weatherRequiredMask="0x40" visibleShaderParameter="2" />
+        <Light name="spotLight" translation="0 -1.04262 0" rotation="-90 0 0" clipDistance="120" nodeId="163" type="spot" color="0.572289 0.572289 0.572289" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="120" dropOff="4" weatherRequiredMask="0x40" />
+      </Shape>
+      <Shape name="ceilingLamp03" translation="-5.91907 4.00492 6.65685" shapeId="34" nodeId="164" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="35" clipDistance="100" nodeId="165" castsShadows="true" receiveShadows="true" materialIds="6" />
+        <Shape name="selfIllum" shapeId="36" clipDistance="60" nodeId="166" castsShadows="true" receiveShadows="true" materialIds="7" weatherRequiredMask="0x40" visibleShaderParameter="2" />
+        <Light name="spotLight" translation="0 -1.04262 0" rotation="-90 0 0" clipDistance="120" nodeId="167" type="spot" color="0.572289 0.572289 0.572289" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="120" dropOff="4" weatherRequiredMask="0x40" />
+      </Shape>
+      <Shape name="wallLamp02" translation="7.44632 6.84173 -15.75" rotation="-180 0 -180" shapeId="31" nodeId="168" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12">
+        <Shape name="visual" shapeId="32" clipDistance="60" nodeId="169" castsShadows="true" receiveShadows="true" materialIds="14" />
+        <Shape name="selfIllum" shapeId="33" clipDistance="50" nodeId="170" castsShadows="true" receiveShadows="true" materialIds="15" weatherRequiredMask="0x40" visibleShaderParameter="2" />
+        <Light name="spotLight" translation="0.010219 -0.184885 0.284953" rotation="-73.3946 0 0" clipDistance="120" nodeId="171" type="spot" color="0.649425 0.649425 0.649425" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="120" dropOff="4" weatherRequiredMask="0x40" />
+      </Shape>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

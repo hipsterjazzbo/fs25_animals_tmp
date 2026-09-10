@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+
+<animalHusbandry>
+    <animals>
+		<!-- kitten -->
+		<animal radius="0.1" handleThreats="false" threatAwarenessRadius="0.5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.01" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+            <statesTimers idleMin="6000" idleMax="12000" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="15000" grazeMin="18000" grazeMax="30000" chewMin="15000" chewMax="20000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="25000" />
+            <assets filename="kitten/kitten.i3d" filenamePosed="animals/domesticated/cat/kitten/kitten_posed.i3d" animation="animations/kitten/kitten.i3d" skeletonIndex="0" meshIndex="1" proxyIndex="2" shaderIndex="1|0">
+                <texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false" />
+                <texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false" />
+                <texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false" />
+                <texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="locomotionKitten.xml"/>
+            <audio eatSoundGroup="eat" yellSoundGroup="yell" yellMinInterval="8000" yellMaxInterval="20000" yellTimerCrowdScale="0.2" />
+        </animal>
+		
+		<!-- cat tiger -->
+		<animal radius="0.3" handleThreats="false" threatAwarenessRadius="0.5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.05" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+            <statesTimers idleMin="6000" idleMax="12000" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="15000" grazeMin="18000" grazeMax="30000" chewMin="15000" chewMax="20000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="25000" />
+            <assets filename="femaleCat/femaleCat.i3d" filenamePosed="animals/domesticated/cat/femaleCat/femaleCat_posed.i3d" animation="animations/femaleCat/femaleCat.i3d" skeletonIndex="0" meshIndex="1" proxyIndex="2" shaderIndex="1|0">
+				<texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="4" numTilesV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="locomotion.xml"/>
+            <audio eatSoundGroup="eat" yellSoundGroup="yell" yellMinInterval="8000" yellMaxInterval="20000" yellTimerCrowdScale="0.2" />
+        </animal>
+		
+		<!-- cat black white -->
+		<animal radius="0.3" handleThreats="false" threatAwarenessRadius="0.5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.05" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+            <statesTimers idleMin="6000" idleMax="12000" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="15000" grazeMin="18000" grazeMax="30000" chewMin="15000" chewMax="20000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="25000" />
+            <assets filename="femaleCat/femaleCat.i3d" filenamePosed="animals/domesticated/cat/femaleCat/femaleCat_posed.i3d" animation="animations/femaleCat/femaleCat.i3d" skeletonIndex="0" meshIndex="1" proxyIndex="2" shaderIndex="1|0">
+				<texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="4" numTilesV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="locomotion.xml"/>
+            <audio eatSoundGroup="eat" yellSoundGroup="yell" yellMinInterval="8000" yellMaxInterval="20000" yellTimerCrowdScale="0.2" />
+        </animal>
+		
+		<!-- cat black -->
+		<animal radius="0.3" handleThreats="false" threatAwarenessRadius="0.5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.05" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+            <statesTimers idleMin="6000" idleMax="12000" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="15000" grazeMin="18000" grazeMax="30000" chewMin="15000" chewMax="20000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="25000" />
+            <assets filename="femaleCat/femaleCat.i3d" filenamePosed="animals/domesticated/cat/femaleCat/femaleCat_posed.i3d" animation="animations/femaleCat/femaleCat.i3d" skeletonIndex="0" meshIndex="1" proxyIndex="2" shaderIndex="1|0">
+				<texture multi="true" tileUIndex="2" tileVIndex="1" numTilesU="4" numTilesV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="locomotion.xml"/>
+            <audio eatSoundGroup="eat" yellSoundGroup="yell" yellMinInterval="8000" yellMaxInterval="20000" yellTimerCrowdScale="0.2" />
+        </animal>
+
+		<!-- cat gray -->
+		<animal radius="0.3" handleThreats="false" threatAwarenessRadius="0.5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.05" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+            <statesTimers idleMin="6000" idleMax="12000" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="15000" grazeMin="18000" grazeMax="30000" chewMin="15000" chewMax="20000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="25000" />
+            <assets filename="femaleCat/femaleCat.i3d" filenamePosed="animals/domesticated/cat/femaleCat/femaleCat_posed.i3d" animation="animations/femaleCat/femaleCat.i3d" skeletonIndex="0" meshIndex="1" proxyIndex="2" shaderIndex="1|0">
+                <texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="4" numTilesV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="locomotion.xml"/>
+            <audio eatSoundGroup="eat" yellSoundGroup="yell" yellMinInterval="8000" yellMaxInterval="20000" yellTimerCrowdScale="0.2" />
+        </animal>
+	
+		<!-- cat red -->
+		<animal radius="0.3" handleThreats="false" threatAwarenessRadius="0.5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.05" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+            <statesTimers idleMin="6000" idleMax="12000" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="15000" grazeMin="18000" grazeMax="30000" chewMin="15000" chewMax="20000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="25000" />
+            <assets filename="femaleCat/femaleCat.i3d" filenamePosed="animals/domesticated/cat/femaleCat/femaleCat_posed.i3d" animation="animations/femaleCat/femaleCat.i3d" skeletonIndex="0" meshIndex="1" proxyIndex="2" shaderIndex="1|0">
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="4" numTilesV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="locomotion.xml"/>
+            <audio eatSoundGroup="eat" yellSoundGroup="yell" yellMinInterval="8000" yellMaxInterval="20000" yellTimerCrowdScale="0.2" />
+        </animal>
+	
+		<!-- cat white -->
+		<animal radius="0.3" handleThreats="false" threatAwarenessRadius="0.5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.05" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true" canBeCleaned="true" interessDistance="10.0">
+            <statesTimers idleMin="6000" idleMax="12000" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="15000" grazeMin="18000" grazeMax="30000" chewMin="15000" chewMax="20000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="25000" />
+            <assets filename="femaleCat/femaleCat.i3d" filenamePosed="animals/domesticated/cat/femaleCat/femaleCat_posed.i3d" animation="animations/femaleCat/femaleCat.i3d" skeletonIndex="0" meshIndex="1" proxyIndex="2" shaderIndex="1|0">
+				<texture multi="true" tileUIndex="2" tileVIndex="0" numTilesU="4" numTilesV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="locomotion.xml"/>
+            <audio eatSoundGroup="eat" yellSoundGroup="yell" yellMinInterval="8000" yellMaxInterval="20000" yellTimerCrowdScale="0.2" />
+        </animal>
+		
+		<!-- cat -->
+        <!-- <animal radius="0.3" handleThreats="false" threatAwarenessRadius="0.5" slowingDistance="0.5" allowMilkingPlace="false" headOffset="0.05" canEat="true" canDrink="true" canSleep="true" canEatDuringNight="true">
+            <statesTimers idleMin="6000" idleMax="12000" sleepMin="120000" sleepMax="180000" restMin="12000" restMax="15000" grazeMin="18000" grazeMax="30000" chewMin="15000" chewMax="20000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="25000" />
+            <assets filename="femaleCat/femaleCat.i3d" filenamePosed="character/animals/domesticated/cat/femaleCat/femaleCat_posed.i3d" animation="animations/femaleCat/femaleCat.i3d" skeletonIndex="0" meshIndex="1" proxyIndex="2" shaderIndex="1|0">
+                <texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="4" numTilesV="2" mirrorV="false" />
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="4" numTilesV="2" mirrorV="false" />
+				<texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="4" numTilesV="2" mirrorV="false" />
+				<texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="4" numTilesV="2" mirrorV="false" />
+				<texture multi="true" tileUIndex="2" tileVIndex="0" numTilesU="4" numTilesV="2" mirrorV="false" />
+				<texture multi="true" tileUIndex="2" tileVIndex="1" numTilesU="4" numTilesV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="locomotion.xml"/>
+            <audio eatSoundGroup="eat" yellSoundGroup="yell" yellMinInterval="8000" yellMaxInterval="20000" yellTimerCrowdScale="0.2" />
+        </animal> -->
+	</animals>
+    	
+	<sound>
+       <soundGroup name="yell" volume="1.0" indoorVolume="0.3" range="20" innerRange="1">
+            <sample filename="cat_meow01.wav" />
+            <sample filename="cat_meow02.wav" />
+            <sample filename="cat_meow03.wav" />
+            <sample filename="cat_meow04.wav" />
+        </soundGroup>
+		<soundGroup name="eat" volume="0.15" indoorVolume="0.01" range="12" innerRange="1">
+            <sample filename="$data/sounds/animals/pig/anmlPigEatLoop_01.wav"/>
+        </soundGroup>
+        <soundGroup name="walk" volume="0.15" indoorVolume="0.1" range="12" innerRange="0.4">
+            <sample filename="$data/sounds/animals/chicken/anmlChickenStep_01.wav"/>
+            <sample filename="$data/sounds/animals/chicken/anmlChickenStep_02.wav"/>
+            <sample filename="$data/sounds/animals/chicken/anmlChickenStep_03.wav"/>
+            <sample filename="$data/sounds/animals/chicken/anmlChickenStep_04.wav"/>
+            <sample filename="$data/sounds/animals/chicken/anmlChickenStep_05.wav"/>
+            <sample filename="$data/sounds/animals/chicken/anmlChickenStep_06.wav"/>
+            <sample filename="$data/sounds/animals/chicken/anmlChickenStep_07.wav"/>
+            <sample filename="$data/sounds/animals/chicken/anmlChickenStep_08.wav"/>
+        </soundGroup>
+		
+		<soundGroup indoorVolume="0.1" innerRange="0.4" name="run" range="12" volume="0.15">
+            <sample filename="$data/sounds/animals/chicken/anmlChickenStep_01.wav"/>
+            <sample filename="$data/sounds/animals/chicken/anmlChickenStep_02.wav"/>
+            <sample filename="$data/sounds/animals/chicken/anmlChickenStep_03.wav"/>
+            <sample filename="$data/sounds/animals/chicken/anmlChickenStep_04.wav"/>
+            <sample filename="$data/sounds/animals/chicken/anmlChickenStep_05.wav"/>
+            <sample filename="$data/sounds/animals/chicken/anmlChickenStep_06.wav"/>
+            <sample filename="$data/sounds/animals/chicken/anmlChickenStep_07.wav"/>
+            <sample filename="$data/sounds/animals/chicken/anmlChickenStep_08.wav"/>
+        </soundGroup>
+    </sound>
+</animalHusbandry>

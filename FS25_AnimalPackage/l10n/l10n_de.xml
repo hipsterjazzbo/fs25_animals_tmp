@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<translationContributors>BavarianRedneck</translationContributors>
+	<texts>
+		<!--CATTLE-->
+		<text name="animal_cattleF_GS01" text="Dies ist ein weibliches Kalb. Es wird einmal zu einer ertragreichen Kuh."/>
+		<text name="animal_cattleF_GS02" text="Dies ist ein weibliches Absetzer. Absetzer fressen bereits festes Futter."/>
+		<text name="animal_cattleF_GS03" text="Dies ist eine Färse."/>
+		<text name="animal_cattleF_GS04" text="Dies ist eine ausgewachsene Kuh."/>
+		<text name="animal_cattleM_GS01" text="Dies ist ein männliches Kalb. Es wird einmal zu einem ertragreichen Bullen heran wachsen."/>
+		<text name="animal_cattleM_GS02" text="Dies ist ein männlicher Absetzer. Absetzer fressen bereits festes Futter."/>
+		<text name="animal_cattleM_GS03" text="Dies ist ein junger Bulle."/>
+		<text name="animal_cattleM_GS04" text="Dieser Bulle ist vollständig ausgewachsen. Er kann mit Profit verkauft werden."/>
+		<text name="fillType_cowHolsteinBRC" text="Holstein Kuh"/>
+		<text name="fillType_bullHolsteinBRC" text="Holstein Bulle"/>
+		<text name="fillType_cowRedHolsteinBRC" text="Rote Holstein Kuh"/>
+		<text name="fillType_bullRedHolsteinBRC" text="Roter Holstein Bulle"/>
+		<text name="fillType_cowBrownSwissBRC" text="Braunvieh Kuh"/>
+		<text name="fillType_bullBrownSwissBRC" text="Braunvieh Bulle"/>
+		<text name="fillType_cowLimousinBRC" text="Limousin Kuh"/>
+		<text name="fillType_bullLimousinBRC" text="Limousin Bulle"/>
+		<text name="fillType_cowAngusBRC" text="Angus Kuh"/>
+		<text name="fillType_bullAngusBRC" text="Angus Bulle"/>
+		<text name="fillType_cowWaterbuffaloBRC" text="Wasserbüffel Kuh"/>
+		<text name="fillType_bullWaterbuffaloBRC" text="Wasserbüffel Bulle"/>
+		<text name="shopItem_animalHolstein_F_GS01" text="Holstein Kuhkalb"/>
+		<text name="shopItem_animalHolstein_F_GS02" text="Holstein Absetzer weiblich"/>
+		<text name="shopItem_animalHolstein_F_GS03" text="Holstein Färse"/>
+		<text name="shopItem_animalHolstein_F_GS04" text="Holstein Kuh"/>
+		<text name="shopItem_animalHolstein_M_GS01" text="Holstein Bullenkalb"/>
+		<text name="shopItem_animalHolstein_M_GS02" text="Holstein Absetzer männlich"/>
+		<text name="shopItem_animalHolstein_M_GS03" text="Holstein Jungbulle"/>
+		<text name="shopItem_animalHolstein_M_GS04" text="Holstein Bulle"/>
+		<text name="shopItem_animalRedHolstein_F_GS01" text="Rotes Holstein Kuhkalb"/>
+		<text name="shopItem_animalRedHolstein_F_GS02" text="Roter Holstein Absetzer weiblich"/>
+		<text name="shopItem_animalRedHolstein_F_GS03" text="Rote Holstein Färse"/>
+		<text name="shopItem_animalRedHolstein_F_GS04" text="Rote Holstein Kuh"/>
+		<text name="shopItem_animalRedHolstein_M_GS01" text="Rotes Holstein Bullenkalb"/>
+		<text name="shopItem_animalRedHolstein_M_GS02" text="Roter Holstein Absetzer männlich"/>
+		<text name="shopItem_animalRedHolstein_M_GS03" text="Roter Holstein Jungbulle"/>
+		<text name="shopItem_animalRedHolstein_M_GS04" text="Roter Holstein Bulle"/>
+		<text name="shopItem_animalBrownSwiss_F_GS01" text="Braunvieh Kuhkalb"/>
+		<text name="shopItem_animalBrownSwiss_F_GS02" text="Braunvieh Absetzer weiblich"/>
+		<text name="shopItem_animalBrownSwiss_F_GS03" text="Braunvieh Färse"/>
+		<text name="shopItem_animalBrownSwiss_F_GS04" text="Braunvieh Kuh"/>
+		<text name="shopItem_animalBrownSwiss_M_GS01" text="Braunvieh Bullenkalb"/>
+		<text name="shopItem_animalBrownSwiss_M_GS02" text="Braunvieh Absetzer männlich"/>
+		<text name="shopItem_animalBrownSwiss_M_GS03" text="Braunvieh Jungbulle"/>
+		<text name="shopItem_animalBrownSwiss_M_GS04" text="Braunvieh Bulle"/>
+		<text name="shopItem_animalLimousin_F_GS01" text="Limousin Kuhkalb"/>
+		<text name="shopItem_animalLimousin_F_GS02" text="Limousin Absetzer weiblich"/>
+		<text name="shopItem_animalLimousin_F_GS03" text="Limousin Färse"/>
+		<text name="shopItem_animalLimousin_F_GS04" text="Limousin Kuh"/>
+		<text name="shopItem_animalLimousin_M_GS01" text="Limousin Bullenkalb"/>
+		<text name="shopItem_animalLimousin_M_GS02" text="Limousin Absetzer männlich"/>
+		<text name="shopItem_animalLimousin_M_GS03" text="Limousin Jungbulle"/>
+		<text name="shopItem_animalLimousin_M_GS04" text="Limousin Bulle"/>
+		<text name="shopItem_animalAngus_F_GS01" text="Angus Kuhkalb"/>
+		<text name="shopItem_animalAngus_F_GS02" text="Angus Absetzer weiblich"/>
+		<text name="shopItem_animalAngus_F_GS03" text="Angus Färse"/>
+		<text name="shopItem_animalAngus_F_GS04" text="Angus Kuh"/>
+		<text name="shopItem_animalAngus_M_GS01" text="Angus Bullenkalb"/>
+		<text name="shopItem_animalAngus_M_GS02" text="Angus Absetzer männlich"/>
+		<text name="shopItem_animalAngus_M_GS03" text="Angus Jungbulle"/>
+		<text name="shopItem_animalAngus_M_GS04" text="Angus Bulle"/>
+		<text name="shopItem_animalWaterbuffalo_F_GS01" text="Wasserbüffel Kuhkalb"/>
+		<text name="shopItem_animalWaterbuffalo_F_GS02" text="Wasserbüffel Absetzer weiblich"/>
+		<text name="shopItem_animalWaterbuffalo_F_GS03" text="Wasserbüffel Färse"/>
+		<text name="shopItem_animalWaterbuffalo_F_GS04" text="Wasserbüffel Kuh"/>
+		<text name="shopItem_animalWaterbuffalo_M_GS01" text="Wasserbüffel Bullenkalb"/>
+		<text name="shopItem_animalWaterbuffalo_M_GS02" text="Wasserbüffel Absetzer männlich"/>
+		<text name="shopItem_animalWaterbuffalo_M_GS03" text="Wasserbüffel Jungbulle"/>
+		<text name="shopItem_animalWaterbuffalo_M_GS04" text="Wasserbüffel Bulle"/>
+		<!--CHICKEN-->
+		<text name="animal_ChickensF_GS01Description" text="Dies ist ein weibliches Küken. Es wird einmal zu einer ertragreichen Legehenne heranwachsen."/>
+		<text name="animal_ChickensF_GS02Description" text="Dies ist ein weibliches Küken. Es wird einmal zu einer ertragreichen Legehenne heranwachsen."/>
+		<text name="animal_ChickensF_GS03Description" text="Dies ist ein junges Huhn. Es wird bald die ersten Eier legen."/>
+		<text name="animal_ChickensF_GS04Description" text="Dies ist ein voll ausgewachsenes Huhn."/>
+		<text name="animal_ChickensM_GS01Description" text="Dies ist ein männliches Küken. Es wird einmal zu einer ertragreichen Legehenne heranwachsen."/>
+		<text name="animal_ChickensM_GS02Description" text="Dies ist ein männliches Küken. Es wird einmal zu einer ertragreichen Legehenne heranwachsen."/>
+		<text name="animal_ChickensM_GS03Description" text="Dies ist ein junger Hahn."/>
+		<text name="animal_ChickensM_GS04Description" text="Dies ist ein voll ausgewachsener Hahn."/>
+		<text name="fillType_henLohmannBRC" text="Lohmann Huhn"/>
+		<text name="fillType_roosterLohmannBRC" text="Lohmann Hahn"/>
+		<text name="fillType_henLeghornBRC" text="Leghorn Huhn"/>
+		<text name="fillType_roosterLeghornBRC" text="Leghorn Hahn"/>
+		<text name="fillType_henPlymouthrockBRC" text="Plymouthrock Huhn"/>
+		<text name="fillType_roosterPlymouthrockBRC" text="Plymouthrock Hahn"/>
+		<text name="fillType_henBohusdalBRC" text="Bohusdal Huhn"/>
+		<text name="fillType_roosterBohusdalBRC" text="Bohusdal Hahn"/>
+		<text name="shopItem_animalLohmann_F_GS01" text="Lohmann Küken weiblich"/>
+		<text name="shopItem_animalLohmann_F_GS02" text="Lohmann Küken weiblich"/>
+		<text name="shopItem_animalLohmann_F_GS03" text="Lohmann Huhn jung"/>
+		<text name="shopItem_animalLohmann_F_GS04" text="Lohmann Huhn"/>
+		<text name="shopItem_animalLohmann_M_GS01" text="Lohmann Küken männlich"/>
+		<text name="shopItem_animalLohmann_M_GS02" text="Lohmann Küken männlich"/>
+		<text name="shopItem_animalLohmann_M_GS03" text="Lohmann Hahn jung"/>
+		<text name="shopItem_animalLohmann_M_GS04" text="Lohmann Hahn"/>
+		<text name="shopItem_animalLeghorn_F_GS01" text="Leghorn Küken weiblich"/>
+		<text name="shopItem_animalLeghorn_F_GS02" text="Leghorn Küken weiblich"/>
+		<text name="shopItem_animalLeghorn_F_GS03" text="Leghorn Huhn jung"/>
+		<text name="shopItem_animalLeghorn_F_GS04" text="Leghorn Huhn"/>
+		<text name="shopItem_animalLeghorn_M_GS01" text="Leghorn Küken männlich"/>
+		<text name="shopItem_animalLeghorn_M_GS02" text="Leghorn Küken männlich"/>
+		<text name="shopItem_animalLeghorn_M_GS03" text="Leghorn Hahn jung"/>
+		<text name="shopItem_animalLeghorn_M_GS04" text="Leghorn Hahn"/>
+		<text name="shopItem_animalPlymouthrock_F_GS01" text="Plymouthrock Küken weiblich"/>
+		<text name="shopItem_animalPlymouthrock_F_GS02" text="Plymouthrock Küken weiblich"/>
+		<text name="shopItem_animalPlymouthrock_F_GS03" text="Plymouthrock Huhn jung"/>
+		<text name="shopItem_animalPlymouthrock_F_GS04" text="Plymouthrock Huhn"/>
+		<text name="shopItem_animalPlymouthrock_M_GS01" text="Plymouthrock Küken männlich"/>
+		<text name="shopItem_animalPlymouthrock_M_GS02" text="Plymouthrock Küken männlich"/>
+		<text name="shopItem_animalPlymouthrock_M_GS03" text="Plymouthrock Hahn jung"/>
+		<text name="shopItem_animalPlymouthrock_M_GS04" text="Plymouthrock Hahn"/>
+		<text name="shopItem_animalBohusdal_F_GS01" text="Bohusdal Küken weiblich"/>
+		<text name="shopItem_animalBohusdal_F_GS02" text="Bohusdal Küken weiblich"/>
+		<text name="shopItem_animalBohusdal_F_GS03" text="Bohusdal Huhn jung"/>
+		<text name="shopItem_animalBohusdal_F_GS04" text="Bohusdal Henne"/>
+		<text name="shopItem_animalBohusdal_M_GS01" text="Bohusdal Küken männlich"/>
+		<text name="shopItem_animalBohusdal_M_GS02" text="Bohusdal Küken männlich"/>
+		<text name="shopItem_animalBohusdal_M_GS03" text="Bohusdal Hahn jung"/>
+		<text name="shopItem_animalBohusdal_M_GS04" text="Bohusdal Hahn"/>
+		<!--GOATS-->
+		<text name="animal_GoatsF_GS01Description" text="Dies ist eine junge Geiss."/>
+		<text name="animal_GoatsF_GS02Description" text="Dies ist eine junge Geiss."/>
+		<text name="animal_GoatsF_GS03Description" text="Dies ist eine junge Geiss."/>
+		<text name="animal_GoatsF_GS04Description" text="Dies ist eine voll ausgewachsene Geiss."/>
+		<text name="animal_GoatsM_GS01Description" text="Dies ist ein junger Ziegenbock."/>
+		<text name="animal_GoatsM_GS02Description" text="Dies ist ein junger Ziegenbock."/>
+		<text name="animal_GoatsM_GS03Description" text="Dies ist ein junger Ziegenbock."/>
+		<text name="animal_GoatsM_GS04Description" text="Dies ist ein voll ausgewachsener Ziegenbock."/>
+		<text name="fillType_doeThuringiangoatBRC" text="Thüringer Waldziege Geiss"/>
+		<text name="fillType_buckThuringiangoatBRC" text="Thüringer Waldziege Bock"/>
+		<text name="shopItem_animalThuringiangoat_F_GS01" text="Thüringer Waldziege Zicklein weiblich"/>
+		<text name="shopItem_animalThuringiangoat_F_GS02" text="Thüringer Waldziege Zicklein weiblich"/>
+		<text name="shopItem_animalThuringiangoat_F_GS03" text="Thüringer Waldziege Geiss jung"/>
+		<text name="shopItem_animalThuringiangoat_F_GS04" text="Thüringer Waldziege Geiss"/>
+		<text name="shopItem_animalThuringiangoat_M_GS01" text="Thüringer Waldziege Zicklein männlich"/>
+		<text name="shopItem_animalThuringiangoat_M_GS02" text="Thüringer Waldziege Zicklein männlich"/>
+		<text name="shopItem_animalThuringiangoat_M_GS03" text="Thüringer Waldziege Ziegenbock jung"/>
+		<text name="shopItem_animalThuringiangoat_M_GS04" text="Thüringer Waldziege Ziegenbock"/>
+		<!--SHEEP-->
+		<text name="animal_SheepF_GS01Description" text="Dies ist eine junge Aue."/>
+		<text name="animal_SheepF_GS02Description" text="Dies ist eine junge Aue."/>
+		<text name="animal_SheepF_GS03Description" text="Dies ist eine junge Aue."/>
+		<text name="animal_SheepF_GS04Description" text="Dies ist eine voll ausgewachsene Aue."/>
+		<text name="animal_SheepM_GS01Description" text="Dies ist ein junger Schafbock."/>
+		<text name="animal_SheepM_GS02Description" text="Dies ist ein junger Schafbock."/>
+		<text name="animal_SheepM_GS03Description" text="Dies ist ein junger Schafbock."/>
+		<text name="animal_SheepM_GS04Description" text="Dies ist ein voll ausgewachsener Schafbock."/>
+		<text name="fillType_eweMerinoBRC" text="Merino Aue"/>
+		<text name="fillType_ramMerinoBRC" text="Merino Bock"/>
+		<text name="fillType_eweSuffolkBRC" text="Suffolk Aue"/>
+		<text name="fillType_ramSuffolkBRC" text="Suffolk Bock"/>
+		<text name="fillType_eweMountainsheepBRC" text="Steinschaf Aue"/>
+		<text name="fillType_ramMountainsheepBRC" text="Steinschaf Bock"/>
+		<text name="shopItem_animalMerino_F_GS01" text="Merino Lamm weiblich"/>
+		<text name="shopItem_animalMerino_F_GS02" text="Merino Lamm weiblich"/>
+		<text name="shopItem_animalMerino_F_GS03" text="Merino Aue jung"/>
+		<text name="shopItem_animalMerino_F_GS04" text="Merino Aue"/>
+		<text name="shopItem_animalMerino_M_GS01" text="Merino Lamm männlich"/>
+		<text name="shopItem_animalMerino_M_GS02" text="Merino Lamm männlich"/>
+		<text name="shopItem_animalMerino_M_GS03" text="Merino Bock jung"/>
+		<text name="shopItem_animalMerino_M_GS04" text="Merino Bock"/>
+		<text name="shopItem_animalSuffolk_F_GS01" text="Suffolk Lamm weiblich"/>
+		<text name="shopItem_animalSuffolk_F_GS02" text="Suffolk Lamm weiblich"/>
+		<text name="shopItem_animalSuffolk_F_GS03" text="Suffolk Aue jung"/>
+		<text name="shopItem_animalSuffolk_F_GS04" text="Suffolk Aue"/>
+		<text name="shopItem_animalSuffolk_M_GS01" text="Suffolk Lamm männlich"/>
+		<text name="shopItem_animalSuffolk_M_GS02" text="Suffolk Lamm männlich"/>
+		<text name="shopItem_animalSuffolk_M_GS03" text="Suffolk Bock jung"/>
+		<text name="shopItem_animalSuffolk_M_GS04" text="Suffolk Bock"/>
+		<text name="shopItem_animalMountainsheep_F_GS01" text="Steinschaf Lamm weiblich"/>
+		<text name="shopItem_animalMountainsheep_F_GS02" text="Steinschaf Lamm weiblich"/>
+		<text name="shopItem_animalMountainsheep_F_GS03" text="Steinschaf Aue jung"/>
+		<text name="shopItem_animalMountainsheep_F_GS04" text="Steinschaf Aue"/>
+		<text name="shopItem_animalMountainsheep_M_GS01" text="Steinschaf Lamm männlich"/>
+		<text name="shopItem_animalMountainsheep_M_GS02" text="Steinschaf Lamm männlich"/>
+		<text name="shopItem_animalMountainsheep_M_GS03" text="Steinschaf Bock jung"/>
+		<text name="shopItem_animalMountainsheep_M_GS04" text="Steinschaf Bock"/>
+		<!--PIGS-->
+		<text name="animal_PigsF_GS01Description" text="Dies ist eine junge Sau."/>
+		<text name="animal_PigsF_GS02Description" text="Dies ist eine junge Sau."/>
+		<text name="animal_PigsF_GS03Description" text="Dies ist eine junge Sau. Sie wird bald das erste mal Ferkeln."/>
+		<text name="animal_PigsF_GS04Description" text="Dies ist eine voll ausgewachsene Sau."/>
+		<text name="animal_PigsM_GS01Description" text="Dies ist ein junger Eber."/>
+		<text name="animal_PigsM_GS02Description" text="Dies ist ein junger Läufer. Er kann nach dem Mästen mit Profit verkauft werden."/>
+		<text name="animal_PigsM_GS03Description" text="Dies ist ein junger Eber. Er kann mit Profit verkauft werden."/>
+		<text name="animal_PigsM_GS04Description" text="Dies ist ein voll ausgewachsener Eber."/>
+		<text name="fillType_sowLandraceBRC" text="Deutsche Landrasse Sau"/>
+		<text name="fillType_boarLandraceBRC" text="Deutsche Landrasse Eber"/>
+		<text name="fillType_sowPietrainBRC" text="Pietrain Sau"/>
+		<text name="fillType_boarPietrainBRC" text="Pietrain Eber"/>
+		<text name="fillType_sowBerkshireBRC" text="Berkshire Sau"/>
+		<text name="fillType_boarBerkshireBRC" text="Berkshire Eber"/>
+		<text name="shopItem_animalLandrace_F_GS01" text="Landrasse Ferkel weiblich"/>
+		<text name="shopItem_animalLandrace_F_GS02" text="Landrasse Läufer weiblich"/>
+		<text name="shopItem_animalLandrace_F_GS03" text="Landrasse Sau jung"/>
+		<text name="shopItem_animalLandrace_F_GS04" text="Landrasse Sau"/>
+		<text name="shopItem_animalLandrace_M_GS01" text="Landrasse Ferkel männlich"/>
+		<text name="shopItem_animalLandrace_M_GS02" text="Landrasse Läufer männlich"/>
+		<text name="shopItem_animalLandrace_M_GS03" text="Landrasse Masteber jung"/>
+		<text name="shopItem_animalLandrace_M_GS04" text="Landrasse Eber"/>
+		<text name="shopItem_animalPietrain_F_GS01" text="Pietrain Ferkel weiblich"/>
+		<text name="shopItem_animalPietrain_F_GS02" text="Pietrain Läufer weiblich"/>
+		<text name="shopItem_animalPietrain_F_GS03" text="Pietrain Sau jung"/>
+		<text name="shopItem_animalPietrain_F_GS04" text="Pietrain Sau"/>
+		<text name="shopItem_animalPietrain_M_GS01" text="Pietrain Ferkel männlich"/>
+		<text name="shopItem_animalPietrain_M_GS02" text="Pietrain Läufer männlich"/>
+		<text name="shopItem_animalPietrain_M_GS03" text="Pietrain Masteber jung"/>
+		<text name="shopItem_animalPietrain_M_GS04" text="Pietrain Eber"/>
+		<text name="shopItem_animalBerkshire_F_GS01" text="Berkshire Ferkel weiblich"/>
+		<text name="shopItem_animalBerkshire_F_GS02" text="Berkshire Läufer weiblich"/>
+		<text name="shopItem_animalBerkshire_F_GS03" text="Berkshire Sau jung"/>
+		<text name="shopItem_animalBerkshire_F_GS04" text="Berkshire Sau"/>
+		<text name="shopItem_animalBerkshire_M_GS01" text="Berkshire Ferkel männlich"/>
+		<text name="shopItem_animalBerkshire_M_GS02" text="Berkshire Läufer männlich"/>
+		<text name="shopItem_animalBerkshire_M_GS03" text="Berkshire Masteber jung"/>
+		<text name="shopItem_animalBerkshire_M_GS04" text="Berkshire Eber"/>
+	</texts>
+</l10n>

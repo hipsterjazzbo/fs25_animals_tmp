@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="grainhopperUS.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+    </Asset>
+    <Files>
+        <File fileId="4" filename="textures/hopper_Vmask.png"/>
+        <File fileId="17" filename="textures/hopper_decal.png"/>
+        <File fileId="3" filename="textures/hopper_normal.png"/>
+        <File fileId="5" filename="$data/shaders/vehicleShader.xml"/>
+        <File fileId="16" filename="$data/shared/default_normal.png"/>
+        <File fileId="15" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_diffuse.png"/>
+        <File fileId="14" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_normal.png"/>
+        <File fileId="13" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_specular.png"/>
+        <File fileId="7" filename="$data/shared/detailLibrary/calibrated/castIron_normal.png"/>
+        <File fileId="6" filename="$data/shared/detailLibrary/calibrated/castIron_specular.png"/>
+        <File fileId="21" filename="$data/shared/detailLibrary/calibrated/grainSmall_specular.png"/>
+        <File fileId="22" filename="$data/shared/detailLibrary/flat_normal.png"/>
+        <File fileId="8" filename="$data/shared/detailLibrary/metallic/clear_diffuse.png"/>
+        <File fileId="20" filename="$data/shared/detailLibrary/nonMetallic/reflector/reflectorHexagon_diffuse.png"/>
+        <File fileId="19" filename="$data/shared/detailLibrary/nonMetallic/reflector/reflectorHexagon_normal.png"/>
+        <File fileId="18" filename="$data/shared/detailLibrary/nonMetallic/reflector/reflectorHexagon_specular.png"/>
+    </Files>
+    <Materials>
+        <Material name="default" materialId="5" diffuseColor="0.501961 0.501961 0.501961 1"/>
+        <Material name="default_mat" materialId="6" diffuseColor="0.501961 0.501961 0.501961 1">
+            <Normalmap fileId="16"/>
+        </Material>
+        <Material name="hopper_calibratedCastIronMat" materialId="7" diffuseColor="0.8 0.8 0.8 1" customShaderId="5">
+            <Normalmap fileId="3"/>
+            <Glossmap fileId="4"/>
+            <Custommap name="detailSpecular" fileId="6"/>
+            <Custommap name="detailNormal" fileId="7"/>
+            <Custommap name="detailDiffuse" fileId="8"/>
+            <CustomParameter name="scratches_dirt_snow_wetness" value="1 1 0 0"/>
+            <CustomParameter name="colorScale" value="0.02 0.02 0.02"/>
+            <CustomParameter name="smoothnessScale" value="0.85"/>
+            <CustomParameter name="clearCoatIntensity" value="0.1"/>
+            <CustomParameter name="clearCoatSmoothness" value="0.2"/>
+        </Material>
+        <Material name="hopper_decalMat" materialId="8" customShaderId="5" customShaderVariation="vmaskUV2_normalUV3">
+            <Texture fileId="17"/>
+            <Normalmap fileId="3"/>
+            <Glossmap fileId="4"/>
+            <Custommap name="detailSpecular" fileId="21"/>
+            <Custommap name="detailNormal" fileId="22"/>
+            <Custommap name="detailDiffuse" fileId="8"/>
+            <CustomParameter name="scratches_dirt_snow_wetness" value="1 1 0 0"/>
+        </Material>
+        <Material name="hopper_greycalibratedGlossPaintMat" materialId="9" diffuseColor="0.8 0.8 0.8 1" customShaderId="5">
+            <Normalmap fileId="3"/>
+            <Glossmap fileId="4"/>
+            <Custommap name="detailSpecular" fileId="13"/>
+            <Custommap name="detailNormal" fileId="14"/>
+            <Custommap name="detailDiffuse" fileId="15"/>
+            <CustomParameter name="scratches_dirt_snow_wetness" value="1 1 0 0"/>
+            <CustomParameter name="colorScale" value="0.323 0.319 0.296"/>
+            <CustomParameter name="smoothnessScale" value="0.85"/>
+            <CustomParameter name="clearCoatIntensity" value="0.5"/>
+            <CustomParameter name="clearCoatSmoothness" value="0.2"/>
+        </Material>
+        <Material name="hopper_greycalibratedGlossPaintMat" materialId="10" diffuseColor="0.8 0.8 0.8 1" customShaderId="5">
+            <Normalmap fileId="3"/>
+            <Glossmap fileId="4"/>
+            <Custommap name="detailSpecular" fileId="13"/>
+            <Custommap name="detailNormal" fileId="14"/>
+            <Custommap name="detailDiffuse" fileId="15"/>
+            <CustomParameter name="scratches_dirt_snow_wetness" value="1 1 0 0"/>
+            <CustomParameter name="colorScale" value="0.323 0.319 0.296"/>
+            <CustomParameter name="smoothnessScale" value="0.85"/>
+            <CustomParameter name="clearCoatIntensity" value="0.5"/>
+            <CustomParameter name="clearCoatSmoothness" value="0.85"/>
+        </Material>
+        <Material name="hopper_meshblackcalibratedPaintMat" materialId="11" customShaderId="5" customShaderVariation="vmaskUV2_normalUV3">
+            <Texture fileId="17"/>
+            <Normalmap fileId="3"/>
+            <Glossmap fileId="4"/>
+            <Custommap name="detailSpecular" fileId="13"/>
+            <Custommap name="detailNormal" fileId="14"/>
+            <Custommap name="detailDiffuse" fileId="15"/>
+            <CustomParameter name="scratches_dirt_snow_wetness" value="1 1 0 0"/>
+            <CustomParameter name="colorScale" value="0.004 0.007 0.003"/>
+            <CustomParameter name="smoothnessScale" value="0.85"/>
+            <CustomParameter name="clearCoatIntensity" value="0.1"/>
+            <CustomParameter name="clearCoatSmoothness" value="0.2"/>
+        </Material>
+        <Material name="hopper_meshblackcalibratedPaintMat" materialId="12" diffuseColor="0.8 0.8 0.8 1" customShaderId="5">
+            <Normalmap fileId="3"/>
+            <Glossmap fileId="4"/>
+            <Custommap name="detailSpecular" fileId="13"/>
+            <Custommap name="detailNormal" fileId="14"/>
+            <Custommap name="detailDiffuse" fileId="15"/>
+            <CustomParameter name="scratches_dirt_snow_wetness" value="1 1 0 0"/>
+            <CustomParameter name="colorScale" value="0.004 0.007 0.003"/>
+            <CustomParameter name="smoothnessScale" value="0.85"/>
+            <CustomParameter name="clearCoatIntensity" value="0.5"/>
+            <CustomParameter name="clearCoatSmoothness" value="0.2"/>
+        </Material>
+        <Material name="hopper_meshcalibratedPaintMat" materialId="13" customShaderId="5" customShaderVariation="vmaskUV2_normalUV3">
+            <Texture fileId="17"/>
+            <Normalmap fileId="3"/>
+            <Glossmap fileId="4"/>
+            <Custommap name="detailSpecular" fileId="13"/>
+            <Custommap name="detailNormal" fileId="14"/>
+            <Custommap name="detailDiffuse" fileId="15"/>
+            <CustomParameter name="scratches_dirt_snow_wetness" value="1 1 0 0"/>
+            <CustomParameter name="colorScale" value="0.323 0.319 0.296"/>
+            <CustomParameter name="smoothnessScale" value="0.85"/>
+            <CustomParameter name="clearCoatIntensity" value="0.1"/>
+            <CustomParameter name="clearCoatSmoothness" value="0.2"/>
+        </Material>
+        <Material name="hopper_redcalibratedGlossPaintMat" materialId="14" diffuseColor="0.8 0.8 0.8 1" customShaderId="5">
+            <Normalmap fileId="3"/>
+            <Glossmap fileId="4"/>
+            <Custommap name="detailSpecular" fileId="13"/>
+            <Custommap name="detailNormal" fileId="14"/>
+            <Custommap name="detailDiffuse" fileId="15"/>
+            <CustomParameter name="scratches_dirt_snow_wetness" value="1 1 0 0"/>
+            <CustomParameter name="colorScale" value="1 0 0"/>
+            <CustomParameter name="smoothnessScale" value="0.85"/>
+            <CustomParameter name="clearCoatIntensity" value="0.5"/>
+            <CustomParameter name="clearCoatSmoothness" value="0.2"/>
+        </Material>
+        <Material name="hopper_reflectorRedHexagonMat" materialId="15" diffuseColor="0.8 0.8 0.8 1" customShaderId="5" customShaderVariation="reflector">
+            <Normalmap fileId="3"/>
+            <Glossmap fileId="4"/>
+            <Custommap name="detailSpecular" fileId="18"/>
+            <Custommap name="detailNormal" fileId="19"/>
+            <Custommap name="detailDiffuse" fileId="20"/>
+            <CustomParameter name="scratches_dirt_snow_wetness" value="1 1 0 0"/>
+            <CustomParameter name="colorScale" value="0.7 0 0"/>
+            <CustomParameter name="clearCoatIntensity" value="0.25"/>
+            <CustomParameter name="clearCoatSmoothness" value="1"/>
+        </Material>
+        <Material name="hopper_reflectorWhiteHexagonMat" materialId="16" diffuseColor="0.8 0.8 0.8 1" customShaderId="5" customShaderVariation="reflector">
+            <Normalmap fileId="3"/>
+            <Glossmap fileId="4"/>
+            <Custommap name="detailSpecular" fileId="18"/>
+            <Custommap name="detailNormal" fileId="19"/>
+            <Custommap name="detailDiffuse" fileId="20"/>
+            <CustomParameter name="scratches_dirt_snow_wetness" value="1 1 0 0"/>
+            <CustomParameter name="colorScale" value="0.7 0.7 0.7"/>
+            <CustomParameter name="clearCoatIntensity" value="0.25"/>
+            <CustomParameter name="clearCoatSmoothness" value="1"/>
+        </Material>
+        <Material name="hopper_reflectorYellowHexagonMat" materialId="17" diffuseColor="0.8 0.8 0.8 1" customShaderId="5" customShaderVariation="reflector">
+            <Normalmap fileId="3"/>
+            <Glossmap fileId="4"/>
+            <Custommap name="detailSpecular" fileId="18"/>
+            <Custommap name="detailNormal" fileId="19"/>
+            <Custommap name="detailDiffuse" fileId="20"/>
+            <CustomParameter name="scratches_dirt_snow_wetness" value="1 1 0 0"/>
+            <CustomParameter name="colorScale" value="1 0.8 0"/>
+            <CustomParameter name="clearCoatIntensity" value="0.25"/>
+            <CustomParameter name="clearCoatSmoothness" value="1"/>
+        </Material>
+        <Material name="hopper_yellowcalibratedGlossPaintMat" materialId="18" diffuseColor="0.8 0.8 0.8 1" customShaderId="5">
+            <Normalmap fileId="3"/>
+            <Glossmap fileId="4"/>
+            <Custommap name="detailSpecular" fileId="13"/>
+            <Custommap name="detailNormal" fileId="14"/>
+            <Custommap name="detailDiffuse" fileId="15"/>
+            <CustomParameter name="scratches_dirt_snow_wetness" value="1 1 0 0"/>
+            <CustomParameter name="colorScale" value="1 0.8 0"/>
+            <CustomParameter name="smoothnessScale" value="0.85"/>
+            <CustomParameter name="clearCoatIntensity" value="0.5"/>
+            <CustomParameter name="clearCoatSmoothness" value="0.2"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="grainhopperUS.i3d.shapes"/>
+    <Scene>
+        <Shape name="wagonSugarbeets_main_component1" translation="-1.29007e-06 0 7.00247" shapeId="1" kinematic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0x170800" clipDistance="300" nodeId="47" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5">
+            <Shape name="truck1" translation="0 0.81701 0" shapeId="2" nodeId="48" castsShadows="true" receiveShadows="true" materialIds="7">
+                <Shape name="wheel1" translation="-8.20446e-06 -0.39208 0.943616" shapeId="3" nodeId="49" castsShadows="true" receiveShadows="true" materialIds="7"/>
+                <Shape name="wheel2" translation="-8.1672e-06 -0.39208 -0.943619" shapeId="4" nodeId="50" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+            <Shape name="truck2" translation="0 0.81701 -14.005" shapeId="2" nodeId="51" castsShadows="true" receiveShadows="true" materialIds="7">
+                <Shape name="wheel1" translation="-8.20446e-06 -0.39208 0.943616" shapeId="3" nodeId="52" castsShadows="true" receiveShadows="true" materialIds="7"/>
+                <Shape name="wheel2" translation="-8.1672e-06 -0.39208 -0.943619" shapeId="4" nodeId="53" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </Shape>
+            <TransformGroup name="frontNode" translation="0 0 2.16041" nodeId="54"/>
+            <TransformGroup name="backNode" translation="0 0 -16.1166" nodeId="55"/>
+            <TransformGroup name="attacherJoint" translation="0 0.888 1.51891" nodeId="56">
+                <TransformGroup name="inputAttacherJointNode" translation="0 -0.005148 -3.7e-05" rotation="0 -2e-06 0" clipDistance="300" nodeId="57"/>
+                <Shape name="couplerf" shapeId="5" nodeId="58" castsShadows="true" receiveShadows="true" materialIds="7"/>
+            </TransformGroup>
+            <TransformGroup name="trailerAttacherJoint" translation="0 0.888 -15.4689" nodeId="59">
+                <TransformGroup name="trailerAttacherJointNode" translation="0 6e-06 3.7e-05" clipDistance="300" nodeId="60">
+                    <Shape name="couplerf" shapeId="6" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="7">
+                        <TransformGroup name="referenceNode" translation="-0.000567 -0.004406 -0.567675" nodeId="62"/>
+                    </Shape>
+                </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="cover" translation="-0.409 4.614 -7.003" static="true" nodeId="63">
+                <Shape name="hatch" shapeId="7" nodeId="64" castsShadows="true" receiveShadows="true" materialIds="10"/>
+            </TransformGroup>
+            <TransformGroup name="tipAnimationNode" translation="0 0.000457 4.4e-05" nodeId="65"/>
+            <TransformGroup name="dischargeNode" translation="0 0.633441 -6.1981" nodeId="66"/>
+            <Shape name="fillVolume" translation="1.29007e-06 0 -7.00247" shapeId="8" nodeId="67" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+            <Shape name="exactFillRootNode" translation="1.29007e-06 0 -7.00247" shapeId="9" kinematic="true" compound="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="68" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+            <TransformGroup name="surfaceSoundNode" translation="0 0 -6.1981" nodeId="69"/>
+            <TransformGroup name="effects" translation="0 0 -7.002" nodeId="70">
+                <Shape name="effectMesh" translation="1.29007e-06 0 0" shapeId="10" clipDistance="300" nodeId="71" castsShadows="true" receiveShadows="true" materialIds="6"/>
+            </TransformGroup>
+            <TransformGroup name="visual" nodeId="72">
+                <Shape name="wagon_vis" translation="1.29007e-06 0 -7.00247" shapeId="11" nodeId="73" castsShadows="true" receiveShadows="true" materialIds="12,9,18,14"/>
+                <Shape name="mesh" translation="1.29007e-06 0 -7.00247" shapeId="12" nodeId="74" castsShadows="true" receiveShadows="true" materialIds="11,13"/>
+                <Shape name="reflector" translation="1.29007e-06 0 -7.00247" shapeId="13" nodeId="75" castsShadows="true" receiveShadows="true" materialIds="17"/>
+                <Shape name="reflectorcp" translation="1.29007e-06 0 -7.00247" shapeId="14" nodeId="76" castsShadows="true" receiveShadows="true" materialIds="15,16"/>
+                <Shape name="reflectorkcs" translation="1.29007e-06 0 -7.00247" shapeId="15" nodeId="77" castsShadows="true" receiveShadows="true" materialIds="17"/>
+                <Shape name="decalsbnsf" translation="1.29007e-06 0 -7.00247" shapeId="16" nodeId="78" castsShadows="true" receiveShadows="true" materialIds="8"/>
+                <Shape name="decalscn" translation="1.29007e-06 0 -7.00247" shapeId="17" nodeId="79" castsShadows="true" receiveShadows="true" materialIds="8"/>
+                <Shape name="decalscp" translation="1.29007e-06 0 -7.00247" shapeId="18" nodeId="80" castsShadows="true" receiveShadows="true" materialIds="8"/>
+                <Shape name="decalscsx" translation="1.29007e-06 0 -7.00247" shapeId="19" nodeId="81" castsShadows="true" receiveShadows="true" materialIds="8"/>
+                <Shape name="decalskcs" translation="1.29007e-06 0 -7.00247" shapeId="20" nodeId="82" castsShadows="true" receiveShadows="true" materialIds="8"/>
+                <Shape name="decalsns" translation="1.29007e-06 0 -7.00247" shapeId="21" nodeId="83" castsShadows="true" receiveShadows="true" materialIds="8"/>
+                <Shape name="decalsup" translation="1.29007e-06 0 -7.00247" shapeId="22" nodeId="84" castsShadows="true" receiveShadows="true" materialIds="8"/>
+            </TransformGroup>
+            <TransformGroup name="collision" nodeId="85">
+                <Shape name="colPart01" translation="1.29007e-06 0 -7.00247" shapeId="23" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0x170800" density="0.001" nodeId="86" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+                <Shape name="colPart02" translation="1.29007e-06 0 -7.00247" shapeId="24" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0x170800" density="0.001" nodeId="87" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+                <Shape name="colPart03" translation="1.29007e-06 0 -7.00247" shapeId="25" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0x170800" density="0.001" nodeId="88" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+                <Shape name="colPart04" translation="1.29007e-06 0 -7.00247" shapeId="26" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0x170800" density="0.001" nodeId="89" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+                <Shape name="colPart" translation="1.29007e-06 0 -7.00247" shapeId="27" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0x170800" density="0.001" nodeId="90" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+            </TransformGroup>
+        </Shape>
+    </Scene>
+</i3D>

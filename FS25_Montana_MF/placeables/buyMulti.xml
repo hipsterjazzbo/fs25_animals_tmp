@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="buyingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Bulk Feed</name>
+        <image>placeables/icons/feedStore.dds</image>
+        <price>1</price>
+		<dailyUpkeep>120</dailyUpkeep>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>placeableMisc</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>containers</tab>
+        </brush>
+        <vertexBufferMemoryUsage>155136</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>41984</indexBufferMemoryUsage>
+        <textureMemoryUsage>524288</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/buyMulti.i3d</filename>
+    </base>
+
+
+    <placement/>
+    <clearAreas/>
+    <leveling/>
+    <indoorAreas />
+    <ai>
+        <updateAreas>
+        </updateAreas>
+    </ai>
+
+    <tipOcclusionUpdateAreas>
+    </tipOcclusionUpdateAreas>
+
+    <buyingStation node="buyingStation" supportsExtension="false">
+        <loadTrigger triggerNode="loadingTrigger" fillTypes="SEEDS FERTILIZER LIME MINERAL_FEED FORAGE PIGFOOD" fillLitersPerSecond="1000" infiniteCapacity="true" aiNode="aiNodeLoading">
+            <effectNode effectClass="PipeEffect" effectNode="pipeEffect"      materialType="pipe"           fadeTime="0.5" maxBending="0" shapeScaleSpread="0.8 0.8 1 0" controlPoint="3 0 0 0"/>
+            <effectNode                          effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.5" />
+        </loadTrigger>
+		
+		<fillType name="SEEDS" priceScale="0.40"/>
+		<fillType name="FERTILIZER" priceScale="0.40"/>
+        	<fillType name="LIME" priceScale="0.40"/>
+		<fillType name="MINERAL_FEED" priceScale="0.40"/>
+		<fillType name="FORAGE" priceScale="0.40"/>
+		<fillType name="PIGFOOD" priceScale="0.40"/>	
+    </buyingStation>
+
+    <hotspots>
+        <hotspot type="LOADING" linkNode="mapPosition" teleportNode="teleportNode"/>
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="markerLoading" filename="$data/shared/assets/marker/markerIconLoad.i3d" adjustToGround="true"/>
+    </triggerMarkers>
+
+    <i3dMappings>
+        <i3dMapping id="buyingStation" node="0>4" />
+        <i3dMapping id="teleportNode" node="0>4|0" />
+        <i3dMapping id="markerLoading" node="0>4|1" />
+        <i3dMapping id="mapPosition" node="0>4|2" />
+        <i3dMapping id="loadingTrigger" node="0>4|3|0" />
+        <i3dMapping id="dischargeNode" node="0>4|3|1" />
+        <i3dMapping id="aiNodeLoading" node="0>4|3|2" />
+        <i3dMapping id="pipeEffect" node="0>4|3|3|0" />
+        <i3dMapping id="pipeEffectSmoke" node="0>4|3|3|1" />
+        <i3dMapping id="visuals" node="0>5" />
+        <i3dMapping id="collisions" node="0>6" />
+    </i3dMappings>
+</placeable>

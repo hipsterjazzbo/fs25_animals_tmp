@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>BNSF Montana</name>
+        <image>$data/store/store_empty.png</image>
+        <price>0</price>
+		<dailyUpkeep>0</dailyUpkeep>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>PLACEABLE</species>
+        <category>placeableMisc</category>
+        <vertexBufferMemoryUsage>1024</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>512</indexBufferMemoryUsage>
+        <textureMemoryUsage>65536</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+		<audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>placeables/sellingStationTrain.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" />
+
+    <clearAreas></clearAreas>
+
+    <leveling></leveling>
+
+    <indoorAreas></indoorAreas>
+
+    <ai>
+        <updateAreas></updateAreas>
+    </ai>
+
+    <hotspots>
+        <hotspot type="UNLOADING_TRAIN" worldPosition="1277 2005" text="Great Falls"/>
+        <hotspot type="UNLOADING_TRAIN" worldPosition="-2001 -1431" text="Billings"/>
+    </hotspots>
+
+    <sellingStation litersForFullPriceDrop="200000" fullPriceRecoverHours="48" allowMissions="false" isTrainStation="true">
+        <woodTrigger triggerNode="0" trainSystemId="trainSystem" autoUnload="true" fillTypeCategories="TRAINWAGON SELLINGSTATION_PRODUCTS SELLINGSTATION_PRODUCTSFOOD SELLINGSTATION_WOOD" priceScale="1.15"/> <!--west-->
+        <woodTrigger triggerNode="1" trainSystemId="trainSystem" autoUnload="true" fillTypeCategories="TRAINWAGON SELLINGSTATION_PRODUCTS SELLINGSTATION_PRODUCTSFOOD SELLINGSTATION_WOOD" priceScale="1.15"/> <!--east-->
+        <palletTrigger triggerNode="2" autoUnload="true" autoUnloadStrapped="true" fillTypeCategories="TRAINWAGON SELLINGSTATION_PRODUCTS SELLINGSTATION_PRODUCTSFOOD SELLINGSTATION_WOOD" priceScale="1.15" /> <!--west-->
+        <palletTrigger triggerNode="3" autoUnload="true" autoUnloadStrapped="true" fillTypeCategories="TRAINWAGON SELLINGSTATION_PRODUCTS SELLINGSTATION_PRODUCTSFOOD SELLINGSTATION_WOOD" priceScale="1.15" /> <!--east-->
+
+
+        <fillType name="WOOD"  priceScale="0.85" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="SEEDS" priceScale="0.38" supportsGreatDemand="true" disablePriceDrop="false" />
+    </sellingStation>
+</placeable>

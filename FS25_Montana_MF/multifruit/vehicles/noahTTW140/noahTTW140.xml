@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="livestockTrailer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+    <storeData>
+        <name>Noah TTW 140 Chickens</name>
+        <functions>
+            <function>$l10n_function_livestockTrailer</function>
+        </functions>
+        <image>$data/vehicles/fliegl/noahTTW140/store_noahTTW140.png</image>
+        <price>25000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>FLIEGL</brand>
+        <category>animalTransport</category>
+        <shopTranslationOffset>0 0.024 0</shopTranslationOffset>
+        <shopRotationOffset>0.09 0 0</shopRotationOffset>
+    </storeData>
+    <base>
+        <typeDesc>$l10n_typeDesc_livestockTrailer</typeDesc>
+        <filename>multifruit/vehicles/noahTTW140/noahTTW140.i3d</filename>
+        <size width="2.55" length="10" height="3.05" lengthOffset="0.2"/>
+        <components>
+            <component centerOfMass="0 0.7 -0.5" solverIterationCount="10" mass="2500"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT"/>
+        <mapHotspot type="TRAILER"/>
+    </base>
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration>
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/continental/contiHybridHT3/385_65R19_5.xml" isLeft="true">
+                        <physics restLoad="0.6" repr="wheelFrontLeft" forcePointRatio="0.2" initialCompression="20" suspTravel="0.08" spring="31" damper="20" yOffset="-0.0017"/>
+                        <wheelChock parkingNode="wheelChock01_01"/>
+                        <wheelChock isInverted="true" parkingNode="wheelChock01_02"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/continental/contiHybridHT3/385_65R19_5.xml" isLeft="false">
+                        <physics restLoad="0.6" repr="wheelFrontRight" forcePointRatio="0.2" initialCompression="20" suspTravel="0.08" spring="31" damper="20" yOffset="-0.0017"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/continental/contiHybridHT3/385_65R19_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics restLoad="0.6" repr="wheelBackLeft" forcePointRatio="0.2" initialCompression="20" suspTravel="0.08" spring="31" damper="20"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/continental/contiHybridHT3/385_65R19_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics restLoad="0.6" repr="wheelBackRight" forcePointRatio="0.2" initialCompression="20" suspTravel="0.08" spring="31" damper="20"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+        <hubs>
+            <hub linkNode="wheelFrontLeft" filename="$data/shared/wheels/hubs/hub_n10_4.xml" isLeft="true" scale="0.2 0.25 0.25" offset="0.015"/>
+            <hub linkNode="wheelFrontRight" filename="$data/shared/wheels/hubs/hub_n10_4.xml" isLeft="false" scale="0.2 0.25 0.25" offset="0.015"/>
+            <hub linkNode="wheelBackLeft" filename="$data/shared/wheels/hubs/hub_n10_4.xml" isLeft="true" scale="0.2 0.25 0.25" offset="0.015"/>
+            <hub linkNode="wheelBackRight" filename="$data/shared/wheels/hubs/hub_n10_4.xml" isLeft="false" scale="0.2 0.25 0.25" offset="0.015"/>
+        </hubs>
+    </wheels>
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="trailer" attacherHeight="0.6"/>
+        </inputAttacherJoints>
+        <support animationName="moveSupport"/>
+        <brakeForce force="0.25"/>
+        <sounds>
+            <active file="$data/sounds/tools/trailer/trailerRattle_02.wav" innerRadius="10" outerRadius="50" volumeScale="3.3" isLocalSound="true" pitchScale="1.3">
+                <volume indoor="0.7" outdoor="0.9">
+                    <modifier type="WHEEL_SUSPENSION" value="-0.08" modifiedValue="0.3"/>
+                    <modifier type="WHEEL_SUSPENSION" value="-0.06" modifiedValue="0.3"/>
+                    <modifier type="WHEEL_SUSPENSION" value="-0.04" modifiedValue="0.3"/>
+                    <modifier type="WHEEL_SUSPENSION" value="-0.03" modifiedValue="0.2"/>
+                    <modifier type="WHEEL_SUSPENSION" value="-0.02" modifiedValue="0.1"/>
+                    <modifier type="WHEEL_SUSPENSION" value="-0.01" modifiedValue="0.05"/>
+                    <modifier type="WHEEL_SUSPENSION" value="-0.00" modifiedValue="0.0"/>
+                    <modifier type="WHEEL_SUSPENSION" value="0.01" modifiedValue="0.05"/>
+                    <modifier type="WHEEL_SUSPENSION" value="0.02" modifiedValue="0.1"/>
+                    <modifier type="WHEEL_SUSPENSION" value="0.03" modifiedValue="0.2"/>
+                    <modifier type="WHEEL_SUSPENSION" value="0.04" modifiedValue="0.3"/>
+                    <modifier type="WHEEL_SUSPENSION" value="0.06" modifiedValue="0.3"/>
+                    <modifier type="WHEEL_SUSPENSION" value="0.08" modifiedValue="0.3"/>
+                    <modifier type="SPEED" value="0.0" modifiedValue="0.0"/>
+                    <modifier type="SPEED" value="2.0" modifiedValue="1.0"/>
+                    <modifier type="SPEED" value="40.0" modifiedValue="1.0"/>
+                </volume>
+                <lowpassCutoffFrequency indoor="250" outdoor="20000"/>
+                <lowpassGain indoor="0.5" outdoor="1"/>
+            </active>
+        </sounds>
+    </attachable>
+    <lights>
+        <sharedLight linkNode="rearLight48_left" filename="$data/shared/assets/lights/lizard/rearLight48_left.xml"/>
+        <sharedLight linkNode="rearLight48_right" filename="$data/shared/assets/lights/lizard/rearLight48_right.xml"/>
+        <sharedLight linkNode="plateNumberLight02" filename="$data/shared/assets/lights/lizard/plateNumberLight02.xml"/>
+        <sharedLight linkNode="sideMarker26_01" filename="$data/shared/assets/lights/lizard/sideMarker26.xml"/>
+        <sharedLight linkNode="sideMarker26_02" filename="$data/shared/assets/lights/lizard/sideMarker26.xml"/>
+        <realLights>
+            <high>
+                <light node="backLightsHigh" lightTypes="0"/>
+                <light node="licensePlateLightHigh" lightTypes="0"/>
+                <turnLightLeft node="turnLightLeftBack"/>
+                <turnLightRight node="turnLightRightBack"/>
+                <brakeLight node="backLightsHigh"/>
+            </high>
+        </realLights>
+    </lights>
+    <licensePlates>
+        <licensePlate node="licensePlateBack" position="BACK" preferedType="ELONGATED" placementArea="0.08 0.27 0.07 0.27"/>
+    </licensePlates>
+    <connectionHoses>
+        <hose inputAttacherJointIndices="1" type="electric" node="electric" length="1" diameter="0.008" straighteningFactor="2" adapterNode="electric_connector">
+            <objectChange node="electric_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="airDoubleRed" node="airRed" length="1.2" diameter="0.012" straighteningFactor="1.2" adapterNode="airRed_connector">
+            <objectChange node="airRed_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="airDoubleYellow" node="airYellow" length="1.2" diameter="0.012" straighteningFactor="1.2" adapterNode="airYellow_connector">
+            <objectChange node="airYellow_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn" node="hydraulicIn01" length="1.2" diameter="0.015" straighteningFactor="1.2" adapterNode="hydraulicIn01_connector">
+            <objectChange node="hydraulicIn01_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicOut" node="hydraulicOut01" length="1.2" diameter="0.015" straighteningFactor="1.2" adapterNode="hydraulicOut01_connector">
+            <objectChange node="hydraulicOut01_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn" node="hydraulicIn02" length="1.2" diameter="0.015" straighteningFactor="1.2" adapterNode="hydraulicIn02_connector">
+            <objectChange node="hydraulicIn02_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn" node="hydraulicOut02" length="1.2" diameter="0.015" straighteningFactor="1.2" adapterNode="hydraulicOut02_connector">
+            <objectChange node="hydraulicOut02_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn" node="hydraulicIn03" length="1.2" diameter="0.015" straighteningFactor="1.2" adapterNode="hydraulicIn03_connector">
+            <objectChange node="hydraulicIn03_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <sounds>
+            <connect type="hydraulicIn" template="generalConnection" volumeScale="1" pitchScale="1" linkNode="attacherJoint"/>
+            <connect type="airDoubleRed" template="attachAirBrake" volumeScale="1" pitchScale="1" linkNode="attacherJoint"/>
+            <disconnect type="hydraulicIn" template="generalConnection" volumeScale="1" pitchScale="1" linkNode="attacherJoint"/>
+            <disconnect type="airDoubleRed" template="detachAirBrake" volumeScale="1" pitchScale="1" linkNode="attacherJoint"/>
+        </sounds>
+    </connectionHoses>
+    <foldable>
+        <foldingConfigurations>
+            <foldingConfiguration>
+                <foldingParts requiresPower="false">
+                    <foldingPart animationName="folding" speedScale="1.0"/>
+                </foldingParts>
+            </foldingConfiguration>
+        </foldingConfigurations>
+    </foldable>
+    <cylindered>
+        <movingTools>
+            <movingTool node="axisFront" wheelIndices="1 2">
+                <dependentPart node="axisFrontHydraulic"/>
+            </movingTool>
+            <movingTool node="axisBack" wheelIndices="3 4">
+                <dependentPart node="axisBackHydraulic"/>
+            </movingTool>
+        </movingTools>
+        <movingParts>
+            <movingPart node="axisFrontHydraulic" referencePoint="axisFrontHydraulicRef" referenceFrame="axisFrontHydraulicRef">
+                <translatingPart node="axisFrontHydraulicPunch"/>
+            </movingPart>
+            <movingPart node="axisBackHydraulic" referencePoint="axisBackHydraulicRef" referenceFrame="axisBackHydraulicRef">
+                <translatingPart node="axisBackHydraulicPunch"/>
+            </movingPart>
+        </movingParts>
+    </cylindered>
+    <animations>
+        <animation name="moveSupport">
+            <part node="supportArmPart" startTime="0.0" endTime="0.1" startRot="0 0 0" endRot="-90 0 0"/>
+            <part node="chain_decals" startTime="0.0" endTime="0.1" startRot="0 0 0" endRot="90 0 0"/>
+            <part node="supportArm" startTime="0.1" endTime="0.5" startTrans="0.601 0.632 3.617" endTrans="0.601 0.33 3.617"/>
+            <part node="supportArmPart" startTime="0.5" endTime="0.6" startRot="-90 0 0" endRot="0 0 0"/>
+            <part node="chain_decals" startTime="0.5" endTime="0.6" startRot="90 0 0" endRot="0 0 0"/>
+            <sound template="slideOpen" startTime="0.01" endTime="0.59" volumeScale="2" pitchScale="2" linkNode="attacherJoint"/>
+            <sound template="hingeImp" startTime="0.1" direction="-1" volumeScale="0.8" pitchScale="0.8" linkNode="attacherJoint"/>
+            <sound template="vibratingImp" startTime="0.01" direction="-1" volumeScale="0.8" pitchScale="1.2" linkNode="attacherJoint"/>
+        </animation>
+        <animation name="folding">
+            <part node="axisFront" startTime="0.0" endTime="2.5" startRot="0 0 0" endRot="-40 0 0"/>
+            <part node="axisBack" startTime="0.0" endTime="2.5" startRot="0 0 0" endRot="45 0 0"/>
+            <part node="backDoorLeftLock" startTime="2.5" endTime="2.7" startRot="0 0 0" endRot="0 50 0"/>
+            <part node="backDoorLeftLock" startTime="3.6" endTime="3.8" startRot="0 50 0" endRot="0 0 0"/>
+            <part node="backDoorLeft" startTime="2.7" endTime="4.5" startRot="0 0 0" endRot="0 -267 0"/>
+            <part node="backDoorRightLock" startTime="1.5" endTime="1.7" startRot="0 0 0" endRot="0 -50 0"/>
+            <part node="backDoorRightLock" startTime="2.6" endTime="2.8" startRot="0 -50 0" endRot="0 0 0"/>
+            <part node="backDoorRight" startTime="1.7" endTime="3.5" startRot="0 0 0" endRot="0 267 0"/>
+            <sound template="hydraulicClose01" startTime="0.01" endTime="2.49" volumeScale="4" startPitchScale="0.5" endPitchScale="0.4" fadeIn="0.1" fadeOut="0.1" direction="1"/>
+            <sound template="hydraulicOpen06" startTime="0.01" endTime="2.49" volumeScale="1.5" startPitchScale="0.5" endPitchScale="0.6" fadeIn="0.1" fadeOut="0.1" direction="1"/>
+            <sound template="hydraulicClose01" startTime="0.01" endTime="2.49" volumeScale="4" pitchScale="0.5" fadeIn="0.1" fadeOut="0.1" direction="-1"/>
+            <sound template="foldStartMed02" startTime="2.49" direction="1" volumeScale="3.3" pitchScale="0.7"/>
+            <sound template="vibratingImp" startTime="2.49" direction="1" volumeScale="1.3" pitchScale="1.2"/>
+            <sound template="cylinderPunch" startTime="2.49" direction="1" volumeScale="0.5" pitchScale="1"/>
+            <sound template="foldStartMed02" startTime="0.1" direction="-1" volumeScale="2.6" pitchScale="0.7"/>
+            <sound template="cylinderPunch" startTime="0.01" direction="-1" volumeScale="0.5" pitchScale="1"/>
+            <sound template="clackVar1" startTime="1.5" direction="0" volumeScale="1.3" pitchScale="1.4"/>
+            <sound template="metalOpen" startTime="1.5" direction="0" volumeScale="1.3" pitchScale="1.4"/>
+            <sound template="clackVar1" startTime="2.5" direction="0" volumeScale="1.3" pitchScale="1.2"/>
+            <sound template="metalOpen" startTime="2.5" direction="0" volumeScale="1.3" pitchScale="1.5"/>
+            <sound template="metalDoorsLoop" startTime="1.7" endTime="3.5" direction="0" volumeScale="1" pitchScale="0.7" linkNode="backDoorRight"/>
+            <sound template="metalDoorsLoop" startTime="2.7" endTime="4.5" direction="0" volumeScale="1" pitchScale="0.5" linkNode="backDoorLeft"/>
+            <sound template="hingeMedium" startTime="2" direction="1" volumeScale="1" pitchScale="0.7" linkNode="backDoorRight"/>
+            <sound template="clackVar6" startTime="3.5" direction="1" volumeScale="0.8" pitchScale="0.8" linkNode="backDoorRight"/>
+            <sound template="sheetImp02" startTime="3.5" direction="1" volumeScale="1.3" pitchScale="1.6" linkNode="backDoorRight"/>
+            <sound template="cylinderPunch" startTime="3.5" direction="1" volumeScale="0.3" pitchScale="2" linkNode="backDoorRight"/>
+            <sound template="clackVar6" startTime="4.5" direction="1" volumeScale="0.8" pitchScale="0.8" linkNode="backDoorLeft"/>
+            <sound template="sheetImp02" startTime="4.5" direction="1" volumeScale="1.2" pitchScale="1.6" linkNode="backDoorLeft"/>
+            <sound template="cylinderPunch" startTime="4.5" direction="1" volumeScale="0.3" pitchScale="2" linkNode="backDoorLeft"/>
+            <sound template="metalClose" startTime="2.7" direction="-1" volumeScale="1" pitchScale="1" linkNode="backDoorLeft"/>
+            <sound template="clackVar6" startTime="2.7" direction="-1" volumeScale="1.3" pitchScale="0.9" linkNode="backDoorLeft"/>
+            <sound template="cylinderPunch" startTime="2.7" direction="-1" volumeScale="0.3" pitchScale="1.4" linkNode="backDoorLeft"/>
+            <sound template="metalClose" startTime="1.7" direction="-1" volumeScale="1" pitchScale="1.3" linkNode="backDoorRight"/>
+            <sound template="clackVar6" startTime="1.7" direction="-1" volumeScale="1.1" pitchScale="0.7" linkNode="backDoorRight"/>
+            <sound template="cylinderPunch" startTime="1.7" direction="-1" volumeScale="0.3" pitchScale="1.8" linkNode="backDoorRight"/>
+        </animation>
+    </animations>
+    <livestockTrailer>
+        <animal type="sheep" 		node="sheeps" 		numSlots="13"/>
+        <animal type="pig" 		node="pigs" 		numSlots="13"/>
+        <animal type="cow" 		node="cows" 		numSlots="6"/>
+	<animal type="chicken" 		node="chickens" 	numSlots="86" />
+	<animal type="goose" 		node="chickens" 	numSlots="86" />
+	<animal type="rabbit" 		node="chickens" 	numSlots="86" />
+    </livestockTrailer>
+    <ai>
+        <agentAttachment jointNode="attacherJoint" rotCenterWheelIndices="1 2 3 4" width="2.55" height="3.05" length="8.5" lengthOffset="1.25"/>
+    </ai>
+    <foliageBending>
+        <bendingNode minX="-0.35" maxX="0.35" minZ="3.7" maxZ="4.8" yOffset="0.45"/>
+        <bendingNode minX="-1.3" maxX="1.3" minZ="-4.8" maxZ="3.7" yOffset="0.45"/>
+    </foliageBending>
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="4" fieldMultiplier="2"/>
+    <i3dMappings>
+        <i3dMapping id="noahTTW140_main_component1" node="0>"/>
+        <i3dMapping id="noahTTW140_vis" node="0>0"/>
+        <i3dMapping id="axisFront" node="0>0|0|0"/>
+        <i3dMapping id="wheelFrontLeft" node="0>0|0|0|0"/>
+        <i3dMapping id="wheelFrontRight" node="0>0|0|0|1"/>
+        <i3dMapping id="axisFrontHydraulicRef" node="0>0|0|0|2"/>
+        <i3dMapping id="axisBack" node="0>0|0|1"/>
+        <i3dMapping id="wheelBackLeft" node="0>0|0|1|0"/>
+        <i3dMapping id="wheelBackRight" node="0>0|0|1|1"/>
+        <i3dMapping id="axisBackHydraulicRef" node="0>0|0|1|2"/>
+        <i3dMapping id="attacherJoint" node="0>0|1|0"/>
+        <i3dMapping id="electric" node="0>0|1|1|0"/>
+        <i3dMapping id="electric_detached" node="0>0|1|1|0|0"/>
+        <i3dMapping id="electric_connector" node="0>0|1|1|0|0|0"/>
+        <i3dMapping id="airRed" node="0>0|1|1|1"/>
+        <i3dMapping id="airRed_detached" node="0>0|1|1|1|0"/>
+        <i3dMapping id="airRed_connector" node="0>0|1|1|1|0|0"/>
+        <i3dMapping id="airYellow" node="0>0|1|1|2"/>
+        <i3dMapping id="airYellow_detached" node="0>0|1|1|2|0"/>
+        <i3dMapping id="airYellow_connector" node="0>0|1|1|2|0|0"/>
+        <i3dMapping id="hydraulicIn01" node="0>0|1|1|3"/>
+        <i3dMapping id="hydraulicIn01_detached" node="0>0|1|1|3|0"/>
+        <i3dMapping id="hydraulicIn01_connector" node="0>0|1|1|3|0|0"/>
+        <i3dMapping id="hydraulicOut01" node="0>0|1|1|4"/>
+        <i3dMapping id="hydraulicOut01_detached" node="0>0|1|1|4|0"/>
+        <i3dMapping id="hydraulicOut01_connector" node="0>0|1|1|4|0|0"/>
+        <i3dMapping id="hydraulicIn02" node="0>0|1|1|5"/>
+        <i3dMapping id="hydraulicIn02_detached" node="0>0|1|1|5|0"/>
+        <i3dMapping id="hydraulicIn02_connector" node="0>0|1|1|5|0|0"/>
+        <i3dMapping id="hydraulicOut02" node="0>0|1|1|6"/>
+        <i3dMapping id="hydraulicOut02_detached" node="0>0|1|1|6|0"/>
+        <i3dMapping id="hydraulicOut02_connector" node="0>0|1|1|6|0|0"/>
+        <i3dMapping id="hydraulicIn03" node="0>0|1|1|7"/>
+        <i3dMapping id="hydraulicIn03_detached" node="0>0|1|1|7|0"/>
+        <i3dMapping id="hydraulicIn03_connector" node="0>0|1|1|7|0|0"/>
+        <i3dMapping id="wheelChock01_01" node="0>0|1|2|0"/>
+        <i3dMapping id="wheelChock01_02" node="0>0|1|2|1"/>
+        <i3dMapping id="supportArm" node="0>0|1|3|0"/>
+        <i3dMapping id="supportArmPart" node="0>0|1|3|1"/>
+        <i3dMapping id="chain_decals" node="0>0|1|3|1|0"/>
+        <i3dMapping id="rearLight48_left" node="0>0|2|0|0"/>
+        <i3dMapping id="rearLight48_right" node="0>0|2|0|1"/>
+        <i3dMapping id="sideMarker26_01" node="0>0|2|0|2"/>
+        <i3dMapping id="sideMarker26_02" node="0>0|2|0|3"/>
+        <i3dMapping id="whiteRound_03_01" node="0>0|2|0|4"/>
+        <i3dMapping id="whiteRound_03_02" node="0>0|2|0|5"/>
+        <i3dMapping id="yellowRound_03_01" node="0>0|2|0|6"/>
+        <i3dMapping id="yellowRound_03_02" node="0>0|2|0|7"/>
+        <i3dMapping id="yellowRound_03_03" node="0>0|2|0|8"/>
+        <i3dMapping id="yellowRound_03_04" node="0>0|2|0|9"/>
+        <i3dMapping id="yellowRound_03_05" node="0>0|2|0|10"/>
+        <i3dMapping id="yellowRound_03_06" node="0>0|2|0|11"/>
+        <i3dMapping id="yellowRound_03_07" node="0>0|2|0|12"/>
+        <i3dMapping id="yellowRound_03_08" node="0>0|2|0|13"/>
+        <i3dMapping id="plateNumberLight02" node="0>0|2|0|14"/>
+        <i3dMapping id="backLightsHigh" node="0>0|2|1|0"/>
+        <i3dMapping id="licensePlateLightHigh" node="0>0|2|1|1"/>
+        <i3dMapping id="turnLightLeftBack" node="0>0|2|2|0"/>
+        <i3dMapping id="turnLightRightBack" node="0>0|2|2|1"/>
+        <i3dMapping id="backDoorLeft" node="0>0|3|0"/>
+        <i3dMapping id="backDoorLeftLock" node="0>0|3|0|0"/>
+        <i3dMapping id="backDoorRight" node="0>0|3|1"/>
+        <i3dMapping id="backDoorRightLock" node="0>0|3|1|0"/>
+        <i3dMapping id="axisFrontHydraulic" node="0>0|3|2|0"/>
+        <i3dMapping id="axisFrontHydraulicPunch" node="0>0|3|2|0|0"/>
+        <i3dMapping id="axisBackHydraulic" node="0>0|3|2|1"/>
+        <i3dMapping id="axisBackHydraulicPunch" node="0>0|3|2|1|0"/>
+        <i3dMapping id="cows" node="0>0|4|0"/>
+        <i3dMapping id="sheeps" node="0>0|4|1"/>
+        <i3dMapping id="pigs" node="0>0|4|2"/>
+		<i3dMapping id="chickens" node="0>0|4|3"/>
+        <i3dMapping id="licensePlateBack" node="0>0|5"/>
+    </i3dMappings>
+</vehicle>

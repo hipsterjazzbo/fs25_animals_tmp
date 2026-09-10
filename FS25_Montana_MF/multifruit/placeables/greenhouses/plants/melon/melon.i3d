@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="melon.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="$data/shared/default_specular.dds"/>
+    <File fileId="4" filename="melon.png"/>
+    <File fileId="5" filename="melon_Normal.png"/>
+    <File fileId="9" filename="melon_dead.png"/>
+    <File fileId="10" filename="melon_dead_Normal.png"/>
+    <File fileId="1" filename="pumpkinleaves.png"/>
+    <File fileId="2" filename="pumpkinleaves_Normal.png"/>
+    <File fileId="3" filename="pumpkinleaves_Specular.png"/>
+    <File fileId="7" filename="pumpkinleaves_dead.png"/>
+    <File fileId="8" filename="pumpkinleaves_dead_Specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="feuilles" materialId="5">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="feuillesdead" materialId="6">
+      <Texture fileId="7"/>
+      <Glossmap fileId="8"/>
+    </Material>
+    <Material name="melon" materialId="7">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="melondead" materialId="8">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="6"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="melon.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="melon" clipDistance="200" nodeId="15">
+      <Shape name="greenSmall" scale="0.5 0.5 0.5" shapeId="1" clipDistance="25" nodeId="16" castsShadows="true" receiveShadows="true" materialIds="5">
+        <Shape name="melon_small" translation="5.72204e-06 0.121975 -1.38283e-05" rotation="0 57.1722 0" scale="0.0644408 0.0506514 0.041151" shapeId="2" clipDistance="25" nodeId="17" castsShadows="true" receiveShadows="true" materialIds="7"/>
+      </Shape>
+      <Shape name="greenBig" scale="0.9 0.9 0.9" shapeId="3" clipDistance="25" nodeId="18" castsShadows="true" receiveShadows="true" materialIds="5">
+        <Shape name="melon_big" translation="0 0.206342 -1.90735e-06" rotation="0 57.1722 0" scale="0.146 0.114703 0.0883474" shapeId="2" clipDistance="25" nodeId="19" castsShadows="true" receiveShadows="true" materialIds="7"/>
+      </Shape>
+      <Shape name="dead" rotation="0 -13.901 0" scale="0.9 0.9 0.9" shapeId="4" clipDistance="25" nodeId="20" castsShadows="true" receiveShadows="true" materialIds="6">
+        <Shape name="melon_dead" rotation="0 71.0732 0" scale="0.146 0.114703 0.0883474" shapeId="5" visibility="false" clipDistance="25" nodeId="21" castsShadows="true" receiveShadows="true" materialIds="8"/>
+      </Shape>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

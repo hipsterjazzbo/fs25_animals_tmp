@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../shared/xml/schema/fruitTypes.xsd">
+    <fruitTypes>
+        <fruitType filename="multifruit/foliage/alfalfa.xml"/>
+        <fruitType filename="multifruit/foliage/clover.xml"/>
+        <fruitType filename="multifruit/foliage/clover2.xml"/>
+        <fruitType filename="multifruit/foliage/rye.xml"/>
+        <fruitType filename="multifruit/foliage/triticale.xml"/>
+        <fruitType filename="multifruit/foliage/millet.xml"/>
+        <fruitType filename="multifruit/foliage/spelt.xml"/>
+        <fruitType filename="multifruit/foliage/mustard.xml"/>
+        <fruitType filename="multifruit/foliage/lavender.xml"/>
+        <fruitType filename="multifruit/foliage/poppy.xml"/>
+        <fruitType filename="multifruit/foliage/buckwheat.xml"/>
+        <fruitType filename="multifruit/foliage/lentils.xml"/>
+        <fruitType filename="multifruit/foliage/barley.xml"/>
+        <fruitType filename="multifruit/foliage/canola.xml"/>
+        <fruitType filename="multifruit/foliage/riceLongGrain.xml"/>
+        <fruitType filename="multifruit/foliage/maize.xml"/>
+        <fruitType filename="multifruit/foliage/sorghum.xml"/>
+        <fruitType filename="multifruit/foliage/soybean.xml"/>
+        <fruitType filename="multifruit/foliage/soybean2.xml"/>
+        <fruitType filename="multifruit/foliage/sunflower.xml"/>
+        <fruitType filename="multifruit/foliage/wheat.xml"/>
+	<fruitType filename="multifruit/foliage/oat.xml"/>
+	<fruitType filename="multifruit/foliage/beans.xml"/>		
+	<fruitType filename="multifruit/foliage/chickpeas.xml"/>
+	<fruitType filename="multifruit/foliage/linseed.xml"/>
+	<fruitType filename="multifruit/foliage/flax.xml"/>
+	<fruitType filename="multifruit/foliage/hemp.xml"/>
+	<fruitType filename="multifruit/foliage/drypeas.xml"/>
+	<fruitType filename="multifruit/foliage/tobacco.xml"/>
+	<fruitType filename="multifruit/foliage/peanut.xml"/>
+	<fruitType filename="multifruit/foliage/miscanthus.xml"/>
+        <fruitType filename="multifruit/foliage/hops.xml"/>
+        <fruitType filename="multifruit/foliage/sesame.xml"/>
+        <fruitType filename="multifruit/foliage/mint.xml"/>
+        <fruitType filename="multifruit/foliage/safflower.xml"/>
+        <fruitType filename="multifruit/foliage/greenRye.xml"/>
+        <fruitType filename="multifruit/foliage/okra.xml"/>
+        <fruitType filename="multifruit/foliage/edamame.xml"/>
+        <fruitType filename="multifruit/foliage/taro.xml"/>
+	<fruitType filename="multifruit/foliage/grass.xml"/>
+        <fruitType filename="$data/foliage/meadow/meadowUS/meadowUS.xml"/>
+    </fruitTypes>
+==============================================================================================================================================================
+    <fruitTypeCategories>
+        <fruitTypeCategory name="GRAINHEADER">SAFFLOWER SESAME SOYBEAN2 CHICKPEAS DRYPEAS BEANS LINSEED RYE TRITICALE MILLET SPELT MUSTARD LENTILS BUCKWHEAT POPPY</fruitTypeCategory>
+        <fruitTypeCategory name="MAIZECUTTER" >GREENRYE SAFFLOWER SESAME SOYBEAN2 LAVENDER MISCANTHUS LINSEED RYE TRITICALE MILLET SPELT MUSTARD LENTILS BUCKWHEAT POPPY BEANS CHICKPEAS</fruitTypeCategory>
+        <fruitTypeCategory name="DIRECTCUTTER">GREENRYE SAFFLOWER SESAME SOYBEAN2 LAVENDER MISCANTHUS ALFALFA CLOVER CLOVER2 RYE TRITICALE MILLET SPELT MUSTARD LENTILS BUCKWHEAT POPPY BEANS CHICKPEAS</fruitTypeCategory>
+        <fruitTypeCategory name="SOWINGMACHINE">SAFFLOWER GREENRYE MINT ALFALFA CLOVER CLOVER2 TOBACCO HEMP FLAX LINSEED RYE TRITICALE MILLET SPELT MUSTARD LENTILS BUCKWHEAT POPPY</fruitTypeCategory>
+        <fruitTypeCategory name="WEEDER">GREENRYE ALFALFA CLOVER CLOVER2</fruitTypeCategory>
+        <fruitTypeCategory name="PLANTER" >SESAME SOYBEAN2 DRYPEAS BEANS CHICKPEAS OKRA EDAMAME TARO</fruitTypeCategory>
+	<fruitTypeCategory name="PLANTER_SMALL">LAVENDER PEANUT</fruitTypeCategory>
+	<fruitTypeCategory name="COTTON" >LAVENDER</fruitTypeCategory>
+        <fruitTypeCategory name="MOWER">GREENRYE ALFALFA CLOVER CLOVER2</fruitTypeCategory>
+        <fruitTypeCategory name="COMBINE_MOWER">BUCKWHEAT RYE SPELT SORGHUM RICELONGGRAIN TRITICALE FLAX DRYPEAS BEANS HEMP</fruitTypeCategory>
+    </fruitTypeCategories>
+==================================================================================================================================================================
+    <fruitTypeConverters>
+        <fruitTypeConverter name="FORAGEHARVESTER">
+            <converter from="GREENRYE" 				to="CROP_WINDROW" 			factor="7.0" />
+            <converter from="RYE" 				to="CROP_WINDROW" 			factor="4.0" />
+            <converter from="WHEAT" 				to="CROP_WINDROW" 			factor="4.0" />
+            <converter from="OAT" 				to="CROP_WINDROW" 			factor="4.0" />
+            <converter from="BARLEY" 				to="CROP_WINDROW" 			factor="4.0" />
+            <converter from="TRITICALE" 			to="CROP_WINDROW" 			factor="4.0" />
+            <converter from="MILLET" 				to="CHAFF" 				factor="6.0" />
+            <converter from="SPELT" 				to="CROP_WINDROW" 			factor="4.0" />
+            <converter from="MUSTARD" 				to="CHAFF" 				factor="4.0" />
+            <converter from="LENTILS" 				to="CHAFF" 				factor="4.0" />
+            <converter from="BUCKWHEAT" 			to="CHAFF" 				factor="4.0" />
+            <converter from="BEANS" 				to="CHAFF" 				factor="4.0" />
+            <converter from="DRYPEAS" 				to="CHAFF" 				factor="4.0" />
+            <converter from="SOYBEAN2" 				to="CHAFF" 				factor="5.0" />			
+            <converter from="CHICKPEAS" 			to="CHAFF" 				factor="4.0" />
+	    <converter from="LAVENDER" 				to="LAVENDER" 			  	factor="1" />
+            <converter from="POPPY" 				to="CHAFF" 				factor="4.0" />
+            <converter from="ALFALFA" 				to="ALFALFA_WINDROW" 			factor="3.0" />
+            <converter from="CLOVER" 				to="CLOVER_WINDROW" 			factor="3.0" />
+            <converter from="CLOVER2" 				to="CLOVER_WINDROW" 			factor="3.0" />
+            <converter from="SESAME" 				to="CHAFF" 				factor="4.0" />
+            <converter from="SAFFLOWER" 			to="CHAFF" 				factor="4.0" />
+            <converter from="MISCANTHUS" 			to="MISCANTHUS_CUT" 			factor="7.0" />
+        </fruitTypeConverter>
+
+        <fruitTypeConverter name="MOWER">
+			<converter from="GREENRYE" 			to="GRASS_WINDROW" 		factor="1.0" />
+			<converter from="RYE" 				to="STRAW" 			factor="1.0" />
+			<converter from="TRITICALE" 			to="STRAW" 			factor="1.0" />
+			<converter from="SPELT" 			to="STRAW" 			factor="1.0" />
+			<converter from="SOYBEAN" 			to="BEANSTRAW" 			factor="1.0" />	
+			<converter from="BEANS" 			to="BEANSTRAW" 			factor="1.0" />		
+			<converter from="DRYPEAS" 			to="BEANSTRAW" 			factor="1.0" />			
+			<converter from="CHICKPEAS" 			to="BEANSTRAW" 			factor="1.0" />			
+			<converter from="LENTILS" 			to="BEANSTRAW" 			factor="1.0" />
+			<converter from="ALFALFA" 			to="ALFALFA_WINDROW" 		factor="1.0" />
+            		<converter from="CLOVER" 			to="CLOVER_WINDROW" 		factor="1.0" />
+            		<converter from="CLOVER2" 			to="CLOVER_WINDROW" 		factor="1.0" />
+        </fruitTypeConverter>
+
+        <fruitTypeConverter name="COMBINE_MOWER">
+            	<converter from="BUCKWHEAT" 				to="BUCKWHEAT_CUT" 		factor="1.0"/>
+            	<converter from="RYE" 					to="RYE_CUT" 			factor="1.0"/>
+            	<converter from="RICELONGGRAIN" 			to="RICE_CUT" 			factor="1.0"/>
+            	<converter from="SORGHUM" 				to="SORGHUM_CUT" 		factor="1.0"/>
+            	<converter from="TRITICALE" 				to="TRITICALE_CUT" 		factor="1.0"/>
+            	<converter from="SPELT" 				to="SPELT_CUT" 			factor="1.0"/>
+            	<converter from="BEANS" 				to="BEANS_CUT" 			factor="1.0"/>
+            	<converter from="SOYBEAN" 				to="SOYBEAN_CUT" 		factor="1.0"/>
+            	<converter from="DRYPEAS" 				to="PEAS_CUT" 			factor="1.0"/>
+            	<converter from="CHICKPEAS" 				to="CHICKPEAS_CUT" 		factor="1.0"/>			
+            	<converter from="LENTILS" 				to="LENTILS_CUT" 		factor="1.0"/>
+            	<converter from="FLAX" 					to="FLAX_FIBER" 		factor="2.0"/>	
+            	<converter from="HEMP" 					to="HEMP_FIBER" 		factor="1.0"/>
+		<converter from="ALFALFA" 				to="ALFALFA_WINDROW" 		factor="1.1" />
+            	<converter from="CLOVER" 				to="CLOVER_WINDROW" 		factor="1.1" />
+            	<converter from="CLOVER2" 				to="CLOVER_WINDROW" 		factor="1.1" />
+        </fruitTypeConverter>
+    </fruitTypeConverters>
+</map>

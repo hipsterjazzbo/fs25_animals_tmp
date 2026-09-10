@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<bale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/bale.xsd">
+    <filename>$data/objects/bales/roundbales/roundbale125/roundbale125.i3d</filename>
+    <size isRoundbale="true" width="1.2" diameter="1.25" visualWidth="1.16"/>
+    <mountableObject triggerNode="0" forceAcceleration="7" forceLimitScale="1" axisFreeY="false" axisFreeX="false"/>
+
+    <uvId>DEFAULT</uvId>
+
+    <baleMeshes>
+        <baleMesh node="1"   supportsWrapping="true" isTensionBeltMesh="true"/>
+        <baleMesh node="1|0" supportsWrapping="true" isTensionBeltMesh="false" isAlphaMesh="true" fillTypes="GRASS_WINDROW DRYGRASS_WINDROW STRAW SILAGE FORAGE"/>
+    </baleMeshes>
+
+    <variations>
+        <variation id="DEFAULT"/>
+        <variation id="NETWRAP">
+            <netWrapDiffuse filename="$data/objects/bales/roundbales/roundbale125/netWrap_diffuse.dds"/>
+            <netWrapNormal filename="$data/objects/bales/roundbales/roundbale125/netWrap_normal.dds"/>
+        </variation>
+        <variation id="FOILWRAP">
+            <netWrapDiffuse filename="$data/objects/bales/roundbales/roundbale125/foilWrap_diffuse.dds"/>
+            <netWrapNormal filename="$data/objects/bales/roundbales/roundbale125/foilWrap_normal.dds"/>
+        </variation>
+    </variations>
+
+    <fillTypes>
+
+        <fillType name="GRASS_WINDROW" capacity="3500" mass="620" forceAcceleration="7" supportsWrapping="true" materialName="wrapBale" alphaMaterialName="wrapBaleAlpha">
+            <diffuse    filename="$data/objects/bales/roundbales/roundbale125/fillTypes/grass_diffuse.dds"/>
+            <normal     filename="$data/objects/bales/roundbales/roundbale125/fillTypes/shared_normal.dds"/>
+            <alpha      filename="$data/objects/bales/roundbales/roundbale125/bale_alpha.dds"/>
+            <baleNormal filename="$data/objects/bales/roundbales/roundbale125/bale_normal.dds"/>
+            <fermenting outputFillType="GRASS_FERMENTED" requiresWrapping="true" time="1"/>
+        </fillType>
+        <fillType name="DRYGRASS_WINDROW" capacity="4500" mass="235" forceAcceleration="8" supportsWrapping="false" materialName="wrapBale" alphaMaterialName="wrapBaleAlpha">
+            <diffuse    filename="$data/objects/bales/roundbales/roundbale125/fillTypes/hay_diffuse.dds"/>
+            <normal     filename="$data/objects/bales/roundbales/roundbale125/fillTypes/shared_normal.dds"/>
+            <alpha      filename="$data/objects/bales/roundbales/roundbale125/bale_alpha.dds"/>
+            <baleNormal filename="$data/objects/bales/roundbales/roundbale125/bale_normal.dds"/>
+        </fillType>      
+	<fillType name="CROP_WINDROW" capacity="3500" mass="620" forceAcceleration="7" supportsWrapping="true" materialName="wrapBaleFillTypeArray" alphaMaterialName="wrapBaleAlphaFillTypeArray">
+            <diffuse    useFillTypeArray="true"/>
+            <normal     useFillTypeArray="true"/>
+            <alpha      filename="$data/objects/bales/roundbales/roundbale125/bale_alpha.dds"/>
+            <baleNormal filename="$data/objects/bales/roundbales/roundbale125/bale_normal.dds"/>
+            <fermenting outputFillType="CROP_FERMENTED" requiresWrapping="true" time="1"/>
+        </fillType>
+        <fillType name="STRAW" capacity="5000" mass="220" forceAcceleration="8" supportsWrapping="false" materialName="wrapBale" alphaMaterialName="wrapBaleAlpha">
+            <diffuse    filename="$data/objects/bales/roundbales/roundbale125/fillTypes/straw_diffuse.dds"/>
+            <normal     filename="$data/objects/bales/roundbales/roundbale125/fillTypes/shared_normal.dds"/>
+            <alpha      filename="$data/objects/bales/roundbales/roundbale125/bale_alpha.dds"/>
+            <baleNormal filename="$data/objects/bales/roundbales/roundbale125/bale_normal.dds"/>
+        </fillType>
+        <fillType name="SILAGE" capacity="3500" mass="620" forceAcceleration="7" supportsWrapping="false" materialName="wrapBale" alphaMaterialName="wrapBaleAlpha">
+            <diffuse    filename="$data/objects/bales/roundbales/roundbale125/fillTypes/silage_diffuse.dds"/>
+            <normal     filename="$data/objects/bales/roundbales/roundbale125/fillTypes/shared_normal.dds"/>
+            <alpha      filename="$data/objects/bales/roundbales/roundbale125/bale_alpha.dds"/>
+            <baleNormal filename="$data/objects/bales/roundbales/roundbale125/bale_normal.dds"/>
+        </fillType>
+        <fillType name="GRASS_FERMENTED" capacity="3500" mass="620" forceAcceleration="7" supportsWrapping="false" materialName="wrapBaleFillTypeArray" alphaMaterialName="wrapBaleAlphaFillTypeArray">
+            <diffuse    useFillTypeArray="true"/>
+            <normal     useFillTypeArray="true"/>
+            <alpha      filename="$data/objects/bales/roundbales/roundbale125/bale_alpha.dds"/>
+            <baleNormal filename="$data/objects/bales/roundbales/roundbale125/bale_normal.dds"/>
+        </fillType>
+        <fillType name="CROP_FERMENTED" capacity="3500" mass="620" forceAcceleration="7" supportsWrapping="false" materialName="wrapBaleFillTypeArray" alphaMaterialName="wrapBaleAlphaFillTypeArray">
+            <diffuse    useFillTypeArray="true"/>
+            <normal     useFillTypeArray="true"/>
+            <alpha      filename="$data/objects/bales/roundbales/roundbale125/bale_alpha.dds"/>
+            <baleNormal filename="$data/objects/bales/roundbales/roundbale125/bale_normal.dds"/>
+        </fillType>
+
+        <fillType name="CHAFF" capacity="3500" mass="620" forceAcceleration="7" supportsWrapping="true" materialName="wrapBaleFillTypeArray" alphaMaterialName="wrapBaleAlphaFillTypeArray">
+            <diffuse    useFillTypeArray="true"/>
+            <normal     useFillTypeArray="true"/>
+            <alpha      filename="$data/objects/bales/roundbales/roundbale125/bale_alpha.dds"/>
+            <baleNormal filename="$data/objects/bales/roundbales/roundbale125/bale_normal.dds"/>
+            <fermenting outputFillType="silage" requiresWrapping="true" time="1"/>
+        </fillType>
+        <fillType name="SUGARBEET_CUT" capacity="3500" mass="620" forceAcceleration="7" supportsWrapping="false" materialName="wrapBaleFillTypeArray" alphaMaterialName="wrapBaleAlphaFillTypeArray">
+            <diffuse    useFillTypeArray="true"/>
+            <normal     useFillTypeArray="true"/>
+            <alpha      filename="$data/objects/bales/roundbales/roundbale125/bale_alpha.dds"/>
+            <baleNormal filename="$data/objects/bales/roundbales/roundbale125/bale_normal.dds"/>
+        </fillType>
+        <fillType name="FORAGE" capacity="3500" mass="620" forceAcceleration="7" supportsWrapping="true" materialName="wrapBaleFillTypeArray" alphaMaterialName="wrapBaleAlphaFillTypeArray">
+            <diffuse    useFillTypeArray="true"/>
+            <normal     useFillTypeArray="true"/>
+            <alpha      filename="$data/objects/bales/roundbales/roundbale125/bale_alpha.dds"/>
+        </fillType>
+
+	<fillType name="ALFALFA_WINDROW" capacity="3500" mass="620" forceAcceleration="7" supportsWrapping="true" materialName="wrapBale" alphaMaterialName="wrapBaleAlpha">
+            <diffuse    filename="multifruit/objects/bales/r125/roundbaleAlfalfa125_diffuse.dds"/>
+            <normal     filename="$data/objects/bales/roundbales/roundbale125/fillTypes/shared_normal.dds"/>
+            <alpha      filename="$data/objects/bales/roundbales/roundbale125/bale_alpha.dds"/>
+            <baleNormal filename="$data/objects/bales/roundbales/roundbale125/bale_normal.dds"/>
+            <fermenting outputFillType="ALFALFA_FERMENTED" requiresWrapping="true" time="1"/>
+        </fillType>
+		<fillType name="DRYALFALFA_WINDROW" capacity="4500" mass="235" forceAcceleration="8" supportsWrapping="false" materialName="wrapBale" alphaMaterialName="wrapBaleAlpha">
+            <diffuse    filename="multifruit/objects/bales/r125/roundbaleHayAlfalfa125_diffuse.dds"/>
+            <normal     filename="$data/objects/bales/roundbales/roundbale125/fillTypes/shared_normal.dds"/>
+            <alpha      filename="$data/objects/bales/roundbales/roundbale125/bale_alpha.dds"/>
+            <baleNormal filename="$data/objects/bales/roundbales/roundbale125/bale_normal.dds"/>
+        </fillType>
+		<fillType name="ALFALFA_FERMENTED" capacity="3500" mass="620" forceAcceleration="7" supportsWrapping="false" materialName="wrapBale" alphaMaterialName="wrapBaleAlpha">
+            <diffuse    filename="multifruit/objects/bales/r125/roundbaleFermentedAlfalfa125_diffuse.dds"/>
+            <normal     filename="$data/objects/bales/roundbales/roundbale125/fillTypes/shared_normal.dds"/>
+            <alpha      filename="$data/objects/bales/roundbales/roundbale125/bale_alpha.dds"/>
+            <baleNormal filename="$data/objects/bales/roundbales/roundbale125/bale_normal.dds"/>
+        </fillType>
+
+        <fillType name="CLOVER_WINDROW" capacity="3500" mass="620" forceAcceleration="7" supportsWrapping="true" materialName="wrapBale" alphaMaterialName="wrapBaleAlpha">
+            <diffuse    filename="multifruit/objects/bales/r125/roundbaleClover125_diffuse.dds"/>
+            <normal     filename="$data/objects/bales/roundbales/roundbale125/fillTypes/shared_normal.dds"/>
+            <alpha      filename="$data/objects/bales/roundbales/roundbale125/bale_alpha.dds"/>
+            <baleNormal filename="$data/objects/bales/roundbales/roundbale125/bale_normal.dds"/>
+            <fermenting outputFillType="CLOVER_FERMENTED" requiresWrapping="true" time="1"/>
+        </fillType>
+        <fillType name="DRYCLOVER_WINDROW" capacity="4500" mass="235" forceAcceleration="8" supportsWrapping="false" materialName="wrapBale" alphaMaterialName="wrapBaleAlpha">
+            <diffuse    filename="multifruit/objects/bales/r125/roundbaleHayClover125_diffuse.dds"/>
+            <normal     filename="$data/objects/bales/roundbales/roundbale125/fillTypes/shared_normal.dds"/>
+            <alpha      filename="$data/objects/bales/roundbales/roundbale125/bale_alpha.dds"/>
+            <baleNormal filename="$data/objects/bales/roundbales/roundbale125/bale_normal.dds"/>
+        </fillType>
+        <fillType name="CLOVER_FERMENTED" capacity="3000" mass="620" forceAcceleration="8" supportsWrapping="false" materialName="wrapBale" alphaMaterialName="wrapBaleAlpha">
+            <diffuse    filename="multifruit/objects/bales/r125/roundbaleFermentedClover125_diffuse.dds"/>
+            <normal     filename="$data/objects/bales/roundbales/roundbale125/fillTypes/shared_normal.dds"/>
+            <alpha      filename="$data/objects/bales/roundbales/roundbale125/bale_alpha.dds"/>
+            <baleNormal filename="$data/objects/bales/roundbales/roundbale125/bale_normal.dds"/>
+        </fillType>
+        <fillType name="BEANSTRAW" capacity="5000" mass="220" forceAcceleration="8" supportsWrapping="false" materialName="wrapBale" alphaMaterialName="wrapBaleAlpha">
+            <diffuse    filename="multifruit/objects/bales/r125/roundbaleBeanstraw125_diffuse.dds"/>
+            <normal     filename="$data/objects/bales/roundbales/roundbale125/fillTypes/shared_normal.dds"/>
+            <alpha      filename="$data/objects/bales/roundbales/roundbale125/bale_alpha.dds"/>
+            <baleNormal filename="$data/objects/bales/roundbales/roundbale125/bale_normal.dds"/>
+        </fillType>
+		<fillType name="CCMRAW" capacity="3500" mass="620" forceAcceleration="7" supportsWrapping="true" materialName="wrapBaleFillTypeArray" alphaMaterialName="wrapBaleAlphaFillTypeArray">
+            <diffuse    useFillTypeArray="true"/>
+            <normal     useFillTypeArray="true"/>
+            <alpha      filename="$data/objects/bales/roundbales/roundbale125/bale_alpha.dds"/>
+            <baleNormal filename="$data/objects/bales/roundbales/roundbale125/bale_normal.dds"/>
+            <fermenting outputFillType="CCM" requiresWrapping="true" time="1"/>
+        </fillType>	
+		<fillType name="CCM" capacity="3500" mass="620" forceAcceleration="7" supportsWrapping="false" materialName="wrapBaleFillTypeArray" alphaMaterialName="wrapBaleAlphaFillTypeArray">
+            <diffuse    useFillTypeArray="true"/>
+            <normal     useFillTypeArray="true"/>
+            <alpha      filename="$data/objects/bales/roundbales/roundbale125/bale_alpha.dds"/>
+            <baleNormal filename="$data/objects/bales/roundbales/roundbale125/bale_normal.dds"/>
+        </fillType>
+		<fillType name="ORGANICWASTE" capacity="3500" mass="620" forceAcceleration="7" supportsWrapping="true" materialName="wrapBaleFillTypeArray" alphaMaterialName="wrapBaleAlphaFillTypeArray">
+            <diffuse    useFillTypeArray="true"/>
+            <normal     useFillTypeArray="true"/>
+            <alpha      filename="$data/objects/bales/roundbales/roundbale125/bale_alpha.dds"/>
+            <baleNormal filename="$data/objects/bales/roundbales/roundbale125/bale_normal.dds"/>
+            <fermenting outputFillType="COMPOST" requiresWrapping="true" time="1"/>
+        </fillType>	
+		<fillType name="COMPOST" capacity="3500" mass="620" forceAcceleration="7" supportsWrapping="false" materialName="wrapBaleFillTypeArray" alphaMaterialName="wrapBaleAlphaFillTypeArray">
+            <diffuse    useFillTypeArray="true"/>
+            <normal     useFillTypeArray="true"/>
+            <alpha      filename="$data/objects/bales/roundbales/roundbale125/bale_alpha.dds"/>
+            <baleNormal filename="$data/objects/bales/roundbales/roundbale125/bale_normal.dds"/>
+        </fillType>	
+		<fillType name="FLAX_FIBER" capacity="3500" mass="620" forceAcceleration="7" supportsWrapping="false" materialName="wrapBaleFillTypeArray" alphaMaterialName="wrapBaleAlphaFillTypeArray">
+            <diffuse    useFillTypeArray="true"/>
+            <normal     useFillTypeArray="true"/>
+            <alpha      filename="$data/objects/bales/roundbales/roundbale125/bale_alpha.dds"/>
+            <baleNormal filename="$data/objects/bales/roundbales/roundbale125/bale_normal.dds"/>
+        </fillType>
+		<fillType name="HEMP_FIBER" capacity="3500" mass="620" forceAcceleration="7" supportsWrapping="false" materialName="wrapBaleFillTypeArray" alphaMaterialName="wrapBaleAlphaFillTypeArray">
+            <diffuse    useFillTypeArray="true"/>
+            <normal     useFillTypeArray="true"/>
+            <alpha      filename="$data/objects/bales/roundbales/roundbale125/bale_alpha.dds"/>
+            <baleNormal filename="$data/objects/bales/roundbales/roundbale125/bale_normal.dds"/>
+        </fillType>        
+		<fillType name="CORN_STALKS" capacity="5000" mass="220" forceAcceleration="8" supportsWrapping="false" materialName="wrapBale" alphaMaterialName="wrapBaleAlpha">
+            <diffuse    filename="multifruit/objects/bales/r125/roundbaleCorn125_diffuse.dds"/>
+            <normal     filename="$data/objects/bales/roundbales/roundbale125/fillTypes/shared_normal.dds"/>
+            <alpha      filename="$data/objects/bales/roundbales/roundbale125/bale_alpha.dds"/>
+            <baleNormal filename="$data/objects/bales/roundbales/roundbale125/bale_normal.dds"/>
+        </fillType>
+		<fillType name="MANURE" capacity="3500" mass="620" forceAcceleration="7" supportsWrapping="false" materialName="wrapBaleFillTypeArray" alphaMaterialName="wrapBaleAlphaFillTypeArray">
+            <diffuse    useFillTypeArray="true"/>
+            <normal     useFillTypeArray="true"/>
+            <alpha      filename="$data/objects/bales/roundbales/roundbale125/bale_alpha.dds"/>
+            <baleNormal filename="$data/objects/bales/roundbales/roundbale125/bale_normal.dds"/>
+        </fillType>  
+		<fillType name="LAVENDER" capacity="3500" mass="620" forceAcceleration="7" supportsWrapping="false" materialName="wrapBaleFillTypeArray" alphaMaterialName="wrapBaleAlphaFillTypeArray">
+            <diffuse    useFillTypeArray="true"/>
+            <normal     useFillTypeArray="true"/>
+            <alpha      filename="$data/objects/bales/roundbales/roundbale125/bale_alpha.dds"/>
+            <baleNormal filename="$data/objects/bales/roundbales/roundbale125/bale_normal.dds"/>
+        </fillType>   
+		<fillType name="MISCANTHUS_CUT" capacity="3500" mass="620" forceAcceleration="7" supportsWrapping="false" materialName="wrapBaleFillTypeArray" alphaMaterialName="wrapBaleAlphaFillTypeArray">
+            <diffuse    useFillTypeArray="true"/>
+            <normal     useFillTypeArray="true"/>
+            <alpha      filename="$data/objects/bales/roundbales/roundbale125/bale_alpha.dds"/>
+            <baleNormal filename="$data/objects/bales/roundbales/roundbale125/bale_normal.dds"/>
+        </fillType>  
+    </fillTypes>
+</bale>

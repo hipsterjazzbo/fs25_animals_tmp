@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animalHusbandry>
+    <animals milkRobotDoorSoundGroup="milkRobotDoor" milkRobotSoundGroup="milkRobot">
+        <!-- Bull Baby -->
+		<animal  canBeCleaned="true" canDrink="false" canEat="false" canEatDuringNight="false" canSleep="true" handleThreats="false" headOffset="0.8" interessDistance="10.0" radius="0.7" slowingDistance="0.5" threatAwarenessRadius="5">
+            <statesTimers chewMax="0" chewMin="0" eatMax="93331" eatMin="66665" grazeMax="0" grazeMin="0" idleMax="19998" idleMin="6666" restMax="26666" restMin="12000" sleepMax="180000" sleepMin="120000" wanderMax="10000" wanderMin="5000"/>
+            <assets animation="bull/animations/calfAdultAnimations.i3d" filename="bull/calf.i3d" filenamePosed="animals/domesticated/bull/bull/calf_posed.i3d" headIndex="0>0|1|0|0|0|0" meshIndex="1" proxyIndex="2" shaderIndex="1|0" skeletonIndex="0">
+                <texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/> <!-- BLACK/WHITE -->
+               	<texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false" /> <!-- BROWN/WHITE -->
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false" /> <!-- BLACK -->
+				<texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false" /> <!-- BROWN-->
+            </assets>
+            <locomotion filename="calfLocomotion.xml"/>
+            <audio eatSoundGroup="eat" yellMaxInterval="20000" yellMinInterval="8000" yellSoundGroup="yellBaby" yellTimerCrowdScale="0.2"/>
+        </animal>
+		
+		<!-- Bull Kid -->
+		<animal  canBeCleaned="true" canDrink="false" canEat="false" canEatDuringNight="false" canSleep="true" handleThreats="false" headOffset="0.8" interessDistance="10.0" radius="1.1" slowingDistance="0.5" threatAwarenessRadius="5">
+            <statesTimers chewMax="18000" chewMin="9000" eatMax="93331" eatMin="66665" grazeMax="39999" grazeMin="26666" idleMax="19998" idleMin="6666" restMax="26666" restMin="12000" sleepMax="180000" sleepMin="120000" wanderMax="10000" wanderMin="5000"/>
+            <assets animation="bull/animations/bullYoungAnimations.i3d" filename="bull/bullYoung.i3d" filenamePosed="animals/domesticated/bull/bull/bullYoung_posed.i3d" headIndex="0>0|1|0|0|0|0" meshIndex="1" proxyIndex="2" shaderIndex="1|0" skeletonIndex="0">
+				<texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/> <!-- BLACK/WHITE -->
+               	<texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false" /> <!-- BROWN/WHITE -->
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false" /> <!-- BLACK -->
+				<texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false" /> <!-- BROWN-->
+			</assets>
+            <locomotion filename="bullYoungLocomotion.xml"/>
+            <audio eatSoundGroup="eat" yellMaxInterval="20000" yellMinInterval="8000" yellSoundGroup="yell" yellTimerCrowdScale="0.2"/>
+        </animal>
+        
+		<!-- Bull -->
+		<animal  canBeCleaned="true" canDrink="true" canEat="true" canEatDuringNight="true" canSleep="true" handleThreats="false" headOffset="0.8" interessDistance="10.0" radius="1.8" slowingDistance="0.5" threatAwarenessRadius="5">
+            <statesTimers chewMax="18000" chewMin="9000" eatMax="93331" eatMin="66665" grazeMax="39999" grazeMin="26666" idleMax="19998" idleMin="6666" restMax="26666" restMin="12000" sleepMax="180000" sleepMin="120000" wanderMax="10000" wanderMin="5000"/>
+            <assets animation="bull/animations/bullAdultAnimations.i3d" filename="bull/bull.i3d" filenamePosed="animals/domesticated/bull/bull/bull_posed.i3d" headIndex="0>0|1|0|0|0|0" meshIndex="1" proxyIndex="2" shaderIndex="1|0" skeletonIndex="0">
+                <texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/> <!-- BLACK/WHITE -->
+               	<texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false" /> <!-- BROWN/WHITE -->
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false" /> <!-- BLACK -->
+				<texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false" /> <!-- BROWN-->
+            </assets>
+            <locomotion filename="bullLocomotion.xml"/>
+            <audio eatSoundGroup="eat" yellMaxInterval="20000" yellMinInterval="8000" yellSoundGroup="yell" yellTimerCrowdScale="0.2"/>
+        </animal>
+    </animals>
+    <sound>
+        <soundGroup indoorVolume="0.1" innerRange="0.4" name="walk" range="12" volume="0.7">
+            <sample filename="$data/sounds/animals/pig/anmlPigStep_01.wav"/>
+            <sample filename="$data/sounds/animals/pig/anmlPigStep_02.wav"/>
+            <sample filename="$data/sounds/animals/pig/anmlPigStep_03.wav"/>
+            <sample filename="$data/sounds/animals/pig/anmlPigStep_04.wav"/>
+            <sample filename="$data/sounds/animals/pig/anmlPigStep_05.wav"/>
+            <sample filename="$data/sounds/animals/pig/anmlPigStep_06.wav"/>
+        </soundGroup>
+        <soundGroup indoorVolume="0.03" innerRange="1" name="eat" range="10" volume="0.4">
+            <sample filename="$data/sounds/animals/cow/anmlCowEatLoop_01.wav"/>
+            <sample filename="bullEat_01.wav"/>
+        </soundGroup>
+        <soundGroup indoorVolume="0.1" innerRange="8" name="milkRobot" range="40" volume="0.8">
+            <sample filename="$data/sounds/tools/milkrobot/milkrobot_work_loop.wav"/>
+        </soundGroup>
+        <soundGroup indoorVolume="0.1" innerRange="8" name="milkRobotDoor" range="40" volume="0.8">
+            <sample filename="$data/sounds/tools/milkrobot/milkrobot_door_01.wav"/>
+        </soundGroup>
+        <soundGroup indoorVolume="0.3" innerRange="1" name="yell" pitch="1" pitchRandMax="0.1" pitchRandMin="-0.1" range="50" volume="1.7" volumeRandMax="0.1" volumeRandMin="-0.1">
+            <sample filename="bull_01.wav" />
+            <sample filename="bull_02.wav" />
+            <sample filename="bull_03.wav" />
+            <sample filename="bull_04.wav" />
+            <sample filename="bull_05.wav" />
+            <sample filename="bull_06.wav" />
+            <sample filename="bull_07.wav" />
+        </soundGroup>
+        
+        <soundGroup indoorVolume="0.3" innerRange="1" name="yellBaby" pitch="1" pitchRandMax="0.1" pitchRandMin="-0.1" range="50" volume="1.3" volumeRandMax="0.1" volumeRandMin="-0.1">
+            <sample filename="$data/sounds/animals/cow/anmlCowBabyYell_01.wav"/>
+            <sample filename="$data/sounds/animals/cow/anmlCowBabyYell_02.wav"/>
+            <sample filename="$data/sounds/animals/cow/anmlCowBabyYell_03.wav"/>
+            <sample filename="$data/sounds/animals/cow/anmlCowBabyYell_04.wav"/>
+            <sample filename="$data/sounds/animals/cow/anmlCowBabyYell_05.wav"/>
+        </soundGroup>
+    </sound>
+</animalHusbandry>

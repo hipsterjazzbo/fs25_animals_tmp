@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="greenhouse" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_plumOrchard</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>multifruit/placeables/orchards/store_Orchard.png</image>
+        <price>40000</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <dailyUpkeep>150</dailyUpkeep>
+        <brand>JINKOU</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>greenhouses</tab>
+        </brush>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+        <vertexBufferMemoryUsage>117760</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>28416</indexBufferMemoryUsage>
+        <textureMemoryUsage>4063232</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>multifruit/placeables/orchards/Orchard.i3d</filename>
+	<boughtWithFarmland>true</boughtWithFarmland>
+	<canBeDeleted>true</canBeDeleted>
+	<canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+        <sounds>
+            <place template="smallImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="1" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height"/>
+        </levelAreas>
+        <paintAreas>
+            <paintArea startNode="paintArea1Start" widthNode="paintArea1Width" heightNode="paintArea1Height" groundType="grass"/>
+        </paintAreas>
+    </leveling>
+
+        <foliageAreas>
+            <foliageArea startNode="paintArea1Start" widthNode="paintArea1Width" heightNode="paintArea1Height" decoFoliage="meadow"/>
+        </foliageAreas>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="unloadTriggerMarker" teleportNode="teleportNode" />
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="warningStripes" />
+        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIconWrench.i3d" adjustToGround="true" />
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIconUnload.i3d" adjustToGround="true" />
+    </triggerMarkers>
+
+    <greenhouse>
+        <plants>
+            <plant fillType="PLUM"    xmlFilename="multifruit/placeables/orchards/plum/plums.xml" />
+        </plants>
+
+        <plantSpaces>
+            <spacesParent node="plantNodes" useRandomYRot="false" />
+        </plantSpaces>
+
+        <sounds>
+            <watering template="defaultSprayer" linkNode="0>" loops="0" />
+        </sounds>
+
+        <!--<effectNodes>-->
+            <!--<effectNode effectNode="0>4|1" materialType="smoke" materialTypeId="1" fadeTime="0.5" />-->
+        <!--</effectNodes>-->
+    </greenhouse>
+
+    <productionPoint>
+        <productions>
+            
+<production id="plum" name="$l10n_fillType_plum" cyclesPerHour="3" costsPerActiveHour="0.3">
+                <inputs>
+                    <input fillType="WATER" amount="84" />
+                </inputs>
+                <outputs>
+                    <output fillType="PLUM" amount="64" />
+                    <output fillType="ORGANICWASTE" amount="3" />
+                </outputs>
+            </production>
+        
+<!--Productions with fertilizer-->
+            <production id="plumF" name="%s + %s" params="$l10n_fillType_plum|$l10n_fillType_fertilizer" cyclesPerHour="6" costsPerActiveHour="0.5">
+                <inputs>
+                    <input fillType="WATER" amount="34" />
+                    <input fillType="FERTILIZER" amount="8" />
+                </inputs>
+                <outputs>
+                    <output fillType="PLUM" amount="64" />
+                    <output fillType="ORGANICWASTE" amount="3" />
+                </outputs>
+            </production>
+        
+<!--Productions with manure-->
+            <production id="plumM" name="%s + %s" params="$l10n_fillType_plum|$l10n_fillType_manure" cyclesPerHour="6" costsPerActiveHour="0.5">
+                <inputs>
+                    <input fillType="WATER" amount="24" />
+                    <input fillType="MANURE" amount="25" />
+                </inputs>
+                <outputs>
+                    <output fillType="PLUM" amount="64" />
+                    <output fillType="ORGANICWASTE" amount="3" />
+                </outputs>
+            </production>
+
+        </productions>
+
+        <sellingStation node="sellingStation" appearsOnStats="false" supportsExtension="true" hideFromPricesMenu="true" allowMissions="false">
+            <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="WATER LIQUIDMANURE LIQUIDFERTILIZER FERTILIZER DIGESTATE MANURE COMPOST" aiNode="unloadTriggerAINode" >
+			<fillTypeConversion ratio="1.1" incomingFillType="LIQUIDFERTILIZER" 	outgoingFillType="FERTILIZER" />
+			<fillTypeConversion ratio="0.8" incomingFillType="LIQUIDMANURE" 	outgoingFillType="MANURE" />
+			<fillTypeConversion ratio="0.6" incomingFillType="DIGESTATE" 		outgoingFillType="MANURE" />
+			<fillTypeConversion ratio="0.8" incomingFillType="COMPOST" 		outgoingFillType="MANURE" />
+		</unloadTrigger>
+        </sellingStation>
+
+        <palletSpawner node="palletSpawner">
+            <spawnPlaces>
+                <spawnPlace startNode="spawnPlace1Start" />
+            </spawnPlaces>
+        </palletSpawner>
+
+        <storage node="storage" isExtension="false" fillTypes="WATER FERTILIZER MANURE PLUM" >
+            <capacity fillType="WATER"      		capacity="50000" />
+            <capacity fillType="PLUM"    		capacity="50000" />
+            <capacity fillType="FERTILIZER" 		capacity="10000" />
+            <capacity fillType="MANURE"     		capacity="100000" />
+            <capacity fillType="ORGANICWASTE"     	capacity="100000" />
+        </storage>
+
+        <playerTrigger node="playerTrigger" />
+    </productionPoint>
+
+
+    <i3dMappings>
+        <i3dMapping id="plantNodes" node="0>0|1" />
+        <i3dMapping id="unloadTrigger" node="0>0|3|0" />
+        <i3dMapping id="unloadTriggerMarker" node="0>0|3|1" />
+        <i3dMapping id="unloadTriggerAINode" node="0>0|3|2" />
+        <i3dMapping id="palletSpawner" node="0>0|4" />
+        <i3dMapping id="spawnPlace1Start" node="0>0|4|0" />
+        <i3dMapping id="storage" node="0>0|5" />
+        <i3dMapping id="playerTrigger" node="0>0|6" />
+        <i3dMapping id="playerTriggerMarker" node="0>0|7" />
+
+        <i3dMapping id="clearArea1Start" node="0>2|0" />
+        <i3dMapping id="clearArea1Width" node="0>2|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>2|0|1" />
+        <i3dMapping id="levelArea1Start" node="0>3|0" />
+        <i3dMapping id="levelArea1Width" node="0>3|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>3|0|1" />
+        <i3dMapping id="paintArea1Start" node="0>3|1" />
+        <i3dMapping id="paintArea1Width" node="0>3|1|0" />
+        <i3dMapping id="paintArea1Height" node="0>3|1|1" />
+        <i3dMapping id="indoorArea1Start" node="0>4|0" />
+        <i3dMapping id="indoorArea1Width" node="0>4|0|0" />
+        <i3dMapping id="indoorArea1Height" node="0>4|0|1" />
+        <i3dMapping id="testArea1Start" node="0>5|0" />
+        <i3dMapping id="testArea1End" node="0>5|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>6|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>6|0|0" />
+        <i3dMapping id="infoTrigger" node="0>7" />
+        <i3dMapping id="warningStripes" node="0>8" />
+        <i3dMapping id="teleportNode" node="0>11" />
+    </i3dMappings>
+</placeable>

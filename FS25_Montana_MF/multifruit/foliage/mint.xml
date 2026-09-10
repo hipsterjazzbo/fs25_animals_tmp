@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<foliageType>
+    <foliageLayer cellSize="8" objectMask="16711935" decalLayer="0" densityMapChannelOffset="0" numDensityMapChannels="4" numBlocksPerUnit="2.5" shapeSource="mint/mint.i3d">
+        <foliageStateDefaults distanceMapLayer="1" widthVariance="0.2" heightVariance="0.5" horizontalPositionVariance="0.5" width="1.0" height="1.0" />
+        <!-- default LOD distances etc -->
+        <foliageLodDefaults lod="0" viewDistance="18"  blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
+        <foliageLodDefaults lod="1" viewDistance="80" blendOutDistance="5" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
+
+        <foliageState name="invisible" />
+
+        <foliageState name="emerged" width="1" height="1" distanceMap="distances/foliage_grass_distance3_diffuse.png" isGrowing="true" regrowthStart="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0>0|0" />
+                <foliageLod blockShape="0>1|0" />
+            </foliageShape>
+        </foliageState>
+
+        <foliageState name="greensmall" width="1" height="1" distanceMap="distances/foliage_grass_distance3_diffuse.png" isGrowing="true" isDestructibleByWheel="true" isDestructibleByDisaster="true" fieldCourseLineHeight="0.3">
+            <foliageShape>
+                <foliageLod blockShape="0>0|1" />
+                <foliageLod blockShape="0>1|1" />
+            </foliageShape>
+        </foliageState>
+		
+        <foliageState name="greenmiddle" width="1" height="1" numBlocksPerUnit="2" distanceMap="distances/foliage_grass_distance4_diffuse.png" isGrowing="true" isDestructibleByWheel="true" isDestructibleByDisaster="true" fieldCourseLineHeight="0.3">
+            <foliageShape>
+                <foliageLod blockShape="0>0|2" />
+                <foliageLod blockShape="0>1|2" />
+            </foliageShape>
+        </foliageState>
+
+        <foliageState name="harvestReady" width="1" height="1" numBlocksPerUnit="2" distanceMap="distances/foliage_grass_distance4_diffuse.png" isGrowing="true" isHarvestReady="true" groundType="HARVEST_READY_OTHER" isDestructibleByWheel="true" isDestructibleByDisaster="true" fieldCourseLineHeight="0.5">
+            <foliageShape>
+                <foliageLod blockShape="0>0|3" />
+                <foliageLod blockShape="0>1|3" />
+            </foliageShape>
+        </foliageState>
+	
+        <foliageState name="cut" width="1" height="1.2" isCut="true" isDestructibleByWheel="true" isDestructibleByDisaster="true" isMulched="true">
+            <foliageShape>
+                <foliageLod blockShape="0>0|4" />
+                <foliageLod blockShape="0>1|4" />
+            </foliageShape>
+        </foliageState>        
+		<foliageState name="tiretracks" width="1" height="0.6" numBlocksPerUnit="1.2" isDestructedByWheel="true" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0>0|4" />
+                <foliageLod blockShape="0>1|4" />
+            </foliageShape>
+        </foliageState>
+    </foliageLayer>
+	
+	<fruitType name="mint" shownOnMap="true" useForFieldMissions="false">
+        	<mapColors default="0.2824 0.3569 0.2156 0.5" colorBlind="0.2824 0.3569 0.2156 0.5"/>
+        	<harvest litersPerSqm="3.21" />
+        	<growth resetsSpray="true" growthRequiresLime="true"/>
+        	<soil lowDensityRequired="false" increasesDensity="false" consumesLime="true" startSprayLevel="1"/>
+        	<seeding directionSnapAngle="0" litersPerSqm="0.0004" isAvailable="true" plantsWeed="false"/>
+        	<cultivation isAllowed="true"/>
+    	</fruitType>
+	
+<growth>
+    <seasonal initialState="invisible">
+        <period name="EARLY_SPRING" plantingAllowed="true"> <!-- March -->
+            <update startState="invisible" endState="emerged" /> <!-- New planting or rhizome sprouting -->
+            <update startState="cut" endState="emerged" /> <!-- New planting or rhizome sprouting -->
+            <update startState="tiretracks" endState="emerged" /> <!-- New planting or rhizome sprouting -->
+        </period>
+        <period name="MID_SPRING"> <!-- April -->
+            <update startState="emerged" endState="greensmall" />
+        </period>
+        <period name="LATE_SPRING">  <!-- May -->
+            <update startState="greensmall" endState="greenmiddle" />
+        </period>
+        <period name="EARLY_SUMMER"> <!-- June -->
+            <update startState="greenmiddle" endState="harvestready" />
+        </period>
+        <period name="MID_SUMMER"> <!-- July -->
+            <update startState="cut" endState="emerged" />
+            <update startState="tiretracks" endState="emerged" />
+        </period>
+        <period name="LATE_SUMMER"> <!-- August -->
+            <update startState="emerged" endState="greensmall" />
+        </period>
+        <period name="EARLY_AUTUMN"> <!-- September -->
+            <update startState="greensmall" endState="greenmiddle" />
+        </period>
+        <period name="MID_AUTUMN"> <!-- October -->
+            <update startState="greenmiddle" endState="harvestready" /> <!-- Last regrowth if cut early -->
+        </period>
+        <period name="LATE_AUTUMN"> <!-- November -->
+            <update startState="greensmall" endState="emerged" />
+            <update startState="greenmiddle" endState="emerged" />
+            <update startState="harvestReady" endState="emerged" />
+            <update startState="cut" endState="emerged" />
+            <update startState="tiretracks" endState="emerged" />
+        </period>
+        <period name="EARLY_WINTER" /> <!-- December -->
+        <period name="MID_WINTER" /> <!-- January -->
+        <period name="LATE_WINTER"/> <!-- February -->
+    </seasonal>
+</growth>
+	
+</foliageType>

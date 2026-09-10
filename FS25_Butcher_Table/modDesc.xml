@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="105">
+    <author>NazzaB82</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Butcher</en>
+         <de>The Fleischerei</de>
+        <fr>Le Boucher</fr>
+        <it>Macellaio</it>
+    </title>
+    <description>
+        <en><![CDATA[Tired of raising animals only to be sold without any real purpose or profit? Now you can give meaning to raising meat animals. With this mod, you'll have a small butcher shop or a butcher's table that you can place in any shed. Have fun!
+]]></en>
+
+        <de><![CDATA[Haben Sie es satt, Tiere nur zum Verkauf zu züchten, ohne dass sie einen wirklichen Sinn oder Gewinn bringen? Jetzt können Sie der Fleischproduktion einen Sinn geben. Mit dieser Mod erhalten Sie eine kleine Metzgerei oder einen Schlachttisch, den Sie in jedem beliebigen Schuppen platzieren können. Viel Spaß!
+]]></de>
+
+        <fr><![CDATA[Vous en avez assez d'élever des animaux pour les vendre sans but précis ni profit ? Donnez un sens à votre élevage ! Ce mod vous offre une petite boucherie ou un établi à installer dans n'importe quel hangar. Amusez-vous bien.
+
+]]></fr>
+        <it><![CDATA[Stanco di allevare animali solo per essere venduti senza un reale scopo e guadagno? ora puoi dare un senso all'allevamento di animali da carne con questa mod avrai a tua disposizione una piccola macelleria oppure un tavolo da macellaio da poter mettere in un qualsiasi capanno, buon divertimento.
+]]></it>
+    </description>
+    <iconFilename>icon_Butcher.dds</iconFilename>
+    <multiplayer supported="true" />
+
+
+    <fillTypes filename="fillTypes/fillTypes.xml"/>
+
+
+    <storeItems>
+        
+        <storeItem xmlFilename="Butcher.xml" />
+        <storeItem xmlFilename="fillTypes/pallets/MeatPallet.xml"/>        
+			<storeItem xmlFilename="fillTypes/pallets/JambonPallet.xml"/>        
+			<storeItem xmlFilename="fillTypes/pallets/sheepMeatPallet.xml"/>        
+			<storeItem xmlFilename="fillTypes/pallets/chickenMeatPallet.xml"/>
+			<storeItem xmlFilename="fillTypes/pallets/horseMeatPallet.xml"/>
+       <storeItem xmlFilename="ButcherTable.xml" />
+
+    </storeItems>
+<placeableTypes>
+        <!-- Required: Register the placeable type -->
+        <type name="extendedProductionPoint" parent="simplePlaceable" className="Placeable" filename="$dataS/scripts/placeables/Placeable.lua" >
+            <specialization name="extendedProductionPoint"/>
+            <specialization name="infoTrigger" />
+        </type>
+    </placeableTypes>
+	
+	<placeableSpecializations>
+        <!-- Required: Add specialization -->
+        <specialization name="extendedProductionPoint" className="PlaceableExtendedProductionPoint" filename="scripts/PlaceableExtendedProductionPoint.lua"/>
+    </placeableSpecializations>	
+	
+	<extraSourceFiles>
+		<sourceFile filename="scripts/PlaceableExtendedProductionPoint.lua" />
+	</extraSourceFiles>	
+
+
+<l10n filenamePrefix="languages/l10n"/>
+
+</modDesc>

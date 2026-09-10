@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="rabbitMeatBox.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="textures/meatBoxLabels.dds"/>
+    <File fileId="4" filename="textures/rabbitMeat_diffuse.png"/>
+    <File fileId="5" filename="textures/rabbitMeat_normal.png"/>
+    <File fileId="6" filename="textures/rabbitMeat_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="meatBoxLabels_mat" materialId="6" specularColor="0.494118 1 0.494118">
+      <Texture fileId="2"/>
+    </Material>
+    <Material name="plasticCrates_mat" materialId="7">
+    </Material>
+    <Material name="rabbitMeat_mat" materialId="8">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="9" diffuseColor="1 1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="rabbitMeatBox.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="meatBox_main_component1" rotation="0 90 0" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.2" clipDistance="200" nodeId="16" castsShadows="false" receiveShadows="false" nonRenderable="true" distanceBlending="false" materialIds="9">
+      <Shape name="meatbox" rotation="0 90 0" shapeId="2" clipDistance="40" nodeId="17" castsShadows="true" receiveShadows="true" materialIds="7">
+        <Shape name="rabbitLabel" translation="-0.000365538 0.0667712 0.364646" scale="0.274695 0.274695 0.274695" shapeId="3" clipDistance="40" nodeId="18" castsShadows="false" receiveShadows="true" materialIds="6"/>
+        <Shape name="rabbitLabel" translation="-0.000365775 0.0667712 -0.364328" rotation="0 180 0" scale="0.274695 0.274695 0.274695" shapeId="3" clipDistance="40" nodeId="19" castsShadows="false" receiveShadows="true" materialIds="6"/>
+      </Shape>
+      <TransformGroup name="visibilityNodes" translation="0 0.005 0" nodeId="20">
+        <Shape name="rabbitMeat" translation="-0.073954 0.146172 -0.187473" shapeId="4" clipDistance="50" nodeId="21" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="rabbitMeat" translation="-0.073954 0.00725234 -0.0823538" shapeId="4" clipDistance="50" nodeId="22" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="rabbitMeat" translation="-0.073954 0.00725234 0.0189731" shapeId="4" clipDistance="50" nodeId="23" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="rabbitMeat" translation="-0.073954 0.00725234 0.106345" shapeId="4" clipDistance="50" nodeId="24" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="rabbitMeat" translation="0.302763 0.00725235 0.026184" rotation="-180 -90 -180" scale="0.960225 1 1" shapeId="4" clipDistance="50" nodeId="25" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="rabbitMeat" translation="0.198264 0.036395 0.026184" rotation="-180 -90 -180" scale="0.960225 1 1" shapeId="4" clipDistance="50" nodeId="26" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="rabbitMeat" translation="-0.134798 0.16 0.187872" rotation="-180 2.73895 -180" shapeId="4" clipDistance="50" nodeId="27" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="rabbitMeat" translation="-0.130243 0.16 0.092655" rotation="-180 2.73895 -180" shapeId="4" clipDistance="50" nodeId="28" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="rabbitMeat" translation="-0.125127 0.16 -0.014277" rotation="-180 2.73895 -180" shapeId="4" clipDistance="50" nodeId="29" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="rabbitMeat" translation="-0.120572 0.086463 -0.109494" rotation="-180 2.73895 -180" shapeId="4" clipDistance="50" nodeId="30" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="rabbitMeat" translation="0.264581 0.16 0.0265073" rotation="-180 -83.3115 -180" scale="0.960225 1 1" shapeId="4" clipDistance="50" nodeId="31" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="rabbitMeat" translation="0.201544 0.0735219 0.019115" rotation="-180 -83.3115 -180" scale="0.960225 1 1" shapeId="4" clipDistance="50" nodeId="39" castsShadows="true" receiveShadows="true" materialIds="8"/>
+      </TransformGroup>
+      <TransformGroup name="dischargeNode" translation="0 0.323216 0" nodeId="32"/>
+      <Shape name="solidColi" shapeId="5" compoundChild="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" density="0.7" nodeId="33" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5"/>
+    </Shape>
+  </Scene>
+
+</i3D>

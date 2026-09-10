@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="openGarden.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.5"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="textures/dirt_diffuse.dds"/>
+    <File fileId="6" filename="textures/straw_diffuse.dds"/>
+    <File fileId="7" filename="$data/fillPlanes/straw_normal.png"/>
+    <File fileId="14" filename="$data/maps/textures/shared/props/boardStack02_diffuse.png"/>
+    <File fileId="15" filename="$data/maps/textures/shared/props/boardStack02_normal.png"/>
+    <File fileId="16" filename="$data/maps/textures/shared/props/boardStack02_specular.png"/>
+    <File fileId="8" filename="$data/placeables/brandless/greenhouses/shared/addons_diffuse.dds"/>
+    <File fileId="9" filename="$data/placeables/brandless/greenhouses/shared/addons_normal.dds"/>
+    <File fileId="10" filename="$data/placeables/brandless/greenhouses/shared/addons_specular.dds"/>
+    <File fileId="2" filename="$data/placeables/brandless/greenhouses/shared/dirt_normal.dds"/>
+    <File fileId="3" filename="$data/placeables/brandless/greenhouses/shared/dirt_specular.dds"/>
+    <File fileId="17" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="11" filename="$data/shared/warningStripes_diffuse.dds"/>
+    <File fileId="12" filename="$data/shared/warningStripes_normal.dds"/>
+    <File fileId="13" filename="$data/shared/warningStripes_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="acmat_1" materialId="5">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="acmat_1" materialId="621" customShaderId="17">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="acmat_1" materialId="6">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+    </Material>
+    <Material name="acmat_3" materialId="7" alphaBlending="true">
+    </Material>
+    <Material name="acmat_5" materialId="8">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="acmat_7" materialId="9" alphaBlending="true">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+    </Material>
+    <Material name="boardStack_mat" materialId="10">
+      <Texture fileId="14"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+    </Material>
+    <Material name="lambert1" materialId="11" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lambert1" materialId="12" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+    <Material name="UnnamedMaterial" materialId="13" diffuseColor="1 1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="openGarden.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="greenhouseMedium" lockedgroup="true" clipDistance="600" nodeId="30">
+      <TransformGroup name="greenHouse" nodeId="31">
+        <TransformGroup name="planters" static="true" clipDistance="125" nodeId="32">
+          <Shape name="Dirt" shapeId="1" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="33" castsShadows="true" receiveShadows="true" materialIds="8"/>
+          <Shape name="Dirt" translation="-7.5741 0 0" shapeId="1" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="34" castsShadows="true" receiveShadows="true" materialIds="8"/>
+          <Shape name="Dirt" translation="7.683 0 0" shapeId="1" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" nodeId="35" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        </TransformGroup>
+        <TransformGroup name="plantNodes" translation="0 -0.03 0" clipDistance="100" nodeId="36">
+          <TransformGroup name="plantNode10000" translation="3.05021 0.098175 10.2354" nodeId="37"/>
+          <TransformGroup name="plantNode2" translation="1.85862 0.0892944 10.1984" rotation="0 48.8238 0" nodeId="38"/>
+          <TransformGroup name="plantNode3" translation="0.622581 0.0927887 10.0793" rotation="180 87.1684 180" nodeId="39"/>
+          <TransformGroup name="plantNode4" translation="-0.573917 0.0955353 9.9782" rotation="-180 -49.8651 -180" nodeId="40"/>
+          <TransformGroup name="plantNode5" translation="-1.87732 0.0811615 10.2298" nodeId="41"/>
+          <TransformGroup name="plantNode6" translation="-3.1396 0.0833588 10.2392" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="42"/>
+          <TransformGroup name="plantNode1" translation="3.05021 0.098175 9.11589" nodeId="43"/>
+          <TransformGroup name="plantNode2" translation="1.85862 0.0892944 9.07887" rotation="0 48.8238 0" nodeId="44"/>
+          <TransformGroup name="plantNode3" translation="0.622581 0.0927887 8.95976" rotation="180 87.1684 180" nodeId="45"/>
+          <TransformGroup name="plantNode4" translation="-0.573917 0.0955353 8.85868" rotation="-180 -49.8651 -180" nodeId="46"/>
+          <TransformGroup name="plantNode5" translation="-1.87732 0.0811615 9.11027" nodeId="47"/>
+          <TransformGroup name="plantNode6" translation="-3.1396 0.0833588 9.11967" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="48"/>
+          <TransformGroup name="plantNode1" translation="3.05021 0.098175 8.04391" nodeId="49"/>
+          <TransformGroup name="plantNode2" translation="1.85862 0.0892944 8.00689" rotation="0 48.8238 0" nodeId="50"/>
+          <TransformGroup name="plantNode3" translation="0.622581 0.0927887 7.88778" rotation="180 87.1684 180" nodeId="51"/>
+          <TransformGroup name="plantNode4" translation="-0.573917 0.0955353 7.7867" rotation="-180 -49.8651 -180" nodeId="52"/>
+          <TransformGroup name="plantNode5" translation="-1.87732 0.0811615 8.03829" nodeId="53"/>
+          <TransformGroup name="plantNode6" translation="-3.1396 0.0833588 8.04769" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="54"/>
+          <TransformGroup name="plantNode1" translation="3.05021 0.098175 6.92439" nodeId="55"/>
+          <TransformGroup name="plantNode2" translation="1.85862 0.0892944 6.88737" rotation="0 48.8238 0" nodeId="56"/>
+          <TransformGroup name="plantNode3" translation="0.622581 0.0927887 6.76826" rotation="180 87.1684 180" nodeId="57"/>
+          <TransformGroup name="plantNode4" translation="-0.573917 0.0955353 6.66718" rotation="-180 -49.8651 -180" nodeId="58"/>
+          <TransformGroup name="plantNode5" translation="-1.87732 0.0811615 6.91877" nodeId="59"/>
+          <TransformGroup name="plantNode6" translation="-3.1396 0.0833588 6.92817" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="60"/>
+          <TransformGroup name="plantNode1" translation="3.05021 0.098175 5.77069" nodeId="61"/>
+          <TransformGroup name="plantNode2" translation="1.85862 0.0892944 5.73367" rotation="0 48.8238 0" nodeId="62"/>
+          <TransformGroup name="plantNode3" translation="0.622581 0.0927887 5.61456" rotation="180 87.1684 180" nodeId="63"/>
+          <TransformGroup name="plantNode4" translation="-0.573917 0.0955353 5.51348" rotation="-180 -49.8651 -180" nodeId="64"/>
+          <TransformGroup name="plantNode5" translation="-1.87732 0.0811615 5.76508" nodeId="65"/>
+          <TransformGroup name="plantNode6" translation="-3.1396 0.0833588 5.77448" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="66"/>
+          <TransformGroup name="plantNode1" translation="3.05021 0.098175 4.65117" nodeId="67"/>
+          <TransformGroup name="plantNode2" translation="1.85862 0.0892944 4.61415" rotation="0 48.8238 0" nodeId="68"/>
+          <TransformGroup name="plantNode3" translation="0.622581 0.0927887 4.49504" rotation="180 87.1684 180" nodeId="69"/>
+          <TransformGroup name="plantNode4" translation="-0.573917 0.0955353 4.39396" rotation="-180 -49.8651 -180" nodeId="70"/>
+          <TransformGroup name="plantNode5" translation="-1.87732 0.0811615 4.64555" nodeId="71"/>
+          <TransformGroup name="plantNode6" translation="-3.1396 0.0833588 4.65495" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="72"/>
+          <TransformGroup name="plantNode1" translation="3.05021 0.098175 3.57919" nodeId="73"/>
+          <TransformGroup name="plantNode2" translation="1.85862 0.0892944 3.54216" rotation="0 48.8238 0" nodeId="74"/>
+          <TransformGroup name="plantNode3" translation="0.622581 0.0927887 3.42306" rotation="180 87.1684 180" nodeId="75"/>
+          <TransformGroup name="plantNode4" translation="-0.573917 0.0955353 3.32198" rotation="-180 -49.8651 -180" nodeId="76"/>
+          <TransformGroup name="plantNode5" translation="-1.87732 0.0811615 3.57357" nodeId="77"/>
+          <TransformGroup name="plantNode6" translation="-3.1396 0.0833588 3.58297" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="78"/>
+          <TransformGroup name="plantNode1" translation="3.05021 0.098175 2.45967" nodeId="79"/>
+          <TransformGroup name="plantNode2" translation="1.85862 0.0892944 2.42265" rotation="0 48.8238 0" nodeId="80"/>
+          <TransformGroup name="plantNode3" translation="0.622581 0.0927887 2.30354" rotation="180 87.1684 180" nodeId="81"/>
+          <TransformGroup name="plantNode4" translation="-0.573917 0.0955353 2.20246" rotation="-180 -49.8651 -180" nodeId="82"/>
+          <TransformGroup name="plantNode5" translation="-1.87732 0.0811615 2.45405" nodeId="83"/>
+          <TransformGroup name="plantNode6" translation="-3.1396 0.0833588 2.46345" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="84"/>
+          <TransformGroup name="plantNode1" translation="3.05021 0.098175 1.3985" nodeId="85"/>
+          <TransformGroup name="plantNode2" translation="1.85862 0.0892944 1.36148" rotation="0 48.8238 0" nodeId="86"/>
+          <TransformGroup name="plantNode3" translation="0.622581 0.0927887 1.24237" rotation="180 87.1684 180" nodeId="87"/>
+          <TransformGroup name="plantNode4" translation="-0.573917 0.0955353 1.14129" rotation="-180 -49.8651 -180" nodeId="88"/>
+          <TransformGroup name="plantNode5" translation="-1.87732 0.0811615 1.39288" nodeId="89"/>
+          <TransformGroup name="plantNode6" translation="-3.1396 0.0833588 1.40228" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="90"/>
+          <TransformGroup name="plantNode1" translation="3.05021 0.098175 0.278976" nodeId="91"/>
+          <TransformGroup name="plantNode2" translation="1.85862 0.0892944 0.241956" rotation="0 48.8238 0" nodeId="92"/>
+          <TransformGroup name="plantNode3" translation="0.622581 0.0927887 0.122848" rotation="180 87.1684 180" nodeId="93"/>
+          <TransformGroup name="plantNode4" translation="-0.573917 0.0955353 0.0217663" rotation="-180 -49.8651 -180" nodeId="94"/>
+          <TransformGroup name="plantNode5" translation="-1.87732 0.0811615 0.273361" nodeId="95"/>
+          <TransformGroup name="plantNode6" translation="-3.1396 0.0833588 0.28276" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="96"/>
+          <TransformGroup name="plantNode1" translation="3.05021 0.098175 -0.793006" nodeId="97"/>
+          <TransformGroup name="plantNode2" translation="1.85862 0.0892944 -0.830029" rotation="0 48.8238 0" nodeId="98"/>
+          <TransformGroup name="plantNode3" translation="0.622581 0.0927887 -0.949135" rotation="180 87.1684 180" nodeId="99"/>
+          <TransformGroup name="plantNode4" translation="-0.573917 0.0955353 -1.05021" rotation="-180 -49.8651 -180" nodeId="100"/>
+          <TransformGroup name="plantNode5" translation="-1.87732 0.0811615 -0.798622" nodeId="101"/>
+          <TransformGroup name="plantNode6" translation="-3.1396 0.0833588 -0.789222" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="102"/>
+          <TransformGroup name="plantNode1" translation="3.05021 0.098175 -1.91252" nodeId="103"/>
+          <TransformGroup name="plantNode2" translation="1.85862 0.0892944 -1.94955" rotation="0 48.8238 0" nodeId="104"/>
+          <TransformGroup name="plantNode3" translation="0.622581 0.0927887 -2.06865" rotation="180 87.1684 180" nodeId="105"/>
+          <TransformGroup name="plantNode4" translation="-0.573917 0.0955353 -2.16974" rotation="-180 -49.8651 -180" nodeId="106"/>
+          <TransformGroup name="plantNode5" translation="-1.87732 0.0811615 -1.91814" nodeId="107"/>
+          <TransformGroup name="plantNode6" translation="-3.1396 0.0833588 -1.90874" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="108"/>
+          <TransformGroup name="plantNode1" translation="3.05021 0.098175 -3.03027" nodeId="109"/>
+          <TransformGroup name="plantNode2" translation="1.85862 0.0892944 -3.06729" rotation="0 48.8238 0" nodeId="110"/>
+          <TransformGroup name="plantNode3" translation="0.622581 0.0927887 -3.1864" rotation="180 87.1684 180" nodeId="111"/>
+          <TransformGroup name="plantNode4" translation="-0.573917 0.0955353 -3.28748" rotation="-180 -49.8651 -180" nodeId="112"/>
+          <TransformGroup name="plantNode5" translation="-1.87732 0.0811615 -3.03589" nodeId="113"/>
+          <TransformGroup name="plantNode6" translation="-3.1396 0.0833588 -3.02649" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="114"/>
+          <TransformGroup name="plantNode1" translation="3.05021 0.098175 -4.14979" nodeId="115"/>
+          <TransformGroup name="plantNode2" translation="1.85862 0.0892944 -4.18681" rotation="0 48.8238 0" nodeId="116"/>
+          <TransformGroup name="plantNode3" translation="0.622581 0.0927887 -4.30592" rotation="180 87.1684 180" nodeId="117"/>
+          <TransformGroup name="plantNode4" translation="-0.573917 0.0955353 -4.407" rotation="-180 -49.8651 -180" nodeId="118"/>
+          <TransformGroup name="plantNode5" translation="-1.87732 0.0811615 -4.15541" nodeId="119"/>
+          <TransformGroup name="plantNode6" translation="-3.1396 0.0833588 -4.14601" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="120"/>
+          <TransformGroup name="plantNode1" translation="3.05021 0.098175 -5.22178" nodeId="121"/>
+          <TransformGroup name="plantNode2" translation="1.85862 0.0892944 -5.2588" rotation="0 48.8238 0" nodeId="122"/>
+          <TransformGroup name="plantNode3" translation="0.622581 0.0927887 -5.37791" rotation="180 87.1684 180" nodeId="123"/>
+          <TransformGroup name="plantNode4" translation="-0.573917 0.0955353 -5.47899" rotation="-180 -49.8651 -180" nodeId="124"/>
+          <TransformGroup name="plantNode5" translation="-1.87732 0.0811615 -5.22739" nodeId="125"/>
+          <TransformGroup name="plantNode6" translation="-3.1396 0.0833588 -5.21799" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="126"/>
+          <TransformGroup name="plantNode1" translation="3.05021 0.098175 -6.3413" nodeId="127"/>
+          <TransformGroup name="plantNode2" translation="1.85862 0.0892944 -6.37832" rotation="0 48.8238 0" nodeId="128"/>
+          <TransformGroup name="plantNode3" translation="0.622581 0.0927887 -6.49743" rotation="180 87.1684 180" nodeId="129"/>
+          <TransformGroup name="plantNode4" translation="-0.573917 0.0955353 -6.59851" rotation="-180 -49.8651 -180" nodeId="130"/>
+          <TransformGroup name="plantNode5" translation="-1.87732 0.0811615 -6.34691" nodeId="131"/>
+          <TransformGroup name="plantNode6" translation="-3.1396 0.0833588 -6.33751" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="132"/>
+          <TransformGroup name="plantNode1" translation="3.05021 0.098175 -7.51465" nodeId="133"/>
+          <TransformGroup name="plantNode2" translation="1.85862 0.0892944 -7.55167" rotation="0 48.8238 0" nodeId="134"/>
+          <TransformGroup name="plantNode3" translation="0.622581 0.0927887 -7.67078" rotation="180 87.1684 180" nodeId="135"/>
+          <TransformGroup name="plantNode4" translation="-0.573917 0.0955353 -7.77186" rotation="-180 -49.8651 -180" nodeId="136"/>
+          <TransformGroup name="plantNode5" translation="-1.87732 0.0811615 -7.52027" nodeId="137"/>
+          <TransformGroup name="plantNode6" translation="-3.1396 0.0833588 -7.51087" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="138"/>
+          <TransformGroup name="plantNode1" translation="3.05021 0.098175 -8.63417" nodeId="139"/>
+          <TransformGroup name="plantNode2" translation="1.85862 0.0892944 -8.67119" rotation="0 48.8238 0" nodeId="140"/>
+          <TransformGroup name="plantNode3" translation="0.622581 0.0927887 -8.7903" rotation="180 87.1684 180" nodeId="141"/>
+          <TransformGroup name="plantNode4" translation="-0.573917 0.0955353 -8.89138" rotation="-180 -49.8651 -180" nodeId="142"/>
+          <TransformGroup name="plantNode5" translation="-1.87732 0.0811615 -8.63979" nodeId="143"/>
+          <TransformGroup name="plantNode6" translation="-3.1396 0.0833588 -8.63039" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="144"/>
+          <TransformGroup name="plantNode1" translation="3.05021 0.098175 -9.70616" nodeId="145"/>
+          <TransformGroup name="plantNode2" translation="1.85862 0.0892944 -9.74318" rotation="0 48.8238 0" nodeId="146"/>
+          <TransformGroup name="plantNode3" translation="0.622581 0.0927887 -9.86229" rotation="180 87.1684 180" nodeId="147"/>
+          <TransformGroup name="plantNode4" translation="-0.573917 0.0955353 -9.96337" rotation="-180 -49.8651 -180" nodeId="148"/>
+          <TransformGroup name="plantNode5" translation="-1.87732 0.0811615 -9.71177" nodeId="149"/>
+          <TransformGroup name="plantNode6" translation="-3.1396 0.0833588 -9.70237" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="150"/>
+          <TransformGroup name="plantNode1" translation="3.05021 0.098175 -10.8257" nodeId="151"/>
+          <TransformGroup name="plantNode2" translation="1.85862 0.0892944 -10.8627" rotation="0 48.8238 0" nodeId="152"/>
+          <TransformGroup name="plantNode3" translation="0.622581 0.0927887 -10.9818" rotation="180 87.1684 180" nodeId="153"/>
+          <TransformGroup name="plantNode4" translation="-0.573917 0.0955353 -11.0829" rotation="-180 -49.8651 -180" nodeId="154"/>
+          <TransformGroup name="plantNode5" translation="-1.87732 0.0811615 -10.8313" nodeId="155"/>
+          <TransformGroup name="plantNode6" translation="-3.1396 0.0833588 -10.8219" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="156"/>
+          <TransformGroup name="plantNode10000" translation="-4.52389 0.098175 10.2354" nodeId="157"/>
+          <TransformGroup name="plantNode2" translation="-5.71548 0.0892944 10.1984" rotation="0 48.8238 0" nodeId="158"/>
+          <TransformGroup name="plantNode3" translation="-6.95152 0.0927887 10.0793" rotation="180 87.1684 180" nodeId="159"/>
+          <TransformGroup name="plantNode4" translation="-8.14802 0.0955353 9.9782" rotation="-180 -49.8651 -180" nodeId="160"/>
+          <TransformGroup name="plantNode5" translation="-9.45142 0.0811615 10.2298" nodeId="161"/>
+          <TransformGroup name="plantNode6" translation="-10.7137 0.0833588 10.2392" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="162"/>
+          <TransformGroup name="plantNode1" translation="-4.52389 0.098175 9.11589" nodeId="163"/>
+          <TransformGroup name="plantNode2" translation="-5.71548 0.0892944 9.07887" rotation="0 48.8238 0" nodeId="164"/>
+          <TransformGroup name="plantNode3" translation="-6.95152 0.0927887 8.95976" rotation="180 87.1684 180" nodeId="165"/>
+          <TransformGroup name="plantNode4" translation="-8.14802 0.0955353 8.85868" rotation="-180 -49.8651 -180" nodeId="166"/>
+          <TransformGroup name="plantNode5" translation="-9.45142 0.0811615 9.11027" nodeId="167"/>
+          <TransformGroup name="plantNode6" translation="-10.7137 0.0833588 9.11967" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="168"/>
+          <TransformGroup name="plantNode1" translation="-4.52389 0.098175 8.04391" nodeId="169"/>
+          <TransformGroup name="plantNode2" translation="-5.71548 0.0892944 8.00689" rotation="0 48.8238 0" nodeId="170"/>
+          <TransformGroup name="plantNode3" translation="-6.95152 0.0927887 7.88778" rotation="180 87.1684 180" nodeId="171"/>
+          <TransformGroup name="plantNode4" translation="-8.14802 0.0955353 7.7867" rotation="-180 -49.8651 -180" nodeId="172"/>
+          <TransformGroup name="plantNode5" translation="-9.45142 0.0811615 8.03829" nodeId="173"/>
+          <TransformGroup name="plantNode6" translation="-10.7137 0.0833588 8.04769" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="174"/>
+          <TransformGroup name="plantNode1" translation="-4.52389 0.098175 6.92439" nodeId="175"/>
+          <TransformGroup name="plantNode2" translation="-5.71548 0.0892944 6.88737" rotation="0 48.8238 0" nodeId="176"/>
+          <TransformGroup name="plantNode3" translation="-6.95152 0.0927887 6.76826" rotation="180 87.1684 180" nodeId="177"/>
+          <TransformGroup name="plantNode4" translation="-8.14802 0.0955353 6.66718" rotation="-180 -49.8651 -180" nodeId="178"/>
+          <TransformGroup name="plantNode5" translation="-9.45142 0.0811615 6.91877" nodeId="179"/>
+          <TransformGroup name="plantNode6" translation="-10.7137 0.0833588 6.92817" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="180"/>
+          <TransformGroup name="plantNode1" translation="-4.52389 0.098175 5.77069" nodeId="181"/>
+          <TransformGroup name="plantNode2" translation="-5.71548 0.0892944 5.73367" rotation="0 48.8238 0" nodeId="182"/>
+          <TransformGroup name="plantNode3" translation="-6.95152 0.0927887 5.61456" rotation="180 87.1684 180" nodeId="183"/>
+          <TransformGroup name="plantNode4" translation="-8.14802 0.0955353 5.51348" rotation="-180 -49.8651 -180" nodeId="184"/>
+          <TransformGroup name="plantNode5" translation="-9.45142 0.0811615 5.76508" nodeId="185"/>
+          <TransformGroup name="plantNode6" translation="-10.7137 0.0833588 5.77448" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="186"/>
+          <TransformGroup name="plantNode1" translation="-4.52389 0.098175 4.65117" nodeId="187"/>
+          <TransformGroup name="plantNode2" translation="-5.71548 0.0892944 4.61415" rotation="0 48.8238 0" nodeId="188"/>
+          <TransformGroup name="plantNode3" translation="-6.95152 0.0927887 4.49504" rotation="180 87.1684 180" nodeId="189"/>
+          <TransformGroup name="plantNode4" translation="-8.14802 0.0955353 4.39396" rotation="-180 -49.8651 -180" nodeId="190"/>
+          <TransformGroup name="plantNode5" translation="-9.45142 0.0811615 4.64555" nodeId="191"/>
+          <TransformGroup name="plantNode6" translation="-10.7137 0.0833588 4.65495" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="192"/>
+          <TransformGroup name="plantNode1" translation="-4.52389 0.098175 3.57919" nodeId="193"/>
+          <TransformGroup name="plantNode2" translation="-5.71548 0.0892944 3.54216" rotation="0 48.8238 0" nodeId="194"/>
+          <TransformGroup name="plantNode3" translation="-6.95152 0.0927887 3.42306" rotation="180 87.1684 180" nodeId="195"/>
+          <TransformGroup name="plantNode4" translation="-8.14802 0.0955353 3.32198" rotation="-180 -49.8651 -180" nodeId="196"/>
+          <TransformGroup name="plantNode5" translation="-9.45142 0.0811615 3.57357" nodeId="197"/>
+          <TransformGroup name="plantNode6" translation="-10.7137 0.0833588 3.58297" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="198"/>
+          <TransformGroup name="plantNode1" translation="-4.52389 0.098175 2.45967" nodeId="199"/>
+          <TransformGroup name="plantNode2" translation="-5.71548 0.0892944 2.42265" rotation="0 48.8238 0" nodeId="200"/>
+          <TransformGroup name="plantNode3" translation="-6.95152 0.0927887 2.30354" rotation="180 87.1684 180" nodeId="201"/>
+          <TransformGroup name="plantNode4" translation="-8.14802 0.0955353 2.20246" rotation="-180 -49.8651 -180" nodeId="202"/>
+          <TransformGroup name="plantNode5" translation="-9.45142 0.0811615 2.45405" nodeId="203"/>
+          <TransformGroup name="plantNode6" translation="-10.7137 0.0833588 2.46345" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="204"/>
+          <TransformGroup name="plantNode1" translation="-4.52389 0.098175 1.3985" nodeId="205"/>
+          <TransformGroup name="plantNode2" translation="-5.71548 0.0892944 1.36148" rotation="0 48.8238 0" nodeId="206"/>
+          <TransformGroup name="plantNode3" translation="-6.95152 0.0927887 1.24237" rotation="180 87.1684 180" nodeId="207"/>
+          <TransformGroup name="plantNode4" translation="-8.14802 0.0955353 1.14129" rotation="-180 -49.8651 -180" nodeId="208"/>
+          <TransformGroup name="plantNode5" translation="-9.45142 0.0811615 1.39288" nodeId="209"/>
+          <TransformGroup name="plantNode6" translation="-10.7137 0.0833588 1.40228" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="210"/>
+          <TransformGroup name="plantNode1" translation="-4.52389 0.098175 0.278976" nodeId="211"/>
+          <TransformGroup name="plantNode2" translation="-5.71548 0.0892944 0.241956" rotation="0 48.8238 0" nodeId="212"/>
+          <TransformGroup name="plantNode3" translation="-6.95152 0.0927887 0.122848" rotation="180 87.1684 180" nodeId="213"/>
+          <TransformGroup name="plantNode4" translation="-8.14802 0.0955353 0.0217663" rotation="-180 -49.8651 -180" nodeId="214"/>
+          <TransformGroup name="plantNode5" translation="-9.45142 0.0811615 0.273361" nodeId="215"/>
+          <TransformGroup name="plantNode6" translation="-10.7137 0.0833588 0.28276" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="216"/>
+          <TransformGroup name="plantNode1" translation="-4.52389 0.098175 -0.793006" nodeId="217"/>
+          <TransformGroup name="plantNode2" translation="-5.71548 0.0892944 -0.830029" rotation="0 48.8238 0" nodeId="218"/>
+          <TransformGroup name="plantNode3" translation="-6.95152 0.0927887 -0.949135" rotation="180 87.1684 180" nodeId="219"/>
+          <TransformGroup name="plantNode4" translation="-8.14802 0.0955353 -1.05021" rotation="-180 -49.8651 -180" nodeId="220"/>
+          <TransformGroup name="plantNode5" translation="-9.45142 0.0811615 -0.798622" nodeId="221"/>
+          <TransformGroup name="plantNode6" translation="-10.7137 0.0833588 -0.789222" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="222"/>
+          <TransformGroup name="plantNode1" translation="-4.52389 0.098175 -1.91252" nodeId="223"/>
+          <TransformGroup name="plantNode2" translation="-5.71548 0.0892944 -1.94955" rotation="0 48.8238 0" nodeId="224"/>
+          <TransformGroup name="plantNode3" translation="-6.95152 0.0927887 -2.06865" rotation="180 87.1684 180" nodeId="225"/>
+          <TransformGroup name="plantNode4" translation="-8.14802 0.0955353 -2.16974" rotation="-180 -49.8651 -180" nodeId="226"/>
+          <TransformGroup name="plantNode5" translation="-9.45142 0.0811615 -1.91814" nodeId="227"/>
+          <TransformGroup name="plantNode6" translation="-10.7137 0.0833588 -1.90874" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="228"/>
+          <TransformGroup name="plantNode1" translation="-4.52389 0.098175 -3.03027" nodeId="229"/>
+          <TransformGroup name="plantNode2" translation="-5.71548 0.0892944 -3.06729" rotation="0 48.8238 0" nodeId="230"/>
+          <TransformGroup name="plantNode3" translation="-6.95152 0.0927887 -3.1864" rotation="180 87.1684 180" nodeId="231"/>
+          <TransformGroup name="plantNode4" translation="-8.14802 0.0955353 -3.28748" rotation="-180 -49.8651 -180" nodeId="232"/>
+          <TransformGroup name="plantNode5" translation="-9.45142 0.0811615 -3.03589" nodeId="233"/>
+          <TransformGroup name="plantNode6" translation="-10.7137 0.0833588 -3.02649" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="234"/>
+          <TransformGroup name="plantNode1" translation="-4.52389 0.098175 -4.14979" nodeId="235"/>
+          <TransformGroup name="plantNode2" translation="-5.71548 0.0892944 -4.18681" rotation="0 48.8238 0" nodeId="236"/>
+          <TransformGroup name="plantNode3" translation="-6.95152 0.0927887 -4.30592" rotation="180 87.1684 180" nodeId="237"/>
+          <TransformGroup name="plantNode4" translation="-8.14802 0.0955353 -4.407" rotation="-180 -49.8651 -180" nodeId="238"/>
+          <TransformGroup name="plantNode5" translation="-9.45142 0.0811615 -4.15541" nodeId="239"/>
+          <TransformGroup name="plantNode6" translation="-10.7137 0.0833588 -4.14601" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="240"/>
+          <TransformGroup name="plantNode1" translation="-4.52389 0.098175 -5.22178" nodeId="241"/>
+          <TransformGroup name="plantNode2" translation="-5.71548 0.0892944 -5.2588" rotation="0 48.8238 0" nodeId="242"/>
+          <TransformGroup name="plantNode3" translation="-6.95152 0.0927887 -5.37791" rotation="180 87.1684 180" nodeId="243"/>
+          <TransformGroup name="plantNode4" translation="-8.14802 0.0955353 -5.47899" rotation="-180 -49.8651 -180" nodeId="244"/>
+          <TransformGroup name="plantNode5" translation="-9.45142 0.0811615 -5.22739" nodeId="245"/>
+          <TransformGroup name="plantNode6" translation="-10.7137 0.0833588 -5.21799" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="246"/>
+          <TransformGroup name="plantNode1" translation="-4.52389 0.098175 -6.3413" nodeId="247"/>
+          <TransformGroup name="plantNode2" translation="-5.71548 0.0892944 -6.37832" rotation="0 48.8238 0" nodeId="248"/>
+          <TransformGroup name="plantNode3" translation="-6.95152 0.0927887 -6.49743" rotation="180 87.1684 180" nodeId="249"/>
+          <TransformGroup name="plantNode4" translation="-8.14802 0.0955353 -6.59851" rotation="-180 -49.8651 -180" nodeId="250"/>
+          <TransformGroup name="plantNode5" translation="-9.45142 0.0811615 -6.34691" nodeId="251"/>
+          <TransformGroup name="plantNode6" translation="-10.7137 0.0833588 -6.33751" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="252"/>
+          <TransformGroup name="plantNode1" translation="-4.52389 0.098175 -7.51465" nodeId="253"/>
+          <TransformGroup name="plantNode2" translation="-5.71548 0.0892944 -7.55167" rotation="0 48.8238 0" nodeId="254"/>
+          <TransformGroup name="plantNode3" translation="-6.95152 0.0927887 -7.67078" rotation="180 87.1684 180" nodeId="255"/>
+          <TransformGroup name="plantNode4" translation="-8.14802 0.0955353 -7.77186" rotation="-180 -49.8651 -180" nodeId="256"/>
+          <TransformGroup name="plantNode5" translation="-9.45142 0.0811615 -7.52027" nodeId="257"/>
+          <TransformGroup name="plantNode6" translation="-10.7137 0.0833588 -7.51087" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="258"/>
+          <TransformGroup name="plantNode1" translation="-4.52389 0.098175 -8.63417" nodeId="259"/>
+          <TransformGroup name="plantNode2" translation="-5.71548 0.0892944 -8.67119" rotation="0 48.8238 0" nodeId="260"/>
+          <TransformGroup name="plantNode3" translation="-6.95152 0.0927887 -8.7903" rotation="180 87.1684 180" nodeId="261"/>
+          <TransformGroup name="plantNode4" translation="-8.14802 0.0955353 -8.89138" rotation="-180 -49.8651 -180" nodeId="262"/>
+          <TransformGroup name="plantNode5" translation="-9.45142 0.0811615 -8.63979" nodeId="263"/>
+          <TransformGroup name="plantNode6" translation="-10.7137 0.0833588 -8.63039" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="264"/>
+          <TransformGroup name="plantNode1" translation="-4.52389 0.098175 -9.70616" nodeId="265"/>
+          <TransformGroup name="plantNode2" translation="-5.71548 0.0892944 -9.74318" rotation="0 48.8238 0" nodeId="266"/>
+          <TransformGroup name="plantNode3" translation="-6.95152 0.0927887 -9.86229" rotation="180 87.1684 180" nodeId="267"/>
+          <TransformGroup name="plantNode4" translation="-8.14802 0.0955353 -9.96337" rotation="-180 -49.8651 -180" nodeId="268"/>
+          <TransformGroup name="plantNode5" translation="-9.45142 0.0811615 -9.71177" nodeId="269"/>
+          <TransformGroup name="plantNode6" translation="-10.7137 0.0833588 -9.70237" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="270"/>
+          <TransformGroup name="plantNode1" translation="-4.52389 0.098175 -10.8257" nodeId="271"/>
+          <TransformGroup name="plantNode2" translation="-5.71548 0.0892944 -10.8627" rotation="0 48.8238 0" nodeId="272"/>
+          <TransformGroup name="plantNode3" translation="-6.95152 0.0927887 -10.9818" rotation="180 87.1684 180" nodeId="273"/>
+          <TransformGroup name="plantNode4" translation="-8.14802 0.0955353 -11.0829" rotation="-180 -49.8651 -180" nodeId="274"/>
+          <TransformGroup name="plantNode5" translation="-9.45142 0.0811615 -10.8313" nodeId="275"/>
+          <TransformGroup name="plantNode6" translation="-10.7137 0.0833588 -10.8219" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="276"/>
+          <TransformGroup name="plantNode10000" translation="10.7331 0.098175 10.2354" nodeId="277"/>
+          <TransformGroup name="plantNode2" translation="9.54149 0.0892944 10.1984" rotation="0 48.8238 0" nodeId="278"/>
+          <TransformGroup name="plantNode3" translation="8.30545 0.0927887 10.0793" rotation="180 87.1684 180" nodeId="279"/>
+          <TransformGroup name="plantNode4" translation="7.10895 0.0955353 9.9782" rotation="-180 -49.8651 -180" nodeId="280"/>
+          <TransformGroup name="plantNode5" translation="5.80555 0.0811615 10.2298" nodeId="281"/>
+          <TransformGroup name="plantNode6" translation="4.54327 0.0833588 10.2392" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="282"/>
+          <TransformGroup name="plantNode1" translation="10.7331 0.098175 9.11589" nodeId="283"/>
+          <TransformGroup name="plantNode2" translation="9.54149 0.0892944 9.07887" rotation="0 48.8238 0" nodeId="284"/>
+          <TransformGroup name="plantNode3" translation="8.30545 0.0927887 8.95976" rotation="180 87.1684 180" nodeId="285"/>
+          <TransformGroup name="plantNode4" translation="7.10895 0.0955353 8.85868" rotation="-180 -49.8651 -180" nodeId="286"/>
+          <TransformGroup name="plantNode5" translation="5.80555 0.0811615 9.11027" nodeId="287"/>
+          <TransformGroup name="plantNode6" translation="4.54327 0.0833588 9.11967" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="288"/>
+          <TransformGroup name="plantNode1" translation="10.7331 0.098175 8.04391" nodeId="289"/>
+          <TransformGroup name="plantNode2" translation="9.54149 0.0892944 8.00689" rotation="0 48.8238 0" nodeId="290"/>
+          <TransformGroup name="plantNode3" translation="8.30545 0.0927887 7.88778" rotation="180 87.1684 180" nodeId="291"/>
+          <TransformGroup name="plantNode4" translation="7.10895 0.0955353 7.7867" rotation="-180 -49.8651 -180" nodeId="292"/>
+          <TransformGroup name="plantNode5" translation="5.80555 0.0811615 8.03829" nodeId="293"/>
+          <TransformGroup name="plantNode6" translation="4.54327 0.0833588 8.04769" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="294"/>
+          <TransformGroup name="plantNode1" translation="10.7331 0.098175 6.92439" nodeId="295"/>
+          <TransformGroup name="plantNode2" translation="9.54149 0.0892944 6.88737" rotation="0 48.8238 0" nodeId="296"/>
+          <TransformGroup name="plantNode3" translation="8.30545 0.0927887 6.76826" rotation="180 87.1684 180" nodeId="297"/>
+          <TransformGroup name="plantNode4" translation="7.10895 0.0955353 6.66718" rotation="-180 -49.8651 -180" nodeId="298"/>
+          <TransformGroup name="plantNode5" translation="5.80555 0.0811615 6.91877" nodeId="299"/>
+          <TransformGroup name="plantNode6" translation="4.54327 0.0833588 6.92817" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="300"/>
+          <TransformGroup name="plantNode1" translation="10.7331 0.098175 5.77069" nodeId="301"/>
+          <TransformGroup name="plantNode2" translation="9.54149 0.0892944 5.73367" rotation="0 48.8238 0" nodeId="302"/>
+          <TransformGroup name="plantNode3" translation="8.30545 0.0927887 5.61456" rotation="180 87.1684 180" nodeId="303"/>
+          <TransformGroup name="plantNode4" translation="7.10895 0.0955353 5.51348" rotation="-180 -49.8651 -180" nodeId="304"/>
+          <TransformGroup name="plantNode5" translation="5.80555 0.0811615 5.76508" nodeId="305"/>
+          <TransformGroup name="plantNode6" translation="4.54327 0.0833588 5.77448" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="306"/>
+          <TransformGroup name="plantNode1" translation="10.7331 0.098175 4.65117" nodeId="307"/>
+          <TransformGroup name="plantNode2" translation="9.54149 0.0892944 4.61415" rotation="0 48.8238 0" nodeId="308"/>
+          <TransformGroup name="plantNode3" translation="8.30545 0.0927887 4.49504" rotation="180 87.1684 180" nodeId="309"/>
+          <TransformGroup name="plantNode4" translation="7.10895 0.0955353 4.39396" rotation="-180 -49.8651 -180" nodeId="310"/>
+          <TransformGroup name="plantNode5" translation="5.80555 0.0811615 4.64555" nodeId="311"/>
+          <TransformGroup name="plantNode6" translation="4.54327 0.0833588 4.65495" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="312"/>
+          <TransformGroup name="plantNode1" translation="10.7331 0.098175 3.57919" nodeId="313"/>
+          <TransformGroup name="plantNode2" translation="9.54149 0.0892944 3.54216" rotation="0 48.8238 0" nodeId="314"/>
+          <TransformGroup name="plantNode3" translation="8.30545 0.0927887 3.42306" rotation="180 87.1684 180" nodeId="315"/>
+          <TransformGroup name="plantNode4" translation="7.10895 0.0955353 3.32198" rotation="-180 -49.8651 -180" nodeId="316"/>
+          <TransformGroup name="plantNode5" translation="5.80555 0.0811615 3.57357" nodeId="317"/>
+          <TransformGroup name="plantNode6" translation="4.54327 0.0833588 3.58297" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="318"/>
+          <TransformGroup name="plantNode1" translation="10.7331 0.098175 2.45967" nodeId="319"/>
+          <TransformGroup name="plantNode2" translation="9.54149 0.0892944 2.42265" rotation="0 48.8238 0" nodeId="320"/>
+          <TransformGroup name="plantNode3" translation="8.30545 0.0927887 2.30354" rotation="180 87.1684 180" nodeId="321"/>
+          <TransformGroup name="plantNode4" translation="7.10895 0.0955353 2.20246" rotation="-180 -49.8651 -180" nodeId="322"/>
+          <TransformGroup name="plantNode5" translation="5.80555 0.0811615 2.45405" nodeId="323"/>
+          <TransformGroup name="plantNode6" translation="4.54327 0.0833588 2.46345" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="324"/>
+          <TransformGroup name="plantNode1" translation="10.7331 0.098175 1.3985" nodeId="325"/>
+          <TransformGroup name="plantNode2" translation="9.54149 0.0892944 1.36148" rotation="0 48.8238 0" nodeId="326"/>
+          <TransformGroup name="plantNode3" translation="8.30545 0.0927887 1.24237" rotation="180 87.1684 180" nodeId="327"/>
+          <TransformGroup name="plantNode4" translation="7.10895 0.0955353 1.14129" rotation="-180 -49.8651 -180" nodeId="328"/>
+          <TransformGroup name="plantNode5" translation="5.80555 0.0811615 1.39288" nodeId="329"/>
+          <TransformGroup name="plantNode6" translation="4.54327 0.0833588 1.40228" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="330"/>
+          <TransformGroup name="plantNode1" translation="10.7331 0.098175 0.278976" nodeId="331"/>
+          <TransformGroup name="plantNode2" translation="9.54149 0.0892944 0.241956" rotation="0 48.8238 0" nodeId="332"/>
+          <TransformGroup name="plantNode3" translation="8.30545 0.0927887 0.122848" rotation="180 87.1684 180" nodeId="333"/>
+          <TransformGroup name="plantNode4" translation="7.10895 0.0955353 0.0217663" rotation="-180 -49.8651 -180" nodeId="334"/>
+          <TransformGroup name="plantNode5" translation="5.80555 0.0811615 0.273361" nodeId="335"/>
+          <TransformGroup name="plantNode6" translation="4.54327 0.0833588 0.28276" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="336"/>
+          <TransformGroup name="plantNode1" translation="10.7331 0.098175 -0.793006" nodeId="337"/>
+          <TransformGroup name="plantNode2" translation="9.54149 0.0892944 -0.830029" rotation="0 48.8238 0" nodeId="338"/>
+          <TransformGroup name="plantNode3" translation="8.30545 0.0927887 -0.949135" rotation="180 87.1684 180" nodeId="339"/>
+          <TransformGroup name="plantNode4" translation="7.10895 0.0955353 -1.05021" rotation="-180 -49.8651 -180" nodeId="340"/>
+          <TransformGroup name="plantNode5" translation="5.80555 0.0811615 -0.798622" nodeId="341"/>
+          <TransformGroup name="plantNode6" translation="4.54327 0.0833588 -0.789222" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="342"/>
+          <TransformGroup name="plantNode1" translation="10.7331 0.098175 -1.91252" nodeId="343"/>
+          <TransformGroup name="plantNode2" translation="9.54149 0.0892944 -1.94955" rotation="0 48.8238 0" nodeId="344"/>
+          <TransformGroup name="plantNode3" translation="8.30545 0.0927887 -2.06865" rotation="180 87.1684 180" nodeId="345"/>
+          <TransformGroup name="plantNode4" translation="7.10895 0.0955353 -2.16974" rotation="-180 -49.8651 -180" nodeId="346"/>
+          <TransformGroup name="plantNode5" translation="5.80555 0.0811615 -1.91814" nodeId="347"/>
+          <TransformGroup name="plantNode6" translation="4.54327 0.0833588 -1.90874" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="348"/>
+          <TransformGroup name="plantNode1" translation="10.7331 0.098175 -3.03027" nodeId="349"/>
+          <TransformGroup name="plantNode2" translation="9.54149 0.0892944 -3.06729" rotation="0 48.8238 0" nodeId="350"/>
+          <TransformGroup name="plantNode3" translation="8.30545 0.0927887 -3.1864" rotation="180 87.1684 180" nodeId="351"/>
+          <TransformGroup name="plantNode4" translation="7.10895 0.0955353 -3.28748" rotation="-180 -49.8651 -180" nodeId="352"/>
+          <TransformGroup name="plantNode5" translation="5.80555 0.0811615 -3.03589" nodeId="353"/>
+          <TransformGroup name="plantNode6" translation="4.54327 0.0833588 -3.02649" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="354"/>
+          <TransformGroup name="plantNode1" translation="10.7331 0.098175 -4.14979" nodeId="355"/>
+          <TransformGroup name="plantNode2" translation="9.54149 0.0892944 -4.18681" rotation="0 48.8238 0" nodeId="356"/>
+          <TransformGroup name="plantNode3" translation="8.30545 0.0927887 -4.30592" rotation="180 87.1684 180" nodeId="357"/>
+          <TransformGroup name="plantNode4" translation="7.10895 0.0955353 -4.407" rotation="-180 -49.8651 -180" nodeId="358"/>
+          <TransformGroup name="plantNode5" translation="5.80555 0.0811615 -4.15541" nodeId="359"/>
+          <TransformGroup name="plantNode6" translation="4.54327 0.0833588 -4.14601" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="360"/>
+          <TransformGroup name="plantNode1" translation="10.7331 0.098175 -5.22178" nodeId="361"/>
+          <TransformGroup name="plantNode2" translation="9.54149 0.0892944 -5.2588" rotation="0 48.8238 0" nodeId="362"/>
+          <TransformGroup name="plantNode3" translation="8.30545 0.0927887 -5.37791" rotation="180 87.1684 180" nodeId="363"/>
+          <TransformGroup name="plantNode4" translation="7.10895 0.0955353 -5.47899" rotation="-180 -49.8651 -180" nodeId="364"/>
+          <TransformGroup name="plantNode5" translation="5.80555 0.0811615 -5.22739" nodeId="365"/>
+          <TransformGroup name="plantNode6" translation="4.54327 0.0833588 -5.21799" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="366"/>
+          <TransformGroup name="plantNode1" translation="10.7331 0.098175 -6.3413" nodeId="367"/>
+          <TransformGroup name="plantNode2" translation="9.54149 0.0892944 -6.37832" rotation="0 48.8238 0" nodeId="368"/>
+          <TransformGroup name="plantNode3" translation="8.30545 0.0927887 -6.49743" rotation="180 87.1684 180" nodeId="369"/>
+          <TransformGroup name="plantNode4" translation="7.10895 0.0955353 -6.59851" rotation="-180 -49.8651 -180" nodeId="370"/>
+          <TransformGroup name="plantNode5" translation="5.80555 0.0811615 -6.34691" nodeId="371"/>
+          <TransformGroup name="plantNode6" translation="4.54327 0.0833588 -6.33751" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="372"/>
+          <TransformGroup name="plantNode1" translation="10.7331 0.098175 -7.51465" nodeId="373"/>
+          <TransformGroup name="plantNode2" translation="9.54149 0.0892944 -7.55167" rotation="0 48.8238 0" nodeId="374"/>
+          <TransformGroup name="plantNode3" translation="8.30545 0.0927887 -7.67078" rotation="180 87.1684 180" nodeId="375"/>
+          <TransformGroup name="plantNode4" translation="7.10895 0.0955353 -7.77186" rotation="-180 -49.8651 -180" nodeId="376"/>
+          <TransformGroup name="plantNode5" translation="5.80555 0.0811615 -7.52027" nodeId="377"/>
+          <TransformGroup name="plantNode6" translation="4.54327 0.0833588 -7.51087" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="378"/>
+          <TransformGroup name="plantNode1" translation="10.7331 0.098175 -8.63417" nodeId="379"/>
+          <TransformGroup name="plantNode2" translation="9.54149 0.0892944 -8.67119" rotation="0 48.8238 0" nodeId="380"/>
+          <TransformGroup name="plantNode3" translation="8.30545 0.0927887 -8.7903" rotation="180 87.1684 180" nodeId="381"/>
+          <TransformGroup name="plantNode4" translation="7.10895 0.0955353 -8.89138" rotation="-180 -49.8651 -180" nodeId="382"/>
+          <TransformGroup name="plantNode5" translation="5.80555 0.0811615 -8.63979" nodeId="383"/>
+          <TransformGroup name="plantNode6" translation="4.54327 0.0833588 -8.63039" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="384"/>
+          <TransformGroup name="plantNode1" translation="10.7331 0.098175 -9.70616" nodeId="385"/>
+          <TransformGroup name="plantNode2" translation="9.54149 0.0892944 -9.74318" rotation="0 48.8238 0" nodeId="386"/>
+          <TransformGroup name="plantNode3" translation="8.30545 0.0927887 -9.86229" rotation="180 87.1684 180" nodeId="387"/>
+          <TransformGroup name="plantNode4" translation="7.10895 0.0955353 -9.96337" rotation="-180 -49.8651 -180" nodeId="388"/>
+          <TransformGroup name="plantNode5" translation="5.80555 0.0811615 -9.71177" nodeId="389"/>
+          <TransformGroup name="plantNode6" translation="4.54327 0.0833588 -9.70237" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="390"/>
+          <TransformGroup name="plantNode1" translation="10.7331 0.098175 -10.8257" nodeId="391"/>
+          <TransformGroup name="plantNode2" translation="9.54149 0.0892944 -10.8627" rotation="0 48.8238 0" nodeId="392"/>
+          <TransformGroup name="plantNode3" translation="8.30545 0.0927887 -10.9818" rotation="180 87.1684 180" nodeId="393"/>
+          <TransformGroup name="plantNode4" translation="7.10895 0.0955353 -11.0829" rotation="-180 -49.8651 -180" nodeId="394"/>
+          <TransformGroup name="plantNode5" translation="5.80555 0.0811615 -10.8313" nodeId="395"/>
+          <TransformGroup name="plantNode6" translation="4.54327 0.0833588 -10.8219" rotation="5.05559e-05 -88.3496 -3.69156e-05" nodeId="396"/>
+        </TransformGroup>
+        <TransformGroup name="effectNodes" translation="0 -0.0299942 0" nodeId="397">
+          <TransformGroup name="effectNode1" translation="2.53521 2.60432 -6.9343" nodeId="398"/>
+          <TransformGroup name="effectNode2" translation="2.53521 2.60432 -6.15064" nodeId="399"/>
+          <TransformGroup name="effectNode3" translation="2.53521 2.60432 -5.62853" nodeId="400"/>
+          <TransformGroup name="effectNode4" translation="2.53521 2.60432 -4.79515" nodeId="401"/>
+          <TransformGroup name="effectNode5" translation="2.53521 2.60432 -4.27555" nodeId="402"/>
+          <TransformGroup name="effectNode6" translation="2.53521 2.60432 -3.60198" nodeId="403"/>
+          <TransformGroup name="effectNode7" translation="2.53521 2.60432 -3.08572" nodeId="404"/>
+          <TransformGroup name="effectNode8" translation="2.53521 2.60432 -2.249" nodeId="405"/>
+          <TransformGroup name="effectNode9" translation="2.53521 2.60432 -1.73107" nodeId="406"/>
+          <TransformGroup name="effectNode10" translation="2.53521 2.60432 -0.950829" nodeId="407"/>
+          <TransformGroup name="effectNode11" translation="2.53521 2.60432 -0.434394" nodeId="408"/>
+          <TransformGroup name="effectNode12" translation="2.53521 2.60432 0.405092" nodeId="409"/>
+          <TransformGroup name="effectNode13" translation="2.53521 2.60432 0.923762" nodeId="410"/>
+          <TransformGroup name="effectNode14" translation="2.53521 2.60432 1.64923" nodeId="411"/>
+          <TransformGroup name="effectNode15" translation="2.53521 2.60432 2.17014" nodeId="412"/>
+          <TransformGroup name="effectNode16" translation="2.53521 2.60432 3.00794" nodeId="413"/>
+          <TransformGroup name="effectNode17" translation="2.53521 2.60432 3.52288" nodeId="414"/>
+          <TransformGroup name="effectNode18" translation="2.53521 2.60432 4.20064" nodeId="415"/>
+          <TransformGroup name="effectNode19" translation="2.53521 2.60432 4.71608" nodeId="416"/>
+          <TransformGroup name="effectNode20" translation="2.53521 2.60432 5.55253" nodeId="417"/>
+          <TransformGroup name="effectNode21" translation="2.53521 2.60432 6.07106" nodeId="418"/>
+          <TransformGroup name="effectNode22" translation="2.53521 2.60432 6.85346" nodeId="419"/>
+          <TransformGroup name="effectNode23" translation="1.80152 2.60432 6.85346" nodeId="420"/>
+          <TransformGroup name="effectNode24" translation="1.80152 2.60432 6.07106" nodeId="421"/>
+          <TransformGroup name="effectNode25" translation="1.80152 2.60432 5.55253" nodeId="422"/>
+          <TransformGroup name="effectNode26" translation="1.80152 2.60432 4.71608" nodeId="423"/>
+          <TransformGroup name="effectNode27" translation="1.80152 2.60432 4.20064" nodeId="424"/>
+          <TransformGroup name="effectNode28" translation="1.80152 2.60432 3.52288" nodeId="425"/>
+          <TransformGroup name="effectNode29" translation="1.80152 2.60432 3.00794" nodeId="426"/>
+          <TransformGroup name="effectNode30" translation="1.80152 2.60432 2.17014" nodeId="427"/>
+          <TransformGroup name="effectNode31" translation="1.80152 2.60432 1.64923" nodeId="428"/>
+          <TransformGroup name="effectNode32" translation="1.80152 2.60432 0.923762" nodeId="429"/>
+          <TransformGroup name="effectNode33" translation="1.80152 2.60432 0.405092" nodeId="430"/>
+          <TransformGroup name="effectNode34" translation="1.80152 2.60432 -0.434394" nodeId="431"/>
+          <TransformGroup name="effectNode35" translation="1.80152 2.60432 -0.950829" nodeId="432"/>
+          <TransformGroup name="effectNode36" translation="1.80152 2.60432 -1.73107" nodeId="433"/>
+          <TransformGroup name="effectNode37" translation="1.80152 2.60432 -2.249" nodeId="434"/>
+          <TransformGroup name="effectNode38" translation="1.80152 2.60432 -3.08572" nodeId="435"/>
+          <TransformGroup name="effectNode39" translation="1.80152 2.60432 -3.60198" nodeId="436"/>
+          <TransformGroup name="effectNode40" translation="1.80152 2.60432 -4.27555" nodeId="437"/>
+          <TransformGroup name="effectNode41" translation="1.80152 2.60432 -4.79515" nodeId="438"/>
+          <TransformGroup name="effectNode42" translation="1.80152 2.60432 -5.62853" nodeId="439"/>
+          <TransformGroup name="effectNode43" translation="1.80152 2.60432 -6.15064" nodeId="440"/>
+          <TransformGroup name="effectNode44" translation="1.80152 2.60432 -6.9343" nodeId="441"/>
+          <TransformGroup name="effectNode45" translation="-1.7986 2.60432 -6.9343" nodeId="442"/>
+          <TransformGroup name="effectNode46" translation="-1.7986 2.60432 -6.15064" nodeId="443"/>
+          <TransformGroup name="effectNode47" translation="-1.7986 2.60432 -5.62853" nodeId="444"/>
+          <TransformGroup name="effectNode48" translation="-1.7986 2.60432 -4.79515" nodeId="445"/>
+          <TransformGroup name="effectNode49" translation="-1.7986 2.60432 -4.27555" nodeId="446"/>
+          <TransformGroup name="effectNode50" translation="-1.7986 2.60432 -3.60198" nodeId="447"/>
+          <TransformGroup name="effectNode51" translation="-1.7986 2.60432 -3.08572" nodeId="448"/>
+          <TransformGroup name="effectNode52" translation="-1.7986 2.60432 -2.249" nodeId="449"/>
+          <TransformGroup name="effectNode53" translation="-1.7986 2.60432 -1.73107" nodeId="450"/>
+          <TransformGroup name="effectNode54" translation="-1.7986 2.60432 -0.950829" nodeId="451"/>
+          <TransformGroup name="effectNode55" translation="-1.7986 2.60432 -0.434394" nodeId="452"/>
+          <TransformGroup name="effectNode56" translation="-1.7986 2.60432 0.405092" nodeId="453"/>
+          <TransformGroup name="effectNode57" translation="-1.7986 2.60432 0.923762" nodeId="454"/>
+          <TransformGroup name="effectNode58" translation="-1.7986 2.60432 1.64923" nodeId="455"/>
+          <TransformGroup name="effectNode59" translation="-1.7986 2.60432 2.17014" nodeId="456"/>
+          <TransformGroup name="effectNode60" translation="-1.7986 2.60432 3.00794" nodeId="457"/>
+          <TransformGroup name="effectNode61" translation="-1.7986 2.60432 3.52288" nodeId="458"/>
+          <TransformGroup name="effectNode62" translation="-1.7986 2.60432 4.20064" nodeId="459"/>
+          <TransformGroup name="effectNode63" translation="-1.7986 2.60432 4.71608" nodeId="460"/>
+          <TransformGroup name="effectNode64" translation="-1.7986 2.60432 5.55253" nodeId="461"/>
+          <TransformGroup name="effectNode65" translation="-1.7986 2.60432 6.07106" nodeId="462"/>
+          <TransformGroup name="effectNode66" translation="-1.7986 2.60432 6.85346" nodeId="463"/>
+          <TransformGroup name="effectNode67" translation="-2.53229 2.60432 6.85346" nodeId="464"/>
+          <TransformGroup name="effectNode68" translation="-2.53229 2.60432 6.07106" nodeId="465"/>
+          <TransformGroup name="effectNode69" translation="-2.53229 2.60432 5.55253" nodeId="466"/>
+          <TransformGroup name="effectNode70" translation="-2.53229 2.60432 4.71608" nodeId="467"/>
+          <TransformGroup name="effectNode71" translation="-2.53229 2.60432 4.20064" nodeId="468"/>
+          <TransformGroup name="effectNode72" translation="-2.53229 2.60432 3.52288" nodeId="469"/>
+          <TransformGroup name="effectNode73" translation="-2.53229 2.60432 3.00794" nodeId="470"/>
+          <TransformGroup name="effectNode74" translation="-2.53229 2.60432 2.17014" nodeId="471"/>
+          <TransformGroup name="effectNode75" translation="-2.53229 2.60432 1.64923" nodeId="472"/>
+          <TransformGroup name="effectNode76" translation="-2.53229 2.60432 0.923762" nodeId="473"/>
+          <TransformGroup name="effectNode77" translation="-2.53229 2.60432 0.405092" nodeId="474"/>
+          <TransformGroup name="effectNode78" translation="-2.53229 2.60432 -0.434394" nodeId="475"/>
+          <TransformGroup name="effectNode79" translation="-2.53229 2.60432 -0.950829" nodeId="476"/>
+          <TransformGroup name="effectNode80" translation="-2.53229 2.60432 -1.73107" nodeId="477"/>
+          <TransformGroup name="effectNode81" translation="-2.53229 2.60432 -2.249" nodeId="478"/>
+          <TransformGroup name="effectNode82" translation="-2.53229 2.60432 -3.08572" nodeId="479"/>
+          <TransformGroup name="effectNode83" translation="-2.53229 2.60432 -3.60198" nodeId="480"/>
+          <TransformGroup name="effectNode84" translation="-2.53229 2.60432 -4.27555" nodeId="481"/>
+          <TransformGroup name="effectNode85" translation="-2.53229 2.60432 -4.79515" nodeId="482"/>
+          <TransformGroup name="effectNode86" translation="-2.53229 2.60432 -5.62853" nodeId="483"/>
+          <TransformGroup name="effectNode87" translation="-2.53229 2.60432 -6.15064" nodeId="484"/>
+          <TransformGroup name="effectNode88" translation="-2.53229 2.60432 -6.9343" nodeId="485"/>
+        </TransformGroup>
+        <TransformGroup name="sellingStation" translation="-11.3596 0.25 7.33064" nodeId="486">
+          <Shape name="exactFillRootNode" translation="4 0.15 5.75" shapeId="2" kinematic="true" compound="true" collisionFilterGroup="0x40000000" collisionFilterMask="0x20000000" nodeId="487" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="12"/>
+          <TransformGroup name="unloadTriggerMarker" translation="4.255 -0.25 4.7" scale="0.75 0.75 0.75" nodeId="488"/>
+          <TransformGroup name="unloadTriggerMarker2" translation="5.7625 -0.25 4.7" scale="0.75 0.75 0.75" nodeId="489"/>
+          <TransformGroup name="unloadTriggerAINode" translation="3 0 7" rotation="0 90 0" nodeId="490"/>
+        </TransformGroup>
+        <TransformGroup name="storage" translation="-0.106808 -0.0299942 8.23158" nodeId="491"/>
+        <Shape name="playerTrigger" translation="-0.0332922 1.07768 11.5601" shapeId="3" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="492" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+        <TransformGroup name="playerTriggerMarker" translation="-0.091956 1.07768 12.015" nodeId="493"/>
+        <TransformGroup name="palletSpawner" translation="0 -0.03 0" nodeId="494">
+          <TransformGroup name="spawnPlace1Start" translation="3.37216 0.028244 11.2561" rotation="-180 0 -180" nodeId="495">
+            <TransformGroup name="spawnPlace1End" translation="0 0 -3.89282" nodeId="496"/>
+          </TransformGroup>
+          <TransformGroup name="spawnPlace1Start" translation="2.2752 0.028244 11.2561" rotation="-180 0 -180" nodeId="497">
+            <TransformGroup name="spawnPlace1End" translation="0 0 -3.89282" nodeId="498"/>
+          </TransformGroup>
+          <TransformGroup name="spawnPlace1Start" translation="1.18092 0.028244 11.2561" rotation="-180 0 -180" nodeId="499">
+            <TransformGroup name="spawnPlace1End" translation="0 0 -3.89282" nodeId="500"/>
+          </TransformGroup>
+          <TransformGroup name="spawnPlace1Start" translation="3.37216 1.75469 11.2561" rotation="-180 0 -180" nodeId="501">
+            <TransformGroup name="spawnPlace1End" translation="0 0 -3.89282" nodeId="502"/>
+          </TransformGroup>
+          <TransformGroup name="spawnPlace1Start" translation="2.2752 1.75469 11.2561" rotation="-180 0 -180" nodeId="503">
+            <TransformGroup name="spawnPlace1End" translation="0 0 -3.89282" nodeId="504"/>
+          </TransformGroup>
+          <TransformGroup name="spawnPlace1Start" translation="1.18092 1.75469 11.2561" rotation="-180 0 -180" nodeId="505">
+            <TransformGroup name="spawnPlace1End" translation="0 0 -3.89282" nodeId="506"/>
+          </TransformGroup>
+        </TransformGroup>
+        <Shape name="fillType01" translation="0 -0.003 0" shapeId="4" clipDistance="100" nodeId="507" castsShadows="true" receiveShadows="true" materialIds="9">
+          <Shape name="Straw" translation="-7.5741 0 0" shapeId="4" nodeId="508" castsShadows="true" receiveShadows="true" materialIds="9"/>
+          <Shape name="Straw" translation="7.683 0 0" shapeId="4" nodeId="509" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        </Shape>
+      </TransformGroup>
+      <TransformGroup name="doors" nodeId="510">
+        <TransformGroup name="door1" nodeId="511">
+          <Shape name="door1Trigger" translation="0 0.316424 -2.05109" shapeId="5" static="true" trigger="true" collisionFilterGroup="0x300000" collisionFilterMask="0x300000" nodeId="512" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          <Shape name="Serre" translation="0.0539261 0 0" shapeId="6" visibility="false" nodeId="513" castsShadows="true" receiveShadows="true" materialIds="5">
+            <Shape name="Windows" shapeId="7" kinematic="true" nodeId="514" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </Shape>
+          <Shape name="Serre" translation="2.55378 0 0" scale="1.1 1 1" shapeId="6" visibility="false" nodeId="515" castsShadows="true" receiveShadows="true" materialIds="5">
+            <Shape name="Windows" shapeId="7" kinematic="true" nodeId="516" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </Shape>
+          <Shape name="Serre" translation="-2.45015 0 0" scale="1.1 1 1" shapeId="6" visibility="false" nodeId="517" castsShadows="true" receiveShadows="true" materialIds="5">
+            <Shape name="Windows" shapeId="7" kinematic="true" nodeId="518" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="door2" translation="-7.60095 0 0" nodeId="519">
+          <Shape name="door1Trigger" translation="0 0.316424 -2.05109" shapeId="5" static="true" trigger="true" collisionFilterGroup="0x300000" collisionFilterMask="0x300000" nodeId="520" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          <Shape name="Serre" translation="0.0539261 0 0" shapeId="6" visibility="false" nodeId="521" castsShadows="true" receiveShadows="true" materialIds="5">
+            <Shape name="Windows" shapeId="7" kinematic="true" nodeId="522" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </Shape>
+          <Shape name="Serre" translation="2.55378 0 0" scale="1.1 1 1" shapeId="6" visibility="false" nodeId="523" castsShadows="true" receiveShadows="true" materialIds="5">
+            <Shape name="Windows" shapeId="7" kinematic="true" nodeId="524" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </Shape>
+          <Shape name="Serre" translation="-2.45015 0 0" scale="1.1 1 1" shapeId="6" visibility="false" nodeId="525" castsShadows="true" receiveShadows="true" materialIds="5">
+            <Shape name="Windows" shapeId="7" kinematic="true" nodeId="526" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="door3" translation="7.65035 0 0" nodeId="527">
+          <Shape name="door1Trigger" translation="0 0.316424 -2.05109" shapeId="5" static="true" trigger="true" collisionFilterGroup="0x300000" collisionFilterMask="0x300000" nodeId="528" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+          <Shape name="Serre" translation="0.0539261 0 0" shapeId="6" visibility="false" nodeId="529" castsShadows="true" receiveShadows="true" materialIds="5">
+            <Shape name="Windows" shapeId="7" kinematic="true" nodeId="530" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </Shape>
+          <Shape name="Serre" translation="2.55378 0 0" scale="1.1 1 1" shapeId="6" visibility="false" nodeId="531" castsShadows="true" receiveShadows="true" materialIds="5">
+            <Shape name="Windows" shapeId="7" kinematic="true" nodeId="532" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </Shape>
+          <Shape name="Serre" translation="-2.45015 0 0" scale="1.1 1 1" shapeId="6" visibility="false" nodeId="533" castsShadows="true" receiveShadows="true" materialIds="5">
+            <Shape name="Windows" shapeId="7" kinematic="true" nodeId="534" castsShadows="true" receiveShadows="true" materialIds="7"/>
+          </Shape>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="clearAreas" translation="0 0.0299942 0" nodeId="535">
+        <TransformGroup name="clearArea1Start" translation="-11.361 -0.0261078 -11.7695" nodeId="536">
+          <TransformGroup name="clearArea1Width" translation="23.0056 -4.44089e-18 2.10158e-06" nodeId="537"/>
+          <TransformGroup name="clearArea1Height" translation="-7.39447e-06 4.44089e-18 26.4221" nodeId="538"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="levelAreas" translation="0 0.0299942 0" nodeId="539">
+        <TransformGroup name="clearArea1Start" translation="-11.361 -0.0261078 -11.7695" nodeId="540">
+          <TransformGroup name="clearArea1Width" translation="23.0056 -4.44089e-18 2.10158e-06" nodeId="541"/>
+          <TransformGroup name="clearArea1Height" translation="-7.39447e-06 4.44089e-18 26.4221" nodeId="542"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="indoorAreas" translation="0 0.0299942 0" nodeId="543">
+        <TransformGroup name="clearArea1Start" translation="-11.361 -0.0261078 -11.7695" nodeId="544">
+          <TransformGroup name="clearArea1Width" translation="23.0056 -4.44089e-18 2.10158e-06" nodeId="545"/>
+          <TransformGroup name="clearArea1Height" translation="-7.39447e-06 4.44089e-18 26.4221" nodeId="546"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="testAreas" translation="0 0.0299942 0" nodeId="547">
+        <TransformGroup name="testArea1Start" translation="11.5716 -0.0191345 -11.837" nodeId="548">
+          <TransformGroup name="testArea1End" translation="-22.5382 2.03999 27.2446" nodeId="549"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tipOcclusionUpdateAreas" translation="0 0.0299942 0" nodeId="550">
+        <TransformGroup name="testArea1Start" translation="11.5716 -0.0191345 -11.837" nodeId="551">
+          <TransformGroup name="testArea1End" translation="-22.5382 2.03999 27.2446" nodeId="552"/>
+        </TransformGroup>
+      </TransformGroup>
+      <Shape name="infoTrigger" translation="0 0.184937 0.334311" shapeId="8" visibility="false" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="553" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+      <TransformGroup name="warningStripes" nodeId="554">
+        <TransformGroup name="warningStries" translation="3.83329 -0.00880918 11.3168" rotation="-2.9479e-07 -0 0" nodeId="555">
+          <Shape name="warningStripesCorner1" translation="0.0206335 5.82193e-08 3.4688" rotation="180 -5.00896e-06 180" shapeId="9" clipDistance="80" nodeId="556" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="6"/>
+          <Shape name="warningStripesCorner2" translation="0.0206354 -5.06639e-07 0.00575828" shapeId="10" clipDistance="80" nodeId="557" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="6"/>
+          <Shape name="warningStripesCorner3" translation="-3.0837 -5.06639e-07 0.00575714" shapeId="9" clipDistance="80" nodeId="558" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="6"/>
+          <Shape name="warningStripesCorner4" translation="-3.08849 -5.08023e-07 3.46903" rotation="180 -3.02345e-13 180" shapeId="10" clipDistance="80" nodeId="559" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="6"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="visuals" nodeId="560">
+        <Shape name="boardStack02Board" translation="2.53528 -0.00508496 10.74" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="561" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="2.52542 -0.00508496 6.26278" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="562" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="2.53528 -0.00508496 1.6571" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="563" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="2.52542 -0.00508496 -2.82012" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="564" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="2.4826 -0.00508496 -7.32441" rotation="3.73862e-06 89.0469 3.73922e-06" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="565" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="0.0682241 -0.00508496 10.74" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="566" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="0.0583558 -0.00508496 6.26278" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="567" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="0.0682241 -0.00508496 1.6571" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="568" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="0.0583558 -0.00508496 -2.82012" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="569" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="0.0155403 -0.00508496 -7.32441" rotation="3.73862e-06 89.0469 3.73922e-06" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="570" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="-2.45483 -0.00508496 10.74" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="571" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="-2.4647 -0.00508496 6.26278" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="572" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="-2.45483 -0.00508496 1.6571" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="573" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="-2.4647 -0.00508496 -2.82012" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="574" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="-2.50752 -0.00508496 -7.32441" rotation="3.73862e-06 89.0469 3.73922e-06" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="575" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="DetailsWater" translation="-7.51375 0 0" shapeId="12" clipDistance="150" nodeId="576" castsShadows="true" receiveShadows="true" materialIds="621">
+          <Shape name="Collision" translation="-2.48958 0.588338 11.4157" scale="0.85 1.15 0.85" shapeId="13" visibility="false" static="true" collisionFilterGroup="0x1034" collisionFilterMask="0xfffffbff" clipDistance="150" nodeId="577" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="13"/>
+        </Shape>
+        <Shape name="DetailsWater2" shapeId="14" clipDistance="150" nodeId="578" castsShadows="true" receiveShadows="true" materialIds="621"/>
+        <Shape name="boardStack02Board" translation="-5.06679 -0.00508496 10.74" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="579" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="-5.07665 -0.00508496 6.26278" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="580" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="-5.06679 -0.00508496 1.6571" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="581" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="-5.07665 -0.00508496 -2.82012" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="582" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="-5.11947 -0.00508496 -7.32441" rotation="3.73862e-06 89.0469 3.73922e-06" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="583" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="-7.53384 -0.00508496 10.74" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="584" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="-7.54371 -0.00508496 6.26278" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="585" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="-7.53384 -0.00508496 1.6571" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="586" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="-7.54371 -0.00508496 -2.82012" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="587" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="-7.58653 -0.00508496 -7.32441" rotation="3.73862e-06 89.0469 3.73922e-06" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="588" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="-10.0569 -0.00508496 10.74" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="589" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="-10.0668 -0.00508496 6.26278" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="590" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="-10.0569 -0.00508496 1.6571" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="591" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="-10.0668 -0.00508496 -2.82012" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="592" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="-10.1096 -0.00508496 -7.32441" rotation="3.73862e-06 89.0469 3.73922e-06" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="593" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="10.1874 -0.00508496 10.74" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="594" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="10.1775 -0.00508496 6.26278" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="595" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="10.1874 -0.00508496 1.6571" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="596" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="10.1775 -0.00508496 -2.82012" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="597" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="10.1347 -0.00508496 -7.32441" rotation="3.73862e-06 89.0469 3.73922e-06" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="598" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="7.72034 -0.00508496 10.74" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="599" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="7.71047 -0.00508496 6.26278" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="600" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="7.72034 -0.00508496 1.6571" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="601" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="7.71047 -0.00508496 -2.82012" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="602" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="7.66766 -0.00508496 -7.32441" rotation="3.73862e-06 89.0469 3.73922e-06" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="603" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="5.19729 -0.00508496 10.74" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="604" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="5.18742 -0.00508496 6.26278" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="605" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="5.19729 -0.00508496 1.6571" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="606" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="5.18742 -0.00508496 -2.82012" rotation="180 89.2788 180" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="607" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="boardStack02Board" translation="5.1446 -0.00508496 -7.32441" rotation="3.73862e-06 89.0469 3.73922e-06" scale="1 0.4 1" shapeId="11" static="true" clipDistance="100" nodeId="608" castsShadows="true" receiveShadows="true" materialIds="10"/>
+        <Shape name="DetailsWater3" translation="7.7246 0 0" shapeId="14" clipDistance="150" nodeId="609" castsShadows="true" receiveShadows="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="collisions" nodeId="610">
+        <Shape name="tipCollision" translation="0.310547 -0.214244 2.02525" scale="15 0.1 12" shapeId="15" static="true" collisionFilterGroup="0x80000" collisionFilterMask="0x80000" nodeId="611" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
+      </TransformGroup>
+      <TransformGroup name="teleportNode" translation="-1.03704 0.576907 14.8165" rotation="180 -17.149 180" nodeId="612"/>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

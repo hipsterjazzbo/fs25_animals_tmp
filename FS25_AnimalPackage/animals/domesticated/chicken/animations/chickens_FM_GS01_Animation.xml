@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<animation>
+	<states>
+		<state id="walk">
+			<animation id="walk01" clipLeft="FA_walkFront01" clipRight="FA_walkFront01" rotation="65" speed="0.9" distance="1.4">
+				<trigger type="sound" name="walk" t="0.0"/>
+				<trigger type="sound" name="walk" t="0.25"/>
+				<trigger type="sound" name="walk" t="0.5"/>
+				<trigger type="sound" name="walk" t="0.75"/>
+			</animation>
+			<animation id="walk02" clipLeft="FA_walkFront01" clipRight="FA_walkFront01" rotation="65" speed="0.9" distance="1.4">
+				<trigger type="sound" name="walk" t="0.0"/>
+				<trigger type="sound" name="walk" t="0.25"/>
+				<trigger type="sound" name="walk" t="0.5"/>
+				<trigger type="sound" name="walk" t="0.75"/>
+			</animation>
+		</state>
+		<state id="run">
+			<animation id="run01" clipLeft="FA_trotFront01" clipRight="FA_trotFront01" rotation="10" speed="5" distance="7">
+				<trigger type="sound" name="walk" t="0.0"/>
+				<trigger type="sound" name="walk" t="0.25"/>
+				<trigger type="sound" name="walk" t="0.5"/>
+				<trigger type="sound" name="walk" t="0.75"/>
+			</animation>
+		</state>
+		<state id="idle">
+			<animation id="idle01" clip="FA_idleLong01" speed="0.2" distance="0"/>
+			<animation id="idle02" clip="FA_idleLong02" speed="0.2" distance="0"/>
+			<animation id="idle03" clip="FA_idleLong03" speed="0.2" distance="0"/>
+		</state>
+		<state id="idleTransition">
+			<animation id="idleTransition01" clip="FA_idleTransition01" distance="0" speed="0.2" rotation="0"/>
+		</state>
+		<state id="eat">
+			<animation id="eat01" clip="FA_eat01" speed="0.1" distance="0"/>
+		</state>
+		<state id="drink">
+			<animation id="drink01" clip="FA_eat01" speed="0.1" distance="0"/>
+		</state>
+		<state id="sleep">
+			<animation id="sleep01" clip="FA_sleep01" speed="0.2" distance="0"/>
+		</state>
+		<state id="rest">
+			<animation id="rest01" clip="FA_sleep01" speed="0.2" distance="0"/>
+		</state>
+		<state id="chew">
+			<animation id="chew01" clip="FA_idleLong01" weight="1" speed="0.1" distance="0"/>
+		</state>
+		<state id="turnLeft">
+			<animation id="turnLeft01" clip="FA_turnLeft01" rotation="45" distance="0"/>
+			<animation id="turnLeft02" clip="FA_turnLeft01" rotation="90" distance="0"/>
+			<animation id="turnLeft03" clip="FA_turnLeft01" rotation="135" distance="0"/>
+			<animation id="turnLeft04" clip="FA_turnLeft02" rotation="180" distance="0"/>
+		</state>
+		<state id="turnRight">
+			<animation id="turnRight01" clip="FA_turnRight01" rotation="45" distance="0"/>
+			<animation id="turnRight02" clip="FA_turnRight01" rotation="90" distance="0"/>
+			<animation id="turnRight03" clip="FA_turnRight01" rotation="135" distance="0"/>
+			<animation id="turnRight04" clip="FA_turnRight02" rotation="180" distance="0"/>
+		</state>
+	</states>
+	<transitions defaultBlendTime="750">
+		<transition animationIdFrom="idleTransition01" animationIdTo="turnLeft01" blendTime="200" targetTime="0"/>
+		<transition animationIdFrom="idleTransition01" animationIdTo="turnLeft02" blendTime="200" targetTime="0"/>
+		<transition animationIdFrom="idleTransition01" animationIdTo="turnLeft03" blendTime="200" targetTime="0"/>
+		<transition animationIdFrom="idleTransition01" animationIdTo="turnLeft04" blendTime="200" targetTime="0"/>
+		<transition animationIdFrom="idleTransition01" animationIdTo="turnRight01" blendTime="200" targetTime="0"/>
+		<transition animationIdFrom="idleTransition01" animationIdTo="turnRight02" blendTime="200" targetTime="0"/>
+		<transition animationIdFrom="idleTransition01" animationIdTo="turnRight03" blendTime="200" targetTime="0"/>
+		<transition animationIdFrom="idleTransition01" animationIdTo="turnRight04" blendTime="200" targetTime="0"/>
+		<transition animationIdFrom="turnLeft01" animationIdTo="idleTransition01" blendTime="100" targetTime="0"/>
+		<transition animationIdFrom="turnLeft02" animationIdTo="idleTransition01" blendTime="100" targetTime="0"/>
+		<transition animationIdFrom="turnLeft03" animationIdTo="idleTransition01" blendTime="100" targetTime="0"/>
+		<transition animationIdFrom="turnLeft04" animationIdTo="idleTransition01" blendTime="100" targetTime="0"/>
+		<transition animationIdFrom="turnRight01" animationIdTo="idleTransition01" blendTime="100" targetTime="0"/>
+		<transition animationIdFrom="turnRight02" animationIdTo="idleTransition01" blendTime="100" targetTime="0"/>
+		<transition animationIdFrom="turnRight03" animationIdTo="idleTransition01" blendTime="100" targetTime="0"/>
+		<transition animationIdFrom="turnRight04" animationIdTo="idleTransition01" blendTime="100" targetTime="0"/>
+		<transition animationIdFrom="idleTransition01" animationIdTo="eat01" blendTime="200" clip="FA_idleToEat01" targetTime="200"/>
+		<transition animationIdFrom="eat01" animationIdTo="idleTransition01" blendTime="200" clip="FA_eatToIdle01" targetTime="200"/>
+		<transition animationIdFrom="idleTransition01" animationIdTo="drink01" blendTime="200" clip="FA_idleToEat01" targetTime="200"/>
+		<transition animationIdFrom="drink01" animationIdTo="idleTransition01" blendTime="200" clip="FA_eatToIdle01" targetTime="200"/>
+		<transition animationIdFrom="idleTransition01" animationIdTo="walk01" blendTime="200" targetTime="0"/>
+		<transition animationIdFrom="walk01" animationIdTo="idleTransition01" blendTime="200" targetTime="0"/>
+		<transition animationIdFrom="idleTransition01" animationIdTo="walk02" clip="FA_walkFront01" targetTime="0"/>
+		<transition animationIdFrom="walk02" animationIdTo="idleTransition01" clip="FA_walkFront01" targetTime="0"/>
+		<transition animationIdFrom="idleTransition01" animationIdTo="walk02" clip="FA_walkFront01" targetTime="0"/>
+		<transition animationIdFrom="turnLeft01" animationIdTo="walk02" clip="FA_walkFront01" targetTime="0"/>
+		<transition animationIdFrom="turnLeft02" animationIdTo="walk02" clip="FA_walkFront01" targetTime="0"/>
+		<transition animationIdFrom="turnLeft03" animationIdTo="walk02" clip="FA_walkFront01" targetTime="0"/>
+		<transition animationIdFrom="turnLeft04" animationIdTo="walk02" clip="FA_walkFront01" targetTime="0"/>
+		<transition animationIdFrom="turnRight01" animationIdTo="walk02" clip="FA_walkFront01" targetTime="0"/>
+		<transition animationIdFrom="turnRight02" animationIdTo="walk02" clip="FA_walkFront01" targetTime="0"/>
+		<transition animationIdFrom="turnRight03" animationIdTo="walk02" clip="FA_walkFront01" targetTime="0"/>
+		<transition animationIdFrom="turnRight04" animationIdTo="walk02" clip="FA_walkFront01" targetTime="0"/>
+		<transition animationIdFrom="idleTransition01" animationIdTo="sleep01" clip="FA_idleToSleep01" blendTime="200" targetTime="0"/>
+		<transition animationIdFrom="sleep01" animationIdTo="idleTransition01" clip="FA_sleepToIdle01" blendTime="200" targetTime="0"/>
+		<transition animationIdFrom="idleTransition01" animationIdTo="rest01" clip="FA_idleToSleep01" blendTime="800" targetTime="0"/>
+		<transition animationIdFrom="rest01" animationIdTo="idleTransition01" clip="FA_sleepToIdle01" blendTime="800" targetTime="0"/>
+	</transitions>
+</animation>

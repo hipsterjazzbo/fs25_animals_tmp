@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/fillTypes.xsd">
+    <fillTypes>
+        <!-- products -->
+        <fillType name="MEAT" title="$l10n_fillType_Meat" showOnPriceTable="true" isBulkType="false" isPalletType="true" unitShort="$l10n_unit_kg">
+            <physics massPerLiter="1.0" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="1.8">
+                <factors>
+                    <factor period="1"  value="1.00" />
+                    <factor period="2"  value="1.07" />
+                    <factor period="3"  value="0.99" />
+                    <factor period="4"  value="0.94" />
+                    <factor period="5"  value="0.85" />
+                    <factor period="6"  value="0.81" />
+                    <factor period="7"  value="0.86" />
+                    <factor period="8"  value="0.99" />
+                    <factor period="9"  value="1.08" />
+                    <factor period="10" value="1.13" />
+                    <factor period="11" value="1.21" />
+                    <factor period="12" value="1.08" />
+                </factors>
+            </economy>
+            <image hud="fillTypes/huds/hud_fill_Meat.dds"/>
+            <pallet filename="fillTypes/pallets/MeatPallet.xml"/>
+        </fillType>
+        <fillType name="JAMBON" title="$l10n_fillType_Jambon" showOnPriceTable="true" isBulkType="false" isPalletType="true" unitShort="$l10n_unit_kg">
+            <physics massPerLiter="1.0" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="1.5">
+                <factors>
+                    <factor period="1"  value="1.00" />
+                    <factor period="2"  value="1.07" />
+                    <factor period="3"  value="0.99" />
+                    <factor period="4"  value="0.94" />
+                    <factor period="5"  value="0.85" />
+                    <factor period="6"  value="0.81" />
+                    <factor period="7"  value="0.86" />
+                    <factor period="8"  value="0.99" />
+                    <factor period="9"  value="1.08" />
+                    <factor period="10" value="1.13" />
+                    <factor period="11" value="1.21" />
+                    <factor period="12" value="1.08" />
+                </factors>
+            </economy>
+            <image hud="fillTypes/huds/hud_fill_Jambon.dds"/>
+            <pallet filename="fillTypes/pallets/JambonPallet.xml"/>
+        </fillType>
+        <fillType name="SHEEPGOATMEAT" title="$l10n_fillType_sheepGoatMeat" showOnPriceTable="true" isBulkType="false" isPalletType="true" unitShort="$l10n_unit_kg">
+            <physics massPerLiter="1.0" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="2.3">
+                <factors>
+                    <factor period="1"  value="1.00" />
+                    <factor period="2"  value="1.07" />
+                    <factor period="3"  value="0.99" />
+                    <factor period="4"  value="0.94" />
+                    <factor period="5"  value="0.85" />
+                    <factor period="6"  value="0.81" />
+                    <factor period="7"  value="0.86" />
+                    <factor period="8"  value="0.99" />
+                    <factor period="9"  value="1.08" />
+                    <factor period="10" value="1.13" />
+                    <factor period="11" value="1.21" />
+                    <factor period="12" value="1.08" />
+                </factors>
+            </economy>
+            <image hud="fillTypes/huds/hud_fill_sheepMeat.dds"/>
+            <pallet filename="fillTypes/pallets/sheepMeatPallet.xml"/>
+        </fillType>
+        <fillType name="POULTRYMEAT" title="$l10n_fillType_poultryMeat" showOnPriceTable="true" isBulkType="false" isPalletType="true" unitShort="$l10n_unit_kg">
+            <physics massPerLiter="1.0" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="1.3">
+                <factors>
+                    <factor period="1"  value="1.00" />
+                    <factor period="2"  value="1.07" />
+                    <factor period="3"  value="0.99" />
+                    <factor period="4"  value="0.94" />
+                    <factor period="5"  value="0.85" />
+                    <factor period="6"  value="0.81" />
+                    <factor period="7"  value="0.86" />
+                    <factor period="8"  value="0.99" />
+                    <factor period="9"  value="1.08" />
+                    <factor period="10" value="1.13" />
+                    <factor period="11" value="1.21" />
+                    <factor period="12" value="1.08" />
+                </factors>
+            </economy>
+            <image hud="fillTypes/huds/hud_fill_chickenMeat.dds"/>
+            <pallet filename="fillTypes/pallets/chickenMeatPallet.xml"/>
+        </fillType>
+		 <fillType name="HORSEMEAT" title="$l10n_fillType_horseMeat" showOnPriceTable="true" isBulkType="false" isPalletType="true" unitShort="$l10n_unit_kg">
+            <physics massPerLiter="1.0" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="1.3">
+                <factors>
+                    <factor period="1"  value="1.00" />
+                    <factor period="2"  value="1.07" />
+                    <factor period="3"  value="0.99" />
+                    <factor period="4"  value="0.94" />
+                    <factor period="5"  value="0.85" />
+                    <factor period="6"  value="0.81" />
+                    <factor period="7"  value="0.86" />
+                    <factor period="8"  value="0.99" />
+                    <factor period="9"  value="1.08" />
+                    <factor period="10" value="1.13" />
+                    <factor period="11" value="1.21" />
+                    <factor period="12" value="1.08" />
+                </factors>
+            </economy>
+            <image hud="fillTypes/huds/hud_fill_horseMeat.dds"/>
+            <pallet filename="fillTypes/pallets/horseMeatPallet.xml"/>
+        </fillType>
+        
+        <!-- cows -->
+        <fillType name="BEEF" title="$l10n_fillType_beef" showOnPriceTable="false">
+            <physics massPerLiter="1.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="1.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_cow.png" />
+        </fillType>
+		
+		<fillType name="PIGS" title="$l10n_fillType_pork" showOnPriceTable="false">
+            <physics massPerLiter="1.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="1.0" />
+			<image   hud          ="$dataS/menu/hud/fillTypes/hud_fill_pig.png" />
+        </fillType>
+		
+		<fillType name="SHEEPGOAT" title="$l10n_fillType_sheepGoat" showOnPriceTable="false">
+            <physics massPerLiter="1.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="1.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_sheep.png" />
+        </fillType>
+		
+		<fillType name="POULTRY" title="$l10n_fillType_poultry" showOnPriceTable="false">
+            <physics massPerLiter="1.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="1.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_chicken.png" />
+        </fillType>
+		
+		<fillType name="HORSE" title="$l10n_fillType_horse" showOnPriceTable="false">
+            <physics massPerLiter="1.0" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="1.0" />
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_horse.png" />
+        </fillType>
+    </fillTypes>
+    <fillTypeCategories>
+        <fillTypeCategory name="PRODUCT">MEAT JAMBON SHEEPGOATMEAT POULTRYMEAT HORSEMEAT</fillTypeCategory>
+		<fillTypeCategory name="SELLINGSTATION_PRODUCTSFOOD">MEAT JAMBON SHEEPGOATMEAT POULTRYMEAT HORSEMEAT</fillTypeCategory>
+    </fillTypeCategories>
+    <fieldGround filename="fieldGround.xml"/>
+</map>

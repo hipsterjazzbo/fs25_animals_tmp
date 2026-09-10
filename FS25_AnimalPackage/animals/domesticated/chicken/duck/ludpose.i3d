@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="Goose_Body_Diff.dds"/>
+    <File fileId="3" filename="fekete.dds"/>
+    <File fileId="1" filename="goose_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="MaterialFBXASC046023" materialId="4" specularColor="0.2 1 0.2">
+      <Texture fileId="1"/>
+    </Material>
+    <Material name="MaterialFBXASC046024" materialId="5" specularColor="0.2 1 0.2">
+      <Texture fileId="4"/>
+    </Material>
+    <Material name="szemeFBXASC046011" materialId="6">
+      <Texture fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="ludpose.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="goooseFBXASC046001" translation="0 0 -1.11759e-08" nodeId="9" materialIds="4,6,5" castsShadows="true" receiveShadows="true"/>
+  </Scene>
+
+</i3D>

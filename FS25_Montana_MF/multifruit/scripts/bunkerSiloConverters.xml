@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<bunkerSilo fillLevelSwitchingLimit="4000">
+
+    <!-- Explanation --> 
+
+    <!-- attachTo: the fillType of baseGame bunkerSilo we "attach" to, usually chaff because all standard bunkerSilos have chaff. This excluses special bunkerSilo mods for sugarbeet storage and stuff like that -->
+    <!-- inputFillType: the inputFillType, this is the fillType that is shown in the bunkerSilo heightType. It is also the "identifier for this siloType"-->
+    <!-- outputFillType: this is the fillType that outputs after fermentation -->
+    <!-- acceptedFillTypes -->
+    <!--    beforeSwitchLimit: fillTypes that are accepted at the bunkerSilo before the fillLevelSwitchingLimit is reached. Note that all fillTypes from all bunkerSiloType are enabled during this time. So you can't use the same fillType multiple times here. --> 
+    <!--                        usually this is the same as inputFillType, but you can use multiple fillTypes here to trigger the same inputFillType. (for example grass_windrow and semidry_grassWindrow could both trigger siloGrass -->
+    <!--    afterSwitchLimit: all fillTypes accepted by the bunkerSilo after the fillLevelSwitchingLimit is reached and the input and output are "locked". Usually the same as before + some extra that should not trigger the siloSwitcher. Here you can use multiples-->
+    
+    <!-- Example to demonstrate the system: we attach to chaff bunkerSilos, the inputFillType is compostRaw, the output is compost. We trigger the switcher with wetgrass_windrow but once the silo is locked on compost we can add a whole bunch stuff into our compost--> 
+    <!--bunkerSiloType attachTo="chaff" inputFillType="compostraw" outputFillType="compost">
+        <acceptedFillTypes beforeSwitchLimit="wetgrass_windrow" afterSwitchLimit="wetgrass_windrow grass_windrow dryGrass_windrow choppedmaize silograss lime potato" />
+    </bunkerSiloType-->
+
+    <!-- additionalSettings: with additionalSettings noCompation and noFermenting can be set to true. This does just what the name implies, disable compaction of fermentation for that type -->
+    <!-- <additionalSettings noCompaction="true" noFermenting="true" />  -->
+
+    <bunkerSiloType attachTo="chaff" inputFillType="ALFALFA_BUNKER" outputFillType="ALFALFA_FERMENTED">
+        <acceptedFillTypes beforeSwitchLimit="ALFALFA_WINDROW DRYALFALFA_WINDROW" afterSwitchLimit="ALFALFA_WINDROW DRYALFALFA_WINDROW ALFALFA_FERMENTED BEETROOT_CUT SUGARBEET_CUT PARSNIP_CUT POTATO_CUT CARROT_CUT TARO_CUT MISCANTHUS_CUT" />
+    </bunkerSiloType>
+
+    <bunkerSiloType attachTo="chaff" inputFillType="CROP_WINDROW" outputFillType="CROP_FERMENTED">
+        <acceptedFillTypes beforeSwitchLimit="CROP_WINDROW" afterSwitchLimit="CROP_WINDROW CROP_FERMENTED BEETROOT_CUT SUGARBEET_CUT PARSNIP_CUT POTATO_CUT CARROT_CUT TARO_CUT MISCANTHUS_CUT" />
+    </bunkerSiloType>
+
+    <bunkerSiloType attachTo="chaff" inputFillType="ORGANICWASTE" outputFillType="COMPOST">
+        <acceptedFillTypes beforeSwitchLimit="ORGANICWASTE STRAW BEANSTRAW CORN_STALKS FORAGE_MIXING MANURE MISCANTHUS_CUT" afterSwitchLimit="CCMRAW CCM GRASS_FERMENTED CROP_FERMENTED CROP_WINDROW ALFALFA_WINDROW DRYALFALFA_WINDROW ALFALFA_FERMENTED CHAFF GRASS_WINDROW DRYGRASS_WINDROW FORAGE_MIXING BEETROOT_CUT SUGARBEET_CUT PARSNIP_CUT POTATO_CUT CARROT_CUT TARO_CUT SILAGE CLOVER_WINDROW DRYCLOVER_WINDROW CLOVER_FERMENTED MANURE CHAFF ORGANICWASTE STRAW BEANSTRAW CORN_STALKS MISCANTHUS_CUT" />
+    </bunkerSiloType>
+
+    <bunkerSiloType attachTo="chaff" inputFillType="GRASS_BUNKER" outputFillType="GRASS_FERMENTED">
+        <acceptedFillTypes beforeSwitchLimit="GRASS_WINDROW DRYGRASS_WINDROW" afterSwitchLimit="GRASS_WINDROW DRYGRASS_WINDROW GRASS_FERMENTED BEETROOT_CUT SUGARBEET_CUT PARSNIP_CUT POTATO_CUT CARROT_CUT TARO_CUT MISCANTHUS_CUT" />
+    </bunkerSiloType>
+
+    <bunkerSiloType attachTo="chaff" inputFillType="CHAFF" outputFillType="SILAGE">
+        <acceptedFillTypes beforeSwitchLimit="CHAFF" afterSwitchLimit="CHAFF SILAGE BEETROOT_CUT SUGARBEET_CUT PARSNIP_CUT POTATO_CUT CARROT_CUT TARO_CUT MISCANTHUS_CUT" />
+    </bunkerSiloType>
+
+    <bunkerSiloType attachTo="chaff" inputFillType="CCMRAW" outputFillType="CCM">
+        <acceptedFillTypes beforeSwitchLimit="CCMRAW" afterSwitchLimit="CCMRAW CCM BEETROOT_CUT SUGARBEET_CUT PARSNIP_CUT POTATO_CUT CARROT_CUT TARO_CUT " />
+    </bunkerSiloType>
+	
+    <bunkerSiloType attachTo="chaff" inputFillType="CLOVER_BUNKER" outputFillType="CLOVER_FERMENTED">
+        <acceptedFillTypes beforeSwitchLimit="CLOVER_WINDROW DRYCLOVER_WINDROW" afterSwitchLimit="CLOVER_WINDROW DRYCLOVER_WINDROW CLOVER_FERMENTED BEETROOT_CUT SUGARBEET_CUT PARSNIP_CUT POTATO_CUT CARROT_CUT TARO_CUT  MISCANTHUS_CUT" />
+    </bunkerSiloType>
+
+    <bunkerSiloType attachTo="chaff" inputFillType="POTATO" outputFillType="POTATO">
+        <acceptedFillTypes beforeSwitchLimit="POTATO" afterSwitchLimit="POTATO" />
+	<additionalSettings noCompaction="true" noFermenting="true" />
+    </bunkerSiloType>   
+    <bunkerSiloType attachTo="chaff" inputFillType="SUGARBEET" outputFillType="SUGARBEET">
+        <acceptedFillTypes beforeSwitchLimit="SUGARBEET" afterSwitchLimit="SUGARBEET" />
+	<additionalSettings noCompaction="true" noFermenting="true" />
+    </bunkerSiloType>   
+    <bunkerSiloType attachTo="chaff" inputFillType="BEETROOT" outputFillType="BEETROOT">
+        <acceptedFillTypes beforeSwitchLimit="BEETROOT" afterSwitchLimit="BEETROOT" />
+	<additionalSettings noCompaction="true" noFermenting="true" />
+    </bunkerSiloType>   
+    <bunkerSiloType attachTo="chaff" inputFillType="CARROT" outputFillType="CARROT">
+        <acceptedFillTypes beforeSwitchLimit="CARROT" afterSwitchLimit="CARROT" />
+	<additionalSettings noCompaction="true" noFermenting="true" />
+    </bunkerSiloType>   
+    <bunkerSiloType attachTo="chaff" inputFillType="PARSNIP" outputFillType="PARSNIP">
+        <acceptedFillTypes beforeSwitchLimit="PARSNIP" afterSwitchLimit="PARSNIP" />
+	<additionalSettings noCompaction="true" noFermenting="true" />
+    </bunkerSiloType>   
+    <bunkerSiloType attachTo="chaff" inputFillType="PEANUT" outputFillType="PEANUT">
+        <acceptedFillTypes beforeSwitchLimit="PEANUT" afterSwitchLimit="PEANUT" />
+	<additionalSettings noCompaction="true" noFermenting="true" />
+    </bunkerSiloType>   
+    <bunkerSiloType attachTo="chaff" inputFillType="TARO" outputFillType="TARO">
+        <acceptedFillTypes beforeSwitchLimit="TARO" afterSwitchLimit="TARO" />
+	<additionalSettings noCompaction="true" noFermenting="true" />
+    </bunkerSiloType>
+
+</bunkerSilo>

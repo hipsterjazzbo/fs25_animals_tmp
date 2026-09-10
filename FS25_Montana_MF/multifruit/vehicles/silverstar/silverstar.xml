@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="livestockTrailer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+    <storeData>
+        <name>Silverstar Chickens</name>
+        <specs>
+            <combination filterCategory="trucks"/>
+            <combination xmlFilename="$data/vehicles/krampe/dolly10L/dolly10L.xml"/>
+        </specs>
+        <functions>
+            <function>$l10n_function_livestockTrailer</function>
+        </functions>
+        <storePacks>
+            <storePack>STARTER_ANIMALS</storePack>
+        </storePacks>
+        <image>$data/vehicles/wilsonTrailer/silverstar/store_silverstar.png</image>
+        <price>125000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>WILSON</brand>
+        <category>animalTransport</category>
+        <shopTranslationOffset>0 -0.011 0</shopTranslationOffset>
+        <shopRotationOffset>0.096 0 0</shopRotationOffset>
+    </storeData>
+    <base>
+        <typeDesc>$l10n_typeDesc_livestockTrailer</typeDesc>
+        <filename>multifruit/vehicles/silverstar/silverstar.i3d</filename>
+        <size width="2.85" length="15.3" height="4.2"/>
+        <components>
+            <component centerOfMass="0 0.7 -0.5" solverIterationCount="10" mass="6635"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT"/>
+        <mapHotspot type="TRAILER"/>
+    </base>
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="CONTINENTAL" saveId="CONTINENTAL_DEFAULT">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/315_80R22_5.xml" configId="dual" isLeft="true">
+                        <physics restLoad="1.2" repr="wheelFrontLeft" forcePointRatio="0.5" initialCompression="20" suspTravel="0.1" spring="46" damper="50" yOffset="0.0075"/>
+                        <additionalWheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/315_80R22_5.xml" configId="dualConnector" offset="0.03"/>
+                        <wheelChock/>
+                        <wheelChock isInverted="true"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/315_80R22_5.xml" configId="dual" isLeft="false">
+                        <physics restLoad="1.2" repr="wheelFrontRight" forcePointRatio="0.5" initialCompression="20" suspTravel="0.1" spring="46" damper="50" yOffset="0.0075"/>
+                        <additionalWheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/315_80R22_5.xml" configId="dualConnector" offset="0.03"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/315_80R22_5.xml" configId="dual" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics restLoad="1.2" repr="wheelBackLeft" forcePointRatio="0.5" initialCompression="20" suspTravel="0.1" spring="46" damper="50" yOffset="0.005"/>
+                        <additionalWheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/315_80R22_5.xml" configId="dualConnector" offset="0.03"/>
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/315_80R22_5.xml" configId="dual" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics restLoad="1.2" repr="wheelBackRight" forcePointRatio="0.5" initialCompression="20" suspTravel="0.1" spring="46" damper="50" yOffset="0.005"/>
+                        <additionalWheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/315_80R22_5.xml" configId="dualConnector" offset="0.03"/>
+                    </wheel>
+                </wheels>
+                <objectChange node="wheelFrontLeft" translationActive="0.79 0.538 -5.294"/>
+                <objectChange node="wheelFrontRight" translationActive="-0.79 0.538 -5.294"/>
+                <objectChange node="wheelBackLeft" translationActive="0.79 0.538 -6.538"/>
+                <objectChange node="wheelBackRight" translationActive="-0.79 0.538 -6.538"/>
+            </wheelConfiguration>
+        </wheelConfigurations>
+    </wheels>
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="semitrailer" attacherHeight="1.20"/>
+        </inputAttacherJoints>
+        <support animationName="moveSupport"/>
+        <brakeForce force="0.8"/>
+        <sounds>
+            <active file="$data/sounds/tools/trailer/trailerRattle_02.wav" innerRadius="10" outerRadius="50" volumeScale="2.8" isLocalSound="true" pitchScale="1.0">
+                <volume indoor="0.7" outdoor="0.9">
+                    <modifier type="WHEEL_SUSPENSION" value="-0.08" modifiedValue="0.3"/>
+                    <modifier type="WHEEL_SUSPENSION" value="-0.06" modifiedValue="0.3"/>
+                    <modifier type="WHEEL_SUSPENSION" value="-0.04" modifiedValue="0.3"/>
+                    <modifier type="WHEEL_SUSPENSION" value="-0.03" modifiedValue="0.2"/>
+                    <modifier type="WHEEL_SUSPENSION" value="-0.02" modifiedValue="0.1"/>
+                    <modifier type="WHEEL_SUSPENSION" value="-0.01" modifiedValue="0.05"/>
+                    <modifier type="WHEEL_SUSPENSION" value="-0.00" modifiedValue="0.0"/>
+                    <modifier type="WHEEL_SUSPENSION" value="0.01" modifiedValue="0.05"/>
+                    <modifier type="WHEEL_SUSPENSION" value="0.02" modifiedValue="0.1"/>
+                    <modifier type="WHEEL_SUSPENSION" value="0.03" modifiedValue="0.2"/>
+                    <modifier type="WHEEL_SUSPENSION" value="0.04" modifiedValue="0.3"/>
+                    <modifier type="WHEEL_SUSPENSION" value="0.06" modifiedValue="0.3"/>
+                    <modifier type="WHEEL_SUSPENSION" value="0.08" modifiedValue="0.3"/>
+                    <modifier type="SPEED" value="0.0" modifiedValue="0.0"/>
+                    <modifier type="SPEED" value="2.0" modifiedValue="1.0"/>
+                    <modifier type="SPEED" value="40.0" modifiedValue="1.0"/>
+                </volume>
+                <lowpassCutoffFrequency indoor="250" outdoor="20000"/>
+                <lowpassGain indoor="0.5" outdoor="1"/>
+            </active>
+        </sounds>
+    </attachable>
+    <connectionHoses>
+        <hose inputAttacherJointIndices="1" type="airDoubleRed" node="airDoubleRed" length="1.8" diameter="0.015" minCenterPointOffset="0 -0.2 0" maxCenterPointOffset="0 0 0" straighteningFactor="1" outgoingAdapter="DEFAULT" socket="air_red"/>
+        <hose inputAttacherJointIndices="1" type="airDoubleYellow" node="airDoubleYellow" length="1.8" diameter="0.015" minCenterPointOffset="0 -0.2 0" maxCenterPointOffset="0 0 0" straighteningFactor="1" outgoingAdapter="DEFAULT" socket="air_yellow"/>
+        <hose inputAttacherJointIndices="1" type="electric" node="electric" length="1.8" diameter="0.008" minCenterPointOffset="0 -0.2 0" maxCenterPointOffset="0 0 0" straighteningFactor="1" outgoingAdapter="DEFAULT" socket="electric"/>
+    </connectionHoses>
+    <lights>
+        <sharedLight linkNode="turnlightLeft" filename="$data/shared/assets/lights/lizard/rearLight21Orange_left.xml"/>
+        <sharedLight linkNode="turnlightRight" filename="$data/shared/assets/lights/lizard/rearLight21Orange_right.xml"/>
+        <sharedLight linkNode="reverselightLeft" filename="$data/shared/assets/lights/lizard/rearLight22White.xml"/>
+        <sharedLight linkNode="reverselightRight" filename="$data/shared/assets/lights/lizard/rearLight22White.xml"/>
+        <sharedLight linkNode="backlightHigh01" filename="$data/shared/assets/lights/lizard/rearLight26Red.xml"/>
+        <sharedLight linkNode="backlightHigh02" filename="$data/shared/assets/lights/lizard/rearLight26Red.xml"/>
+        <sharedLight linkNode="backlightHigh03" filename="$data/shared/assets/lights/lizard/rearLight26Red.xml"/>
+        <sharedLight linkNode="backlightHigh04" filename="$data/shared/assets/lights/lizard/rearLight26Red.xml"/>
+        <sharedLight linkNode="backlightHigh05" filename="$data/shared/assets/lights/lizard/rearLight26Red.xml"/>
+        <sharedLight linkNode="backlightHigh06" filename="$data/shared/assets/lights/lizard/rearLight26Red.xml"/>
+        <sharedLight linkNode="backlightRound01" filename="$data/shared/assets/lights/lizard/rearLight21Red.xml"/>
+        <sharedLight linkNode="backlightRound02" filename="$data/shared/assets/lights/lizard/rearLight21Red.xml"/>
+        <sharedLight linkNode="backlightRound03" filename="$data/shared/assets/lights/lizard/rearLight21Red.xml"/>
+        <sharedLight linkNode="backlightRound04" filename="$data/shared/assets/lights/lizard/rearLight21Red.xml"/>
+        <sharedLight linkNode="backlightRound05" filename="$data/shared/assets/lights/lizard/rearLight21Red.xml"/>
+        <sharedLight linkNode="backlightLow01" filename="$data/shared/assets/lights/lizard/rearLight21Red.xml"/>
+        <sharedLight linkNode="backlightLow02" filename="$data/shared/assets/lights/lizard/rearLight21Red.xml"/>
+        <sharedLight linkNode="backlightLow03" filename="$data/shared/assets/lights/lizard/rearLight21Red.xml"/>
+        <sharedLight linkNode="backlightLow04" filename="$data/shared/assets/lights/lizard/rearLight21Red.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft01" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft02" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft03" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft04" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft05" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft06" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft07" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft08" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft09" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft10" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft11" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft12" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft13" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft14" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft15" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft16" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft17" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft18" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft19" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft20" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft21" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft22" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft23" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft24" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft25" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft26" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft27" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft28" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft29" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft30" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft31" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft32" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft33" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeLeft34" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight01" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight02" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight03" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight04" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight05" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight06" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight07" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight08" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight09" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight10" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight11" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight12" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight13" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight14" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight15" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight16" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight17" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight18" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight19" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight20" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight21" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight22" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight23" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight24" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight25" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight26" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight27" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight28" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight29" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight30" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight31" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight32" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight33" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="sideMarkerOrangeRight34" filename="$data/shared/assets/lights/lizard/sideMarker07Orange.xml"/>
+        <sharedLight linkNode="plateNumberLight02_01" filename="$data/shared/assets/lights/lizard/plateNumberLight02.xml"/>
+        <sharedLight linkNode="plateNumberLight02_02" filename="$data/shared/assets/lights/lizard/plateNumberLight02.xml"/>
+        <realLights>
+            <high>
+                <light node="backLightsHigh1" lightTypes="0"/>
+                <light node="licensePlateLightHigh" lightTypes="0"/>
+                <turnLightLeft node="turnLightLeftBack"/>
+                <turnLightRight node="turnLightRightBack"/>
+                <brakeLight node="backLightsHigh1"/>
+                <reverseLight node="reverseLightHigh1"/>
+            </high>
+        </realLights>
+    </lights>
+    <licensePlates>
+        <licensePlate node="licensePlateBack" position="BACK" preferedType="SQUARISH" placementArea="0.08 0.15 0.08 0.15"/>
+    </licensePlates>
+    <animations>
+        <animation name="moveSupport">
+            <part node="supportArm" startTime="0.0" endTime="0.5" startTrans="0 0.45 4.345" endTrans="0 0.025 4.345"/>
+            <sound template="slideOpen" startTime="0.01" endTime="0.49" direction="0" volumeScale="2" pitchScale="2"/>
+            <sound template="metalImpHigh01" startTime="0.49" direction="1" volumeScale="1.2" pitchScale="0.7"/>
+            <sound template="cylinderPunch" startTime="0.01" direction="-1" volumeScale="1.2" pitchScale="0.8"/>
+            <sound template="hingeImp" startTime="0.1" direction="-1" volumeScale="0.7" pitchScale="1.1"/>
+        </animation>
+    </animations>
+    <livestockTrailer>
+        <animal type="sheep" 		node="sheeps" 		numSlots="38"/>
+        <animal type="pig" 		node="pigs" 		numSlots="36"/>
+        <animal type="cow" 		node="cows" 		numSlots="12"/>
+	<animal type="chicken" 		node="chicken" 		numSlots="416"/>
+	<animal type="goose" 		node="chicken" 		numSlots="416"/>
+	<animal type="rabbit" 		node="chicken" 		numSlots="416"/>												
+    </livestockTrailer>
+    <ai>
+        <agentAttachment jointNode="attacherJoint" rotCenterWheelIndices="1 2 3 4" width="2.6" height="4" length="15" lengthOffset="5.8"/>
+    </ai>
+    <foliageBending>
+        <bendingNode minX="-1.35" maxX="1.35" minZ="4.5" maxZ="7.4" yOffset="1.15"/>
+        <bendingNode minX="-1.35" maxX="1.35" minZ="-7.6" maxZ="4.5" yOffset="0.6"/>
+    </foliageBending>
+    <rimColorConfigurations>
+        <rimColorConfiguration materialTemplateName="RIM_CONFIGURATION_CHROME" price="1000"/>
+        <rimColorConfiguration materialTemplateName="RIM_DEFAULT"/>
+        <rimColorConfiguration materialTemplateName="RIM_CONFIGURATION_WHITE"/>
+        <rimColorConfiguration materialTemplateName="RIM_CONFIGURATION_BLACK"/>
+    </rimColorConfigurations>
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="4" fieldMultiplier="2"/>
+    <i3dMappings>
+        <i3dMapping id="attacherJoint" node="0>0|0|0"/>
+        <i3dMapping id="supportArm" node="0>0|0|1"/>
+        <i3dMapping id="airDoubleRed" node="0>0|0|2|0"/>
+        <i3dMapping id="airDoubleYellow" node="0>0|0|2|1"/>
+        <i3dMapping id="electric" node="0>0|0|2|2"/>
+        <i3dMapping id="wheelFrontLeft" node="0>0|1|0"/>
+        <i3dMapping id="wheelFrontRight" node="0>0|1|1"/>
+        <i3dMapping id="wheelBackLeft" node="0>0|1|2"/>
+        <i3dMapping id="wheelBackRight" node="0>0|1|3"/>
+        <i3dMapping id="turnlightLeft" node="0>0|2|0|0"/>
+        <i3dMapping id="turnlightRight" node="0>0|2|0|1"/>
+        <i3dMapping id="reverselightLeft" node="0>0|2|0|2"/>
+        <i3dMapping id="reverselightRight" node="0>0|2|0|3"/>
+        <i3dMapping id="backlightHigh01" node="0>0|2|0|4"/>
+        <i3dMapping id="backlightHigh02" node="0>0|2|0|5"/>
+        <i3dMapping id="backlightHigh03" node="0>0|2|0|6"/>
+        <i3dMapping id="backlightHigh04" node="0>0|2|0|7"/>
+        <i3dMapping id="backlightHigh05" node="0>0|2|0|8"/>
+        <i3dMapping id="backlightHigh06" node="0>0|2|0|9"/>
+        <i3dMapping id="backlightRound01" node="0>0|2|0|10"/>
+        <i3dMapping id="backlightRound02" node="0>0|2|0|11"/>
+        <i3dMapping id="backlightRound03" node="0>0|2|0|12"/>
+        <i3dMapping id="backlightRound04" node="0>0|2|0|13"/>
+        <i3dMapping id="backlightRound05" node="0>0|2|0|14"/>
+        <i3dMapping id="backlightLow01" node="0>0|2|0|15"/>
+        <i3dMapping id="backlightLow02" node="0>0|2|0|16"/>
+        <i3dMapping id="backlightLow03" node="0>0|2|0|17"/>
+        <i3dMapping id="backlightLow04" node="0>0|2|0|18"/>
+        <i3dMapping id="sideMarkerOrangeLeft01" node="0>0|2|0|19|0"/>
+        <i3dMapping id="sideMarkerOrangeLeft02" node="0>0|2|0|19|1"/>
+        <i3dMapping id="sideMarkerOrangeLeft03" node="0>0|2|0|19|2"/>
+        <i3dMapping id="sideMarkerOrangeLeft04" node="0>0|2|0|19|3"/>
+        <i3dMapping id="sideMarkerOrangeLeft05" node="0>0|2|0|19|4"/>
+        <i3dMapping id="sideMarkerOrangeLeft06" node="0>0|2|0|19|5"/>
+        <i3dMapping id="sideMarkerOrangeLeft07" node="0>0|2|0|19|6"/>
+        <i3dMapping id="sideMarkerOrangeLeft08" node="0>0|2|0|19|7"/>
+        <i3dMapping id="sideMarkerOrangeLeft09" node="0>0|2|0|19|8"/>
+        <i3dMapping id="sideMarkerOrangeLeft10" node="0>0|2|0|19|9"/>
+        <i3dMapping id="sideMarkerOrangeLeft11" node="0>0|2|0|19|10"/>
+        <i3dMapping id="sideMarkerOrangeLeft12" node="0>0|2|0|19|11"/>
+        <i3dMapping id="sideMarkerOrangeLeft13" node="0>0|2|0|19|12"/>
+        <i3dMapping id="sideMarkerOrangeLeft14" node="0>0|2|0|19|13"/>
+        <i3dMapping id="sideMarkerOrangeLeft15" node="0>0|2|0|19|14"/>
+        <i3dMapping id="sideMarkerOrangeLeft16" node="0>0|2|0|19|15"/>
+        <i3dMapping id="sideMarkerOrangeLeft17" node="0>0|2|0|19|16"/>
+        <i3dMapping id="sideMarkerOrangeLeft18" node="0>0|2|0|19|17"/>
+        <i3dMapping id="sideMarkerOrangeLeft19" node="0>0|2|0|19|18"/>
+        <i3dMapping id="sideMarkerOrangeLeft20" node="0>0|2|0|19|19"/>
+        <i3dMapping id="sideMarkerOrangeLeft21" node="0>0|2|0|19|20"/>
+        <i3dMapping id="sideMarkerOrangeLeft22" node="0>0|2|0|19|21"/>
+        <i3dMapping id="sideMarkerOrangeLeft23" node="0>0|2|0|19|22"/>
+        <i3dMapping id="sideMarkerOrangeLeft24" node="0>0|2|0|19|23"/>
+        <i3dMapping id="sideMarkerOrangeLeft25" node="0>0|2|0|19|24"/>
+        <i3dMapping id="sideMarkerOrangeLeft26" node="0>0|2|0|19|25"/>
+        <i3dMapping id="sideMarkerOrangeLeft27" node="0>0|2|0|19|26"/>
+        <i3dMapping id="sideMarkerOrangeLeft28" node="0>0|2|0|19|27"/>
+        <i3dMapping id="sideMarkerOrangeLeft29" node="0>0|2|0|19|28"/>
+        <i3dMapping id="sideMarkerOrangeLeft30" node="0>0|2|0|19|29"/>
+        <i3dMapping id="sideMarkerOrangeLeft31" node="0>0|2|0|19|30"/>
+        <i3dMapping id="sideMarkerOrangeLeft32" node="0>0|2|0|19|31"/>
+        <i3dMapping id="sideMarkerOrangeLeft33" node="0>0|2|0|19|32"/>
+        <i3dMapping id="sideMarkerOrangeLeft34" node="0>0|2|0|19|33"/>
+        <i3dMapping id="sideMarkerOrangeRight01" node="0>0|2|0|20|0"/>
+        <i3dMapping id="sideMarkerOrangeRight02" node="0>0|2|0|20|1"/>
+        <i3dMapping id="sideMarkerOrangeRight03" node="0>0|2|0|20|2"/>
+        <i3dMapping id="sideMarkerOrangeRight04" node="0>0|2|0|20|3"/>
+        <i3dMapping id="sideMarkerOrangeRight05" node="0>0|2|0|20|4"/>
+        <i3dMapping id="sideMarkerOrangeRight06" node="0>0|2|0|20|5"/>
+        <i3dMapping id="sideMarkerOrangeRight07" node="0>0|2|0|20|6"/>
+        <i3dMapping id="sideMarkerOrangeRight08" node="0>0|2|0|20|7"/>
+        <i3dMapping id="sideMarkerOrangeRight09" node="0>0|2|0|20|8"/>
+        <i3dMapping id="sideMarkerOrangeRight10" node="0>0|2|0|20|9"/>
+        <i3dMapping id="sideMarkerOrangeRight11" node="0>0|2|0|20|10"/>
+        <i3dMapping id="sideMarkerOrangeRight12" node="0>0|2|0|20|11"/>
+        <i3dMapping id="sideMarkerOrangeRight13" node="0>0|2|0|20|12"/>
+        <i3dMapping id="sideMarkerOrangeRight14" node="0>0|2|0|20|13"/>
+        <i3dMapping id="sideMarkerOrangeRight15" node="0>0|2|0|20|14"/>
+        <i3dMapping id="sideMarkerOrangeRight16" node="0>0|2|0|20|15"/>
+        <i3dMapping id="sideMarkerOrangeRight17" node="0>0|2|0|20|16"/>
+        <i3dMapping id="sideMarkerOrangeRight18" node="0>0|2|0|20|17"/>
+        <i3dMapping id="sideMarkerOrangeRight19" node="0>0|2|0|20|18"/>
+        <i3dMapping id="sideMarkerOrangeRight20" node="0>0|2|0|20|19"/>
+        <i3dMapping id="sideMarkerOrangeRight21" node="0>0|2|0|20|20"/>
+        <i3dMapping id="sideMarkerOrangeRight22" node="0>0|2|0|20|21"/>
+        <i3dMapping id="sideMarkerOrangeRight23" node="0>0|2|0|20|22"/>
+        <i3dMapping id="sideMarkerOrangeRight24" node="0>0|2|0|20|23"/>
+        <i3dMapping id="sideMarkerOrangeRight25" node="0>0|2|0|20|24"/>
+        <i3dMapping id="sideMarkerOrangeRight26" node="0>0|2|0|20|25"/>
+        <i3dMapping id="sideMarkerOrangeRight27" node="0>0|2|0|20|26"/>
+        <i3dMapping id="sideMarkerOrangeRight28" node="0>0|2|0|20|27"/>
+        <i3dMapping id="sideMarkerOrangeRight29" node="0>0|2|0|20|28"/>
+        <i3dMapping id="sideMarkerOrangeRight30" node="0>0|2|0|20|29"/>
+        <i3dMapping id="sideMarkerOrangeRight31" node="0>0|2|0|20|30"/>
+        <i3dMapping id="sideMarkerOrangeRight32" node="0>0|2|0|20|31"/>
+        <i3dMapping id="sideMarkerOrangeRight33" node="0>0|2|0|20|32"/>
+        <i3dMapping id="sideMarkerOrangeRight34" node="0>0|2|0|20|33"/>
+        <i3dMapping id="plateNumberLight02_01" node="0>0|2|0|21"/>
+        <i3dMapping id="plateNumberLight02_02" node="0>0|2|0|22"/>
+        <i3dMapping id="backLightsHigh1" node="0>0|2|1"/>
+        <i3dMapping id="licensePlateLightHigh" node="0>0|2|2"/>
+        <i3dMapping id="turnLightLeftBack" node="0>0|2|3"/>
+        <i3dMapping id="turnLightRightBack" node="0>0|2|4"/>
+        <i3dMapping id="reverseLightHigh1" node="0>0|2|5"/>
+        <i3dMapping id="licensePlateBack" node="0>0|3"/>
+        <i3dMapping id="cows" node="0>0|4|0"/>
+        <i3dMapping id="sheeps" node="0>0|4|1"/>
+        <i3dMapping id="pigs" node="0>0|4|2"/>
+		<i3dMapping id="chicken" node="0>0|4|3"/>
+    </i3dMappings>
+</vehicle>

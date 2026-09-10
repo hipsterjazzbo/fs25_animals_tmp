@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_grainDryer</name>
+        <functions>
+            <function>$l10n_function_grainDryer</function>
+        </functions>
+        <image>multifruit/placeables/productionPoints/grainDryer/textures/store_grainDryer.dds</image>
+        <price>150000</price>
+        <dailyUpkeep>150</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>JINKOU</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+        <vertexBufferMemoryUsage>1793536</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>343552</indexBufferMemoryUsage>
+        <textureMemoryUsage>4390912</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>multifruit/placeables/productionPoints/grainDryer/grainDryer.i3d</filename>
+	<boughtWithFarmland>true</boughtWithFarmland>
+	<canBeDeleted>true</canBeDeleted>
+	<canBeRenamed>false</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+
+        <sounds>
+            <place template="siloImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="3" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" />
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+	 <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height" />
+	</indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+	<productionPoint>
+		<productions sharedThroughputCapacity="false">
+			<production id="CornDrying" name="$l10n_fillType_maize2" cyclesPerMonth="1000" costsPerActiveHour="30">
+				<inputs>
+					<input fillType="MAIZE" amount="150" />
+				</inputs>
+				<outputs>
+					<output fillType="MAIZE2" amount="135" />
+				</outputs>
+			</production>
+
+		</productions>
+		
+		<storage node="storage" fillTypes="MAIZE MAIZE2" isExtension="false" >
+			<capacity fillType="MAIZE" capacity="250000" />
+			<capacity fillType="MAIZE2" capacity="250000" />
+		</storage>
+			
+			
+		<sellingStation node="unloadingTrigger" appearsOnStats="false" supportsExtension="true" allowMissions="false" hideFromPricesMenu="true">
+			<unloadTrigger exactFillRootNode="exactFillRootNode" fillTypes="MAIZE MAIZE2"/>
+		</sellingStation>
+			
+		<loadingStation node="loadingTrigger" supportsExtension="true" >
+            <loadTrigger triggerNode="loadingTrigger" fillLitersPerSecond="6000" dischargeNode="dischargeNode" fillTypes="MAIZE2 MAIZE">
+                <effectNode effectClass="PipeEffect" effectNode="pipeEffect"      materialType="pipe"           fadeTime="0.5" maxBending="0.5" controlPoint="0.9 0 0 0" shapeScaleSpread="0.6 0.6 1 0"/>
+                <effectNode                          effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.5" />
+            </loadTrigger>
+        </loadingStation>
+		
+		<playerTrigger node="production_trigger" />
+		
+		<sounds>
+			<active template="oilPlantWork" linkNode="Sound" innerRadius="4.00" outerRadius="15.00" volumeScale="0.5"/>
+		</sounds>
+	
+		<animationNodes>
+			<animationNode node="fan1" rotSpeed="-400" rotAxis="3" turnOnFadeTime="10" turnOffFadeTime="15" turnOnOffVariance="5" />
+			<animationNode node="fan2" rotSpeed="-400" rotAxis="3" turnOnFadeTime="10" turnOffFadeTime="15" turnOnOffVariance="5" />
+			<animationNode node="fan3" rotSpeed="-400" rotAxis="3" turnOnFadeTime="10" turnOffFadeTime="15" turnOnOffVariance="5" />
+			<animationNode node="fan4" rotSpeed="-400" rotAxis="3" turnOnFadeTime="10" turnOffFadeTime="15" turnOnOffVariance="5" />
+		</animationNodes>
+		
+	</productionPoint>
+
+	<triggerMarkers>
+		<triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIconWrench.i3d" />
+        <triggerMarker node="loadingTriggerMarker" filename="$data/shared/assets/marker/markerIconLoad.i3d" />
+        <triggerMarker node="unloadingTriggerMarker" filename="$data/shared/assets/marker/markerIconUnload.i3d" />
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="mapPosition" teleportNode="teleportNode" />
+    </hotspots>
+	
+    <i3dMappings>
+        <i3dMapping id="mapPosition" node="0>0|0" />
+        <i3dMapping id="storage" node="0>0|1" />
+		<i3dMapping id="Sound" node="0>0|2" />
+		<i3dMapping id="teleportNode" node="0>0|3" />
+		<i3dMapping id="production_trigger" node="0>0|4" />
+		<i3dMapping id="playerTriggerMarker" node="0>0|4|0" />
+        <i3dMapping id="exactFillRootNode" node="0>0|5|0" />
+        <i3dMapping id="loadingTrigger" node="0>0|6|0" />
+        <i3dMapping id="dischargeNode" node="0>0|6|1" />
+        <i3dMapping id="pipeEffect" node="0>0|6|2|0" />
+        <i3dMapping id="pipeEffectSmoke" node="0>0|6|2|1" />
+        <i3dMapping id="infoTrigger" node="0>0|7" />
+		<i3dMapping id="unloadingTriggerMarker" node="0>0|8" />
+		<i3dMapping id="loadingTriggerMarker" node="0>0|9" />
+		<i3dMapping id="indoorArea1Start" node="0>0|10" />
+		<i3dMapping id="indoorArea1Width" node="0>0|10|0" />
+		<i3dMapping id="indoorArea1Height" node="0>0|10|1" />
+        <i3dMapping id="clearArea1Start" node="0>1|0" />
+        <i3dMapping id="clearArea1Width" node="0>1|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>1|0|1" />
+        <i3dMapping id="levelArea1Start" node="0>2|0" />
+        <i3dMapping id="levelArea1Width" node="0>2|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>2|0|1" />
+        <i3dMapping id="testArea1Start" node="0>3|0" />
+        <i3dMapping id="testArea1End" node="0>3|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>4|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>4|0|0" />
+		<i3dMapping id="fan1" node="0>6|2|0" />
+		<i3dMapping id="fan2" node="0>6|2|1" />
+		<i3dMapping id="fan3" node="0>6|2|2" />
+		<i3dMapping id="fan4" node="0>6|2|3" />
+    </i3dMappings>
+</placeable>

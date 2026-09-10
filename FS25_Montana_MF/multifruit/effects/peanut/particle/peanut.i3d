@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="peanut.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="$data/effects/cultivator/particle/soil16x4_diffuse.png"/>
+    <File fileId="2" filename="$data/effects/cultivator/particle/soil16x4_normal.png"/>
+    <File fileId="8" filename="$data/effects/potato/particle/soil4x1_diffuse.png"/>
+    <File fileId="9" filename="$data/effects/potato/particle/soil4x1_normal.png"/>
+    <File fileId="10" filename="$data/effects/smoke/smoke6x6_diffuse.png"/>
+    <File fileId="11" filename="$data/effects/smoke/smoke6x6_normal.png"/>
+    <File fileId="7" filename="$data/shaders/psColorShader.xml"/>
+    <File fileId="3" filename="$data/shaders/psSubUVShader.xml"/>
+    <File fileId="5" filename="peanut4x1_diffuse.dds"/>
+    <File fileId="6" filename="peanut4x1_normal.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="chaff4x1_mat" materialId="5" customShaderId="7">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+    </Material>
+    <Material name="lambert1" materialId="6" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="smoke6x6_mat" materialId="7" alphaBlending="true" customShaderId="3" customShaderVariation="subUV" shadingRate="4x4">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <CustomParameter name="colorAlpha" value="0.247 0.191 0.145 1"/>
+      <CustomParameter name="playScale" value="25 50 1 0"/>
+    </Material>
+    <Material name="soil16x4_mat" materialId="8" customShaderId="3" customShaderVariation="subUVHorizontal">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="soil4x1_mat" materialId="9" customShaderId="7">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="peanut.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+    <ParticleSystem name="soilEmitter" dynamicId="3" type="sprite" rate="0.1" lifespan="500" maxCount="300" speed="0.003" speedRandom="0.0002" tangentSpeed="0" normalSpeed="1" spriteScaleX="0.4" spriteScaleY="0.4" spriteScaleXGain="0.001" spriteScaleYGain="0.001" blendFactor="1" blendInFactor="0" blendOutFactor="0.9" depthSort="true" deltaRotateMin="-0.0010472" deltaRotateMax="0.0010472" textureAtlasSizeX="4">
+      <Gravity force="0 -2 0"/>
+    </ParticleSystem>
+    <ParticleSystem name="soilEmitter" dynamicId="1" type="sprite" rate="0.1" lifespan="550" maxCount="300" speed="0.004" speedRandom="0.0002" tangentSpeed="0" normalSpeed="1" spriteScaleX="0.6" spriteScaleY="0.6" blendFactor="1" blendInFactor="0" blendOutFactor="1" depthSort="true" randomInitRotation="true" textureAtlasSizeX="16" textureAtlasSizeY="4">
+      <Gravity force="0 -2 0"/>
+    </ParticleSystem>
+    <ParticleSystem name="chaffEmitter" dynamicId="4" type="sprite" rate="0.075" lifespan="1500" maxCount="350" speed="0" speedRandom="0" tangentSpeed="0.5" normalSpeed="1" spriteScaleX="0.4" spriteScaleY="0.4" spriteScaleXGain="0.0004" spriteScaleYGain="0.0004" blendFactor="1" blendInFactor="0.15" blendOutFactor="0.9" randomInitRotation="true" deltaRotateMin="-0.0015708" deltaRotateMax="0.0015708" textureAtlasSizeX="4">
+      <Gravity force="0 -0.3 0"/>
+    </ParticleSystem>
+    <ParticleSystem name="smokeEmitter" dynamicId="5" type="sprite" rate="0.004" lifespan="2000" maxCount="100" speed="0.001" speedRandom="0" tangentSpeed="0.5" normalSpeed="0.7" spriteScaleX="1.5" spriteScaleY="1.5" spriteScaleXGain="0.001" spriteScaleYGain="0.001" blendFactor="0.3" blendInFactor="0.1" blendOutFactor="0.8" randomInitRotation="true" deltaRotateMin="-0.000349066" deltaRotateMax="0.000349066" textureAtlasSizeX="6" textureAtlasSizeY="6">
+      <Gravity force="0 -0.01 0"/>
+    </ParticleSystem>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="harvesting" nodeId="20">
+      <TransformGroup name="SOIL_HARVESTING" nodeId="21">
+        <TransformGroup name="peanut" nodeId="22">
+          <Dynamic name="soilEmitter" dynamicId="1" emitterShapeNodeId="25" clipDistance="100" nodeId="24" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="8">
+            <Shape name="emitShape" shapeId="2" nodeId="25" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="6"/>
+          </Dynamic>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="PREPARE_FRUIT" nodeId="26">
+        <TransformGroup name="peanut" nodeId="27">
+          <Dynamic name="chaffEmitter" dynamicId="3" emitterShapeNodeId="30" clipDistance="100" nodeId="29" castsShadows="true" receiveShadows="true" distanceBlending="false" materialIds="5">
+            <Shape name="EmitShape" shapeId="2" nodeId="30" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="6"/>
+          </Dynamic>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="CLEANING_SOIL" nodeId="31">
+        <TransformGroup name="peanut" nodeId="32">
+          <Dynamic name="soilFallingEmitter" dynamicId="4" emitterShapeNodeId="35" clipDistance="100" nodeId="34" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="9">
+            <Shape name="emitShape" shapeId="2" nodeId="35" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="6"/>
+          </Dynamic>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="CLEANING_DUST" nodeId="36">
+        <TransformGroup name="peanut" nodeId="37">
+          <Dynamic name="smokeEmitter" dynamicId="5" emitterShapeNodeId="40" clipDistance="100" nodeId="39" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="7">
+            <Shape name="emitShape" shapeId="2" nodeId="40" castsShadows="false" receiveShadows="false" nonRenderable="true" materialIds="6"/>
+          </Dynamic>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="24">
+      <Attribute name="fillType" type="string" value="peanut"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="SOIL_HARVESTING"/>
+    </UserAttribute>
+    <UserAttribute nodeId="29">
+      <Attribute name="fillType" type="string" value="peanut"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="PREPARE_FRUIT"/>
+      <Attribute name="useWorldSpace" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="34">
+      <Attribute name="fillType" type="string" value="peanut"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="CLEANING_SOIL"/>
+      <Attribute name="useWorldSpace" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="39">
+      <Attribute name="fillType" type="string" value="peanut"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="CLEANING_DUST"/>
+      <Attribute name="useWorldSpace" type="boolean" value="true"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

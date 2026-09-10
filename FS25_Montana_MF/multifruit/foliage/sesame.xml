@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<foliageType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/foliageType.xsd">
+    <fruitType name="sesame" shownOnMap="true" useForFieldMissions="true">
+        <mapColors default="0.9500 0.7800 0.1000 1" colorBlind="0.3000 0.2500 0.1500 1"/>
+        <harvest litersPerSqm="0.336" cutHeight="0.20" forageCutHeight="0.10" chopperType="CHOPPER_STRAW" beeYieldBonusPercentage="0.10"/>
+        <growth resetsSpray="true" growthRequiresLime="true"/>
+        <soil lowDensityRequired="true" increasesDensity="false" consumesLime="true" startSprayLevel="0"/>
+        <seeding directionSnapAngle="0" needsRolling="true" seedUsagePerSqm="0.021" isAvailable="true"/>
+        <cultivation isAllowed="true"/>
+        <mulcher chopperType="CHOPPER_STRAW"/>
+    </fruitType>
+    
+<!-- sesame
+
+    0 1 2 3
+
+    1 0 0 0 - invisible
+    0 1 0 0 - green small
+    1 1 0 0 - green middle
+    0 0 1 0 - green big
+    1 0 1 0 - harvest ready
+    0 1 1 0 - dead
+    1 1 1 0 - harvested (cut)
+
+    -->
+    <foliageLayer cellSize="8" objectMask="16711935" decalLayer="0" densityMapChannelOffset="0" numDensityMapChannels="4" numBlocksPerUnit="2" shapeSource="sesame/sesame.i3d">
+        <foliageStateDefaults distanceMapLayer="1" width="1.1" height="1.3" widthVariance="0" heightVariance="0.3" horizontalPositionVariance="0" />
+        <!-- default LOD distances etc -->
+        <foliageLodDefaults lod="0" viewDistance="20" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
+        <foliageLodDefaults lod="1" viewDistance="80" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
+        
+<!-- 1 0 0 0 - invisible -->
+        <foliageState name="1 invisible" isGrowing="true" allowsWeeding="true" allowsHoeing="true" />
+        
+<!-- 0 1 0 0 - green small -->
+        <foliageState name="2 small" numBlocksPerUnit="1" width="0.5" height="0.5" distanceMap="distances/foliage_sorghum_distance2_diffuse.png" isGrowing="true" allowsWeeding="true" allowsHoeing="true" >
+            <foliageShape>
+                <foliageLod blockShape="0>0" />
+                <foliageLod blockShape="1>0" />
+            </foliageShape>
+        </foliageState>
+       
+ <!-- 1 1 0 0 - green middle -->
+        <foliageState name="3 middle" numBlocksPerUnit="1" width="0.8" height="0.8" distanceMap="distances/foliage_sorghum_distance3_diffuse.png" isGrowing="true" isDestructibleByWheel="true" allowsWeeding="true" allowsHoeing="true" fieldCourseLineHeight="0.5">
+            <foliageShape>
+                <foliageLod blockShape="0>1" />
+                <foliageLod blockShape="1>1" />
+            </foliageShape>
+        </foliageState>
+        
+<!-- 1 0 1 0 - big -->
+        <foliageState name="4 big" width="1.1" height="1.1" distanceMap="distances/foliage_sorghum_distance4_diffuse.png" isGrowing="true" isDestructibleByWheel="true" isDestructibleByDisaster="true" allowsHoeing="true" fieldCourseLineHeight="0.6">
+            <foliageShape>
+                <foliageLod blockShape="0>2" />
+                <foliageLod blockShape="1>2" />
+            </foliageShape>
+        </foliageState>
+
+<!-- 1 1 1 0 - harvest ready -->
+        <foliageState name="5 ready" width="1.3" height="1.3" distanceMap="distances/foliage_sorghum_distance5_diffuse.png" isGrowing="true" isHarvestReady="true" isDestructibleByWheel="true" isDestructibleByDisaster="true" groundType="HARVEST_READY" fieldCourseLineHeight="0.8">
+            <foliageShape>
+                <foliageLod blockShape="0>3" />
+                <foliageLod blockShape="1>3" />
+            </foliageShape>
+        </foliageState>
+
+<!-- 0 0 0 1 - dead -->
+        <foliageState name="6 dead" distanceMap="distances/foliage_sorghum_distance6_diffuse.png" isWithered="true" isDestructibleByWheel="true" isDestructibleByDisaster="true" fieldCourseLineHeight="0.4">
+            <foliageShape>
+                <foliageLod blockShape="0>4" />
+                <foliageLod blockShape="1>4" />
+            </foliageShape>
+        </foliageState>
+        
+<!-- 1 0 0 1 - harvested (cut) -->
+        <foliageState name="7 cut" distanceMap="distances/foliage_sorghum_distance7_diffuse.png" height="2" width="1.2" isCut="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0>5" />
+                <foliageLod blockShape="1>5" />
+            </foliageShape>
+        </foliageState>
+        
+<!-- 1 0 0 1 - harvested (cut) -->
+        <foliageState name="8 tyre" distanceMap="distances/foliage_sorghum_distance7_diffuse.png" height="1" width="1" isCut="false" isDestructibleByWheel="false" isDestructedByWheel="true" isDestructedByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0>5" />
+                <foliageLod blockShape="1>5" />
+            </foliageShape>
+        </foliageState>
+        
+    </foliageLayer>
+
+
+    <growth>
+        <seasonal initialState="5 ready">
+            <period name="EARLY_SPRING"/> <!-- March -->
+            <period name="MID_SPRING" /> <!-- April -->
+            <period name="LATE_SPRING" plantingAllowed="true"> <!-- May -->
+                <update startState="1 invisible" endState="2 small" />
+            </period>
+            <period name="EARLY_SUMMER" plantingAllowed="true"> <!-- June -->
+                <update startState="1 invisible" endState="2 small" />
+                <update startState="2 small" endState="3 middle" />
+            </period>
+            <period name="MID_SUMMER"> <!-- July -->
+                <update startState="2 small" endState="3 middle" />
+                <update startState="3 middle" endState="4 big" />
+            </period>
+            <period name="LATE_SUMMER"> <!-- August -->
+                <update startState="3 middle" endState="4 big" />
+                <update startState="4 big" endState="5 ready" />
+            </period>
+            <period name="EARLY_AUTUMN"> <!-- September -->
+                <update startState="4 big" endState="5 ready" />
+                <update startState="5 ready" endState="6 dead" />
+            </period>
+            <period name="MID_AUTUMN"> <!-- Octomber -->
+                <update startState="5 ready" endState="6 dead" />
+            </period>
+            <period name="LATE_AUTUMN"/> <!-- November -->
+            <period name="EARLY_WINTER"/> <!-- December -->
+            <period name="MID_WINTER"/> <!-- January -->
+            <period name="LATE_WINTER"/> <!-- February -->
+        </seasonal>
+
+    </growth>
+
+</foliageType>

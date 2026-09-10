@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="sesame_harvestReady.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="$data/foliage/spinach/spinachStage05_fmask.dds"/>
+    <File fileId="4" filename="$data/shaders/motionPathShader.xml"/>
+    <File fileId="7" filename="sesame04LOD_alpha_H.dds"/>
+    <File fileId="1" filename="sesame04LOD_diffuse_H.dds"/>
+    <File fileId="2" filename="oat04LOD_normal_H.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="barleyStage04_mat" materialId="5" customShaderId="4" customShaderVariation="scaleByTexture_verticalOffsetCut_alphaMap">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="alphaMap" fileId="7"/>
+      <CustomParameter name="verticalOffset" value="-0.15"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="sesame_harvestReady.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="cutterEffects_poppy" nodeId="12">
+      <TransformGroup name="cutterEffects_poppy_meshes" nodeId="13">
+        <Shape name="cutterEffects_poppy_nr32_rl42_v1" shapeId="1" nodeId="14" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        <Shape name="cutterEffects_poppy_nr6_rl5_v1" shapeId="2" nodeId="15" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        <Shape name="cutterEffects_poppy_nr6_rl20_v1" shapeId="3" nodeId="16" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        <Shape name="cutterEffects_poppy_nr12_rl26_v1" shapeId="4" nodeId="17" castsShadows="true" receiveShadows="true" materialIds="5"/>
+        <Shape name="cutterEffects_poppy_nr20_rl36_v1" shapeId="5" nodeId="18" castsShadows="true" receiveShadows="true" materialIds="5"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

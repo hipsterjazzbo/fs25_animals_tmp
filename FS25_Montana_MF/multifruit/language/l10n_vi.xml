@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors>Jinkou89</translationContributors>
+    <languageVersion>1.0.0.0</languageVersion>
+	
+	<texts>
+	  
+	<text name="fillType_rye" 				text="Hắc mạch" />
+	<text name="fillType_soybeanUS"        			text="Đậu nành Mỹ" />
+	<text name="fillType_covercropmix"        		text="Hỗn hợp cây che phủ" />
+	<text name="fillType_roundBaleLavender"        		text="Cuộn oải hương" />
+	<text name="fillType_clover1"        			text="Cỏ ba lá đỏ" />
+	<text name="fillType_clover2"        			text="Cỏ ba lá trắng" />
+	<text name="fillType_clover_windrow"        		text="Cỏ ba lá" />
+    	<text name="fillType_alfalfa"       			text="Cỏ linh lăng" />
+	<text name="fillType_cloverSilage"        		text="Ủ chua cỏ ba lá" />
+   	<text name="fillType_alfalfaSilage"       		text="Ủ chua cỏ linh lăng" />
+   	<text name="fillType_cloverHay"     			text="Cỏ ba lá khô" />
+    	<text name="fillType_alfalfaHay"    			text="Cỏ linh lăng khô" />
+    	<text name="fillType_beanstraw" 			text="Rơm đậu" />
+    	<text name="fillType_cornStalks"    			text="Thân cây ngô" />
+	<text name="fillType_flaxFiber"        			text="Sợi lanh" />
+	<text name="fillType_flax"        			text="Cây lanh" />
+	<text name="fillType_linseed"        			text="Hạt lanh" />
+	<text name="fillType_millet"        			text="Kê" />
+	<text name="fillType_poppy"        			text="Anh túc" />
+	<text name="fillType_drypeas"        			text="Đậu Hà Lan khô" />
+	<text name="fillType_beans"        			text="Đậu Pinto" />
+	<text name="fillType_mustard"        			text="Mù tạt" />
+	<text name="fillType_lentils"        			text="Thấu đậu (Đậu lăng)" />
+	<text name="fillType_silphie"        			text="Cây Silphie" />
+	<text name="fillType_spelt"        			text="Lúa mì Spelt" />
+	<text name="fillType_triticale"        			text="Lúa mì lai hắc mạch" />
+	<text name="fillType_soybean2"        			text="Đậu nành Mỹ" />
+	<text name="fillType_tobacco"        			text="Thuốc lá" />
+	<text name="fillType_tobaccoo"        			text="Lá thuốc lá" />      
+	<text name="fillType_compost" 				text="Phân hữu cơ" />
+	<text name="fillType_organicWaste" 			text="Rác thải hữu cơ" />
+	<text name="fillType_grapeA" 				text="Nho đỏ" />
+	<text name="fillType_grapeB" 				text="Nho trắng" />
+	<text name="fillType_chickpeas" 			text="Đậu gà" />
+	<text name="fillType_buckwheat" 			text="Kiều mạch" />
+	<text name="shopItem_grapeb_vine" 			text="Giàn nho trắng" />
+	<text name="shopItem_hopsVine" 				text="Giàn hoa bia" />
+	<text name="fillType_hemp" 				text="Cần sa công nghiệp" />
+	<text name="fillType_hempFiber" 			text="Sợi gai dầu" />
+	<text name="fillType_lavender" 				text="Oải hương" />
+	<text name="fillType_potatoCut"        			text="Khoai tây cắt lát" />
+	<text name="fillType_beetrootCut"        		text="Củ dền cắt lát" />
+	<text name="fillType_carrotCut"        			text="Cà rốt cắt lát" />
+	<text name="fillType_parsnipCut"        		text="Củ cải trắng cắt lát" />  
+	<text name="fillTypeGroup_TMR"        			text="TMR, Ủ chua Linh lăng/Ba lá" />	  
+	<text name="fillTypeGroup_hays"        			text="Cỏ khô, Cỏ khô Linh lăng/Ba lá" />
+	<text name="fillTypeGroup_grassa"        		text="Cỏ tươi, Linh lăng/Ba lá tươi" />
+	<text name="fillTypeGroup_moisture"        		text="Độ ẩm: Củ quả cắt lát" />
+	<text name="fillTypeGroup_grassHay"        		text="Cỏ tươi/Khô/Linh lăng/Ba lá" />
+	<text name="fillType_mineralFeed1"        		text="Thức ăn khoáng/Đậu Hà Lan khô" />
+	<text name="fillTypeGroup_pigForage"        		text="Thức ăn hỗn hợp cho lợn" />
+	<text name="fillType_peanut" 				text="Đậu phộng" />
+	<text name="fillType_miscanthus" 			text="Cỏ voi" />
+	<text name="fillType_miscanthusCut" 			text="Cỏ voi băm nhỏ" />
+
+
+		<text name="fillType_maize2" 			text="Ngô khô" />
+		<text name="fillType_soymilk" 			text="Sữa đậu nành" />
+		<text name="fillType_pasta" 			text="Mì Ý" />
+		<text name="fillType_chips" 			text="Khoai tây chiên" />
+		<text name="fillType_ethanol" 			text="Ethanol" />
+		<text name="fillType_cornflour"			text="Bột ngô" />
+		<text name="fillType_cornOil"			text="Dầu ngô" />
+		<text name="fillType_linseedOil"		text="Dầu hạt lanh" />
+		<text name="fillType_mustardOil"		text="Dầu mù tạt" />
+		<text name="fillType_poppyOil"			text="Dầu anh túc" />
+		<text name="fillType_pizza"			text="Pizza" />
+		<text name="fillType_buckwheatflour"        	text="Bột kiều mạch" />
+		<text name="fillType_gramflour"        		text="Bột đậu gà" />
+		<text name="fillType_milletflour"        	text="Bột kê" />
+		<text name="fillType_ryeflour"        		text="Bột hắc mạch" />
+		<text name="fillType_sorghumflour"        	text="Bột lúa mạch đen" />
+		<text name="fillType_crackedCorn"        	text="Ngô nghiền" />
+		<text name="fillType_apple"        		text="Táo" />
+		<text name="fillType_apricot"        		text="Mơ" />
+		<text name="fillType_cherry"        		text="Anh đào" />
+		<text name="fillType_pear"        		text="Lê" />
+		<text name="fillType_peach"        		text="Đào" />
+		<text name="fillType_plum"        		text="Mận" />
+		<text name="fillType_quince"        		text="Mộc qua" />
+		<text name="fillType_cabbage"        		text="Bắp cải trắng" />
+		<text name="fillType_redCabbage"        	text="Bắp cải tím" />
+		<text name="fillType_melon"        		text="Dưa lưới" />
+		<text name="fillType_pumpkin"        		text="Bí ngô" />
+		<text name="fillType_watermelon"        	text="Dưa hấu" />
+		<text name="fillType_cucumber"        		text="Dưa chuột" />
+		<text name="fillType_eggplant"        		text="Cà tím" />
+		<text name="fillType_pepper"        		text="Ớt chuông" />
+		<text name="fillType_cauliflower" 		text="Súp lơ" />
+		<text name="fillType_bran"        		text="Cám" />
+		<text name="fillType_molasses"        		text="Rỉ mật" />
+		<text name="fillType_appleJuice"        	text="Nước ép táo" />
+		<text name="fillType_apricotJuice"        	text="Nước ép mơ" />
+		<text name="fillType_beetrootJuice"        	text="Nước ép củ dền" />
+		<text name="fillType_carrotJuice"        	text="Nước ép cà rốt" />
+		<text name="fillType_cherryJuice"        	text="Nước ép anh đào" />
+		<text name="fillType_melonJuice"        	text="Nước ép dưa" />
+		<text name="fillType_multifruitJuice"        	text="Nước ép đa quả" />
+		<text name="fillType_peachJuice"        	text="Nước ép đào" />
+		<text name="fillType_pearJuice"        		text="Nước ép lê" />
+		<text name="fillType_plumJuice"        		text="Nước ép mận" />
+		<text name="fillType_quinceJuice"        	text="Nước ép mộc qua" />
+		<text name="fillType_strawberryJuice"        	text="Nước ép dâu tây" />
+		<text name="fillType_tomatoJuice"        	text="Nước ép cà chua" />
+		<text name="fillType_watermelonJuice"        	text="Nước ép dưa hấu" />
+ 		<text name="fillType_cattle" 			text="Gia súc lớn" />
+		<text name="fillType_pigs" 			text="Lợn" />
+		<text name="fillType_sheepGoat" 		text="Cừu/Dê" />
+ 		<text name="fillType_beef" 			text="Thịt bò" />
+		<text name="fillType_pork" 			text="Thịt lợn" />
+		<text name="fillType_poultryMeat" 		text="Thịt gia cầm" />
+		<text name="fillType_lamb" 			text="Thịt cừu" />
+		<text name="fillType_cigar" 			text="Xì gà" />
+		<text name="fillType_cigarette" 		text="Thuốc lá điếu" />
+		<text name="fillType_animalFat" 		text="Mỡ động vật" />
+		<text name="fillType_perfume" 			text="Nước hoa" />
+		<text name="fillType_soap" 			text="Xà phòng" />
+		<text name="fillType_lavenderOil" 		text="Tinh dầu oải hương" />
+		<text name="fillType_bourbonBarrel" 		text="Rượu Bourbon" />
+		<text name="fillType_brandyBarrel" 		text="Rượu Brandy" />
+		<text name="fillType_ciderBarrel" 		text="Rượu táo" />
+		<text name="fillType_meadBarrel" 		text="Rượu mật ong" />
+		<text name="fillType_liqueurBarrel" 		text="Rượu mùi trái cây" />
+		<text name="fillType_vodkaBarrel" 		text="Rượu Vodka" />
+		<text name="fillType_whiskeyBarrel" 		text="Rượu Whiskey" />
+		<text name="fillType_rumBarrel" 		text="Rượu Rum" />
+		<text name="fillType_peanutflour" 		text="Bột đậu phộng" />
+		<text name="fillType_peanutOil" 		text="Dầu đậu phộng" />
+		<text name="fillType_peanutButter" 		text="Bơ đậu phộng" />
+		<text name="fillType_mayo" 			text="Sốt Mayonnaise" />
+		<text name="fillType_ketchup" 			text="Tương cà" />
+		<text name="fillType_hotSauce" 			text="Tương ớt" />
+		<text name="fillType_soySauce" 			text="Nước tương" />
+		<text name="fillType_garlicSauce" 		text="Sốt tỏi" />
+		<text name="fillType_mustardSauce" 		text="Sốt mù tạt" />
+		<text name="fillType_pickledCucumber" 		text="Dưa chuột muối" />
+		<text name="fillType_pickledCabbage" 		text="Bắp cải muối" />
+		<text name="fillType_pickledCauliflower" 	text="Súp lơ muối" />
+		<text name="fillType_beansSoup" 		text="Súp đậu" />
+		<text name="fillType_peanutBags" 		text="Túi đậu phộng" />
+		<text name="fillType_beansBags" 		text="Túi đậu" />
+		<text name="fillType_cannedBeans" 		text="Đậu đóng hộp" />
+		<text name="fillType_tofu" 			text="Đậu phụ" />
+		<text name="fillType_chocomilk" 		text="Sữa socola" />
+		<text name="fillType_oatmilk" 			text="Sữa yến mạch" />
+		<text name="fillType_mushroomSoup" 		text="Súp nấm" />
+		<text name="fillType_beer" 			text="Bia" />
+		<text name="fillType_wine" 			text="Rượu vang" />
+		<text name="fillType_icecream" 			text="Kem" />
+		<text name="fillType_sourcream" 		text="Kem chua" />
+		<text name="fillType_yoghurt" 			text="Sữa chua" />
+		<text name="fillType_sunflowerBags" 		text="Túi hạt hướng dương" />
+		<text name="fillType_pumpkinSeeds" 		text="Hạt bí ngô" />
+		<text name="fillType_pumpkinPuree" 		text="Bí ngô nghiền" />
+		<text name="fillType_eggplantPuree" 		text="Cà tím nghiền" />
+		<text name="fillType_popcorn" 			text="Bắp rang bơ" />
+		<text name="fillType_cheesePuffs" 		text="Bánh phồng phô mai" />
+		<text name="fillType_peanutPuffs" 		text="Bánh phồng đậu phộng" />
+		<text name="fillType_tortilla" 			text="Bánh Tortilla" />
+		<text name="fillType_garlicBread" 		text="Bánh mì tỏi" />
+		<text name="fillType_onionRings" 		text="Hành tây chiên vòng" />
+		<text name="fillType_pie" 			text="Bánh Pie trái cây" />
+		<text name="fillType_cocoaPowder" 		text="Bột cacao" />
+		<text name="fillType_cookingSalt" 		text="Muối ăn" />
+		<text name="fillType_yeast" 		 	text="Men" />
+		<text name="fillType_roulade"                   text="Bánh cuộn" />
+		<text name="fillType_strudel"                   text="Bánh Strudel" />
+		<text name="fillType_milkBread"                 text="Bánh mì sữa" />
+		<text name="fillType_potatoBread"               text="Bánh mì khoai tây" />
+		<text name="fillType_sweetBread"                text="Bánh mì ngọt" />
+		<text name="fillType_bagel"                     text="Bánh Bagel" />
+		<text name="fillType_baguette" 			text="Bánh mì Pháp"/>
+		<text name="fillType_hops" 			text="Hoa bia"/>
+		<text name="fillType_cowFood" 			text="Cám viên cho bò"/>
+		<text name="fillType_hayPellets" 		text="Cỏ khô nén viên"/>
+		<text name="fillType_strawPellets" 		text="Rơm nén viên"/>
+		<text name="fillType_woodChipsPellets" 		text="Gỗ vụn nén viên"/>
+		<text name="fillType_chocoCake" 		text="Bánh kem socola"/>
+		<text name="fillType_sesame" 			text="Vừng (Mè)"/>
+		<text name="fillType_sesameOil" 		text="Dầu mè"/>
+		<text name="fillType_sesameBags" 		text="Túi hạt mè"/>
+		<text name="fillType_chickpeasBags" 		text="Túi đậu gà"/>
+		<text name="fillType_lentilsBags" 		text="Túi đậu lăng"/>
+		<text name="fillType_sesameRolls" 		text="Bánh mè mật ong"/>
+		<text name="fillType_hummus" 			text="Sốt Hummus"/>
+
+	<text name="pigProcessing"        			text="Chế biến thịt lợn" />
+		<text name="poultryProcessing"        			text="Chế biến thịt gia cầm" />
+		<text name="cattleProcessing"        			text="Chế biến thịt bò" />
+		<text name="sheepProcessing"        			text="Chế biến thịt cừu/dê" />
+		<text name="message_unloadAnimalSuccess" 		text="Đã chuyển động vật đến %s thành công!" />
+        	<text name="message_unloadAnimalConfirmation" 		text="Bạn có muốn chuyển %d động vật (%s) đến %s không?" />
+        	<text name="button_moveAnimal" 				text="Chuyển đến %s" />
+		<text name="message_animalTooYoung" 			text="Động vật này còn quá nhỏ." />
+		<text name="message_animalTooOld" 			text="Động vật này đã quá già." />
+        	<text name="configuration_grapeB" 			text="Nho trắng"/>
+        	<text name="configuration_hops" 			text="Hoa bia"/>
+		<text name="function_fermentingTower" 			text="Tại đây bạn có thể ủ chua cỏ, thức ăn băm, linh lăng hoặc cỏ ba lá." />
+		<text name="function_grainDryer" 			text="Tại đây bạn có thể sấy khô ngô." />
+		<text name="function_hopsVine" 			        text="Giàn để trồng hoa bia. Bạn cần máy thu hoạch đa năng để thu hoạch." />
+		<text name="function_buyingPoint" 			text="Tại trạm này, bạn có thể mua hầu hết mọi thứ với số lượng lớn." />
+
+
+	<text name="shopItem_appleOrchard" 		text="Vườn táo nhỏ" />	
+		<text name="shopItem_apricotOrchard" 		text="Vườn mơ nhỏ" />	
+		<text name="shopItem_appleTree" 		text="Cây táo" />	
+		<text name="shopItem_apricotTree" 		text="Cây mơ" />
+		<text name="shopItem_cherryOrchard" 		text="Vườn anh đào nhỏ" />	
+		<text name="shopItem_pearOrchard" 		text="Vườn lê nhỏ" />	
+		<text name="shopItem_cherryTree" 		text="Cây anh đào" />	
+		<text name="shopItem_pearTree" 			text="Cây lê" />	
+		<text name="shopItem_peachOrchard" 		text="Vườn đào nhỏ" />	
+		<text name="shopItem_peachTree" 		text="Cây đào" />		
+		<text name="shopItem_plumOrchard" 		text="Vườn mận nhỏ" />	
+		<text name="shopItem_plumTree" 			text="Cây mận" />		
+		<text name="shopItem_quinceOrchard" 		text="Vườn mộc qua nhỏ" />	
+		<text name="shopItem_quinceTree" 		text="Cây mộc qua" />	
+		<text name="shopItem_grainCrusher" 		text="Máy nghiền hạt" />	
+		<text name="shopItem_juiceFactory" 		text="Nhà máy nước ép" />
+		<text name="shopItem_slaughterHouse" 		text="Lò mổ" />
+		<text name="shopItem_tobaccoProd" 		text="Nhà máy thuốc lá" />
+		<text name="shopItem_lavenderProd" 		text="Chế biến oải hương" />
+		<text name="shopItem_openGarden" 		text="Vườn ngoài trời" />
+		<text name="shopItem_distillery" 		text="Xưởng chưng cất" />
+		<text name="shopItem_preservedFood" 		text="Nhà máy thực phẩm bảo quản" />
+		<text name="shopItem_foodProd" 			text="Sản xuất đồ ăn nhẹ" />
+		<text name="shopItem_fermentingTower" 		text="Tháp ủ chua" />
+		<text name="shopItem_wineCellar" 		text="Hầm bia và rượu" />
+		<text name="shopItem_grainDryer" 		text="Máy sấy hạt" />
+		<text name="shopItem_openGardenFieldCrops" 	text="Vườn canh tác cây trồng đồng ruộng" />
+		<text name="shopItem_industrialGreenhouse" 	text="Nhà kính công nghiệp" />
+		<text name="shopItem_vegetarianProd" 		text="Sản xuất thực phẩm thuần chay" />
+		<text name="shopItem_pelletizer" 		text="Máy nén viên" />
+		<text name="shopItem_buyingPoint1" 		text="Trạm thu mua đa quả" />
+		<text name="shopItem_buyingPoint2" 		text="Trạm thu mua đa quả (giảm giá)" />
+
+
+		<text name="shopItem_jamProd" 				text="Nhà máy mứt" />
+		<text name="fillType_edamame" 				text="Đậu nành Nhật (Edamame)"/>
+		<text name="fillType_taro" 				text="Khoai môn"/>
+		<text name="fillType_okra" 				text="Đậu bắp"/>
+		<text name="fillType_mint" 				text="Bạc hà"/>
+		<text name="fillType_greenRye" 				text="Hắc mạch xanh" />
+		<text name="fillType_taroCut" 				text="Khoai môn cắt lát" />
+		<text name="fillType_taroFlour" 			text="Bột khoai môn" />
+		<text name="fillType_taroSoup" 				text="Súp khoai môn" />
+		<text name="fillType_taroChips" 			text="Khoai môn chiên" />
+		<text name="fillType_muffin" 				text="Bánh Muffin" />
+		<text name="fillType_donut" 				text="Bánh Donut" />
+		<text name="fillType_ccm" 				text="Ngô băm ủ chua (CCM)" />
+		<text name="fillType_ccmraw" 				text="Ngô băm thô (CCM)" />
+		<text name="fillType_cropWindrow" 			text="Cây trồng băm nhỏ" />
+		<text name="fillType_cropSilage" 			text="Ủ chua cây trồng" />
+		<text name="fillType_grassSilage" 			text="Ủ chua cỏ" />
+		<text name="fillType_safflower" 			text="Hồng hoa" />
+		<text name="fillType_appleJam"        			text="Mứt táo" />
+		<text name="fillType_apricotJam"        		text="Mứt mơ" />
+		<text name="fillType_cherryJam"        			text="Mứt anh đào" />
+		<text name="fillType_grapeJam"        			text="Mứt nho" />
+		<text name="fillType_melonJam"        			text="Mứt dưa" />
+		<text name="fillType_peachJam"        			text="Mứt đào" />
+		<text name="fillType_pearJam"        			text="Mứt lê" />
+		<text name="fillType_plumJam"        			text="Mứt mận" />
+		<text name="fillType_strawberryJam"        		text="Mứt dâu tây" />
+		<text name="fillType_quinceJam"        			text="Mứt mộc qua" />
+		<text name="fillType_safflowerOil" 			text="Dầu hồng hoa" />
+		<text name="fillType_mintOil" 				text="Tinh dầu bạc hà"/>
+		<text name="fillType_mintBarrel" 			text="Rượu mùi bạc hà"/>
+		<text name="fillType_jarredOkra"        		text="Đậu bắp đóng lọ" />
+		<text name="fillType_jarredEdamame"        		text="Đậu nành Nhật đóng lọ" />
+
+<text name="fillType_duckEgg"                 text="Trứng vịt"/>
+        <text name="shopItem_duckGooseBarn"             text="Chuồng vịt và ngỗng"/>
+        <text name="shopItem_duckGoosePasture"             text="Đồng cỏ vịt và ngỗng"/>
+        <text name="shopItem_rabbitHutch"             text="Chuồng thỏ"/>
+        <text name="function_animalPenDuck"             text="Tại đây bạn có thể nuôi vịt và ngỗng. Hãy cho chúng ăn và lót chuồng bằng rơm để thu hoạch trứng vịt và phân bón."/>
+        <text name="function_animalPenRabbit"             text="Tại đây bạn có thể nuôi thỏ. Hãy cho chúng ăn và lót rơm. Khi chúng lớn, bạn có thể bán để kiếm lời."/>
+        <text name="fillTypeGroup_clover"                text="Cỏ ba lá tươi" />
+        <text name="fillTypeGroup_fruitVegetables"             text="Trái cây và rau củ" />
+
+    <text name="fillType_goose"                            text="Ngỗng" />
+        <text name="animal_group_goose"                        text="Ngỗng và vịt" />
+        <text name="shopItem_animalGooseGrowthStage0"           text="Ngỗng con" />
+        <text name="shopItem_animalGooseGrowthStage1"           text="Ngỗng" />
+        <text name="animal_descriptionGooseProfitGrowthStage0" text="Ngỗng con có thể được vỗ béo sau đó bán để kiếm lời." />
+        <text name="animal_descriptionGooseProfitGrowthStage1" text="Ngỗng có thể được nhân giống sau đó bán để kiếm lời." />
+        <text name="animal_descriptionGooseFeed"               text="Cho chúng ăn giống như gà. Nước được cung cấp tự động tùy thuộc vào loại chuồng nuôi." />
+        <text name="animal_descriptionGooseReproduction"       text="Ngỗng đạt đến độ tuổi sinh sản sau 10 tháng. Mùa sinh sản kéo dài một tháng." />
+
+    <text name="fillType_duck"                             text="Vịt" />
+        <text name="shopItem_animalDuckGrowthStage0"           text="Vịt con" />
+        <text name="animal_duckGrowthStage0Description"        text="Vịt con chưa thể đẻ trứng. Chúng thích hợp để nuôi lấy giống hoặc bán thương phẩm." />    
+        <text name="shopItem_animalDuckGrowthStage1"           text="Vịt" />    
+        <text name="animal_duckGrowthStage1Description"        text="Vịt cung cấp trứng, bạn có thể bán tại các điểm thu mua hoặc chế biến thêm trong các nhà máy sản xuất của mình." />    
+        <text name="animal_poultryFoodDescription"             text="Gia cầm cần ngũ cốc và nước để sản xuất. Lưu ý: Một số chuồng được trang bị hệ thống cấp nước tự động, trường hợp đó không cần thêm nước thủ công." />
+        
+         <text name="fillType_rabbit"                            text="Thỏ cái" />
+            <text name="fillType_rabbitMale"                        text="Thỏ đực" />
+            <text name="animal_group_rabbits"                       text="Thỏ" />
+            <text name="shopItem_animalRabbitGrowthStage0"          text="Thỏ (Sơ sinh)" />
+            <text name="shopItem_animalRabbitGrowthStage1"          text="Thỏ (Mới lớn)" />
+            <text name="shopItem_animalRabbitGrowthStage2"          text="Thỏ (Cái)" />
+            <text name="shopItem_animalRabbitGrowthStage3"          text="Thỏ (Đực)" />
+            <text name="animal_rabbitGrowthStage0Description"       text="Thỏ sơ sinh là những cá thể trẻ nhất. Chúng không thể mua riêng lẻ mà được sinh ra từ thỏ mẹ." />
+            <text name="animal_rabbitGrowthStage1Description"       text="Thỏ mới lớn có thể được sử dụng để nhân giống." />
+            <text name="animal_rabbitGrowthStage2Description"       text="Thỏ cái có thể sinh sản hoặc đem bán. Thỏ con sẽ trẻ và nhỏ hơn thỏ mới lớn." />
+            <text name="animal_rabbitGrowthStage3Description"       text="Thỏ đực." />
+            <text name="animal_rabbitBeddingDescription"            text="Thỏ đực chỉ có thể mua và bán." />
+            <text name="animal_rabbitFoodDescription"               text="Thỏ cần rơm để lót chuồng cho thoải mái." />
+
+        <text name="geeseProcessing"                     text="Chế biến thịt ngỗng và vịt" />
+        <text name="rabbitProcessing"                     text="Chế biến thịt thỏ" />
+        <text name="fillType_leather"              text="Da thật"/>
+        <text name="fillType_leatherJacket"          text="Áo khoác da"/>
+        <text name="fillType_pillow"              text="Gối"/>
+        <text name="fillType_furCoat"              text="Áo lông thú"/>
+        <text name="fillType_feathers"              text="Lông vũ" />
+        <text name="fillType_rabbitMeat"          text="Thịt thỏ" />
+        <text name="fillType_rabbitFur"          text="Lông thỏ (da lông)" />
+        <text name="fillType_poultry2"              text="Gia cầm (Ngỗng và vịt)" />
+        <text name="fillType_hare"              text="Thỏ" />
+        <text name="fillType_poultry"              text="Gia cầm (Gà)" />
+
+<text name="fillType_anhydrous"          text="Amoniac khan (NH3)" />
+        <text name="fillType_propane"           text="Khí Propane" />
+<text name="shopItem_bakeryFactory"     text="Tiệm bánh Montana" />    
+        <text name="shopItem_beerFactory"       text="Xưởng bia Yuengling" />        
+        <text name="shopItem_ethanolFactory"    text="Nhà máy Ethanol Rocky Mountain" />    
+        <text name="shopItem_whiskeyFactory"    text="Xưởng chưng cất Whiskey Jack Daniels" />    
+        <text name="shopItem_dairyFactory"      text="Nhà máy sữa Country View" />    
+        <text name="shopItem_wineFactory"       text="Xưởng rượu vang Duckhorn" />    
+        <text name="shopItem_pizzaFactory"      text="Công ty Pizza Mỹ" />    
+        <text name="shopItem_grainFlourFactory" text="Nhà máy xay bột" />    
+        <text name="shopItem_oilFactory"        text="Nhà máy ép dầu" />    
+    <text name="station_grainSiloTrainC1"     text="Đại lý ngũ cốc Great Plains" />    
+        <text name="station_grainSiloTrainC2"     text="Kho ngũ cốc Montana Prairie" />    
+        <text name="station_grainSiloTrainC3"     text="Trạm trung chuyển ngũ cốc Yellowstone" />    
+        <text name="station_balesStorageC1"       text="Kho cỏ khô Montana" />
+        <text name="station_grainSiloStoreC2"     text="Vật tư nông nghiệp Montana Prairie" />    
+        <text name="station_grainSiloStoreC3"     text="Cửa hàng thức ăn &amp; ngũ cốc Flathead" />    
+        <text name="station_grainSiloStoreC4"     text="Silo ngũ cốc Iron Ridge" />    
+        <text name="station_grainSiloStoreC5"     text="Công ty ngũ cốc Lone Pine" />    
+        <text name="station_grainSiloStoreC6"     text="AgriCore Montana" />
+        <text name="station_productStoreC1"       text="Nhà hàng" />    
+        <text name="station_productStoreC2"       text="Khu mua sắm Hobson" />    
+        <text name="station_productStoreC3"       text="Cửa hàng tạp hóa Hobson" />    
+        <text name="station_productStoreC4"       text="Cửa hàng Dollar General" />    
+        <text name="station_productStoreC5"       text="Trạm xăng BP" />    
+        <text name="station_productStoreC6"       text="Trạm xăng Casey's" />    
+        <text name="station_productStoreC7"       text="Nhà hàng Applebee's" />    
+        <text name="station_productStoreC8"       text="Xưởng bia Kodiac" />    
+        <text name="station_productStoreC9"       text="Khu mua sắm Moccasin" />    
+        <text name="station_productStoreC10"      text="Cửa hàng tạp hóa Moccasin" />    
+        <text name="station_productStoreC11"      text="Cửa hàng Subway" />
+	
+	</texts>
+</l10n>

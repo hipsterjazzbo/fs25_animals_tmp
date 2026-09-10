@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<greenhousePlant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../shared/xml/schema/greenhousePlant.xsd">
+    <i3dFilename>multifruit/placeables/greenhouses/plants/pepper/pepper.i3d</i3dFilename>
+    <stages>
+        <growing  node="greenSmall_lod"/>
+        <growing  node="greenBig_lod"/>
+        <withered node="dead_lod"/>
+    </stages>
+    <i3dMappings>
+        <i3dMapping id="greenSmall_lod" node="0>0" />
+        <i3dMapping id="greenBig_lod" node="0>1" />
+        <i3dMapping id="dead_lod" node="0>2" />
+    </i3dMappings>
+</greenhousePlant>

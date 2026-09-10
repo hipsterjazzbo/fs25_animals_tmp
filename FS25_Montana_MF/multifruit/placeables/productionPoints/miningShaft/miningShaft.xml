@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="heapSpawner" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/placeable.xsd">
+    <storeData>
+        <name>$l10n_storeItem_miningShaftTower</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>multifruit/placeables/productionPoints/miningShaft/textures/store_miningShaftTower.png</image>
+        <price>250000</price>
+        <dailyUpkeep>250</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>JINKOU</brand>
+        <species>PLACEABLE</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+        <vertexBufferMemoryUsage>1637376</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>331520</indexBufferMemoryUsage>
+        <textureMemoryUsage>8126464</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>multifruit/placeables/productionPoints/miningShaft/miningShaftTower.i3d</filename>
+	<boughtWithFarmland>false</boughtWithFarmland>
+	<canBeDeleted>true</canBeDeleted>
+	<canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" placementPositionSnapSize="0.5" placementRotationSnapAngle="90" >
+        <testAreas>
+            <testArea startNode="testAreaStart01" endNode="testAreaEnd01" />
+            <testArea startNode="testAreaStart02" endNode="testAreaEnd02" />
+            <testArea startNode="testAreaStart03" endNode="testAreaEnd03" />
+        </testAreas>
+
+        <sounds>
+            <place template="largeImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01"/>
+        <clearArea startNode="clearAreaStart02" widthNode="clearAreaWidth02" heightNode="clearAreaHeight02"/>
+        <clearArea startNode="clearAreaStart03" widthNode="clearAreaWidth03" heightNode="clearAreaHeight03"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+        <levelAreas>
+            <levelArea startNode="clearAreaStart01" widthNode="clearAreaWidth01" heightNode="clearAreaHeight01" groundType="asphalt"/>
+            <levelArea startNode="clearAreaStart02" widthNode="clearAreaWidth02" heightNode="clearAreaHeight02" groundType="asphalt"/>
+            <levelArea startNode="clearAreaStart03" widthNode="clearAreaWidth03" heightNode="clearAreaHeight03" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart01" widthNode="indoorAreaWidth01" heightNode="indoorAreaHeight01" />
+        <indoorArea startNode="indoorAreaStart02" widthNode="indoorAreaWidth02" heightNode="indoorAreaHeight02" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart01" endNode="tipOcclusionUpdateAreaEnd01" />
+        </updateAreas>
+    </ai>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart filename="multifruit/placeables/productionPoints/miningShaft/textures/props.i3d" node="0" linkNode="propsLinkNode" />
+    </dynamicallyLoadedParts>
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="hotspot" teleportNode="hotspot" />
+    </hotspots>
+
+    <heapSpawner>
+        <spawnArea fillType="IRONORE" litersPerHour="2000" >
+            <area startNode="spawnAreaStart01" widthNode="spawnAreaWidth01" heightNode="spawnAreaHeight01" />
+            <effectNodes>
+                <effectNode effectNode="effectSmoke"    materialType="unloadingSmoke" fadeTime="0.5" useFruitColor="true"/>
+                <effectNode effectNode="effectParticle" effectClass="ParticleEffect"  particleType="UNLOADING" emitCountScale="0.1" speed="0.1" fadeScale="0.1" materialType="unloadingParticle" defaultFillType="IRONORE"/>
+            </effectNodes>
+
+            <sounds>
+                <work file="multifruit/placeables/productionPoints/miningShaft/textures/sounds/miningShaftTowerWork.wav" linkNode="tower" loops="0" innerRadius="7" outerRadius="40" supportsReverb="false">
+                    <volume indoor="0.4" outdoor="2.5"/>
+                </work>
+                <work2 file="multifruit/placeables/productionPoints/miningShaft/textures/sounds/machineRoom.wav" linkNode="machineRoom" loops="0" innerRadius="2" outerRadius="20" supportsReverb="false">
+                    <volume indoor="0.4" outdoor="2"/>
+                </work2>
+                <dropping file="multifruit/placeables/productionPoints/miningShaft/textures/sounds/RocksDischarge.wav" linkNode="dropping" loops="0" innerRadius="2" outerRadius="30" supportsReverb="false" pitchScale="1.0">
+                    <volume indoor="0.4" outdoor="4.0"/>
+                </dropping>
+            </sounds>
+            <animationNodes>
+                <animationNode class="ScrollingAnimation" node="belt" rotSpeed="-20" rotAxis="1" shaderComponentScale="-1 0 0 0" scrollSpeed="0.5" shaderParameterName="offsetUV"/>
+            </animationNodes>
+        </spawnArea>
+    </heapSpawner>
+
+    <i3dMappings>
+        <i3dMapping id="clearAreaStart01" node="0>0|0" />
+        <i3dMapping id="clearAreaWidth01" node="0>0|0|0" />
+        <i3dMapping id="clearAreaHeight01" node="0>0|0|1" />
+        <i3dMapping id="clearAreaStart02" node="0>0|1" />
+        <i3dMapping id="clearAreaWidth02" node="0>0|1|0" />
+        <i3dMapping id="clearAreaHeight02" node="0>0|1|1" />
+        <i3dMapping id="clearAreaStart03" node="0>0|2" />
+        <i3dMapping id="clearAreaWidth03" node="0>0|2|0" />
+        <i3dMapping id="clearAreaHeight03" node="0>0|2|1" />
+        <i3dMapping id="indoorAreaStart01" node="0>1|0" />
+        <i3dMapping id="indoorAreaWidth01" node="0>1|0|0" />
+        <i3dMapping id="indoorAreaHeight01" node="0>1|0|1" />
+        <i3dMapping id="indoorAreaStart02" node="0>1|1" />
+        <i3dMapping id="indoorAreaWidth02" node="0>1|1|0" />
+        <i3dMapping id="indoorAreaHeight02" node="0>1|1|1" />
+        <i3dMapping id="testAreaStart01" node="0>2|0" />
+        <i3dMapping id="testAreaEnd01" node="0>2|0|0" />
+        <i3dMapping id="testAreaStart02" node="0>2|1" />
+        <i3dMapping id="testAreaEnd02" node="0>2|1|0" />
+        <i3dMapping id="testAreaStart03" node="0>2|2" />
+        <i3dMapping id="testAreaEnd03" node="0>2|2|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart01" node="0>3|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd01" node="0>3|0|0" />
+        <i3dMapping id="effectSmoke" node="0>4|0|0" />
+        <i3dMapping id="effectParticle" node="0>4|0|1" />
+        <i3dMapping id="spawnArea" node="0>4|1" />
+        <i3dMapping id="spawnAreaStart01" node="0>4|1|0" />
+        <i3dMapping id="spawnAreaWidth01" node="0>4|1|1" />
+        <i3dMapping id="spawnAreaHeight01" node="0>4|1|2" />
+        <i3dMapping id="loadingTrigger" node="0>4|2" />
+        <i3dMapping id="hotspot" node="0>5" />
+        <i3dMapping id="machineRoom" node="0>6|0" />
+        <i3dMapping id="tower" node="0>6|1" />
+        <i3dMapping id="dropping" node="0>6|2" />
+        <i3dMapping id="belt" node="0>7|0|0|0|7" />
+        <i3dMapping id="propsLinkNode" node="0>7|0|0|2" />
+    </i3dMappings>
+</placeable>

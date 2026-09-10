@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+
+    <storeData>
+        <name>$l10n_fillType_leather</name>
+        <image>$data/store/store_empty.png</image>
+        <category>pallets</category>
+        <brand>JINKOU</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>5120</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>1792</indexBufferMemoryUsage>
+        <textureMemoryUsage>851968</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>multifruit/objects/pallets/meat/leather/leather.i3d</filename>
+        <size width="1.4" length="1" height="0.6" />
+        <canBeReset>false</canBeReset>
+        <components>
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="60"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+
+        <objectChanges>
+            <objectChange node="fabrics01" shaderParameter="color" shaderParameterActive="0 0.1 0.3 0" />
+            <objectChange node="fabrics02" shaderParameter="color" shaderParameterActive="0.8 0.8 0.8 0" />
+            <objectChange node="fabrics03" shaderParameter="color" shaderParameterActive="0 0 0.22 0" />
+            <objectChange node="fabrics04" shaderParameter="color" shaderParameterActive="0.25 0.056 0.03 0" />
+            <objectChange node="fabrics05" shaderParameter="color" shaderParameterActive="0.03 0.03 0.03 0" />
+			<objectChange node="fabrics06" shaderParameter="color" shaderParameterActive="0.1 0.11 0.13 0" />
+            <objectChange node="fabrics07" shaderParameter="color" shaderParameterActive="0 0 0 0" />
+            <objectChange node="fabrics08" shaderParameter="color" shaderParameterActive="0.25 0.056 0.03 0" />
+            <objectChange node="fabrics09" shaderParameter="color" shaderParameterActive="0.4 0.35 0.25 0" />
+            <objectChange node="fabrics10" shaderParameter="color" shaderParameterActive="0.25 0.056 0.03 0" />
+            <objectChange node="fabrics11" shaderParameter="color" shaderParameterActive="0.1 0.11 0.13 0" />
+            <objectChange node="fabrics12" shaderParameter="color" shaderParameterActive="0.4 0.35 0.25 0" />
+            <objectChange node="fabrics13" shaderParameter="color" shaderParameterActive="0.25 0.056 0.03 0" />
+            <objectChange node="fabrics14" shaderParameter="color" shaderParameterActive="0.03 0.03 0.03 0" />
+            <objectChange node="fabrics15" shaderParameter="color" shaderParameterActive="0.8 0.8 0.8 0" />
+			<objectChange node="fabrics16" shaderParameter="color" shaderParameterActive="0.1 0.11 0.13 0" />
+        </objectChanges>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="LEATHER" capacity="1000"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <pallet fillUnitIndex="1" linkNode="grapeleatherettePallet_component1">
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletNew_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletMiddle_diffuse.dds"/>
+        <texture diffuse="$data/objects/pallets/shared/euroPallet/euroPalletOld_diffuse.dds"/>
+		
+        <content>
+            <object node="fabrics01" tensionBeltNode="fabrics01Tension"/>
+            <object node="fabrics02" tensionBeltNode="fabrics02Tension"/>
+            <object node="fabrics03" tensionBeltNode="fabrics03Tension"/>
+            <object node="fabrics04" tensionBeltNode="fabrics04Tension"/>
+            <object node="fabrics05" tensionBeltNode="fabrics05Tension"/>
+            <object node="fabrics06" tensionBeltNode="fabrics06Tension"/>
+            <object node="fabrics07" tensionBeltNode="fabrics07Tension"/>
+            <object node="fabrics08" tensionBeltNode="fabrics08Tension"/>
+            <object node="fabrics09" tensionBeltNode="fabrics09Tension"/>
+            <object node="fabrics10" tensionBeltNode="fabrics10Tension"/>
+            <object node="fabrics11" tensionBeltNode="fabrics11Tension"/>
+            <object node="fabrics12" tensionBeltNode="fabrics12Tension"/>
+            <object node="fabrics13" tensionBeltNode="fabrics13Tension"/>
+            <object node="fabrics14" tensionBeltNode="fabrics14Tension"/>
+            <object node="fabrics15" tensionBeltNode="fabrics15Tension"/>
+            <object node="fabrics16" tensionBeltNode="fabrics16Tension"/>
+        </content>
+
+        <sounds>
+            <unload template="palletsFillFabric" pitchScale="0.8" />
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.5" jointTransY="0.11" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="grapeleatherettePallet_component1" node="0>" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0" />
+        <i3dMapping id="fabrics01" node="0>1|0" />
+        <i3dMapping id="fabrics01Tension" node="0>1|0|0" />
+        <i3dMapping id="fabrics02" node="0>1|1" />
+        <i3dMapping id="fabrics02Tension" node="0>1|1|0" />
+        <i3dMapping id="fabrics03" node="0>1|2" />
+        <i3dMapping id="fabrics03Tension" node="0>1|2|0" />
+        <i3dMapping id="fabrics04" node="0>1|3" />
+        <i3dMapping id="fabrics04Tension" node="0>1|3|0" />
+        <i3dMapping id="fabrics05" node="0>1|4" />
+        <i3dMapping id="fabrics05Tension" node="0>1|4|0" />
+        <i3dMapping id="fabrics06" node="0>1|5" />
+        <i3dMapping id="fabrics06Tension" node="0>1|5|0" />
+        <i3dMapping id="fabrics07" node="0>1|6" />
+        <i3dMapping id="fabrics07Tension" node="0>1|6|0" />
+        <i3dMapping id="fabrics08" node="0>1|7" />
+        <i3dMapping id="fabrics08Tension" node="0>1|7|0" />
+        <i3dMapping id="fabrics09" node="0>1|8" />
+        <i3dMapping id="fabrics09Tension" node="0>1|8|0" />
+        <i3dMapping id="fabrics10" node="0>1|9" />
+        <i3dMapping id="fabrics10Tension" node="0>1|9|0" />
+        <i3dMapping id="fabrics11" node="0>1|10" />
+        <i3dMapping id="fabrics11Tension" node="0>1|10|0" />
+        <i3dMapping id="fabrics12" node="0>1|11" />
+        <i3dMapping id="fabrics12Tension" node="0>1|11|0" />
+        <i3dMapping id="fabrics13" node="0>1|12" />
+        <i3dMapping id="fabrics13Tension" node="0>1|12|0" />
+        <i3dMapping id="fabrics14" node="0>1|13" />
+        <i3dMapping id="fabrics14Tension" node="0>1|13|0" />
+        <i3dMapping id="fabrics15" node="0>1|14" />
+        <i3dMapping id="fabrics15Tension" node="0>1|14|0" />
+        <i3dMapping id="fabrics16" node="0>1|15" />
+        <i3dMapping id="fabrics16Tension" node="0>1|15|0" />
+        <i3dMapping id="collisions" node="0>2" />
+        <i3dMapping id="floorCollision01" node="0>2|0" />
+        <i3dMapping id="floorCollision02" node="0>2|1" />
+    </i3dMappings>
+</vehicle>

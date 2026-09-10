@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+
+<animalHusbandry>
+    <animals>
+		<!-- DUCKLING -->
+		<animal radius="0.3" handleThreats="true" threatAwarenessRadius="5" slowingDistance="0.1" allowMilkingPlace="false" headOffset="0" canEat="false" canDrink="false" canSleep="true" canEatDuringNight="false">
+            <statesTimers idleMin="12000" idleMax="18000" sleepMin="120000" sleepMax="180000" restMin="20000" restMax="30000" grazeMin="8000" grazeMax="16000" chewMin="8000" chewMax="16000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="20000" />
+            <assets filename="duckling/duckling.i3d" filenamePosed="character/animals/domesticated/chicken/duckling/duckling_posed.i3d" animation="duckling/animations/ducklingAnimations.i3d" skeletonIndex="0|0" meshIndex="1" shaderIndex="1" >
+                <texture multi="false" tileUIndex="0" tileVIndex="0" numTilesU="1" numTilesV="1" mirrorV="false" />
+            </assets>
+            <locomotion filename="ducklingLocomotion.xml"/>
+            <audio yellSoundGroup="yellDuckling" yellMinInterval="8000" yellMaxInterval="16000" yellTimerCrowdScale="0.1" />
+        </animal>
+
+		<!-- DUCK ADULT -->
+		<animal radius="0.3" handleThreats="true" threatAwarenessRadius="5" slowingDistance="0.1" allowMilkingPlace="false" headOffset="0" canEat="false" canDrink="false" canSleep="true" canEatDuringNight="false">
+            <statesTimers idleMin="12000" idleMax="18000" sleepMin="120000" sleepMax="180000" restMin="20000" restMax="30000" grazeMin="8000" grazeMax="16000" chewMin="8000" chewMax="16000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="20000" />
+            <assets filename="duck/fowlDuck.i3d" filenamePosed="character/animals/domesticated/chicken/duck/fowlDuck_posed.i3d" animation="duck/animations/fowlAdultAnimations.i3d" skeletonIndex="0|0" meshIndex="1" shaderIndex="1" >
+                <!-- <texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false" />
+                <texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false" /> -->
+                <texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false" />
+                <texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="duckLocomotion.xml"/>
+            <audio yellSoundGroup="yellDuck" yellMinInterval="8000" yellMaxInterval="16000" yellTimerCrowdScale="0.1" />
+        </animal>
+	</animals>
+
+	<sound>
+		<soundGroup name="walk"
+		            volume="0.65"
+		            indoorVolume="0.1"
+		            range="12"
+		            innerRange="0.4">
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_01.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_02.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_03.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_04.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_05.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_06.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_07.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_08.wav"/>
+		</soundGroup>
+		<soundGroup name="run"
+		            volume="0.65"
+		            indoorVolume="0.1"
+		            range="12"
+		            innerRange="0.4">
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_01.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_02.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_03.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_04.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_05.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_06.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_07.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_08.wav"/>
+		</soundGroup>
+		<soundGroup name="yellDuck" volume="1.0" indoorVolume="0.2" range="20" innerRange="1">
+            <sample filename="duck1.wav" />
+            <sample filename="duck2.wav" />
+            <sample filename="duck3.wav" />
+            <sample filename="duck4.wav" />
+        </soundGroup>
+		<soundGroup name="yellDuckling"
+		            volume="1.0"
+		            indoorVolume="0.2"
+		            range="20"
+		            innerRange="1">
+			<sample filename="duckling01.wav"/>
+			<sample filename="duckling02.wav"/>
+			<sample filename="duckling03.wav"/>
+			<sample filename="duckling04.wav"/>
+			<sample filename="duckling05.wav"/>
+			<sample filename="duckling06.wav"/>
+			<sample filename="duckling07.wav"/>
+		</soundGroup>
+	</sound>
+</animalHusbandry>

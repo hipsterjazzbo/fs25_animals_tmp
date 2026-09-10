@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+    <translationContributors>Jinkou89</translationContributors>
+    <languageVersion>1.0.0.0</languageVersion>
+	
+	<texts>
+	  
+	<text name="fillType_rye" 				text="ライ麦" />
+	<text name="fillType_soybeanUS"        			text="アメリカ産大豆" />
+	<text name="fillType_covercropmix"        		text="カバークロップミックス" />
+	<text name="fillType_roundBaleLavender"        		text="ラベンダーベール" />
+	<text name="fillType_clover1"        			text="アカツメクサ" />
+	<text name="fillType_clover2"        			text="シロツメクサ" />
+	<text name="fillType_clover_windrow"        		text="クローバー" />
+    	<text name="fillType_alfalfa"       			text="アルファルファ" />
+	<text name="fillType_cloverSilage"        		text="クローバーサイレージ" />
+   	<text name="fillType_alfalfaSilage"       		text="アルファルファサイレージ" />
+   	<text name="fillType_cloverHay"     			text="クローバーヘイ" />
+    	<text name="fillType_alfalfaHay"    			text="アルファルファヘイ" />
+    	<text name="fillType_beanstraw" 			text="豆ガラのわら" />
+    	<text name="fillType_cornStalks"    			text="トウモロコシの茎" />
+	<text name="fillType_flaxFiber"        			text="亜麻繊維" />
+	<text name="fillType_flax"        			text="フラックス" />
+	<text name="fillType_linseed"        			text="亜麻仁" />
+	<text name="fillType_millet"        			text="キビ" />
+	<text name="fillType_poppy"        			text="ポピー" />
+	<text name="fillType_drypeas"        			text="乾燥エンドウ豆" />
+	<text name="fillType_beans"        			text="うずら豆" />
+	<text name="fillType_mustard"        			text="マスタード" />
+	<text name="fillType_lentils"        			text="レンズ豆" />
+	<text name="fillType_silphie"        			text="シルフィウム" />
+	<text name="fillType_spelt"        			text="スペルト小麦" />
+	<text name="fillType_triticale"        			text="ライ小麦" />
+	<text name="fillType_soybean2"        			text="アメリカ産大豆" />
+	<text name="fillType_tobacco"        			text="タバコ" />
+	<text name="fillType_tobaccoo"        			text="タバコの葉" />      
+	<text name="fillType_compost" 				text="堆肥" />
+	<text name="fillType_organicWaste" 			text="有機廃棄物" />
+	<text name="fillType_grapeA" 				text="赤ブドウ" />
+	<text name="fillType_grapeB" 				text="白ブドウ" />
+	<text name="fillType_chickpeas" 			text="ひよこ豆" />
+	<text name="fillType_buckwheat" 			text="そば" />
+	<text name="shopItem_grapeb_vine" 			text="白ブドウの苗木" />
+	<text name="shopItem_hopsVine" 				text="ホップの苗木" />
+	<text name="fillType_hemp" 				text="ヘンプ" />
+	<text name="fillType_hempFiber" 			text="ヘンプ繊維" />
+	<text name="fillType_lavender" 				text="ラベンダー" />
+	<text name="fillType_potatoCut"        			text="カットポテト" />
+	<text name="fillType_beetrootCut"        		text="カットビート" />
+	<text name="fillType_carrotCut"        			text="カットニンジン" />
+	<text name="fillType_parsnipCut"        		text="カットパースニップ" />  
+	<text name="fillTypeGroup_TMR"        			text="TMR, 発酵アルファルファ/クローバー" />	  
+	<text name="fillTypeGroup_hays"        			text="乾草, アルファルファ/クローバーヘイ" />
+	<text name="fillTypeGroup_grassa"        		text="牧草, 生アルファルファ/クローバー" />
+	<text name="fillTypeGroup_moisture"        		text="水分: カット根菜類" />
+	<text name="fillTypeGroup_grassHay"        		text="生草/乾草/アルファルファ/クローバー" />
+	<text name="fillType_mineralFeed1"        		text="ミネラル飼料/乾燥エンドウ豆" />
+	<text name="fillTypeGroup_pigForage"        		text="豚用混合飼料" />
+	<text name="fillType_peanut" 				text="落花生" />
+	<text name="fillType_miscanthus" 			text="ミスカンサス" />
+	<text name="fillType_miscanthusCut" 			text="粉砕ミスカンサス" />
+
+
+		<text name="fillType_maize2" 			text="乾燥トウモロコシ" />
+		<text name="fillType_soymilk" 			text="豆乳" />
+		<text name="fillType_pasta" 			text="パスタ" />
+		<text name="fillType_chips" 			text="チップス" />
+		<text name="fillType_ethanol" 			text="エタノール" />
+		<text name="fillType_cornflour"			text="コーンフラワー" />
+		<text name="fillType_cornOil"			text="コーン油" />
+		<text name="fillType_linseedOil"		text="亜麻仁油" />
+		<text name="fillType_mustardOil"		text="マスタードオイル" />
+		<text name="fillType_poppyOil"			text="ポピーオイル" />
+		<text name="fillType_pizza"			text="ピザ" />
+		<text name="fillType_buckwheatflour"        	text="そば粉" />
+		<text name="fillType_gramflour"        		text="ひよこ豆粉" />
+		<text name="fillType_milletflour"        	text="キビ粉" />
+		<text name="fillType_ryeflour"        		text="ライ麦粉" />
+		<text name="fillType_sorghumflour"        	text="ソルガム粉" />
+		<text name="fillType_crackedCorn"        	text="挽き割りトウモロコシ" />
+		<text name="fillType_apple"        		text="リンゴ" />
+		<text name="fillType_apricot"        		text="アプリコット" />
+		<text name="fillType_cherry"        		text="チェリー" />
+		<text name="fillType_pear"        		text="洋ナシ" />
+		<text name="fillType_peach"        		text="桃" />
+		<text name="fillType_plum"        		text="プラム" />
+		<text name="fillType_quince"        		text="マルメロ" />
+		<text name="fillType_cabbage"        		text="キャベツ" />
+		<text name="fillType_redCabbage"        	text="赤キャベツ" />
+		<text name="fillType_melon"        		text="メロン" />
+		<text name="fillType_pumpkin"        		text="カボチャ" />
+		<text name="fillType_watermelon"        	text="スイカ" />
+		<text name="fillType_cucumber"        		text="キュウリ" />
+		<text name="fillType_eggplant"        		text="ナス" />
+		<text name="fillType_pepper"        		text="パプリカ" />
+		<text name="fillType_cauliflower" 		text="カリフラワー" />
+		<text name="fillType_bran"        		text="ふすま" />
+		<text name="fillType_molasses"        		text="糖蜜" />
+		<text name="fillType_appleJuice"        	text="リンゴジュース" />
+		<text name="fillType_apricotJuice"        	text="アプリコットジュース" />
+		<text name="fillType_beetrootJuice"        	text="ビートジュース" />
+		<text name="fillType_carrotJuice"        	text="ニンジンジュース" />
+		<text name="fillType_cherryJuice"        	text="チェリージュース" />
+		<text name="fillType_melonJuice"        	text="メロンジュース" />
+		<text name="fillType_multifruitJuice"        	text="ミックスジュース" />
+		<text name="fillType_peachJuice"        	text="桃ジュース" />
+		<text name="fillType_pearJuice"        		text="洋ナシジュース" />
+		<text name="fillType_plumJuice"        		text="プラムジュース" />
+		<text name="fillType_quinceJuice"        	text="マルメロジュース" />
+		<text name="fillType_strawberryJuice"        	text="イチゴジュース" />
+		<text name="fillType_tomatoJuice"        	text="トマトジュース" />
+		<text name="fillType_watermelonJuice"        	text="スイカジュース" />
+ 		<text name="fillType_cattle" 			text="牛" />
+		<text name="fillType_pigs" 			text="豚" />
+		<text name="fillType_sheepGoat" 		text="羊/ヤギ" />
+ 		<text name="fillType_beef" 			text="牛肉" />
+		<text name="fillType_pork" 			text="豚肉" />
+		<text name="fillType_poultryMeat" 		text="鶏肉" />
+		<text name="fillType_lamb" 			text="ラム肉" />
+		<text name="fillType_cigar" 			text="葉巻" />
+		<text name="fillType_cigarette" 		text="タバコ" />
+		<text name="fillType_animalFat" 		text="動物性油脂" />
+		<text name="fillType_perfume" 			text="香水" />
+		<text name="fillType_soap" 			text="石鹸" />
+		<text name="fillType_lavenderOil" 		text="ラベンダー精油" />
+		<text name="fillType_bourbonBarrel" 		text="バーボン" />
+		<text name="fillType_brandyBarrel" 		text="ブランデー" />
+		<text name="fillType_ciderBarrel" 		text="シードル" />
+		<text name="fillType_meadBarrel" 		text="ミード(蜂蜜酒)" />
+		<text name="fillType_liqueurBarrel" 		text="フルーツリキュール" />
+		<text name="fillType_vodkaBarrel" 		text="ウォッカ" />
+		<text name="fillType_whiskeyBarrel" 		text="ウイスキー" />
+		<text name="fillType_rumBarrel" 		text="ラム酒" />
+		<text name="fillType_peanutflour" 		text="落花生粉" />
+		<text name="fillType_peanutOil" 		text="落花生油" />
+		<text name="fillType_peanutButter" 		text="ピーナッツバター" />
+		<text name="fillType_mayo" 			text="マヨネーズ" />
+		<text name="fillType_ketchup" 			text="ケチャップ" />
+		<text name="fillType_hotSauce" 			text="ホットソース" />
+		<text name="fillType_soySauce" 			text="醤油" />
+		<text name="fillType_garlicSauce" 		text="ガーリックソース" />
+		<text name="fillType_mustardSauce" 		text="マスタードソース" />
+		<text name="fillType_pickledCucumber" 		text="きゅうりのピクルス" />
+		<text name="fillType_pickledCabbage" 		text="キャベツの酢漬け" />
+		<text name="fillType_pickledCauliflower" 	text="カリフラワーのピクルス" />
+		<text name="fillType_beansSoup" 		text="ビーンズスープ" />
+		<text name="fillType_peanutBags" 		text="落花生袋" />
+		<text name="fillType_beansBags" 		text="豆袋" />
+		<text name="fillType_cannedBeans" 		text="豆の缶詰" />
+		<text name="fillType_tofu" 			text="豆腐" />
+		<text name="fillType_chocomilk" 		text="チョコレートミルク" />
+		<text name="fillType_oatmilk" 			text="オーツミルク" />
+		<text name="fillType_mushroomSoup" 		text="きのこスープ" />
+		<text name="fillType_beer" 			text="ビール" />
+		<text name="fillType_wine" 			text="ワイン" />
+		<text name="fillType_icecream" 			text="アイスクリーム" />
+		<text name="fillType_sourcream" 		text="サワークリーム" />
+		<text name="fillType_yoghurt" 			text="ヨーグルト" />
+		<text name="fillType_sunflowerBags" 		text="ひまわりの種袋" />
+		<text name="fillType_pumpkinSeeds" 		text="カボチャの種袋" />
+		<text name="fillType_pumpkinPuree" 		text="カボチャピューレ" />
+		<text name="fillType_eggplantPuree" 		text="ナスピューレ" />
+		<text name="fillType_popcorn" 			text="ポップコーン" />
+		<text name="fillType_cheesePuffs" 		text="チーズパフ" />
+		<text name="fillType_peanutPuffs" 		text="ピーナッツパフ" />
+		<text name="fillType_tortilla" 			text="トルティーヤチップス" />
+		<text name="fillType_garlicBread" 		text="ガーリックトースト" />
+		<text name="fillType_onionRings" 		text="オニオンリング" />
+		<text name="fillType_pie" 			text="フルーツパイ" />
+		<text name="fillType_cocoaPowder" 		text="ココアパウダー" />
+		<text name="fillType_cookingSalt" 		text="食塩" />
+		<text name="fillType_yeast" 		 	text="酵母" />
+		<text name="fillType_roulade"                   text="ルーラード" />
+		<text name="fillType_strudel"                   text="シュトゥルーデル" />
+		<text name="fillType_milkBread"                 text="ミルクパン" />
+		<text name="fillType_potatoBread"               text="ジャガイモパン" />
+		<text name="fillType_sweetBread"                text="菓子パン" />
+		<text name="fillType_bagel"                     text="ベーグル" />
+		<text name="fillType_baguette" 			text="バゲット"/>
+		<text name="fillType_hops" 			text="ホップ"/>
+		<text name="fillType_cowFood" 			text="牛用飼料ペレット"/>
+		<text name="fillType_hayPellets" 		text="乾草ペレット"/>
+		<text name="fillType_strawPellets" 		text="わらペレット"/>
+		<text name="fillType_woodChipsPellets" 		text="ウッドチップペレット"/>
+		<text name="fillType_chocoCake" 		text="チョコレートケーキ"/>
+		<text name="fillType_sesame" 			text="ゴマ" />
+		<text name="fillType_sesameOil" 		text="ごま油" />
+		<text name="fillType_sesameBags" 		text="ゴマ袋" />
+		<text name="fillType_chickpeasBags" 		text="ひよこ豆袋" />
+		<text name="fillType_lentilsBags" 		text="レンズ豆袋" />
+		<text name="fillType_sesameRolls" 		text="ハニーセサミスナック" />
+		<text name="fillType_hummus" 			text="フムス" />
+
+	<text name="pigProcessing"        			text="豚肉加工" />
+		<text name="poultryProcessing"        			text="鶏肉加工" />
+		<text name="cattleProcessing"        			text="牛肉加工" />
+		<text name="sheepProcessing"        			text="羊・ヤギ肉加工" />
+		<text name="message_unloadAnimalSuccess" 		text="動物を %s へ移動しました！" />
+        	<text name="message_unloadAnimalConfirmation" 		text="%d 頭の動物 (%s) を %s へ移動しますか？" />
+        	<text name="button_moveAnimal" 				text="%s へ移動" />
+		<text name="message_animalTooYoung" 			text="この動物はまだ若すぎます。" />
+		<text name="message_animalTooOld" 			text="この動物は年を取りすぎています。" />
+        	<text name="configuration_grapeB" 			text="白ブドウ"/>
+        	<text name="configuration_hops" 			text="ホップ"/>
+		<text name="function_fermentingTower" 			text="この施設では牧草、 chaff、アルファルファ、クローバーを発酵させることができます。" />
+		<text name="function_grainDryer" 			text="この施設ではトウモロコシを乾燥させることができます。" />
+		<text name="function_hopsVine" 			        text="ホップを育てる苗木です。収穫にはマルチフルーツブドウ収穫機が必要です。" />
+		<text name="function_buyingPoint" 			text="このステーションでは、ほぼ全てのものをバルクで購入できます。" />
+
+
+	<text name="shopItem_appleOrchard" 		text="小規模リンゴ園" />	
+		<text name="shopItem_apricotOrchard" 		text="小規模アプリコット園" />	
+		<text name="shopItem_appleTree" 		text="リンゴの木" />	
+		<text name="shopItem_apricotTree" 		text="アプリコットの木" />
+		<text name="shopItem_cherryOrchard" 		text="小規模チェリー園" />	
+		<text name="shopItem_pearOrchard" 		text="小規模洋ナシ園" />	
+		<text name="shopItem_cherryTree" 		text="チェリーの木" />	
+		<text name="shopItem_pearTree" 			text="洋ナシの木" />	
+		<text name="shopItem_peachOrchard" 		text="小規模桃園" />	
+		<text name="shopItem_peachTree" 		text="桃の木" />		
+		<text name="shopItem_plumOrchard" 		text="小規模プラム園" />	
+		<text name="shopItem_plumTree" 			text="プラムの木" />		
+		<text name="shopItem_quinceOrchard" 		text="小規模マルメロ園" />	
+		<text name="shopItem_quinceTree" 		text="マルメロの木" />	
+		<text name="shopItem_grainCrusher" 		text="穀物粉砕機" />	
+		<text name="shopItem_juiceFactory" 		text="ジュース工場" />
+		<text name="shopItem_slaughterHouse" 		text="食肉処理場" />
+		<text name="shopItem_tobaccoProd" 		text="タバコ工場" />
+		<text name="shopItem_lavenderProd" 		text="ラベンダー加工工場" />
+		<text name="shopItem_openGarden" 		text="オープンガーデン" />
+		<text name="shopItem_distillery" 		text="蒸留所" />
+		<text name="shopItem_preservedFood" 		text="保存食品工場" />
+		<text name="shopItem_foodProd" 			text="スナック菓子製造" />
+		<text name="shopItem_fermentingTower" 		text="発酵タワー" />
+		<text name="shopItem_wineCellar" 		text="ビール・ワイン醸造所" />
+		<text name="shopItem_grainDryer" 		text="トウモロコシ乾燥機" />
+		<text name="shopItem_openGardenFieldCrops" 	text="露地栽培用オープンガーデン" />
+		<text name="shopItem_industrialGreenhouse" 	text="産業用温室" />
+		<text name="shopItem_vegetarianProd" 		text="ビーガン食品製造" />
+		<text name="shopItem_pelletizer" 		text="ペレット製造機" />
+		<text name="shopItem_buyingPoint1" 		text="マルチフルーツ購入ステーション" />
+		<text name="shopItem_buyingPoint2" 		text="マルチフルーツ購入ステーション (割引)" />
+
+
+		<text name="shopItem_jamProd" 				text="ジャム工場" />
+		<text name="fillType_edamame" 				text="枝豆" />
+		<text name="fillType_taro" 				text="タロイモ" />
+		<text name="fillType_okra" 				text="オクラ" />
+		<text name="fillType_mint" 				text="ミント" />
+		<text name="fillType_greenRye" 				text="グリーンライ麦" />
+		<text name="fillType_taroCut" 				text="カットタロイモ" />
+		<text name="fillType_taroFlour" 			text="タロイモ粉" />
+		<text name="fillType_taroSoup" 				text="タロイモスープ" />
+		<text name="fillType_taroChips" 			text="タロイモチップス" />
+		<text name="fillType_muffin" 				text="マフィン" />
+		<text name="fillType_donut" 				text="ドーナツ" />
+		<text name="fillType_ccm" 				text="発酵CCM (コーンコブミックス)" />
+		<text name="fillType_ccmraw" 				text="CCM (コーンコブミックス)" />
+		<text name="fillType_cropWindrow" 			text="ホールクロップ細断物" />
+		<text name="fillType_cropSilage" 			text="ホールクロップサイレージ" />
+		<text name="fillType_grassSilage" 			text="牧草サイレージ" />
+		<text name="fillType_safflower" 			text="サフラワー" />
+		<text name="fillType_appleJam"        			text="リンゴジャム" />
+		<text name="fillType_apricotJam"        		text="アプリコットジャム" />
+		<text name="fillType_cherryJam"        			text="チェリージャム" />
+		<text name="fillType_grapeJam"        			text="ブドウジャム" />
+		<text name="fillType_melonJam"        			text="メロンジャム" />
+		<text name="fillType_peachJam"        			text="桃ジャム" />
+		<text name="fillType_pearJam"        			text="洋ナシジャム" />
+		<text name="fillType_plumJam"        			text="プラムジャム" />
+		<text name="fillType_strawberryJam"        		text="イチゴジャム" />
+		<text name="fillType_quinceJam"        			text="マルメロジャム" />
+		<text name="fillType_safflowerOil" 			text="サフラワー油" />
+		<text name="fillType_mintOil" 				text="ミント精油" />
+		<text name="fillType_mintBarrel" 			text="ミントリキュール" />
+		<text name="fillType_jarredOkra"        		text="オクラの瓶詰め" />
+		<text name="fillType_jarredEdamame"        		text="枝豆の瓶詰め" />
+
+
+<text name="fillType_duckEgg"                 text="アヒルの卵"/>
+        <text name="shopItem_duckGooseBarn"             text="アヒルとガチョウの小屋"/>
+        <text name="shopItem_duckGoosePasture"             text="アヒルとガチョウの牧草地"/>
+        <text name="shopItem_rabbitHutch"             text="ウサギ小屋"/>
+        <text name="function_animalPenDuck"             text="ここではアヒルとガチョウを飼育できます。餌を与え、寝床としてわらを敷くことで、卵や堆肥を得ることができます。"/>
+        <text name="function_animalPenRabbit"             text="ここではウサギを飼育できます。餌とわらを与えてください。成長後、売却して利益を得ることができます。"/>
+        <text name="fillTypeGroup_clover"                text="新鮮なクローバー" />
+        <text name="fillTypeGroup_fruitVegetables"             text="果物と野菜" />
+
+    <text name="fillType_goose"                            text="ガチョウ" />
+        <text name="animal_group_goose"                        text="ガチョウとアヒル" />
+        <text name="shopItem_animalGooseGrowthStage0"           text="ガチョウ（雛）" />
+        <text name="shopItem_animalGooseGrowthStage1"           text="ガチョウ" />
+        <text name="animal_descriptionGooseProfitGrowthStage0" text="ガチョウの雛は、肥育させてから売却することで利益を得られます。" />
+        <text name="animal_descriptionGooseProfitGrowthStage1" text="ガチョウは繁殖させてから売却することで利益を得られます。" />
+        <text name="animal_descriptionGooseFeed"               text="ニワトリと同じように餌を与えてください。水は小屋の種類に応じて自動的に供給されます。" />
+        <text name="animal_descriptionGooseReproduction"       text="ガチョウは生後10ヶ月で性成熟に達します。繁殖期は1ヶ月間続きます。" />
+
+    <text name="fillType_duck"                             text="アヒル" />
+        <text name="shopItem_animalDuckGrowthStage0"           text="アヒルの子" />
+        <text name="animal_duckGrowthStage0Description"        text="アヒルの子はまだ卵を産みません。繁殖用または売却用として適しています。" />    
+        <text name="shopItem_animalDuckGrowthStage1"           text="アヒル" />    
+        <text name="animal_duckGrowthStage1Description"        text="アヒルからは卵が収穫できます。卵は販売所で売却するか、生産施設でさらに加工することができます。" />    
+        <text name="animal_poultryFoodDescription"             text="家禽が生産を行うには、穀物と水が必要です。注意：一部の小屋には自動給水装置が備わっており、その場合は水を補充する必要はありません。" />
+        
+         <text name="fillType_rabbit"                            text="メスウサギ" />
+            <text name="fillType_rabbitMale"                        text="オスウサギ" />
+            <text name="animal_group_rabbits"                       text="ウサギ" />
+            <text name="shopItem_animalRabbitGrowthStage0"          text="ウサギ（赤ちゃん）" />
+            <text name="shopItem_animalRabbitGrowthStage1"          text="ウサギ（若体）" />
+            <text name="shopItem_animalRabbitGrowthStage2"          text="ウサギ（メス）" />
+            <text name="shopItem_animalRabbitGrowthStage3"          text="ウサギ（オス）" />
+            <text name="animal_rabbitGrowthStage0Description"       text="ウサギの赤ちゃんは最も若い個体です。個別に購入することはできず、親から生まれます。" />
+            <text name="animal_rabbitGrowthStage1Description"       text="若いウサギは繁殖に使用できます。" />
+            <text name="animal_rabbitGrowthStage2Description"       text="メスウサギは繁殖させるか売却できます。産まれた子は若体よりも小さく未熟です。" />
+            <text name="animal_rabbitGrowthStage3Description"       text="オスウサギです。" />
+            <text name="animal_rabbitBeddingDescription"            text="オスウサギは売買のみが可能です。" />
+            <text name="animal_rabbitFoodDescription"               text="ウサギが快適に過ごすためには、わらが必要です。" />
+
+        <text name="geeseProcessing"                     text="ガチョウとアヒルの加工" />
+        <text name="rabbitProcessing"                     text="ウサギの加工" />
+        <text name="fillType_leather"              text="本革"/>
+        <text name="fillType_leatherJacket"          text="レザージャケット"/>
+        <text name="fillType_pillow"              text="枕"/>
+        <text name="fillType_furCoat"              text="毛皮のコート"/>
+        <text name="fillType_feathers"              text="羽根" />
+        <text name="fillType_rabbitMeat"          text="ウサギ肉" />
+        <text name="fillType_rabbitFur"          text="ウサギの毛皮" />
+        <text name="fillType_poultry2"              text="家禽（ガチョウとアヒル）" />
+        <text name="fillType_hare"              text="ウサギ" />
+        <text name="fillType_poultry"              text="家禽（ニワトリ）" />
+
+<text name="fillType_anhydrous"          text="無水アンモニア (NH3)" />
+        <text name="fillType_propane"           text="プロパンガス" />
+<text name="shopItem_bakeryFactory"     text="モンタナ・ベーカリー" />    
+        <text name="shopItem_beerFactory"       text="イェンリン・ビール醸造所" />        
+        <text name="shopItem_ethanolFactory"    text="ロッキーマウンテン・エタノール工場" />    
+        <text name="shopItem_whiskeyFactory"    text="ジャックダニエル・ウィスキー蒸留所" />    
+        <text name="shopItem_dairyFactory"      text="カントリービュー乳製品工場" />    
+        <text name="shopItem_wineFactory"       text="ダックホーン・ワイナリー" />    
+        <text name="shopItem_pizzaFactory"      text="アメリカン・ピザ・カンパニー" />    
+        <text name="shopItem_grainFlourFactory" text="製粉所" />    
+        <text name="shopItem_oilFactory"        text="製油工場" />    
+    <text name="station_grainSiloTrainC1"     text="グレートプレーンズ穀物会社" />    
+        <text name="station_grainSiloTrainC2"     text="モンタナ・プレーリー穀物サイロ" />    
+        <text name="station_grainSiloTrainC3"     text="イエローストーン穀物ターミナル" />    
+        <text name="station_balesStorageC1"       text="モンタナ牧草会社" />
+        <text name="station_grainSiloStoreC2"     text="モンタナ・プレーリー農業用品店" />    
+        <text name="station_grainSiloStoreC3"     text="フラットヘッド飼料・穀物店" />    
+        <text name="station_grainSiloStoreC4"     text="アイアンリッジ穀物サイロ" />    
+        <text name="station_grainSiloStoreC5"     text="ローンパイン穀物商会" />    
+        <text name="station_grainSiloStoreC6"     text="アグリコア・モンタナ" />
+        <text name="station_productStoreC1"       text="レストラン" />    
+        <text name="station_productStoreC2"       text="ホブソン・ショッピングモール" />    
+        <text name="station_productStoreC3"       text="ホブソン雑貨店" />    
+        <text name="station_productStoreC4"       text="ダラー・ジェネラル" />    
+        <text name="station_productStoreC5"       text="BP ガソリンスタンド" />    
+        <text name="station_productStoreC6"       text="ケイシーズ・ガソリンスタンド" />    
+        <text name="station_productStoreC7"       text="アップルビーズ・レストラン" />    
+        <text name="station_productStoreC8"       text="コディアック・ビール醸造所" />    
+        <text name="station_productStoreC9"       text="モカシン・ショッピングモール" />    
+        <text name="station_productStoreC10"      text="モカシン雑貨店" />    
+        <text name="station_productStoreC11"      text="サブウェイ店舗" />
+	
+	</texts>
+</l10n>

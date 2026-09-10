@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="mapGooseHusbandry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_duckGooseBarn</name>
+	<image>multifruit/huds/hud_fill_goose.dds</image>
+        <showInStore>true</showInStore>
+        <price>54999</price>
+        <functions>
+            <function>$l10n_function_animalPenDuck</function>
+            <function>$l10n_function_adjustableMeadow</function>
+        </functions>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+	<category>animalpens</category>
+        <brush>
+            <type>husbandry</type>
+            <category>animals</category>
+            <tab>chickens</tab>
+        </brush>
+    </storeData>
+
+    <base>
+        <filename>multifruit/placeables/husbandry/duckGooseBarn2/duckGooseBarn2.i3d</filename>
+	<boughtWithFarmland>true</boughtWithFarmland>
+	<canBeDeleted>true</canBeDeleted>
+	<canBeRenamed>true</canBeRenamed>
+		
+    </base>
+	
+	 <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+
+        <sounds>
+            <place template="medImp" />
+        </sounds>
+    </placement>
+	
+	 <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+	<tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+
+    <triggerMarkers>
+        <triggerMarker node="markerFood"    	filename="$data/shared/assets/marker/markerIconFood.i3d"  adjustToGround="true"/>
+        <triggerMarker node="markerAnimals" 	filename="$data/shared/assets/marker/markerIconAnimals.i3d" adjustToGround="false" />
+	</triggerMarkers>
+
+	<ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End"/>
+        </updateAreas>
+    </ai>
+
+    <hotspots>
+        <hotspot linkNode="iconNode" teleportNode="markerAnimals" >
+            <customType name="GOOSE" filename="multifruit/placeables/husbandry/mapHotspots1.dds" imageUVs="228 235 100 100" imageResolution="1024 1024" category="ANIMALS"/>
+        </hotspot>
+    </hotspots>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+    <husbandry saveId="Animals_GOOSE" hasStatistics="false">
+		<storage node="storage" fillTypes="STRAW MANURE" isExtension="false">
+            <capacity fillType="STRAW" capacity="15000" />
+            <capacity fillType="MANURE" capacity="0" />
+        </storage>
+
+        <animals type="GOOSE" baseMaxNumAnimals="100" maxNumAnimals="500" maxNumVisualAnimals="100">
+            <navigation shape="navigationMeshShape"/>
+            <loadingTrigger node="loadingTrigger" />
+        </animals>
+
+		<unloadingStation supportsExtension="true" storageRadius="15" hideFromPricesMenu="true">
+			<unloadTrigger exactFillRootNode="exactFillRootNodeStraw" fillTypes="STRAW" />
+			<baleTrigger triggerNode="baleTrigger" deleteLitersPerSecond="500" fillTypes="STRAW"/>
+			<unloadTrigger fillTypes="MANURE" />
+        </unloadingStation>
+
+		<loadingStation supportsExtension="true" storageRadius="15" fillTypes="STRAW"/>
+
+        <food capacity="15000" >
+            <foodPlane node="foodPlane" minY="-1.359" maxY="-1.177" changeVisibility="true" defaultFillType="WHEAT"/>
+            <unloadTrigger exactFillRootNode="exactFillRootNodeFood"/>
+        </food>
+
+		<straw>
+            <manure factor="1" />
+            <strawPlane node="strawPlane" minY="-1.448" maxY="-1.367" colorChange="false" />
+        </straw>
+		
+		 <pallets> 
+            <palletSpawner fillTypes="DUCK_EGG" maxNumPallets="8">
+                <palletTrigger node="palletTrigger" />
+                <spawnPlaces>
+                <spawnPlace startNode="palletArea1Start" endNode="palletArea1End" />
+                </spawnPlaces>
+            </palletSpawner>
+         </pallets>
+		 
+		  <fence xmlFilename="$data/placeables/brandless/fences/husbandries/chickenNetFence/chickenNetFence.xml">
+           <sections>
+                <section segmentId="SEGMENT" customizable="true">
+                    <node node="fence1Node1" />
+                    <node node="fence1Node2" />
+                    <node node="fence1Node3" />
+                    <node node="fence1Node4" />
+                </section>
+            </sections>
+        </fence>
+		 
+	<meadow>
+            <createTask weedState="0">
+                <fruit type="MEADOW" growthState="greenSmall" />
+                <ground type="NONE" />
+                <terrainGroundType name="grass" />
+            </createTask>
+        </meadow>
+    </husbandry>
+	
+	
+	
+	<manureHeap node="manureHeap" capacity="12000" isExtension="true" >
+        <area startNode="tipAreaStart" widthNode="tipAreaWidth" heightNode="tipAreaHeight" activationTriggerNode="activationTrigger" />
+		<clearArea startNode="clearAreaStart" widthNode="clearAreaWidth" heightNode="clearAreaHeight" />
+        
+        <loadingStation storageRadius="1" supportsExtension="false">
+            <loadTrigger triggerNode="manureLoadingTrigger" fillTypes="MANURE" fillLitersPerSecond="30" />
+        </loadingStation>
+    </manureHeap>
+	
+	
+		
+	<lights>
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="tubeLight01" groupIndex="1" color="1 0 0" />
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="tubeLight02" groupIndex="1" color="1 0 0" />
+
+        <realLights>
+            <low>
+                <light node="realLightsLow" groupIndex="1"/>
+            </low>
+            <high>
+                <light node="realLightsHigh" groupIndex="1"/>
+            </high>
+        </realLights>
+
+        <group name="$l10n_action_placeableLightShed" activateTime="18:30" deactivateTime="7:00"/>
+    </lights>
+	
+	 <animatedObjects>
+          <animatedObject saveId="door01" >
+            <animation duration="4.5">
+                <part node="door01">
+                    <keyFrame time="0.0" translation="6.26088905 -1.20014954 3.49128008"/>
+                    <keyFrame time="1.0" translation="8.85012817 -1.20014954 3.49128008"/>
+                </part>
+				 
+            </animation>
+            <controls triggerNode="triggerDoor1" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving template="slidingGateMetalLoop" linkNode="door1" />
+                <posEnd template="slidingGateMetalOpen" linkNode="door1" />
+                <negEnd template="slidingGateMetalClose" linkNode="door1" />
+            </sounds>
+        </animatedObject>		
+	 </animatedObjects>
+
+    <i3dMappings>
+		<i3dMapping id="gooseStableFarm" node="0>" />
+		<i3dMapping id="teleportNode" node="0>0" />
+		<i3dMapping id="food" node="0>1" />
+		<i3dMapping id="foodPlane" node="0>1|0" />
+		<i3dMapping id="exactFillRootNodeFood" node="0>1|1" />
+		<i3dMapping id="foodPlaces" node="0>1|2" />
+		<i3dMapping id="foodPlace1" node="0>1|2|0" />
+		<i3dMapping id="foodPlace2" node="0>1|2|1" />
+		<i3dMapping id="baleTrigger" node="0>2|0" />
+		<i3dMapping id="strawPlane" node="0>2|1" />
+		<i3dMapping id="exactFillRootNodeStraw" node="0>2|2" />
+		<i3dMapping id="navigationMeshShape" node="0>3|0" />
+		<i3dMapping id="palletTrigger" node="0>4|0" />
+		<i3dMapping id="palletArea1Start" node="0>4|1" />
+		<i3dMapping id="palletArea1End" node="0>4|1|0" />
+		<i3dMapping id="infoTrigger" node="0>5" />
+		<i3dMapping id="loadingTrigger" node="0>6" />
+		<i3dMapping id="storage" node="0>7" />
+		<i3dMapping id="iconNode" node="0>9" />
+		<i3dMapping id="manureHeap" node="0>8|0" />
+		<i3dMapping id="manureLoadingTrigger" node="0>8|0|0" />
+		<i3dMapping id="tipArea" node="0>8|0|1" />
+		<i3dMapping id="tipAreaStart" node="0>8|0|1|0" />
+		<i3dMapping id="tipAreaWidth" node="0>8|0|1|0|0" />
+		<i3dMapping id="tipAreaHeight" node="0>8|0|1|0|1" />
+		<i3dMapping id="activationTrigger" node="0>8|0|2" />
+		
+		<i3dMapping id="clearAreaStart" node="0>8|0|3" />
+        <i3dMapping id="clearAreaWidth" node="0>8|0|3|0" />
+        <i3dMapping id="clearAreaHeight" node="0>8|0|3|1" />
+		<i3dMapping id="clearArea1Start" node="0>16|0" />
+        <i3dMapping id="clearArea1Width" node="0>16|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>16|0|1" />
+        <i3dMapping id="levelArea1Start" node="0>17|0" />
+        <i3dMapping id="levelArea1Width" node="0>17|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>17|0|1" />
+        <i3dMapping id="indoorArea1Start" node="0>18|0" />
+        <i3dMapping id="indoorArea1Width" node="0>18|0|0" />
+        <i3dMapping id="indoorArea1Height" node="0>18|0|1" />
+        <i3dMapping id="testArea1Start" node="0>19|0" />
+        <i3dMapping id="testArea1End" node="0>19|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>20|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="020|0|0" />
+		
+		<i3dMapping id="markerFood" node="0>10|0" />
+		<i3dMapping id="markerAnimals" node="0>10|1" />
+		<i3dMapping id="unloadingStationNode" node="0>11" />
+	    <i3dMapping id="fence1Node1" node="0>13|0|0" />
+        <i3dMapping id="fence1Node2" node="0>13|0|1" />
+        <i3dMapping id="fence1Node3" node="0>13|0|2" />
+        <i3dMapping id="fence1Node4" node="0>13|0|3" />
+		<i3dMapping id="realLightsLow" node="0>14|0|0" />
+        <i3dMapping id="realLightsHigh" node="0>14|0|1" />
+        <i3dMapping id="linkedLights" node="0>14|1" />
+        <i3dMapping id="tubeLight01" node="0>14|1|0" />
+        <i3dMapping id="tubeLight02" node="0>14|1|1" />
+		<i3dMapping id="door1" node="0>15|0" />
+        <i3dMapping id="door01" node="0>15|0|0" />
+        <i3dMapping id="triggerDoor1" node="0>15|0|1" />
+	</i3dMappings>
+</placeable>

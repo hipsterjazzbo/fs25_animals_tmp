@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<animals>
+	<animal type="CHICKEN" groupTitle="$l10n_animal_group_chickens" statsBreeding="breedChickenCount" clusterClass="AnimalCluster">
+		<configFilename>animals/domesticated/chicken/husbandryAnimalsChicken.xml</configFilename>
+		<navMeshAgent height="0.6" radius="0.2" maxClimbMeters="2" maxSlope="35"/>
+		<pasture sqmPerAnimal="3" />
+		<subType subType="HEN_LOHMANN" fillTypeName="BRC_HEN_LOHMANN">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="1" image="animals/domesticated/chicken/store/store_FM_GS01_LohmannLeghornPlymouth.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenProfit</description>
+					<description>$l10n_animal_descriptionChickenFeed</description>
+					<description>$l10n_animal_descriptionChickenYoung</description>
+					<description>$l10n_animal_descriptionChickenReproduction</description>
+					<textureIndexes>
+						<value>2</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="2" visualAnimalIndex="2" image="animals/domesticated/chicken/store/store_FM_GS02_Lohmann.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenProfit</description>
+					<description>$l10n_animal_descriptionChickenFeed</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionChickenReproduction</description>
+					<textureIndexes>
+						<value>2</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="4" visualAnimalIndex="3" image="animals/domesticated/chicken/store/store_F_GS03_Lohmann.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenProfit</description>
+					<description>$l10n_animal_descriptionChickenFeed</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionChickenReproduction</description>
+					<textureIndexes>
+						<value>2</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="6" visualAnimalIndex="3" image="animals/domesticated/chicken/store/store_F_GS04_Lohmann.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenProfit</description>
+					<description>$l10n_animal_descriptionChickenFeed</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionChickenReproduction</description>
+					<textureIndexes>
+						<value>2</value>
+                    </textureIndexes>
+				</visual>
+			</visuals>
+			<reproduction minAgeMonth="6" durationMonth="2" minHealthFactor="0.75"/>
+			<buyPrice>
+				<key ageMonth="0" value="5"/>
+				<key ageMonth="6" value="50"/>
+			</buyPrice>
+			<sellPrice>
+				<key ageMonth="0" value="5" />
+        		<key ageMonth="6" value="25" />
+				<key ageMonth="12" value="75" />
+				<key ageMonth="18" value="25" />
+				<key ageMonth="24" value="5" />
+			</sellPrice>
+			<transportPrice>
+				<key ageMonth="0" value="1"/>
+				<key ageMonth="6" value="1"/>
+			</transportPrice>
+			<input>
+				<food>
+					<key ageMonth="0" value="2"/>
+				  	<key ageMonth="6" value="8"/>
+				  	<key ageMonth="12" value="12"/>
+				</food>
+				<water>
+					<key ageMonth="0" value="1"/>
+					<key ageMonth="6" value="4"/>
+					<key ageMonth="12" value="6"/>
+				</water>
+				<straw>
+					<key ageMonth="0" value="1"/>
+				  	<key ageMonth="6" value="5"/>
+				  	<key ageMonth="12" value="8"/>
+        		</straw>
+			</input>
+			<output>
+               <pallets fillType="EGG">
+                    <key ageMonth="0" value="0"/>
+                    <key ageMonth="3" value="0"/>
+                    <key ageMonth="6" value="5"/>
+                </pallets>
+        		<manure>
+          			<key ageMonth="0" value="2"/>
+				  	<key ageMonth="6" value="10"/>
+          			<key ageMonth="12" value="16"/>
+        		</manure>
+			</output>
+		</subType>
+		<subType subType="ROOSTER_LOHMANN" fillTypeName="BRC_ROOSTER_LOHMANN">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="4" image="animals/domesticated/chicken/store/store_FM_GS01_LohmannLeghornPlymouth.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenRooster</description>
+					<textureIndexes>
+						<value>2</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="2" visualAnimalIndex="5" image="animals/domesticated/chicken/store/store_FM_GS02_Lohmann.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenRooster</description>
+					<textureIndexes>
+						<value>2</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="4" visualAnimalIndex="6" image="animals/domesticated/chicken/store/store_M_GS03_LohmannLeghornPlymouthBohusdal.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenRooster</description>
+				</visual>
+				<visual minAge="6" visualAnimalIndex="6" image="animals/domesticated/chicken/store/store_M_GS04_LohmannLeghornPlymouthBohusdal.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenRooster</description>
+				</visual>
+			</visuals>
+			<reproduction supported="false" minAgeMonth="6"/>
+			<buyPrice>
+				<key ageMonth="0" value="5"/>
+				<key ageMonth="6" value="50"/>
+			</buyPrice>
+			<sellPrice>
+				<key ageMonth="0" value="5" />
+        		<key ageMonth="6" value="50" />
+				<key ageMonth="12" value="25" />
+				<key ageMonth="18" value="5" />
+				<key ageMonth="24" value="0" />
+			</sellPrice>
+			<transportPrice>
+				<key ageMonth="0" value="1"/>
+			</transportPrice>
+			<input>
+				<food>
+          			<key ageMonth="0" value="2"/>
+				  	<key ageMonth="6" value="8"/>
+        		</food>
+        		<water>
+          			<key ageMonth="0" value="1"/>
+          			<key ageMonth="6" value="4"/>
+        		</water>
+        		<straw>
+          			<key ageMonth="0" value="1"/>
+				  	<key ageMonth="6" value="5"/>
+        		</straw>
+      		</input>
+      		<output>
+        		<manure>
+          			<key ageMonth="0" value="2"/>
+				  	<key ageMonth="6" value="10"/>
+        		</manure>
+      		</output>
+		</subType>
+		<subType subType="HEN_LEGHORN" fillTypeName="BRC_HEN_LEGHORN">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="1" image="animals/domesticated/chicken/store/store_FM_GS01_LohmannLeghornPlymouth.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenProfit</description>
+					<description>$l10n_animal_descriptionChickenFeed</description>
+					<description>$l10n_animal_descriptionChickenYoung</description>
+					<description>$l10n_animal_descriptionChickenReproduction</description>
+					<textureIndexes>
+						<value>1</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="2" visualAnimalIndex="2" image="animals/domesticated/chicken/store/store_FM_GS02_LeghornPlymouth.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenProfit</description>
+					<description>$l10n_animal_descriptionChickenFeed</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionChickenReproduction</description>
+					<textureIndexes>
+						<value>1</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="4" visualAnimalIndex="3" image="animals/domesticated/chicken/store/store_F_GS03_Leghorn.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenProfit</description>
+					<description>$l10n_animal_descriptionChickenFeed</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionChickenReproduction</description>
+					<textureIndexes>
+						<value>1</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="6" visualAnimalIndex="3" image="animals/domesticated/chicken/store/store_F_GS04_Leghorn.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenProfit</description>
+					<description>$l10n_animal_descriptionChickenFeed</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionChickenReproduction</description>
+					<textureIndexes>
+						<value>1</value>
+                    </textureIndexes>
+				</visual>
+			</visuals>
+			<reproduction minAgeMonth="6" durationMonth="2" minHealthFactor="0.75"/>
+			<buyPrice>
+				<key ageMonth="0" value="5"/>
+				<key ageMonth="6" value="50"/>
+			</buyPrice>
+			<sellPrice>
+				<key ageMonth="0" value="5" />
+        		<key ageMonth="6" value="25" />
+				<key ageMonth="12" value="75" />
+				<key ageMonth="18" value="25" />
+				<key ageMonth="24" value="5" />
+			</sellPrice>
+			<transportPrice>
+				<key ageMonth="0" value="1"/>
+				<key ageMonth="6" value="1"/>
+			</transportPrice>
+			<input>
+				<food>
+					<key ageMonth="0" value="2"/>
+				  	<key ageMonth="6" value="8"/>
+				  	<key ageMonth="12" value="12"/>
+				</food>
+				<water>
+					<key ageMonth="0" value="1"/>
+					<key ageMonth="6" value="4"/>
+					<key ageMonth="12" value="6"/>
+				</water>
+				<straw>
+					<key ageMonth="0" value="1"/>
+				  	<key ageMonth="6" value="5"/>
+				  	<key ageMonth="12" value="8"/>
+        		</straw>
+			</input>
+			<output>
+               <pallets fillType="EGG">
+                    <key ageMonth="0" value="0"/>
+                    <key ageMonth="3" value="0"/>
+                    <key ageMonth="6" value="5"/>
+                </pallets>
+        		<manure>
+          			<key ageMonth="0" value="2"/>
+				  	<key ageMonth="6" value="10"/>
+          			<key ageMonth="12" value="16"/>
+        		</manure>
+			</output>
+		</subType>
+		<subType subType="ROOSTER_LEGHORN" fillTypeName="BRC_ROOSTER_LEGHORN">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="4" image="animals/domesticated/chicken/store/store_FM_GS01_LohmannLeghornPlymouth.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenRooster</description>
+					<textureIndexes>
+						<value>1</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="2" visualAnimalIndex="5" image="animals/domesticated/chicken/store/store_FM_GS02_LeghornPlymouth.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenRooster</description>
+					<textureIndexes>
+						<value>2</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="4" visualAnimalIndex="6" image="animals/domesticated/chicken/store/store_M_GS03_LohmannLeghornPlymouthBohusdal.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenRooster</description>
+				</visual>
+				<visual minAge="6" visualAnimalIndex="6" image="animals/domesticated/chicken/store/store_M_GS04_LohmannLeghornPlymouthBohusdal.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenRooster</description>
+				</visual>
+			</visuals>
+			<reproduction supported="false" minAgeMonth="6"/>
+			<buyPrice>
+				<key ageMonth="0" value="5"/>
+				<key ageMonth="6" value="50"/>
+			</buyPrice>
+			<sellPrice>
+				<key ageMonth="0" value="5" />
+        		<key ageMonth="6" value="50" />
+				<key ageMonth="12" value="25" />
+				<key ageMonth="18" value="5" />
+				<key ageMonth="24" value="0" />
+			</sellPrice>
+			<transportPrice>
+				<key ageMonth="0" value="1"/>
+			</transportPrice>
+			<input>
+				<food>
+          			<key ageMonth="0" value="2"/>
+				  	<key ageMonth="6" value="8"/>
+        		</food>
+        		<water>
+          			<key ageMonth="0" value="1"/>
+          			<key ageMonth="6" value="4"/>
+        		</water>
+        		<straw>
+          			<key ageMonth="0" value="1"/>
+				  	<key ageMonth="6" value="5"/>
+        		</straw>
+      		</input>
+      		<output>
+        		<manure>
+          			<key ageMonth="0" value="2"/>
+				  	<key ageMonth="6" value="10"/>
+        		</manure>
+      		</output>
+		</subType>
+		<subType subType="HEN_PLYMOUTHROCK" fillTypeName="BRC_HEN_PLYMOUTHROCK">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="1" image="animals/domesticated/chicken/store/store_FM_GS01_LohmannLeghornPlymouth.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenProfit</description>
+					<description>$l10n_animal_descriptionChickenFeed</description>
+					<description>$l10n_animal_descriptionChickenYoung</description>
+					<description>$l10n_animal_descriptionChickenReproduction</description>
+					<textureIndexes>
+						<value>3</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="2" visualAnimalIndex="2" image="animals/domesticated/chicken/store/store_FM_GS02_LeghornPlymouth.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenProfit</description>
+					<description>$l10n_animal_descriptionChickenFeed</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionChickenReproduction</description>
+					<textureIndexes>
+						<value>3</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="4" visualAnimalIndex="3" image="animals/domesticated/chicken/store/store_F_GS03_Plymouth.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenProfit</description>
+					<description>$l10n_animal_descriptionChickenFeed</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionChickenReproduction</description>
+					<textureIndexes>
+						<value>3</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="6" visualAnimalIndex="3" image="animals/domesticated/chicken/store/store_F_GS04_Plymouth.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenProfit</description>
+					<description>$l10n_animal_descriptionChickenFeed</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionChickenReproduction</description>
+					<textureIndexes>
+						<value>3</value>
+                    </textureIndexes>
+				</visual>
+			</visuals>
+			<reproduction minAgeMonth="6" durationMonth="2" minHealthFactor="0.75"/>
+			<buyPrice>
+				<key ageMonth="0" value="5"/>
+				<key ageMonth="6" value="50"/>
+			</buyPrice>
+			<sellPrice>
+				<key ageMonth="0" value="5" />
+        		<key ageMonth="6" value="25" />
+				<key ageMonth="12" value="75" />
+				<key ageMonth="18" value="25" />
+				<key ageMonth="24" value="5" />
+			</sellPrice>
+			<transportPrice>
+				<key ageMonth="0" value="1"/>
+				<key ageMonth="6" value="1"/>
+			</transportPrice>
+			<input>
+				<food>
+					<key ageMonth="0" value="2"/>
+				  	<key ageMonth="6" value="8"/>
+				  	<key ageMonth="12" value="12"/>
+				</food>
+				<water>
+					<key ageMonth="0" value="1"/>
+					<key ageMonth="6" value="4"/>
+					<key ageMonth="12" value="6"/>
+				</water>
+				<straw>
+					<key ageMonth="0" value="1"/>
+				  	<key ageMonth="6" value="5"/>
+				  	<key ageMonth="12" value="8"/>
+        		</straw>
+			</input>
+			<output>
+               <pallets fillType="EGG">
+                    <key ageMonth="0" value="0"/>
+                    <key ageMonth="3" value="0"/>
+                    <key ageMonth="6" value="5"/>
+                </pallets>
+        		<manure>
+          			<key ageMonth="0" value="2"/>
+				  	<key ageMonth="6" value="10"/>
+          			<key ageMonth="12" value="16"/>
+        		</manure>
+			</output>
+		</subType>
+		<subType subType="ROOSTER_PLYMOUTHROCK" fillTypeName="BRC_ROOSTER_PLYMOUTHROCK">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="4" image="animals/domesticated/chicken/store/store_FM_GS01_LohmannLeghornPlymouth.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenRooster</description>
+					<textureIndexes>
+						<value>3</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="2" visualAnimalIndex="5" image="animals/domesticated/chicken/store/store_FM_GS02_LeghornPlymouth.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenRooster</description>
+					<textureIndexes>
+						<value>3</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="4" visualAnimalIndex="6" image="animals/domesticated/chicken/store/store_M_GS03_LohmannLeghornPlymouthBohusdal.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenRooster</description>
+				</visual>
+				<visual minAge="6" visualAnimalIndex="6" image="animals/domesticated/chicken/store/store_M_GS04_LohmannLeghornPlymouthBohusdal.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenRooster</description>
+				</visual>
+			</visuals>
+			<reproduction supported="false" minAgeMonth="6"/>
+			<buyPrice>
+				<key ageMonth="0" value="5"/>
+				<key ageMonth="6" value="50"/>
+			</buyPrice>
+			<sellPrice>
+				<key ageMonth="0" value="5" />
+        		<key ageMonth="6" value="50" />
+				<key ageMonth="12" value="25" />
+				<key ageMonth="18" value="5" />
+				<key ageMonth="24" value="0" />
+			</sellPrice>
+			<transportPrice>
+				<key ageMonth="0" value="1"/>
+			</transportPrice>
+			<input>
+				<food>
+          			<key ageMonth="0" value="2"/>
+				  	<key ageMonth="6" value="8"/>
+        		</food>
+        		<water>
+          			<key ageMonth="0" value="1"/>
+          			<key ageMonth="6" value="4"/>
+        		</water>
+        		<straw>
+          			<key ageMonth="0" value="1"/>
+				  	<key ageMonth="6" value="5"/>
+        		</straw>
+      		</input>
+      		<output>
+        		<manure>
+          			<key ageMonth="0" value="2"/>
+				  	<key ageMonth="6" value="10"/>
+        		</manure>
+      		</output>
+		</subType>
+		<subType subType="HEN_BOHUSDAL" fillTypeName="BRC_HEN_BOHUSDAL">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="1" image="animals/domesticated/chicken/store/store_FM_GS01_Bohusdal.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenProfit</description>
+					<description>$l10n_animal_descriptionChickenFeed</description>
+					<description>$l10n_animal_descriptionChickenYoung</description>
+					<description>$l10n_animal_descriptionChickenReproduction</description>
+					<textureIndexes>
+						<value>4</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="2" visualAnimalIndex="2" image="animals/domesticated/chicken/store/store_FM_GS02_Bohusdal.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenProfit</description>
+					<description>$l10n_animal_descriptionChickenFeed</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionChickenReproduction</description>
+					<textureIndexes>
+						<value>4</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="4" visualAnimalIndex="3" image="animals/domesticated/chicken/store/store_F_GS03_Bohusdal.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenProfit</description>
+					<description>$l10n_animal_descriptionChickenFeed</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionChickenReproduction</description>
+					<textureIndexes>
+						<value>4</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="6" visualAnimalIndex="3" image="animals/domesticated/chicken/store/store_F_GS04_Bohusdal.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenProfit</description>
+					<description>$l10n_animal_descriptionChickenFeed</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionChickenReproduction</description>
+					<textureIndexes>
+						<value>4</value>
+                    </textureIndexes>
+				</visual>
+			</visuals>
+			<reproduction minAgeMonth="6" durationMonth="2" minHealthFactor="0.75"/>
+			<buyPrice>
+				<key ageMonth="0" value="5"/>
+				<key ageMonth="6" value="50"/>
+			</buyPrice>
+			<sellPrice>
+				<key ageMonth="0" value="5" />
+        		<key ageMonth="6" value="25" />
+				<key ageMonth="12" value="75" />
+				<key ageMonth="18" value="25" />
+				<key ageMonth="24" value="5" />
+			</sellPrice>
+			<transportPrice>
+				<key ageMonth="0" value="1"/>
+				<key ageMonth="6" value="1"/>
+			</transportPrice>
+			<input>
+				<food>
+					<key ageMonth="0" value="2"/>
+				  	<key ageMonth="6" value="8"/>
+				  	<key ageMonth="12" value="12"/>
+				</food>
+				<water>
+					<key ageMonth="0" value="1"/>
+					<key ageMonth="6" value="4"/>
+					<key ageMonth="12" value="6"/>
+				</water>
+				<straw>
+					<key ageMonth="0" value="1"/>
+				  	<key ageMonth="6" value="5"/>
+				  	<key ageMonth="12" value="8"/>
+        		</straw>
+			</input>
+			<output>
+               <pallets fillType="EGG">
+                    <key ageMonth="0" value="0"/>
+                    <key ageMonth="3" value="0"/>
+                    <key ageMonth="6" value="5"/>
+                </pallets>
+        		<manure>
+          			<key ageMonth="0" value="2"/>
+				  	<key ageMonth="6" value="10"/>
+          			<key ageMonth="12" value="16"/>
+        		</manure>
+			</output>
+		</subType>
+		<subType subType="ROOSTER_BOHUSDAL" fillTypeName="BRC_ROOSTER_BOHUSDAL">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="4" image="animals/domesticated/chicken/store/store_FM_GS01_Bohusdal.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenRooster</description>
+					<textureIndexes>
+						<value>4</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="2" visualAnimalIndex="5" image="animals/domesticated/chicken/store/store_FM_GS02_Bohusdal.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenRooster</description>
+					<textureIndexes>
+						<value>4</value>
+                    </textureIndexes>
+				</visual>
+				<visual minAge="4" visualAnimalIndex="6" image="animals/domesticated/chicken/store/store_M_GS03_LohmannLeghornPlymouthBohusdal.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenRooster</description>
+				</visual>
+				<visual minAge="6" visualAnimalIndex="6" image="animals/domesticated/chicken/store/store_M_GS04_LohmannLeghornPlymouthBohusdal.png" canBeBought="true">
+					<description>$l10n_animal_descriptionChickenRooster</description>
+				</visual>
+			</visuals>
+			<reproduction supported="false" minAgeMonth="6"/>
+			<buyPrice>
+				<key ageMonth="0" value="5"/>
+				<key ageMonth="6" value="50"/>
+			</buyPrice>
+			<sellPrice>
+				<key ageMonth="0" value="5" />
+        		<key ageMonth="6" value="50" />
+				<key ageMonth="12" value="25" />
+				<key ageMonth="18" value="5" />
+				<key ageMonth="24" value="0" />
+			</sellPrice>
+			<transportPrice>
+				<key ageMonth="0" value="1"/>
+			</transportPrice>
+			<input>
+				<food>
+          			<key ageMonth="0" value="2"/>
+				  	<key ageMonth="6" value="8"/>
+        		</food>
+        		<water>
+          			<key ageMonth="0" value="1"/>
+          			<key ageMonth="6" value="4"/>
+        		</water>
+        		<straw>
+          			<key ageMonth="0" value="1"/>
+				  	<key ageMonth="6" value="5"/>
+        		</straw>
+      		</input>
+      		<output>
+        		<manure>
+          			<key ageMonth="0" value="2"/>
+				  	<key ageMonth="6" value="10"/>
+        		</manure>
+      		</output>
+		</subType>
+		 <subType subType="DUCK_FEMALE" fillTypeName="DUCK_FEMALE" malePart="DUCK_MALE">
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="7" name="$l10n_shopItem_animalDuckGrowthStage0_female" image="animals/domesticated/chicken/store/store_duckling.png" canBeBought="true">
+                    <description>$l10n_animal_duckGrowthStage0Description_female</description>
+                </visual>
+                <visual minAge="3" visualAnimalIndex="8" name="$l10n_shopItem_animalDuckGrowthStage1_female" image="animals/domesticated/chicken/store/store_duck.png" canBeBought="false">
+                    <description>$l10n_animal_duckGrowthStage1Description_female</description>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="8" name="$l10n_shopItem_animalDuckGrowthStage1_female" image="animals/domesticated/chicken/store/store_duck.png" canBeBought="true">
+                    <description>$l10n_animal_duckGrowthStage1Description_female</description>
+                </visual>
+            </visuals>
+            <reproduction minAgeMonth="6" durationMonth="2" minHealthFactor="0.75" />
+            <buyPrice>
+                <key ageMonth="0" value="1" />
+                <key ageMonth="6" value="6" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="1" />
+                <key ageMonth="6" value="4" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="1" />
+                <key ageMonth="6" value="1" />
+            </transportPrice>
+            <input>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="5" />
+                    <key ageMonth="6" value="15" />
+                </food>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" value="5" />
+                    <key ageMonth="6" value="15" />
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="2" />
+                    <key ageMonth="6" value="5" />
+                </water>
+            </input>
+            <output>
+                <pallets fillType="EGG">
+                    <key ageMonth="0" value="0" />
+                    <key ageMonth="1" value="0" />
+                    <key ageMonth="2" value="0" />
+                    <key ageMonth="3" value="0" />
+                    <key ageMonth="4" value="0" />
+                    <key ageMonth="5" value="0" />
+                    <key ageMonth="6" value="7" />
+                </pallets>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0" value="5" />
+                    <key ageMonth="6" value="25" />
+                </manure>
+            </output>
+        </subType>
+
+        <subType subType="DUCK_MALE" fillTypeName="DUCK_MALE">
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="7" name="$l10n_shopItem_animalDuckGrowthStage0_male" image="animals/domesticated/chicken/store/store_male_duckling.png" canBeBought="true">
+                    <description>$l10n_animal_duckGrowthStage0Description_male</description>
+                </visual>
+                <visual minAge="3" visualAnimalIndex="8" name="$l10n_shopItem_animalDuckGrowthStage1_male" image="animals/domesticated/chicken/store/store_male_duck.png" canBeBought="false">
+                    <description>$l10n_animal_duckGrowthStage1Description_male</description>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="8" name="$l10n_shopItem_animalDuckGrowthStage1_male" image="animals/domesticated/chicken/store/store_male_duck.png" canBeBought="true">
+                    <description>$l10n_animal_duckGrowthStage1Description_male</description>
+                </visual>
+            </visuals>
+            <reproduction supported="false" />
+            <buyPrice>
+                <key ageMonth="0" value="1" />
+                <key ageMonth="6" value="6" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="1" />
+                <key ageMonth="6" value="2" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="1" />
+                <key ageMonth="6" value="1" />
+            </transportPrice>
+            <input>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="6" />
+                    <key ageMonth="6" value="17" />
+                </food>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" value="6" />
+                    <key ageMonth="6" value="17" />
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="2" />
+                    <key ageMonth="6" value="5" />
+                </water>
+            </input>
+            <output>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0" value="6" />
+                    <key ageMonth="6" value="27" />
+                </manure>
+            </output>
+        </subType>
+		<subType subType="LIBA" fillTypeName="LIBA" >
+            <visuals>
+				<visual minAge="0" visualAnimalIndex="7" name="$l10n_shopItem_animallibaGrowthStage0_female" image="animals/domesticated/chicken/store/store_kisliba.png" canBeBought="true">
+                    <description>$l10n_animal_libaGrowthStage0Description_female</description>
+                </visual>
+                <visual minAge="3" visualAnimalIndex="9" name="$l10n_shopItem_animallibaGrowthStage1_female" image="animals/domesticated/chicken/store/store_liba.png" canBeBought="false">
+                    <description>$l10n_animal_libaGrowthStage1Description_female</description>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="9" name="$l10n_shopItem_animallibaGrowthStage2_female" image="animals/domesticated/chicken/store/store_liba.png" canBeBought="true">
+                    <description>$l10n_animal_libaGrowthStage2Description_female</description>
+                </visual>
+            </visuals>
+            <reproduction minAgeMonth="6" durationMonth="2" minHealthFactor="0.75" />
+            <buyPrice>
+                <key ageMonth="0" value="30" />
+                <key ageMonth="6" value="60" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="15" />
+                <key ageMonth="6" value="30" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="5" />
+                <key ageMonth="6" value="10" />
+            </transportPrice>
+            <input>
+                <food><!-- liters per day based on age -->
+                    <key ageMonth="0" value="5" />
+                    <key ageMonth="6" value="5" />
+                </food>
+				<straw><!-- liters per day based on age -->
+                    <key ageMonth="0" value="5" />
+                    <key ageMonth="6" value="5" />
+                </straw>
+                <water><!-- liters per day based on age -->
+                    <key ageMonth="0" value="1" />
+                    <key ageMonth="6" value="1" />
+                </water>
+            </input>
+            <output>
+                <pallets fillType="EGG">
+                    <key ageMonth="0" value="0" />
+                    <key ageMonth="6" value="10" />
+                </pallets>
+				<manure><!-- liters per day based on age -->
+                    <key ageMonth="0" value="5" />
+                    <key ageMonth="6" value="5" />
+                </manure>
+            </output>
+        </subType>
+		
+		 <subType subType="LIBA_HIM" fillTypeName="LIBA_HIM">
+            <visuals>
+                <visual minAge="0" visualAnimalIndex="7" name="$l10n_shopItem_animalliba_himGrowthStage0_male" image="animals/domesticated/chicken/store/store_male_kisliba.png" canBeBought="true">
+                    <description>$l10n_animal_liba_himGrowthStage0Description_male</description>
+                </visual>
+                <visual minAge="3" visualAnimalIndex="9" name="$l10n_shopItem_animallibahimGrowthStage1" image="animals/domesticated/chicken/store/store_male_liba.png" canBeBought="false">
+                    <description>$l10n_animal_liba_himGrowthStage1Description</description>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="9" name="$l10n_shopItem_animalliba_himGrowthStage2" image="animals/domesticated/chicken/store/store_male_liba.png" canBeBought="true">
+                    <description>$l10n_animal_liba_himGrowthStage2Description</description>
+                </visual>
+            </visuals>
+            <reproduction supported="false" />
+            <buyPrice>
+                <key ageMonth="0" value="1" />
+                <key ageMonth="6" value="6" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="1" />
+                <key ageMonth="6" value="2" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="1" />
+                <key ageMonth="6" value="1" />
+            </transportPrice>
+            <input>
+                <food><!-- liters per month based on age -->
+                    <key ageMonth="0" value="6" />
+                    <key ageMonth="6" value="17" />
+                </food>
+                <straw><!-- liters per month based on age -->
+                    <key ageMonth="0" value="6" />
+                    <key ageMonth="6" value="17" />
+                </straw>
+                <water><!-- liters per month based on age -->
+                    <key ageMonth="0" value="2" />
+                    <key ageMonth="6" value="5" />
+                </water>
+            </input>
+            <output>
+                <manure><!-- liters per month based on age -->
+                    <key ageMonth="0" value="6" />
+                    <key ageMonth="6" value="27" />
+                </manure>
+            </output>
+        </subType>
+		
+		<subType subType="PULYKA" fillTypeName="PULYKA" >
+            <visuals>
+			    <visual minAge="0" visualAnimalIndex="2" name="$l10n_shopItem_animalpulykaGrowthStage0" image="animals/domesticated/chicken/store/store_chick.png" canBeBought="true">
+                    <description>$l10n_animal_pulykaGrowthStage0Description</description>
+                </visual>
+				<visual minAge="3" visualAnimalIndex="10" name="$l10n_shopItem_animalpulykaGrowthStage1" image="animals/domesticated/chicken/store/store_pulyka.png" canBeBought="false">
+                    <description>$l10n_animal_pulykaGrowthStage1Description</description>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="10" name="$l10n_shopItem_animalpulykaGrowthStage2" image="animals/domesticated/chicken/store/store_pulyka.png" canBeBought="true">
+                    <description>$l10n_animal_pulykaGrowthStage2Description</description>
+                </visual>
+            </visuals>
+            <reproduction minAgeMonth="6" durationMonth="2" minHealthFactor="0.75" />
+            <buyPrice>
+                <key ageMonth="0" value="30" />
+                <key ageMonth="6" value="60" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="15" />
+                <key ageMonth="6" value="30" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="5" />
+                <key ageMonth="6" value="10" />
+            </transportPrice>
+            <input>
+                <food><!-- liters per day based on age -->
+                    <key ageMonth="0" value="5" />
+                    <key ageMonth="6" value="5" />
+                </food>
+				<straw><!-- liters per day based on age -->
+                    <key ageMonth="0" value="5" />
+                    <key ageMonth="6" value="5" />
+                </straw>
+                <water><!-- liters per day based on age -->
+                    <key ageMonth="0" value="1" />
+                    <key ageMonth="6" value="1" />
+                </water>
+            </input>
+            <output>
+                <pallets fillType="EGG">
+                    <key ageMonth="0" value="0" />
+                    <key ageMonth="6" value="10" />
+                </pallets>
+				<manure><!-- liters per day based on age -->
+                    <key ageMonth="0" value="5" />
+                    <key ageMonth="6" value="5" />
+                </manure>
+            </output>
+        </subType>
+				<subType subType="PULYKA_HIM" fillTypeName="PULYKA_HIM" >
+            <visuals>
+			    <visual minAge="0" visualAnimalIndex="2" name="$l10n_shopItem_animalpulyka_himGrowthStage0" image="animals/domesticated/chicken/store/store_male_chick.png" canBeBought="true">
+                    <description>$l10n_animal_pulyka_himGrowthStage0Description</description>
+                </visual>
+				<visual minAge="3" visualAnimalIndex="10" name="$l10n_shopItem_animalpulyka_himGrowthStage1" image="animals/domesticated/chicken/store/store_male_pulyka.png" canBeBought="false">
+                    <description>$l10n_animal_pulyka_himGrowthStage1Description</description>
+                </visual>
+                <visual minAge="6" visualAnimalIndex="10" name="$l10n_shopItem_animalpulykaGrowthStage3" image="animals/domesticated/chicken/store/store_male_pulyka.png" canBeBought="true">
+                    <description>$l10n_animal_pulyka_himGrowthStage3Description</description>
+                </visual>
+            </visuals>
+            <reproduction minAgeMonth="6" durationMonth="2" minHealthFactor="0.75" />
+            <buyPrice>
+                <key ageMonth="0" value="30" />
+                <key ageMonth="6" value="60" />
+            </buyPrice>
+            <sellPrice>
+                <key ageMonth="0" value="15" />
+                <key ageMonth="6" value="30" />
+            </sellPrice>
+            <transportPrice>
+                <key ageMonth="0" value="5" />
+                <key ageMonth="6" value="10" />
+            </transportPrice>
+            <input>
+                <food><!-- liters per day based on age -->
+                    <key ageMonth="0" value="5" />
+                    <key ageMonth="6" value="5" />
+                </food>
+				<straw><!-- liters per day based on age -->
+                    <key ageMonth="0" value="5" />
+                    <key ageMonth="6" value="5" />
+                </straw>
+                <water><!-- liters per day based on age -->
+                    <key ageMonth="0" value="1" />
+                    <key ageMonth="6" value="1" />
+                </water>
+            </input>
+            <output>
+				<manure><!-- liters per day based on age -->
+                    <key ageMonth="0" value="5" />
+                    <key ageMonth="6" value="5" />
+                </manure>
+            </output>
+        </subType>
+	</animal>
+</animals>

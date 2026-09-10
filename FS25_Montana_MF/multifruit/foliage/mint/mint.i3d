@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="mint.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="40" filename="$data/foliage/grass/grassStage04LOD1_alpha.png"/>
+    <File fileId="37" filename="$data/foliage/grass/grassStage04LOD1_diffuse.png"/>
+    <File fileId="39" filename="$data/foliage/grass/grassStage04LOD1_fmask.png"/>
+    <File fileId="38" filename="$data/foliage/grass/grassStage04LOD1_normal.png"/>
+    <File fileId="21" filename="$data/foliage/grass/grassStage04_alpha.png"/>
+    <File fileId="18" filename="$data/foliage/grass/grassStage04_diffuse.png"/>
+    <File fileId="20" filename="$data/foliage/grass/grassStage04_fmask.png"/>
+    <File fileId="19" filename="$data/foliage/grass/grassStage04_normal.png"/>
+    <File fileId="4" filename="$data/shaders/fruitGrowthFoliageShader.xml"/>
+    <File fileId="24" filename="mint1LOD_alpha.png"/>
+    <File fileId="22" filename="mint1LOD_diffuse.png"/>
+    <File fileId="23" filename="mint1LOD_normal.png"/>
+    <File fileId="6" filename="mint1_alpha.dds"/>
+    <File fileId="1" filename="mint1_diffuse.png"/>
+    <File fileId="2" filename="mint1_normal.dds"/>
+    <File fileId="3" filename="mint1_specular.png"/>
+    <File fileId="28" filename="mint2LOD_alpha.png"/>
+    <File fileId="25" filename="mint2LOD_diffuse.png"/>
+    <File fileId="26" filename="mint2LOD_normal.png"/>
+    <File fileId="27" filename="mint2LOD_specular.png"/>
+    <File fileId="10" filename="mint2_alpha.png"/>
+    <File fileId="7" filename="mint2_diffuse.png"/>
+    <File fileId="8" filename="mint2_normal.png"/>
+    <File fileId="9" filename="mint2_specular.png"/>
+    <File fileId="32" filename="mint3LOD_alpha.png"/>
+    <File fileId="29" filename="mint3LOD_diffuse.png"/>
+    <File fileId="30" filename="mint3LOD_normal.png"/>
+    <File fileId="31" filename="mint3LOD_specular.png"/>
+    <File fileId="14" filename="mint3_alpha.png"/>
+    <File fileId="11" filename="mint3_diffuse.png"/>
+    <File fileId="12" filename="mint3_normal.png"/>
+    <File fileId="13" filename="mint3_specular.png"/>
+    <File fileId="35" filename="mint4LOD_LOD.png"/>
+    <File fileId="36" filename="mint4LOD_alpha.png"/>
+    <File fileId="33" filename="mint4LOD_diffuse.png"/>
+    <File fileId="34" filename="mint4LOD_normal.png"/>
+    <File fileId="17" filename="mint4_alpha.png"/>
+    <File fileId="15" filename="mint4_diffuse.png"/>
+    <File fileId="16" filename="mint4_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="grassStage04_mat" materialId="5" customShaderId="4">
+      <Texture fileId="18"/>
+      <Normalmap fileId="19"/>
+      <Glossmap fileId="20"/>
+      <Custommap name="alphaMap" fileId="21"/>
+      <CustomParameter name="snowScale" value="0.36"/>
+      <CustomParameter name="aoIntensity" value="2 1"/>
+    </Material>
+    <Material name="grassStage04LOD1_mat" materialId="6" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="37"/>
+      <Normalmap fileId="38"/>
+      <Glossmap fileId="39"/>
+      <Custommap name="alphaMap" fileId="40"/>
+      <CustomParameter name="snowScale" value="0.36"/>
+      <CustomParameter name="aoIntensity" value="2 1"/>
+    </Material>
+    <Material name="min1LOD" materialId="40" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="22"/>
+      <Normalmap fileId="23"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="alphaMap" fileId="24"/>
+      <CustomParameter name="snowScale" value="0.22"/>
+    </Material>
+    <Material name="Mint1" materialId="37" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2" bumpDepth="10"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="alphaMap" fileId="6"/>
+      <CustomParameter name="snowScale" value="0.3"/>
+    </Material>
+    <Material name="mint2" materialId="43" customShaderId="4">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+      <Custommap name="alphaMap" fileId="10"/>
+      <CustomParameter name="snowScale" value="0.3"/>
+    </Material>
+    <Material name="mint2LOD" materialId="48" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="25"/>
+      <Normalmap fileId="26"/>
+      <Glossmap fileId="27"/>
+      <Custommap name="alphaMap" fileId="28"/>
+      <CustomParameter name="snowScale" value="0.22"/>
+    </Material>
+    <Material name="mint3" materialId="45" customShaderId="4">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+      <Custommap name="alphaMap" fileId="14"/>
+      <CustomParameter name="snowScale" value="0.3"/>
+    </Material>
+    <Material name="mint4LOD" materialId="56" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="33"/>
+      <Normalmap fileId="34"/>
+      <Glossmap fileId="35"/>
+      <Custommap name="alphaMap" fileId="36"/>
+      <CustomParameter name="snowScale" value="0.22"/>
+    </Material>
+    <Material name="wheatStage04_mat" materialId="46" customShaderId="4">
+      <Texture fileId="15"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="16"/>
+      <Custommap name="alphaMap" fileId="17"/>
+      <CustomParameter name="snowScale" value="0.3"/>
+    </Material>
+    <Material name="wheatStage04LOD1_mat" materialId="52" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="29"/>
+      <Normalmap fileId="30"/>
+      <Glossmap fileId="31"/>
+      <Custommap name="alphaMap" fileId="32"/>
+      <CustomParameter name="snowScale" value="0.22"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="mint.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="mint" nodeId="21">
+      <TransformGroup name="LOD0" nodeId="22">
+        <Shape name="mint1" shapeId="1" clipDistance="500" nodeId="23" castsShadows="true" receiveShadows="true" materialIds="37"/>
+        <Shape name="mint2" shapeId="1" clipDistance="500" nodeId="24" castsShadows="true" receiveShadows="true" materialIds="43"/>
+        <Shape name="mint3" shapeId="2" clipDistance="500" nodeId="25" castsShadows="true" receiveShadows="true" materialIds="45"/>
+        <Shape name="mint4" shapeId="2" clipDistance="500" nodeId="26" castsShadows="true" receiveShadows="true" materialIds="46"/>
+        <Shape name="cut" shapeId="3" clipDistance="500" nodeId="27" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="5"/>
+      </TransformGroup>
+      <TransformGroup name="LOD1" nodeId="28">
+        <Shape name="mint1LOD" shapeId="4" clipDistance="500" nodeId="29" castsShadows="false" receiveShadows="true" materialIds="40"/>
+        <Shape name="Mint2LOD" shapeId="4" clipDistance="500" nodeId="30" castsShadows="false" receiveShadows="true" materialIds="48"/>
+        <Shape name="mint3LOD" shapeId="5" clipDistance="500" nodeId="31" castsShadows="false" receiveShadows="true" materialIds="52"/>
+        <Shape name="mint4LOD" shapeId="5" clipDistance="500" nodeId="32" castsShadows="false" receiveShadows="true" materialIds="56"/>
+        <Shape name="cut" shapeId="6" clipDistance="500" nodeId="33" castsShadows="true" receiveShadows="true" materialIds="6"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

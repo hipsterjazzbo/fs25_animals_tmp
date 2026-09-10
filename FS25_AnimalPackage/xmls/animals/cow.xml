@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<animals>
+	<animal type="COW" groupTitle="$l10n_animal_group_cows" statsBreeding="breedCowsCount" clusterClass="AnimalCluster">
+		<!-- PONTOS ELÉRÉSI ÚT A 3D MODELLEKHEZ -->
+		<configFilename>animals/domesticated/cattle/husbandryAnimalsCattle.xml</configFilename>
+		<navMeshAgent height="1.6" radius="0.9" maxClimbMeters="1" maxSlope="20"/>
+		<pasture sqmPerAnimal="120"/>
+        
+		<!-- 1. BIKA: FEKETE-FEHÉR HOLSTEIN -->
+		<subType fillTypeName="BRC_BULL_HOLSTEIN" subType="BULL_HOLSTEIN">
+			<visuals>
+				<visual canBeBought="true" image="animals/domesticated/bull/store_calfHolstein.png" minAge="0" name="$l10n_animal_name_calfHolstein" visualAnimalIndex="3">
+					<description>$l10n_animal_descriptionBullCalfMilk</description>
+					<description>$l10n_animal_descriptionBullCalf</description>
+					<textureIndexes><value>1</value></textureIndexes>
+				</visual>
+				<visual canBeBought="true" image="animals/domesticated/bull/store_bullYoungHolstein.png" minAge="6" name="$l10n_animal_name_calfHolstein" visualAnimalIndex="2">
+					<description>$l10n_animal_descriptionBullFeed</description>
+					<description>$l10n_animal_descriptionBullYoung</description>
+					<textureIndexes><value>1</value></textureIndexes>
+				</visual>
+				<visual canBeBought="true" image="animals/domesticated/bull/store_bullHolstein.png" minAge="12" name="$l10n_animal_name_bullHolstein" visualAnimalIndex="1">
+					<description>$l10n_animal_descriptionBullFeed</description>
+					<description>$l10n_animal_descriptionBullMature</description>
+					<description>$l10n_animal_descriptionBullReproduction</description>
+					<textureIndexes><value>1</value></textureIndexes>
+				</visual>
+				<visual canBeBought="true" image="animals/domesticated/bull/store_bullHolstein.png" minAge="24" name="$l10n_animal_name_bullHolstein" visualAnimalIndex="1">
+					<description>$l10n_animal_descriptionBullFeed</description>
+					<description>$l10n_animal_descriptionBullOldMature</description>
+					<description>$l10n_animal_descriptionBullReproduction</description>
+					<textureIndexes><value>1</value></textureIndexes>
+				</visual>
+			</visuals>
+			<reproduction supported="false"/>
+			<buyPrice><key ageMonth="0" value="300"/><key ageMonth="24" value="1800"/></buyPrice>
+			<sellPrice><key ageMonth="0" value="250"/><key ageMonth="24" value="1600"/><key ageMonth="36" value="1600"/><key ageMonth="60" value="1000"/></sellPrice>
+			<transportPrice><key ageMonth="0" value="50"/><key ageMonth="12" value="80"/><key ageMonth="24" value="100"/></transportPrice>
+			<input>
+				<straw><key ageMonth="0" value="10"/><key ageMonth="24" value="95"/></straw>
+				<water><key ageMonth="0" value="20"/><key ageMonth="24" value="140"/></water>
+				<food><key ageMonth="0" value="40"/><key ageMonth="24" value="350"/></food>
+			</input>
+			<output>
+				<manure><key ageMonth="0" value="20"/><key ageMonth="24" value="200"/></manure>
+				<liquidManure><key ageMonth="0" value="40"/><key ageMonth="24" value="250"/></liquidManure>
+			</output>
+		</subType>
+
+		<!-- 2. BIKA: BARNA-FEHÉR HOLSTEIN (RED HOLSTEIN) -->
+		<subType fillTypeName="BRC_BULL_REDHOLSTEIN" subType="BULL_REDHOLSTEIN">
+			<visuals>
+				<visual canBeBought="true" image="animals/domesticated/bull/store_calfBarnafoltos.png" minAge="0" name="$l10n_animal_name_calfRedHolstein" visualAnimalIndex="3">
+					<description>$l10n_animal_descriptionBullCalfMilk</description>
+					<description>$l10n_animal_descriptionBullCalf</description>
+					<textureIndexes><value>2</value></textureIndexes>
+				</visual>
+				<visual canBeBought="true" image="animals/domesticated/bull/store_bullYoungbarnafoltos.png" minAge="6" name="$l10n_animal_name_calfRedHolstein" visualAnimalIndex="2">
+					<description>$l10n_animal_descriptionBullFeed</description>
+					<description>$l10n_animal_descriptionBullYoung</description>
+					<textureIndexes><value>2</value></textureIndexes>
+				</visual>
+				<visual canBeBought="true" image="animals/domesticated/bull/store_bulladultbarnafoltos.png" minAge="12" name="$l10n_animal_name_bullRedHolstein" visualAnimalIndex="1">
+					<description>$l10n_animal_descriptionBullFeed</description>
+					<description>$l10n_animal_descriptionBullMature</description>
+					<description>$l10n_animal_descriptionBullReproduction</description>
+					<textureIndexes><value>2</value></textureIndexes>
+				</visual>
+				<visual canBeBought="true" image="animals/domesticated/bull/store_bulladultbarnafoltos.png" minAge="24" name="$l10n_animal_name_bullRedHolstein" visualAnimalIndex="1">
+					<description>$l10n_animal_descriptionBullFeed</description>
+					<description>$l10n_animal_descriptionBullOldMature</description>
+					<description>$l10n_animal_descriptionBullReproduction</description>
+					<textureIndexes><value>2</value></textureIndexes>
+				</visual>
+			</visuals>
+			<reproduction supported="false"/>
+			<buyPrice><key ageMonth="0" value="300"/><key ageMonth="24" value="1800"/></buyPrice>
+			<sellPrice><key ageMonth="0" value="250"/><key ageMonth="24" value="1600"/><key ageMonth="36" value="1600"/><key ageMonth="60" value="1000"/></sellPrice>
+			<transportPrice><key ageMonth="0" value="50"/><key ageMonth="12" value="80"/><key ageMonth="24" value="100"/></transportPrice>
+			<input>
+				<straw><key ageMonth="0" value="10"/><key ageMonth="24" value="95"/></straw>
+				<water><key ageMonth="0" value="20"/><key ageMonth="24" value="140"/></water>
+				<food><key ageMonth="0" value="40"/><key ageMonth="24" value="350"/></food>
+			</input>
+			<output>
+				<manure><key ageMonth="0" value="20"/><key ageMonth="24" value="200"/></manure>
+				<liquidManure><key ageMonth="0" value="40"/><key ageMonth="24" value="250"/></liquidManure>
+			</output>
+		</subType>
+
+		<!-- 3. BIKA: FEKETE ANGUS -->
+		<subType fillTypeName="BRC_BULL_ANGUS_BLACK" subType="BULL_ANGUS_BLACK">
+			<visuals>
+				<visual canBeBought="true" image="animals/domesticated/bull/store_calfAngus.png" minAge="0" name="$l10n_animal_name_calfAngusBlack" visualAnimalIndex="6">
+					<description>$l10n_animal_descriptionBullCalfMilk</description>
+					<description>$l10n_animal_descriptionBullCalf</description>
+					<textureIndexes><value>1</value></textureIndexes>
+				</visual>
+				<visual canBeBought="true" image="animals/domesticated/bull/store_bullYoungAngus.png" minAge="6" name="$l10n_animal_name_calfAngusBlack" visualAnimalIndex="5">
+					<description>$l10n_animal_descriptionBullFeed</description>
+					<description>$l10n_animal_descriptionBullYoung</description>
+					<textureIndexes><value>1</value></textureIndexes>
+				</visual>
+				<visual canBeBought="true" image="animals/domesticated/bull/store_bullAngus.png" minAge="12" name="$l10n_animal_name_bullAngusBlack" visualAnimalIndex="4">
+					<description>$l10n_animal_descriptionBullFeed</description>
+					<description>$l10n_animal_descriptionBullMature</description>
+					<description>$l10n_animal_descriptionBullReproduction</description>
+					<textureIndexes><value>1</value></textureIndexes>
+				</visual>
+				<visual canBeBought="true" image="animals/domesticated/bull/store_bullAngus.png" minAge="24" name="$l10n_animal_name_bullAngusBlack" visualAnimalIndex="4">
+					<description>$l10n_animal_descriptionBullFeed</description>
+					<description>$l10n_animal_descriptionBullOldMature</description>
+					<description>$l10n_animal_descriptionBullReproduction</description>
+					<textureIndexes><value>1</value></textureIndexes>
+				</visual>
+			</visuals>
+			<reproduction supported="false"/>
+			<buyPrice><key ageMonth="0" value="300"/><key ageMonth="24" value="1800"/></buyPrice>
+			<sellPrice><key ageMonth="0" value="250"/><key ageMonth="24" value="1600"/><key ageMonth="36" value="1600"/><key ageMonth="60" value="1000"/></sellPrice>
+			<transportPrice><key ageMonth="0" value="50"/><key ageMonth="12" value="80"/><key ageMonth="24" value="100"/></transportPrice>
+			<input>
+				<straw><key ageMonth="0" value="10"/><key ageMonth="24" value="95"/></straw>
+				<water><key ageMonth="0" value="20"/><key ageMonth="24" value="140"/></water>
+				<food><key ageMonth="0" value="40"/><key ageMonth="24" value="350"/></food>
+			</input>
+			<output>
+				<manure><key ageMonth="0" value="20"/><key ageMonth="24" value="200"/></manure>
+				<liquidManure><key ageMonth="0" value="40"/><key ageMonth="24" value="250"/></liquidManure>
+			</output>
+		</subType>
+
+		<!-- 4. BIKA: BARNA ANGUS -->
+		<subType fillTypeName="BRC_BULL_ANGUS_RED" subType="BULL_ANGUS_RED">
+			<visuals>
+				<visual canBeBought="true" image="animals/domesticated/bull/store_calfBarna.png" minAge="0" name="$l10n_animal_name_calfAngusRed" visualAnimalIndex="6">
+					<description>$l10n_animal_descriptionBullCalfMilk</description>
+					<description>$l10n_animal_descriptionBullCalf</description>
+					<textureIndexes><value>2</value></textureIndexes>
+				</visual>
+				<visual canBeBought="true" image="animals/domesticated/bull/store_bullYoungbarna.png" minAge="6" name="$l10n_animal_name_calfAngusRed" visualAnimalIndex="5">
+					<description>$l10n_animal_descriptionBullFeed</description>
+					<description>$l10n_animal_descriptionBullYoung</description>
+					<textureIndexes><value>2</value></textureIndexes>
+				</visual>
+				<visual canBeBought="true" image="animals/domesticated/bull/store_bulladultbarna.png" minAge="12" name="$l10n_animal_name_bullAngusRed" visualAnimalIndex="4">
+					<description>$l10n_animal_descriptionBullFeed</description>
+					<description>$l10n_animal_descriptionBullMature</description>
+					<description>$l10n_animal_descriptionBullReproduction</description>
+					<textureIndexes><value>2</value></textureIndexes>
+				</visual>
+				<visual canBeBought="true" image="animals/domesticated/bull/store_bulladultbarna.png" minAge="24" name="$l10n_animal_name_bullAngusRed" visualAnimalIndex="4">
+					<description>$l10n_animal_descriptionBullFeed</description>
+					<description>$l10n_animal_descriptionBullOldMature</description>
+					<description>$l10n_animal_descriptionBullReproduction</description>
+					<textureIndexes><value>2</value></textureIndexes>
+				</visual>
+			</visuals>
+			<reproduction supported="false"/>
+			<buyPrice><key ageMonth="0" value="300"/><key ageMonth="24" value="1800"/></buyPrice>
+			<sellPrice><key ageMonth="0" value="250"/><key ageMonth="24" value="1600"/><key ageMonth="36" value="1600"/><key ageMonth="60" value="1000"/></sellPrice>
+			<transportPrice><key ageMonth="0" value="50"/><key ageMonth="12" value="80"/><key ageMonth="24" value="100"/></transportPrice>
+			<input>
+				<straw><key ageMonth="0" value="10"/><key ageMonth="24" value="95"/></straw>
+				<water><key ageMonth="0" value="20"/><key ageMonth="24" value="140"/></water>
+				<food><key ageMonth="0" value="40"/><key ageMonth="24" value="350"/></food>
+			</input>
+			<output>
+				<manure><key ageMonth="0" value="20"/><key ageMonth="24" value="200"/></manure>
+				<liquidManure><key ageMonth="0" value="40"/><key ageMonth="24" value="250"/></liquidManure>
+			</output>
+		</subType>
+
+		<!-- TEHENEK -->
+		<subType subType="COW_HOLSTEIN" fillTypeName="BRC_COW_HOLSTEIN" malePart="BULL_HOLSTEIN" >
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="7" name="$l10n_shopItem_animalHolstein_F_GS01" image="animals/domesticated/cattle/store/store_F_GS01_Holstein.png" canBeBought="true">
+					<description>$l10n_animal_descriptionCowMilk</description>
+					<description>$l10n_animal_descriptionCowFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cattleF_GS01</description>
+					<textureIndexes><value>1</value><value>2</value><value>3</value></textureIndexes>
+				</visual>
+				<visual minAge="5" visualAnimalIndex="8" name="$l10n_shopItem_animalHolstein_F_GS02" image="animals/domesticated/cattle/store/store_F_GS02_Holstein.png" canBeBought="true">
+					<description>$l10n_animal_descriptionCowMilk</description>
+					<description>$l10n_animal_descriptionCowFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cattleF_GS02</description>
+					<textureIndexes><value>1</value><value>2</value><value>3</value></textureIndexes>
+				</visual>
+				<visual minAge="12" visualAnimalIndex="9" name="$l10n_shopItem_animalHolstein_F_GS03" image="animals/domesticated/cattle/store/store_F_GS03_Holstein.png" canBeBought="true">
+					<description>$l10n_animal_descriptionCowMilk</description>
+					<description>$l10n_animal_descriptionCowFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cattleF_GS03</description>
+					<textureIndexes><value>1</value><value>2</value><value>3</value></textureIndexes>
+				</visual>
+				<visual minAge="28" visualAnimalIndex="10" name="$l10n_shopItem_animalHolstein_F_GS04" image="animals/domesticated/cattle/store/store_F_GS04_Holstein.png" canBeBought="true">
+					<description>$l10n_animal_descriptionCowMilk</description>
+					<description>$l10n_animal_descriptionCowFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cattleF_GS04</description>
+					<textureIndexes><value>1</value><value>2</value><value>3</value></textureIndexes>
+				</visual>
+			</visuals>
+			<reproduction minAgeMonth="18" durationMonth="10" minHealthFactor="0.75"/>
+			<buyPrice><key ageMonth="0" value="300"/><key ageMonth="24" value="2500"/><key ageMonth="36" value="2500"/><key ageMonth="60" value="1800"/></buyPrice>
+			<sellPrice><key ageMonth="0" value="250"/><key ageMonth="24" value="2450"/><key ageMonth="36" value="2450"/><key ageMonth="60" value="1500"/></sellPrice>
+			<transportPrice><key ageMonth="0" value="50"/><key ageMonth="12" value="80"/><key ageMonth="18" value="100"/></transportPrice>
+			<input>
+				<straw><key ageMonth="0" value="30"/><key ageMonth="22" value="250"/></straw>
+				<water><key ageMonth="0" value="55"/><key ageMonth="6" value="65"/><key ageMonth="12" value="75"/><key ageMonth="18" value="85"/><key ageMonth="26" value="95"/><key ageMonth="27" value="105"/><key ageMonth="28" value="115"/></water>
+				<food><key ageMonth="0" value="100"/><key ageMonth="6" value="170"/><key ageMonth="12" value="210"/><key ageMonth="18" value="250"/><key ageMonth="22" value="300"/><key ageMonth="27" value="375"/><key ageMonth="28" value="450"/></food>
+			</input>
+			<output>
+				<milk fillType="MILK"><key ageMonth="0" value="0"/><key ageMonth="27" value="0"/><key ageMonth="27" value="175"/><key ageMonth="28" value="350"/><key ageMonth="72" value="350"/><key ageMonth="96" value="175"/><key ageMonth="120" value="0"/></milk>
+				<manure><key ageMonth="0" value="60"/><key ageMonth="24" value="500"/></manure>
+				<liquidManure><key ageMonth="0" value="80"/><key ageMonth="12" value="350"/><key ageMonth="24" value="500"/></liquidManure>
+			</output>
+		</subType>
+
+		<subType subType="COW_REDHOLSTEIN" fillTypeName="BRC_COW_REDHOLSTEIN" malePart="BULL_REDHOLSTEIN" >
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="7" name="$l10n_shopItem_animalRedHolstein_F_GS01" image="animals/domesticated/cattle/store/store_F_GS01_RedHolstein.png" canBeBought="true">
+					<description>$l10n_animal_descriptionCowMilk</description>
+					<description>$l10n_animal_descriptionCowFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cattleF_GS01</description>
+					<textureIndexes><value>4</value><value>5</value><value>6</value></textureIndexes>
+				</visual>
+				<visual minAge="5" visualAnimalIndex="8" name="$l10n_shopItem_animalRedHolstein_F_GS02" image="animals/domesticated/cattle/store/store_F_GS02_RedHolstein.png" canBeBought="true">
+					<description>$l10n_animal_descriptionCowMilk</description>
+					<description>$l10n_animal_descriptionCowFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cattleF_GS02</description>
+					<textureIndexes><value>4</value><value>5</value><value>6</value></textureIndexes>
+				</visual>
+				<visual minAge="12" visualAnimalIndex="9" name="$l10n_shopItem_animalRedHolstein_F_GS03" image="animals/domesticated/cattle/store/store_F_GS03_RedHolstein.png" canBeBought="true">
+					<description>$l10n_animal_descriptionCowMilk</description>
+					<description>$l10n_animal_descriptionCowFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cattleF_GS03</description>
+					<textureIndexes><value>4</value><value>5</value><value>6</value></textureIndexes>
+				</visual>
+				<visual minAge="28" visualAnimalIndex="10" name="$l10n_shopItem_animalRedHolstein_F_GS04" image="animals/domesticated/cattle/store/store_F_GS04_RedHolstein.png" canBeBought="true">
+					<description>$l10n_animal_descriptionCowMilk</description>
+					<description>$l10n_animal_descriptionCowFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cattleF_GS04</description>
+					<textureIndexes><value>4</value><value>5</value><value>6</value></textureIndexes>
+				</visual>
+			</visuals>
+			<reproduction minAgeMonth="18" durationMonth="10" minHealthFactor="0.75"/>
+			<buyPrice><key ageMonth="0" value="300"/><key ageMonth="24" value="2500"/><key ageMonth="36" value="2500"/><key ageMonth="60" value="1800"/></buyPrice>
+			<sellPrice><key ageMonth="0" value="250"/><key ageMonth="24" value="2450"/><key ageMonth="36" value="2450"/><key ageMonth="60" value="1500"/></sellPrice>
+			<transportPrice><key ageMonth="0" value="50"/><key ageMonth="12" value="80"/><key ageMonth="18" value="100"/></transportPrice>
+			<input>
+				<straw><key ageMonth="0" value="30"/><key ageMonth="22" value="250"/></straw>
+				<water><key ageMonth="0" value="55"/><key ageMonth="6" value="65"/><key ageMonth="12" value="75"/><key ageMonth="18" value="85"/><key ageMonth="26" value="95"/><key ageMonth="27" value="105"/><key ageMonth="28" value="115"/></water>
+				<food><key ageMonth="0" value="100"/><key ageMonth="6" value="170"/><key ageMonth="12" value="210"/><key ageMonth="18" value="250"/><key ageMonth="22" value="300"/><key ageMonth="27" value="375"/><key ageMonth="28" value="450"/></food>
+			</input>
+			<output>
+				<milk fillType="MILK"><key ageMonth="0" value="0"/><key ageMonth="27" value="0"/><key ageMonth="27" value="175"/><key ageMonth="28" value="350"/><key ageMonth="72" value="350"/><key ageMonth="96" value="175"/><key ageMonth="120" value="0"/></milk>
+				<manure><key ageMonth="0" value="60"/><key ageMonth="24" value="500"/></manure>
+				<liquidManure><key ageMonth="0" value="80"/><key ageMonth="12" value="350"/><key ageMonth="24" value="500"/></liquidManure>
+			</output>
+		</subType>
+
+		<subType subType="COW_BROWNSWISS" fillTypeName="BRC_COW_BROWNSWISS" malePart="BULL_HOLSTEIN" >
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="7" name="$l10n_shopItem_animalBrownSwiss_F_GS01" image="animals/domesticated/cattle/store/store_FM_GS01_BrownSwiss.png" canBeBought="true">
+					<description>$l10n_animal_descriptionCowMilk</description>
+					<description>$l10n_animal_descriptionCowFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cattleF_GS01</description>
+					<textureIndexes><value>7</value><value>8</value></textureIndexes>
+				</visual>
+				<visual minAge="5" visualAnimalIndex="8" name="$l10n_shopItem_animalBrownSwiss_F_GS02" image="animals/domesticated/cattle/store/store_F_GS02_BrownSwiss.png" canBeBought="true">
+					<description>$l10n_animal_descriptionCowMilk</description>
+					<description>$l10n_animal_descriptionCowFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cattleF_GS02</description>
+					<textureIndexes><value>7</value><value>8</value></textureIndexes>
+				</visual>
+				<visual minAge="12" visualAnimalIndex="9" name="$l10n_shopItem_animalBrownSwiss_F_GS03" image="animals/domesticated/cattle/store/store_F_GS03_BrownSwiss.png" canBeBought="true">
+					<description>$l10n_animal_descriptionCowMilk</description>
+					<description>$l10n_animal_descriptionCowFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cattleF_GS03</description>
+					<textureIndexes><value>7</value><value>8</value></textureIndexes>
+				</visual>
+				<visual minAge="28" visualAnimalIndex="10" name="$l10n_shopItem_animalBrownSwiss_F_GS04" image="animals/domesticated/cattle/store/store_F_GS04_BrownSwiss.png" canBeBought="true">
+					<description>$l10n_animal_descriptionCowMilk</description>
+					<description>$l10n_animal_descriptionCowFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cattleF_GS04</description>
+					<textureIndexes><value>7</value><value>8</value></textureIndexes>
+				</visual>
+			</visuals>
+			<reproduction minAgeMonth="18" durationMonth="10" minHealthFactor="0.75"/>
+			<buyPrice><key ageMonth="0" value="200"/><key ageMonth="24" value="2000"/><key ageMonth="36" value="2000"/><key ageMonth="60" value="1000"/></buyPrice>
+			<sellPrice><key ageMonth="0" value="150"/><key ageMonth="24" value="2000"/><key ageMonth="36" value="2000"/><key ageMonth="60" value="1000"/></sellPrice>
+			<transportPrice><key ageMonth="0" value="50"/><key ageMonth="12" value="80"/><key ageMonth="18" value="100"/></transportPrice>
+			<input>
+				<straw><key ageMonth="0" value="20"/><key ageMonth="22" value="190"/></straw>
+				<water><key ageMonth="0" value="55"/><key ageMonth="6" value="65"/><key ageMonth="12" value="75"/><key ageMonth="18" value="85"/><key ageMonth="26" value="95"/><key ageMonth="27" value="105"/><key ageMonth="28" value="115"/></water>
+				<food><key ageMonth="0" value="80"/><key ageMonth="6" value="150"/><key ageMonth="12" value="180"/><key ageMonth="18" value="200"/><key ageMonth="22" value="250"/><key ageMonth="27" value="325"/><key ageMonth="28" value="350"/></food>
+			</input>
+			<output>
+				<milk fillType="MILK"><key ageMonth="0" value="0"/><key ageMonth="27" value="0"/><key ageMonth="27" value="150"/><key ageMonth="28" value="300"/><key ageMonth="72" value="300"/><key ageMonth="96" value="150"/><key ageMonth="120" value="0"/></milk>
+				<manure><key ageMonth="0" value="40"/><key ageMonth="24" value="400"/></manure>
+				<liquidManure><key ageMonth="0" value="80"/><key ageMonth="12" value="350"/><key ageMonth="12" value="500"/></liquidManure>
+			</output>
+		</subType>
+
+		<subType subType="COW_LIMOUSIN" fillTypeName="BRC_COW_LIMOUSIN" malePart="BULL_ANGUS_RED" >
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="11" name="$l10n_shopItem_animalLimousin_F_GS01" image="animals/domesticated/cattle/store/store_FM_GS01_Limousin.png" canBeBought="true">
+					<description>$l10n_animal_descriptionCowProfit</description>
+					<description>$l10n_animal_descriptionCowFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cattleF_GS01</description>
+					<textureIndexes><value>1</value><value>2</value></textureIndexes>
+				</visual>
+				<visual minAge="5" visualAnimalIndex="12" name="$l10n_shopItem_animalLimousin_F_GS02" image="animals/domesticated/cattle/store/store_F_GS02_Limousin.png" canBeBought="true">
+					<description>$l10n_animal_descriptionCowProfit</description>
+					<description>$l10n_animal_descriptionCowFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cattleF_GS02</description>
+					<textureIndexes><value>1</value><value>2</value></textureIndexes>
+				</visual>
+				<visual minAge="12" visualAnimalIndex="13" name="$l10n_shopItem_animalLimousin_F_GS03" image="animals/domesticated/cattle/store/store_F_GS03_Limousin.png" canBeBought="true">
+					<description>$l10n_animal_descriptionCowProfit</description>
+					<description>$l10n_animal_descriptionCowFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cattleF_GS03</description>
+					<textureIndexes><value>1</value><value>2</value></textureIndexes>
+				</visual>
+				<visual minAge="28" visualAnimalIndex="14" name="$l10n_shopItem_animalLimousin_F_GS04" image="animals/domesticated/cattle/store/store_F_GS04_Limousin.png" canBeBought="true">
+					<description>$l10n_animal_descriptionCowProfit</description>
+					<description>$l10n_animal_descriptionCowFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cattleF_GS04</description>
+					<textureIndexes><value>1</value><value>2</value></textureIndexes>
+				</visual>
+			</visuals>
+			<reproduction minAgeMonth="18" durationMonth="10" minHealthFactor="0.75"/>
+			<buyPrice><key ageMonth="0" value="300"/><key ageMonth="15" value="3000"/><key ageMonth="60" value="2000"/></buyPrice>
+			<sellPrice><key ageMonth="0" value="280"/><key ageMonth="15" value="2800"/><key ageMonth="20" value="4100"/><key ageMonth="60" value="1800"/></sellPrice>
+			<transportPrice><key ageMonth="0" value="50"/><key ageMonth="12" value="80"/><key ageMonth="18" value="100"/></transportPrice>
+			<input>
+				<straw><key ageMonth="0" value="30"/><key ageMonth="22" value="260"/></straw>
+				<water><key ageMonth="0" value="55"/><key ageMonth="6" value="65"/><key ageMonth="12" value="75"/><key ageMonth="18" value="85"/><key ageMonth="26" value="95"/><key ageMonth="27" value="105"/><key ageMonth="28" value="115"/></water>
+				<food><key ageMonth="0" value="130"/><key ageMonth="6" value="220"/><key ageMonth="12" value="350"/><key ageMonth="18" value="500"/><key ageMonth="22" value="575"/><key ageMonth="27" value="700"/><key ageMonth="28" value="900"/></food>
+			</input>
+			<output>
+				<manure><key ageMonth="0" value="60"/><key ageMonth="24" value="320"/></manure>
+				<liquidManure><key ageMonth="0" value="50"/><key ageMonth="12" value="250"/><key ageMonth="24" value="750"/></liquidManure>
+			</output>
+		</subType>
+
+		<subType subType="COW_ANGUS" fillTypeName="BRC_COW_ANGUS" malePart="BULL_ANGUS_BLACK">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="11" name="$l10n_shopItem_animalAngus_F_GS01" image="animals/domesticated/cattle/store/store_FM_GS01_Angus.png" canBeBought="true">
+					<description>$l10n_animal_descriptionCowProfit</description>
+					<description>$l10n_animal_descriptionCowFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cattleF_GS01</description>
+					<textureIndexes><value>3</value><value>4</value></textureIndexes>
+				</visual>
+				<visual minAge="5" visualAnimalIndex="12" name="$l10n_shopItem_animalAngus_F_GS02" image="animals/domesticated/cattle/store/store_F_GS02_Angus.png" canBeBought="true">
+					<description>$l10n_animal_descriptionCowProfit</description>
+					<description>$l10n_animal_descriptionCowFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cattleF_GS02</description>
+					<textureIndexes><value>3</value><value>4</value></textureIndexes>
+				</visual>
+				<visual minAge="12" visualAnimalIndex="13" name="$l10n_shopItem_animalAngus_F_GS03" image="animals/domesticated/cattle/store/store_F_GS03_Angus.png" canBeBought="true">
+					<description>$l10n_animal_descriptionCowProfit</description>
+					<description>$l10n_animal_descriptionCowFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cattleF_GS03</description>
+					<textureIndexes><value>3</value><value>4</value></textureIndexes>
+				</visual>
+				<visual minAge="28" visualAnimalIndex="14" name="$l10n_shopItem_animalAngus_F_GS04" image="animals/domesticated/cattle/store/store_F_GS04_Angus.png" canBeBought="true">
+					<description>$l10n_animal_descriptionCowProfit</description>
+					<description>$l10n_animal_descriptionCowFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_cattleF_GS04</description>
+					<textureIndexes><value>3</value><value>4</value></textureIndexes>
+				</visual>
+			</visuals>
+			<reproduction minAgeMonth="18" durationMonth="10" minHealthFactor="0.75"/>
+			<buyPrice><key ageMonth="0" value="300"/><key ageMonth="15" value="3000"/><key ageMonth="60" value="2000"/></buyPrice>
+			<sellPrice><key ageMonth="0" value="280"/><key ageMonth="15" value="2800"/><key ageMonth="20" value="4500"/><key ageMonth="60" value="1800"/></sellPrice>
+			<transportPrice><key ageMonth="0" value="50"/><key ageMonth="12" value="80"/><key ageMonth="18" value="100"/></transportPrice>
+			<input>
+				<straw><key ageMonth="0" value="50"/><key ageMonth="22" value="300"/></straw>
+				<water><key ageMonth="0" value="55"/><key ageMonth="6" value="65"/><key ageMonth="12" value="75"/><key ageMonth="18" value="85"/><key ageMonth="26" value="95"/><key ageMonth="27" value="105"/><key ageMonth="28" value="115"/></water>
+				<food><key ageMonth="0" value="160"/><key ageMonth="6" value="250"/><key ageMonth="12" value="400"/><key ageMonth="18" value="550"/><key ageMonth="22" value="625"/><key ageMonth="27" value="750"/><key ageMonth="28" value="975"/></food>
+			</input>
+			<output>
+				<manure><key ageMonth="0" value="100"/><key ageMonth="24" value="600"/></manure>
+				<liquidManure><key ageMonth="0" value="80"/><key ageMonth="12" value="250"/><key ageMonth="24" value="500"/></liquidManure>
+			</output>
+		</subType>
+
+		<subType subType="COW_WATERBUFFALO" fillTypeName="BRC_COW_WATERBUFFALO" malePart="BULL_WATERBUFFALO">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="15" name="$l10n_animal_visual_baby" image="$dataS/character/animals/domesticated/waterBuffalo/store_waterBuffaloBaby.png" canBeBought="true">
+					<description>$l10n_animal_descriptionBuffaloMilk</description>
+					<description>$l10n_animal_descriptionBuffaloFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionBuffaloYoung</description>
+					<description>$l10n_animal_descriptionBuffaloReproduction</description>
+				</visual>
+				<visual minAge="5" visualAnimalIndex="16" name="$l10n_animal_visual_kid" image="$dataS/character/animals/domesticated/waterBuffalo/store_waterBuffaloKid.png" canBeBought="true">
+					<description>$l10n_animal_descriptionBuffaloMilk</description>
+					<description>$l10n_animal_descriptionBuffaloFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionBuffaloReproduction</description>
+				</visual>
+				<visual minAge="15" visualAnimalIndex="17" name="$l10n_animal_visual_adult" image="$dataS/character/animals/domesticated/waterBuffalo/store_waterBuffalo.png" canBeBought="true">
+					<description>$l10n_animal_descriptionBuffaloMilk</description>
+					<description>$l10n_animal_descriptionBuffaloFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionBuffaloReproduction</description>
+				</visual>
+				<visual minAge="28" visualAnimalIndex="17" name="$l10n_animal_visual_adult" image="$dataS/character/animals/domesticated/waterBuffalo/store_waterBuffalo.png" canBeBought="true">
+					<description>$l10n_animal_descriptionBuffaloMilk</description>
+					<description>$l10n_animal_descriptionBuffaloFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionBuffaloReproduction</description>
+				</visual>
+			</visuals>
+			<reproduction minAgeMonth="18" durationMonth="10" minHealthFactor="0.75"/>
+			<buyPrice><key ageMonth="0" value="200"/><key ageMonth="24" value="1500"/><key ageMonth="60" value="1400"/></buyPrice>
+			<sellPrice><key ageMonth="0" value="150"/><key ageMonth="24" value="1500"/><key ageMonth="36" value="1500"/><key ageMonth="60" value="1000"/></sellPrice>
+			<transportPrice><key ageMonth="0" value="50"/><key ageMonth="12" value="80"/><key ageMonth="18" value="100"/></transportPrice>
+			<input>
+				<straw><key ageMonth="0" value="20"/><key ageMonth="18" value="190"/></straw>
+				<water><key ageMonth="0" value="55"/><key ageMonth="6" value="65"/><key ageMonth="12" value="75"/><key ageMonth="18" value="85"/><key ageMonth="26" value="95"/><key ageMonth="27" value="105"/><key ageMonth="28" value="115"/></water>
+				<food><key ageMonth="0" value="80"/><key ageMonth="6" value="125"/><key ageMonth="12" value="250"/><key ageMonth="18" value="400"/><key ageMonth="22" value="500"/><key ageMonth="27" value="650"/><key ageMonth="28" value="700"/></food>
+			</input>
+			<output>
+				<milk fillType="BUFFALOMILK"><key ageMonth="0" value="0"/><key ageMonth="26" value="0"/><key ageMonth="27" value="30"/><key ageMonth="28" value="60"/><key ageMonth="72" value="60"/><key ageMonth="96" value="45"/><key ageMonth="120" value="0"/></milk>
+				<manure><key ageMonth="0" value="40"/><key ageMonth="24" value="380"/></manure>
+				<liquidManure><key ageMonth="0" value="80"/><key ageMonth="12" value="250"/><key ageMonth="24" value="500"/></liquidManure>
+			</output>
+		</subType>
+
+		<subType subType="BULL_WATERBUFFALO" fillTypeName="BRC_BULL_WATERBUFFALO">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="15" name="$l10n_animal_visual_baby" image="$dataS/character/animals/domesticated/waterBuffalo/store_waterBuffaloBaby.png" canBeBought="true">
+					<description>$l10n_animal_descriptionBuffaloFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionBuffaloYoung</description>
+					<description>$l10n_animal_descriptionBuffaloReproduction</description>
+				</visual>
+				<visual minAge="5" visualAnimalIndex="16" name="$l10n_animal_visual_kid" image="$dataS/character/animals/domesticated/waterBuffalo/store_waterBuffaloKid.png" canBeBought="true">
+					<description>$l10n_animal_descriptionBuffaloFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionBuffaloReproduction</description>
+				</visual>
+				<visual minAge="15" visualAnimalIndex="17" name="$l10n_animal_visual_adult" image="$dataS/character/animals/domesticated/waterBuffalo/store_waterBuffalo.png" canBeBought="true">
+					<description>$l10n_animal_descriptionBuffaloFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionBuffaloReproduction</description>
+				</visual>
+				<visual minAge="28" visualAnimalIndex="17" name="$l10n_animal_visual_adult" image="$dataS/character/animals/domesticated/waterBuffalo/store_waterBuffalo.png" canBeBought="true">
+					<description>$l10n_animal_descriptionBuffaloFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionBuffaloReproduction</description>
+				</visual>
+			</visuals>
+			<reproduction supported="false" minAgeMonth="15"/>
+			<buyPrice><key ageMonth="0" value="200"/><key ageMonth="24" value="1500"/><key ageMonth="60" value="1400"/></buyPrice>
+			<sellPrice><key ageMonth="0" value="150"/><key ageMonth="24" value="1500"/><key ageMonth="36" value="1500"/><key ageMonth="60" value="1000"/></sellPrice>
+			<transportPrice><key ageMonth="0" value="50"/><key ageMonth="12" value="80"/><key ageMonth="18" value="100"/></transportPrice>
+			<input>
+				<straw><key ageMonth="0" value="20"/><key ageMonth="18" value="190"/></straw>
+				<water><key ageMonth="0" value="55"/><key ageMonth="6" value="65"/><key ageMonth="12" value="75"/><key ageMonth="18" value="85"/><key ageMonth="26" value="95"/><key ageMonth="27" value="105"/><key ageMonth="28" value="115"/></water>
+				<food><key ageMonth="0" value="80"/><key ageMonth="6" value="125"/><key ageMonth="12" value="250"/><key ageMonth="18" value="400"/><key ageMonth="22" value="500"/><key ageMonth="27" value="650"/><key ageMonth="28" value="700"/></food>
+			</input>
+			<output>
+				<manure><key ageMonth="0" value="40"/><key ageMonth="24" value="380"/></manure>
+				<liquidManure><key ageMonth="0" value="80"/><key ageMonth="12" value="250"/><key ageMonth="24" value="500"/></liquidManure>
+			</output>
+		</subType>
+
+		<subType subType="COW_HIGHLAND_CATTLE" fillTypeName="COW_HIGHLAND_CATTLE" statsBreeding="breedCowsCount" requiredDLC="highlandsFishingPack">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="18" name="$l10n_animal_visual_baby" image="$dataS/character/animals/domesticated/cow/store_highlandCattleBaby.png" canBeBought="true">
+					<description>$l10n_animal_descriptionCowProfit</description>
+					<description>$l10n_animal_descriptionCowFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionBuffaloYoung</description>
+					<description>$l10n_animal_descriptionCowReproduction</description>
+				</visual>
+				<visual minAge="6" visualAnimalIndex="19" name="$l10n_animal_visual_kid" image="$dataS/character/animals/domesticated/cow/store_highlandCattleKid.png" canBeBought="true">
+					<description>$l10n_animal_descriptionCowProfit</description>
+					<description>$l10n_animal_descriptionCowFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionCowReproduction</description>
+				</visual>
+				<visual minAge="12" visualAnimalIndex="20" name="$l10n_animal_visual_adult" image="$dataS/character/animals/domesticated/cow/store_highlandCattle.png" canBeBought="true">
+					<description>$l10n_animal_descriptionCowProfit</description>
+					<description>$l10n_animal_descriptionCowFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionCowReproduction</description>
+				</visual>
+				<visual minAge="18" visualAnimalIndex="20" name="$l10n_animal_visual_adult" image="$dataS/character/animals/domesticated/cow/store_highlandCattle.png" canBeBought="true">
+					<description>$l10n_animal_descriptionCowProfit</description>
+					<description>$l10n_animal_descriptionCowFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionMature</description>
+					<description>$l10n_animal_descriptionCowReproduction</description>
+				</visual>
+			</visuals>
+			<reproduction minAgeMonth="18" durationMonth="10" minHealthFactor="0.75"/>
+			<buyPrice><key ageMonth="0" value="300"/><key ageMonth="24" value="3000"/></buyPrice>
+			<sellPrice><key ageMonth="0" value="230"/><key ageMonth="24" value="3000"/><key ageMonth="36" value="3500"/><key ageMonth="60" value="2500"/></sellPrice>
+			<transportPrice><key ageMonth="0" value="50"/><key ageMonth="12" value="80"/><key ageMonth="18" value="100"/></transportPrice>
+			<input>
+				<straw><key ageMonth="0" value="50"/><key ageMonth="22" value="300"/></straw>
+				<water><key ageMonth="0" value="55"/><key ageMonth="6" value="65"/><key ageMonth="12" value="75"/><key ageMonth="18" value="85"/><key ageMonth="26" value="95"/><key ageMonth="27" value="105"/><key ageMonth="28" value="115"/></water>
+				<food><key ageMonth="0" value="160"/><key ageMonth="6" value="250"/><key ageMonth="12" value="400"/><key ageMonth="18" value="550"/><key ageMonth="22" value="625"/><key ageMonth="27" value="750"/><key ageMonth="28" value="975"/></food>
+			</input>
+			<output>
+				<manure><key ageMonth="0" value="25"/><key ageMonth="18" value="300"/></manure>
+				<liquidManure><key ageMonth="0" value="40"/><key ageMonth="18" value="250"/></liquidManure>
+			</output>
+		</subType>
+	</animal>
+</animals>

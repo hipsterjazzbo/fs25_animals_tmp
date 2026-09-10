@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<animals>
+	<animal type="HORSE" groupTitle="$l10n_animal_group_horses" statsBreeding="breedHorsesCount" clusterClass="AnimalClusterHorse">
+		<configFilename>$dataS/character/animals/domesticated/horse/animals.xml</configFilename>
+		<navMeshAgent height="2" radius="1" maxClimbMeters="1.5" maxSlope="20"/>
+		<pasture sqmPerAnimal="350" />
+		<subType subType="HORSE_GRAY" fillTypeName="HORSE_GRAY">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="1" image="$dataS/character/animals/domesticated/horse/store_horseGray.png" canBeBought="true">
+					<description>$l10n_animal_descriptionHorseProfit</description>
+					<description>$l10n_animal_descriptionHorseFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionHorseRiding</description>
+					<description>$l10n_animal_descriptionHorseReproduction</description>
+				</visual>
+				<visual minAge="12" visualAnimalIndex="1" image="$dataS/character/animals/domesticated/horse/store_horseGray.png" canBeBought="true">
+					<description>$l10n_animal_descriptionHorseProfit</description>
+					<description>$l10n_animal_descriptionHorseFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionHorseRiding</description>
+					<description>$l10n_animal_descriptionHorseReproduction</description>
+				</visual>
+				<visual minAge="24" visualAnimalIndex="1" image="$dataS/character/animals/domesticated/horse/store_horseGray.png" canBeBought="true">
+					<description>$l10n_animal_descriptionHorseProfit</description>
+					<description>$l10n_animal_descriptionHorseFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionHorseRiding</description>
+					<description>$l10n_animal_descriptionHorseReproduction</description>
+				</visual>
+			</visuals>
+			<reproduction minAgeMonth="22" durationMonth="11" minHealthFactor="0.75"/>
+			<health increasePerHour="10" decreasePerHour="25" thresholdFactor="0.45"/>
+			<rideable filename="$dataS/character/animals/domesticated/horse/horse.xml"/>
+			<buyPrice>
+				<key ageMonth="0" value="500"/>
+				<key ageMonth="24" value="5000"/>
+			</buyPrice>
+			<sellPrice>
+				<key ageMonth="0" value="400"/>
+				<key ageMonth="24" value="4000"/>
+        		<key ageMonth="36" value="20000"/>
+        		<key ageMonth="60" value="10000"/>
+			</sellPrice>
+			<transportPrice>
+				<key ageMonth="0" value="300"/>
+			</transportPrice>
+			<input>
+				<straw>
+					<key ageMonth="0" value="50"/>
+					<key ageMonth="18" value="800"/>
+				</straw>
+				<water>
+					<key ageMonth="0" value="20"/>
+					<key ageMonth="18" value="100"/>
+				</water>
+				<food>
+					<key ageMonth="0" value="100"/>
+					<key ageMonth="18" value="800"/>
+				</food>
+			</input>
+			<output>
+				<manure>
+					<key ageMonth="0" value="100"/>
+					<key ageMonth="18" value="1600"/>
+				</manure>
+			</output>
+		</subType>
+		<subType subType="HORSE_PINTO" fillTypeName="HORSE_PINTO">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="2" image="$dataS/character/animals/domesticated/horse/store_horsePinto.png" canBeBought="true">
+					<description>$l10n_animal_descriptionHorseProfit</description>
+					<description>$l10n_animal_descriptionHorseFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionHorseRiding</description>
+					<description>$l10n_animal_descriptionHorseReproduction</description>
+				</visual>
+				<visual minAge="12" visualAnimalIndex="2" image="$dataS/character/animals/domesticated/horse/store_horsePinto.png" canBeBought="true">
+					<description>$l10n_animal_descriptionHorseProfit</description>
+					<description>$l10n_animal_descriptionHorseFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionHorseRiding</description>
+					<description>$l10n_animal_descriptionHorseReproduction</description>
+				</visual>
+				<visual minAge="24" visualAnimalIndex="2" image="$dataS/character/animals/domesticated/horse/store_horsePinto.png" canBeBought="true">
+					<description>$l10n_animal_descriptionHorseProfit</description>
+					<description>$l10n_animal_descriptionHorseFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionHorseRiding</description>
+					<description>$l10n_animal_descriptionHorseReproduction</description>
+				</visual>
+			</visuals>
+			<reproduction minAgeMonth="22" durationMonth="11" minHealthFactor="0.75"/>
+			<health increasePerHour="10" decreasePerHour="25" thresholdFactor="0.45"/>
+			<rideable filename="$dataS/character/animals/domesticated/horse/horse.xml"/>
+			<buyPrice>
+				<key ageMonth="0" value="500"/>
+				<key ageMonth="24" value="5000"/>
+			</buyPrice>
+			<sellPrice>
+				<key ageMonth="0" value="400"/>
+				<key ageMonth="24" value="4000"/>
+        		<key ageMonth="36" value="20000"/>
+        		<key ageMonth="60" value="10000"/>
+			</sellPrice>
+			<transportPrice>
+				<key ageMonth="0" value="300"/>
+			</transportPrice>
+			<input>
+				<straw>
+					<key ageMonth="0" value="50"/>
+					<key ageMonth="18" value="800"/>
+				</straw>
+				<water>
+					<key ageMonth="0" value="20"/>
+					<key ageMonth="18" value="100"/>
+				</water>
+				<food>
+					<key ageMonth="0" value="100"/>
+					<key ageMonth="18" value="800"/>
+				</food>
+			</input>
+			<output>
+				<manure>
+					<key ageMonth="0" value="100"/>
+					<key ageMonth="18" value="1600"/>
+				</manure>
+			</output>
+		</subType>
+		<subType subType="HORSE_PALOMINO" fillTypeName="HORSE_PALOMINO">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="3" image="$dataS/character/animals/domesticated/horse/store_horsePalomino.png" canBeBought="true">
+					<description>$l10n_animal_descriptionHorseProfit</description>
+					<description>$l10n_animal_descriptionHorseFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionHorseRiding</description>
+					<description>$l10n_animal_descriptionHorseReproduction</description>
+				</visual>
+				<visual minAge="12" visualAnimalIndex="3" image="$dataS/character/animals/domesticated/horse/store_horsePalomino.png" canBeBought="true">
+					<description>$l10n_animal_descriptionHorseProfit</description>
+					<description>$l10n_animal_descriptionHorseFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionHorseRiding</description>
+					<description>$l10n_animal_descriptionHorseReproduction</description>
+				</visual>
+				<visual minAge="24" visualAnimalIndex="3" image="$dataS/character/animals/domesticated/horse/store_horsePalomino.png" canBeBought="true">
+					<description>$l10n_animal_descriptionHorseProfit</description>
+					<description>$l10n_animal_descriptionHorseFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionHorseRiding</description>
+					<description>$l10n_animal_descriptionHorseReproduction</description>
+				</visual>
+			</visuals>
+			<reproduction minAgeMonth="22" durationMonth="11" minHealthFactor="0.75"/>
+			<health increasePerHour="10" decreasePerHour="25" thresholdFactor="0.45"/>
+			<rideable filename="$dataS/character/animals/domesticated/horse/horse.xml"/>
+			<buyPrice>
+				<key ageMonth="0" value="500"/>
+				<key ageMonth="24" value="5000"/>
+			</buyPrice>
+			<sellPrice>
+				<key ageMonth="0" value="400"/>
+				<key ageMonth="24" value="4000"/>
+        		<key ageMonth="36" value="20000"/>
+        		<key ageMonth="60" value="10000"/>
+			</sellPrice>
+			<transportPrice>
+				<key ageMonth="0" value="300"/>
+			</transportPrice>
+			<input>
+				<straw>
+					<key ageMonth="0" value="50"/>
+					<key ageMonth="18" value="800"/>
+				</straw>
+				<water>
+					<key ageMonth="0" value="20"/>
+					<key ageMonth="18" value="100"/>
+				</water>
+				<food>
+					<key ageMonth="0" value="100"/>
+					<key ageMonth="18" value="800"/>
+				</food>
+			</input>
+			<output>
+				<manure>
+					<key ageMonth="0" value="100"/>
+					<key ageMonth="18" value="1600"/>
+				</manure>
+			</output>
+		</subType>
+		<subType subType="HORSE_CHESTNUT" fillTypeName="HORSE_CHESTNUT">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="4" image="$dataS/character/animals/domesticated/horse/store_horseChestnut.png" canBeBought="true">
+					<description>$l10n_animal_descriptionHorseProfit</description>
+					<description>$l10n_animal_descriptionHorseFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionHorseRiding</description>
+					<description>$l10n_animal_descriptionHorseReproduction</description>
+				</visual>
+				<visual minAge="12" visualAnimalIndex="4" image="$dataS/character/animals/domesticated/horse/store_horseChestnut.png" canBeBought="true">
+					<description>$l10n_animal_descriptionHorseProfit</description>
+					<description>$l10n_animal_descriptionHorseFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionHorseRiding</description>
+					<description>$l10n_animal_descriptionHorseReproduction</description>
+				</visual>
+				<visual minAge="24" visualAnimalIndex="4" image="$dataS/character/animals/domesticated/horse/store_horseChestnut.png" canBeBought="true">
+					<description>$l10n_animal_descriptionHorseProfit</description>
+					<description>$l10n_animal_descriptionHorseFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionHorseRiding</description>
+					<description>$l10n_animal_descriptionHorseReproduction</description>
+				</visual>
+			</visuals>
+			<reproduction minAgeMonth="22" durationMonth="11" minHealthFactor="0.75"/>
+			<health increasePerHour="10" decreasePerHour="25" thresholdFactor="0.45"/>
+			<rideable filename="$dataS/character/animals/domesticated/horse/horse.xml"/>
+			<buyPrice>
+				<key ageMonth="0" value="500"/>
+				<key ageMonth="24" value="5000"/>
+			</buyPrice>
+			<sellPrice>
+				<key ageMonth="0" value="400"/>
+				<key ageMonth="24" value="4000"/>
+        		<key ageMonth="36" value="20000"/>
+        		<key ageMonth="60" value="10000"/>
+			</sellPrice>
+			<transportPrice>
+				<key ageMonth="0" value="300"/>
+			</transportPrice>
+			<input>
+				<straw>
+					<key ageMonth="0" value="50"/>
+					<key ageMonth="18" value="800"/>
+				</straw>
+				<water>
+					<key ageMonth="0" value="20"/>
+					<key ageMonth="18" value="100"/>
+				</water>
+				<food>
+					<key ageMonth="0" value="100"/>
+					<key ageMonth="18" value="800"/>
+				</food>
+			</input>
+			<output>
+				<manure>
+					<key ageMonth="0" value="100"/>
+					<key ageMonth="18" value="1600"/>
+				</manure>
+			</output>
+		</subType>
+		<subType subType="HORSE_BAY" fillTypeName="HORSE_BAY">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="5" image="$dataS/character/animals/domesticated/horse/store_horseBay.png" canBeBought="true">
+					<description>$l10n_animal_descriptionHorseProfit</description>
+					<description>$l10n_animal_descriptionHorseFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionHorseRiding</description>
+					<description>$l10n_animal_descriptionHorseReproduction</description>
+				</visual>
+				<visual minAge="12" visualAnimalIndex="5" image="$dataS/character/animals/domesticated/horse/store_horseBay.png" canBeBought="true">
+					<description>$l10n_animal_descriptionHorseProfit</description>
+					<description>$l10n_animal_descriptionHorseFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionHorseRiding</description>
+					<description>$l10n_animal_descriptionHorseReproduction</description>
+				</visual>
+				<visual minAge="24" visualAnimalIndex="5" image="$dataS/character/animals/domesticated/horse/store_horseBay.png" canBeBought="true">
+					<description>$l10n_animal_descriptionHorseProfit</description>
+					<description>$l10n_animal_descriptionHorseFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionHorseRiding</description>
+					<description>$l10n_animal_descriptionHorseReproduction</description>
+				</visual>
+			</visuals>
+			<reproduction minAgeMonth="22" durationMonth="11" minHealthFactor="0.75"/>
+			<health increasePerHour="10" decreasePerHour="25" thresholdFactor="0.45"/>
+			<rideable filename="$dataS/character/animals/domesticated/horse/horse.xml"/>
+			<buyPrice>
+				<key ageMonth="0" value="500"/>
+				<key ageMonth="24" value="5000"/>
+			</buyPrice>
+			<sellPrice>
+				<key ageMonth="0" value="400"/>
+				<key ageMonth="24" value="4000"/>
+        		<key ageMonth="36" value="20000"/>
+        		<key ageMonth="60" value="10000"/>
+			</sellPrice>
+			<transportPrice>
+				<key ageMonth="0" value="300"/>
+			</transportPrice>
+			<input>
+				<straw>
+					<key ageMonth="0" value="50"/>
+					<key ageMonth="18" value="800"/>
+				</straw>
+				<water>
+					<key ageMonth="0" value="20"/>
+					<key ageMonth="18" value="100"/>
+				</water>
+				<food>
+					<key ageMonth="0" value="100"/>
+					<key ageMonth="18" value="800"/>
+				</food>
+			</input>
+			<output>
+				<manure>
+					<key ageMonth="0" value="100"/>
+					<key ageMonth="18" value="1600"/>
+				</manure>
+			</output>
+		</subType>
+		<subType subType="HORSE_BLACK" fillTypeName="HORSE_BLACK">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="6" image="$dataS/character/animals/domesticated/horse/store_horseBlack.png" canBeBought="true">
+					<description>$l10n_animal_descriptionHorseProfit</description>
+					<description>$l10n_animal_descriptionHorseFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionHorseRiding</description>
+					<description>$l10n_animal_descriptionHorseReproduction</description>
+				</visual>
+				<visual minAge="12" visualAnimalIndex="6" image="$dataS/character/animals/domesticated/horse/store_horseBlack.png" canBeBought="true">
+					<description>$l10n_animal_descriptionHorseProfit</description>
+					<description>$l10n_animal_descriptionHorseFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionHorseRiding</description>
+					<description>$l10n_animal_descriptionHorseReproduction</description>
+				</visual>
+				<visual minAge="24" visualAnimalIndex="6" image="$dataS/character/animals/domesticated/horse/store_horseBlack.png" canBeBought="true">
+					<description>$l10n_animal_descriptionHorseProfit</description>
+					<description>$l10n_animal_descriptionHorseFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionHorseRiding</description>
+					<description>$l10n_animal_descriptionHorseReproduction</description>
+				</visual>
+			</visuals>
+			<reproduction minAgeMonth="22" durationMonth="11" minHealthFactor="0.75"/>
+			<health increasePerHour="10" decreasePerHour="25" thresholdFactor="0.45"/>
+			<rideable filename="$dataS/character/animals/domesticated/horse/horse.xml"/>
+			<buyPrice>
+				<key ageMonth="0" value="500"/>
+				<key ageMonth="24" value="5000"/>
+			</buyPrice>
+			<sellPrice>
+				<key ageMonth="0" value="400"/>
+				<key ageMonth="24" value="4000"/>
+        		<key ageMonth="36" value="20000"/>
+        		<key ageMonth="60" value="10000"/>
+			</sellPrice>
+			<transportPrice>
+				<key ageMonth="0" value="300"/>
+			</transportPrice>
+			<input>
+				<straw>
+					<key ageMonth="0" value="50"/>
+					<key ageMonth="18" value="800"/>
+				</straw>
+				<water>
+					<key ageMonth="0" value="20"/>
+					<key ageMonth="18" value="100"/>
+				</water>
+				<food>
+					<key ageMonth="0" value="100"/>
+					<key ageMonth="18" value="800"/>
+				</food>
+			</input>
+			<output>
+				<manure>
+					<key ageMonth="0" value="100"/>
+					<key ageMonth="18" value="1600"/>
+				</manure>
+			</output>
+		</subType>
+		<subType subType="HORSE_SEAL_BROWN" fillTypeName="HORSE_SEAL_BROWN">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="7" image="$dataS/character/animals/domesticated/horse/store_horseSealBrown.png" canBeBought="true">
+					<description>$l10n_animal_descriptionHorseProfit</description>
+					<description>$l10n_animal_descriptionHorseFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionHorseRiding</description>
+					<description>$l10n_animal_descriptionHorseReproduction</description>
+				</visual>
+				<visual minAge="12" visualAnimalIndex="7" image="$dataS/character/animals/domesticated/horse/store_horseSealBrown.png" canBeBought="true">
+					<description>$l10n_animal_descriptionHorseProfit</description>
+					<description>$l10n_animal_descriptionHorseFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionHorseRiding</description>
+					<description>$l10n_animal_descriptionHorseReproduction</description>
+				</visual>
+				<visual minAge="24" visualAnimalIndex="7" image="$dataS/character/animals/domesticated/horse/store_horseSealBrown.png" canBeBought="true">
+					<description>$l10n_animal_descriptionHorseProfit</description>
+					<description>$l10n_animal_descriptionHorseFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionHorseRiding</description>
+					<description>$l10n_animal_descriptionHorseReproduction</description>
+				</visual>
+			</visuals>
+			<reproduction minAgeMonth="22" durationMonth="11" minHealthFactor="0.75"/>
+			<health increasePerHour="10" decreasePerHour="25" thresholdFactor="0.45"/>
+			<rideable filename="$dataS/character/animals/domesticated/horse/horse.xml"/>
+			<buyPrice>
+				<key ageMonth="0" value="500"/>
+				<key ageMonth="24" value="5000"/>
+			</buyPrice>
+			<sellPrice>
+				<key ageMonth="0" value="400"/>
+				<key ageMonth="24" value="4000"/>
+        		<key ageMonth="36" value="20000"/>
+        		<key ageMonth="60" value="10000"/>
+			</sellPrice>
+			<transportPrice>
+				<key ageMonth="0" value="300"/>
+			</transportPrice>
+			<input>
+				<straw>
+					<key ageMonth="0" value="50"/>
+					<key ageMonth="18" value="800"/>
+				</straw>
+				<water>
+					<key ageMonth="0" value="20"/>
+					<key ageMonth="18" value="100"/>
+				</water>
+				<food>
+					<key ageMonth="0" value="100"/>
+					<key ageMonth="18" value="800"/>
+				</food>
+			</input>
+			<output>
+				<manure>
+					<key ageMonth="0" value="100"/>
+					<key ageMonth="18" value="1600"/>
+				</manure>
+			</output>
+		</subType>
+		<subType subType="HORSE_DUN" fillTypeName="HORSE_DUN">
+			<visuals>
+				<visual minAge="0" visualAnimalIndex="8" image="$dataS/character/animals/domesticated/horse/store_horseDun.png" canBeBought="true">
+					<description>$l10n_animal_descriptionHorseProfit</description>
+					<description>$l10n_animal_descriptionHorseFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionHorseRiding</description>
+					<description>$l10n_animal_descriptionHorseReproduction</description>
+				</visual>
+				<visual minAge="12" visualAnimalIndex="8" image="$dataS/character/animals/domesticated/horse/store_horseDun.png" canBeBought="true">
+					<description>$l10n_animal_descriptionHorseProfit</description>
+					<description>$l10n_animal_descriptionHorseFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionHorseRiding</description>
+					<description>$l10n_animal_descriptionHorseReproduction</description>
+				</visual>
+				<visual minAge="24" visualAnimalIndex="8" image="$dataS/character/animals/domesticated/horse/store_horseDun.png" canBeBought="true">
+					<description>$l10n_animal_descriptionHorseProfit</description>
+					<description>$l10n_animal_descriptionHorseFeed</description>
+					<description>$l10n_animal_descriptionWater</description>
+					<description>$l10n_animal_descriptionHorseRiding</description>
+					<description>$l10n_animal_descriptionHorseReproduction</description>
+				</visual>
+			</visuals>
+			<reproduction minAgeMonth="22" durationMonth="11" minHealthFactor="0.75"/>
+			<health increasePerHour="10" decreasePerHour="25" thresholdFactor="0.45"/>
+			<rideable filename="$dataS/character/animals/domesticated/horse/horse.xml"/>
+			<buyPrice>
+				<key ageMonth="0" value="500"/>
+				<key ageMonth="24" value="5000"/>
+			</buyPrice>
+			<sellPrice>
+				<key ageMonth="0" value="400"/>
+				<key ageMonth="24" value="4000"/>
+        		<key ageMonth="36" value="20000"/>
+        		<key ageMonth="60" value="10000"/>
+			</sellPrice>
+			<transportPrice>
+				<key ageMonth="0" value="300"/>
+			</transportPrice>
+			<input>
+				<straw>
+					<key ageMonth="0" value="50"/>
+					<key ageMonth="18" value="800"/>
+				</straw>
+				<water>
+					<key ageMonth="0" value="20"/>
+					<key ageMonth="18" value="100"/>
+				</water>
+				<food>
+					<key ageMonth="0" value="100"/>
+					<key ageMonth="18" value="800"/>
+				</food>
+			</input>
+			<output>
+				<manure>
+					<key ageMonth="0" value="100"/>
+					<key ageMonth="18" value="1600"/>
+				</manure>
+			</output>
+		</subType>
+	</animal>
+</animals>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<foliageType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/foliageType.xsd">
+    <fruitType name="beans" shownOnMap="true" useForFieldMissions="true">
+        <mapColors default="0.0915 0.1636 0.6524 1" colorBlind="0.1546 0.1818 0.1789 1"/>
+        <windrow fillType="beanstraw" litersPerSqm="3" cutFillType="BEANS_CUT" windrowCutFactor="1.25"/>
+        <harvest litersPerSqm="0.35" cutHeight="0.20" chopperType="CHOPPER_STRAW" forageCutHeight="0.15" beeYieldBonusPercentage="0.10"/>
+        <growth resetsSpray="true" growthRequiresLime="true"/>
+        <soil lowDensityRequired="true" increasesDensity="false" consumesLime="true" startSprayLevel="0"/>
+        <seeding directionSnapAngle="0" needsRolling="true" litersPerSqm="0.0144" isAvailable="true"/>
+        <cultivation isAllowed="true"/>
+        <mulcher chopperType="CHOPPER_STRAW"/>
+    </fruitType>
+
+    <!-- beans
+
+    0 1 2 3
+
+    1 0 0 0 - invisible
+    0 1 0 0 - green small
+    1 1 0 0 - green middle
+    0 0 1 0 - green middle 2
+    1 0 1 0 - green big
+    0 1 1 0 - green big 2
+    1 1 1 0 - harvest ready
+    0 0 0 1 - dead
+    1 0 0 1 - harvested (cut)
+
+    -->
+    <foliageLayer densityMapChannelOffset="0" numDensityMapChannels="4" numBlocksPerUnit="2" shapeSource="beans/beans.i3d" alignsToSun="false">
+        <foliageStateDefaults distanceMapLayer="1" width="1" height="1" widthVariance="0" heightVariance="0.2" horizontalPositionVariance="0"/>
+        <!-- default LOD distances etc -->
+        <foliageLodDefaults lod="0" viewDistance="18" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1"/>
+        <foliageLodDefaults lod="1" viewDistance="80" blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1"/>
+        
+		<!-- 1 0 0 0 - invisible -->
+        <foliageState name="1 invisible" isGrowing="true" allowsWeeding="true" allowsHoeing="true"/>
+        
+		<!-- 0 1 0 0 - green small -->
+        <foliageState name="2 small" distanceMap="distances/foliage_greenBean_distance2_diffuse.png" isGrowing="true" allowsWeeding="true" allowsHoeing="true" >
+            <foliageShape>
+                <foliageLod blockShape="0>0|0|0"/>
+                <foliageLod blockShape="0>1|0|0"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|0|1"/>
+                <foliageLod blockShape="0>1|0|1"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|0|2"/>
+                <foliageLod blockShape="0>1|0|2"/>
+            </foliageShape>
+        </foliageState>
+        
+		<!-- 1 1 0 0 - green middle -->
+        <foliageState name="3 middle" distanceMap="distances/foliage_greenBean_distance3_diffuse.png" isGrowing="true" isDestructibleByWheel="true" allowsWeeding="true" allowsHoeing="true" fieldCourseLineHeight="0.3">
+            <foliageShape>
+                <foliageLod blockShape="0>0|1|0"/>
+                <foliageLod blockShape="0>1|1|0"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|1|1"/>
+                <foliageLod blockShape="0>1|1|1"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|1|2"/>
+                <foliageLod blockShape="0>1|1|2"/>
+            </foliageShape>
+        </foliageState>
+        		      
+		<!-- 1 0 1 0 - green big -->
+        <foliageState name="4 big" distanceMap="distances/foliage_greenBean_distance4_diffuse.png" isGrowing="true" isDestructibleByWheel="true" isDestructibleByDisaster="true" allowsHoeing="true" fieldCourseLineHeight="0.4">
+            <foliageShape>
+                <foliageLod blockShape="0>0|2|0"/>
+                <foliageLod blockShape="0>1|2|0"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|2|1"/>
+                <foliageLod blockShape="0>1|2|1"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|2|2"/>
+                <foliageLod blockShape="0>1|2|2"/>
+            </foliageShape>
+        </foliageState>
+        			
+        <!-- 1 1 1 0 - harvest ready -->
+        <foliageState name="5 ready" distanceMap="distances/foliage_soybean_distance5_diffuse.png" isGrowing="true" isHarvestReady="true" isDestructibleByWheel="true" isDestructibleByDisaster="true" groundType="HARVEST_READY" fieldCourseLineHeight="0.5">
+            <foliageShape>
+                <foliageLod blockShape="0>0|3|0"/>
+                <foliageLod blockShape="0>1|3|0"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|3|1"/>
+                <foliageLod blockShape="0>1|3|1"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|3|2"/>
+                <foliageLod blockShape="0>1|3|2"/>
+            </foliageShape>
+        </foliageState>
+		
+        <!-- 0 0 0 1 - dead -->
+        <foliageState name="6 dead" distanceMap="distances/foliage_greenBean_distance6_diffuse.png" width="0.7" height="0.7" isWithered="true" isDestructibleByWheel="true" isDestructibleByDisaster="true" fieldCourseLineHeight="0.4">
+            <foliageShape>
+                <foliageLod blockShape="0>0|4|0"/>
+                <foliageLod blockShape="0>1|4|0"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|4|1"/>
+                <foliageLod blockShape="0>1|4|1"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|4|2"/>
+                <foliageLod blockShape="0>1|4|2"/>
+            </foliageShape>
+        </foliageState>
+		
+        <!-- 1 0 0 1 - harvested (cut) -->
+        <foliageState name="7 cut" distanceMap="distances/foliage_greenBean_distance7_diffuse.png" isCut="true" isDestructibleByWheel="true" isDestructibleByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0>0|5|0"/>
+                <foliageLod blockShape="0>1|5|0"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|5|1"/>
+                <foliageLod blockShape="0>1|5|1"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|5|2"/>
+                <foliageLod blockShape="0>1|5|2"/>
+            </foliageShape>
+        </foliageState>
+		
+		<!-- 1 0 0 1 - TyreTracks -->
+        <foliageState name="8 tyre" width="0.2" height="0.2" distanceMap="distances/foliage_greenBean_distance7_diffuse.png" isCut="false" isDestructibleByWheel="false" isDestructedByWheel="true" isDestructedByDisaster="true">
+            <foliageShape>
+                <foliageLod blockShape="0>0|5|0"/>
+                <foliageLod blockShape="0>1|5|0"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|5|1"/>
+                <foliageLod blockShape="0>1|5|1"/>
+            </foliageShape>
+            <foliageShape>
+                <foliageLod blockShape="0>0|5|2"/>
+                <foliageLod blockShape="0>1|5|2"/>
+            </foliageShape>
+        </foliageState>
+		
+ </foliageLayer> 
+
+    <growth>
+        <seasonal initialState="4 big">
+            <period name="EARLY_SPRING"/> <!-- March -->
+            <period name="MID_SPRING" plantingAllowed="true"> <!-- April -->
+                <update startState="1 invisible" endState="2 small" />
+            </period>
+            <period name="LATE_SPRING" plantingAllowed="true"> <!-- May -->
+                <update startState="1 invisible" endState="2 small" />
+                <update startState="2 small" endState="3 middle" />
+            </period>
+            <period name="EARLY_SUMMER" plantingAllowed="true"> <!-- June -->
+                <update startState="1 invisible" endState="2 small" />
+                <update startState="2 small" endState="3 middle" />
+                <update startState="3 middle" endState="4 big" />
+            </period>
+            <period name="MID_SUMMER"> <!-- July -->
+                <update startState="2 small" endState="3 middle" />
+                <update startState="3 middle" endState="4 big" />
+                <update startState="4 big" endState="5 ready" />
+            </period>
+            <period name="LATE_SUMMER"> <!-- August -->
+                <update startState="3 middle" endState="4 big" />
+                <update startState="4 big" endState="5 ready" />
+                <update startState="5 ready" endState="6 dead" />
+            </period>
+            <period name="EARLY_AUTUMN"> <!-- September -->
+                <update startState="4 big" endState="5 ready" />
+                <update startState="5 ready" endState="6 dead" />
+            </period>
+            <period name="MID_AUTUMN"> <!-- Octomber -->
+                <update startState="5 ready" endState="6 dead" />
+            </period>
+            <period name="LATE_AUTUMN" /> <!-- November -->
+            <period name="EARLY_WINTER" /> <!-- December -->
+            <period name="MID_WINTER" /> <!-- January -->
+            <period name="LATE_WINTER" /> <!-- February -->
+        </seasonal>
+
+    </growth>
+</foliageType>

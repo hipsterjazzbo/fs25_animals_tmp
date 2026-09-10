@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="markerIcons.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="4" filename="$data/shared/assets/marker/markerIcons_diffuse.png"/>
+    <File fileId="3" filename="markerIcons2_diffuse.dds"/>
+    <File fileId="1" filename="markerIcons_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="markerIcons2_mat" materialId="5" alphaBlending="true" customShaderId="2" customShaderVariation="additive_billboard_pulsating">
+      <Emissivemap fileId="3"/>
+    </Material>
+    <Material name="markerIcons_mat" materialId="6" alphaBlending="true" customShaderId="2" customShaderVariation="additive_billboard_pulsating">
+      <Emissivemap fileId="4"/>
+    </Material>
+    <Material name="markerIcons_mat" materialId="7" alphaBlending="true" customShaderId="2" customShaderVariation="additive_billboard_pulsating">
+      <Emissivemap fileId="1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="markerIcons.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="markerIconsCustom" nodeId="49">
+        <Shape shapeId="1" name="markerIcon01_cow" translation="0 1 0" clipDistance="200" nodeId="50" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="2" name="markerIcon02_pig" translation="0 1 0" clipDistance="200" nodeId="51" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="markerIcon03_sheep" translation="0 1 0" clipDistance="200" nodeId="52" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="markerIcon04_chicken" translation="0 1 0" clipDistance="200" nodeId="53" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="5" name="markerIcon05_horse" translation="0 1 0" clipDistance="200" nodeId="54" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="6" name="markerIcon06_rabbit" translation="0 1 0" clipDistance="200" nodeId="55" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="7" name="markerIcon07_goat" translation="0 1 0" clipDistance="200" nodeId="56" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="8" name="markerIcon08_duck" translation="0 1 0" clipDistance="200" nodeId="57" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="9" name="markerIcon09_repair" translation="0 1 0" clipDistance="200" nodeId="58" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="markerIcon11_sheepGoat" translation="0 1 0" clipDistance="200" nodeId="59" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="11" name="markerIcon12_chickenDuck" translation="0 1 0" clipDistance="200" nodeId="60" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="12" name="markerIcon13_production" translation="0 1 0" clipDistance="200" nodeId="61" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="13" name="markerIcon14_speech" translation="0 1 0" clipDistance="200" nodeId="62" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="14" name="markerIcon15_pipeAttach" translation="0 1 0" clipDistance="200" nodeId="63" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="15" name="markerIcon16_roundbaleStack" translation="0 1 0" clipDistance="200" nodeId="64" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="16" name="markerIcon17_squareBaleStack" translation="0 1 0" rotation="-2.10093e-06 -0 -3.70727e-07" clipDistance="200" nodeId="65" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="17" name="markerIcon18_water" translation="0 1 0" clipDistance="200" nodeId="66" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="18" name="markerIcon19_deliver" translation="0 1 0" clipDistance="200" nodeId="67" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="19" name="markerIcon20_calf" translation="0 1 0" clipDistance="200" nodeId="68" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="20" name="markerIcon21_storage1" translation="0 1 0" clipDistance="200" nodeId="69" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="21" name="markerIcon22_bull" translation="0 1 0" clipDistance="200" nodeId="70" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="22" name="markerIcon23_storage2" translation="0 1 0" clipDistance="200" nodeId="71" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="23" name="markerIcon24_palletStack" translation="0 1 0" clipDistance="200" nodeId="72" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="24" name="markerIcon25_garden" translation="0 1 0" clipDistance="200" nodeId="73" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="25" name="markerIcon26_electricSwitch1" translation="0 1 0" scale="0.8 0.8 1" clipDistance="200" nodeId="74" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="26" name="markerIcon27_objectStorageManagement" translation="0 1 0" clipDistance="200" nodeId="75" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="27" name="markerIcon28_productionManagement" translation="0 1 0" clipDistance="200" nodeId="76" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="28" name="markerIcon29_sleep" translation="0 1 0" clipDistance="200" nodeId="77" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="29" name="markerIcon30_wardrobe" translation="0 1 0" clipDistance="200" nodeId="78" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="30" name="markerIcon31_construction" translation="0 1 0" clipDistance="200" nodeId="79" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="31" name="markerIcon32_fishingPlace" translation="0 1 0" clipDistance="200" nodeId="80" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="32" name="markerIcon33_productionScale" translation="0 1 0" clipDistance="200" nodeId="81" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="1" name="markerIcon01_saleSpace" translation="0 1 0" clipDistance="200" nodeId="82" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="2" name="markerIcon02_deer" translation="0 1 0" clipDistance="200" nodeId="83" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="markerIcon03_ventilationControl" translation="0 1 0" clipDistance="200" nodeId="84" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="markerIcon04_service" translation="0 1 0" clipDistance="200" nodeId="85" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="5" name="markerIcon05_sackUnload" translation="0 1 0" clipDistance="200" nodeId="107" materialIds="5" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="markerIconsStandard" nodeId="86">
+        <TransformGroup name="markerIconUnload" nodeId="87">
+          <Shape shapeId="33" name="iconUnload" translation="0 1 0" scale="0.6 0.6 1" clipDistance="300" nodeId="88" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="markerIconWrench" nodeId="89">
+          <Shape shapeId="34" name="iconWrench" translation="0 1 0" scale="0.6 0.6 1" clipDistance="300" nodeId="90" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="markerIconWater" nodeId="91">
+          <Shape shapeId="35" name="iconWater" translation="0 1 0" scale="0.6 0.6 1" clipDistance="300" nodeId="92" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="markerIconAnimals" nodeId="93">
+          <Shape shapeId="36" name="iconAnimals" translation="0 1 0" scale="0.6 0.6 1" clipDistance="300" nodeId="94" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="markerIconExclamationMark" nodeId="95">
+          <Shape shapeId="37" name="iconExclamationMark" translation="0 1 0" scale="0.6 0.6 1" clipDistance="300" nodeId="96" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="markerIconShopping" nodeId="97">
+          <Shape shapeId="38" name="iconShopping" translation="0 1 0" scale="0.6 0.6 1" clipDistance="300" nodeId="98" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="markerIconLoad" nodeId="99">
+          <Shape shapeId="39" name="iconLoad" translation="0 1 0" scale="0.6 0.6 1" clipDistance="300" nodeId="100" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="markerIconQuestionMark" nodeId="101">
+          <Shape shapeId="40" name="iconQuestionMark" translation="0 1 0" scale="0.6 0.6 1" clipDistance="300" nodeId="102" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

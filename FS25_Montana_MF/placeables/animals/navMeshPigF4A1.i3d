@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="navMeshPigF4A1.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+  </Materials>
+
+
+  <Shapes externalShapesFile="navMeshPigF4A1.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <NavigationMesh name="NavMesh" translation="-1150 -85.833 -483.695" nodeId="6" shapeId="1"/>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<animalHusbandry>
+	<animals>
+		<!--01 Hen GS01-->
+		<animal radius="0.3" handleThreats="true" threatAwarenessRadius="5" slowingDistance="0.05" allowMilkingPlace="false" headOffset="0" canEat="false" canDrink="false" canSleep="true" canEatDuringNight="false">
+			<statesTimers idleMin="8000" idleMax="10000" sleepMin="120000" sleepMax="180000" restMin="20000" restMax="30000" grazeMin="8000" grazeMax="16000" chewMin="8000" chewMax="16000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="20000"/>
+			<assets filename="meat/Chickens_FM_GS01_Dual.i3d" filenamePosed="animals/chicken/meat/Chickens_FM_GS01_Dual.i3d" animation="meat/Chickens_FM_GS01_Dual.i3d" skeletonIndex="0" meshIndex="0>0" proxyIndex="1" shaderIndex="0>0">
+				<texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Leghorn-->
+				<texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Lohmann-->
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Plymouth Rock-->
+				<texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Bohus Dal-->
+			</assets>
+			<locomotion filename="animations/chickens_FM_GS01_Locomotion.xml"/>
+			<audio yellSoundGroup="yellChick" yellMinInterval="8000" yellMaxInterval="16000" yellTimerCrowdScale="0.1"/>
+		</animal>
+		<!--02 Hen GS02-->
+		<animal radius="0.3" handleThreats="true" threatAwarenessRadius="5" slowingDistance="0.05" allowMilkingPlace="false" headOffset="0" canEat="false" canDrink="false" canSleep="true" canEatDuringNight="false">
+			<statesTimers idleMin="8000" idleMax="10000" sleepMin="120000" sleepMax="180000" restMin="20000" restMax="30000" grazeMin="8000" grazeMax="16000" chewMin="8000" chewMax="16000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="20000"/>
+			<assets filename="$dataS/character/animals/domesticated/chicken/chick/henChick.i3d" filenamePosed="$dataS/character/animals/domesticated/chicken/chick/henChick.i3d" animation="$dataS/character/animals/domesticated/chicken/animations/young/henChickAnimations.i3d" skeletonIndex="0" meshIndex="1" shaderIndex="1|2">
+				<texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Leghorn-->
+				<texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Lohmann-->
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Plymouth Rock-->
+				<texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Bohus Dal-->
+			</assets>
+			<locomotion filename="$dataS/character/animals/domesticated/chicken/chickLocomotion.xml"/>
+			<audio yellSoundGroup="yellChick" yellMinInterval="8000" yellMaxInterval="16000" yellTimerCrowdScale="0.1"/>
+		</animal>
+		<!--03 Hen GS03 and 04-->
+		<animal radius="0.5" handleThreats="true" threatAwarenessRadius="5" slowingDistance="0.1" allowMilkingPlace="false" headOffset="0" canEat="false" canDrink="false" canSleep="true" canEatDuringNight="false">
+			<statesTimers idleMin="12000" idleMax="18000" sleepMin="120000" sleepMax="180000" restMin="20000" restMax="30000" grazeMin="8000" grazeMax="16000" chewMin="8000" chewMax="16000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="20000"/>
+			<assets filename="$dataS/character/animals/domesticated/chicken/hen/fowlHen.i3d" filenamePosed="$dataS/character/animals/domesticated/chicken/hen/fowlHen_posed.i3d" animation="$dataS/character/animals/domesticated/chicken/animations/adult/fowlAdultAnimations.i3d" skeletonIndex="0" meshIndex="1" shaderIndex="1|2">
+				<texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Leghorn-->
+				<texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Lohmann-->
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Plymouth Rock-->
+				<texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Bohus Dal-->
+			</assets>
+			<locomotion filename="$dataS/character/animals/domesticated/chicken/henLocomotion.xml"/>
+			<audio yellSoundGroup="yellHen" yellMinInterval="8000" yellMaxInterval="16000" yellTimerCrowdScale="0.1"/>
+		</animal>
+		<!--04 Rooster GS01-->
+		<animal radius="0.3" handleThreats="true" threatAwarenessRadius="5" slowingDistance="0.05" allowMilkingPlace="false" headOffset="0" canEat="false" canDrink="false" canSleep="true" canEatDuringNight="false">
+			<statesTimers idleMin="8000" idleMax="10000" sleepMin="120000" sleepMax="180000" restMin="20000" restMax="30000" grazeMin="8000" grazeMax="16000" chewMin="8000" chewMax="16000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="20000"/>
+			<assets filename="meat/Chickens_FM_GS01_Dual.i3d" filenamePosed="animals/chicken/meat/Chickens_FM_GS01_Dual.i3d" animation="meat/Chickens_FM_GS01_Dual.i3d" skeletonIndex="0" meshIndex="0>0" proxyIndex="1" shaderIndex="0>0">
+				<texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Leghorn-->
+				<texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Lohmann-->
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Plymouth Rock-->
+				<texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Bohus Dal-->
+			</assets>
+			<locomotion filename="animations/chickens_FM_GS01_Locomotion.xml"/>
+			<audio yellSoundGroup="yellChick" yellMinInterval="8000" yellMaxInterval="16000" yellTimerCrowdScale="0.1"/>
+		</animal>
+		<!--05 Rooster GS02-->
+		<animal radius="0.3" handleThreats="true" threatAwarenessRadius="5" slowingDistance="0.05" allowMilkingPlace="false" headOffset="0" canEat="false" canDrink="false" canSleep="true" canEatDuringNight="false">
+			<statesTimers idleMin="8000" idleMax="10000" sleepMin="120000" sleepMax="180000" restMin="20000" restMax="30000" grazeMin="8000" grazeMax="16000" chewMin="8000" chewMax="16000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="20000"/>
+			<assets filename="$dataS/character/animals/domesticated/chicken/chick/henChick.i3d" filenamePosed="$dataS/character/animals/domesticated/chicken/chick/henChick.i3d" animation="$dataS/character/animals/domesticated/chicken/animations/young/henChickAnimations.i3d" skeletonIndex="0" meshIndex="1" shaderIndex="1|2">
+				<texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Leghorn-->
+				<texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Lohmann-->
+				<texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Plymouth Rock-->
+				<texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false"/><!--Bohus Dal-->
+			</assets>
+			<locomotion filename="$dataS/character/animals/domesticated/chicken/chickLocomotion.xml"/>
+			<audio yellSoundGroup="yellChick" yellMinInterval="8000" yellMaxInterval="16000" yellTimerCrowdScale="0.1"/>
+		</animal>
+		<!--06 Rooster GS03 and 04-->
+		<animal radius="0.5" handleThreats="true" threatAwarenessRadius="7" slowingDistance="0.1" allowMilkingPlace="false" headOffset="0" canEat="false" canDrink="false" canSleep="true" canEatDuringNight="false">
+			<statesTimers idleMin="18000" idleMax="22000" sleepMin="120000" sleepMax="180000" restMin="16000" restMax="18000" grazeMin="12000" grazeMax="18000" chewMin="8000" chewMax="16000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="20000"/>
+			<assets filename="$dataS/character/animals/domesticated/chicken/rooster/fowlRooster.i3d" filenamePosed="$dataS/character/animals/domesticated/chicken/rooster/fowlRooster_posed.i3d" animation="$dataS/character/animals/domesticated/chicken/animations/adult/fowlAdultAnimations.i3d" skeletonIndex="0" meshIndex="1" shaderIndex="1|2">
+				<texture multi="false" tileUIndex="0" tileVIndex="0" numTilesU="1" numTilesV="1" mirrorV="false"/><!--All-->
+			</assets>
+			<locomotion filename="$dataS/character/animals/domesticated/chicken/roosterLocomotion.xml"/>
+			<audio yellSoundGroup="yellRooster" yellMinInterval="20000" yellMaxInterval="40000" yellTimerCrowdScale="0.5"/>
+		</animal>
+		<!-- Kiskacsa -->
+		<animal radius="0.5" handleThreats="true" threatAwarenessRadius="5" slowingDistance="0.1" allowMilkingPlace="false" headOffset="0" canEat="false" canDrink="false" canSleep="true" canEatDuringNight="false">
+            <statesTimers idleMin="12000" idleMax="18000" sleepMin="120000" sleepMax="180000" restMin="20000" restMax="30000" grazeMin="8000" grazeMax="16000" chewMin="8000" chewMax="16000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="20000" />
+            <assets filename="duckling/duckling.i3d" filenamePosed="animals/domesticated/chicken/duckling/duckling_posed.i3d" animation="duckling/animations/ducklingAnimations.i3d" skeletonIndex="0|0" meshIndex="1" shaderIndex="1" >
+                <texture multi="false" tileUIndex="0" tileVIndex="0" numTilesU="1" numTilesV="1" mirrorV="false" />
+            </assets>
+            <locomotion filename="ducklingLocomotion.xml"/>
+            <audio yellSoundGroup="yellDuckling" yellMinInterval="8000" yellMaxInterval="16000" yellTimerCrowdScale="0.1" />
+        </animal>
+		<!-- Kacsa ADULT -->
+		<animal radius="0.5" handleThreats="true" threatAwarenessRadius="5" slowingDistance="0.1" allowMilkingPlace="false" headOffset="0" canEat="false" canDrink="false" canSleep="true" canEatDuringNight="false">
+            <statesTimers idleMin="12000" idleMax="18000" sleepMin="120000" sleepMax="180000" restMin="20000" restMax="30000" grazeMin="8000" grazeMax="16000" chewMin="8000" chewMax="16000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="20000" />
+            <assets filename="duck/fowlDuck.i3d" filenamePosed="animals/domesticated/chicken/duck/fowlDuck_posed.i3d" animation="duck/animations/fowlAdultAnimations.i3d" skeletonIndex="0|0" meshIndex="1" shaderIndex="1" >
+                <texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false" />
+                <texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false" />
+                <texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false" />
+                <texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="duckLocomotion.xml"/>
+            <audio yellSoundGroup="yellDuck" yellMinInterval="8000" yellMaxInterval="16000" yellTimerCrowdScale="0.1" />
+        </animal>
+		<!--Lúd-->
+		<animal radius="0.5" handleThreats="true" threatAwarenessRadius="5" slowingDistance="0.1" allowMilkingPlace="false" headOffset="0" canEat="false" canDrink="false" canSleep="true" canEatDuringNight="false">
+            <statesTimers idleMin="12000" idleMax="18000" sleepMin="120000" sleepMax="180000" restMin="20000" restMax="30000" grazeMin="8000" grazeMax="16000" chewMin="8000" chewMax="16000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="20000" />
+            <assets filename="duck/walk1.i3d" filenamePosed="animals/domesticated/chicken/duck/walk1.i3d" animation="duck/animations/animation.i3d" skeletonIndex="0" meshIndex="1" shaderIndex="1" >
+                <texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false" />
+                <texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false" />
+                <texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false" />
+                <texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="ludLocomotion.xml"/>
+            <audio yellSoundGroup="yellLiba" yellMinInterval="8000" yellMaxInterval="16000" yellTimerCrowdScale="0.1" />
+        </animal>
+				<!--Pulyka-->
+		<animal radius="0.5" handleThreats="true" threatAwarenessRadius="5" slowingDistance="0.1" allowMilkingPlace="false" headOffset="0" canEat="false" canDrink="false" canSleep="true" canEatDuringNight="false">
+            <statesTimers idleMin="12000" idleMax="18000" sleepMin="120000" sleepMax="180000" restMin="20000" restMax="30000" grazeMin="8000" grazeMax="16000" chewMin="8000" chewMax="16000" eatMin="60000" eatMax="90000" wanderMin="10000" wanderMax="20000" />
+            <assets filename="duck/pulyka_eat.i3d" filenamePosed="animals/domesticated/chicken/duck/pulyka_eat.i3d" animation="duck/pulyka_eat.i3d" skeletonIndex="0" meshIndex="1" shaderIndex="1" >
+                <texture multi="true" tileUIndex="0" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false" />
+                <texture multi="true" tileUIndex="0" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false" />
+                <texture multi="true" tileUIndex="1" tileVIndex="0" numTilesU="2" numTilesV="2" mirrorV="false" />
+                <texture multi="true" tileUIndex="1" tileVIndex="1" numTilesU="2" numTilesV="2" mirrorV="false" />
+            </assets>
+            <locomotion filename="pulykaLocomotion.xml"/>
+            <audio yellSoundGroup="yellpulyka" yellMinInterval="8000" yellMaxInterval="16000" yellTimerCrowdScale="0.1" />
+        </animal>
+	</animals>
+	<sound>
+		<soundGroup name="walk" volume="0.65" indoorVolume="0.1" range="12" innerRange="0.4">
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_01.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_02.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_03.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_04.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_05.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_06.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_07.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_08.wav"/>
+		</soundGroup>
+		<soundGroup name="run" volume="0.65" indoorVolume="0.1" range="12" innerRange="0.4">
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_01.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_02.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_03.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_04.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_05.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_06.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_07.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlChickenStep_08.wav"/>
+		</soundGroup>
+		<soundGroup name="yellHen" volume="1.0" indoorVolume="0.2" range="40" innerRange="1">
+			<sample filename="$data/sounds/animals/chicken/anmlHenYell_01.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlHenYell_02.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlHenYell_03.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlHenYell_04.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlHenYell_05.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlHenYell_06.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlHenYell_07.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlHenYell_08.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlHenYell_09.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlHenYell_10.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlHenYell_11.wav"/>
+		</soundGroup>
+		<soundGroup name="yellRooster" volume="1.0" indoorVolume="0.2" range="60" innerRange="1">
+			<sample filename="$data/sounds/animals/chicken/anmlRoosterYell_01.wav"/>
+			<sample filename="$data/sounds/animals/chicken/anmlRoosterYell_02.wav"/>
+		</soundGroup>
+		<soundGroup name="yellChick" volume="0.7" indoorVolume="0.3" range="20" innerRange="1">
+            <sample filename="sounds/chick_01.wav" />
+            <sample filename="sounds/chick_02.wav" />
+		</soundGroup>
+		<soundGroup name="yellDuck" volume="1.0" indoorVolume="0.2" range="20" innerRange="1">
+            <sample filename="sounds/duck1.wav" />
+            <sample filename="sounds/duck2.wav" />
+            <sample filename="sounds/duck3.wav" />
+            <sample filename="sounds/duck4.wav" />
+        </soundGroup>
+		<soundGroup name="yellDuckling" volume="1.0" indoorVolume="0.2" range="20" innerRange="1">
+            <sample filename="sounds/duckling01.wav" />
+            <sample filename="sounds/duckling02.wav" />
+            <sample filename="sounds/duckling03.wav" />
+            <sample filename="sounds/duckling04.wav" />
+            <sample filename="sounds/duckling05.wav" />
+            <sample filename="sounds/duckling06.wav" />
+            <sample filename="sounds/duckling07.wav" />
+        </soundGroup>
+		<soundGroup name="yellLiba" volume="1.0" indoorVolume="0.2" range="20" innerRange="1">
+            <sample filename="sounds/lud1.wav" />
+            <sample filename="sounds/lud2.wav" />
+            <sample filename="sounds/lud3.wav" />
+            <sample filename="sounds/lud4.wav" />
+			<sample filename="sounds/lud5.wav" />
+            <sample filename="sounds/lud6.wav" />
+            <sample filename="sounds/lud7.wav" />
+        </soundGroup>
+		<soundGroup name="yellpulyka" volume="1.0" indoorVolume="0.2" range="20" innerRange="1">
+            <sample filename="sounds/pulyka1.wav" />
+            <sample filename="sounds/pulyka2.wav" />
+            <sample filename="sounds/pulyka3.wav" />
+            <sample filename="sounds/pulyka4.wav" />
+			<sample filename="sounds/pulyka5.wav" />
+            <sample filename="sounds/pulyka6.wav" />
+            <sample filename="sounds/pulyka7.wav" />
+        </soundGroup>
+	</sound>
+</animalHusbandry>

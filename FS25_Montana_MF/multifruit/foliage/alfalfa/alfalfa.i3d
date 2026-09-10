@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="alfalfa.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="34" filename="$data/foliage/grass/grassStage04LOD1_alpha.png"/>
+    <File fileId="31" filename="$data/foliage/grass/grassStage04LOD1_diffuse.png"/>
+    <File fileId="33" filename="$data/foliage/grass/grassStage04LOD1_fmask.png"/>
+    <File fileId="32" filename="$data/foliage/grass/grassStage04LOD1_normal.png"/>
+    <File fileId="18" filename="$data/foliage/grass/grassStage04_alpha.png"/>
+    <File fileId="15" filename="$data/foliage/grass/grassStage04_diffuse.dds"/>
+    <File fileId="17" filename="$data/foliage/grass/grassStage04_fmask.png"/>
+    <File fileId="16" filename="$data/foliage/grass/grassStage04_normal.png"/>
+    <File fileId="4" filename="$data/shaders/fruitGrowthFoliageShader.xml"/>
+    <File fileId="26" filename="alfalfa2LOD_alpha.dds"/>
+    <File fileId="23" filename="alfalfa2LOD_diffuse.dds"/>
+    <File fileId="24" filename="alfalfa2LOD_normal.dds"/>
+    <File fileId="25" filename="alfalfa2LOD_specular.dds"/>
+    <File fileId="10" filename="alfalfa2_alpha.dds"/>
+    <File fileId="7" filename="alfalfa2_diffuse.dds"/>
+    <File fileId="8" filename="alfalfa2_normal.dds"/>
+    <File fileId="9" filename="alfalfa2_specular.dds"/>
+    <File fileId="30" filename="alfalfa3LOD_alpha.dds"/>
+    <File fileId="27" filename="alfalfa3LOD_diffuse.dds"/>
+    <File fileId="28" filename="alfalfa3LOD_normal.dds"/>
+    <File fileId="29" filename="alfalfa3LOD_specular.dds"/>
+    <File fileId="14" filename="alfalfa3_alpha.dds"/>
+    <File fileId="11" filename="alfalfa3_diffuse.dds"/>
+    <File fileId="12" filename="alfalfa3_normal.dds"/>
+    <File fileId="13" filename="alfalfa3_specular.png"/>
+    <File fileId="22" filename="alfalfasmallLOD_alpha.png"/>
+    <File fileId="19" filename="alfalfasmallLOD_diffuse.png"/>
+    <File fileId="20" filename="alfalfasmallLOD_normal.png"/>
+    <File fileId="21" filename="alfalfasmallLOD_specular.dds"/>
+    <File fileId="6" filename="alfalfasmall_alpha.png"/>
+    <File fileId="1" filename="alfalfasmall_diffuse.png"/>
+    <File fileId="2" filename="alfalfasmall_normal.png"/>
+    <File fileId="3" filename="alfalfasmall_vmask.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="Alfafla3_mat" materialId="5" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="23"/>
+      <Normalmap fileId="24"/>
+      <Glossmap fileId="25"/>
+      <Custommap name="alphaMap" fileId="26"/>
+    </Material>
+    <Material name="Alfafla3_mat" materialId="6" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="27"/>
+      <Normalmap fileId="28"/>
+      <Glossmap fileId="29"/>
+      <Custommap name="alphaMap" fileId="30"/>
+    </Material>
+    <Material name="grassStage04_mat" materialId="7" customShaderId="4">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+      <Custommap name="alphaMap" fileId="18"/>
+      <CustomParameter name="snowScale" value="0.36"/>
+      <CustomParameter name="aoIntensity" value="2 1"/>
+    </Material>
+    <Material name="grassStage04LOD1_mat" materialId="8" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="31"/>
+      <Normalmap fileId="32"/>
+      <Glossmap fileId="33"/>
+      <Custommap name="alphaMap" fileId="34"/>
+      <CustomParameter name="snowScale" value="0.36"/>
+      <CustomParameter name="aoIntensity" value="2 1"/>
+    </Material>
+    <Material name="wheatStage01_mat" materialId="9" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="alphaMap" fileId="6"/>
+      <CustomParameter name="snowScale" value="0.3"/>
+    </Material>
+    <Material name="wheatStage01LOD1_mat" materialId="37" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+      <Custommap name="alphaMap" fileId="22"/>
+      <CustomParameter name="cellSizeTerrainSizeScaleXZScaleY" value="16 200 2 200"/>
+      <CustomParameter name="snowScale" value="0.22"/>
+    </Material>
+    <Material name="wheatStage02_mat" materialId="11" customShaderId="4">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+      <Custommap name="alphaMap" fileId="10"/>
+      <CustomParameter name="snowScale" value="0.3"/>
+    </Material>
+    <Material name="wheatStage02_mat" materialId="12" customShaderId="4">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+      <Custommap name="alphaMap" fileId="14"/>
+      <CustomParameter name="snowScale" value="0.3"/>
+    </Material>
+    <Material name="wheatStage02LOD1_mat" materialId="13" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="23"/>
+      <Normalmap fileId="24"/>
+      <Glossmap fileId="25"/>
+      <Custommap name="alphaMap" fileId="26"/>
+      <CustomParameter name="snowScale" value="0.22"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="alfalfa.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="alfalfa" nodeId="22">
+      <TransformGroup name="LOD0" nodeId="23">
+        <Shape name="stage1_greenSmall" shapeId="1" clipDistance="500" nodeId="24" castsShadows="true" receiveShadows="true" materialIds="9"/>
+        <Shape name="alfalfa2" shapeId="2" clipDistance="500" nodeId="25" castsShadows="true" receiveShadows="true" materialIds="11"/>
+        <Shape name="alfalfa3" shapeId="2" clipDistance="500" nodeId="26" castsShadows="true" receiveShadows="true" materialIds="12"/>
+        <Shape name="cut(25Grass)" shapeId="3" clipDistance="500" nodeId="27" castsShadows="true" receiveShadows="true" doubleSided="true" materialIds="7"/>
+        <Shape name="stage2_greenMiddle" shapeId="2" clipDistance="500" nodeId="28" castsShadows="true" receiveShadows="true" materialIds="11"/>
+      </TransformGroup>
+      <TransformGroup name="LOD1" nodeId="29">
+        <Shape name="stage1_greenSmallLOD1" shapeId="4" clipDistance="500" nodeId="30" castsShadows="false" receiveShadows="true" materialIds="37"/>
+        <Shape name="alfalfa2LOD" shapeId="5" nodeId="31" castsShadows="false" receiveShadows="true" doubleSided="true" materialIds="5"/>
+        <Shape name="alfalfa3LOD" shapeId="5" nodeId="32" castsShadows="false" receiveShadows="true" doubleSided="true" materialIds="6"/>
+        <Shape name="cut(25grass)" shapeId="6" clipDistance="500" nodeId="33" castsShadows="true" receiveShadows="true" materialIds="8"/>
+        <Shape name="stage2_greenMiddleLOD1" shapeId="7" clipDistance="500" nodeId="34" castsShadows="false" receiveShadows="true" materialIds="13"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,572 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="eggIncubator.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="10.0.12"/>
+    </Asset>
+    <Files>
+        <File fileId="59" filename="fluorescentLight01_diffuse.png"/>
+        <File fileId="60" filename="fluorescentLight01_normal.png"/>
+        <File fileId="61" filename="fluorescentLight01_specular.png"/>
+        <File fileId="12" filename="industrialBuildingAttachments_normal.png"/>
+        <File fileId="13" filename="industrialBuildingAttachments_specular.png"/>
+        <File fileId="62" filename="windowsGlass_diffuse.png"/>
+        <File fileId="63" filename="windowsGlass_normal.png"/>
+        <File fileId="64" filename="windowsGlass_specular.png"/>
+        <File fileId="41" filename="controlPanel_diffuse.png"/>
+        <File fileId="42" filename="controlPanel_normal.png"/>
+        <File fileId="43" filename="controlPanel_specular.png"/>
+        <File fileId="19" filename="decalShader.xml"/>
+        <File fileId="58" filename="glowShader.xml"/>
+        <File fileId="4" filename="placeableShader.xml"/>
+        <File fileId="23" filename="powerSwitch_diffuse.png"/>
+        <File fileId="24" filename="powerSwitch_normal.png"/>
+        <File fileId="25" filename="powerSwitch_specular.png"/>
+        <File fileId="53" filename="fluorescentTube50W_diffuse.png"/>
+        <File fileId="56" filename="fluorescentTube50W_emissive.png"/>
+        <File fileId="54" filename="fluorescentTube50W_normal.png"/>
+        <File fileId="55" filename="fluorescentTube50W_specular.png"/>
+        <File fileId="35" filename="switchDecals_diffuse.png"/>
+        <File fileId="32" filename="switchGlass_diffuse.png"/>
+        <File fileId="33" filename="switchGlass_normal.png"/>
+        <File fileId="34" filename="switchGlass_specular.png"/>
+        <File fileId="29" filename="switch_diffuse.png"/>
+        <File fileId="30" filename="switch_normal.png"/>
+        <File fileId="31" filename="switch_specular.png"/>
+        <File fileId="27" filename="default_normal.png"/>
+        <File fileId="36" filename="default_specular.png"/>
+        <File fileId="49" filename="character/animals/domesticated/chicken/chick/chick_diffuse.dds"/>
+        <File fileId="50" filename="character/animals/domesticated/chicken/chick/chick_normal.dds"/>
+        <File fileId="51" filename="character/animals/domesticated/chicken/chick/chick_specular.dds"/>
+        <File fileId="52" filename="character/animals/domesticated/chicken/chick01.ogg"/>
+        <File fileId="46" filename="objects/pallets/eggBox/eggBoxInlay_diffuse.png"/>
+        <File fileId="47" filename="objects/pallets/eggBox/eggBoxInlay_normal.png"/>
+        <File fileId="48" filename="objects/pallets/eggBox/eggBoxInlay_specular.png"/>
+        <File fileId="18" filename="eggIncubatorDecals_diffuse.dds"/>
+        <File fileId="1" filename="eggIncubator_diffuse.png"/>
+        <File fileId="7" filename="eggIncubator_height.dds"/>
+        <File fileId="2" filename="eggIncubator_normal.png"/>
+        <File fileId="3" filename="eggIncubator_specular.png"/>
+        <File fileId="45" filename="vertiMix/panelDisplayOff_diffuse.dds"/>
+        <File fileId="11" filename="textures/concreteWallClamp_diffuse.png"/>
+        <File fileId="8" filename="textures/eggIncubatorWindows_diffuse.dds"/>
+        <File fileId="15" filename="textures/fencesFarmLevel03_diffuse.png"/>
+        <File fileId="16" filename="textures/fencesFarmLevel03_normal.png"/>
+        <File fileId="17" filename="textures/fencesFarmLevel03_specular.png"/>
+        <File fileId="9" filename="textures/industrialWindows_normal.png"/>
+        <File fileId="10" filename="textures/industrialWindows_specular.png"/>
+        <File fileId="37" filename="textures/props/cabinetWorkbench2_diffuse.png"/>
+        <File fileId="38" filename="textures/props/cabinetWorkbench2_normal.png"/>
+        <File fileId="39" filename="textures/props/cabinetWorkbench2_specular.png"/>
+        <File fileId="20" filename="textures/props/electricalSet_diffuse.png"/>
+        <File fileId="21" filename="textures/props/electricalSet_normal.png"/>
+        <File fileId="22" filename="textures/props/electricalSet_specular.png"/>
+        <File fileId="26" filename="textures/props/propsDecals_diffuse.png"/>
+        <File fileId="28" filename="textures/props/propsDecals_specular.png"/>
+    </Files>
+    <Materials>
+        <Material name="cabinetWorkbench_mat" materialId="5">
+            <Texture fileId="37"/>
+            <Normalmap fileId="38"/>
+            <Glossmap fileId="39"/>
+        </Material>
+        <Material name="chick_mat" materialId="6">
+            <Texture fileId="49"/>
+            <Normalmap fileId="50" bumpDepth="0"/>
+            <Glossmap fileId="51"/>
+        </Material>
+        <Material name="controlPanel_mat" materialId="7" customShaderId="4">
+            <Texture fileId="41"/>
+            <Normalmap fileId="42"/>
+            <Glossmap fileId="43"/>
+        </Material>
+        <Material name="displayOff_mat" materialId="8" diffuseColor="0 0 0 1">
+            <Emissivemap fileId="45"/>
+        </Material>
+        <Material name="egg_mat" materialId="9">
+            <Texture fileId="46"/>
+            <Normalmap fileId="47"/>
+            <Glossmap fileId="48"/>
+        </Material>
+        <Material name="eggIncubator_mat" materialId="10" customShaderId="4" customShaderVariation="customParallax">
+            <Texture fileId="1"/>
+            <Normalmap fileId="2" bumpDepth="0.1"/>
+            <Glossmap fileId="3"/>
+            <Custommap name="mParallaxMap" fileId="7"/>
+            <CustomParameter name="snowScale" value="0"/>
+        </Material>
+        <Material name="eggIncubatorDecal_mat" materialId="11" alphaBlending="true" customShaderId="19">
+            <Texture fileId="18"/>
+        </Material>
+        <Material name="eggPlate_mat" materialId="12">
+            <Texture fileId="15"/>
+            <Normalmap fileId="16"/>
+            <Glossmap fileId="17"/>
+        </Material>
+        <Material name="electricalSet_mat" materialId="13">
+            <Texture fileId="20"/>
+            <Normalmap fileId="21"/>
+            <Glossmap fileId="22"/>
+        </Material>
+        <Material name="fluorescentLight01_mat" materialId="14">
+            <Texture fileId="59"/>
+            <Normalmap fileId="60"/>
+            <Glossmap fileId="61"/>
+        </Material>
+        <Material name="fluorescentLight01_mat1" materialId="15" customShaderId="58" customShaderVariation="additive_colorScale">
+            <Texture fileId="59"/>
+            <Normalmap fileId="60"/>
+            <Glossmap fileId="61"/>
+            <CustomParameter name="lightControl" value="0.9"/>
+            <CustomParameter name="colorScale" value="1 0 0"/>
+        </Material>
+        <Material name="fluorescentTube50W_emissive_mat" materialId="16" specularColor="0.74902 1 0" customShaderId="58" customShaderVariation="additive_colorScale">
+            <Texture fileId="56"/>
+            <Normalmap fileId="27"/>
+            <CustomParameter name="lightControl" value="0.999999"/>
+            <CustomParameter name="colorScale" value="1 0 0"/>
+        </Material>
+        <Material name="fluorescentTube50W_mat" materialId="17" customShaderId="4">
+            <Texture fileId="53"/>
+            <Normalmap fileId="54"/>
+            <Glossmap fileId="55"/>
+        </Material>
+        <Material name="incubatorGlass_mat" materialId="18" alphaBlending="true">
+            <Texture fileId="8"/>
+            <Normalmap fileId="9"/>
+            <Glossmap fileId="10"/>
+        </Material>
+        <Material name="industrialBuildingAttachments_mat" materialId="19" customShaderId="4">
+            <Texture fileId="11"/>
+            <Normalmap fileId="12"/>
+            <Glossmap fileId="13"/>
+        </Material>
+        <Material name="lambert1" materialId="20" diffuseColor="0.494118 0.494118 0.494118 1"/>
+        <Material name="lambert1" materialId="21" diffuseColor="0.501961 0.501961 0.501961 1"/>
+        <Material name="powerSwitch_mat" materialId="22" customShaderId="4">
+            <Texture fileId="23"/>
+            <Normalmap fileId="24"/>
+            <Glossmap fileId="25"/>
+        </Material>
+        <Material name="propsDecals_mat" materialId="23" customShaderId="19">
+            <Texture fileId="26"/>
+            <Normalmap fileId="27"/>
+            <Glossmap fileId="28"/>
+        </Material>
+        <Material name="switch_mat" materialId="24" customShaderId="4">
+            <Texture fileId="29"/>
+            <Normalmap fileId="30"/>
+            <Glossmap fileId="31"/>
+        </Material>
+        <Material name="switchDecals_mat" materialId="25" alphaBlending="true" customShaderId="19">
+            <Texture fileId="35"/>
+            <Normalmap fileId="27"/>
+            <Glossmap fileId="36"/>
+        </Material>
+        <Material name="switchGlass_mat" materialId="26" alphaBlending="true" customShaderId="4">
+            <Texture fileId="32"/>
+            <Normalmap fileId="33"/>
+            <Glossmap fileId="34"/>
+        </Material>
+        <Material name="windowsGlass_mat" materialId="27" alphaBlending="true">
+            <Texture fileId="62"/>
+            <Normalmap fileId="63"/>
+            <Glossmap fileId="64"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="eggIncubator.i3d.shapes"/>
+    <Scene>
+        <TransformGroup name="eggIncubator" nodeId="59">
+            <TransformGroup name="visuals" nodeId="60">
+                <Shape name="eggIncubator" shapeId="1" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="61" castsShadows="true" receiveShadows="true" materialIds="10">
+                    <Shape name="doorLeft" translation="-0.934 0 0.416415" shapeId="2" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="62" castsShadows="true" receiveShadows="true" materialIds="10">
+                        <Shape name="glass" shapeId="3" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="63" castsShadows="true" receiveShadows="true" materialIds="18"/>
+                        <Shape name="gateHandle" translation="0.895832 1.15995 0.0170347" rotation="90 0 90" scale="0.233017 0.233017 0.275348" shapeId="4" clipDistance="60" nodeId="64" castsShadows="true" receiveShadows="true" materialIds="19"/>
+                    </Shape>
+                    <Shape name="doorRight" translation="0.934 0 0.416415" shapeId="5" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="65" castsShadows="true" receiveShadows="true" materialIds="10">
+                        <Shape name="glass" translation="-0.94366 0 0" shapeId="3" kinematic="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" nodeId="66" castsShadows="true" receiveShadows="true" materialIds="18"/>
+                        <Shape name="gateHandle" translation="-0.887848 1.15995 0.0170347" rotation="90 1.52791e-05 -90" scale="0.233017 0.233017 0.275348" shapeId="4" clipDistance="60" nodeId="67" castsShadows="true" receiveShadows="true" materialIds="19"/>
+                    </Shape>
+                    <Shape name="eggIncubatorDoors_trigger" translation="-0.00979013 0.0309986 1.03921" shapeId="6" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="68" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="20"/>
+                    <Shape name="eggPlate" translation="-0.466802 0.444248 -0.0200328" shapeId="7" nodeId="69" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                    <Shape name="eggPlate" translation="0.475812 0.444248 -0.0200328" rotation="0 180 0" shapeId="7" nodeId="70" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                    <Shape name="eggPlate" translation="-0.466802 1.10943 -0.0200328" rotation="0 180 0" shapeId="7" nodeId="71" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                    <Shape name="eggPlate" translation="0.475812 1.10943 -0.0200328" shapeId="7" nodeId="72" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                    <Shape name="eggPlate" translation="-0.466802 1.84803 -0.0200328" shapeId="7" nodeId="73" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                    <Shape name="eggPlate" translation="0.475812 1.84803 -0.0200328" rotation="0 180 0" shapeId="7" nodeId="74" castsShadows="true" receiveShadows="true" materialIds="12"/>
+                    <Shape name="logoDecal" translation="-0.516211 2.53214 0.443298" rotation="-3.48784e-07 0 0" scale="0.848699 0.917569 0.848699" shapeId="8" clipDistance="80" nodeId="75" castsShadows="false" receiveShadows="true" materialIds="11"/>
+                    <TransformGroup name="electric" translation="1.7417 0.559552 -0.271585" nodeId="76">
+                        <Shape name="electricAssets" translation="0.673952 -3.38509 0.419775" shapeId="9" clipDistance="50" nodeId="77" castsShadows="true" receiveShadows="true" materialIds="13"/>
+                        <Shape name="powerSwitch" translation="-0.299933 0.436743 -0.214759" rotation="-2.61193e-14 -0 -7.30511e-08" scale="1.36242 1.36242 1.36242" shapeId="10" clipDistance="50" nodeId="78" castsShadows="true" receiveShadows="true" materialIds="22"/>
+                        <Shape name="electricitySplitter" translation="-0.374018 2.40389 -0.205015" rotation="4.88533e-11 0 -90" shapeId="11" clipDistance="50" nodeId="79" castsShadows="true" receiveShadows="true" materialIds="13">
+                            <Shape name="decals" translation="0 0 -0.00217241" shapeId="12" clipDistance="30" nodeId="80" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="23"/>
+                        </Shape>
+                        <Shape name="lightSwitch" translation="-0.820089 0.600798 0.0284828" rotation="90 90 5.92759e-05" shapeId="13" clipDistance="55" nodeId="81" castsShadows="true" receiveShadows="true" materialIds="24">
+                            <Shape name="glass" translation="8.10623e-08 0.016 3.33786e-08" shapeId="14" clipDistance="30" nodeId="82" castsShadows="true" receiveShadows="true" materialIds="26"/>
+                            <Shape name="decals" translation="8.10623e-08 0.016 3.33786e-08" shapeId="15" clipDistance="30" nodeId="83" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="25"/>
+                        </Shape>
+                    </TransformGroup>
+                </Shape>
+                <Shape name="cabinetWorkbenchTable01" translation="3.06499 0 -0.0949428" shapeId="16" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="129" nodeId="84" castsShadows="true" receiveShadows="true" materialIds="5"/>
+                <Shape name="cabinetWorkbenchTable01" translation="4.9299 0 -0.0949428" shapeId="16" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="129" nodeId="85" castsShadows="true" receiveShadows="true" materialIds="5"/>
+            </TransformGroup>
+            <TransformGroup name="unloading" nodeId="86">
+                <Shape name="palletTrigger" translation="-0.020336 1.19184 1.73572" shapeId="17" kinematic="true" compound="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x10000" nodeId="87" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="21"/>
+            </TransformGroup>
+            <TransformGroup name="loading" nodeId="88">
+                <TransformGroup name="loadingStation" translation="1.42109e-16 0 -6.31089e-32" nodeId="89">
+                    <Shape name="loadingTrigger" translation="0 0.293312 0.125531" shapeId="18" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="90" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="20"/>
+                    <Shape name="loadingTriggerPlayer" translation="0 0.293312 0.125531" shapeId="18" kinematic="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="91" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="20"/>
+                </TransformGroup>
+                <TransformGroup name="storage" translation="0 -2.46109e-20 0" nodeId="92"/>
+            </TransformGroup>
+            <TransformGroup name="productionPoint" nodeId="93">
+                <Shape name="playerTrigger" translation="1.36058 0.0309986 0.139844" shapeId="19" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="94" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="20"/>
+                <TransformGroup name="fillLevels" nodeId="95">
+                    <Shape name="lcdScreen" translation="0.797441 2.50304 0.44244" rotation="8.99282e-13 -1.58605e-06 1.51258e-12" scale="0.838824 0.838824 0.838824" shapeId="20" clipDistance="50" nodeId="96" castsShadows="true" receiveShadows="true" materialIds="7">
+                        <Shape name="displayOff_left" shapeId="21" clipDistance="40" nodeId="97" castsShadows="false" receiveShadows="true" materialIds="8"/>
+                        <TransformGroup name="hud_temperatur" translation="-0.0843193 -0.0233951 0.0103632" clipDistance="20" nodeId="98"/>
+                    </Shape>
+                </TransformGroup>
+                <TransformGroup name="visibilityNodes_input" nodeId="99">
+                    <Shape name="egg" translation="-0.787479 1.86264 -0.255127" rotation="-90.3368 -61.9637 0" shapeId="22" clipDistance="30" nodeId="100" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.762816 1.86264 -0.0241477" rotation="-90.3368 27.1614 0" shapeId="22" clipDistance="30" nodeId="101" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.762816 1.86264 0.181027" rotation="89.6632 28.5455 180" shapeId="22" clipDistance="30" nodeId="102" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.598708 1.86264 -0.255127" rotation="89.6632 -21.4252 -180" shapeId="22" clipDistance="30" nodeId="103" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.574044 1.86264 -0.0241477" rotation="-90.3368 -69.4617 0" shapeId="22" clipDistance="30" nodeId="104" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.574044 1.86264 0.181027" rotation="-90.3367 54.8435 2.05841e-06" shapeId="22" clipDistance="30" nodeId="105" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.37382 1.86264 -0.238666" rotation="-90.3367 -21.1069 0" shapeId="22" clipDistance="30" nodeId="106" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.349156 1.86264 -0.00768655" rotation="-90.3368 67.9481 0" shapeId="22" clipDistance="30" nodeId="107" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.349156 1.86264 0.197488" rotation="89.6632 -12.2534 180" shapeId="22" clipDistance="30" nodeId="108" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.154247 1.86264 -0.238666" rotation="89.6633 58.2225 180" shapeId="22" clipDistance="30" nodeId="109" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.129583 1.86264 -0.00768655" rotation="89.6632 -30.8323 -180" shapeId="22" clipDistance="30" nodeId="110" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.171886 1.86264 0.217846" rotation="-90.3368 -24.8846 0" shapeId="22" clipDistance="30" nodeId="111" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.131899 1.86264 -0.255127" rotation="89.6632 -3.67369 180" shapeId="22" clipDistance="30" nodeId="112" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.156563 1.86264 -0.0241477" rotation="-90.3368 -87.2009 0" shapeId="22" clipDistance="30" nodeId="113" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.156563 1.86264 0.181027" rotation="-90.3368 37.0916 4.54022e-07" shapeId="22" clipDistance="30" nodeId="114" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.353779 1.86264 -0.255127" rotation="-90.3368 87.1269 3.55296e-07" shapeId="22" clipDistance="30" nodeId="115" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.378443 1.86264 -0.0241477" rotation="89.6632 3.82367 -180" shapeId="22" clipDistance="30" nodeId="116" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.378443 1.86264 0.181027" rotation="-90.3367 -59.5187 2.33661e-06" shapeId="22" clipDistance="30" nodeId="117" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.564584 1.86264 -0.238666" rotation="89.6633 -44.4532 -180" shapeId="22" clipDistance="30" nodeId="118" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.589248 1.86264 -0.00768655" rotation="-90.3368 -46.4141 0" shapeId="22" clipDistance="30" nodeId="119" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.589248 1.86264 0.197488" rotation="-90.3368 77.8907 1.39966e-06" shapeId="22" clipDistance="30" nodeId="120" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.786672 1.86264 -0.229255" rotation="-90.3367 7.41485 4.01649e-07" shapeId="22" clipDistance="30" nodeId="121" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.811336 1.86264 0.00172406" rotation="89.6632 83.53 -180" shapeId="22" clipDistance="30" nodeId="122" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.769033 1.86264 0.227256" rotation="89.6632 -40.7531 180" shapeId="22" clipDistance="30" nodeId="123" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.802895 1.11626 -0.255127" rotation="89.6632 29.6621 180" shapeId="22" clipDistance="30" nodeId="124" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.778231 1.11626 -0.0241477" rotation="89.6632 -59.4635 180" shapeId="22" clipDistance="30" nodeId="125" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.778231 1.11626 0.181027" rotation="-90.3367 3.75621 1.24353e-06" shapeId="22" clipDistance="30" nodeId="126" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.58571 1.11626 -0.244354" rotation="-90.3368 7.23427 -9.08436e-07" shapeId="22" clipDistance="30" nodeId="127" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.561046 1.11626 -0.0133753" rotation="89.6632 83.6536 -180" shapeId="22" clipDistance="30" nodeId="128" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.561046 1.11626 0.191799" rotation="89.6633 -40.5331 -180" shapeId="22" clipDistance="30" nodeId="129" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.389236 1.11626 -0.238666" rotation="89.6633 -11.1961 -180" shapeId="22" clipDistance="30" nodeId="130" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.364572 1.11626 -0.00768655" rotation="-90.3368 -79.7497 0" shapeId="22" clipDistance="30" nodeId="131" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.364572 1.11626 0.197488" rotation="-90.3367 44.5555 1.69547e-06" shapeId="22" clipDistance="30" nodeId="132" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.156599 1.11626 -0.238666" rotation="-90.3367 -25.8191 0" shapeId="22" clipDistance="30" nodeId="133" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.131935 1.11626 -0.00768655" rotation="-90.3368 63.1344 -2.64011e-06" shapeId="22" clipDistance="30" nodeId="134" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.174238 1.11626 0.217846" rotation="89.6632 -7.4176 180" shapeId="22" clipDistance="30" nodeId="135" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.134208 1.11626 -0.255127" rotation="-90.3368 21.9675 2.00608e-06" shapeId="22" clipDistance="30" nodeId="136" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.158872 1.11626 -0.0241477" rotation="89.6632 68.9067 -180" shapeId="22" clipDistance="30" nodeId="137" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.158872 1.11626 0.181027" rotation="89.6632 -55.3849 180" shapeId="22" clipDistance="30" nodeId="138" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.338363 1.11626 -0.255127" rotation="-90.3368 -29.859 2.05349e-08" shapeId="22" clipDistance="30" nodeId="139" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.363027 1.11626 -0.0241477" rotation="-90.3368 59.1903 -1.30969e-06" shapeId="22" clipDistance="30" nodeId="140" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.363027 1.11626 0.181027" rotation="89.6633 -3.47827 180" shapeId="22" clipDistance="30" nodeId="141" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.568691 1.11626 -0.238666" rotation="-90.3368 38.2634 -3.47251e-06" shapeId="22" clipDistance="30" nodeId="142" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.593355 1.11626 -0.00768655" rotation="89.6632 52.6047 -180" shapeId="22" clipDistance="30" nodeId="143" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.593355 1.11626 0.197488" rotation="89.6632 -71.5724 -180" shapeId="22" clipDistance="30" nodeId="144" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.784299 1.11626 -0.229255" rotation="89.6633 -55.196 180" shapeId="22" clipDistance="30" nodeId="145" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.808963 1.11626 0.00172406" rotation="-90.3368 -35.586 0" shapeId="22" clipDistance="30" nodeId="146" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.812993 1.11626 0.227256" rotation="-90.3368 33.6643 2.50114e-06" shapeId="22" clipDistance="30" nodeId="147" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.798617 0.44476 -0.255127" rotation="-90.3368 -61.9637 0" shapeId="22" clipDistance="30" nodeId="148" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.773953 0.44476 -0.0241477" rotation="-90.3368 27.1614 0" shapeId="22" clipDistance="30" nodeId="149" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.773953 0.44476 0.181027" rotation="89.6632 28.5455 180" shapeId="22" clipDistance="30" nodeId="150" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.609846 0.44476 -0.255127" rotation="89.6632 -21.4252 -180" shapeId="22" clipDistance="30" nodeId="151" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.585182 0.44476 -0.0241477" rotation="-90.3368 -69.4617 0" shapeId="22" clipDistance="30" nodeId="152" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.585182 0.44476 0.181027" rotation="-90.3367 54.8435 2.05841e-06" shapeId="22" clipDistance="30" nodeId="153" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.384958 0.44476 -0.238666" rotation="-90.3367 -21.1069 0" shapeId="22" clipDistance="30" nodeId="154" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.360294 0.44476 -0.00768655" rotation="-90.3368 67.9481 0" shapeId="22" clipDistance="30" nodeId="155" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.360294 0.44476 0.197488" rotation="89.6632 -12.2534 180" shapeId="22" clipDistance="30" nodeId="156" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.165385 0.44476 -0.238666" rotation="89.6633 58.2225 180" shapeId="22" clipDistance="30" nodeId="157" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.140721 0.44476 -0.00768655" rotation="89.6632 -30.8323 -180" shapeId="22" clipDistance="30" nodeId="158" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="-0.183024 0.44476 0.217846" rotation="-90.3368 -24.8846 0" shapeId="22" clipDistance="30" nodeId="159" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.120761 0.44476 -0.255127" rotation="89.6632 -3.67369 180" shapeId="22" clipDistance="30" nodeId="160" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.145425 0.44476 -0.0241477" rotation="-90.3368 -87.2009 0" shapeId="22" clipDistance="30" nodeId="161" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.145425 0.44476 0.181027" rotation="-90.3368 37.0916 4.54022e-07" shapeId="22" clipDistance="30" nodeId="162" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.356393 0.44476 -0.255127" rotation="-90.3368 54.4294 3.06158e-08" shapeId="22" clipDistance="30" nodeId="163" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.381057 0.44476 -0.0241477" rotation="89.6632 36.5211 -180" shapeId="22" clipDistance="30" nodeId="164" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.381057 0.44476 0.181027" rotation="89.6633 -87.9003 -180" shapeId="22" clipDistance="30" nodeId="165" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.553446 0.44476 -0.238666" rotation="89.6633 -44.4532 -180" shapeId="22" clipDistance="30" nodeId="166" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.57811 0.44476 -0.00768655" rotation="-90.3368 -46.4141 0" shapeId="22" clipDistance="30" nodeId="167" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.57811 0.44476 0.197488" rotation="-90.3368 77.8907 1.39966e-06" shapeId="22" clipDistance="30" nodeId="168" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.795187 0.44476 -0.229255" rotation="-90.3367 44.3112 5.56618e-07" shapeId="22" clipDistance="30" nodeId="169" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.819851 0.44476 0.00172406" rotation="89.6632 46.6337 -180" shapeId="22" clipDistance="30" nodeId="170" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                    <Shape name="egg" translation="0.777548 0.44476 0.227256" rotation="89.6632 -77.6496 180" shapeId="22" clipDistance="30" nodeId="171" castsShadows="true" receiveShadows="true" materialIds="9"/>
+                </TransformGroup>
+                <TransformGroup name="visibilityNodes_output" visibility="false" nodeId="172">
+                    <Shape name="chick_posed" translation="0.809211 0.421458 0.212805" shapeId="23" clipDistance="300" nodeId="173" castsShadows="true" receiveShadows="true" materialIds="6">
+                        <AudioSource name="chickAudio" nodeId="174" fileIds="52" range="7" innerRange="3" volume="0.1" loops="0" randomPlayback="true" probabilities="1" retriggerDelay="10 20"/>
+                    </Shape>
+                    <Shape name="chick_posed" translation="0.809211 0.421458 -0.00898391" rotation="-180 -82.6479 -180" shapeId="23" clipDistance="300" nodeId="176" castsShadows="true" receiveShadows="true" materialIds="6">
+                        <AudioSource name="chickAudio" rotation="3.21602e-07 -90 0" nodeId="177" fileIds="52" range="7" innerRange="3" volume="0.1" loops="0" randomPlayback="true" probabilities="1" retriggerDelay="10 20"/>
+                    </Shape>
+                    <Shape name="chick_posed" translation="0.809211 0.421458 -0.250708" rotation="2.73828e-05 -11.7797 -3.1486e-07" shapeId="23" clipDistance="300" nodeId="179" castsShadows="true" receiveShadows="true" materialIds="6">
+                        <AudioSource name="chickAudio" rotation="3.21602e-07 -90 0" nodeId="180" fileIds="52" range="7" innerRange="3" volume="0.1" loops="0" randomPlayback="true" probabilities="1" retriggerDelay="10 20"/>
+                    </Shape>
+                    <Shape name="chick_posed" translation="0.568683 0.421458 0.196836" rotation="2.62834e-05 73.4154 -1.07988e-06" shapeId="23" clipDistance="300" nodeId="182" castsShadows="true" receiveShadows="true" materialIds="6">
+                        <AudioSource name="chickAudio" rotation="3.21602e-07 -90 0" nodeId="183" fileIds="52" range="7" innerRange="3" volume="0.1" loops="0" randomPlayback="true" probabilities="1" retriggerDelay="10 20"/>
+                    </Shape>
+                    <Shape name="chick_posed" translation="0.568683 0.421458 -0.0280469" rotation="-180 31.7378 -180" shapeId="23" clipDistance="300" nodeId="185" castsShadows="true" receiveShadows="true" materialIds="6">
+                        <AudioSource name="chickAudio" rotation="3.21602e-07 -90 0" nodeId="186" fileIds="52" range="7" innerRange="3" volume="0.1" loops="0" randomPlayback="true" probabilities="1" retriggerDelay="10 20"/>
+                    </Shape>
+                    <Shape name="chick_posed" translation="0.568683 0.421458 -0.261922" rotation="-180 31.7378 -180" shapeId="23" clipDistance="300" nodeId="188" castsShadows="true" receiveShadows="true" materialIds="6">
+                        <AudioSource name="chickAudio" rotation="3.21602e-07 -90 0" nodeId="189" fileIds="52" range="7" innerRange="3" volume="0.1" loops="0" randomPlayback="true" probabilities="1" retriggerDelay="10 20"/>
+                    </Shape>
+                    <Shape name="chick_posed" translation="0.376634 0.421458 0.191146" rotation="2.78788e-05 -38.1668 -8.86387e-07" shapeId="23" clipDistance="300" nodeId="191" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.364101 0.421458 -0.0376931" rotation="2.69661e-05 27.6298 -7.86594e-07" shapeId="23" clipDistance="300" nodeId="192" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.362158 0.421458 -0.285477" rotation="2.7927e-05 -40.5533 -9.17208e-07" shapeId="23" clipDistance="300" nodeId="193" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.154811 0.421458 0.165902" rotation="2.48804e-05 74.1222 -2.54727e-06" shapeId="23" clipDistance="300" nodeId="194" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.154811 0.421458 -0.0306762" rotation="-180 47.3131 180" shapeId="23" clipDistance="300" nodeId="195" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.154811 0.421458 -0.257337" rotation="2.80811e-05 61.643 8.65981e-07" shapeId="23" clipDistance="300" nodeId="196" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.164467 0.421458 0.202344" rotation="2.72222e-05 -13.2259 4.22518e-07" shapeId="23" clipDistance="300" nodeId="197" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.164467 0.421458 -0.019089" rotation="2.76526e-05 39.0635 5.29736e-07" shapeId="23" clipDistance="300" nodeId="198" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.143605 0.421458 -0.230346" rotation="2.718e-05 -18.6265 4.34048e-07" shapeId="23" clipDistance="300" nodeId="199" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.363228 0.421458 0.214293" rotation="2.77566e-05 46.8044 6.00906e-07" shapeId="23" clipDistance="300" nodeId="200" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.363228 0.421458 -0.0220924" rotation="2.69277e-05 -43.526 5.67284e-07" shapeId="23" clipDistance="300" nodeId="201" castsShadows="true" receiveShadows="true" materialIds="6">
+                        <AudioSource name="chickAudio" rotation="-5.49555e-05 41.7993 -6.07165e-05" nodeId="202" fileIds="52" range="7" innerRange="3" volume="0.1" loops="0" randomPlayback="true" probabilities="1" retriggerDelay="10 20"/>
+                    </Shape>
+                    <Shape name="chick_posed" translation="-0.363228 0.421458 -0.277411" rotation="2.76215e-05 36.399 5.11014e-07" shapeId="23" clipDistance="300" nodeId="204" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.595456 0.421458 0.181976" rotation="2.70923e-05 -28.7686 4.69237e-07" shapeId="23" clipDistance="300" nodeId="205" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.595456 0.421458 -0.0439137" rotation="3.00731e-05 81.5092 2.78571e-06" shapeId="23" clipDistance="300" nodeId="206" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.595456 0.421458 -0.234524" rotation="-1.00597e-05 -87.9248 2.37431e-05" shapeId="23" clipDistance="300" nodeId="207" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.792547 0.421458 0.205932" rotation="1.34081e-05 -16.809 8.98137e-07" shapeId="23" clipDistance="300" nodeId="208" castsShadows="true" receiveShadows="true" materialIds="6">
+                        <AudioSource name="chickAudio" rotation="3.21602e-07 -90 0" nodeId="209" fileIds="52" range="7" innerRange="3" volume="0.1" loops="0" randomPlayback="true" probabilities="1" retriggerDelay="10 20"/>
+                    </Shape>
+                    <Shape name="chick_posed" translation="-0.792547 0.421458 -0.0195468" rotation="1.5229e-05 61.1588 1.78232e-06" shapeId="23" clipDistance="300" nodeId="211" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.792547 0.421458 -0.260313" rotation="1.35979e-05 -4.64194 8.62596e-07" shapeId="23" clipDistance="300" nodeId="212" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.809211 1.08856 0.212805" rotation="-180 -87.082 -180" shapeId="23" clipDistance="300" nodeId="213" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.809211 1.08856 -0.00898391" rotation="-180 10.2687 -180" shapeId="23" clipDistance="300" nodeId="214" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.809211 1.08856 -0.250708" rotation="-180 -75.3036 -180" shapeId="23" clipDistance="300" nodeId="215" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.568683 1.08856 0.196836" rotation="2.74273e-05 -19.5013 -3.26988e-07" shapeId="23" clipDistance="300" nodeId="216" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.568683 1.08856 -0.0280469" rotation="2.71241e-05 55.3454 -2.39322e-07" shapeId="23" clipDistance="300" nodeId="217" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.568683 1.08856 -0.261922" rotation="2.71241e-05 55.3454 -2.39322e-07" shapeId="23" clipDistance="300" nodeId="218" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.376634 1.08856 0.191146" rotation="-180 -48.7989 -180" shapeId="23" clipDistance="300" nodeId="219" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.364101 1.08856 -0.0376931" rotation="2.88449e-05 -65.2871 -1.66693e-06" shapeId="23" clipDistance="300" nodeId="220" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.362158 1.08856 -0.285477" rotation="180 -46.5312 -180" shapeId="23" clipDistance="300" nodeId="221" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.154811 1.08856 0.165902" rotation="2.75674e-05 -18.7944 -7.36152e-07" shapeId="23" clipDistance="300" nodeId="222" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.154811 1.08856 -0.0306762" rotation="3.09625e-05 39.7701 0" shapeId="23" clipDistance="300" nodeId="223" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.154811 1.08856 -0.257337" rotation="2.70689e-05 -31.2738 4.81237e-07" shapeId="23" clipDistance="300" nodeId="224" castsShadows="true" receiveShadows="true" materialIds="6">
+                        <AudioSource name="chickAudio" rotation="-4.80494e-05 31.5005 -4.91933e-05" nodeId="225" fileIds="52" range="7" innerRange="3" volume="0.1" loops="0" randomPlayback="true" probabilities="1" retriggerDelay="10 20"/>
+                    </Shape>
+                    <Shape name="chick_posed" translation="-0.164467 1.08856 0.202344" rotation="-180 -73.8568 180" shapeId="23" clipDistance="300" nodeId="227" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.164467 1.08856 -0.019089" rotation="2.67555e-05 -53.8533 6.97314e-07" shapeId="23" clipDistance="300" nodeId="228" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.143605 1.08856 -0.230346" rotation="-180 -68.4557 180" shapeId="23" clipDistance="300" nodeId="229" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.363228 1.08856 0.214293" rotation="2.68907e-05 -46.1124 5.9332e-07" shapeId="23" clipDistance="300" nodeId="230" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.363228 1.08856 -0.0220924" rotation="-180 -43.5565 180" shapeId="23" clipDistance="300" nodeId="231" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.363228 1.08856 -0.277411" rotation="2.66961e-05 -56.5177 7.45579e-07" shapeId="23" clipDistance="300" nodeId="232" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.595456 1.08856 0.181976" rotation="-180 -58.413 -180" shapeId="23" clipDistance="300" nodeId="233" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.595456 1.08856 -0.0439137" rotation="2.72348e-05 -11.4075 4.19603e-07" shapeId="23" clipDistance="300" nodeId="234" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.595456 1.08856 -0.234524" rotation="-180 0.840817 180" shapeId="23" clipDistance="300" nodeId="235" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.792547 1.08856 0.205932" rotation="-180 -70.3599 -180" shapeId="23" clipDistance="300" nodeId="236" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.792547 1.08856 -0.0195468" rotation="1.31354e-05 -31.758 1.01116e-06" shapeId="23" clipDistance="300" nodeId="237" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.792547 1.08856 -0.260313" rotation="-180 -82.4414 180" shapeId="23" clipDistance="300" nodeId="238" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.809211 1.82452 0.212805" rotation="2.73199e-05 2.26605 0" shapeId="23" clipDistance="300" nodeId="239" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.809211 1.82452 -0.00898391" rotation="-180 -85.1557 180" shapeId="23" clipDistance="300" nodeId="240" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.809211 1.82452 -0.250708" rotation="2.74405e-05 -9.32702 -7.55984e-07" shapeId="23" clipDistance="300" nodeId="241" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.568683 1.82452 0.196836" rotation="2.41195e-05 75.8675 -3.31044e-06" shapeId="23" clipDistance="300" nodeId="242" castsShadows="true" receiveShadows="true" materialIds="6">
+                        <AudioSource name="chickAudio" rotation="-0.000122042 -70.3855 9.08732e-05" nodeId="243" fileIds="52" range="7" innerRange="3" volume="0.1" loops="0" randomPlayback="true" probabilities="1" retriggerDelay="10 20"/>
+                    </Shape>
+                    <Shape name="chick_posed" translation="0.568683 1.82452 -0.0280469" rotation="-180 29.286 180" shapeId="23" clipDistance="300" nodeId="245" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.568683 1.82452 -0.261922" rotation="-180 29.286 180" shapeId="23" clipDistance="300" nodeId="246" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.376634 1.82452 0.191146" rotation="3.182e-05 -35.8316 -1.63711e-06" shapeId="23" clipDistance="300" nodeId="247" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.364101 1.82452 -0.0376931" rotation="1.35058e-05 30.0792 -3.16939e-07" shapeId="23" clipDistance="300" nodeId="248" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.362158 1.82452 -0.285477" rotation="1.88389e-05 -38.1001 -8.57735e-06" shapeId="23" clipDistance="300" nodeId="249" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.154811 1.82452 0.165902" rotation="2.40815e-05 76.5742 -3.34409e-06" shapeId="23" clipDistance="300" nodeId="250" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.154811 1.82452 -0.0306762" rotation="-180 44.8614 180" shapeId="23" clipDistance="300" nodeId="251" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="0.154811 1.82452 -0.257337" rotation="2.73174e-05 64.1921 0" shapeId="23" clipDistance="300" nodeId="252" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.164467 1.82452 0.202344" rotation="2.73242e-05 -10.7104 0" shapeId="23" clipDistance="300" nodeId="253" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.164467 1.82452 -0.019089" rotation="3.21225e-05 41.5156 1.81133e-06" shapeId="23" clipDistance="300" nodeId="254" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.143605 1.82452 -0.230346" rotation="2.73301e-05 -16.0776 0" shapeId="23" clipDistance="300" nodeId="255" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.363228 1.82452 0.214293" rotation="4.40747e-05 49.2561 4.16028e-06" shapeId="23" clipDistance="300" nodeId="256" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.363228 1.82452 -0.0220924" rotation="2.57382e-05 -41.0748 2.53308e-06" shapeId="23" clipDistance="300" nodeId="257" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.363228 1.82452 -0.277411" rotation="2.7732e-05 38.8512 6.61595e-07" shapeId="23" clipDistance="300" nodeId="258" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.595456 1.82452 0.181976" rotation="4.13554e-05 -26.2193 -8.51813e-07" shapeId="23" clipDistance="300" nodeId="259" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.595456 1.82452 -0.0439137" rotation="-2.917e-06 83.8324 -2.93979e-06" shapeId="23" clipDistance="300" nodeId="260" castsShadows="true" receiveShadows="true" materialIds="6">
+                        <AudioSource name="chickAudio" rotation="3.21602e-07 -90 0" nodeId="261" fileIds="52" range="7" innerRange="3" volume="0.1" loops="0" randomPlayback="true" probabilities="1" retriggerDelay="10 20"/>
+                    </Shape>
+                    <Shape name="chick_posed" translation="-0.595456 1.82452 -0.234524" rotation="-2.57869e-05 -85.4721 3.9586e-05" shapeId="23" clipDistance="300" nodeId="263" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.792547 1.82452 0.205932" rotation="2.74306e-05 -14.2704 -4.56724e-07" shapeId="23" clipDistance="300" nodeId="264" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.792547 1.82452 -0.0195468" rotation="1.66728e-05 63.6102 3.39771e-06" shapeId="23" clipDistance="300" nodeId="265" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                    <Shape name="chick_posed" translation="-0.792547 1.82452 -0.260313" rotation="1.36169e-05 -2.19008 1.28407e-06" shapeId="23" clipDistance="300" nodeId="266" castsShadows="true" receiveShadows="true" materialIds="6"/>
+                </TransformGroup>
+                <TransformGroup name="soundNode" translation="0 1.37043 0" nodeId="267"/>
+                <TransformGroup name="incubatorLights" nodeId="268">
+                    <Shape name="incubatorLight1" lockedgroup="true" translation="0 2.41825 0" scale="1.463 0.5 1" shapeId="24" visibility="false" clipDistance="120" nodeId="269" castsShadows="true" receiveShadows="true" materialIds="17">
+                        <TransformGroup name="incubatorLight1_illum" nodeId="270">
+                            <Shape name="emissive" translation="-3.8147e-08 -0.0349915 1.19209e-08" scale="1 1 1.00987" shapeId="25" clipDistance="100" nodeId="271" castsShadows="true" receiveShadows="true" materialIds="16"/>
+                            <Light name="pointLight1" translation="-0.322996 -0.634206 0.162015" clipDistance="75" nodeId="272" type="point" color="0.921086 0.203657 0.203657" emitDiffuse="true" emitSpecular="true" range="1"/>
+                            <Light name="pointLight1" translation="0.331297 -0.634206 0.162015" clipDistance="75" nodeId="273" type="point" color="0.921086 0.203657 0.203657" emitDiffuse="true" emitSpecular="true" range="1"/>
+                        </TransformGroup>
+                    </Shape>
+                    <Shape name="incubatorLight2" lockedgroup="true" translation="0 1.796 0" scale="1.463 0.5 1" shapeId="24" visibility="false" clipDistance="120" nodeId="274" castsShadows="true" receiveShadows="true" materialIds="17">
+                        <TransformGroup name="incubatorLight2_illum" nodeId="275">
+                            <Shape name="emissive" translation="-3.8147e-08 -0.0349915 1.19209e-08" scale="1 1 1.00987" shapeId="25" clipDistance="100" nodeId="276" castsShadows="true" receiveShadows="true" materialIds="16"/>
+                            <Light name="pointLight1" translation="-0.323226 -0.704866 0.162015" clipDistance="75" nodeId="277" type="point" color="0.921086 0.203657 0.203657" emitDiffuse="true" emitSpecular="true" range="1"/>
+                            <Light name="pointLight1" translation="0.330909 -0.704866 0.162015" clipDistance="75" nodeId="278" type="point" color="0.921086 0.203657 0.203657" emitDiffuse="true" emitSpecular="true" range="1"/>
+                        </TransformGroup>
+                    </Shape>
+                    <Shape name="incubatorLight3" lockedgroup="true" translation="0 1.05971 0" scale="1.463 0.5 1" shapeId="24" visibility="false" clipDistance="120" nodeId="279" castsShadows="true" receiveShadows="true" materialIds="17">
+                        <TransformGroup name="incubatorLight3_illum" nodeId="280">
+                            <Shape name="emissive" translation="-3.8147e-08 -0.0349915 1.19209e-08" scale="1 1 1.00987" shapeId="25" clipDistance="100" nodeId="281" castsShadows="true" receiveShadows="true" materialIds="16"/>
+                            <Light name="pointLight1" translation="-0.337369 -0.683899 0.162015" clipDistance="75" nodeId="282" type="point" color="0.921086 0.203657 0.203657" emitDiffuse="true" emitSpecular="true" range="1"/>
+                            <Light name="pointLight1" translation="0.33724 -0.683899 0.162015" clipDistance="75" nodeId="283" type="point" color="0.921086 0.203657 0.203657" emitDiffuse="true" emitSpecular="true" range="1"/>
+                        </TransformGroup>
+                    </Shape>
+                    <TransformGroup name="incubatorLight1" lockedgroup="true" translation="0 2.45169 0" rotation="0 90 0" scale="1 0.583 1.34755" clipDistance="70" nodeId="284">
+                        <TransformGroup name="visual_lod" lodDistance="0 10" nodeId="285">
+                            <TransformGroup name="LOD0" translation="0 -0.207249 0" nodeId="286">
+                                <Shape name="fluorescentLight01" translation="0 0.207249 0" shapeId="26" nodeId="287" castsShadows="true" receiveShadows="true" materialIds="14"/>
+                                <Shape name="glass" translation="0 0.207249 0" shapeId="27" nodeId="288" castsShadows="true" receiveShadows="true" materialIds="27"/>
+                            </TransformGroup>
+                            <TransformGroup name="LOD1" translation="0 -0.207249 0" nodeId="289">
+                                <Shape name="fluorescentLight01" translation="0 0.207249 0" shapeId="28" nodeId="290" castsShadows="true" receiveShadows="true" materialIds="14"/>
+                            </TransformGroup>
+                        </TransformGroup>
+                        <TransformGroup name="incubatorLight1_illum" nodeId="291">
+                            <Shape name="selfIllum" shapeId="29" nodeId="292" castsShadows="true" receiveShadows="true" materialIds="15"/>
+                            <Light name="pointLight1" translation="0.002 -0.634206 0.360707" clipDistance="75" nodeId="293" type="point" color="0.921086 0.203657 0.203657" emitDiffuse="true" emitSpecular="true" range="1"/>
+                            <Light name="pointLight1" translation="0.00178795 -0.634206 -0.345224" clipDistance="75" nodeId="294" type="point" color="0.921086 0.203657 0.203657" emitDiffuse="true" emitSpecular="true" range="1"/>
+                        </TransformGroup>
+                    </TransformGroup>
+                    <TransformGroup name="incubatorLight2" lockedgroup="true" translation="0 1.8129 0" rotation="0 90 0" scale="1 0.583 1.34755" clipDistance="70" nodeId="295">
+                        <TransformGroup name="visual_lod" lodDistance="0 10" nodeId="296">
+                            <TransformGroup name="LOD0" translation="0 -0.207249 0" nodeId="297">
+                                <Shape name="fluorescentLight01" translation="0 0.207249 0" shapeId="26" nodeId="298" castsShadows="true" receiveShadows="true" materialIds="14"/>
+                                <Shape name="glass" translation="0 0.207249 0" shapeId="27" nodeId="299" castsShadows="true" receiveShadows="true" materialIds="27"/>
+                            </TransformGroup>
+                            <TransformGroup name="LOD1" translation="0 -0.207249 0" nodeId="300">
+                                <Shape name="fluorescentLight01" translation="0 0.207249 0" shapeId="28" nodeId="301" castsShadows="true" receiveShadows="true" materialIds="14"/>
+                            </TransformGroup>
+                        </TransformGroup>
+                        <TransformGroup name="incubatorLight2_illum" nodeId="302">
+                            <Shape name="selfIllum" shapeId="29" nodeId="303" castsShadows="true" receiveShadows="true" materialIds="15"/>
+                            <Light name="pointLight1" translation="0.002 -0.634206 0.360707" clipDistance="75" nodeId="304" type="point" color="0.921086 0.203657 0.203657" emitDiffuse="true" emitSpecular="true" range="1"/>
+                            <Light name="pointLight1" translation="0.00178795 -0.634206 -0.345224" clipDistance="75" nodeId="305" type="point" color="0.921086 0.203657 0.203657" emitDiffuse="true" emitSpecular="true" range="1"/>
+                        </TransformGroup>
+                    </TransformGroup>
+                    <TransformGroup name="incubatorLight3" lockedgroup="true" translation="0 1.07424 0" rotation="0 90 0" scale="1 0.583 1.34755" clipDistance="70" nodeId="306">
+                        <TransformGroup name="visual_lod" lodDistance="0 10" nodeId="307">
+                            <TransformGroup name="LOD0" translation="0 -0.207249 0" nodeId="308">
+                                <Shape name="fluorescentLight01" translation="0 0.207249 0" shapeId="26" nodeId="309" castsShadows="true" receiveShadows="true" materialIds="14"/>
+                                <Shape name="glass" translation="0 0.207249 0" shapeId="27" nodeId="310" castsShadows="true" receiveShadows="true" materialIds="27"/>
+                            </TransformGroup>
+                            <TransformGroup name="LOD1" translation="0 -0.207249 0" nodeId="311">
+                                <Shape name="fluorescentLight01" translation="0 0.207249 0" shapeId="28" nodeId="312" castsShadows="true" receiveShadows="true" materialIds="14"/>
+                            </TransformGroup>
+                        </TransformGroup>
+                        <TransformGroup name="incubatorLight3_illum" nodeId="313">
+                            <Shape name="selfIllum" shapeId="29" nodeId="314" castsShadows="true" receiveShadows="true" materialIds="15"/>
+                            <Light name="pointLight1" translation="0.002 -0.634206 0.360707" clipDistance="75" nodeId="315" type="point" color="0.921086 0.203657 0.203657" emitDiffuse="true" emitSpecular="true" range="1"/>
+                            <Light name="pointLight1" translation="0.00178795 -0.634206 -0.345224" clipDistance="75" nodeId="316" type="point" color="0.921086 0.203657 0.203657" emitDiffuse="true" emitSpecular="true" range="1"/>
+                        </TransformGroup>
+                    </TransformGroup>
+                </TransformGroup>
+                <TransformGroup name="visibilityNodes_outputAnimated" nodeId="317">
+                    <TransformGroup name="chick_posed001" translation="0.809211 0.421458 0.212805" clipDistance="300" nodeId="318">
+                        <AudioSource name="chickAudio" nodeId="319" fileIds="52" range="7" innerRange="3" volume="0.1" loops="0" randomPlayback="true" probabilities="1" retriggerDelay="10 20"/>
+                    </TransformGroup>
+                    <TransformGroup name="chick_posed002" translation="0.809211 0.421458 -0.00898391" rotation="-180 -82.6479 -180" clipDistance="300" nodeId="321">
+                        <AudioSource name="chickAudio" rotation="3.21602e-07 -90 0" nodeId="322" fileIds="52" range="7" innerRange="3" volume="0.1" loops="0" randomPlayback="true" probabilities="1" retriggerDelay="10 20"/>
+                    </TransformGroup>
+                    <TransformGroup name="chick_posed003" translation="0.809211 0.421458 -0.250708" rotation="2.73828e-05 -11.7797 -3.1486e-07" clipDistance="300" nodeId="324">
+                        <AudioSource name="chickAudio" rotation="3.21602e-07 -90 0" nodeId="325" fileIds="52" range="7" innerRange="3" volume="0.1" loops="0" randomPlayback="true" probabilities="1" retriggerDelay="10 20"/>
+                    </TransformGroup>
+                    <TransformGroup name="chick_posed004" translation="0.568683 0.421458 0.196836" rotation="2.62834e-05 73.4154 -1.07988e-06" clipDistance="300" nodeId="327">
+                        <AudioSource name="chickAudio" rotation="3.21602e-07 -90 0" nodeId="328" fileIds="52" range="7" innerRange="3" volume="0.1" loops="0" randomPlayback="true" probabilities="1" retriggerDelay="10 20"/>
+                    </TransformGroup>
+                    <TransformGroup name="chick_posed005" translation="0.568683 0.421458 -0.0280469" rotation="-180 31.7378 -180" clipDistance="300" nodeId="330">
+                        <AudioSource name="chickAudio" rotation="3.21602e-07 -90 0" nodeId="331" fileIds="52" range="7" innerRange="3" volume="0.1" loops="0" randomPlayback="true" probabilities="1" retriggerDelay="10 20"/>
+                    </TransformGroup>
+                    <TransformGroup name="chick_posed006" translation="0.568683 0.421458 -0.261922" rotation="-180 31.7378 -180" clipDistance="300" nodeId="333">
+                        <AudioSource name="chickAudio" rotation="3.21602e-07 -90 0" nodeId="334" fileIds="52" range="7" innerRange="3" volume="0.1" loops="0" randomPlayback="true" probabilities="1" retriggerDelay="10 20"/>
+                    </TransformGroup>
+                    <TransformGroup name="chick_posed007" translation="0.376634 0.421458 0.191146" rotation="2.78788e-05 -38.1668 -8.86387e-07" clipDistance="300" nodeId="336"/>
+                    <TransformGroup name="chick_posed008" translation="0.364101 0.421458 -0.0376931" rotation="2.69661e-05 27.6298 -7.86594e-07" clipDistance="300" nodeId="337"/>
+                    <TransformGroup name="chick_posed009" translation="0.362158 0.421458 -0.285477" rotation="2.7927e-05 -40.5533 -9.17208e-07" clipDistance="300" nodeId="338"/>
+                    <TransformGroup name="chick_posed010" translation="0.154811 0.421458 0.165902" rotation="2.48804e-05 74.1222 -2.54727e-06" clipDistance="300" nodeId="339"/>
+                    <TransformGroup name="chick_posed011" translation="0.154811 0.421458 -0.0306762" rotation="-180 47.3131 180" clipDistance="300" nodeId="340"/>
+                    <TransformGroup name="chick_posed012" translation="0.154811 0.421458 -0.257337" rotation="2.80811e-05 61.643 8.65981e-07" clipDistance="300" nodeId="341"/>
+                    <TransformGroup name="chick_posed013" translation="-0.164467 0.421458 0.202344" rotation="2.72222e-05 -13.2259 4.22518e-07" clipDistance="300" nodeId="342"/>
+                    <TransformGroup name="chick_posed014" translation="-0.164467 0.421458 -0.019089" rotation="2.76526e-05 39.0635 5.29736e-07" clipDistance="300" nodeId="343"/>
+                    <TransformGroup name="chick_posed015" translation="-0.143605 0.421458 -0.230346" rotation="2.718e-05 -18.6265 4.34048e-07" clipDistance="300" nodeId="344"/>
+                    <TransformGroup name="chick_posed016" translation="-0.363228 0.421458 0.214293" rotation="2.77566e-05 46.8044 6.00906e-07" clipDistance="300" nodeId="345"/>
+                    <TransformGroup name="chick_posed017" translation="-0.363228 0.421458 -0.0220924" rotation="2.69277e-05 -43.526 5.67284e-07" clipDistance="300" nodeId="346">
+                        <AudioSource name="chickAudio" rotation="-5.49555e-05 41.7993 -6.07165e-05" nodeId="347" fileIds="52" range="7" innerRange="3" volume="0.1" loops="0" randomPlayback="true" probabilities="1" retriggerDelay="10 20"/>
+                    </TransformGroup>
+                    <TransformGroup name="chick_posed018" translation="-0.363228 0.421458 -0.277411" rotation="2.76215e-05 36.399 5.11014e-07" clipDistance="300" nodeId="349"/>
+                    <TransformGroup name="chick_posed019" translation="-0.595456 0.421458 0.181976" rotation="2.70923e-05 -28.7686 4.69237e-07" clipDistance="300" nodeId="350"/>
+                    <TransformGroup name="chick_posed020" translation="-0.595456 0.421458 -0.0439137" rotation="3.00731e-05 81.5092 2.78571e-06" clipDistance="300" nodeId="351"/>
+                    <TransformGroup name="chick_posed021" translation="-0.595456 0.421458 -0.234524" rotation="-1.00597e-05 -87.9248 2.37431e-05" clipDistance="300" nodeId="352"/>
+                    <TransformGroup name="chick_posed022" translation="-0.792547 0.421458 0.205932" rotation="1.34081e-05 -16.809 8.98137e-07" clipDistance="300" nodeId="353">
+                        <AudioSource name="chickAudio" rotation="3.21602e-07 -90 0" nodeId="354" fileIds="52" range="7" innerRange="3" volume="0.1" loops="0" randomPlayback="true" probabilities="1" retriggerDelay="10 20"/>
+                    </TransformGroup>
+                    <TransformGroup name="chick_posed023" translation="-0.792547 0.421458 -0.0195468" rotation="1.5229e-05 61.1588 1.78232e-06" clipDistance="300" nodeId="356"/>
+                    <TransformGroup name="chick_posed024" translation="-0.792547 0.421458 -0.260313" rotation="1.35979e-05 -4.64194 8.62596e-07" clipDistance="300" nodeId="357"/>
+                    <TransformGroup name="chick_posed025" translation="0.809211 1.08856 0.212805" rotation="-180 -87.082 -180" clipDistance="300" nodeId="358"/>
+                    <TransformGroup name="chick_posed026" translation="0.809211 1.08856 -0.00898391" rotation="-180 10.2687 -180" clipDistance="300" nodeId="359"/>
+                    <TransformGroup name="chick_posed027" translation="0.809211 1.08856 -0.250708" rotation="-180 -75.3036 -180" clipDistance="300" nodeId="360"/>
+                    <TransformGroup name="chick_posed028" translation="0.568683 1.08856 0.196836" rotation="2.74273e-05 -19.5013 -3.26988e-07" clipDistance="300" nodeId="361"/>
+                    <TransformGroup name="chick_posed029" translation="0.568683 1.08856 -0.0280469" rotation="2.71241e-05 55.3454 -2.39322e-07" clipDistance="300" nodeId="362"/>
+                    <TransformGroup name="chick_posed030" translation="0.568683 1.08856 -0.261922" rotation="2.71241e-05 55.3454 -2.39322e-07" clipDistance="300" nodeId="363"/>
+                    <TransformGroup name="chick_posed031" translation="0.376634 1.08856 0.191146" rotation="-180 -48.7989 -180" clipDistance="300" nodeId="364"/>
+                    <TransformGroup name="chick_posed032" translation="0.364101 1.08856 -0.0376931" rotation="2.88449e-05 -65.2871 -1.66693e-06" clipDistance="300" nodeId="365"/>
+                    <TransformGroup name="chick_posed033" translation="0.362158 1.08856 -0.285477" rotation="180 -46.5312 -180" clipDistance="300" nodeId="366"/>
+                    <TransformGroup name="chick_posed034" translation="0.154811 1.08856 0.165902" rotation="2.75674e-05 -18.7944 -7.36152e-07" clipDistance="300" nodeId="367"/>
+                    <TransformGroup name="chick_posed035" translation="0.154811 1.08856 -0.0306762" rotation="3.09625e-05 39.7701 0" clipDistance="300" nodeId="368"/>
+                    <TransformGroup name="chick_posed036" translation="0.154811 1.08856 -0.257337" rotation="2.70689e-05 -31.2738 4.81237e-07" clipDistance="300" nodeId="369">
+                        <AudioSource name="chickAudio" rotation="-4.80494e-05 31.5005 -4.91933e-05" nodeId="370" fileIds="52" range="7" innerRange="3" volume="0.1" loops="0" randomPlayback="true" probabilities="1" retriggerDelay="10 20"/>
+                    </TransformGroup>
+                    <TransformGroup name="chick_posed037" translation="-0.164467 1.08856 0.202344" rotation="-180 -73.8568 180" clipDistance="300" nodeId="372"/>
+                    <TransformGroup name="chick_posed038" translation="-0.164467 1.08856 -0.019089" rotation="2.67555e-05 -53.8533 6.97314e-07" clipDistance="300" nodeId="373"/>
+                    <TransformGroup name="chick_posed039" translation="-0.143605 1.08856 -0.230346" rotation="-180 -68.4557 180" clipDistance="300" nodeId="374"/>
+                    <TransformGroup name="chick_posed040" translation="-0.363228 1.08856 0.214293" rotation="2.68907e-05 -46.1124 5.9332e-07" clipDistance="300" nodeId="375"/>
+                    <TransformGroup name="chick_posed041" translation="-0.363228 1.08856 -0.0220924" rotation="-180 -43.5565 180" clipDistance="300" nodeId="376"/>
+                    <TransformGroup name="chick_posed042" translation="-0.363228 1.08856 -0.277411" rotation="2.66961e-05 -56.5177 7.45579e-07" clipDistance="300" nodeId="377"/>
+                    <TransformGroup name="chick_posed043" translation="-0.595456 1.08856 0.181976" rotation="-180 -58.413 -180" clipDistance="300" nodeId="378"/>
+                    <TransformGroup name="chick_posed044" translation="-0.595456 1.08856 -0.0439137" rotation="2.72348e-05 -11.4075 4.19603e-07" clipDistance="300" nodeId="379"/>
+                    <TransformGroup name="chick_posed045" translation="-0.595456 1.08856 -0.234524" rotation="-180 0.840817 180" clipDistance="300" nodeId="380"/>
+                    <TransformGroup name="chick_posed046" translation="-0.792547 1.08856 0.205932" rotation="-180 -70.3599 -180" clipDistance="300" nodeId="381"/>
+                    <TransformGroup name="chick_posed047" translation="-0.792547 1.08856 -0.0195468" rotation="1.31354e-05 -31.758 1.01116e-06" clipDistance="300" nodeId="382"/>
+                    <TransformGroup name="chick_posed048" translation="-0.792547 1.08856 -0.260313" rotation="-180 -82.4414 180" clipDistance="300" nodeId="383"/>
+                    <TransformGroup name="chick_posed049" translation="0.809211 1.82452 0.212805" rotation="2.73199e-05 2.26605 0" clipDistance="300" nodeId="384"/>
+                    <TransformGroup name="chick_posed050" translation="0.809211 1.82452 -0.00898391" rotation="-180 -85.1557 180" clipDistance="300" nodeId="385"/>
+                    <TransformGroup name="chick_posed051" translation="0.809211 1.82452 -0.250708" rotation="2.74405e-05 -9.32702 -7.55984e-07" clipDistance="300" nodeId="386"/>
+                    <TransformGroup name="chick_posed052" translation="0.568683 1.82452 0.196836" rotation="2.41195e-05 75.8675 -3.31044e-06" clipDistance="300" nodeId="387">
+                        <AudioSource name="chickAudio" rotation="-0.000122042 -70.3855 9.08732e-05" nodeId="388" fileIds="52" range="7" innerRange="3" volume="0.1" loops="0" randomPlayback="true" probabilities="1" retriggerDelay="10 20"/>
+                    </TransformGroup>
+                    <TransformGroup name="chick_posed053" translation="0.568683 1.82452 -0.0280469" rotation="-180 29.286 180" clipDistance="300" nodeId="390"/>
+                    <TransformGroup name="chick_posed054" translation="0.568683 1.82452 -0.261922" rotation="-180 29.286 180" clipDistance="300" nodeId="391"/>
+                    <TransformGroup name="chick_posed055" translation="0.376634 1.82452 0.191146" rotation="3.182e-05 -35.8316 -1.63711e-06" clipDistance="300" nodeId="392"/>
+                    <TransformGroup name="chick_posed056" translation="0.364101 1.82452 -0.0376931" rotation="1.35058e-05 30.0792 -3.16939e-07" clipDistance="300" nodeId="393"/>
+                    <TransformGroup name="chick_posed057" translation="0.362158 1.82452 -0.285477" rotation="1.88389e-05 -38.1001 -8.57735e-06" clipDistance="300" nodeId="394"/>
+                    <TransformGroup name="chick_posed058" translation="0.154811 1.82452 0.165902" rotation="2.40815e-05 76.5742 -3.34409e-06" clipDistance="300" nodeId="395"/>
+                    <TransformGroup name="chick_posed059" translation="0.154811 1.82452 -0.0306762" rotation="-180 44.8614 180" clipDistance="300" nodeId="396"/>
+                    <TransformGroup name="chick_posed060" translation="0.154811 1.82452 -0.257337" rotation="2.73174e-05 64.1921 0" clipDistance="300" nodeId="397"/>
+                    <TransformGroup name="chick_posed061" translation="-0.164467 1.82452 0.202344" rotation="2.73242e-05 -10.7104 0" clipDistance="300" nodeId="398"/>
+                    <TransformGroup name="chick_posed062" translation="-0.164467 1.82452 -0.019089" rotation="3.21225e-05 41.5156 1.81133e-06" clipDistance="300" nodeId="399"/>
+                    <TransformGroup name="chick_posed063" translation="-0.143605 1.82452 -0.230346" rotation="2.73301e-05 -16.0776 0" clipDistance="300" nodeId="400"/>
+                    <TransformGroup name="chick_posed064" translation="-0.363228 1.82452 0.214293" rotation="4.40747e-05 49.2561 4.16028e-06" clipDistance="300" nodeId="401"/>
+                    <TransformGroup name="chick_posed065" translation="-0.363228 1.82452 -0.0220924" rotation="2.57382e-05 -41.0748 2.53308e-06" clipDistance="300" nodeId="402"/>
+                    <TransformGroup name="chick_posed066" translation="-0.363228 1.82452 -0.277411" rotation="2.7732e-05 38.8512 6.61595e-07" clipDistance="300" nodeId="403"/>
+                    <TransformGroup name="chick_posed067" translation="-0.595456 1.82452 0.181976" rotation="4.13554e-05 -26.2193 -8.51813e-07" clipDistance="300" nodeId="404"/>
+                    <TransformGroup name="chick_posed068" translation="-0.595456 1.82452 -0.0439137" rotation="-2.917e-06 83.8324 -2.93979e-06" clipDistance="300" nodeId="405">
+                        <AudioSource name="chickAudio" rotation="3.21602e-07 -90 0" nodeId="406" fileIds="52" range="7" innerRange="3" volume="0.1" loops="0" randomPlayback="true" probabilities="1" retriggerDelay="10 20"/>
+                    </TransformGroup>
+                    <TransformGroup name="chick_posed069" translation="-0.595456 1.82452 -0.234524" rotation="-2.57869e-05 -85.4721 3.9586e-05" clipDistance="300" nodeId="408"/>
+                    <TransformGroup name="chick_posed070" translation="-0.792547 1.82452 0.205932" rotation="2.74306e-05 -14.2704 -4.56724e-07" clipDistance="300" nodeId="409"/>
+                    <TransformGroup name="chick_posed071" translation="-0.792547 1.82452 -0.0195468" rotation="1.66728e-05 63.6102 3.39771e-06" clipDistance="300" nodeId="410"/>
+                    <TransformGroup name="chick_posed072" translation="-0.792547 1.82452 -0.260313" rotation="1.36169e-05 -2.19008 1.28407e-06" clipDistance="300" nodeId="411"/>
+                </TransformGroup>
+            </TransformGroup>
+            <Shape name="infoTrigger" translation="0.05232 0 0.497056" rotation="0 90 0" shapeId="30" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="412" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="20"/>
+        </TransformGroup>
+    </Scene>
+</i3D>

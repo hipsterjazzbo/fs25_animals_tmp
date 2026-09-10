@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<l10n>
+	<translationContributors>BavarianRedneck, Ágica</translationContributors>
+	<texts>
+		<!--CATTLE-->
+		<text name="animal_cattleF_GS01" text="Ez egy nőstény borjú. Egy napon produktív tehénné válik."/>
+		<text name="animal_cattleF_GS02" text="Ez egy nőstény választási borjú. A választási borjak már szilárd táplálékot esznek."/>
+		<text name="animal_cattleF_GS03" text="Ez egy üsző."/>
+		<text name="animal_cattleF_GS04" text="Ez egy teljesen kifejlett tehén."/>
+		<text name="animal_cattleM_GS01" text="Ez egy hím borjú. Egy napon produktív bikává érik."/>
+		<text name="animal_cattleM_GS02" text="Ez egy hím választási borjú. A választási borjak már szilárd táplálékot esznek."/>
+		<text name="animal_cattleM_GS03" text="Ez egy növendék bika."/>
+		<text name="animal_cattleM_GS04" text="Ez a bika teljesen kifejlett. Haszonnal eladható."/>
+		<text name="fillType_cowHolsteinBRC" text="Holstein tehén"/>
+		<text name="fillType_bullHolsteinBRC" text="Holstein bika"/>
+		<text name="fillType_cowRedHolsteinBRC" text="Vörös holstein tehén"/>
+		<text name="fillType_bullRedHolsteinBRC" text="Vörös holstein bika"/>
+		<text name="fillType_cowBrownSwissBRC" text="Brown Swiss tehén"/>
+		<text name="fillType_bullBrownSwissBRC" text="Brown Swiss bika"/>
+		<text name="fillType_cowLimousinBRC" text="Limousin tehén"/>
+		<text name="fillType_bullLimousinBRC" text="Limousin bika"/>
+		<text name="fillType_cowAngusBRC" text="Angus tehén"/>
+		<text name="fillType_bullAngusBRC" text="Angus bika"/>
+		<text name="fillType_cowWaterbuffaloBRC" text="Vízibivaly tehén"/>
+		<text name="fillType_bullWaterbuffaloBRC" text="Vízibivaly bika"/>
+		<text name="shopItem_animalHolstein_F_GS01" text="Holstein üszőborjú"/>
+		<text name="shopItem_animalHolstein_F_GS02" text="Holstein nőstény választási borjú"/>
+		<text name="shopItem_animalHolstein_F_GS03" text="Holstein üsző"/>
+		<text name="shopItem_animalHolstein_F_GS04" text="Holstein tehén"/>
+		<text name="shopItem_animalHolstein_M_GS01" text="Holstein bikaborjú"/>
+		<text name="shopItem_animalHolstein_M_GS02" text="Holstein hím választási borjú"/>
+		<text name="shopItem_animalHolstein_M_GS03" text="Holstein növendék bika"/>
+		<text name="shopItem_animalHolstein_M_GS04" text="Holstein bika"/>
+		<text name="shopItem_animalRedHolstein_F_GS01" text="Vörös holstein üszőborjú"/>
+		<text name="shopItem_animalRedHolstein_F_GS02" text="Vörös holstein nőstény választási borjú"/>
+		<text name="shopItem_animalRedHolstein_F_GS03" text="Vörös holstein üsző"/>
+		<text name="shopItem_animalRedHolstein_F_GS04" text="Vörös holstein tehén"/>
+		<text name="shopItem_animalRedHolstein_M_GS01" text="Vörös holstein bikaborjú"/>
+		<text name="shopItem_animalRedHolstein_M_GS02" text="Vörös holstein hím választási borjú"/>
+		<text name="shopItem_animalRedHolstein_M_GS03" text="Vörös holstein növendék bika"/>
+		<text name="shopItem_animalRedHolstein_M_GS04" text="Vörös holstein bika"/>
+		<text name="shopItem_animalBrownSwiss_F_GS01" text="Brown Swiss üszőborjú"/>
+		<text name="shopItem_animalBrownSwiss_F_GS02" text="Brown Swiss nőstény választási borjú"/>
+		<text name="shopItem_animalBrownSwiss_F_GS03" text="Brown Swiss üsző"/>
+		<text name="shopItem_animalBrownSwiss_F_GS04" text="Brown Swiss tehén"/>
+		<text name="shopItem_animalBrownSwiss_M_GS01" text="Brown Swiss bikaborjú"/>
+		<text name="shopItem_animalBrownSwiss_M_GS02" text="Brown Swiss hím választási borjú"/>
+		<text name="shopItem_animalBrownSwiss_M_GS03" text="Brown Swiss növendék bika"/>
+		<text name="shopItem_animalBrownSwiss_M_GS04" text="Brown Swiss bika"/>
+		<text name="shopItem_animalLimousin_F_GS01" text="Limousin üszőborjú"/>
+		<text name="shopItem_animalLimousin_F_GS02" text="Limousin nőstény választási borjú"/>
+		<text name="shopItem_animalLimousin_F_GS03" text="Limousin üsző"/>
+		<text name="shopItem_animalLimousin_F_GS04" text="Limousin tehén"/>
+		<text name="shopItem_animalLimousin_M_GS01" text="Limousin bikaborjú"/>
+		<text name="shopItem_animalLimousin_M_GS02" text="Limousin hím választási borjú"/>
+		<text name="shopItem_animalLimousin_M_GS03" text="Limousin növendék bika"/>
+		<text name="shopItem_animalLimousin_M_GS04" text="Limousin bika"/>
+		<text name="shopItem_animalAngus_F_GS01" text="Angus üszőborjú"/>
+		<text name="shopItem_animalAngus_F_GS02" text="Angus nőstény választási borjú"/>
+		<text name="shopItem_animalAngus_F_GS03" text="Angus üsző"/>
+		<text name="shopItem_animalAngus_F_GS04" text="Angus tehén"/>
+		<text name="shopItem_animalAngus_M_GS01" text="Angus bikaborjú"/>
+		<text name="shopItem_animalAngus_M_GS02" text="Angus hím választási borjú"/>
+		<text name="shopItem_animalAngus_M_GS03" text="Angus növendék bika"/>
+		<text name="shopItem_animalAngus_M_GS04" text="Angus bika"/>
+		<text name="shopItem_animalWaterbuffalo_F_GS01" text="Vízibivaly üszőborjú"/>
+		<text name="shopItem_animalWaterbuffalo_F_GS02" text="Vízibivaly nőstény választási borjú"/>
+		<text name="shopItem_animalWaterbuffalo_F_GS03" text="Vízibivaly üsző"/>
+		<text name="shopItem_animalWaterbuffalo_F_GS04" text="Vízibivaly tehén"/>
+		<text name="shopItem_animalWaterbuffalo_M_GS01" text="Vízibivaly bikaborjú"/>
+		<text name="shopItem_animalWaterbuffalo_M_GS02" text="Vízibivaly hím választási borjú"/>
+		<text name="shopItem_animalWaterbuffalo_M_GS03" text="Vízibivaly növendék bika"/>
+		<text name="shopItem_animalWaterbuffalo_M_GS04" text="Vízibivaly bika"/>
+		<!--CHICKEN-->
+		<text name="animal_ChickensF_GS01Description" text="Ez egy tojócsibe. Egy napon produktív tojótyúkká érik."/>
+		<text name="animal_ChickensF_GS02Description" text="Ez egy tojócsibe. Egy napon produktív tojótyúkká érik."/>
+		<text name="animal_ChickensF_GS03Description" text="Ez egy jérce. Hamarosan elkezd tojást tojni."/>
+		<text name="animal_ChickensF_GS04Description" text="Ez egy teljesen kifejlett tyúk."/>
+		<text name="animal_ChickensM_GS01Description" text="Ez egy kakascsibe. Egy napon produktív kakassá érik."/>
+		<text name="animal_ChickensM_GS02Description" text="Ez egy kakascsibe. Egy napon produktív kakassá érik."/>
+		<text name="animal_ChickensM_GS03Description" text="Ez egy fiatal kakas."/>
+		<text name="animal_ChickensM_GS04Description" text="Ez egy teljesen kifejlett kakas."/>
+		<text name="fillType_henLohmannBRC" text="Lohmann tyúk"/>
+		<text name="fillType_roosterLohmannBRC" text="Lohmann kakas"/>
+		<text name="fillType_henLeghornBRC" text="Leghorn tyúk"/>
+		<text name="fillType_roosterLeghornBRC" text="Leghorn kakas"/>
+		<text name="fillType_henPlymouthrockBRC" text="Plymouth Rock tyúk"/>
+		<text name="fillType_roosterPlymouthrockBRC" text="Plymouth Rock kakas"/>
+		<text name="fillType_henBohusdalBRC" text="Bohusdal tyúk"/>
+		<text name="fillType_roosterBohusdalBRC" text="Bohusdal kakas"/>
+		<text name="shopItem_animalLohmann_F_GS01" text="Lohmann tojócsibe"/>
+		<text name="shopItem_animalLohmann_F_GS02" text="Lohmann tojócsibe"/>
+		<text name="shopItem_animalLohmann_F_GS03" text="Lohmann jérce"/>
+		<text name="shopItem_animalLohmann_F_GS04" text="Lohmann tyúk"/>
+		<text name="shopItem_animalLohmann_M_GS01" text="Lohmann kakascsibe"/>
+		<text name="shopItem_animalLohmann_M_GS02" text="Lohmann kakascsibe"/>
+		<text name="shopItem_animalLohmann_M_GS03" text="Lohmann fiatal kakas"/>
+		<text name="shopItem_animalLohmann_M_GS04" text="Lohmann kakas"/>
+		<text name="shopItem_animalLeghorn_F_GS01" text="Leghorn tojócsibe"/>
+		<text name="shopItem_animalLeghorn_F_GS02" text="Leghorn tojócsibe"/>
+		<text name="shopItem_animalLeghorn_F_GS03" text="Leghorn jérce"/>
+		<text name="shopItem_animalLeghorn_F_GS04" text="Leghorn tyúk"/>
+		<text name="shopItem_animalLeghorn_M_GS01" text="Leghorn kakascsibe"/>
+		<text name="shopItem_animalLeghorn_M_GS02" text="Leghorn kakascsibe"/>
+		<text name="shopItem_animalLeghorn_M_GS03" text="Leghorn fiatal kakas"/>
+		<text name="shopItem_animalLeghorn_M_GS04" text="Leghorn kakas"/>
+		<text name="shopItem_animalPlymouthrock_F_GS01" text="Plymouth Rock tojócsibe"/>
+		<text name="shopItem_animalPlymouthrock_F_GS02" text="Plymouth Rock tojócsibe"/>
+		<text name="shopItem_animalPlymouthrock_F_GS03" text="Plymouth Rock jérce"/>
+		<text name="shopItem_animalPlymouthrock_F_GS04" text="Plymouth Rock tyúk"/>
+		<text name="shopItem_animalPlymouthrock_M_GS01" text="Plymouth Rock kakascsibe"/>
+		<text name="shopItem_animalPlymouthrock_M_GS02" text="Plymouth Rock kakascsibe"/>
+		<text name="shopItem_animalPlymouthrock_M_GS03" text="Plymouth Rock fiatal kakas"/>
+		<text name="shopItem_animalPlymouthrock_M_GS04" text="Plymouth Rock kakas"/>
+		<text name="shopItem_animalBohusdal_F_GS01" text="Bohusdal tojócsibe"/>
+		<text name="shopItem_animalBohusdal_F_GS02" text="Bohusdal tojócsibe"/>
+		<text name="shopItem_animalBohusdal_F_GS03" text="Bohusdal jérce"/>
+		<text name="shopItem_animalBohusdal_F_GS04" text="Bohusdal tyúk"/>
+		<text name="shopItem_animalBohusdal_M_GS01" text="Bohusdal kakascsibe"/>
+		<text name="shopItem_animalBohusdal_M_GS02" text="Bohusdal kakascsibe"/>
+		<text name="shopItem_animalBohusdal_M_GS03" text="Bohusdal fiatal kakas"/>
+		<text name="shopItem_animalBohusdal_M_GS04" text="Bohusdal kakas"/>
+		<!--GOATS-->
+		<text name="animal_GoatsF_GS01Description" text="Ez egy fiatal anyakecske."/>
+		<text name="animal_GoatsF_GS02Description" text="Ez egy fiatal anyakecske."/>
+		<text name="animal_GoatsF_GS03Description" text="Ez egy fiatal anyakecske."/>
+		<text name="animal_GoatsF_GS04Description" text="Ez egy teljesen kifejlett anyakecske."/>
+		<text name="animal_GoatsM_GS01Description" text="Ez egy fiatal bakkecske."/>
+		<text name="animal_GoatsM_GS02Description" text="Ez egy fiatal bakkecske."/>
+		<text name="animal_GoatsM_GS03Description" text="Ez egy fiatal bakkecske."/>
+		<text name="animal_GoatsM_GS04Description" text="Ez egy teljesen kifejlett bakkecske."/>
+		<text name="fillType_doeThuringiangoatBRC" text="Türingiai erdei anyakecske"/>
+		<text name="fillType_buckThuringiangoatBRC" text="Türingiai erdei bakkecske"/>
+		<text name="shopItem_animalThuringiangoat_F_GS01" text="Türingiai erdei nőstény kecskegida"/>
+		<text name="shopItem_animalThuringiangoat_F_GS02" text="Türingiai erdei nőstény kecskegida"/>
+		<text name="shopItem_animalThuringiangoat_F_GS03" text="Türingiai erdei fiatal anyakecske"/>
+		<text name="shopItem_animalThuringiangoat_F_GS04" text="Türingiai erdei anyakecske"/>
+		<text name="shopItem_animalThuringiangoat_M_GS01" text="Türingiai erdei hím kecskegida"/>
+		<text name="shopItem_animalThuringiangoat_M_GS02" text="Türingiai erdei hím kecskegida"/>
+		<text name="shopItem_animalThuringiangoat_M_GS03" text="Türingiai erdei fiatal bakkecske"/>
+		<text name="shopItem_animalThuringiangoat_M_GS04" text="Türingiai erdei bakkecske"/>
+		<!--SHEEP-->
+		<text name="animal_SheepF_GS01Description" text="Ez egy fiatal anyajuh."/>
+		<text name="animal_SheepF_GS02Description" text="Ez egy fiatal anyajuh."/>
+		<text name="animal_SheepF_GS03Description" text="Ez egy fiatal anyajuh."/>
+		<text name="animal_SheepF_GS04Description" text="Ez egy teljesen kifejlett anyajuh."/>
+		<text name="animal_SheepM_GS01Description" text="Ez egy fiatal kos."/>
+		<text name="animal_SheepM_GS02Description" text="Ez egy fiatal kos."/>
+		<text name="animal_SheepM_GS03Description" text="Ez egy fiatal kos."/>
+		<text name="animal_SheepM_GS04Description" text="Ez egy teljesen kifejlett kos."/>
+		<text name="fillType_eweMerinoBRC" text="Merinó anyajuh"/>
+		<text name="fillType_ramMerinoBRC" text="Merinó kos"/>
+		<text name="fillType_eweSuffolkBRC" text="Suffolk anyajuh"/>
+		<text name="fillType_ramSuffolkBRC" text="Suffolk kos"/>
+		<text name="fillType_eweMountainsheepBRC" text="Hegyi anyajuh"/>
+		<text name="fillType_ramMountainsheepBRC" text="Hegyi kos"/>
+		<text name="shopItem_animalMerino_F_GS01" text="Merinó jerkebárány"/>
+		<text name="shopItem_animalMerino_F_GS02" text="Merinó jerkebárány"/>
+		<text name="shopItem_animalMerino_F_GS03" text="Merinó fiatal anyajuh"/>
+		<text name="shopItem_animalMerino_F_GS04" text="Merinó anyajuh"/>
+		<text name="shopItem_animalMerino_M_GS01" text="Merinó kosbárány"/>
+		<text name="shopItem_animalMerino_M_GS02" text="Merinó kosbárány"/>
+		<text name="shopItem_animalMerino_M_GS03" text="Merinó fiatal kos"/>
+		<text name="shopItem_animalMerino_M_GS04" text="Merinó kos"/>
+		<text name="shopItem_animalSuffolk_F_GS01" text="Suffolk jerkebárány"/>
+		<text name="shopItem_animalSuffolk_F_GS02" text="Suffolk jerkebárány"/>
+		<text name="shopItem_animalSuffolk_F_GS03" text="Suffolk fiatal anyajuh"/>
+		<text name="shopItem_animalSuffolk_F_GS04" text="Suffolk anyajuh"/>
+		<text name="shopItem_animalSuffolk_M_GS01" text="Suffolk kosbárány"/>
+		<text name="shopItem_animalSuffolk_M_GS02" text="Suffolk kosbárány"/>
+		<text name="shopItem_animalSuffolk_M_GS03" text="Suffolk fiatal kos"/>
+		<text name="shopItem_animalSuffolk_M_GS04" text="Suffolk kos"/>
+		<text name="shopItem_animalMountainsheep_F_GS01" text="Hegyi jerkebárány"/>
+		<text name="shopItem_animalMountainsheep_F_GS02" text="Hegyi jerkebárány"/>
+		<text name="shopItem_animalMountainsheep_F_GS03" text="Hegyi fiatal anyajuh"/>
+		<text name="shopItem_animalMountainsheep_F_GS04" text="Hegyi anyajuh"/>
+		<text name="shopItem_animalMountainsheep_M_GS01" text="Hegyi kosbárány"/>
+		<text name="shopItem_animalMountainsheep_M_GS02" text="Hegyi kosbárány"/>
+		<text name="shopItem_animalMountainsheep_M_GS03" text="Hegyi fiatal kos"/>
+		<text name="shopItem_animalMountainsheep_M_GS04" text="Hegyi kos"/>
+		<!--PIGS-->
+		<text name="animal_PigsF_GS01Description" text="Ez egy fiatal koca."/>
+		<text name="animal_PigsF_GS02Description" text="Ez egy fiatal koca."/>
+		<text name="animal_PigsF_GS03Description" text="Ez egy fiatal koca. Hamarosan először fog fialni."/>
+		<text name="animal_PigsF_GS04Description" text="Ez egy teljesen kifejlett koca."/>
+		<text name="animal_PigsM_GS01Description" text="Ez egy fiatal kan."/>
+		<text name="animal_PigsM_GS02Description" text="Ez egy hízósüldő. Hízlalás után haszonnal eladható."/>
+		<text name="animal_PigsM_GS03Description" text="Ez egy fiatal kan. Haszonnal eladható."/>
+		<text name="animal_PigsM_GS04Description" text="Ez egy teljesen kifejlett kan."/>
+		<text name="fillType_sowLandraceBRC" text="Német lapály koca"/>
+		<text name="fillType_boarLandraceBRC" text="Német lapály kan"/>
+		<text name="fillType_sowPietrainBRC" text="Pietrain koca"/>
+		<text name="fillType_boarPietrainBRC" text="Pietrain kan"/>
+		<text name="fillType_sowBerkshireBRC" text="Berkshire koca"/>
+		<text name="fillType_boarBerkshireBRC" text="Berkshire kan"/>
+		<text name="shopItem_animalLandrace_F_GS01" text="Német lapály nőstény malac"/>
+		<text name="shopItem_animalLandrace_F_GS02" text="Német lapály nőstény süldő"/>
+		<text name="shopItem_animalLandrace_F_GS03" text="Német lapály fiatal koca"/>
+		<text name="shopItem_animalLandrace_F_GS04" text="Német lapály koca"/>
+		<text name="shopItem_animalLandrace_M_GS01" text="Német lapály hím malac"/>
+		<text name="shopItem_animalLandrace_M_GS02" text="Német lapály hím süldő"/>
+		<text name="shopItem_animalLandrace_M_GS03" text="Német lapály fiatal kan"/>
+		<text name="shopItem_animalLandrace_M_GS04" text="Német lapály kan"/>
+		<text name="shopItem_animalPietrain_F_GS01" text="Pietrain nőstény malac"/>
+		<text name="shopItem_animalPietrain_F_GS02" text="Pietrain nőstény süldő"/>
+		<text name="shopItem_animalPietrain_F_GS03" text="Pietrain fiatal koca"/>
+		<text name="shopItem_animalPietrain_F_GS04" text="Pietrain koca"/>
+		<text name="shopItem_animalPietrain_M_GS01" text="Pietrain hím malac"/>
+		<text name="shopItem_animalPietrain_M_GS02" text="Pietrain hím süldő"/>
+		<text name="shopItem_animalPietrain_M_GS03" text="Pietrain fiatal kan"/>
+		<text name="shopItem_animalPietrain_M_GS04" text="Pietrain kan"/>
+		<text name="shopItem_animalBerkshire_F_GS01" text="Berkshire nőstény malac"/>
+		<text name="shopItem_animalBerkshire_F_GS02" text="Berkshire nőstény süldő"/>
+		<text name="shopItem_animalBerkshire_F_GS03" text="Berkshire fiatal koca"/>
+		<text name="shopItem_animalBerkshire_F_GS04" text="Berkshire koca"/>
+		<text name="shopItem_animalBerkshire_M_GS01" text="Berkshire hím malac"/>
+		<text name="shopItem_animalBerkshire_M_GS02" text="Berkshire hím süldő"/>
+		<text name="shopItem_animalBerkshire_M_GS03" text="Berkshire fiatal kan"/>
+		<text name="shopItem_animalBerkshire_M_GS04" text="Berkshire kan"/>
+		<!--RABBITS-->
+		<text name="fillType_rabbitFemaleBRC" text="Nőstény Nyúl"/>
+		<text name="fillType_rabbitMaleBRC" text="Bak Nyúl"/>
+		<text name="animal_group_rabbits" text="Nyulak"/>
+		<text name="animal_descriptionRabbitYoung" text="Ez egy kisnyúl. Később felnőtt állattá válik."/>
+		<text name="animal_descriptionRabbitAdult" text="Kifejlett nyúl, amely eladható vagy szaporítható."/>
+		<text name="animal_female_descriptionRabbitYoung" text="Ez egy fiatal nőstény nyúl. Később felnőtt állattá válik."/>
+        <text name="animal_female_serdulo_descriptionRabbitYoung" text="Ez egy növendék nőstény nyúl. Hamarosan kifejlett állattá válik."/>
+        <text name="animal_female_descriptionRabbitAdult" text="Kifejlett nőstény nyúl, amely eladható vagy szaporítható."/>
+        <text name="animal_male_descriptionRabbitYoung" text="Ez egy fiatal bak nyúl. Később felnőtt állattá válik."/>
+        <text name="animal_male_serdulo_descriptionRabbitYoung" text="Ez egy növendék bak nyúl. Hamarosan kifejlett állattá válik."/>
+        <text name="animal_male_descriptionRabbitAdult" text="Kifejlett bak nyúl, amely eladható vagy szaporítható."/>	</texts>
+</l10n>

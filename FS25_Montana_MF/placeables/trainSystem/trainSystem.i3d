@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="trainSystem.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+    </Asset>
+    <Files>
+        <File fileId="2" filename="$data/maps/mapUS/textures/props/railroads/railRoadSignals_diffuse.png"/>
+        <File fileId="3" filename="$data/maps/mapUS/textures/props/railroads/railRoadSignals_normal.png"/>
+        <File fileId="4" filename="$data/maps/mapUS/textures/props/railroads/railRoadSignals_specular.png"/>
+        <File fileId="8" filename="$data/shaders/glowShader.xml"/>
+        <File fileId="5" filename="$data/shaders/placeableShader.xml"/>
+    </Files>
+    <Materials>
+        <Material name="lambert1" materialId="1469" diffuseColor="0.494118 0.494118 0.494118 1"/>
+        <Material name="railRoadSignals_mat" materialId="1743" customShaderId="5">
+            <Texture fileId="2"/>
+            <Normalmap fileId="3"/>
+            <Glossmap fileId="4"/>
+        </Material>
+        <Material name="railRoadSignalsEmissive01_mat" materialId="308847" customShaderId="8" customShaderVariation="baseMap_colorScale_blink">
+            <CustomParameter name="lightControl" value="8"/>
+            <CustomParameter name="colorScale" value="1 0 0"/>
+        </Material>
+        <Material name="railRoadSignalsEmissive01_mat" materialId="308848" customShaderId="8" customShaderVariation="baseMap_colorScale_blink">
+            <CustomParameter name="lightControl" value="8"/>
+            <CustomParameter name="colorScale" value="1 0 0"/>
+            <CustomParameter name="blinkSimple" value="1 0.5"/>
+        </Material>
+        <Material name="railRoadSignalsEmissive01_mat" materialId="308849" customShaderId="8" customShaderVariation="baseMap_colorScale_blink">
+            <Texture fileId="2"/>
+            <Normalmap fileId="3"/>
+            <Glossmap fileId="4"/>
+            <CustomParameter name="lightControl" value="8"/>
+            <CustomParameter name="colorScale" value="1 0 0"/>
+        </Material>
+        <Material name="railRoadSignalsEmissive01_mat" materialId="308850" customShaderId="8" customShaderVariation="baseMap_colorScale_blink">
+            <Texture fileId="2"/>
+            <Normalmap fileId="3"/>
+            <Glossmap fileId="4"/>
+            <CustomParameter name="lightControl" value="8"/>
+            <CustomParameter name="colorScale" value="1 0 0"/>
+            <CustomParameter name="blinkSimple" value="1 0.5"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="trainSystem.i3d.shapes"/>
+    <Scene>
+        <TransformGroup name="trainSystem" nodeId="308859">
+            <Shape name="spline" translation="-2026.8 192.057 -1439.3" shapeId="1" visibility="false" nodeId="308860" castsShadows="false" receiveShadows="false" distanceBlending="false"/>
+            <TransformGroup name="drivingRange" nodeId="308861">
+                <TransformGroup name="startNode" translation="-2003.28 191.961 -1431.67" nodeId="308862"/>
+                <TransformGroup name="endNode" translation="1180.94 139.482 1976.38" nodeId="308863"/>
+            </TransformGroup>
+            <TransformGroup name="railroadCaller01" translation="-229.307 158.098 -1111.5" nodeId="308864">
+                <Shape name="railroadCallerTrigger" shapeId="2" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="308865" castsShadows="false" receiveShadows="false" nonRenderable="true" distanceBlending="false" materialIds="1469"/>
+                <TransformGroup name="hotspot" nodeId="308866"/>
+                <TransformGroup name="teleport" nodeId="308867"/>
+            </TransformGroup>
+            <TransformGroup name="railroadBarrier01" lockedgroup="true" translation="-1984.36 192.198 -1427.63" nodeId="308868">
+                <Shape name="railroadBarrier" lockedgroup="true" translation="5.74056 -0.0153349 10.0271" rotation="-3.09076e-05 -90 0" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="300" nodeId="308869" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1469">
+                    <Shape name="vis" shapeId="4" nodeId="308870" castsShadows="true" receiveShadows="true" materialIds="1743"/>
+                    <Shape name="barrier" translation="0.286 0.993 -0.09" shapeId="5" kinematic="true" collisionFilterGroup="0x26" collisionFilterMask="0xfffffbff" nodeId="308871" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1469">
+                        <Shape name="vis" shapeId="6" nodeId="308872" castsShadows="true" receiveShadows="true" materialIds="1743"/>
+                    </Shape>
+                    <TransformGroup name="trafficBlockingPosition" translation="1 0 2.8" rotation="0 -90 0" nodeId="308873"/>
+                    <TransformGroup name="signals" nodeId="308874">
+                        <TransformGroup name="signal" nodeId="308875">
+                            <TransformGroup name="railroadCrossingLight01" translation="0.466725 1.95405 -0.304675" nodeId="308876">
+                                <Light name="pointLight" translation="0.173376 0 -0" nodeId="308877" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                            </TransformGroup>
+                            <Shape name="railroadCrossingLight02" translation="0.462139 1.95405 0.295324" shapeId="7" clipDistance="300" nodeId="308878" castsShadows="true" receiveShadows="true" materialIds="308847">
+                                <Light name="pointLight" translation="0.177962 0 0" nodeId="308879" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                                <Shape name="railroadCrossingLight01" translation="0 0 -0.6" shapeId="7" clipDistance="300" nodeId="308880" castsShadows="true" receiveShadows="true" materialIds="308848"/>
+                            </Shape>
+                            <TransformGroup name="railroadCrossingLight03" translation="-0.476576 1.95405 0.295324" nodeId="308881">
+                                <Light name="pointLight" translation="-0.173376 0 -0" rotation="0 180 0" nodeId="308882" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                            </TransformGroup>
+                            <Shape name="railroadCrossingLight04" translation="-0.471991 1.95405 -0.304676" rotation="0 180 0" shapeId="7" clipDistance="300" nodeId="308883" castsShadows="true" receiveShadows="true" materialIds="308847">
+                                <Light name="pointLight" translation="0.177962 0 0" nodeId="308884" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                                <Shape name="railroadCrossingLight03" translation="-0 0 -0.6" shapeId="7" clipDistance="300" nodeId="308885" castsShadows="true" receiveShadows="true" materialIds="308848"/>
+                            </Shape>
+                        </TransformGroup>
+                    </TransformGroup>
+                </Shape>
+                <Shape name="railroadBarrier" lockedgroup="true" translation="-5.72913 -0.0187225 -10.2155" rotation="-0 90 0" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="300" nodeId="308886" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1469">
+                    <Shape name="vis" shapeId="4" nodeId="308887" castsShadows="true" receiveShadows="true" materialIds="1743"/>
+                    <Shape name="barrier" translation="0.286 0.993 -0.09" shapeId="5" kinematic="true" collisionFilterGroup="0x26" collisionFilterMask="0xfffffbff" nodeId="308888" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1469">
+                        <Shape name="vis" shapeId="6" nodeId="308889" castsShadows="true" receiveShadows="true" materialIds="1743"/>
+                    </Shape>
+                    <TransformGroup name="trafficBlockingPosition" translation="1 0 2.8" rotation="0 -90 0" nodeId="308890"/>
+                    <TransformGroup name="signals" nodeId="308891">
+                        <TransformGroup name="signal" nodeId="308892">
+                            <TransformGroup name="railroadCrossingLight01" translation="0.466725 1.95405 -0.304675" nodeId="308893">
+                                <Light name="pointLight" translation="0.173376 0 -0" nodeId="308894" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                            </TransformGroup>
+                            <Shape name="railroadCrossingLight02" translation="0.462139 1.95405 0.295324" shapeId="7" clipDistance="300" nodeId="308895" castsShadows="true" receiveShadows="true" materialIds="308848">
+                                <Light name="pointLight" translation="0.177962 0 0" nodeId="308896" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                                <Shape name="railroadCrossingLight01" translation="0 0 -0.6" shapeId="7" clipDistance="300" nodeId="308897" castsShadows="true" receiveShadows="true" materialIds="308848"/>
+                            </Shape>
+                            <TransformGroup name="railroadCrossingLight03" translation="-0.476576 1.95405 0.295324" nodeId="308898">
+                                <Light name="pointLight" translation="-0.173376 0 -0" rotation="0 180 0" nodeId="308899" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                            </TransformGroup>
+                            <Shape name="railroadCrossingLight04" translation="-0.471991 1.95405 -0.304676" rotation="0 180 0" shapeId="7" clipDistance="300" nodeId="308900" castsShadows="true" receiveShadows="true" materialIds="308848">
+                                <Light name="pointLight" translation="0.177962 0 0" nodeId="308901" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                                <Shape name="railroadCrossingLight03" translation="-0 0 -0.6" shapeId="7" clipDistance="300" nodeId="308902" castsShadows="true" receiveShadows="true" materialIds="308848"/>
+                            </Shape>
+                        </TransformGroup>
+                    </TransformGroup>
+                </Shape>
+            </TransformGroup>
+            <TransformGroup name="railroadBarrier02" lockedgroup="true" translation="-1112.29 176.272 -1154.98" rotation="0 90 0" nodeId="308903">
+                <Shape name="railroadBarrier" lockedgroup="true" translation="8.6958 0.0776978 -7.26526" rotation="2.7742e-06 10 -1.31489e-05" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="300" nodeId="308904" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1469">
+                    <Shape name="vis" shapeId="4" nodeId="308905" castsShadows="true" receiveShadows="true" materialIds="1743"/>
+                    <Shape name="barrier" translation="0.286 0.993 -0.09" shapeId="5" kinematic="true" collisionFilterGroup="0x26" collisionFilterMask="0xfffffbff" nodeId="308906" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1469">
+                        <Shape name="vis" shapeId="6" nodeId="308907" castsShadows="true" receiveShadows="true" materialIds="1743"/>
+                    </Shape>
+                    <TransformGroup name="trafficBlockingPosition" translation="1 0 2.8" rotation="0 -90 0" nodeId="308908"/>
+                    <TransformGroup name="signals" nodeId="308909">
+                        <TransformGroup name="signal" nodeId="308910">
+                            <TransformGroup name="railroadCrossingLight01" translation="0.466725 1.95405 -0.304675" nodeId="308911">
+                                <Light name="pointLight" translation="0.173376 0 -0" nodeId="308912" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                            </TransformGroup>
+                            <Shape name="railroadCrossingLight02" translation="0.462139 1.95405 0.295324" shapeId="7" clipDistance="300" nodeId="308913" castsShadows="true" receiveShadows="true" materialIds="308847">
+                                <Light name="pointLight" translation="0.177962 0 0" nodeId="308914" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                                <Shape name="railroadCrossingLight01" translation="0 0 -0.6" shapeId="7" clipDistance="300" nodeId="308915" castsShadows="true" receiveShadows="true" materialIds="308848"/>
+                            </Shape>
+                            <TransformGroup name="railroadCrossingLight03" translation="-0.476576 1.95405 0.295324" nodeId="308916">
+                                <Light name="pointLight" translation="-0.173376 0 -0" rotation="0 180 0" nodeId="308917" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                            </TransformGroup>
+                            <Shape name="railroadCrossingLight04" translation="-0.471991 1.95405 -0.304676" rotation="0 180 0" shapeId="7" clipDistance="300" nodeId="308918" castsShadows="true" receiveShadows="true" materialIds="308847">
+                                <Light name="pointLight" translation="0.177962 0 0" nodeId="308919" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                                <Shape name="railroadCrossingLight03" translation="-0 0 -0.6" shapeId="7" clipDistance="300" nodeId="308920" castsShadows="true" receiveShadows="true" materialIds="308848"/>
+                            </Shape>
+                        </TransformGroup>
+                    </TransformGroup>
+                </Shape>
+                <Shape name="railroadBarrier" lockedgroup="true" translation="-8.90649 -0.204422 7.27991" rotation="-180 10 -180" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="300" nodeId="308921" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1469">
+                    <Shape name="vis" shapeId="4" nodeId="308922" castsShadows="true" receiveShadows="true" materialIds="1743"/>
+                    <Shape name="barrier" translation="0.286 0.993 -0.09" shapeId="5" kinematic="true" collisionFilterGroup="0x26" collisionFilterMask="0xfffffbff" nodeId="308923" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1469">
+                        <Shape name="vis" shapeId="6" nodeId="308924" castsShadows="true" receiveShadows="true" materialIds="1743"/>
+                    </Shape>
+                    <TransformGroup name="trafficBlockingPosition" translation="1 0 2.8" rotation="0 -90 0" nodeId="308925"/>
+                    <TransformGroup name="signals" nodeId="308926">
+                        <TransformGroup name="signal" nodeId="308927">
+                            <TransformGroup name="railroadCrossingLight01" translation="0.466725 1.95405 -0.304675" nodeId="308928">
+                                <Light name="pointLight" translation="0.173376 0 -0" nodeId="308929" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                            </TransformGroup>
+                            <Shape name="railroadCrossingLight02" translation="0.462139 1.95405 0.295324" shapeId="7" clipDistance="300" nodeId="308930" castsShadows="true" receiveShadows="true" materialIds="308847">
+                                <Light name="pointLight" translation="0.177962 0 0" nodeId="308931" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                                <Shape name="railroadCrossingLight01" translation="0 0 -0.6" shapeId="7" clipDistance="300" nodeId="308932" castsShadows="true" receiveShadows="true" materialIds="308848"/>
+                            </Shape>
+                            <TransformGroup name="railroadCrossingLight03" translation="-0.476576 1.95405 0.295324" nodeId="308933">
+                                <Light name="pointLight" translation="-0.173376 0 -0" rotation="0 180 0" nodeId="308934" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                            </TransformGroup>
+                            <Shape name="railroadCrossingLight04" translation="-0.471991 1.95405 -0.304676" rotation="0 180 0" shapeId="7" clipDistance="300" nodeId="308935" castsShadows="true" receiveShadows="true" materialIds="308847">
+                                <Light name="pointLight" translation="0.177962 0 0" nodeId="308936" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                                <Shape name="railroadCrossingLight03" translation="-0 0 -0.6" shapeId="7" clipDistance="300" nodeId="308937" castsShadows="true" receiveShadows="true" materialIds="308848"/>
+                            </Shape>
+                        </TransformGroup>
+                    </TransformGroup>
+                </Shape>
+            </TransformGroup>
+            <TransformGroup name="railroadBarrier03" lockedgroup="true" translation="-249.549 158.634 -841.786" nodeId="308938">
+                <Shape name="railroadBarrierLarge" lockedgroup="true" translation="4.81482 0.128113 8.42908" rotation="-1.73028e-05 -90 0" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="300" nodeId="308939" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1469">
+                    <Shape name="vis" shapeId="4" nodeId="308940" castsShadows="true" receiveShadows="true" materialIds="1743"/>
+                    <Shape name="barrier" translation="0.286 0.993 -0.09" shapeId="5" kinematic="true" collisionFilterGroup="0x26" collisionFilterMask="0xfffffbff" nodeId="308941" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1469">
+                        <Shape name="vis" shapeId="6" nodeId="308942" castsShadows="true" receiveShadows="true" materialIds="1743"/>
+                    </Shape>
+                    <TransformGroup name="trafficBlockingPosition" translation="1 0 2.8" rotation="0 -90 0" nodeId="308943"/>
+                    <TransformGroup name="signals" nodeId="308944">
+                        <TransformGroup name="signal" nodeId="308945">
+                            <TransformGroup name="railroadCrossingLight01" translation="0.466725 1.95405 -0.304675" nodeId="308946">
+                                <Light name="pointLight" translation="0.173376 0 -0" nodeId="308947" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                            </TransformGroup>
+                            <Shape name="railroadCrossingLight02" translation="0.462139 1.95405 0.295324" shapeId="7" clipDistance="300" nodeId="308948" castsShadows="true" receiveShadows="true" materialIds="308850">
+                                <Light name="pointLight" translation="0.177962 0 0" nodeId="308949" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                                <Shape name="railroadCrossingLight01" translation="0 0 -0.6" shapeId="7" clipDistance="300" nodeId="308950" castsShadows="true" receiveShadows="true" materialIds="308849"/>
+                            </Shape>
+                            <TransformGroup name="railroadCrossingLight03" translation="-0.476576 1.95405 0.295324" nodeId="308951">
+                                <Light name="pointLight" translation="-0.173376 0 -0" rotation="0 180 0" nodeId="308952" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                            </TransformGroup>
+                            <Shape name="railroadCrossingLight04" translation="-0.471991 1.95405 -0.304676" rotation="0 180 0" shapeId="7" clipDistance="300" nodeId="308953" castsShadows="true" receiveShadows="true" materialIds="308850">
+                                <Light name="pointLight" translation="0.177962 0 0" nodeId="308954" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                                <Shape name="railroadCrossingLight03" translation="-0 0 -0.6" shapeId="7" clipDistance="300" nodeId="308955" castsShadows="true" receiveShadows="true" materialIds="308849"/>
+                            </Shape>
+                        </TransformGroup>
+                    </TransformGroup>
+                </Shape>
+                <Shape name="railroadBarrierLarge" lockedgroup="true" translation="-6.9617 0.625214 -10.1812" rotation="-1.522e-10 90 0" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="300" nodeId="308956" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1469">
+                    <Shape name="vis" shapeId="4" nodeId="308957" castsShadows="true" receiveShadows="true" materialIds="1743"/>
+                    <Shape name="barrier" translation="0.286 0.993 -0.09" shapeId="5" kinematic="true" collisionFilterGroup="0x26" collisionFilterMask="0xfffffbff" nodeId="308958" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1469">
+                        <Shape name="vis" shapeId="6" nodeId="308959" castsShadows="true" receiveShadows="true" materialIds="1743"/>
+                    </Shape>
+                    <TransformGroup name="trafficBlockingPosition" translation="1 0 2.8" rotation="0 -90 0" nodeId="308960"/>
+                    <TransformGroup name="signals" nodeId="308961">
+                        <TransformGroup name="signal" nodeId="308962">
+                            <TransformGroup name="railroadCrossingLight01" translation="0.466725 1.95405 -0.304675" nodeId="308963">
+                                <Light name="pointLight" translation="0.173376 0 -0" nodeId="308964" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                            </TransformGroup>
+                            <Shape name="railroadCrossingLight02" translation="0.462139 1.95405 0.295324" shapeId="7" clipDistance="300" nodeId="308965" castsShadows="true" receiveShadows="true" materialIds="308849">
+                                <Light name="pointLight" translation="0.177962 0 0" nodeId="308966" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                                <Shape name="railroadCrossingLight01" translation="0 0 -0.6" shapeId="7" clipDistance="300" nodeId="308967" castsShadows="true" receiveShadows="true" materialIds="308849"/>
+                            </Shape>
+                            <TransformGroup name="railroadCrossingLight03" translation="-0.476576 1.95405 0.295324" nodeId="308968">
+                                <Light name="pointLight" translation="-0.173376 0 -0" rotation="0 180 0" nodeId="308969" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                            </TransformGroup>
+                            <Shape name="railroadCrossingLight04" translation="-0.471991 1.95405 -0.304676" rotation="0 180 0" shapeId="7" clipDistance="300" nodeId="308970" castsShadows="true" receiveShadows="true" materialIds="308849">
+                                <Light name="pointLight" translation="0.177962 0 0" nodeId="308971" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                                <Shape name="railroadCrossingLight03" translation="-0 0 -0.6" shapeId="7" clipDistance="300" nodeId="308972" castsShadows="true" receiveShadows="true" materialIds="308849"/>
+                            </Shape>
+                        </TransformGroup>
+                    </TransformGroup>
+                </Shape>
+            </TransformGroup>
+            <TransformGroup name="railroadBarrier04" lockedgroup="true" translation="-366.142 126.264 904.041" nodeId="308973">
+                <Shape name="railroadBarrier" lockedgroup="true" translation="3.53055 0.0159073 -8.38684" rotation="1.5394e-06 5.08414 -2.72152e-05" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="300" nodeId="308974" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1469">
+                    <Shape name="vis" shapeId="4" nodeId="308975" castsShadows="true" receiveShadows="true" materialIds="1743"/>
+                    <Shape name="barrier" translation="0.286 0.993 -0.09" shapeId="5" kinematic="true" collisionFilterGroup="0x26" collisionFilterMask="0xfffffbff" nodeId="308976" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1469">
+                        <Shape name="vis" shapeId="6" nodeId="308977" castsShadows="true" receiveShadows="true" materialIds="1743"/>
+                    </Shape>
+                    <TransformGroup name="trafficBlockingPosition" translation="1 0 2.8" rotation="0 -90 0" nodeId="308978"/>
+                    <TransformGroup name="signals" nodeId="308979">
+                        <TransformGroup name="signal" nodeId="308980">
+                            <TransformGroup name="railroadCrossingLight01" translation="0.466725 1.95405 -0.304675" nodeId="308981">
+                                <Light name="pointLight" translation="0.173376 0 -0" nodeId="308982" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                            </TransformGroup>
+                            <Shape name="railroadCrossingLight02" translation="0.462139 1.95405 0.295324" shapeId="7" clipDistance="300" nodeId="308983" castsShadows="true" receiveShadows="true" materialIds="308847">
+                                <Light name="pointLight" translation="0.177962 0 0" nodeId="308984" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                                <Shape name="railroadCrossingLight01" translation="0 0 -0.6" shapeId="7" clipDistance="300" nodeId="308985" castsShadows="true" receiveShadows="true" materialIds="308848"/>
+                            </Shape>
+                            <TransformGroup name="railroadCrossingLight03" translation="-0.476576 1.95405 0.295324" nodeId="308986">
+                                <Light name="pointLight" translation="-0.173376 0 -0" rotation="0 180 0" nodeId="308987" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                            </TransformGroup>
+                            <Shape name="railroadCrossingLight04" translation="-0.471991 1.95405 -0.304676" rotation="0 180 0" shapeId="7" clipDistance="300" nodeId="308988" castsShadows="true" receiveShadows="true" materialIds="308847">
+                                <Light name="pointLight" translation="0.177962 0 0" nodeId="308989" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                                <Shape name="railroadCrossingLight03" translation="-0 0 -0.6" shapeId="7" clipDistance="300" nodeId="308990" castsShadows="true" receiveShadows="true" materialIds="308848"/>
+                            </Shape>
+                        </TransformGroup>
+                    </TransformGroup>
+                </Shape>
+                <Shape name="railroadBarrier" lockedgroup="true" translation="-3.30875 0.0183563 6.55908" rotation="-180 -4.99838 -180" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="300" nodeId="308991" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1469">
+                    <Shape name="vis" shapeId="4" nodeId="308992" castsShadows="true" receiveShadows="true" materialIds="1743"/>
+                    <Shape name="barrier" translation="0.286 0.993 -0.09" shapeId="5" kinematic="true" collisionFilterGroup="0x26" collisionFilterMask="0xfffffbff" nodeId="308993" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1469">
+                        <Shape name="vis" shapeId="6" nodeId="308994" castsShadows="true" receiveShadows="true" materialIds="1743"/>
+                    </Shape>
+                    <TransformGroup name="trafficBlockingPosition" translation="1 0 2.8" rotation="0 -90 0" nodeId="308995"/>
+                    <TransformGroup name="signals" nodeId="308996">
+                        <TransformGroup name="signal" nodeId="308997">
+                            <TransformGroup name="railroadCrossingLight01" translation="0.466725 1.95405 -0.304675" nodeId="308998">
+                                <Light name="pointLight" translation="0.173376 0 -0" nodeId="308999" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                            </TransformGroup>
+                            <Shape name="railroadCrossingLight02" translation="0.462139 1.95405 0.295324" shapeId="7" clipDistance="300" nodeId="309000" castsShadows="true" receiveShadows="true" materialIds="308847">
+                                <Light name="pointLight" translation="0.177962 0 0" nodeId="309001" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                                <Shape name="railroadCrossingLight01" translation="0 0 -0.6" shapeId="7" clipDistance="300" nodeId="309002" castsShadows="true" receiveShadows="true" materialIds="308848"/>
+                            </Shape>
+                            <TransformGroup name="railroadCrossingLight03" translation="-0.476576 1.95405 0.295324" nodeId="309003">
+                                <Light name="pointLight" translation="-0.173376 0 -0" rotation="0 180 0" nodeId="309004" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                            </TransformGroup>
+                            <Shape name="railroadCrossingLight04" translation="-0.471991 1.95405 -0.304676" rotation="0 180 0" shapeId="7" clipDistance="300" nodeId="309005" castsShadows="true" receiveShadows="true" materialIds="308847">
+                                <Light name="pointLight" translation="0.177962 0 0" nodeId="309006" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                                <Shape name="railroadCrossingLight03" translation="-0 0 -0.6" shapeId="7" clipDistance="300" nodeId="309007" castsShadows="true" receiveShadows="true" materialIds="308848"/>
+                            </Shape>
+                        </TransformGroup>
+                    </TransformGroup>
+                </Shape>
+            </TransformGroup>
+            <TransformGroup name="railroadBarrier05" lockedgroup="true" translation="-238.623 132.572 1741.01" rotation="0 90 0" nodeId="309008">
+                <Shape name="railroadCrossing" lockedgroup="true" translation="15.9961 -0.216187 -5.88615" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="300" nodeId="309009" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1469">
+                    <Shape name="vis" shapeId="4" nodeId="309010" castsShadows="true" receiveShadows="true" materialIds="1743"/>
+                    <Shape name="barrier" translation="0.286 0.993 -0.09" shapeId="5" kinematic="true" collisionFilterGroup="0x26" collisionFilterMask="0xfffffbff" nodeId="309011" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1469">
+                        <Shape name="vis" shapeId="6" nodeId="309012" castsShadows="true" receiveShadows="true" materialIds="1743"/>
+                    </Shape>
+                    <TransformGroup name="trafficBlockingPosition" translation="1 0 2.8" rotation="0 -90 0" nodeId="309013"/>
+                    <TransformGroup name="signals" nodeId="309014">
+                        <TransformGroup name="signal" nodeId="309015">
+                            <TransformGroup name="railroadCrossingLight01" translation="0.466725 1.95405 -0.304675" nodeId="309016">
+                                <Light name="pointLight" translation="0.173376 0 -0" nodeId="309017" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                            </TransformGroup>
+                            <Shape name="railroadCrossingLight02" translation="0.462139 1.95405 0.295324" shapeId="7" clipDistance="300" nodeId="309018" castsShadows="true" receiveShadows="true" materialIds="308847">
+                                <Light name="pointLight" translation="0.177962 0 0" nodeId="309019" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                                <Shape name="railroadCrossingLight01" translation="0 0 -0.6" shapeId="7" clipDistance="300" nodeId="309020" castsShadows="true" receiveShadows="true" materialIds="308848"/>
+                            </Shape>
+                            <TransformGroup name="railroadCrossingLight03" translation="-0.476576 1.95405 0.295324" nodeId="309021">
+                                <Light name="pointLight" translation="-0.173376 0 -0" rotation="0 180 0" nodeId="309022" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                            </TransformGroup>
+                            <Shape name="railroadCrossingLight04" translation="-0.471991 1.95405 -0.304676" rotation="0 180 0" shapeId="7" clipDistance="300" nodeId="309023" castsShadows="true" receiveShadows="true" materialIds="308847">
+                                <Light name="pointLight" translation="0.177962 0 0" nodeId="309024" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                                <Shape name="railroadCrossingLight03" translation="-0 0 -0.6" shapeId="7" clipDistance="300" nodeId="309025" castsShadows="true" receiveShadows="true" materialIds="308848"/>
+                            </Shape>
+                        </TransformGroup>
+                    </TransformGroup>
+                </Shape>
+                <Shape name="railroadCrossing" lockedgroup="true" translation="-15.574 0.0900726 5.70842" rotation="0 180 0" shapeId="3" static="true" collisionFilterGroup="0x3e" collisionFilterMask="0xfffffbff" clipDistance="300" nodeId="309026" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1469">
+                    <Shape name="vis" shapeId="4" nodeId="309027" castsShadows="true" receiveShadows="true" materialIds="1743"/>
+                    <Shape name="barrier" translation="0.286 0.993 -0.09" shapeId="5" kinematic="true" collisionFilterGroup="0x26" collisionFilterMask="0xfffffbff" nodeId="309028" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1469">
+                        <Shape name="vis" shapeId="6" nodeId="309029" castsShadows="true" receiveShadows="true" materialIds="1743"/>
+                    </Shape>
+                    <TransformGroup name="trafficBlockingPosition" translation="1 0 2.8" rotation="0 -90 0" nodeId="309030"/>
+                    <TransformGroup name="signals" nodeId="309031">
+                        <TransformGroup name="signal" nodeId="309032">
+                            <TransformGroup name="railroadCrossingLight01" translation="0.466725 1.95405 -0.304675" nodeId="309033">
+                                <Light name="pointLight" translation="0.173376 0 -0" nodeId="309034" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                            </TransformGroup>
+                            <Shape name="railroadCrossingLight02" translation="0.462139 1.95405 0.295324" shapeId="7" clipDistance="300" nodeId="309035" castsShadows="true" receiveShadows="true" materialIds="308847">
+                                <Light name="pointLight" translation="0.177962 0 0" nodeId="309036" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                                <Shape name="railroadCrossingLight01" translation="0 0 -0.6" shapeId="7" clipDistance="300" nodeId="309037" castsShadows="true" receiveShadows="true" materialIds="308848"/>
+                            </Shape>
+                            <TransformGroup name="railroadCrossingLight03" translation="-0.476576 1.95405 0.295324" nodeId="309038">
+                                <Light name="pointLight" translation="-0.173376 0 -0" rotation="0 180 0" nodeId="309039" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                            </TransformGroup>
+                            <Shape name="railroadCrossingLight04" translation="-0.471991 1.95405 -0.304676" rotation="0 180 0" shapeId="7" clipDistance="300" nodeId="309040" castsShadows="true" receiveShadows="true" materialIds="308847">
+                                <Light name="pointLight" translation="0.177962 0 0" nodeId="309041" type="point" color="1 0 0" emitDiffuse="true" emitSpecular="true" range="3"/>
+                                <Shape name="railroadCrossingLight03" translation="-0 0 -0.6" shapeId="7" clipDistance="300" nodeId="309042" castsShadows="true" receiveShadows="true" materialIds="308848"/>
+                            </Shape>
+                        </TransformGroup>
+                    </TransformGroup>
+                </Shape>
+            </TransformGroup>
+            <TransformGroup name="railroadCaller02" translation="-1437.18 181.195 -1245.71" nodeId="309043">
+                <Shape name="railroadCallerTrigger" shapeId="2" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="309044" castsShadows="false" receiveShadows="false" nonRenderable="true" distanceBlending="false" materialIds="1469"/>
+                <TransformGroup name="hotspot" nodeId="309045"/>
+                <TransformGroup name="teleport" nodeId="309046"/>
+            </TransformGroup>
+            <TransformGroup name="railroadCaller03" translation="-162.044 133.695 1797.69" nodeId="309132">
+                <Shape name="railroadCallerTrigger" shapeId="2" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x100000" nodeId="309133" castsShadows="false" receiveShadows="false" nonRenderable="true" distanceBlending="false" materialIds="1469"/>
+                <TransformGroup name="hotspot" nodeId="309134"/>
+                <TransformGroup name="teleport" nodeId="309135"/>
+            </TransformGroup>
+        </TransformGroup>
+    </Scene>
+    <UserAttributes>
+        <UserAttribute nodeId="308859">
+            <Attribute name="onCreate" type="scriptCallback" value="TrainSystem.onCreate"/>
+            <Attribute name="xmlFile" type="string" value="$data/maps/mapBase_trainSystem01.xml"/>
+        </UserAttribute>
+    </UserAttributes>
+</i3D>

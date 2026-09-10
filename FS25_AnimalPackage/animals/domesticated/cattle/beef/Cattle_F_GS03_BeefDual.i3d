@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Cattle_F_GS03_BeefDual.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="9" filename="$data/shaders/tileAndMirrorShader.xml"/>
+    <File fileId="5" filename="$data/shared/default_normal.dds"/>
+    <File fileId="3" filename="$data/shared/default_specular.dds"/>
+    <File fileId="6" filename="../textures/beefDual_F_GS0304_diffuse.dds"/>
+    <File fileId="7" filename="../textures/cattle_F_GS0304_normal.dds"/>
+    <File fileId="8" filename="../textures/cattle_F_GS0304_specular.dds"/>
+    <File fileId="1" filename="../../../shared/cattleEartagDE_diffuse.png"/>
+    <File fileId="2" filename="../../../shared/cattleEartagDE_normal.dds"/>
+    <File fileId="4" filename="../../../shared/lashes02_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="animalLashes01" materialId="5">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="cattle_F_GS03_BeefDual" materialId="6" customShaderId="9" customShaderVariation="dirtEnabled">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <Glossmap fileId="8"/>
+      <CustomParameter name="atlasInvSizeAndOffsetUV" value="0.25 0.5 0 0"/>
+      <CustomParameter name="dirtColor" value="0.16 0.14 0.08 0"/>
+    </Material>
+    <Material name="cattleAccessoiresDE" materialId="7">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="8" diffuseColor="1 1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Cattle_F_GS03_BeefDual.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="Arm_Cow" clipDistance="200" nodeId="16">
+      <TransformGroup name="Base_bone" rotation="180 5.00896e-06 180" nodeId="17">
+        <TransformGroup name="root_bone" rotation="-90 8.65142e-06 -180" nodeId="18">
+          <TransformGroup name="Help_knee.L" translation="0.167809 0.752102 -0.3457" rotation="-90 -1.01056e-06 -180" nodeId="19"/>
+          <TransformGroup name="Help_knee.R" translation="-0.167809 0.752102 -0.3457" rotation="-90 -1.01056e-06 -180" nodeId="20"/>
+          <TransformGroup name="Spine_base" translation="0 0 -1.17167" rotation="0 0 -5.00896e-06" nodeId="21">
+            <TransformGroup name="Spine_03" rotation="-90.4635 -0.000992199 -180" nodeId="22">
+              <TransformGroup name="Spine_02" translation="-1.151e-12 3.0268e-08 -0.336938" rotation="-1.54589 -1.52446e-05 0.000450997" nodeId="23">
+                <TransformGroup name="hip_1_f.L" translation="-0.163167 0.122821 -0.218226" rotation="-67.8165 3.21213 -7.04451" nodeId="24">
+                  <TransformGroup name="hip_2_f.L" translation="1.11759e-08 2.68919e-08 -0.414792" rotation="60.7935 9.40801 -177.453" nodeId="25">
+                    <TransformGroup name="thigh_f.L" translation="2.04891e-08 -4.07163e-08 -0.301939" rotation="52.0558 -3.1853 171.565" nodeId="26">
+                      <TransformGroup name="shin_f.L" translation="-1.67638e-08 -5.11936e-08 -0.326429" rotation="11.9105 -7.24881 -179.112" nodeId="27">
+                        <TransformGroup name="hoof_f.L" translation="-4.66116e-10 -1.24159e-07 -0.23089" rotation="25.2384 3.50718 180" nodeId="28"/>
+                      </TransformGroup>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+                <TransformGroup name="hip_1_f.R" translation="0.163165 0.122824 -0.218226" rotation="-67.8165 -3.21213 7.04564" nodeId="29">
+                  <TransformGroup name="hip_2_f.R" translation="-2.23517e-08 4.92437e-08 -0.414792" rotation="60.7935 -9.40802 177.453" nodeId="30">
+                    <TransformGroup name="thigh_f.R" translation="0 9.22591e-09 -0.30194" rotation="52.0558 3.1853 -171.565" nodeId="31">
+                      <TransformGroup name="shin_f.R" translation="1.11759e-08 4.99422e-08 -0.326429" rotation="11.9105 7.24881 179.112" nodeId="32">
+                        <TransformGroup name="hoof_f.R" translation="-2.09866e-09 -6.20701e-08 -0.23089" rotation="25.2384 -3.50718 -180" nodeId="33"/>
+                      </TransformGroup>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+                <TransformGroup name="neck_01" translation="-1.30022e-12 2.04891e-08 -0.36615" rotation="-4.26857 -6.47301e-06 0.000478361" nodeId="34">
+                  <TransformGroup name="neck_02" translation="-2.11095e-14 -1.2666e-07 -0.252287" rotation="12.6047 6.66842e-05 -0.000211227" nodeId="35">
+                    <TransformGroup name="head" translation="5.79757e-13 -8.9407e-08 -0.251737" rotation="-28.9155 -1.58983e-05 0.000276785" nodeId="36">
+                      <TransformGroup name="Ear.L" translation="-0.166896 0.0837933 0.0449857" rotation="10.9927 80.6859 -0.429136" nodeId="37">
+                        <Shape name="earTagLeft" translation="0.0035189 -0.0162917 -0.067241" rotation="-170.001 70.7735 -152.736" shapeId="1" nodeId="38" castsShadows="true" receiveShadows="true" materialIds="7"/>
+                      </TransformGroup>
+                      <TransformGroup name="Ear.R" translation="0.166896 0.0837935 0.0449857" rotation="10.9927 -80.6859 0.429182" nodeId="39">
+                        <Shape name="earTagRight" translation="-0.00657668 -0.0147142 -0.0643378" rotation="-163.636 -68.5179 141.78" scale="1 1 0.942944" shapeId="2" nodeId="40" castsShadows="true" receiveShadows="true" materialIds="7"/>
+                      </TransformGroup>
+                      <TransformGroup name="eye.L" translation="-0.0716433 0.100008 -0.119813" rotation="29.6698 51.6122 -10.4854" nodeId="41">
+                        <Shape name="lashesLeft" translation="-0.0238048 -0.0246561 -0.0485942" rotation="-145.265 29.0312 -137.682" scale="1.6461 1.66336 1.5" shapeId="3" nodeId="42" castsShadows="true" receiveShadows="true" materialIds="5"/>
+                      </TransformGroup>
+                      <TransformGroup name="eye.R" translation="0.0716432 0.100008 -0.119813" rotation="29.6698 -51.6122 10.4855" nodeId="43">
+                        <Shape name="lashesRight" translation="0.0259578 -0.0246199 -0.0464026" rotation="-145.028 -24.1992 141.261" scale="1.8265 1.66 1.31135" shapeId="4" nodeId="44" castsShadows="true" receiveShadows="true" materialIds="5"/>
+                      </TransformGroup>
+                      <TransformGroup name="mouth" translation="3.57176e-08 -0.0622588 -0.0757237" rotation="-17.1812 -9.75064e-06 1.3347e-06" nodeId="45"/>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="Spine_04" rotation="-86.0188 2.52282e-07 -3.62491e-06" nodeId="46">
+              <TransformGroup name="Spine_05" translation="7.14706e-16 2.23517e-08 -0.372945" rotation="12.5548 -5.36575e-08 -1.19495e-08" nodeId="47">
+                <TransformGroup name="Boobs" translation="-2.40033e-09 -0.557145 0.154445" rotation="-47.8408 -1.00034e-05 -9.30439e-06" nodeId="48"/>
+                <TransformGroup name="hip_b.L" translation="0.219517 -0.0193921 -0.157964" rotation="-117.328 1.12088 3.14388" nodeId="49">
+                  <TransformGroup name="thigh_b.L" translation="1.30385e-08 1.04774e-08 -0.42265" rotation="-51.9354 -11.6002 -170.567" nodeId="50">
+                    <TransformGroup name="shin_b.L" translation="3.72529e-08 1.53668e-08 -0.468827" rotation="-38.2786 -10.4236 -179.24" nodeId="51">
+                      <TransformGroup name="hoof_b.L" translation="-2.63099e-08 -5.44824e-08 -0.31128" rotation="26.723 1.42996 179.056" nodeId="52"/>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+                <TransformGroup name="hip_b.R" translation="-0.219517 -0.0193921 -0.157964" rotation="-117.328 -1.12088 -3.14388" nodeId="53">
+                  <TransformGroup name="thigh_b.R" translation="-1.05938e-08 9.0804e-09 -0.42265" rotation="-51.9354 11.6002 170.567" nodeId="54">
+                    <TransformGroup name="shin_b.R" translation="-7.45058e-09 7.4273e-08 -0.468827" rotation="-38.2786 10.4236 179.24" nodeId="55">
+                      <TransformGroup name="hoof_b.R" translation="-6.75209e-09 -1.16415e-09 -0.31128" rotation="26.723 -1.42996 -179.056" nodeId="56"/>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+                <TransformGroup name="tail_1" translation="-7.21645e-16 -5.96046e-08 -0.354317" rotation="-37.3965 -8.17721e-06 -1.09436e-05" nodeId="57">
+                  <TransformGroup name="tail_2" translation="6.48044e-15 8.9407e-08 -0.117279" rotation="-59.81 -1.17223e-05 6.64449e-06" nodeId="58">
+                    <TransformGroup name="tail_3" translation="1.41189e-14 -2.98023e-08 -0.21249" rotation="-6.01176 1.02691e-08 1.36593e-05" nodeId="59">
+                      <TransformGroup name="tail_4" translation="1.16225e-16 5.58794e-08 -0.207031" rotation="-0.989944 -9.42343e-07 -5.46334e-05" nodeId="60">
+                        <TransformGroup name="tail_5" translation="-1.57882e-14 3.72529e-08 -0.184371" rotation="7.37255 1.74043e-06 4.10925e-05" nodeId="61"/>
+                      </TransformGroup>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="hoof_b_Helper.L" translation="0.13761 -0.753721 -0.14747" rotation="-154.983 -5.00896e-06 180" scale="1 0.999999 1" nodeId="62"/>
+          <TransformGroup name="hoof_b_Helper.R" translation="-0.13761 -0.753721 -0.14747" rotation="-154.983 5.00896e-06 -180" scale="1 0.999999 1" nodeId="63"/>
+          <TransformGroup name="hoof_f_Helper.L" translation="0.12712 0.575287 -0.123631" rotation="-154.758 -5.00896e-06 180" nodeId="64"/>
+          <TransformGroup name="hoof_f_Helper.R" translation="-0.12712 0.575287 -0.123631" rotation="-154.758 5.00896e-06 -180" nodeId="65"/>
+        </TransformGroup>
+      </TransformGroup>
+      <Shape name="cattle_F_GS03_BeefDual" shapeId="5" clipDistance="200" nodeId="66" castsShadows="true" receiveShadows="true" skinBindNodeIds="17 46 47 57 58 59 60 61 49 50 51 52 53 54 55 56 22 23 34 35 36 45 37 41 39 43 24 25 26 27 28 29 30 31 32 33 48" materialIds="6"/>
+    </TransformGroup>
+    <Shape name="proxy" shapeId="6" visibility="false" kinematic="true" collisionFilterGroup="0x10200000" collisionFilterMask="0xfffffbff" linearDamping="0.5" angularDamping="0.5" nodeId="67" castsShadows="false" receiveShadows="false" distanceBlending="false" materialIds="8"/>
+  </Scene>
+
+
+  <Animation externalAnimFile="Cattle_F_GS03_BeefDual.i3d.anim" />
+</i3D>
